@@ -117,8 +117,14 @@ class ParimatchScraper:
         tags = soup.find_all(class_='l')
         for tag in tags:
             br_tag = tag.find('br')
+
             first_team = br_tag.previous_sibling
+            if not isinstance(first_team, str):
+                first_team = first_team.text
             second_team = br_tag.next_sibling
+            if not isinstance(second_team, str):
+                second_team = second_team.text
+
             match_title = SyntaxFormatter.compile_match_title(
                 first_team, second_team)
             match_titles.append(match_title)
@@ -230,13 +236,17 @@ url4 = 'https://www.parimatch.com/en/sport/kibersport/liga-legend-lck'
 url5 = 'https://www.parimatch.com/en/sport/volejjbol/liga-chempionov'
 url6 = 'https://www.parimatch.com/en/sport/kibersport/itogi-counter-strike-blast-premier-spring-group-a'
 
-bets = ParimatchScraper.get_bets(url6)
-pprint(bets)
+# try:
+#     bets = ParimatchScraper.get_bets(url6)
+#     pprint(bets)
+# except ScrapingUnsuccessfulException as e:
+#     pprint(e.message)
 
-# for url in urls[245:250]:
-#     pprint(url)
-#     try:
-#         bets = ParimatchScraper.get_bets(url)
-#         pprint(bets)
-#     except (OddsNotFoundError, ScrapingUnsuccessfulException) as e:
-#         pprint(e.message)
+urls = urls[250:260]
+for url in urls:
+    # pprint(url)
+    try:
+        bets = ParimatchScraper.get_bets(url)
+        pprint(bets)
+    except (OddsNotFoundError, ScrapingUnsuccessfulException) as e:
+        pprint(e.message)

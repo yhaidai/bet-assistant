@@ -37,9 +37,7 @@ class SyntaxFormatter:
         case of second_team being equal to None
         """
         match_title = SyntaxFormatter.format_team_name(first_team)
-        print(second_team)
         if second_team:
-            match_title += ' - ' + SyntaxFormatter.format_team_name(
-                second_team)
+            match_title += ' - ' + SyntaxFormatter.format_team_name(second_team)
 
         return match_title
