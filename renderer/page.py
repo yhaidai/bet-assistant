@@ -31,12 +31,14 @@ class Page(QWebEnginePage):
         Page.app.exec_()
 
     def _on_load_finished(self):
-        """
-        Ini
-        """
+        """Sets html field of the class after the rendering is finished"""
         # self.toPlainText(self._callable)
         self.toHtml(self._callable)
 
     def _callable(self, html_str):
+        """
+        Called by toHtml() method to set html field of the class;
+        quits the app after
+        """
         self.html = html_str
         Page.app.quit()
