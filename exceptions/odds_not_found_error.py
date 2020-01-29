@@ -6,5 +6,5 @@ class OddsNotFoundError(Exception):
     :param message: message that will be shown when an exception is raised
     :type message: str
     """
-    def __int__(self, message):
+    def __init__(self, message):
         self.message = message

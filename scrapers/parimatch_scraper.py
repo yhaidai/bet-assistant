@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from renderer.page import Page
 from pprint import pprint
-from syntax_formatters.syntax_formatter import ParimatchSyntaxFormatter
+from syntax_formatters.syntax_formatter import SyntaxFormatter
 from exceptions.scraping_unsuccessful_exception import \
     ScrapingUnsuccessfulException
 from exceptions.odds_not_found_error import OddsNotFoundError
@@ -31,7 +31,7 @@ class ParimatchScraper:
         hidden_groups = soup.find_all('ul', class_='hidden groups')
         for group in hidden_groups:
             for tag in group.find_all('a'):
-                urls.append(ParimatchScraper.base_url[:-1] + tag['href'])
+                urls.append(ParimatchScraper.base_url + tag['href'])
         return urls
 
     @staticmethod
@@ -117,11 +117,10 @@ class ParimatchScraper:
         tags = soup.find_all(class_='l')
         for tag in tags:
             br_tag = tag.find('br')
-            first_team = ParimatchSyntaxFormatter.format_team_name(
-                br_tag.previous_element)
-            second_team = ParimatchSyntaxFormatter.format_team_name(
-                br_tag.next_element)
-            match_title = first_team + ' - ' + second_team
+            first_team = br_tag.previous_sibling
+            second_team = br_tag.next_sibling
+            match_title = SyntaxFormatter.compile_match_title(
+                first_team, second_team)
             match_titles.append(match_title)
 
         return match_titles
@@ -221,13 +220,23 @@ class ParimatchScraper:
                                     'titles')
 
 
-# urls = ParimatchScraper.get_championships_urls()
+urls = ParimatchScraper.get_championships_urls()
+# pprint(urls[245:250])
 
 url1 = 'https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced-s33'
 url2 = 'https://www.parimatch.com/en/sport/kibersport/counter-strike-blast-premier-spring'
 url3 = 'https://www.parimatch.com/en/sport/kibersport/dota-2-parimatch-league-s2'
 url4 = 'https://www.parimatch.com/en/sport/kibersport/liga-legend-lck'
 url5 = 'https://www.parimatch.com/en/sport/volejjbol/liga-chempionov'
+url6 = 'https://www.parimatch.com/en/sport/kibersport/itogi-counter-strike-blast-premier-spring-group-a'
 
-bets = ParimatchScraper.get_bets(url2)
+bets = ParimatchScraper.get_bets(url6)
 pprint(bets)
+
+# for url in urls[245:250]:
+#     pprint(url)
+#     try:
+#         bets = ParimatchScraper.get_bets(url)
+#         pprint(bets)
+#     except (OddsNotFoundError, ScrapingUnsuccessfulException) as e:
+#         pprint(e.message)
