@@ -2,8 +2,6 @@ from bs4 import BeautifulSoup
 from renderer.page import Page
 from pprint import pprint
 from syntax_formatters.syntax_formatter import SyntaxFormatter
-from exceptions.scraping_unsuccessful_exception import \
-    ScrapingUnsuccessfulException
 from exceptions.odds_not_found_error import OddsNotFoundError
 
 
@@ -46,8 +44,7 @@ class ParimatchScraper:
         :rtype: dict
         """
         bets = {}
-        page = Page(url)
-        soup = BeautifulSoup(page.html, 'html.parser')
+        soup = ParimatchScraper._get_soup(url)
 
         match_titles = ParimatchScraper._get_match_titles(soup)
         bet_titles = ParimatchScraper._get_bet_titles(soup)
@@ -122,7 +119,7 @@ class ParimatchScraper:
             if not isinstance(first_team, str):
                 first_team = first_team.text
             second_team = br_tag.next_sibling
-            if not isinstance(second_team, str):
+            if not isinstance(second_team, str) and second_team is not None:
                 second_team = second_team.text
 
             match_title = SyntaxFormatter.compile_match_title(
@@ -143,10 +140,7 @@ class ParimatchScraper:
         """
         bet_titles = []
         tag = soup.find(class_='processed')
-        try:
-            event_tag = tag.find(string='Event').parent
-        except AttributeError:
-            raise ScrapingUnsuccessfulException("Failed to render website...")
+        event_tag = tag.find(string='Event').parent
         bet_title_tags = event_tag.find_next_siblings()
         for bet_title_tag in bet_title_tags:
             try:
@@ -207,6 +201,39 @@ class ParimatchScraper:
         return odds
 
     @staticmethod
+    def _get_soup(url):
+        """
+        Get soup of properly rendered page
+
+        :param url: url of the page soup of which is needed
+        :type url: str
+        :return: soup of the page which is located at given url
+        :rtype: BeautifulSoup
+        """
+        page = Page(url)
+        soup = BeautifulSoup(page.html, 'html.parser')
+        while not ParimatchScraper._check_soup(soup):
+            page = Page(url)
+            soup = BeautifulSoup(page.html, 'html.parser')
+
+        return soup
+
+    @staticmethod
+    def _check_soup(soup):
+        """
+        Checks if page was properly rendered using its soup
+
+        :param soup: soup that needs to be checked
+        :type soup: BeautifulSoup
+        :return: True if tag with class 'processed' is found, False otherwise
+        :rtype: boolean
+        """
+        tag = soup.find(class_='processed')
+        if tag is None:
+            return False
+        return True
+
+    @staticmethod
     def _check_data_integrity(match_titles, bet_titles, odds):
         """
         Checks if all the odds were found for the match, raises
@@ -229,24 +256,35 @@ class ParimatchScraper:
 urls = ParimatchScraper.get_championships_urls()
 # pprint(urls[245:250])
 
-url1 = 'https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced-s33'
-url2 = 'https://www.parimatch.com/en/sport/kibersport/counter-strike-blast-premier-spring'
-url3 = 'https://www.parimatch.com/en/sport/kibersport/dota-2-parimatch-league-s2'
+url1 = 'https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu' \
+       '-advanced-s33'
+url2 = 'https://www.parimatch.com/en/sport/kibersport/counter-strike-blast' \
+       '-premier-spring'
+url3 = 'https://www.parimatch.com/en/sport/kibersport/dota-2-parimatch-league' \
+       '-s2'
 url4 = 'https://www.parimatch.com/en/sport/kibersport/liga-legend-lck'
 url5 = 'https://www.parimatch.com/en/sport/volejjbol/liga-chempionov'
-url6 = 'https://www.parimatch.com/en/sport/kibersport/itogi-counter-strike-blast-premier-spring-group-a'
+url6 = 'https://www.parimatch.com/en/sport/kibersport/itogi-counter-strike' \
+       '-blast-premier-spring-group-a'
+url7 = 'https://www.parimatch.com/en/sport/kibersport/counter-strike-ice' \
+       '-challenge'
+url8 = 'https://www.parimatch.com/en/sport/futbolitogi/futbol-chempionat' \
+       '-evropy-2020'
 
-# try:
-#     bets = ParimatchScraper.get_bets(url6)
-#     pprint(bets)
-# except ScrapingUnsuccessfulException as e:
-#     pprint(e.message)
+url = url8
+try:
+    bets = ParimatchScraper.get_bets(url)
+    pprint(bets)
+except OddsNotFoundError as e:
+    pprint(e.message)
+# except AttributeError:
+#     pprint(url)
 
-urls = urls[250:260]
-for url in urls:
-    # pprint(url)
-    try:
-        bets = ParimatchScraper.get_bets(url)
-        pprint(bets)
-    except (OddsNotFoundError, ScrapingUnsuccessfulException) as e:
-        pprint(e.message)
+# for url in urls:
+#     try:
+#         bets = ParimatchScraper.get_bets(url)
+#         pprint(bets)
+#     except OddsNotFoundError as e:
+#         pprint(e.message)
+#     except AttributeError:
+#         pprint(url)
