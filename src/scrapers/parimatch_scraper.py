@@ -1,10 +1,10 @@
 import re
 import time
-
-from bs4 import BeautifulSoup
-from src.renderer.page import Page
 from pprint import pprint
 
+from bs4 import BeautifulSoup
+
+from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
 from syntax_formatters.syntax_formatter import SyntaxFormatter
 
@@ -22,7 +22,7 @@ class ParimatchScraper(AbstractScraper):
         'dota 2': 'dota-2',
     }
     # last titles for each of the groups
-    title_breakers = ('Handicap coefficient', 'Under', 'Win of the 1st team', )
+    title_breakers = ('Handicap coefficient', 'Under', 'Win of the 1st team',)
 
     def get_bets(self, sport_type):
         bets = {}

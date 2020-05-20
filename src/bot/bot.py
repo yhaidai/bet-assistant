@@ -1,5 +1,6 @@
-from telebot import TeleBot
 from secrets import token
+
+from telebot import TeleBot
 
 
 class Bot(TeleBot):
