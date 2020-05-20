@@ -8,10 +8,11 @@ class Page:
     """
     Class that represents rendered web page
     """
+    chromedriver_path = '../renderer/chromedriver_win32/chromedriver.exe'
     chrome_options = webdriver.ChromeOptions()
     # chrome_options.add_argument('--headless')
-    chrome_options.add_argument("--window-size=1440,1080")
-    driver = webdriver.Chrome('D:/chromedriver_win32/chromedriver.exe', chrome_options=chrome_options)
+    chrome_options.add_argument("--window-size=800,600")
+    driver = webdriver.Chrome(chromedriver_path, chrome_options=chrome_options)
 
     def __init__(self, url):
         """
@@ -33,7 +34,7 @@ class Page:
 
     @staticmethod
     def change_driver():
-        Page.driver = webdriver.Chrome("D:/chromedriver_win32/chromedriver.exe",
+        Page.driver = webdriver.Chrome(Page.chromedriver_path,
                                        chrome_options=Page.chrome_options)
 
     def start_timer(self, timeout):
