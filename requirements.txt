@@ -1,6 +1,6 @@
-beautifulsoup4==4.8.2
+telebot
+selenium==3.141.0
+beautifulsoup4==4.9.1
 bs4==0.0.1
-pyTelegramBotAPI==3.6.7
-requests==2.22.0
-PyQt5==5.14.1
-PyQtWebEngine==5.14.0
+pyTelegramBotAPI==3.7.1
+requests==2.23.0
