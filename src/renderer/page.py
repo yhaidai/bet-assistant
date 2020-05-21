@@ -11,8 +11,9 @@ class Page:
     chromedriver_path = '../renderer/chromedriver_win32/chromedriver.exe'
     chrome_options = webdriver.ChromeOptions()
     # chrome_options.add_argument('--headless')
-    chrome_options.add_argument("--window-size=800,600")
+    chrome_options.add_argument("--window-size=1280,800")
     driver = webdriver.Chrome(chromedriver_path, chrome_options=chrome_options)
+    driver.maximize_window()
 
     def __init__(self, url):
         """
@@ -36,6 +37,7 @@ class Page:
     def change_driver():
         Page.driver = webdriver.Chrome(Page.chromedriver_path,
                                        chrome_options=Page.chrome_options)
+        Page.driver.maximize_window()
 
     def start_timer(self, timeout):
         start_time = time.time()

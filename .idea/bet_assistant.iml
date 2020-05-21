@@ -3,6 +3,10 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scrapers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/renderer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/bot" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/renderer/chromedriver_win32" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>

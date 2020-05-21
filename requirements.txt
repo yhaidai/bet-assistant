@@ -1,3 +1,4 @@
+multidict
 telebot
 selenium==3.141.0
 beautifulsoup4==4.9.1

@@ -3,19 +3,21 @@ from pprint import pprint
 
 from selenium.common.exceptions import NoSuchElementException
 
+from one_x_bet_syntax_formatter import OneXBetSyntaxFormatter
 from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
 from syntax_formatters.syntax_formatter import SyntaxFormatter
 
 
 class OneXBetScraper(AbstractScraper):
+    name = '1xBet'
     base_url = 'https://1x-bet.com/en/'
     sport_names = {
         'csgo': 'CSGO',
         'dota 2': 'Dota-2',
     }
     menu = {
-        'csgo': 'line/esports/'
+        'csgo': 'line/Esports/'
     }
 
     def get_bets(self, sport_type):
@@ -25,13 +27,13 @@ class OneXBetScraper(AbstractScraper):
 
         matches = OneXBetScraper._get_matches(championships)
         match_urls = OneXBetScraper.get_match_urls(matches, championship_urls)
-        # pprint(match_urls)
-        # print(len(match_urls))
 
         for url in match_urls:
             bets.update(OneXBetScraper._get_bets(OneXBetScraper.base_url + url))
 
-        return bets
+        formatter = OneXBetSyntaxFormatter(bets)
+        Page.driver.quit()
+        return formatter.bets
 
     @staticmethod
     def get_championship_urls(championships):
@@ -40,7 +42,11 @@ class OneXBetScraper(AbstractScraper):
 
     @staticmethod
     def _get_championships(sport_type):
-        page = Page(OneXBetScraper.base_url + OneXBetScraper.menu[sport_type])
+        page = Page(OneXBetScraper.base_url)
+        sport = page.driver.find_element_by_css_selector('a[href^="' + OneXBetScraper.menu[sport_type] + '"]')
+        page.click(sport)
+        time.sleep(2)
+
         menu = page.driver.find_element_by_class_name('liga_menu')
 
         pattern = OneXBetScraper.sport_names[sport_type]
@@ -127,11 +133,12 @@ class OneXBetScraper(AbstractScraper):
                 Page.click(element)
 
 
-t = time.time()
+if __name__ == '__main__':
+    t = time.time()
 
-scraper = OneXBetScraper()
-b = scraper.get_bets('csgo')
-pprint(b)
-Page.driver.quit()
+    scraper = OneXBetScraper()
+    b = scraper.get_bets('csgo')
+    pprint(b)
+    Page.driver.quit()
 
-print(time.time() - t)
+    print(time.time() - t)

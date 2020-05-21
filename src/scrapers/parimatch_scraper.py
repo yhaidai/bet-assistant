@@ -4,6 +4,7 @@ from pprint import pprint
 
 from bs4 import BeautifulSoup
 
+from parimatch_syntax_formatter import ParimatchSyntaxFormatter
 from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
 from syntax_formatters.syntax_formatter import SyntaxFormatter
@@ -16,11 +17,13 @@ class ParimatchScraper(AbstractScraper):
 
     :param base_url: url of the front page of the website
     """
+    name = 'Parimatch'
     base_url = 'https://www.parimatch.com/en'
     sport_names = {
         'csgo': 'counter-strike',
         'dota 2': 'dota-2',
     }
+
     # last titles for each of the groups
     title_breakers = ('Handicap coefficient', 'Under', 'Win of the 1st team',)
 
@@ -31,7 +34,9 @@ class ParimatchScraper(AbstractScraper):
         for championship_url in championship_urls:
             bets.update(self._get_bets(self.base_url + championship_url))
 
-        return bets
+        formatter = ParimatchSyntaxFormatter(bets)
+        Page.driver.quit()
+        return formatter.bets
 
     @staticmethod
     def get_championship_urls(sport_type):
@@ -111,6 +116,7 @@ class ParimatchScraper(AbstractScraper):
             :type bets: dict
         """
         bet_titles = []
+        team_names = SyntaxFormatter.decompile_match_title(match_title)
         for bet_title_tag in bet_title_tags:
             # find corresponding column with bet type
             column = ParimatchScraper._find_column(bk, bet_title_tag)
@@ -150,7 +156,11 @@ class ParimatchScraper(AbstractScraper):
                     except KeyError:
                         bet_titles_copy[i] += bet_title_tag.text
                     try:
-                        bets[match_title][subtitle + bet_titles_copy[i]] = odds[i]
+                        prefix = subtitle
+                        # append team name to the subtitle in case of handicap bet
+                        if 'Handicap coefficient' in title:
+                            prefix = subtitle + team_names[i] + ' '
+                        bets[match_title][prefix + bet_titles_copy[i]] = odds[i]
                     except IndexError:
                         print(i)
                         print(bet_titles_copy)
@@ -251,21 +261,12 @@ class ParimatchScraper(AbstractScraper):
         return True
 
 
-t = time.time()
-scraper = ParimatchScraper()
+if __name__ == '__main__':
+    t = time.time()
+    scraper = ParimatchScraper()
 
-# bets = scraper.get_bets_all(url)
-b = scraper.get_bets('csgo')
-pprint(b)
+    b = scraper.get_bets('csgo')
+    pprint(b)
 
-Page.driver.quit()
-print(time.time() - t)
-
-# for url in urls:
-#     try:
-#         bets = ParimatchScraper.get_bets(url)
-#         pprint(bets)
-#     except OddsNotFoundError as e:
-#         pprint(e.message)
-#     except AttributeError:
-#         pprint(url)
+    Page.driver.quit()
+    print(time.time() - t)
