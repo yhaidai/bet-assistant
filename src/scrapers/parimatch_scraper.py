@@ -17,12 +17,11 @@ class ParimatchScraper(AbstractScraper):
 
     :param base_url: url of the front page of the website
     """
-    name = 'Parimatch'
     base_url = 'https://www.parimatch.com/en'
     sport_names = {
         'csgo': 'counter-strike',
         'dota 2': 'dota-2',
-    }
+        }
 
     # last titles for each of the groups
     title_breakers = ('Handicap coefficient', 'Under', 'Win of the 1st team',)
@@ -35,7 +34,6 @@ class ParimatchScraper(AbstractScraper):
             bets.update(self._get_bets(self.base_url + championship_url))
 
         formatter = ParimatchSyntaxFormatter(bets)
-        Page.driver.quit()
         return formatter.bets
 
     @staticmethod
@@ -68,8 +66,11 @@ class ParimatchScraper(AbstractScraper):
         bets = {}
 
         tag = soup.find(class_='processed')
-        event_tag = tag.find(string='Event').parent
-        bet_title_tags = event_tag.find_next_siblings()
+        event_tag = tag.find(string='Event')
+        if not event_tag:
+            return bets
+        event_tag_parent = event_tag.parent
+        bet_title_tags = event_tag_parent.find_next_siblings()
 
         # main bets containers
         bks1 = [el.next_element for el in soup.find_all(class_='row1 processed')]

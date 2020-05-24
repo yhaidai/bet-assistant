@@ -77,19 +77,19 @@ bets = {
         'Win In Round. 1 map. 100 Thieves Will Win In Round 16': '1.85',
         'Win In Round. 1 map. Gen.G Will Win In Round 1': '1.89',
         'Win In Round. 1 map. Gen.G Will Win In Round 16': '1.89'
-    },
+        },
     'agf - wygers': {
         '1x2. 1 map. AGF': '1.28',
         '1x2. 1 map. Wygers': '3.48',
         '1x2. AGF': '1.31',
         '1x2. Wygers': '3.34'
-    },
+        },
     'agf - x6tence': {
         '1x2. 1 map. AGF': '1.29',
         '1x2. 1 map. x6tence': '3.42',
         '1x2. AGF': '1.31',
         '1x2. x6tence': '3.32'
-    },
+        },
     'alcoholics anonymous - swedish canadians': {
         '1x2. 1 map. Alcoholics Anonymous': '2.5',
         '1x2. 1 map. Swedish Canadians': '1.5',
@@ -111,7 +111,7 @@ bets = {
         'Win In Round. 1 map. Alcoholics Anonymous Will Win In Round 16': '1.93',
         'Win In Round. 1 map. Swedish Canadians Will Win In Round 1': '1.81',
         'Win In Round. 1 map. Swedish Canadians Will Win In Round 16': '1.81'
-    },
+        },
     'astralis - g2 esports': {
         '. ': '',
         '1x2. 1 map. Astralis': '1.5',
@@ -183,19 +183,19 @@ bets = {
         'Total. 1 map. Total Under 28.5': '1.35',
         'Total. 1 map. Total Under 29.5': '1.2',
         'Total. 1 map. Total Under 30.5': ''
-    },
+        },
     'avant - justice': {
         '1x2. 1 map. AVANT': '1.07',
         '1x2. 1 map. Justice': '7.5',
         '1x2. AVANT': '1.07',
         '1x2. Justice': '7.8'
-    },
+        },
     'begrip gaming - gobananas': {
         '1x2. 1 map. Begrip Gaming': '1.45',
         '1x2. 1 map. GoBananas': '2.648',
         '1x2. Begrip Gaming': '1.45',
         '1x2. GoBananas': '2.685'
-    },
+        },
     'big - complexity': {
         '. ': '',
         '1x2. 1 map. BIG': '2.17',
@@ -263,19 +263,19 @@ bets = {
         'Win In Round. 1 map. BIG Will Win In Round 16': '1.91',
         'Win In Round. 1 map. Complexity Will Win In Round 1': '1.82',
         'Win In Round. 1 map. Complexity Will Win In Round 16': '1.83'
-    },
+        },
     'brunolopes - lyngby vikings': {
         '1x2. 1 map. BRUNOLOPES': '4.26',
         '1x2. 1 map. Lyngby Vikings': '1.2',
         '1x2. BRUNOLOPES': '4.24',
         '1x2. Lyngby Vikings': '1.21'
-    },
+        },
     'brute - nerdrage': {
         '1x2. 1 map. Brute': '1.45',
         '1x2. 1 map. NerdRage': '2.648',
         '1x2. Brute': '1.45',
         '1x2. NerdRage': '2.69'
-    },
+        },
     'c0ntact - syman': {
         '1x2. 1 map. Syman': '2.095',
         '1x2. 1 map. c0ntact': '1.696',
@@ -291,7 +291,7 @@ bets = {
         'Win In Round. 1 map. Syman Will Win In Round 16': '1.9',
         'Win In Round. 1 map. c0ntact Will Win In Round 1': '1.82',
         'Win In Round. 1 map. c0ntact Will Win In Round 16': '1.84'
-    },
+        },
     'chaos - buffdaddys paypal team': {
         '1x2. 1 map. Buffdaddys Paypal Team': '10.5',
         '1x2. 1 map. CHAOS': '1.03',
@@ -313,7 +313,7 @@ bets = {
         'Win In Round. 1 map. Buffdaddys Paypal Team Will Win In Round 16': '2.25',
         'Win In Round. 1 map. CHAOS Will Win In Round 1': '1.6',
         'Win In Round. 1 map. CHAOS Will Win In Round 16': '1.6'
-    },
+        },
     'chaos - way 2 french': {
         '1x2. 1 map. CHAOS': '1.06',
         '1x2. 1 map. way 2 French': '8.1',
@@ -335,7 +335,7 @@ bets = {
         'Win In Round. 1 map. CHAOS Will Win In Round 16': '1.62',
         'Win In Round. 1 map. way 2 French Will Win In Round 1': '2.19',
         'Win In Round. 1 map. way 2 French Will Win In Round 16': '2.21'
-    },
+        },
     'cleantmix - izako boars': {
         '1x2. 1 map. CLEANTmix': '2.59',
         '1x2. 1 map. Izako Boars': '1.47',
@@ -353,7 +353,7 @@ bets = {
         'Win In Round. 1 map. CLEANTmix Will Win In Round 16': '1.94',
         'Win In Round. 1 map. Izako Boars Will Win In Round 1': '1.81',
         'Win In Round. 1 map. Izako Boars Will Win In Round 16': '1.8'
-    },
+        },
     'cr4zy - big academy': {
         '1x2. 1 map. BIG Academy': '2.305',
         '1x2. 1 map. CR4ZY': '1.575',
@@ -369,7 +369,7 @@ bets = {
         'Win In Round. 1 map. BIG Academy Will Win In Round 16': '1.92',
         'Win In Round. 1 map. CR4ZY Will Win In Round 1': '1.82',
         'Win In Round. 1 map. CR4ZY Will Win In Round 16': '1.82'
-    },
+        },
     'endpoint - nordavind': {
         '1x2. 1 map. Endpoint': '1.86',
         '1x2. 1 map. Nordavind': '1.89',
@@ -417,7 +417,7 @@ bets = {
         'Win In Round. 2 map. Endpoint Will Win In Round 16': '1.87',
         'Win In Round. 2 map. Nordavind Will Win In Round 1': '1.88',
         'Win In Round. 2 map. Nordavind Will Win In Round 16': '1.87'
-    },
+        },
     'endpoint - skade': {
         '1x2. 1 map. Endpoint': '1.57',
         '1x2. 1 map. SKADE': '2.325',
@@ -433,7 +433,7 @@ bets = {
         'Win In Round. 1 map. Endpoint Will Win In Round 16': '1.82',
         'Win In Round. 1 map. SKADE Will Win In Round 1': '1.92',
         'Win In Round. 1 map. SKADE Will Win In Round 16': '1.92'
-    },
+        },
     'evidence e-sports - redemption poa': {
         '1x2. 1 map. Evidence e-Sports': '2.5',
         '1x2. 1 map. Redemption POA': '1.5',
@@ -441,7 +441,7 @@ bets = {
         '1x2. 2 map. Redemption POA': '1.49',
         '1x2. Evidence e-Sports': '2.87',
         '1x2. Redemption POA': '1.4'
-    },
+        },
     'evil geniuses - cloud9': {
         '1x2. 1 map. Cloud9': '2.77',
         '1x2. 1 map. Evil Geniuses': '1.41',
@@ -517,7 +517,7 @@ bets = {
         'Win In Round. 1 map. Evil Geniuses Will Win In Round 1': '1.8',
         'Win In Round. 1 map. Evil Geniuses Will Win In Round 16': '1.79',
         'Win In Round. 2 map. ': ''
-    },
+        },
     'exploit esports - baecon gg': {},
     'faze clan - godsent': {
         '1x2. 1 map. FaZe Clan': '1.32',
@@ -594,19 +594,19 @@ bets = {
         'Win In Round. 1 map. GODSENT Will Win In Round 1': '1.97',
         'Win In Round. 1 map. GODSENT Will Win In Round 16': '1.98',
         'Win In Round. 2 map. ': ''
-    },
+        },
     'fightclub - vinkelparty': {
         '1x2. 1 map. Vinkelparty': '2.28',
         '1x2. 1 map. fightclub': '1.59',
         '1x2. Vinkelparty': '2.315',
         '1x2. fightclub': '1.59'
-    },
+        },
     'flisk - lilmix': {
         '1x2. 1 map. Lilmix': '1.19',
         '1x2. 1 map. flisk': '4.4',
         '1x2. Lilmix': '1.19',
         '1x2. flisk': '4.5'
-    },
+        },
     'fnatic - team spirit': {
         '1x2. 1 map. Fnatic': '1.45',
         '1x2. 1 map. Team Spirit': '2.63',
@@ -682,7 +682,7 @@ bets = {
         'Win In Round. 1 map. Team Spirit Will Win In Round 1': '1.93',
         'Win In Round. 1 map. Team Spirit Will Win In Round 16': '1.94',
         'Win In Round. 2 map. ': ''
-    },
+        },
     'for the win - gtz bulls esports': {},
     'forze - honoris': {
         '1x2. 1 map. HONORIS': '4.24',
@@ -707,7 +707,7 @@ bets = {
         'Win In Round. 1 map. HONORIS Will Win In Round 16': '2.06',
         'Win In Round. 1 map. forZe Will Win In Round 1': '1.72',
         'Win In Round. 1 map. forZe Will Win In Round 16': '1.71'
-    },
+        },
     'forze - natus vincere junior': {
         '. ': '',
         '1x2. 1 map. Natus Vincere Junior': '2.79',
@@ -784,13 +784,13 @@ bets = {
         'Win In Round. 1 map. Natus Vincere Junior Will Win In Round 16': '1.96',
         'Win In Round. 1 map. forZe Will Win In Round 1': '1.8',
         'Win In Round. 1 map. forZe Will Win In Round 16': '1.79'
-    },
+        },
     'fwrd - sector one': {
         '1x2. 1 map. FWRD': '1.4',
         '1x2. 1 map. Sector One': '2.83',
         '1x2. FWRD': '1.384',
         '1x2. Sector One': '2.94'
-    },
+        },
     'gambit youngsters - heroic': {
         '. ': '',
         '1x2. 1 map. Gambit Youngsters': '2.616',
@@ -853,7 +853,7 @@ bets = {
         'Win In Round. 1 map. Gambit Youngsters Will Win In Round 16': '1.94',
         'Win In Round. 1 map. Heroic Will Win In Round 1': '1.81',
         'Win In Round. 1 map. Heroic Will Win In Round 16': '1.8'
-    },
+        },
     'gambit youngsters - pro100': {
         '. ': '',
         '1x2. 1 map. Gambit Youngsters': '1.81',
@@ -916,43 +916,43 @@ bets = {
         'Win In Round. 1 map. Gambit Youngsters Will Win In Round 16': '1.86',
         'Win In Round. 1 map. pro100 Will Win In Round 1': '1.89',
         'Win In Round. 1 map. pro100 Will Win In Round 16': '1.88'
-    },
+        },
     'game fist - mcon': {
         '1x2. 1 map. Game Fist': '1.075',
         '1x2. 1 map. mCon': '3.8',
         '1x2. Game Fist': '1.225',
         '1x2. mCon': '4.08'
-    },
+        },
     'genesis - budapest5': {
         '1x2. 1 map. Budapest5': '2.09',
         '1x2. 1 map. Genesis': '1.7',
         '1x2. Budapest5': '2.096',
         '1x2. Genesis': '1.704'
-    },
+        },
     'giants fe - x6tence black': {
         '1x2. 1 map. Giants fe': '3.06',
         '1x2. 1 map. x6tence Black': '1.35',
         '1x2. Giants fe': '3.144',
         '1x2. x6tence Black': '1.31'
-    },
+        },
     'gobananas - lotb': {
         '1x2. 1 map. GoBananas': '1.62',
         '1x2. 1 map. lotb': '2.23',
         '1x2. GoBananas': '1.62',
         '1x2. lotb': '2.25'
-    },
+        },
     'goodtimes - touch the crown': {
         '1x2. 1 map. GOODTIMES': '2.912',
         '1x2. 1 map. Touch the crown': '1.38',
         '1x2. GOODTIMES': '2.955',
         '1x2. Touch the crown': '1.38'
-    },
+        },
     'ground zero gaming - pc419': {
         '1x2. 1 map. Ground Zero Gaming': '1.18',
         '1x2. 1 map. PC419': '4.54',
         '1x2. Ground Zero Gaming': '1.19',
         '1x2. PC419': '4.5'
-    },
+        },
     'havu gaming - alternate attax': {
         '1x2. 1 map. ALTERNATE aTTax': '2.265',
         '1x2. 1 map. HAVU Gaming': '1.595',
@@ -1004,7 +1004,7 @@ bets = {
         'Win In Round. 2 map. ALTERNATE aTTax Will Win In Round 16': '1.92',
         'Win In Round. 2 map. HAVU Gaming Will Win In Round 1': '1.83',
         'Win In Round. 2 map. HAVU Gaming Will Win In Round 16': '1.82'
-    },
+        },
     'heroic - winstrike': {
         '1x2. 1 map. Heroic': '1.56',
         '1x2. 1 map. Winstrike': '2.344',
@@ -1020,13 +1020,13 @@ bets = {
         'Win In Round. 1 map. Heroic Will Win In Round 16': '1.82',
         'Win In Round. 1 map. Winstrike Will Win In Round 1': '1.92',
         'Win In Round. 1 map. Winstrike Will Win In Round 16': '1.92'
-    },
+        },
     'incept - forbidden': {
         '1x2. 1 map. Forbidden': '5.05',
         '1x2. 1 map. Incept': '1.15',
         '1x2. Forbidden': '5.2',
         '1x2. Incept': '1.15'
-    },
+        },
     'incubus - loto': {
         '1x2. 1 map. Incubus': '3.88',
         '1x2. 1 map. Loto': '1.232',
@@ -1035,7 +1035,7 @@ bets = {
         '1x2. Draw': '3.54',
         '1x2. Incubus': '8.3',
         '1x2. Loto': '1.41'
-    },
+        },
     'invictus gaming - lynn vision': {
         '1x2. 1 map. Invictus Gaming': '1.55',
         '1x2. 1 map. Lynn Vision': '2.37',
@@ -1043,7 +1043,7 @@ bets = {
         '1x2. 2 map. Lynn Vision': '2.37',
         '1x2. Invictus Gaming': '1.46',
         '1x2. Lynn Vision': '2.65'
-    },
+        },
     'japaleno - hard legion esports': {
         '. ': '',
         '1x2. 1 map. Hard Legion Esports': '1.87',
@@ -1100,7 +1100,7 @@ bets = {
         'Win In Round. 1 map. Hard Legion Esports Will Win In Round 16': '1.87',
         'Win In Round. 1 map. Japaleno Will Win In Round 1': '1.87',
         'Win In Round. 1 map. Japaleno Will Win In Round 16': '1.87'
-    },
+        },
     'keep the comms up - buffdaddys paypal team': {
         '1x2. 1 map. Buffdaddys Paypal Team': '1.62',
         '1x2. 1 map. Keep the Comms Up': '2.23',
@@ -1120,7 +1120,7 @@ bets = {
         'Win In Round. 1 map. Buffdaddys Paypal Team Will Win In Round 16': '1.83',
         'Win In Round. 1 map. Keep the Comms Up Will Win In Round 1': '1.92',
         'Win In Round. 1 map. Keep the Comms Up Will Win In Round 16': '1.91'
-    },
+        },
     'keep the comms up - morning light': {
         '1x2. 1 map. Keep the Comms Up': '2.095',
         '1x2. 1 map. Morning Light': '1.696',
@@ -1140,31 +1140,31 @@ bets = {
         'Win In Round. 1 map. Keep the Comms Up Will Win In Round 16': '1.9',
         'Win In Round. 1 map. Morning Light Will Win In Round 1': '1.82',
         'Win In Round. 1 map. Morning Light Will Win In Round 16': '1.84'
-    },
+        },
     'kmk - lvlup': {
         '1x2. 1 map. KmK': '1.2',
         '1x2. 1 map. LVLUP': '4.26',
         '1x2. KmK': '1.2',
         '1x2. LVLUP': '4.32'
-    },
+        },
     'kpi gaming - intech tenerife titans': {
         '1x2. 1 map. Intech Tenerife Titans': '2.17',
         '1x2. 1 map. KPI Gaming': '1.648',
         '1x2. Intech Tenerife Titans': '2.408',
         '1x2. KPI Gaming': '1.54'
-    },
+        },
     'log esports - sorby flames': {
         '1x2. 1 map. LOG ESPORTS': '3.115',
         '1x2. 1 map. Sorby Flames': '1.34',
         '1x2. LOG ESPORTS': '3.04',
         '1x2. Sorby Flames': '1.365'
-    },
+        },
     'lyngby vikings - bartosze': {
         '1x2. 1 map. BARTOSZE': '4.54',
         '1x2. 1 map. Lyngby Vikings': '1.18',
         '1x2. BARTOSZE': '4.5',
         '1x2. Lyngby Vikings': '1.19'
-    },
+        },
     'mad lions - big': {
         '. ': '',
         '1x2. 1 map. BIG': '2.1',
@@ -1230,7 +1230,7 @@ bets = {
         'Total. 1 map. Total Under 27.5': '1.61',
         'Total. 1 map. Total Under 28.5': '1.38',
         'Total. 1 map. Total Under 29.5': '1.21'
-    },
+        },
     'mad lions - complexity': {
         '. ': '',
         '1x2. 1 map. Complexity': '1.95',
@@ -1288,7 +1288,7 @@ bets = {
         'Win In Round. 1 map. Complexity Will Win In Round 16': '1.87',
         'Win In Round. 1 map. MAD Lions Will Win In Round 1': '1.87',
         'Win In Round. 1 map. MAD Lions Will Win In Round 16': '1.87'
-    },
+        },
     'mibr - chaos': {
         '. ': '',
         '1x2. 1 map. CHAOS': '2.95',
@@ -1352,7 +1352,7 @@ bets = {
         'Total. 1 map. Total Under 26.5': '1.86',
         'Total. 1 map. Total Under 27.5': '1.55',
         'Total. 1 map. Total Under 28.5': '1.34'
-    },
+        },
     'mibr - furia': {
         '. ': '',
         '1x2. 1 map. FURIA': '1.5',
@@ -1423,7 +1423,7 @@ bets = {
         'Total. 1 map. Total Under 27.5': '1.6',
         'Total. 1 map. Total Under 28.5': '1.38',
         'Total. 1 map. Total Under 29.5': '1.21'
-    },
+        },
     'mousesports - big': {
         '. ': '',
         '1x2. 1 map. BIG': '2.55',
@@ -1480,7 +1480,7 @@ bets = {
         'Win In Round. 1 map. BIG Will Win In Round 16': '1.97',
         'Win In Round. 1 map. mousesports Will Win In Round 1': '1.78',
         'Win In Round. 1 map. mousesports Will Win In Round 16': '1.78'
-    },
+        },
     'mousesports - complexity': {
         '. ': '',
         '1x2. 1 map. Complexity': '2.55',
@@ -1546,7 +1546,7 @@ bets = {
         'Total. 1 map. Total Under 26.5': '1.88',
         'Total. 1 map. Total Under 27.5': '1.58',
         'Total. 1 map. Total Under 28.5': '1.36'
-    },
+        },
     'mousesports - mad lions': {
         '. ': '',
         '1x2. 1 map. MAD Lions': '2.4',
@@ -1622,7 +1622,7 @@ bets = {
         'Win In Round. 1 map. MAD Lions Will Win In Round 16': '1.92',
         'Win In Round. 1 map. mousesports Will Win In Round 1': '1.81',
         'Win In Round. 1 map. mousesports Will Win In Round 16': '1.82'
-    },
+        },
     'movistar riders - vodafone giants': {
         '. ': '',
         '1x2. 1 map. Movistar Riders': '1.21',
@@ -1687,7 +1687,7 @@ bets = {
         'Win In Round. 1 map. Movistar Riders Will Win In Round 16': '1.72',
         'Win In Round. 1 map. Vodafone Giants Will Win In Round 1': '2.03',
         'Win In Round. 1 map. Vodafone Giants Will Win In Round 16': '2.05'
-    },
+        },
     'mythic - big frames': {
         '1x2. 1 map. Big Frames': '2.84',
         '1x2. 1 map. Mythic': '1.395',
@@ -1711,7 +1711,7 @@ bets = {
         'Win In Round. 1 map. Big Frames Will Win In Round 16': '1.96',
         'Win In Round. 1 map. Mythic Will Win In Round 1': '1.8',
         'Win In Round. 1 map. Mythic Will Win In Round 16': '1.79'
-    },
+        },
     'natus vincere - ence': {
         '1x2. 1 map. ENCE': '2.63',
         '1x2. 1 map. Natus Vincere': '1.45',
@@ -1787,7 +1787,7 @@ bets = {
         'Win In Round. 1 map. Natus Vincere Will Win In Round 1': '1.81',
         'Win In Round. 1 map. Natus Vincere Will Win In Round 16': '1.8',
         'Win In Round. 2 map. ': ''
-    },
+        },
     'new england whalers - polar ace north': {
         '1x2. 1 map. New England Whalers': '1.568',
         '1x2. 1 map. Polar Ace North': '2.33',
@@ -1811,7 +1811,7 @@ bets = {
         'Win In Round. 1 map. New England Whalers Will Win In Round 16': '1.82',
         'Win In Round. 1 map. Polar Ace North Will Win In Round 1': '1.92',
         'Win In Round. 1 map. Polar Ace North Will Win In Round 16': '1.92'
-    },
+        },
     'new england whalers - thunder logic': {
         '1x2. 1 map. New England Whalers': '1.45',
         '1x2. 1 map. Thunder Logic': '2.648',
@@ -1833,13 +1833,13 @@ bets = {
         'Win In Round. 1 map. New England Whalers Will Win In Round 16': '1.8',
         'Win In Round. 1 map. Thunder Logic Will Win In Round 1': '1.93',
         'Win In Round. 1 map. Thunder Logic Will Win In Round 16': '1.94'
-    },
+        },
     'nicecactus - adaptation': {
         '1x2. 1 map. Adaptation': '1.5',
         '1x2. 1 map. Nicecactus': '2.5',
         '1x2. Adaptation': '1.496',
         '1x2. Nicecactus': '2.544'
-    },
+        },
     'north - heroic': {
         '. ': '',
         '1x2. 1 map. Heroic': '1.85',
@@ -1911,7 +1911,7 @@ bets = {
         'Total. 1 map. Total Under 28.5': '1.41',
         'Total. 1 map. Total Under 29.5': '1.24',
         'Total. 1 map. Total Under 30.5': ''
-    },
+        },
     'onethree - d13': {
         '1x2. 1 map. D13': '2.75',
         '1x2. 1 map. OneThree': '1.42',
@@ -1919,7 +1919,7 @@ bets = {
         '1x2. 2 map. OneThree': '1.41',
         '1x2. D13': '3.28',
         '1x2. OneThree': '1.32'
-    },
+        },
     'onethree - invictus gaming': {
         '1x2. 1 map. Invictus Gaming': '1.955',
         '1x2. 1 map. OneThree': '1.81',
@@ -1927,7 +1927,7 @@ bets = {
         '1x2. 2 map. OneThree': '1.8',
         '1x2. Invictus Gaming': '2.005',
         '1x2. OneThree': '1.78'
-    },
+        },
     'order - avant': {
         '. ': '',
         '1x2. 1 map. AVANT': '1.7',
@@ -2006,31 +2006,31 @@ bets = {
         'Win In Round. 1 map. AVANT Will Win In Round 16': '1.84',
         'Win In Round. 1 map. Order Will Win In Round 1': '1.91',
         'Win In Round. 1 map. Order Will Win In Round 16': '1.9'
-    },
+        },
     'order - ground zero gaming': {
         '1x2. 1 map. Ground Zero Gaming': '3.28',
         '1x2. 1 map. Order': '1.31',
         '1x2. Ground Zero Gaming': '3.4',
         '1x2. Order': '1.3'
-    },
+        },
     'order - rooster': {
         '1x2. 1 map. Order': '1.31',
         '1x2. 1 map. Rooster': '3.28',
         '1x2. Order': '1.31',
         '1x2. Rooster': '3.34'
-    },
+        },
     'overt - paradox': {
         '1x2. 1 map. Overt': '2.875',
         '1x2. 1 map. Paradox': '1.39',
         '1x2. Overt': '2.98',
         '1x2. Paradox': '1.375'
-    },
+        },
     'paradox - twa': {
         '1x2. 1 map. Paradox': '1.765',
         '1x2. 1 map. TWA': '1.995',
         '1x2. Paradox': '1.784',
         '1x2. TWA': '1.992'
-    },
+        },
     'prodigy esports - imperial': {
         '1x2. 1 map. Imperial': '1.29',
         '1x2. 1 map. Prodigy Esports': '3.42',
@@ -2038,13 +2038,13 @@ bets = {
         '1x2. 2 map. Prodigy Esports': '3.5',
         '1x2. Imperial': '1.19',
         '1x2. Prodigy Esports': '4.5'
-    },
+        },
     'rbg - under 21': {
         '1x2. 1 map. RBG': '3.92',
         '1x2. 1 map. Under 21': '1.23',
         '1x2. RBG': '4.02',
         '1x2. Under 21': '1.23'
-    },
+        },
     'renegades - chiefs esports club': {
         '. ': '',
         '1x2. 1 map. Chiefs Esports Club': '3.74',
@@ -2113,19 +2113,19 @@ bets = {
         'Win In Round. 1 map. Chiefs Esports Club Will Win In Round 16': '2.02',
         'Win In Round. 1 map. Renegades Will Win In Round 1': '1.75',
         'Win In Round. 1 map. Renegades Will Win In Round 16': '1.74'
-    },
+        },
     's2v esports - team heretics': {
         '1x2. 1 map. S2V Esports': '2.432',
         '1x2. 1 map. Team Heretics': '1.525',
         '1x2. S2V Esports': '2.75',
         '1x2. Team Heretics': '1.24'
-    },
+        },
     'salamander - giwu': {
         '1x2. 1 map. GIWU': '6.3',
         '1x2. 1 map. Salamander': '1.1',
         '1x2. GIWU': '6.5',
         '1x2. Salamander': '1.1'
-    },
+        },
     'saw - cream real betis': {
         '. ': '',
         '1x2. 1 map. Cream Real Betis': '3.06',
@@ -2188,13 +2188,13 @@ bets = {
         'Win In Round. 1 map. Cream Real Betis Will Win In Round 16': '1.97',
         'Win In Round. 1 map. sAw Will Win In Round 1': '1.79',
         'Win In Round. 1 map. sAw Will Win In Round 16': '1.78'
-    },
+        },
     'saw - kpi gaming': {
         '1x2. 1 map. KPI Gaming': '3.94',
         '1x2. 1 map. sAw': '1.23',
         '1x2. KPI Gaming': '4.04',
         '1x2. sAw': '1.225'
-    },
+        },
     'skade - sinners': {
         '1x2. 1 map. SKADE': '1.44',
         '1x2. 1 map. Sinners': '2.688',
@@ -2270,7 +2270,7 @@ bets = {
         'Win In Round. 1 map. Sinners Will Win In Round 1': '1.94',
         'Win In Round. 1 map. Sinners Will Win In Round 16': '1.94',
         'Win In Round. 2 map. ': ''
-    },
+        },
     'skyfire - chiefs esports club': {
         '1x2. 1 map. Chiefs Esports Club': '1.32',
         '1x2. 1 map. Skyfire': '3.24',
@@ -2294,13 +2294,13 @@ bets = {
         'Win In Round. 1 map. Chiefs Esports Club Will Win In Round 16': '1.77',
         'Win In Round. 1 map. Skyfire Will Win In Round 1': '1.97',
         'Win In Round. 1 map. Skyfire Will Win In Round 16': '1.98'
-    },
+        },
     'sons of lennart - prima': {
         '1x2. 1 map. Prima': '1.448',
         '1x2. 1 map. Sons of Lennart': '2.656',
         '1x2. Prima': '1.445',
         '1x2. Sons of Lennart': '2.7'
-    },
+        },
     'sprout - excellency': {
         '. ': '',
         '1x2. 1 map. Excellency': '4.04',
@@ -2380,7 +2380,7 @@ bets = {
         'Win In Round. 1 map. Excellency Will Win In Round 16': '2.05',
         'Win In Round. 1 map. Sprout Will Win In Round 1': '1.73',
         'Win In Round. 1 map. Sprout Will Win In Round 16': '1.72'
-    },
+        },
     'syman - nemiga gaming': {
         '. ': '',
         '1x2. 1 map. Nemiga Gaming': '1.65',
@@ -2454,7 +2454,7 @@ bets = {
         'Win In Round. 1 map. Nemiga Gaming Will Win In Round 16': '1.83',
         'Win In Round. 1 map. Syman Will Win In Round 1': '1.92',
         'Win In Round. 1 map. Syman Will Win In Round 16': '1.91'
-    },
+        },
     'team liquid - furia': {
         '. ': '',
         '1x2. 1 map. FURIA': '1.8',
@@ -2526,7 +2526,7 @@ bets = {
         'Total. 1 map. Total Under 28.5': '1.39',
         'Total. 1 map. Total Under 29.5': '1.23',
         'Total. 1 map. Total Under 30.5': ''
-    },
+        },
     'team liquid - mibr': {
         '. ': '',
         '1x2. 1 map. MiBR': '2.75',
@@ -2589,7 +2589,7 @@ bets = {
         'Total. 1 map. Total Under 27.5': '1.5',
         'Total. 1 map. Total Under 28.5': '1.31',
         'Win In Round. 1 map. ': ''
-    },
+        },
     'team secret - nemiga gaming': {
         '. ': '',
         '1x2. 1 map. Nemiga Gaming': '1.89',
@@ -2654,7 +2654,7 @@ bets = {
         'Win In Round. 1 map. Nemiga Gaming Will Win In Round 16': '1.87',
         'Win In Round. 1 map. Team Secret Will Win In Round 1': '1.87',
         'Win In Round. 1 map. Team Secret Will Win In Round 16': '1.87'
-    },
+        },
     'team vitality - ninjas in pyjamas': {
         '. ': '',
         '1x2. 1 map. Ninjas in Pyjamas': '1.87',
@@ -2719,19 +2719,19 @@ bets = {
         'Win In Round. 1 map. Ninjas in Pyjamas Will Win In Round 16': '1.87',
         'Win In Round. 1 map. Team Vitality Will Win In Round 1': '1.87',
         'Win In Round. 1 map. Team Vitality Will Win In Round 16': '1.87'
-    },
+        },
     'tikitakan - gobananas': {
         '1x2. 1 map. GoBananas': '2.77',
         '1x2. 1 map. Tikitakan': '1.416',
         '1x2. GoBananas': '2.82',
         '1x2. Tikitakan': '1.34'
-    },
+        },
     'tikitakan - soyboysxp': {
         '1x2. 1 map. Tikitakan': '1.26',
         '1x2. 1 map. soyboysxP': '3.66',
         '1x2. Tikitakan': '1.26',
         '1x2. soyboysxP': '3.72'
-    },
+        },
     'tyloo - beyond': {
         '. ': '',
         '1x2. 1 map. Beyond': '3.195',
@@ -2809,7 +2809,7 @@ bets = {
         'Win In Round. 1 map. Beyond Will Win In Round 16': '1.98',
         'Win In Round. 1 map. Tyloo Will Win In Round 1': '1.78',
         'Win In Round. 1 map. Tyloo Will Win In Round 16': '1.77'
-    },
+        },
     'tyloo - big time regal gaming': {
         '1x2. 1 map. Big Time Regal Gaming': '3.36',
         '1x2. 1 map. Tyloo': '1.3',
@@ -2817,7 +2817,7 @@ bets = {
         '1x2. 2 map. Tyloo': '1.3',
         '1x2. Big Time Regal Gaming': '4.36',
         '1x2. Tyloo': '1.2'
-    },
+        },
     'under 21 - recon 5': {
         '1x2. 1 map. Recon 5': '2.01',
         '1x2. 1 map. Under 21': '1.75',
@@ -2837,7 +2837,7 @@ bets = {
         'Win In Round. 1 map. Recon 5 Will Win In Round 16': '1.89',
         'Win In Round. 1 map. Under 21 Will Win In Round 1': '1.83',
         'Win In Round. 1 map. Under 21 Will Win In Round 16': '1.85'
-    },
+        },
     'vici gaming - lucid dream': {
         '1x2. 1 map. Lucid Dream': '2.505',
         '1x2. 1 map. Vici Gaming': '1.496',
@@ -2913,7 +2913,7 @@ bets = {
         'Win In Round. 1 map. Vici Gaming Will Win In Round 1': '1.81',
         'Win In Round. 1 map. Vici Gaming Will Win In Round 16': '1.81',
         'Win In Round. 2 map. ': ''
-    },
+        },
     'vici gaming - tiger': {
         '1x2. 1 map. Tiger': '2.64',
         '1x2. 1 map. Vici Gaming': '1.45',
@@ -2921,7 +2921,7 @@ bets = {
         '1x2. 2 map. Vici Gaming': '1.44',
         '1x2. Tiger': '2.975',
         '1x2. Vici Gaming': '1.375'
-    },
+        },
     'virtus.pro - 1win': {
         '. ': '',
         '1x2. 1 map. 1WIN': '4.4',
@@ -3007,19 +3007,19 @@ bets = {
         'Win In Round. 1 map. 1WIN Will Win In Round 16': '2.06',
         'Win In Round. 1 map. Virtus.pro Will Win In Round 1': '1.71',
         'Win In Round. 1 map. Virtus.pro Will Win In Round 16': '1.71'
-    },
+        },
     'warthox - one one': {
         '1x2. 1 map. One One': '5.05',
         '1x2. 1 map. Warthox': '1.15',
         '1x2. One One': '5',
         '1x2. Warthox': '1.16'
-    },
+        },
     'wild multigaming - bekescsabai e-sport egyesulet': {
         '1x2. 1 map. Bekescsabai E-sport Egyesulet': '3.36',
         '1x2. 1 map. WiLD MultiGaming': '1.3',
         '1x2. Bekescsabai E-sport Egyesulet': '3.72',
         '1x2. WiLD MultiGaming': '1.2'
-    },
+        },
     'winstrike - espada': {
         '. ': '',
         '1x2. 1 map. Espada': '2.23',
@@ -3106,7 +3106,7 @@ bets = {
         'Win In Round. 1 map. Espada Will Win In Round 16': '1.91',
         'Win In Round. 1 map. Winstrike Will Win In Round 1': '1.82',
         'Win In Round. 1 map. Winstrike Will Win In Round 16': '1.83'
-    },
+        },
     'winstrike - natus vincere junior': {
         '. ': '',
         '1x2. 1 map. Natus Vincere Junior': '3.06',
@@ -3169,13 +3169,13 @@ bets = {
         'Win In Round. 1 map. Natus Vincere Junior Will Win In Round 16': '1.97',
         'Win In Round. 1 map. Winstrike Will Win In Round 1': '1.79',
         'Win In Round. 1 map. Winstrike Will Win In Round 16': '1.78'
-    },
+        },
     'x6tence - atlando esports': {
         '1x2. 1 map. Atlando Esports': '3.42',
         '1x2. 1 map. x6tence': '1.29',
         '1x2. Atlando Esports': '3.46',
         '1x2. x6tence': '1.295'
-    },
+        },
     'yeah! - triumph': {
         '1x2. 1 map. Triumph': '1.54',
         '1x2. 1 map. YeaH!': '2.4',
@@ -3197,7 +3197,7 @@ bets = {
         'Win In Round. 1 map. Triumph Will Win In Round 16': '1.81',
         'Win In Round. 1 map. YeaH! Will Win In Round 1': '1.92',
         'Win In Round. 1 map. YeaH! Will Win In Round 16': '1.93'
-    },
+        },
     'zero.tsg - jijiehao': {
         '1x2. 1 map. JiJieHao': '1.56',
         '1x2. 1 map. Zero.TSG': '2.352',
@@ -3205,5 +3205,5 @@ bets = {
         '1x2. 2 map. Zero.TSG': '2.352',
         '1x2. JiJieHao': '1.47',
         '1x2. Zero.TSG': '2.62'
+        }
     }
-}

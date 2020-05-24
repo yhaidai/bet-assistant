@@ -10,15 +10,14 @@ from syntax_formatters.syntax_formatter import SyntaxFormatter
 
 
 class OneXBetScraper(AbstractScraper):
-    name = '1xBet'
     base_url = 'https://1x-bet.com/en/'
     sport_names = {
         'csgo': 'CSGO',
         'dota 2': 'Dota-2',
-    }
+        }
     menu = {
         'csgo': 'line/Esports/'
-    }
+        }
 
     def get_bets(self, sport_type):
         bets = {}
@@ -32,7 +31,6 @@ class OneXBetScraper(AbstractScraper):
             bets.update(OneXBetScraper._get_bets(OneXBetScraper.base_url + url))
 
         formatter = OneXBetSyntaxFormatter(bets)
-        Page.driver.quit()
         return formatter.bets
 
     @staticmethod
@@ -45,7 +43,7 @@ class OneXBetScraper(AbstractScraper):
         page = Page(OneXBetScraper.base_url)
         sport = page.driver.find_element_by_css_selector('a[href^="' + OneXBetScraper.menu[sport_type] + '"]')
         page.click(sport)
-        time.sleep(2)
+        time.sleep(1)
 
         menu = page.driver.find_element_by_class_name('liga_menu')
 
@@ -96,7 +94,10 @@ class OneXBetScraper(AbstractScraper):
         page = Page(match_url)
         OneXBetScraper.open_bets()
 
+        # print(match_url)
         match_title = OneXBetScraper._get_match_title()
+        if not match_title:
+            return bets
         bets[match_title] = {}
 
         bet_groups = page.driver.find_elements_by_class_name('bet_group')
@@ -115,8 +116,11 @@ class OneXBetScraper(AbstractScraper):
     @staticmethod
     def _get_match_title():
         team_names = [team.text for team in Page.driver.find_elements_by_class_name('team')]
-        if len(team_names) == 0:
-            return Page.driver.find_element_by_class_name('name')
+        if not team_names:
+            try:
+                return Page.driver.find_element_by_class_name('name')
+            except NoSuchElementException:
+                return None
         return SyntaxFormatter.compile_match_title(*team_names)
 
     @staticmethod

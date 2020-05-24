@@ -20,7 +20,7 @@ bets = {
         'Win of the 1st team': '1.80',
         'Win of the 2nd team': '1.95',
         'gen.g Handicap value. +1.5. Handicap coefficient': '1.29'
-    },
+        },
     'aa - swedish canadians': {
         '1-st map: Total. 26.5. Over': '2.05',
         '1-st map: Total. 26.5. Under': '1.72',
@@ -28,7 +28,7 @@ bets = {
         '1-st map: swedish canadians Handicap value. –3.5. Handicap coefficient': '1.80',
         'Win of the 1st team': '2.80',
         'Win of the 2nd team': '1.40'
-    },
+        },
     'agf - wygers': {'Win of the 1st team': '1.27', 'Win of the 2nd team': '3.55'},
     'agf - x6tence': {
         '1-st map: Total. 26.5. Over': '2.12',
@@ -37,7 +37,7 @@ bets = {
         '1-st map: x6tence Handicap value. +4.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '1.30',
         'Win of the 2nd team': '3.30'
-    },
+        },
     'apeks - ldlc': {
         '1-st map: Total. 26.5. Over': '1.95',
         '1-st map: Total. 26.5. Under': '1.80',
@@ -45,7 +45,7 @@ bets = {
         '1-st map: ldlc Handicap value. +2.5. Handicap coefficient': '2.00',
         'Win of the 1st team': '1.55',
         'Win of the 2nd team': '2.35'
-    },
+        },
     'astralis - g2': {
         '1-st map: Total. 23.5. Over': '1.28',
         '1-st map: Total. 23.5. Under': '3.45',
@@ -67,7 +67,7 @@ bets = {
         'Win of the 2nd team': '2.48',
         'astralis Handicap value. –1.5. Handicap coefficient': '2.55',
         'g2 Handicap value. +1.5. Handicap coefficient': '1.47'
-    },
+        },
     'avant - justice': {
         '1-st map: Total. 23.5. Over': '1.80',
         '1-st map: Total. 23.5. Under': '1.95',
@@ -75,11 +75,11 @@ bets = {
         '1-st map: justice Handicap value. +8.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '1.08',
         'Win of the 2nd team': '7.00'
-    },
+        },
     'begrip - gobananas': {
         'Win of the 1st team': '1.55',
         'Win of the 2nd team': '2.35'
-    },
+        },
     'big - complexity': {
         '1-st map: Total. 23.5. Over': '1.30',
         '1-st map: Total. 23.5. Under': '3.30',
@@ -101,7 +101,7 @@ bets = {
         'Win of the 2nd team': '1.60',
         'big Handicap value. +1.5. Handicap coefficient': '1.38',
         'complexity Handicap value. –1.5. Handicap coefficient': '2.90'
-    },
+        },
     'big frames - keep the comms up': {
         '1-st map: Total. 26.5. Over': '1.87',
         '1-st map: Total. 26.5. Under': '1.87',
@@ -109,15 +109,15 @@ bets = {
         '1-st map: keep the comms up Handicap value. –2.5. Handicap coefficient': '2.05',
         'Win of the 1st team': '1.95',
         'Win of the 2nd team': '1.80'
-    },
+        },
     'brunolopes - lyngby vikings': {
         'Win of the 1st team': '4.50',
         'Win of the 2nd team': '1.18'
-    },
+        },
     'brute - nerdrage': {
         'Win of the 1st team': '1.50',
         'Win of the 2nd team': '2.50'
-    },
+        },
     'c0ntact - syman': {
         '1-st map: Total. 25.5. Over': '1.55',
         '1-st map: Total. 25.5. Under': '2.35',
@@ -133,7 +133,7 @@ bets = {
         '1-st map: syman Handicap value. –2.5. Handicap coefficient': '2.48',
         'Win of the 1st team': '1.68',
         'Win of the 2nd team': '2.11'
-    },
+        },
     'chaos - buffdaddys paypal': {
         '1-st map: Total. 23.5. Over': '1.87',
         '1-st map: Total. 23.5. Under': '1.87',
@@ -141,7 +141,7 @@ bets = {
         '1-st map: chaos Handicap value. –8.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '1.08',
         'Win of the 2nd team': '7.00'
-    },
+        },
     'chaos - way 2 french': {
         '1-st map: Total. 23.5. Over': '1.87',
         '1-st map: Total. 23.5. Under': '1.87',
@@ -149,7 +149,7 @@ bets = {
         '1-st map: way 2 french Handicap value. +8.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '1.07',
         'Win of the 2nd team': '8.00'
-    },
+        },
     'cleantmix - izako boars': {
         '1-st map: Total. 26.5. Over': '1.97',
         '1-st map: Total. 26.5. Under': '1.78',
@@ -157,7 +157,7 @@ bets = {
         '1-st map: izako boars Handicap value. –3.5. Handicap coefficient': '1.92',
         'Win of the 1st team': '2.50',
         'Win of the 2nd team': '1.50'
-    },
+        },
     'cr4zy - big academy': {
         '1-st map: Total. 26.5. Over': '1.92',
         '1-st map: Total. 26.5. Under': '1.82',
@@ -165,7 +165,7 @@ bets = {
         '1-st map: cr4zy Handicap value. –2.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '1.65',
         'Win of the 2nd team': '2.15'
-    },
+        },
     'endpoint - nordavind': {
         '1-st map: Total. 25.5. Over': '1.53',
         '1-st map: Total. 25.5. Under': '2.40',
@@ -187,7 +187,7 @@ bets = {
         'Win of the 2nd team': '2.00',
         'endpoint Handicap value. –1.5. Handicap coefficient': '3.30',
         'nordavind Handicap value. +1.5. Handicap coefficient': '1.30'
-    },
+        },
     'endpoint - skade': {
         '1-st map: Total. 25.5. Over': '1.60',
         '1-st map: Total. 25.5. Under': '2.25',
@@ -203,11 +203,11 @@ bets = {
         '1-st map: skade Handicap value. +4.5. Handicap coefficient': '1.50',
         'Win of the 1st team': '1.60',
         'Win of the 2nd team': '2.25'
-    },
+        },
     'evidence - redemption poa': {
         'Win of the 1st team': '3.00',
         'Win of the 2nd team': '1.36'
-    },
+        },
     'evil geniuses - cloud9': {
         '1-st map: Total. 25.5. Over': '1.70',
         '1-st map: Total. 25.5. Under': '2.08',
@@ -229,12 +229,12 @@ bets = {
         'Win of the 2nd team': '3.30',
         'cloud9 Handicap value. +1.5. Handicap coefficient': '1.75',
         'evil geniuses Handicap value. –1.5. Handicap coefficient': '2.00'
-    },
+        },
     'exploit - baecon gg': {
         'Away win': '2.25',
         'Draw': '2.00',
         'Home win': '6.00'
-    },
+        },
     'faze - godsent': {
         '1-st map: Total. 25.5. Over': '1.85',
         '1-st map: Total. 25.5. Under': '1.90',
@@ -256,15 +256,15 @@ bets = {
         'Win of the 2nd team': '5.00',
         'faze Handicap value. –1.5. Handicap coefficient': '1.60',
         'godsent Handicap value. +1.5. Handicap coefficient': '2.25'
-    },
+        },
     'fightclub - vinkelparty': {
         'Win of the 1st team': '1.60',
         'Win of the 2nd team': '2.25'
-    },
+        },
     'flisk - lilmix': {
         'Win of the 1st team': '5.00',
         'Win of the 2nd team': '1.15'
-    },
+        },
     'fnatic - spirit': {
         '1-st map: Total. 25.5. Over': '1.68',
         '1-st map: Total. 25.5. Under': '2.10',
@@ -286,12 +286,12 @@ bets = {
         'Win of the 2nd team': '3.05',
         'fnatic Handicap value. –1.5. Handicap coefficient': '2.10',
         'spirit Handicap value. +1.5. Handicap coefficient': '1.68'
-    },
+        },
     'for the win - gtz bulls': {
         'Away win': '6.00',
         'Draw': '2.00',
         'Home win': '2.25'
-    },
+        },
     'forze - honoris': {
         '1-st map: Total. 25.5. Over': '1.95',
         '1-st map: Total. 25.5. Under': '1.80',
@@ -307,7 +307,7 @@ bets = {
         '1-st map: honoris Handicap value. +6.5. Handicap coefficient': '1.68',
         'Win of the 1st team': '1.20',
         'Win of the 2nd team': '4.20'
-    },
+        },
     'forze - natus vincere junior': {
         '1-st map: Total. 25.5. Over': '1.70',
         '1-st map: Total. 25.5. Under': '2.08',
@@ -329,11 +329,11 @@ bets = {
         'Win of the 2nd team': '3.70',
         'forze Handicap value. –1.5. Handicap coefficient': '1.87',
         'natus vincere junior Handicap value. +1.5. Handicap coefficient': '1.87'
-    },
+        },
     'fwrd - sector one': {
         'Win of the 1st team': '1.36',
         'Win of the 2nd team': '3.00'
-    },
+        },
     'gambit youngsters - heroic': {
         '1-st map: Total. 25.5. Over': '1.65',
         '1-st map: Total. 25.5. Under': '2.15',
@@ -355,7 +355,7 @@ bets = {
         'Win of the 2nd team': '1.40',
         'gambit youngsters Handicap value. +1.5. Handicap coefficient': '1.60',
         'heroic Handicap value. –1.5. Handicap coefficient': '2.25'
-    },
+        },
     'gambit youngsters - pro100': {
         '1-st map: Total. 26.5. Over': '1.85',
         '1-st map: Total. 26.5. Under': '1.89',
@@ -369,27 +369,27 @@ bets = {
         'Win of the 2nd team': '2.00',
         'gambit youngsters Handicap value. –1.5. Handicap coefficient': '3.45',
         'pro100 Handicap value. +1.5. Handicap coefficient': '1.28'
-    },
+        },
     'game fist - mcon': {
         'Win of the 1st team': '1.30',
         'Win of the 2nd team': '3.30'
-    },
+        },
     'genesis - budapest five': {
         'Win of the 1st team': '1.68',
         'Win of the 2nd team': '2.11'
-    },
+        },
     'giants fe - x6tence black': {
         'Win of the 1st team': '3.30',
         'Win of the 2nd team': '1.30'
-    },
+        },
     'gobananas - lotb': {
         'Win of the 1st team': '1.70',
         'Win of the 2nd team': '2.08'
-    },
+        },
     'goodtimes - touch the crown': {
         'Win of the 1st team': '3.05',
         'Win of the 2nd team': '1.35'
-    },
+        },
     'ground zero - pc419': {
         '1-st map: Total. 24.5. Over': '1.87',
         '1-st map: Total. 24.5. Under': '1.87',
@@ -397,7 +397,7 @@ bets = {
         '1-st map: pc419 Handicap value. +6.5. Handicap coefficient': '2.01',
         'Win of the 1st team': '1.15',
         'Win of the 2nd team': '5.00'
-    },
+        },
     'havu - alternate attax': {
         '1-st map: Total. 25.5. Over': '1.60',
         '1-st map: Total. 25.5. Under': '2.25',
@@ -419,7 +419,7 @@ bets = {
         'Win of the 2nd team': '2.50',
         'alternate attax Handicap value. +1.5. Handicap coefficient': '1.50',
         'havu Handicap value. –1.5. Handicap coefficient': '2.50'
-    },
+        },
     'heroic - winstrike': {
         '1-st map: Total. 25.5. Over': '1.65',
         '1-st map: Total. 25.5. Under': '2.15',
@@ -435,12 +435,12 @@ bets = {
         '1-st map: winstrike Handicap value. +4.5. Handicap coefficient': '1.60',
         'Win of the 1st team': '1.50',
         'Win of the 2nd team': '2.50'
-    },
+        },
     'incubus - loto': {'Away win': '1.45', 'Draw': '3.30', 'Home win': '8.00'},
     'invictus gaming - lynn vision': {
         'Win of the 1st team': '1.50',
         'Win of the 2nd team': '2.50'
-    },
+        },
     'japaleno - hard legion': {
         '1-st map: Total. 26.5. Over': '1.87',
         '1-st map: Total. 26.5. Under': '1.87',
@@ -454,7 +454,7 @@ bets = {
         'Win of the 2nd team': '1.70',
         'hard legion Handicap value. –1.5. Handicap coefficient': '3.25',
         'japaleno Handicap value. +1.5. Handicap coefficient': '1.31'
-    },
+        },
     'keep the comms up - buffdaddys paypal': {
         '1-st map: Total. 26.5. Over': '1.92',
         '1-st map: Total. 26.5. Under': '1.82',
@@ -462,7 +462,7 @@ bets = {
         '1-st map: keep the comms up Handicap value. +2.5. Handicap coefficient': '1.95',
         'Win of the 1st team': '2.25',
         'Win of the 2nd team': '1.60'
-    },
+        },
     'keep the comms up - morning light': {
         '1-st map: Total. 26.5. Over': '1.92',
         '1-st map: Total. 26.5. Under': '1.82',
@@ -470,12 +470,12 @@ bets = {
         '1-st map: morning light Handicap value. –2.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '2.15',
         'Win of the 2nd team': '1.65'
-    },
+        },
     'kmk - lvlup': {'Win of the 1st team': '1.18', 'Win of the 2nd team': '4.50'},
     'kpi - tenerife titans': {
         'Win of the 1st team': '1.65',
         'Win of the 2nd team': '2.15'
-    },
+        },
     'liquid - furia': {
         '1-st map: Total. 23.5. Over': '1.23',
         '1-st map: Total. 23.5. Under': '3.90',
@@ -497,7 +497,7 @@ bets = {
         'Win of the 2nd team': '1.87',
         'furia Handicap value. +1.5. Handicap coefficient': '1.28',
         'liquid Handicap value. –1.5. Handicap coefficient': '3.45'
-    },
+        },
     'liquid - mibr': {
         '1-st map: Total. 22.5. Over': '1.22',
         '1-st map: Total. 22.5. Under': '4.00',
@@ -519,15 +519,15 @@ bets = {
         'Win of the 2nd team': '3.30',
         'liquid Handicap value. –1.5. Handicap coefficient': '1.95',
         'mibr Handicap value. +1.5. Handicap coefficient': '1.80'
-    },
+        },
     'log - sorby flames': {
         'Win of the 1st team': '3.00',
         'Win of the 2nd team': '1.36'
-    },
+        },
     'lyngby vikings - bartosze': {
         'Win of the 1st team': '1.15',
         'Win of the 2nd team': '5.00'
-    },
+        },
     'mad lions - big': {
         '1-st map: Total. 25.5. Over': '1.52',
         '1-st map: Total. 25.5. Under': '2.42',
@@ -549,7 +549,7 @@ bets = {
         'Win of the 2nd team': '2.15',
         'big Handicap value. +1.5. Handicap coefficient': '1.35',
         'mad lions Handicap value. –1.5. Handicap coefficient': '3.05'
-    },
+        },
     'mad lions - complexity': {
         '1-st map: Total. 23.5. Over': '1.27',
         '1-st map: Total. 23.5. Under': '3.55',
@@ -571,7 +571,7 @@ bets = {
         'Win of the 2nd team': '2.00',
         'complexity Handicap value. +1.5. Handicap coefficient': '1.30',
         'mad lions Handicap value. –1.5. Handicap coefficient': '3.30'
-    },
+        },
     'mibr - chaos': {
         '1-st map: Total. 23.5. Over': '1.42',
         '1-st map: Total. 23.5. Under': '2.75',
@@ -593,7 +593,7 @@ bets = {
         'Win of the 2nd team': '4.20',
         'chaos Handicap value. +1.5. Handicap coefficient': '2.08',
         'mibr Handicap value. –1.5. Handicap coefficient': '1.70'
-    },
+        },
     'mibr - furia': {
         '1-st map: Total. 25.5. Over': '1.60',
         '1-st map: Total. 25.5. Under': '2.25',
@@ -615,7 +615,7 @@ bets = {
         'Win of the 2nd team': '1.43',
         'furia Handicap value. –1.5. Handicap coefficient': '2.50',
         'mibr Handicap value. +1.5. Handicap coefficient': '1.50'
-    },
+        },
     'mousesports - big': {
         '1-st map: Total. 23.5. Over': '1.33',
         '1-st map: Total. 23.5. Under': '3.15',
@@ -637,7 +637,7 @@ bets = {
         'Win of the 2nd team': '3.30',
         'big Handicap value. +1.5. Handicap coefficient': '1.68',
         'mousesports Handicap value. –1.5. Handicap coefficient': '2.10'
-    },
+        },
     'mousesports - complexity': {
         '1-st map: Total. 25.5. Over': '1.65',
         '1-st map: Total. 25.5. Under': '2.15',
@@ -659,7 +659,7 @@ bets = {
         'Win of the 2nd team': '2.80',
         'complexity Handicap value. +1.5. Handicap coefficient': '1.60',
         'mousesports Handicap value. –1.5. Handicap coefficient': '2.25'
-    },
+        },
     'mousesports - mad lions': {
         '1-st map: Total. 23.5. Over': '1.30',
         '1-st map: Total. 23.5. Under': '3.30',
@@ -681,15 +681,15 @@ bets = {
         'Win of the 2nd team': '2.65',
         'mad lions Handicap value. +1.5. Handicap coefficient': '1.53',
         'mousesports Handicap value. –1.5. Handicap coefficient': '2.40'
-    },
+        },
     'movistar riders - giants': {
         'Win of the 1st team': '1.08',
         'Win of the 2nd team': '7.00'
-    },
+        },
     'mygame - madvillainy': {
         'Win of the 1st team': '1.36',
         'Win of the 2nd team': '3.00'
-    },
+        },
     'mythic - big frames': {
         '1-st map: Total. 26.5. Over': '2.12',
         '1-st map: Total. 26.5. Under': '1.67',
@@ -697,7 +697,7 @@ bets = {
         '1-st map: mythic Handicap value. –4.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '1.30',
         'Win of the 2nd team': '3.30'
-    },
+        },
     'natus vincere - ence': {
         '1-st map: Total. 25.5. Over': '1.65',
         '1-st map: Total. 25.5. Under': '2.15',
@@ -719,7 +719,7 @@ bets = {
         'Win of the 2nd team': '3.00',
         'ence Handicap value. +1.5. Handicap coefficient': '1.60',
         'natus vincere Handicap value. –1.5. Handicap coefficient': '2.25'
-    },
+        },
     'new england whalers - polar ace': {
         '1-st map: Total. 26.5. Over': '1.92',
         '1-st map: Total. 26.5. Under': '1.82',
@@ -727,7 +727,7 @@ bets = {
         '1-st map: polar ace Handicap value. +2.5. Handicap coefficient': '1.95',
         'Win of the 1st team': '1.60',
         'Win of the 2nd team': '2.25'
-    },
+        },
     'new england whalers - thunder logic': {
         '1-st map: Total. 26.5. Over': '1.92',
         '1-st map: Total. 26.5. Under': '1.82',
@@ -735,11 +735,11 @@ bets = {
         '1-st map: thunder logic Handicap value. +2.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '1.65',
         'Win of the 2nd team': '2.15'
-    },
+        },
     'nicecactus - adaptation': {
         'Win of the 1st team': '2.50',
         'Win of the 2nd team': '1.50'
-    },
+        },
     'north - heroic': {
         '1-st map: Total. 23.5. Over': '1.25',
         '1-st map: Total. 23.5. Under': '3.70',
@@ -761,11 +761,11 @@ bets = {
         'Win of the 2nd team': '1.95',
         'heroic Handicap value. +1.5. Handicap coefficient': '1.29',
         'north Handicap value. –1.5. Handicap coefficient': '3.40'
-    },
+        },
     'onethree - d13': {
         'Win of the 1st team': '1.36',
         'Win of the 2nd team': '3.00'
-    },
+        },
     'order - avant': {
         '1-st map: Total. 25.5. Over': '1.60',
         '1-st map: Total. 25.5. Under': '2.25',
@@ -787,7 +787,7 @@ bets = {
         'Win of the 2nd team': '1.50',
         'avant Handicap value. –1.5. Handicap coefficient': '2.50',
         'order Handicap value. +1.5. Handicap coefficient': '1.50'
-    },
+        },
     'order - ground zero': {
         '1-st map: Total. 26.5. Over': '2.20',
         '1-st map: Total. 26.5. Under': '1.63',
@@ -795,7 +795,7 @@ bets = {
         '1-st map: order Handicap value. –4.5. Handicap coefficient': '1.75',
         'Win of the 1st team': '1.25',
         'Win of the 2nd team': '3.75'
-    },
+        },
     'order - rooster': {
         '1-st map: Total. 26.5. Over': '2.12',
         '1-st map: Total. 26.5. Under': '1.67',
@@ -803,7 +803,7 @@ bets = {
         '1-st map: rooster Handicap value. +4.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '1.30',
         'Win of the 2nd team': '3.30'
-    },
+        },
     'overt - paradox': {
         '1-st map: Total. 26.5. Over': '2.12',
         '1-st map: Total. 26.5. Under': '1.67',
@@ -811,7 +811,7 @@ bets = {
         '1-st map: paradox Handicap value. –4.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '3.30',
         'Win of the 2nd team': '1.30'
-    },
+        },
     'paradox - twa': {
         '1-st map: Total. 26.5. Over': '1.92',
         '1-st map: Total. 26.5. Under': '1.82',
@@ -819,11 +819,11 @@ bets = {
         '1-st map: twa Handicap value. +2.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '1.65',
         'Win of the 2nd team': '2.15'
-    },
+        },
     'prodigy - imperial': {
         'Win of the 1st team': '4.50',
         'Win of the 2nd team': '1.18'
-    },
+        },
     'rbg - under 21': {
         '1-st map: Total. 25.5. Over': '1.95',
         '1-st map: Total. 25.5. Under': '1.80',
@@ -831,7 +831,7 @@ bets = {
         '1-st map: under 21 Handicap value. –5.5. Handicap coefficient': '1.80',
         'Win of the 1st team': '4.20',
         'Win of the 2nd team': '1.20'
-    },
+        },
     'renegades - chiefs': {
         '1-st map: Total. 25.5. Over': '1.85',
         '1-st map: Total. 25.5. Under': '1.90',
@@ -853,19 +853,19 @@ bets = {
         'Win of the 2nd team': '5.00',
         'chiefs Handicap value. +1.5. Handicap coefficient': '2.35',
         'renegades Handicap value. –1.5. Handicap coefficient': '1.55'
-    },
+        },
     's2v - heretics': {
         'Win of the 1st team': '2.75',
         'Win of the 2nd team': '1.42'
-    },
+        },
     'salamander - giwu': {
         'Win of the 1st team': '1.12',
         'Win of the 2nd team': '5.55'
-    },
+        },
     'saw - cream real betis': {
         'Win of the 1st team': '1.18',
         'Win of the 2nd team': '4.50'
-    },
+        },
     'saw - kpi': {'Win of the 1st team': '1.25', 'Win of the 2nd team': '3.70'},
     'secret - nemiga': {
         '1-st map: Total. 26.5. Over': '1.82',
@@ -880,7 +880,7 @@ bets = {
         'Win of the 2nd team': '1.87',
         'nemiga Handicap value. +1.5. Handicap coefficient': '1.28',
         'secret Handicap value. –1.5. Handicap coefficient': '3.45'
-    },
+        },
     'skade - sinners': {
         '1-st map: Total. 26.5. Over': '2.05',
         '1-st map: Total. 26.5. Under': '1.72',
@@ -894,7 +894,7 @@ bets = {
         'Win of the 2nd team': '3.30',
         'sinners Handicap value. +1.5. Handicap coefficient': '1.77',
         'skade Handicap value. –1.5. Handicap coefficient': '1.97'
-    },
+        },
     'skyfire - chiefs': {
         '1-st map: Total. 25.5. Over': '1.95',
         '1-st map: Total. 25.5. Under': '1.80',
@@ -902,11 +902,11 @@ bets = {
         '1-st map: skyfire Handicap value. +5.5. Handicap coefficient': '1.87',
         'Win of the 1st team': '4.20',
         'Win of the 2nd team': '1.20'
-    },
+        },
     'sons of lennart - prima': {
         'Win of the 1st team': '2.65',
         'Win of the 2nd team': '1.45'
-    },
+        },
     'sprout - excellency': {
         '1-st map: Total. 25.5. Over': '1.85',
         '1-st map: Total. 25.5. Under': '1.89',
@@ -920,7 +920,7 @@ bets = {
         'Win of the 2nd team': '4.70',
         'excellency Handicap value. +1.5. Handicap coefficient': '2.31',
         'sprout Handicap value. –1.5. Handicap coefficient': '1.57'
-    },
+        },
     'syman - nemiga': {
         '1-st map: Total. 25.5. Over': '1.57',
         '1-st map: Total. 25.5. Under': '2.30',
@@ -942,11 +942,11 @@ bets = {
         'Win of the 2nd team': '1.55',
         'nemiga Handicap value. –1.5. Handicap coefficient': '2.70',
         'syman Handicap value. +1.5. Handicap coefficient': '1.43'
-    },
+        },
     'tikitakan - soyboysxp': {
         'Win of the 1st team': '1.25',
         'Win of the 2nd team': '3.70'
-    },
+        },
     'tyloo - beyond': {
         '1-st map: Total. 25.5. Over': '1.80',
         '1-st map: Total. 25.5. Under': '1.95',
@@ -968,7 +968,7 @@ bets = {
         'Win of the 2nd team': '4.20',
         'beyond Handicap value. +1.5. Handicap coefficient': '2.00',
         'tyloo Handicap value. –1.5. Handicap coefficient': '1.75'
-    },
+        },
     'tyloo - btrg': {'Win of the 1st team': '1.20', 'Win of the 2nd team': '4.20'},
     'under 21 - recon 5': {
         '1-st map: Total. 26.5. Over': '1.82',
@@ -977,7 +977,7 @@ bets = {
         '1-st map: under 21 Handicap value. –2.5. Handicap coefficient': '2.12',
         'Win of the 1st team': '1.87',
         'Win of the 2nd team': '1.87'
-    },
+        },
     'vici - tiger': {'Win of the 1st team': '1.50', 'Win of the 2nd team': '2.50'},
     'vici gaming - lucid dream': {
         '1-st map: Total. 25.5. Over': '1.68',
@@ -1000,7 +1000,7 @@ bets = {
         'Win of the 2nd team': '3.05',
         'lucid dream Handicap value. +1.5. Handicap coefficient': '1.68',
         'vici gaming Handicap value. –1.5. Handicap coefficient': '2.10'
-    },
+        },
     'virtus.pro - 1win': {
         '1-st map: 1win Handicap value. +4.5. Handicap coefficient': '2.25',
         '1-st map: 1win Handicap value. +5.5. Handicap coefficient': '1.95',
@@ -1022,7 +1022,7 @@ bets = {
         'Win of the 1st team': '1.10',
         'Win of the 2nd team': '6.25',
         'virtus.pro Handicap value. –1.5. Handicap coefficient': '1.50'
-    },
+        },
     'vitality - nip': {
         '1-st map: Total. 25.5. Over': '1.50',
         '1-st map: Total. 25.5. Under': '2.50',
@@ -1044,15 +1044,15 @@ bets = {
         'Win of the 2nd team': '1.87',
         'nip Handicap value. +1.5. Handicap coefficient': '1.27',
         'vitality Handicap value. –1.5. Handicap coefficient': '3.55'
-    },
+        },
     'warthox - one one': {
         'Win of the 1st team': '1.15',
         'Win of the 2nd team': '5.00'
-    },
+        },
     'wild mg - bekescsabai': {
         'Win of the 1st team': '1.25',
         'Win of the 2nd team': '3.75'
-    },
+        },
     'winstrike - espada': {
         '1-st map: Total. 25.5. Over': '1.60',
         '1-st map: Total. 25.5. Under': '2.25',
@@ -1074,7 +1074,7 @@ bets = {
         'Win of the 2nd team': '2.50',
         'espada Handicap value. +1.5. Handicap coefficient': '1.50',
         'winstrike Handicap value. –1.5. Handicap coefficient': '2.50'
-    },
+        },
     'winstrike - natus vincere junior': {
         '1-st map: Total. 26.5. Over': '2.05',
         '1-st map: Total. 26.5. Under': '1.72',
@@ -1088,9 +1088,9 @@ bets = {
         'Win of the 2nd team': '3.30',
         'natus vincere junior Handicap value. +1.5. Handicap coefficient': '1.80',
         'winstrike Handicap value. –1.5. Handicap coefficient': '1.95'
-    },
+        },
     'x6tence - atlando': {
         'Win of the 1st team': '1.35',
         'Win of the 2nd team': '3.05'
+        }
     }
-}

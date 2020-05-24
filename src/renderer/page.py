@@ -13,7 +13,6 @@ class Page:
     # chrome_options.add_argument('--headless')
     chrome_options.add_argument("--window-size=1280,800")
     driver = webdriver.Chrome(chromedriver_path, chrome_options=chrome_options)
-    driver.maximize_window()
 
     def __init__(self, url):
         """
@@ -35,11 +34,19 @@ class Page:
 
     @staticmethod
     def change_driver():
+        """
+        Change chromedriver to a new instance
+        """
         Page.driver = webdriver.Chrome(Page.chromedriver_path,
                                        chrome_options=Page.chrome_options)
-        Page.driver.maximize_window()
 
     def start_timer(self, timeout):
+        """
+        After a given timeout shuts down previous driver and changes it to a new one
+
+        :param timeout: timeout in secs after which driver will be changed
+        :type timeout: int
+        """
         start_time = time.time()
         while time.time() - start_time < timeout:
             if self.shutdown:
@@ -51,4 +58,10 @@ class Page:
 
     @staticmethod
     def click(element):
+        """
+        Clicks on the given element even if its not visible in the browser window
+
+        :param element: element to click on
+        :type element: selenium.WebElement
+        """
         Page.driver.execute_script("arguments[0].click();", element)

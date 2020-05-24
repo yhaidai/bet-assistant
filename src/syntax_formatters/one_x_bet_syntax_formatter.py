@@ -5,18 +5,25 @@ from scrapers.sample_data import one_x_bet
 
 
 class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
+    name = '1xbet'
+    invalid_bet_titles = ['. ', '']
+
     def __init__(self, bets):
         super().__init__(bets)
 
-    def apply_unified_syntax_formatting(self, bets):
+    def _apply_unified_syntax_formatting(self, bets):
         bets = self._update(bets, self._format_maps)
         bets = self._update(bets, self._format_total)
         bets = self._update(bets, self._format_handicap)
         bets = self._update(bets, self._format_win_in_round)
         bets = self._update(bets, self._format_team)
         bets = self._update(bets, self._format_correct_score)
+        bets = self._update(bets, self._format_first_frag)
         bets = self._update(bets, self._format_1x2)
+        bets = self._update(bets, self._format_1_2)
         bets = self._update(bets, self._format_uncommon_chars)
+
+        return bets
 
     def _format_maps(self):
         formatted_title = self.bet_title.lower()
@@ -42,6 +49,8 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
             formatted_title = formatted_title.replace('total maps. ', '', 1)
             formatted_title = formatted_title.replace('total maps handicap. ', '', 1)
             formatted_title = formatted_title.replace('total maps even/odd. ', '', 1)
+            if ' - even' in formatted_title or ' - odd' in formatted_title:
+                formatted_title = formatted_title.replace('-', '—', 1)
 
             # formatted_title = formatted_title.replace('Total Maps Even/Odd. ', '', 1)
             formatted_title = formatted_title.replace('maps ', '', 1)
@@ -57,11 +66,30 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
     def _format_correct_score(self):
         return self.bet_title.lower().replace('correct score. ', '', 1).replace(' - yes', '', 1)
 
+    def _format_first_frag(self):
+        formatted_title = self.bet_title.lower()
+        if 'first frag' in formatted_title:
+            formatted_title = formatted_title.replace('-', '—')
+            formatted_title = formatted_title.replace('—', '-', 2)
+
+        return formatted_title
+
     def _format_1x2(self):
         formatted_title = self.bet_title.lower()
         if '1x2' in formatted_title:
             formatted_title = formatted_title.replace('1x2. ', '', 1)
             formatted_title += ' will win'
+
+        return formatted_title
+
+    def _format_1_2(self):
+        formatted_title = self.bet_title.lower()
+        try:
+            if formatted_title[0] == '1' or '2':
+                formatted_title = formatted_title.split('. ')[1]
+                formatted_title = formatted_title.replace('team ', '', 1)
+        except IndexError:
+            pass
 
         return formatted_title
 

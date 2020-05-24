@@ -6,14 +6,18 @@ from syntax_formatter import SyntaxFormatter
 
 
 class ParimatchSyntaxFormatter(AbstractSyntaxFormatter):
+    name = 'parimatch'
+
     def __init__(self, bets):
         super().__init__(bets)
 
-    def apply_unified_syntax_formatting(self, bets):
+    def _apply_unified_syntax_formatting(self, bets):
         bets = self._update(bets, self._format_total)
         bets = self._update(bets, self._format_win_of)
         bets = self._update(bets, self._format_handicap)
         bets = self._update(bets, self._format_uncommon_chars)
+
+        return bets
 
     @staticmethod
     def _swap_substrings(text, pattern, id1, id2, separator):
@@ -69,9 +73,11 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter):
             if 'map:' in formatted_title:
                 # cut 'handicap ' out
                 formatted_title = formatted_title.replace('handicap ', '', 1)
+
                 # remove prefix
                 prefix = formatted_title[:formatted_title.find(':') + 2]
                 formatted_title = formatted_title.replace(prefix, '', 1)
+
                 # insert 'handicap '
                 formatted_title = prefix + 'handicap ' + formatted_title
             else:
@@ -81,8 +87,6 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter):
 
     def _format_uncommon_chars(self):
         formatted_title = self.bet_title.lower()
-
-        # these are different characters :)
         formatted_title = formatted_title.replace('–', '-')
 
         return formatted_title

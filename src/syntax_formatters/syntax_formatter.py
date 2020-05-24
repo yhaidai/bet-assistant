@@ -7,16 +7,6 @@ class SyntaxFormatter:
     related information scraped from the websites
     """
 
-    # sport_names = {
-    #     'counter-strike': 'csgo',
-    #     'csgo': 'csgo',
-    #     'CS:GO': 'csgo',
-    # }
-    #
-    # bet_names = {
-    #
-    # }
-
     @staticmethod
     def format_team_name(team_name):
         """
@@ -70,11 +60,3 @@ class SyntaxFormatter:
         :rtype: list<str>
         """
         return re.split(separator, match_title)
-
-    # @staticmethod
-    # def get_sport_type(url):
-    #     for name in SyntaxFormatter.sport_names.keys():
-    #         if name in url:
-    #             return SyntaxFormatter.sport_names[name]
-    #
-    #     return None
