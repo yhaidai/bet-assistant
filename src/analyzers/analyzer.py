@@ -1,8 +1,7 @@
 from pprint import pprint
 
-from one_x_bet_scraper import OneXBetScraper
-from parimatch_scraper import ParimatchScraper
-from syntax_formatters.sample_data import parimatch, one_x_bet
+from scrapers.one_x_bet_scraper import OneXBetScraper
+from scrapers.parimatch_scraper import ParimatchScraper
 
 
 class Analyzer:

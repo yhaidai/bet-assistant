@@ -2,17 +2,18 @@ import time
 from threading import Thread
 
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 class Page:
     """
     Class that represents rendered web page
     """
-    chromedriver_path = '../renderer/chromedriver_win32/chromedriver.exe'
     chrome_options = webdriver.ChromeOptions()
     # chrome_options.add_argument('--headless')
-    chrome_options.add_argument("--window-size=1280,800")
-    driver = webdriver.Chrome(chromedriver_path, chrome_options=chrome_options)
+    # chrome_options.add_argument("--window-size=1280,800")
+    # driver = webdriver.Chrome(chromedriver_path, chrome_options=chrome_options)
+    driver = webdriver.Chrome(ChromeDriverManager().install())
 
     def __init__(self, url):
         """
@@ -37,8 +38,7 @@ class Page:
         """
         Change chromedriver to a new instance
         """
-        Page.driver = webdriver.Chrome(Page.chromedriver_path,
-                                       chrome_options=Page.chrome_options)
+        Page.driver = webdriver.Chrome(ChromeDriverManager().install())
 
     def start_timer(self, timeout):
         """

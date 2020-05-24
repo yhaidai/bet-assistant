@@ -37,7 +37,7 @@ class AbstractSyntaxFormatter(ABC):
         return self.bets.copy()
 
     def _format_titles(self, bets):
-        bets = self._format_bet_titles(bets)
+        # bets = self._format_bet_titles(bets)
         bets = self._format_match_titles(bets)
 
         return bets

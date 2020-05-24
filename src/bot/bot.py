@@ -1,16 +1,14 @@
 import time
-from json import dumps
 
 from telebot import TeleBot
 from telebot.apihelper import ApiException
 
-from analyzers.analyzer import Analyzer
-from analyzers.best_odds_analyzer import BestOddsAnalyzer
-from analyzers.fork_bets_analyzer import ForkBetsAnalyzer
-from one_x_bet_scraper import OneXBetScraper
-from parimatch_scraper import ParimatchScraper
+import __init__
 from secrets import token
 from util import bets_to_json_strings
+
+from analyzers.best_odds_analyzer import BestOddsAnalyzer
+from analyzers.fork_bets_analyzer import ForkBetsAnalyzer
 
 
 class BetAssistantBot(TeleBot):
@@ -18,8 +16,6 @@ class BetAssistantBot(TeleBot):
 
     def __init__(self):
         super().__init__(token)
-        self.scrapers = [ParimatchScraper(), OneXBetScraper()]
-        self.bets_list = []
         self._init_commands()
 
     def send_long_messages(self, chat_id, strings, reply_to, parse_mode='Markdown'):
@@ -44,7 +40,7 @@ class BetAssistantBot(TeleBot):
     def _init_commands(self):
         @self.message_handler(commands=['start', 'help'])
         def command_start_handler(message):
-            self.send_message(message.chat.id, dumps('–  -'))
+            self.send_message(message.chat.id, 'hello')
 
         @self.message_handler(commands=['prematch_csgo_analytics'])
         def command_start_handler(message):
