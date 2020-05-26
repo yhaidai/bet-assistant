@@ -9,12 +9,21 @@ class Page:
     """
     Class that represents rendered web page
     """
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--no-sandbox")
-    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
+    _chrome_options = webdriver.ChromeOptions()
+    _chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+    # _chrome_options.add_argument("--headless")
+    _chrome_options.add_argument("--disable-dev-shm-usage")
+    _chrome_options.add_argument("--no-sandbox")
+    _chrome_options.add_argument("--incognito")
+    # _chrome_options.add_argument(
+    #     '--user-agent=""Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+    #     'Chrome/74.0.3729.157 Safari/537.36""'
+    # )
+    try:
+        driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=_chrome_options)
+    except Exception:
+        driver = webdriver.Chrome(executable_path='../renderer/chromedriver_win32/chromedriver.exe',
+                                  chrome_options=_chrome_options)
 
     def __init__(self, url):
         """
@@ -24,13 +33,13 @@ class Page:
         :type url: str
         """
         self.url = url
-        self.shutdown = False
+        # self.shutdown = False
 
-        thread = Thread(target=self.start_timer, args=(10,))
-        thread.start()
+        # thread = Thread(target=self._start_timer, args=(10,))
+        # thread.start()
         Page.driver.get(url)
-        self.shutdown = True
-        thread.join()
+        # self.shutdown = True
+        # thread.join()
 
         self.html = Page.driver.page_source
 
@@ -39,9 +48,14 @@ class Page:
         """
         Change chromedriver to a new instance
         """
-        driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
+        try:
+            Page.driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),
+                                           chrome_options=Page._chrome_options)
+        except Exception:
+            Page.driver = webdriver.Chrome(executable_path='../renderer/chromedriver_win32/chromedriver.exe',
+                                           chrome_options=Page._chrome_options)
 
-    def start_timer(self, timeout):
+    def _start_timer(self, timeout):
         """
         After a given timeout shuts down previous driver and changes it to a new one
 

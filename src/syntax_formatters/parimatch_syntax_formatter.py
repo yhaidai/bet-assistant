@@ -2,11 +2,15 @@ from pprint import pprint
 
 from abstract_syntax_formatter import AbstractSyntaxFormatter
 from scrapers.sample_data import parimatch
-from syntax_formatter import SyntaxFormatter
+from match_title_compiler import MatchTitleCompiler
 
 
 class ParimatchSyntaxFormatter(AbstractSyntaxFormatter):
-    name = 'parimatch'
+    """
+    Class that is used for applying unified syntax formatting to all betting
+    related information scraped from the parimatch website
+    """
+    _NAME = 'parimatch'
 
     def __init__(self, bets):
         super().__init__(bets)
@@ -51,10 +55,10 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter):
         if 'win of' in formatted_title:
             if formatted_title.find('1st') != -1:
                 team_number = '1st'
-                team_name = SyntaxFormatter.decompile_match_title(self.match_title)[0]
+                team_name = MatchTitleCompiler.decompile_match_title(self.match_title)[0]
             elif formatted_title.find('2nd') != -1:
                 team_number = '2nd'
-                team_name = SyntaxFormatter.decompile_match_title(self.match_title)[1]
+                team_name = MatchTitleCompiler.decompile_match_title(self.match_title)[1]
             else:
                 raise NotImplementedError('Not "1st" nor "2nd" was found')
 

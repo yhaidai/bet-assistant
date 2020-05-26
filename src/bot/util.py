@@ -2,6 +2,14 @@ from json import dumps
 
 
 def bets_to_json_strings(bets):
+    """
+    Convert bets dictionary to json strings
+
+    :param bets: bets dictionary
+    :type bets: dict
+    :return: json strings, one for each bet title
+    :rtype: str
+    """
     result = []
 
     for match_title in bets.keys():

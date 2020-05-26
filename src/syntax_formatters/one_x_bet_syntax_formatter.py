@@ -5,13 +5,23 @@ from scrapers.sample_data import one_x_bet
 
 
 class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
-    name = '1xbet'
-    invalid_bet_titles = ['. ', '']
+    """
+    Class that is used for applying unified syntax formatting to all betting
+    related information scraped from the 1xbet website
+    """
+    _NAME = '1xbet'
+    _invalid_bet_titles = ['. ', '']
 
     def __init__(self, bets):
         super().__init__(bets)
 
     def _apply_unified_syntax_formatting(self, bets):
+        """
+        Apply unified syntax formatting to the given bets dict
+
+        :param bets: bets dictionary to format
+        :type bets: dict
+        """
         bets = self._update(bets, self._format_maps)
         bets = self._update(bets, self._format_total)
         bets = self._update(bets, self._format_handicap)
