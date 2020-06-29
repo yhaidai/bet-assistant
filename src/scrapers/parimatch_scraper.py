@@ -29,6 +29,9 @@ class ParimatchScraper(AbstractScraper):
     # last titles for each of the groups
     _TITLE_BREAKERS = ('Handicap coefficient', 'Under', 'Win of the 1st team',)
 
+    def __init__(self):
+        super().__init__(ParimatchSyntaxFormatter())
+
     def get_bets(self, sport_type):
         """
         Scrapes betting data for a given sport type
@@ -42,8 +45,7 @@ class ParimatchScraper(AbstractScraper):
         for championship_url in championship_urls:
             bets.update(self._get_bets(self._BASE_URL + championship_url))
 
-        formatter = ParimatchSyntaxFormatter(bets)
-        return formatter.bets
+        return bets
 
     @staticmethod
     def get_championship_urls(sport_type):
@@ -287,7 +289,8 @@ if __name__ == '__main__':
     t = time.time()
     scraper = ParimatchScraper()
 
-    b = scraper.get_bets('csgo')
+    # b = scraper.get_bets('csgo')
+    b = scraper.get_formatted_bets('csgo')
     pprint(b)
 
     Page.driver.quit()

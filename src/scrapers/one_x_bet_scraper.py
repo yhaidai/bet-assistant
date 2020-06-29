@@ -17,9 +17,12 @@ class OneXBetScraper(AbstractScraper):
         'csgo': 'CSGO',
         'dota 2': 'Dota-2',
     }
-    MENU = {
+    _MENU = {
         'csgo': 'view-source:https://m.1x-bet-ua.com/en/line/Esports/'
     }
+
+    def __init__(self):
+        super().__init__(OneXBetSyntaxFormatter())
 
     def get_bets(self, sport_type):
         """
@@ -35,8 +38,7 @@ class OneXBetScraper(AbstractScraper):
         for url in match_urls:
             bets.update(OneXBetScraper._get_bets(OneXBetScraper._BASE_URL + url))
 
-        formatter = OneXBetSyntaxFormatter(bets)
-        return formatter.bets
+        return bets
 
     @staticmethod
     def get_match_urls(sport_type):
@@ -44,7 +46,7 @@ class OneXBetScraper(AbstractScraper):
         Scrape match urls for a given sport type
         """
         match_urls = []
-        page = Page(OneXBetScraper.MENU[sport_type])
+        page = Page(OneXBetScraper._MENU[sport_type])
         elements = re.split('[<>]', page.html)
         for el in elements:
             if OneXBetScraper._SPORT_NAMES[sport_type] in el and el.count('/') == 4:
@@ -118,7 +120,8 @@ if __name__ == '__main__':
     t = time.time()
 
     scraper = OneXBetScraper()
-    b = scraper.get_bets('csgo')
+    # b = scraper.get_bets('csgo')
+    b = scraper.get_formatted_bets('csgo')
     pprint(b)
     Page.driver.quit()
 

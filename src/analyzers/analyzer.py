@@ -3,6 +3,7 @@ from pprint import pprint
 from syntax_formatters.sample_data import one_x_bet, parimatch
 from scrapers.one_x_bet_scraper import OneXBetScraper
 from scrapers.parimatch_scraper import ParimatchScraper
+from registry import registry
 
 
 class Analyzer:
@@ -18,7 +19,11 @@ class Analyzer:
         :param sport_type: sport type name e.g. 'csgo', 'dota 2'
         :type sport_type: str
         """
-        # self.bets_list = [scraper.get_bets(sport_type) for scraper in Analyzer.scrapers]
+        # self.bets_list = []
+        # for scraper, formatter in registry.items():
+        #     bets = scraper.get_bets(sport_type)
+        #     formatter.apply_unified_syntax_formatting(bets)
+        #     self.bets_list.append(bets)
         self.bets_list = [one_x_bet.bets, parimatch.bets]
 
         self.all_bets = self.get_all_bets()

@@ -6,16 +6,10 @@ class AbstractSyntaxFormatter(ABC):
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the websites
     """
-    _invalid_bet_titles = []
-    _remove_from_titles = ['team ', ' esports', ' club']
+    _REMOVE_FROM_TITLES = ['team ', ' esports', ' club']
 
-    def __init__(self, bets):
-        """
-        :param bets: bets dictionary to format
-        :type bets: dict
-        """
-        self.bets = bets.copy()
-        self.apply_unified_syntax_formatting(bets)
+    def __init__(self):
+        self.bets = {}
 
     def apply_unified_syntax_formatting(self, bets):
         """
@@ -24,13 +18,22 @@ class AbstractSyntaxFormatter(ABC):
         :param bets: bets dictionary to format
         :type bets: dict
         """
-        bets = self._apply_unified_syntax_formatting(bets)
+        self.bets = bets.copy()
+        bets = self._update(bets, self._format_total)
+        bets = self._update(bets, self._format_handicap)
+        bets = self._update(bets, self._format_win_in_round)
+        bets = self._update(bets, self._format_team_names)
+        bets = self._update(bets, self._format_correct_score)
+        bets = self._update(bets, self._format_first_frag)
+        bets = self._update(bets, self._format_win)
+        bets = self._update(bets, self._format_uncommon_chars)
+        bets = self._format_other(bets)
         bets = self._format_odds(bets)
         bets = self._format_bookmaker_name(bets)
         bets = self._format_titles(bets)
 
     @abstractmethod
-    def _apply_unified_syntax_formatting(self, bets):
+    def _format_other(self, bets):
         """
         Apply unified syntax formatting to the given bets dict. Subclass specific
 
@@ -38,6 +41,13 @@ class AbstractSyntaxFormatter(ABC):
         :type bets: dict
         """
         pass
+
+    @abstractmethod
+    def _get_name(self):
+        pass
+
+    def _get_invalid_bet_titles(self):
+        return ()
 
     def _update(self, bets, _callable):
         """
@@ -50,11 +60,14 @@ class AbstractSyntaxFormatter(ABC):
         :return: updated bets dictionary
         :rtype: dict
         """
+        invalid_bet_titles = self._get_invalid_bet_titles()
+
         for self.match_title in bets:
             for self.bet_title, odds in list(bets[self.match_title].items()):
                 formatted_title = _callable()
                 self.bets[self.match_title].pop(self.bet_title)
-                if self.bet_title not in self._invalid_bet_titles:
+
+                if self.bet_title not in invalid_bet_titles:
                     self.bets[self.match_title][formatted_title] = odds
 
         return self.bets.copy()
@@ -69,9 +82,11 @@ class AbstractSyntaxFormatter(ABC):
         :return: updated bets dictionary
         :rtype: dict
         """
+        name = self._get_name()
+
         for match_title in bets:
             for bet_title, odds in bets[match_title].items():
-                self.bets[match_title][bet_title] = {odds: self._NAME}
+                self.bets[match_title][bet_title] = {odds: name}
 
         return self.bets.copy()
 
@@ -102,7 +117,7 @@ class AbstractSyntaxFormatter(ABC):
             for bet_title in bets[match_title].keys():
                 # print(bet_title)
                 formatted_bet_title = bet_title
-                for word in self._remove_from_titles:
+                for word in self._REMOVE_FROM_TITLES:
                     formatted_bet_title = formatted_bet_title.replace(word, '')
 
                 self.bets[match_title][formatted_bet_title] = self.bets[match_title].pop(bet_title)
@@ -122,7 +137,7 @@ class AbstractSyntaxFormatter(ABC):
         """
         for match_title in bets:
             formatted_match_title = match_title
-            for word in self._remove_from_titles:
+            for word in self._REMOVE_FROM_TITLES:
                 formatted_match_title = formatted_match_title.replace(word, '')
 
             self.bets[formatted_match_title] = self.bets.pop(match_title)
@@ -144,3 +159,50 @@ class AbstractSyntaxFormatter(ABC):
                     self.bets[match_title].pop(bet_title)
 
         return self.bets.copy()
+
+    def _format_team_names(self):
+        formatted_title = self.bet_title.lower()
+        for item in self._REMOVE_FROM_TITLES:
+            formatted_title = formatted_title.replace(item, '', 1)
+        return formatted_title
+
+    @abstractmethod
+    def _format_win(self):
+        pass
+
+    @abstractmethod
+    def _format_total(self):
+        pass
+
+    @abstractmethod
+    def _format_maps(self):
+        pass
+
+    @abstractmethod
+    def _format_handicap(self):
+        pass
+
+    @abstractmethod
+    def _format_uncommon_chars(self):
+        pass
+
+    @abstractmethod
+    def _format_win_in_round(self):
+        pass
+
+    @abstractmethod
+    def _format_correct_score(self):
+        pass
+
+    @abstractmethod
+    def _format_first_frag(self):
+        pass
+
+    @abstractmethod
+    def _format_uncommon_chars(self):
+        pass
+
+    @abstractmethod
+    def _format_uncommon_chars(self):
+        pass
+

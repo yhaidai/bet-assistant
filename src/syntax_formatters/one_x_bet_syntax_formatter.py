@@ -10,28 +10,22 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
     related information scraped from the 1xbet website
     """
     _NAME = '1xbet'
-    _invalid_bet_titles = ['. ', '']
+    _INVALID_BET_TITLES = ('. ', '')
 
-    def __init__(self, bets):
-        super().__init__(bets)
+    def _get_name(self):
+        return self._NAME
 
-    def _apply_unified_syntax_formatting(self, bets):
+    def _get_invalid_bet_titles(self):
+        return self._INVALID_BET_TITLES
+
+    def _format_other(self, bets):
         """
         Apply unified syntax formatting to the given bets dict
 
         :param bets: bets dictionary to format
         :type bets: dict
         """
-        bets = self._update(bets, self._format_maps)
-        bets = self._update(bets, self._format_total)
-        bets = self._update(bets, self._format_handicap)
-        bets = self._update(bets, self._format_win_in_round)
-        bets = self._update(bets, self._format_team)
-        bets = self._update(bets, self._format_correct_score)
-        bets = self._update(bets, self._format_first_frag)
-        bets = self._update(bets, self._format_1x2)
         bets = self._update(bets, self._format_1_2)
-        bets = self._update(bets, self._format_uncommon_chars)
 
         return bets
 
@@ -70,7 +64,7 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
     def _format_win_in_round(self):
         return self.bet_title.lower().replace('win in round. ', '', 1)
 
-    def _format_team(self):
+    def _format_team_names(self):
         return self.bet_title.lower().replace('team ', '', 1)
 
     def _format_correct_score(self):
@@ -84,7 +78,7 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
 
         return formatted_title
 
-    def _format_1x2(self):
+    def _format_win(self):
         formatted_title = self.bet_title.lower()
         if '1x2' in formatted_title:
             formatted_title = formatted_title.replace('1x2. ', '', 1)
@@ -124,5 +118,6 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
 
 
 if __name__ == '__main__':
-    formatter = OneXBetSyntaxFormatter(one_x_bet.bets)
+    formatter = OneXBetSyntaxFormatter()
+    formatter.apply_unified_syntax_formatting(one_x_bet.bets)
     pprint(formatter.bets)

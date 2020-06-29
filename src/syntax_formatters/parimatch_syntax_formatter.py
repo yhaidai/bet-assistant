@@ -12,15 +12,10 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter):
     """
     _NAME = 'parimatch'
 
-    def __init__(self, bets):
-        super().__init__(bets)
+    def _get_name(self):
+        return self._NAME
 
-    def _apply_unified_syntax_formatting(self, bets):
-        bets = self._update(bets, self._format_total)
-        bets = self._update(bets, self._format_win_of)
-        bets = self._update(bets, self._format_handicap)
-        bets = self._update(bets, self._format_uncommon_chars)
-
+    def _format_other(self, bets):
         return bets
 
     @staticmethod
@@ -47,7 +42,7 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter):
 
         return formatted_title
 
-    def _format_win_of(self):
+    def _format_win(self):
         formatted_title = self.bet_title.lower()
         team_name = ''
         team_number = ''
@@ -95,7 +90,20 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter):
 
         return formatted_title
 
+    def _format_maps(self):
+        return self.bet_title.lower()
+
+    def _format_win_in_round(self):
+        return self.bet_title.lower()
+
+    def _format_correct_score(self):
+        return self.bet_title.lower()
+
+    def _format_first_frag(self):
+        return self.bet_title.lower()
+
 
 if __name__ == '__main__':
-    formatter = ParimatchSyntaxFormatter(parimatch.bets)
+    formatter = ParimatchSyntaxFormatter()
+    formatter.apply_unified_syntax_formatting(parimatch.bets)
     pprint(formatter.bets)
