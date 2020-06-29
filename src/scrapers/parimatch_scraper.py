@@ -29,9 +29,6 @@ class ParimatchScraper(AbstractScraper):
     # last titles for each of the groups
     _TITLE_BREAKERS = ('Handicap coefficient', 'Under', 'Win of the 1st team',)
 
-    def __init__(self):
-        super().__init__(ParimatchSyntaxFormatter())
-
     def get_bets(self, sport_type):
         """
         Scrapes betting data for a given sport type

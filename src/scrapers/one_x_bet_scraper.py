@@ -21,9 +21,6 @@ class OneXBetScraper(AbstractScraper):
         'csgo': 'view-source:https://m.1x-bet-ua.com/en/line/Esports/'
     }
 
-    def __init__(self):
-        super().__init__(OneXBetSyntaxFormatter())
-
     def get_bets(self, sport_type):
         """
         Scrapes betting data for a given sport type
