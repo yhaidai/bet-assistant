@@ -115,8 +115,8 @@ class AbstractSyntaxFormatter(ABC):
         :return: updated bets dictionary
         :rtype: dict
         """
-        bets = self._format_bet_titles(bets)
         bets = self._format_match_titles(bets)
+        bets = self._format_bet_titles(bets)
 
         return bets
 
@@ -151,8 +151,18 @@ class AbstractSyntaxFormatter(ABC):
         for match_title in bets:
             teams = MatchTitleCompiler.decompile_match_title(match_title)
             formatted_match_title = MatchTitleCompiler.compile_match_title(*teams, sort=True)
+            swapped = formatted_match_title != match_title
+
             for word in self._REMOVE_FROM_TITLES:
                 formatted_match_title = formatted_match_title.replace(word, '')
+
+            if swapped:
+                for bet_title in list(self.bets[match_title]):
+                    if 'correct score ' in bet_title:
+                        score1 = bet_title[len('correct score ')]
+                        score2 = bet_title[len('correct score ') + 2]
+                        formatted_bet_title = bet_title[:-3] + score2 + '-' + score1 + self._REMOVE_FROM_TITLES[0]
+                        self.bets[match_title][formatted_bet_title] = self.bets[match_title].pop(bet_title)
 
             self.bets[formatted_match_title] = self.bets.pop(match_title)
 
