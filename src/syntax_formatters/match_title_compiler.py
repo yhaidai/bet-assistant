@@ -24,7 +24,7 @@ class MatchTitleCompiler:
         return str(team_name).lower()
 
     @staticmethod
-    def compile_match_title(first_team, second_team, separator=' - '):
+    def compile_match_title(first_team, second_team, sort=False, separator=' - '):
         """
         Compiles match title from two team names
 
@@ -32,6 +32,8 @@ class MatchTitleCompiler:
         :type first_team: str
         :param second_team: name of the second team
         :type second_team: str
+        :param sort: whether to sort team names or not
+        :type sort: bool
         :param separator: separator to be placed between the team names
         :type separator: str
         :return: match title, which consists of first and second team names
@@ -39,11 +41,12 @@ class MatchTitleCompiler:
         case of second_team being equal to None
         :rtype: str
         """
-        teams = [first_team, second_team]
-        teams.sort()
-        first_team = teams[0]
-        if second_team:
-            second_team = teams[1]
+        if sort:
+            teams = [first_team, second_team]
+            teams.sort()
+            first_team = teams[0]
+            if second_team:
+                second_team = teams[1]
 
         match_title = MatchTitleCompiler.format_team_name(first_team)
         if second_team:

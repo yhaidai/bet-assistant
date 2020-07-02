@@ -23,8 +23,8 @@ class AbstractSyntaxFormatter(ABC):
         self.bets = bets.copy()
         bets = self._format_before(bets)
         bets = self._update(bets, self._format_total)
-        bets = self._update(bets, self._format_handicap)
         bets = self._update(bets, self._format_maps)
+        bets = self._update(bets, self._format_handicap)
         bets = self._update(bets, self._format_win_in_round)
         bets = self._update(bets, self._format_team_names)
         bets = self._update(bets, self._format_correct_score)
@@ -130,7 +130,7 @@ class AbstractSyntaxFormatter(ABC):
         :rtype: dict
         """
         for match_title in bets:
-            for bet_title in bets[match_title]:
+            for bet_title in list(bets[match_title]):
                 formatted_bet_title = bet_title
                 for word in self._REMOVE_FROM_TITLES:
                     formatted_bet_title = formatted_bet_title.replace(word, '')
@@ -150,7 +150,7 @@ class AbstractSyntaxFormatter(ABC):
         """
         for match_title in bets:
             teams = MatchTitleCompiler.decompile_match_title(match_title)
-            formatted_match_title = MatchTitleCompiler.compile_match_title(*teams)
+            formatted_match_title = MatchTitleCompiler.compile_match_title(*teams, sort=True)
             for word in self._REMOVE_FROM_TITLES:
                 formatted_match_title = formatted_match_title.replace(word, '')
 

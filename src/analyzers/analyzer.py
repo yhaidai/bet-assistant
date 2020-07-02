@@ -1,9 +1,6 @@
 from pprint import pprint
 
-from page import Page
 from syntax_formatters.sample_data import one_x_bet, parimatch
-from scrapers.one_x_bet_scraper import OneXBetScraper
-from scrapers.parimatch_scraper import ParimatchScraper
 from registry import registry
 
 
@@ -11,8 +8,6 @@ class Analyzer:
     """
     Class for collecting betting info and analyzing it
     """
-    _SCRAPERS = [ParimatchScraper(), OneXBetScraper()]
-
     def __init__(self, sport_type):
         """
         Scrape betting info on a given sport type and store it in a dict

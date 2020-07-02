@@ -1339,6 +1339,10 @@ bets = {
         'wesq will win': {'3.22': '1xbet'},
         'yung trappers handicap +0.5 maps': {'1.32': '1xbet'},
         'yung trappers handicap -0.5 maps': {'3.2': '1xbet'},
-        'yung trappers will win': {'3.24': '1xbet'}
+        'yung trappers will win': {'3.24': '1xbet'},
+        'correct score 2-0': {'1.864': '1xbet'},
+        'correct score 2-1': {'1.864': '1xbet'},
+        'correct score 1-2': {'1.864': '1xbet'},
+        'correct score 0-2': {'1.864': '1xbet'},
         }
     }

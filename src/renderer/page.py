@@ -15,6 +15,7 @@ class Page:
     _chrome_options.add_argument("--disable-dev-shm-usage")
     _chrome_options.add_argument("--no-sandbox")
     _chrome_options.add_argument("--incognito")
+    _chrome_options.add_argument("--window-size=1920,1080")
     # _chrome_options.add_argument(
     #     '--user-agent=""Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
     #     'Chrome/74.0.3729.157 Safari/537.36""'
