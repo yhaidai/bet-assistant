@@ -130,7 +130,7 @@ class AbstractSyntaxFormatter(ABC):
         :rtype: dict
         """
         for match_title in bets:
-            for bet_title in list(bets[match_title].keys()):
+            for bet_title in bets[match_title]:
                 formatted_bet_title = bet_title
                 for word in self._REMOVE_FROM_TITLES:
                     formatted_bet_title = formatted_bet_title.replace(word, '')
