@@ -33,12 +33,13 @@ class ForkBetsAnalyzer(Analyzer):
                 for max_odds in best_odds_bets.values():
                     max_odds_values += max_odds.keys()
                 profit = self._get_fork_profit(max_odds_values)
+                bet_amounts = self._get_fork_bet_amounts(max_odds_values)
 
                 # add fork bet
                 if profit > 0:
                     fork_bets.setdefault(match_title, {})
                     fork_bet_title = self._compile_fork_bet_title(list(best_odds_bets.keys()))
-                    text = self._compile_fork_text_dict(list(best_odds_bets.values()), profit)
+                    text = self._compile_fork_text_dict(list(best_odds_bets.values()), bet_amounts, profit)
                     fork_bets[match_title][fork_bet_title] = text
 
         return fork_bets
@@ -61,7 +62,7 @@ class ForkBetsAnalyzer(Analyzer):
         return result[:-3]
 
     @staticmethod
-    def _compile_fork_text_dict(odds, profit):
+    def _compile_fork_text_dict(odds, bet_amounts, profit):
         """
         Compiles fork bet result dictionary from given odds, bookmaker names and profit
 
@@ -77,7 +78,7 @@ class ForkBetsAnalyzer(Analyzer):
         value = {}
         for odds_dict in odds:
             for odds_value, bookmaker in odds_dict.items():
-                value.update({'*' + odds_value + '*': bookmaker})
+                value.update({'*' + odds_value + '(' + bet_amounts[odds_value] + ')*': bookmaker})
 
         return {key: value}
 
@@ -92,9 +93,16 @@ class ForkBetsAnalyzer(Analyzer):
         :return: max profit value
         :rtype: float
         """
-        odds_reciprocals = [1 / float(o) for o in odds]
-        odds_reciprocals_sum = sum(odds_reciprocals)
-        return 1 / odds_reciprocals_sum - 1
+        reciprocals = [1 / float(o) for o in odds]
+        reciprocals_sum = sum(reciprocals)
+        return 1 / reciprocals_sum - 1
+
+    @staticmethod
+    def _get_fork_bet_amounts(odds):
+        reciprocals = [1 / float(o) for o in odds]
+        reciprocals_sum = sum(reciprocals)
+        bet_amounts = {o: 'Bet amount: ' + str('{:.4f}'.format(1 / float(o) / reciprocals_sum)) for o in odds}
+        return bet_amounts
 
 
 if __name__ == '__main__':
