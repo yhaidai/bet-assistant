@@ -1,12 +1,14 @@
 from abc import ABC, abstractmethod
 
+from match_title_compiler import MatchTitleCompiler
+
 
 class AbstractSyntaxFormatter(ABC):
     """
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the websites
     """
-    _REMOVE_FROM_TITLES = ['team ', ' esports', ' club']
+    _REMOVE_FROM_TITLES = ['team ', ' team', ' esports', ' club']
 
     def __init__(self):
         self.bets = {}
@@ -113,7 +115,7 @@ class AbstractSyntaxFormatter(ABC):
         :return: updated bets dictionary
         :rtype: dict
         """
-        # bets = self._format_bet_titles(bets)
+        bets = self._format_bet_titles(bets)
         bets = self._format_match_titles(bets)
 
         return bets
@@ -128,7 +130,7 @@ class AbstractSyntaxFormatter(ABC):
         :rtype: dict
         """
         for match_title in bets:
-            for bet_title in bets[match_title].keys():
+            for bet_title in list(bets[match_title].keys()):
                 # print(bet_title)
                 formatted_bet_title = bet_title
                 for word in self._REMOVE_FROM_TITLES:
@@ -150,7 +152,8 @@ class AbstractSyntaxFormatter(ABC):
         :rtype: dict
         """
         for match_title in bets:
-            formatted_match_title = match_title
+            teams = MatchTitleCompiler.decompile_match_title(match_title)
+            formatted_match_title = MatchTitleCompiler.compile_match_title(*teams)
             for word in self._REMOVE_FROM_TITLES:
                 formatted_match_title = formatted_match_title.replace(word, '')
 

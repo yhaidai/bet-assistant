@@ -32,13 +32,13 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
         formatted_title = self.bet_title.lower()
         if 'map' in self.bet_title:
             index = formatted_title.find('map') - 1
-            map_number = formatted_title[index - 1]
+            map_number = formatted_title[index - 2: index - 1]
             endings = {
-                '1': '-st',
-                '2': '-nd',
-                '3': '-rd',
-                '4': '-th',
-                '5': '-th',
+                ' 1': '-st',
+                ' 2': '-nd',
+                ' 3': '-rd',
+                ' 4': '-th',
+                ' 5': '-th',
                 }
             try:
                 formatted_title = formatted_title[:index] + endings[map_number] + \
