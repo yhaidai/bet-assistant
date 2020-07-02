@@ -1,5 +1,6 @@
 from pprint import pprint
 
+from page import Page
 from syntax_formatters.sample_data import one_x_bet, parimatch
 from scrapers.one_x_bet_scraper import OneXBetScraper
 from scrapers.parimatch_scraper import ParimatchScraper
@@ -41,3 +42,9 @@ class Analyzer:
                     all_bets[match_title].setdefault(bet_title, {}).update(odds)
 
         return all_bets
+
+
+if __name__ == '__main__':
+    analyzer = Analyzer('csgo')
+    b = analyzer.get_all_bets()
+    pprint(b)

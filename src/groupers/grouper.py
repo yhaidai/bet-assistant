@@ -1,7 +1,8 @@
 import re
 from pprint import pprint
 
-from syntax_formatters.sample_data.one_x_bet import bets as b
+from syntax_formatters.sample_data.parimatch import bets as parimatch_bets
+from syntax_formatters.sample_data.one_x_bet import bets as one_x_bet_bets
 
 
 class Grouper:
@@ -59,5 +60,5 @@ class Grouper:
 
 
 if __name__ == '__main__':
-    fork_bets = Grouper.group(b)
+    fork_bets = Grouper.group(parimatch_bets)
     pprint(fork_bets)
