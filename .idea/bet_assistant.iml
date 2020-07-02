@@ -5,15 +5,15 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scrapers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/renderer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/bot" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/analyzers" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/groupers" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/renderer" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/renderer/chromedriver_linux64" />
       <excludeFolder url="file://$MODULE_DIR$/src/renderer/chromedriver_win32" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (bet-assistant)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
