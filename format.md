@@ -14,7 +14,7 @@
         - #####Handicap rounds
             handicap `<team_name>` `<+/-value>`
         - #####Handicap maps
-            handicap `<team_name>` `<+/-value>` maps
+            `<team_name>` handicap `<+/-value>` maps
         - #####Map
             `<map_number>` map: `<suffix>`  
             `<map number>` - 1-st/2-nd/3-rd/4-th/5-th etc
