@@ -1,6 +1,6 @@
 from pprint import pprint
 
-from syntax_formatters.sample_data import one_x_bet, parimatch
+from syntax_formatters.sample_data import one_x_bet, parimatch, marathon, ggbet, favorit
 from registry import registry
 
 
@@ -20,7 +20,7 @@ class Analyzer:
         #     bets = scraper.get_bets(sport_type)
         #     formatter.apply_unified_syntax_formatting(bets)
         #     self.bets_list.append(bets)
-        self.bets_list = [one_x_bet.bets, parimatch.bets]
+        self.bets_list = [one_x_bet.bets, parimatch.bets, marathon.bets, ggbet.bets, favorit.bets]
 
         self.all_bets = self.get_all_bets()
 
