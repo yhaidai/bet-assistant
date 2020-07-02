@@ -131,14 +131,11 @@ class AbstractSyntaxFormatter(ABC):
         """
         for match_title in bets:
             for bet_title in list(bets[match_title].keys()):
-                # print(bet_title)
                 formatted_bet_title = bet_title
                 for word in self._REMOVE_FROM_TITLES:
                     formatted_bet_title = formatted_bet_title.replace(word, '')
 
                 self.bets[match_title][formatted_bet_title] = self.bets[match_title].pop(bet_title)
-                if bet_title == '1-st map: chiefs esports club will win in round 1':
-                    print(formatted_bet_title)
 
         return self.bets.copy()
 
