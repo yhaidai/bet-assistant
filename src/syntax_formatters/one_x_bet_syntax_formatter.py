@@ -18,7 +18,7 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
     def _get_invalid_bet_titles(self):
         return self._INVALID_BET_TITLES
 
-    def _format_other(self, bets):
+    def _format_after(self, bets):
         """
         Apply unified syntax formatting to the given bets dict
 
@@ -26,23 +26,25 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
         :type bets: dict
         """
         bets = self._update(bets, self._format_1_2)
-
         return bets
 
     def _format_maps(self):
         formatted_title = self.bet_title.lower()
-
         if 'map' in self.bet_title:
             index = formatted_title.find('map') - 1
             map_number = formatted_title[index - 1]
-            if map_number == '1':
-                ending = '-st'
-            elif map_number == '2':
-                ending = '-nd'
-            else:
-                ending = '-rd'
-
-            formatted_title = formatted_title[:index] + ending + formatted_title[index:].replace('.', ':', 1)
+            endings = {
+                '1': '-st',
+                '2': '-nd',
+                '3': '-rd',
+                '4': '-th',
+                '5': '-th',
+                }
+            try:
+                formatted_title = formatted_title[:index] + endings[map_number] + \
+                                  formatted_title[index:].replace('.', ':', 1)
+            except KeyError:
+                pass
             formatted_title = formatted_title.replace('total. ', '', 1)
 
         return formatted_title
@@ -86,17 +88,6 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
 
         return formatted_title
 
-    def _format_1_2(self):
-        formatted_title = self.bet_title.lower()
-        try:
-            if formatted_title[0] == '1' or '2':
-                formatted_title = formatted_title.split('. ')[1]
-                formatted_title = formatted_title.replace('team ', '', 1)
-        except IndexError:
-            pass
-
-        return formatted_title
-
     def _format_handicap(self):
         formatted_title = self.bet_title.lower().replace('handicap. ', '', 1)
         formatted_title = formatted_title.replace('(', '').replace(')', '')
@@ -113,6 +104,17 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
         # these are different characters :)
         formatted_title = formatted_title.replace('с', 'c')
         formatted_title = formatted_title.replace('–', '-')
+
+        return formatted_title
+
+    def _format_1_2(self):
+        formatted_title = self.bet_title.lower()
+        try:
+            if formatted_title[0] == '1' or '2':
+                formatted_title = formatted_title.split('. ')[1]
+                formatted_title = formatted_title.replace('team ', '', 1)
+        except IndexError:
+            pass
 
         return formatted_title
 

@@ -117,8 +117,7 @@ if __name__ == '__main__':
     t = time.time()
 
     scraper = OneXBetScraper()
-    # b = scraper.get_bets('csgo')
-    b = scraper.get_formatted_bets('csgo')
+    b = scraper.get_bets('csgo')
     pprint(b)
     Page.driver.quit()
 

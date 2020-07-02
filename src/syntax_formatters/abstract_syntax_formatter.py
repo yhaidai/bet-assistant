@@ -19,28 +19,42 @@ class AbstractSyntaxFormatter(ABC):
         :type bets: dict
         """
         self.bets = bets.copy()
+        bets = self._format_before(bets)
         bets = self._update(bets, self._format_total)
         bets = self._update(bets, self._format_handicap)
+        bets = self._update(bets, self._format_maps)
         bets = self._update(bets, self._format_win_in_round)
         bets = self._update(bets, self._format_team_names)
         bets = self._update(bets, self._format_correct_score)
         bets = self._update(bets, self._format_first_frag)
         bets = self._update(bets, self._format_win)
         bets = self._update(bets, self._format_uncommon_chars)
-        bets = self._format_other(bets)
+        bets = self._format_after(bets)
         bets = self._format_odds(bets)
         bets = self._format_bookmaker_name(bets)
         bets = self._format_titles(bets)
 
-    @abstractmethod
-    def _format_other(self, bets):
+    def _format_before(self, bets):
         """
-        Apply unified syntax formatting to the given bets dict. Subclass specific
+        Apply unified syntax formatting to the given bets dict before obligatory updates are run. Subclass specific
 
         :param bets: bets dictionary to format
         :type bets: dict
+        :return: formatted bets dictionary
+        :rtype: dict
         """
-        pass
+        return bets
+
+    def _format_after(self, bets):
+        """
+        Apply unified syntax formatting to the given bets dict after obligatory updates are run. Subclass specific
+
+        :param bets: bets dictionary to format
+        :type bets: dict
+        :return: formatted bets dictionary
+        :rtype: dict
+        """
+        return bets
 
     @abstractmethod
     def _get_name(self):
@@ -197,12 +211,3 @@ class AbstractSyntaxFormatter(ABC):
     @abstractmethod
     def _format_first_frag(self):
         pass
-
-    @abstractmethod
-    def _format_uncommon_chars(self):
-        pass
-
-    @abstractmethod
-    def _format_uncommon_chars(self):
-        pass
-

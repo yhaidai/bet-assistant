@@ -15,7 +15,7 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter):
     def _get_name(self):
         return self._NAME
 
-    def _format_other(self, bets):
+    def _format_after(self, bets):
         return bets
 
     @staticmethod
