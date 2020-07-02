@@ -30,21 +30,26 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
 
     def _format_maps(self):
         formatted_title = self.bet_title.lower()
-        if 'map' in self.bet_title:
+        if 'map' in formatted_title:
             index = formatted_title.find('map') - 1
-            map_number = formatted_title[index - 2: index - 1]
-            endings = {
-                ' 1': '-st',
-                ' 2': '-nd',
-                ' 3': '-rd',
-                ' 4': '-th',
-                ' 5': '-th',
-                }
-            try:
-                formatted_title = formatted_title[:index] + endings[map_number] + \
-                                  formatted_title[index:].replace('.', ':', 1)
-            except KeyError:
-                pass
+            map_number = formatted_title[index - 1]
+            if map_number == '1':
+                ending = '-st'
+            elif map_number == '2':
+                ending = '-nd'
+            elif map_number == '3':
+                ending = '-rd'
+            elif map_number == '4':
+                ending = '-th'
+            elif map_number == '5':
+                if formatted_title[index - 2] != '.':
+                    ending = '-th'
+                else:
+                    ending = ''
+            else:
+                ending = ''
+
+            formatted_title = formatted_title[:index] + ending + formatted_title[index:].replace('.', ':', 1)
             formatted_title = formatted_title.replace('total. ', '', 1)
 
         return formatted_title
