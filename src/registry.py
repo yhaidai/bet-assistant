@@ -15,4 +15,4 @@ registry = {
     MarathonScraper(): MarathonSyntaxFormatter(),
     GGBetScraper(): GGBetSyntaxFormatter(),
     ParimatchScraper(): ParimatchSyntaxFormatter(),
-}
+    }
