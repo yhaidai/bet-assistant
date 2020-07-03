@@ -23,16 +23,11 @@ class GGBetScraper(AbstractScraper):
         bets = {}
         match_urls = self.get_match_urls(sport_type)
         for url in match_urls:
-<<<<<<< HEAD
-            bets.update(GGBetScraper._get_bets(url))
-            time.sleep(0.1)
-=======
             match_bets = GGBetScraper._get_bets(url)
             for match_title in match_bets:
                 match_bets[match_title][self.match_url_key] = url
             bets.update(match_bets)
-            # time.sleep(0.5)
->>>>>>> e582648b26037ee6c83b53a3fc50541140242e27
+
         return bets
 
     @staticmethod
