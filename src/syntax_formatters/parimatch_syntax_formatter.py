@@ -44,21 +44,25 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter):
 
     def _format_win(self):
         formatted_title = self.bet_title.lower()
-        team_name = ''
-        team_number = ''
+        team_names = MatchTitleCompiler.decompile_match_title(self.match_title)
 
         if 'win of' in formatted_title:
             if formatted_title.find('1st') != -1:
                 team_number = '1st'
-                team_name = MatchTitleCompiler.decompile_match_title(self.match_title)[0]
+                team_name = team_names[0]
             elif formatted_title.find('2nd') != -1:
                 team_number = '2nd'
-                team_name = MatchTitleCompiler.decompile_match_title(self.match_title)[1]
+                team_name = team_names[1]
             else:
                 raise NotImplementedError('Not "1st" nor "2nd" was found')
-
-        to_be_replaced = 'win of the ' + team_number + ' team'
-        formatted_title = formatted_title.replace(to_be_replaced, team_name + ' will win', 1)
+            to_be_replaced = 'win of the ' + team_number
+            formatted_title = formatted_title.replace(to_be_replaced, team_name + ' will win', 1)
+        elif 'home win' in formatted_title:
+            formatted_title = formatted_title.replace('home', team_names[0] + ' will')
+        elif 'away win' in formatted_title:
+            formatted_title = formatted_title.replace('away', team_names[1] + ' will')
+        elif 'draw' in formatted_title:
+            formatted_title += ' will win'
 
         return formatted_title
 
