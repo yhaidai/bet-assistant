@@ -1,4 +1,4 @@
-from pprint import pprint
+from pprint import pprint, pformat
 
 from analyzers.analyzer import Analyzer
 from grouper import Grouper
@@ -109,3 +109,5 @@ if __name__ == '__main__':
     analyzer = ForkBetsAnalyzer('csgo')
     b = analyzer.get_fork_bets()
     pprint(b)
+    with open('analyzers/sample_data/forks.py', 'w') as f:
+        print('forks = ', pformat(b), file = f)

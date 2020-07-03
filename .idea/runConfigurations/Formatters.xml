@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Formatters" type="Multirun" factoryName="Multirun" singleton="false" separateTabs="true" startOneByOne="false" markFailedProcess="true" hideSuccessProcess="false" delayTime="0">
+    <runConfiguration name="favorit_syntax_formatter" type="Python" />
+    <runConfiguration name="ggbet_syntax_formatter" type="Python" />
+    <runConfiguration name="marathon_syntax_formatter" type="Python" />
+    <runConfiguration name="one_x_bet_syntax_formatter" type="Python" />
+    <runConfiguration name="parimatch_syntax_formatter" type="Python" />
+    <method v="2" />
+  </configuration>
+</component>

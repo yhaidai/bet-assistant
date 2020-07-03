@@ -1,8 +1,8 @@
 import re
-from pprint import pprint
+from pprint import pprint, pformat
 from abstract_syntax_formatter import AbstractSyntaxFormatter
 from scrapers.sample_data import marathon
-
+import os.path
 
 class MarathonSyntaxFormatter(AbstractSyntaxFormatter):
     _NAME = 'marathon'
@@ -108,3 +108,7 @@ if __name__ == '__main__':
     formatter = MarathonSyntaxFormatter()
     formatter.apply_unified_syntax_formatting(marathon.bets)
     pprint(formatter.bets)
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = my_path + '\\sample_data\\marathon.py'
+    with open(path, 'w', encoding='utf-8') as f:
+        print('bets = ', pformat(formatter.bets), file=f)

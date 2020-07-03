@@ -1,5 +1,5 @@
-from pprint import pprint
-
+from pprint import pprint, pformat
+import os.path
 from abstract_scraper import AbstractScraper
 import time
 from src.renderer.page import Page
@@ -42,7 +42,6 @@ class FavoritScraper(AbstractScraper):
             for header in headers:
                 if header.get_attribute('class') == 'sport--name--head sp_85':
                     cybersports = header
-                    break
             time.sleep(0.25)
             page.driver.execute_script("arguments[0].click();", cybersports)
             time.sleep(0.25)
@@ -78,6 +77,8 @@ class FavoritScraper(AbstractScraper):
             return bets
         bets[match_title] = {}
         time.sleep(1)
+        url = Page.driver.current_url
+        # selectors = []
         marketBlocks = Page.driver.find_elements_by_class_name('markets--block')
         for mb in marketBlocks:
             block_title = mb.find_element_by_class_name('markets--head').get_attribute('innerHTML')
@@ -88,10 +89,8 @@ class FavoritScraper(AbstractScraper):
                 bet_type = label.find_element_by_tag_name('span').get_attribute('title')
                 bet_title = block_title + ' ' + bet_type
                 button = label.find_element_by_tag_name('button')
-
                 odds = button.get_attribute('innerHTML')
                 bets[match_title][bet_title] = odds
-
         return bets
 
     @staticmethod
@@ -121,5 +120,9 @@ if __name__ == '__main__':
     b = scraper.get_bets('csgo')
     pprint(b)
     Page.driver.quit()
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = my_path + '\\sample_data\\favorit.py'
+    with open(path, 'w', encoding='utf-8') as f:
+        print('bets =', pformat(b), file=f)
 
     print(time.time() - t)
