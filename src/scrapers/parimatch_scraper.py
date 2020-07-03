@@ -1,10 +1,10 @@
 import re
 import time
-from pprint import pprint
-
+from pprint import pprint, pformat
+import os.path
 from bs4 import BeautifulSoup
 
-from parimatch_syntax_formatter import ParimatchSyntaxFormatter
+# from parimatch_syntax_formatter import ParimatchSyntaxFormatter
 from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
 from syntax_formatters.match_title_compiler import MatchTitleCompiler
@@ -288,6 +288,9 @@ if __name__ == '__main__':
 
     b = scraper.get_bets('csgo')
     pprint(b)
-
     Page.driver.quit()
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = my_path + '\\sample_data\\parimatch.py'
+    with open(path, 'w', encoding='utf-8') as f:
+        print('bets = ', pformat(b), file=f)
     print(time.time() - t)

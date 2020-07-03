@@ -1,5 +1,5 @@
-from pprint import pprint
-
+from pprint import pprint, pformat
+import os.path
 from abstract_scraper import AbstractScraper
 import time
 from src.renderer.page import Page
@@ -25,7 +25,7 @@ class GGBetScraper(AbstractScraper):
         match_urls = self.get_match_urls(sport_type)
         for url in match_urls:
             bets.update(GGBetScraper._get_bets(url))
-            time.sleep(0.5)
+            time.sleep(0.1)
         return bets
 
     @staticmethod
@@ -84,7 +84,7 @@ class GGBetScraper(AbstractScraper):
         :rtype: dict
         """
         page = Page(match_url)
-        time.sleep(1)
+        time.sleep(2)
         bets = {}
         match_title = GGBetScraper._get_match_title()
         if not match_title:
@@ -134,6 +134,10 @@ if __name__ == '__main__':
     b = scraper.get_bets('csgo')
     pprint(b)
     Page.driver.quit()
-
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    print(my_path)
+    path = my_path + '\\sample_data\\ggbet.py'
+    with open(path, 'w', encoding = 'utf-8') as f:
+        print('bets = ', pformat(b), file = f)
     print(time.time() - t)
 

@@ -1,5 +1,5 @@
-from pprint import pprint
-
+from pprint import pprint, pformat
+import os.path
 from abstract_syntax_formatter import AbstractSyntaxFormatter
 from scrapers.sample_data import parimatch
 from match_title_compiler import MatchTitleCompiler
@@ -107,3 +107,7 @@ if __name__ == '__main__':
     formatter = ParimatchSyntaxFormatter()
     formatter.apply_unified_syntax_formatting(parimatch.bets)
     pprint(formatter.bets)
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = my_path + '\\sample_data\\parimatch.py'
+    with open(path, 'w', encoding='utf-8') as f:
+        print('bets = ', pformat(formatter.bets), file=f)

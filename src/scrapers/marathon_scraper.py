@@ -1,5 +1,5 @@
-from pprint import pprint
-
+from pprint import pprint, pformat
+import os.path
 from abstract_scraper import AbstractScraper
 import time
 from src.renderer.page import Page
@@ -73,7 +73,8 @@ class MarathonScraper(AbstractScraper):
         main_odds = match.find_elements_by_class_name('selection-link')
         bets[match_title][team1 + ' will win'] = main_odds[0].get_attribute('innerHTML')
         bets[match_title][team2 + ' will win'] = main_odds[1].get_attribute('innerHTML')
-
+        url = Page.driver.current_url
+        # xpaths = []
         try:
             match_button = match.find_element_by_class_name('event-more-view')
             Page.driver.execute_script("arguments[0].click();", match_button)
@@ -150,5 +151,8 @@ if __name__ == '__main__':
     b = scraper.get_bets('csgo')
     pprint(b)
     Page.driver.quit()
-
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = my_path + '\\sample_data\\marathon.py'
+    with open(path, 'w', encoding='utf-8') as f:
+        print('bets = ', pformat(b), file=f)
     print(time.time() - t)

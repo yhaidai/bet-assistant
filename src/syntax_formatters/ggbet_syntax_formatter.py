@@ -1,8 +1,8 @@
 import re
-from pprint import pprint
+from pprint import pprint, pformat
 from abstract_syntax_formatter import AbstractSyntaxFormatter
 from scrapers.sample_data import ggbet
-
+import os.path
 
 class GGBetSyntaxFormatter(AbstractSyntaxFormatter):
     _NAME = 'ggbet'
@@ -107,3 +107,7 @@ if __name__ == '__main__':
     formatter = GGBetSyntaxFormatter()
     formatter.apply_unified_syntax_formatting(ggbet.bets)
     pprint(formatter.bets)
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = my_path + '\\sample_data\\ggbet.py'
+    with open(path, 'w', encoding='utf-8') as f:
+        print('bets = ', pformat(formatter.bets), file=f)
