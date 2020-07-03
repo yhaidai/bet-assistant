@@ -9,12 +9,12 @@ from src.scrapers.abstract_scraper import AbstractScraper
 
 
 class OneXBetScraper(AbstractScraper):
-    base_url = 'https://1x-bet.com/en/'
-    sport_names = {
+    _BASE_URL = 'https://1x-bet.com/en/'
+    _SPORT_NAMES = {
         'csgo': 'CSGO',
         'dota 2': 'Dota-2',
         }
-    menu = {
+    _MENU = {
         'csgo': 'line/Esports/'
         }
 
@@ -31,25 +31,29 @@ class OneXBetScraper(AbstractScraper):
         print(len(match_urls))
 
         for url in match_urls:
-            bets.update(OneXBetScraper._get_bets(OneXBetScraper.base_url + url))
+            full_url = OneXBetScraper._BASE_URL + url
+            match_bets = OneXBetScraper._get_bets(full_url)
+            for match_title in match_bets:
+                match_bets[match_title][self.match_url_key] = full_url
+            bets.update(match_bets)
 
         return bets
 
     @staticmethod
     def get_championship_urls(championships):
-        base_len = len(OneXBetScraper.base_url)
+        base_len = len(OneXBetScraper._BASE_URL)
         return [ch.get_attribute('href')[base_len:] for ch in championships]
 
     @staticmethod
     def _get_championships(sport_type):
-        page = Page(OneXBetScraper.base_url)
-        sport = page.driver.find_element_by_css_selector('a[href^="' + OneXBetScraper.menu[sport_type] + '"]')
+        page = Page(OneXBetScraper._BASE_URL)
+        sport = page.driver.find_element_by_css_selector('a[href^="' + OneXBetScraper._MENU[sport_type] + '"]')
         page.click(sport)
         time.sleep(2)
 
         menu = page.driver.find_element_by_class_name('liga_menu')
 
-        pattern = OneXBetScraper.sport_names[sport_type]
+        pattern = OneXBetScraper._SPORT_NAMES[sport_type]
         selector = 'a[href*="' + pattern + '"]'
 
         championships = {el for el in menu.find_elements_by_css_selector(selector)}
@@ -58,7 +62,7 @@ class OneXBetScraper(AbstractScraper):
 
     @staticmethod
     def get_match_urls(matches, championship_urls):
-        base_len = len(OneXBetScraper.base_url)
+        base_len = len(OneXBetScraper._BASE_URL)
         return {m.get_attribute('href')[base_len:] for m in matches}.difference(championship_urls)
 
     @staticmethod
@@ -119,7 +123,8 @@ class OneXBetScraper(AbstractScraper):
         team_names = [team.text for team in Page.driver.find_elements_by_class_name('team')]
         if not team_names:
             try:
-                return Page.driver.find_element_by_class_name('name')
+                board_div = Page.driver.find_element_by_class_name('board_div')
+                return board_div.find_element_by_class_name('name').text
             except NoSuchElementException:
                 return None
         return MatchTitleCompiler.compile_match_title(*team_names)

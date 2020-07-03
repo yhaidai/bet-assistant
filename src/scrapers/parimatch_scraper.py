@@ -24,7 +24,7 @@ class ParimatchScraper(AbstractScraper):
         }
     _MENU = {
         'csgo': 'https://parimatch.com/sport/kibersport'
-    }
+        }
 
     # last titles for each of the groups
     _TITLE_BREAKERS = ('Handicap coefficient', 'Under', 'Win of the 1st team',)
@@ -40,7 +40,11 @@ class ParimatchScraper(AbstractScraper):
 
         championship_urls = ParimatchScraper.get_championship_urls(sport_type)
         for championship_url in championship_urls:
-            bets.update(self._get_bets(self._BASE_URL + championship_url))
+            full_url = self._BASE_URL + championship_url
+            championship_bets = self._get_bets(full_url)
+            for match_title in championship_bets:
+                championship_bets[match_title][self.match_url_key] = full_url
+            bets.update(championship_bets)
 
         return bets
 

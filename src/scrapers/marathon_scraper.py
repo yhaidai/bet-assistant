@@ -24,8 +24,12 @@ class MarathonScraper(AbstractScraper):
         bets = {}
         matches = self.get_matches(sport_type)
         for match in matches:
-            bets.update(MarathonScraper._get_bets(match))
-            time.sleep(0.1)
+            match_bets = MarathonScraper._get_bets(match)
+            for match_title in match_bets:
+                url = match.find_element_by_class_name('member-link').get_attribute('href')
+                match_bets[match_title][self.match_url_key] = url
+            bets.update(match_bets)
+            # time.sleep(0.1)
         return bets
 
     @staticmethod
