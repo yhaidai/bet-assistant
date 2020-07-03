@@ -2,6 +2,8 @@ from abc import ABC, abstractmethod
 
 
 class AbstractScraper(ABC):
+    match_url_key = 'url'
+
     @abstractmethod
     def get_bets(self, sport_type):
         """

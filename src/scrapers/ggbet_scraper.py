@@ -6,7 +6,6 @@ from src.renderer.page import Page
 from selenium.webdriver.common.keys import Keys
 
 
-#  NAMING: match_title, bet_title, odds
 class GGBetScraper(AbstractScraper):
     _BASE_URL = 'https://gg.bet/en/betting/'
 
@@ -24,8 +23,11 @@ class GGBetScraper(AbstractScraper):
         bets = {}
         match_urls = self.get_match_urls(sport_type)
         for url in match_urls:
-            bets.update(GGBetScraper._get_bets(url))
-            time.sleep(0.5)
+            match_bets = GGBetScraper._get_bets(url)
+            for match_title in match_bets:
+                match_bets[match_title][self.match_url_key] = url
+            bets.update(match_bets)
+            # time.sleep(0.5)
         return bets
 
     @staticmethod
@@ -47,25 +49,15 @@ class GGBetScraper(AbstractScraper):
 
     @staticmethod
     def scroll_down():
-        """
-        SCROLLS (IN A RATHER FUNNY WAY) CURRENT PAGE TILL THE END AHAHAHAHAAHAHA
-        """
-        SCROLL_PAUSE_TIME = 0.5
         last_height = Page.driver.execute_script("return document.body.scrollHeight")
         while True:
-
             html = Page.driver.find_element_by_tag_name('html')
             for _ in (1, 5):
                 html.send_keys(Keys.PAGE_DOWN)
-                time.sleep(SCROLL_PAUSE_TIME)
             for _ in (1, 3):
                 html.send_keys(Keys.PAGE_UP)
-                time.sleep(SCROLL_PAUSE_TIME)
             for _ in (1, 3):
                 html.send_keys(Keys.PAGE_DOWN)
-                time.sleep(SCROLL_PAUSE_TIME)
-
-            time.sleep(SCROLL_PAUSE_TIME)
 
             new_height = Page.driver.execute_script("return document.body.scrollHeight")
             if new_height == last_height:
@@ -91,8 +83,8 @@ class GGBetScraper(AbstractScraper):
             return bets
         bets[match_title] = {}
 
-        marketTables = page.driver.find_elements_by_class_name('marketTable__table___dvHTz')
-        for mt in marketTables:
+        market_tables = page.driver.find_elements_by_class_name('marketTable__table___dvHTz')
+        for mt in market_tables:
             table_title = mt.find_element_by_class_name('marketTable__header___mSHxT').get_attribute('title')
             buttons = mt.find_elements_by_tag_name('button')
             for button in buttons:

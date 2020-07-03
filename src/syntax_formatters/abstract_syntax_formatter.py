@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+from abstract_scraper import AbstractScraper
 from match_title_compiler import MatchTitleCompiler
 
 
@@ -101,8 +102,13 @@ class AbstractSyntaxFormatter(ABC):
         name = self._get_name()
 
         for match_title in bets:
+            url = self.bets[match_title][AbstractScraper.match_url_key]
             for bet_title, odds in bets[match_title].items():
-                self.bets[match_title][bet_title] = {odds: name}
+                try:
+                    self.bets[match_title][bet_title] = {odds: name + '(' + url + ')'}
+                except KeyError:
+                    self.bets[match_title][bet_title] = {odds: name}
+            bets[match_title].pop(AbstractScraper.match_url_key)
 
         return self.bets.copy()
 

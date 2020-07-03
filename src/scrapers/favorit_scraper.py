@@ -3,7 +3,6 @@ from pprint import pprint
 from abstract_scraper import AbstractScraper
 import time
 from src.renderer.page import Page
-from selenium.webdriver.common.keys import Keys
 
 
 #  NAMING: match_title, bet_title, odds
@@ -23,9 +22,12 @@ class FavoritScraper(AbstractScraper):
         """
         bets = {}
         match_buttons = self.get_match_buttons(sport_type)
+
         for match_button in match_buttons:
-            bets.update(FavoritScraper._get_bets(match_button))
-            time.sleep(0.1)
+            match_bets = FavoritScraper._get_bets(match_button)
+            for match_title in match_bets:
+                match_bets[match_title][self.match_url_key] = Page.driver.current_url
+            bets.update(match_bets)
         return bets
 
     @staticmethod

@@ -1,5375 +1,5426 @@
 bets = {
-    '100 thieves - gen.g': {
-        '1-st map: 100 thieves total over 11.5': {'1.22': 'ggbet'},
-        '1-st map: 100 thieves total over 13.5': {'1.38': 'ggbet'},
-        '1-st map: 100 thieves total over 14.5': {'1.49': 'ggbet'},
-        '1-st map: 100 thieves total over 15.5': {'1.78': 'ggbet'},
-        '1-st map: 100 thieves total under 11.5': {'3.99': 'ggbet'},
-        '1-st map: 100 thieves total under 13.5': {'2.9': 'ggbet'},
-        '1-st map: 100 thieves total under 14.5': {'2.51': 'ggbet'},
-        '1-st map: 100 thieves total under 15.5': {'1.97': 'ggbet'},
-        '1-st map: 100 thieves will win': {'1.61': 'ggbet'},
-        '1-st map: 100 thieves will win round 1': {'1.83': 'ggbet'},
-        '1-st map: correct score 10-16': {'13.19': 'ggbet'},
-        '1-st map: correct score 11-16': {'12.35': 'ggbet'},
-        '1-st map: correct score 12-16': {'11.77': 'ggbet'},
-        '1-st map: correct score 13-16': {'10.45': 'ggbet'},
-        '1-st map: correct score 14-16': {'10.31': 'ggbet'},
-        '1-st map: correct score 16-1': {'100': 'ggbet'},
-        '1-st map: correct score 16-10': {'9.8': 'ggbet'},
-        '1-st map: correct score 16-11': {'9.56': 'ggbet'},
-        '1-st map: correct score 16-12': {'9.46': 'ggbet'},
-        '1-st map: correct score 16-13': {'9.48': 'ggbet'},
-        '1-st map: correct score 16-14': {'9.61': 'ggbet'},
-        '1-st map: correct score 16-2': {'68.36': 'ggbet'},
-        '1-st map: correct score 16-3': {'37.04': 'ggbet'},
-        '1-st map: correct score 16-4': {'24.52': 'ggbet'},
-        '1-st map: correct score 16-5': {'18.53': 'ggbet'},
-        '1-st map: correct score 16-6': {'15.23': 'ggbet'},
-        '1-st map: correct score 16-7': {'13.2': 'ggbet'},
-        '1-st map: correct score 16-8': {'11.88': 'ggbet'},
-        '1-st map: correct score 16-9': {'10.2': 'ggbet'},
-        '1-st map: correct score 2-16': {'100': 'ggbet'},
-        '1-st map: correct score 3-16': {'70.63': 'ggbet'},
-        '1-st map: correct score 4-16': {'42.82': 'ggbet'},
-        '1-st map: correct score 5-16': {'29.71': 'ggbet'},
-        '1-st map: correct score 6-16': {'22.74': 'ggbet'},
-        '1-st map: correct score 7-16': {'18.67': 'ggbet'},
-        '1-st map: correct score 8-16': {'16.1': 'ggbet'},
-        '1-st map: correct score 9-16': {'14.39': 'ggbet'},
-        '1-st map: ct total  over 10.5': {'1.21': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.43': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.09': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.54': 'ggbet'},
-        '1-st map: ct total  under 10.5': {'4.11': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.7': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.69': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.27': 'ggbet'},
-        '1-st map: first half correct score 1-14': {'100': 'ggbet'},
-        '1-st map: first half correct score 10-5': {'6.48': 'ggbet'},
-        '1-st map: first half correct score 11-4': {'8.49': 'ggbet'},
-        '1-st map: first half correct score 12-3': {'12.92': 'ggbet'},
-        '1-st map: first half correct score 13-2': {'22.76': 'ggbet'},
-        '1-st map: first half correct score 14-1': {'62.14': 'ggbet'},
-        '1-st map: first half correct score 2-13': {'38.38': 'ggbet'},
-        '1-st map: first half correct score 3-12': {'18.29': 'ggbet'},
-        '1-st map: first half correct score 4-11': {'11.56': 'ggbet'},
-        '1-st map: first half correct score 5-10': {'7.98': 'ggbet'},
-        '1-st map: first half correct score 6-9': {'6.22': 'ggbet'},
-        '1-st map: first half correct score 7-8': {'5.3': 'ggbet'},
-        '1-st map: first half correct score 8-7': {'5.05': 'ggbet'},
-        '1-st map: first half correct score 9-6': {'5.4': 'ggbet'},
-        '1-st map: gen.g total over 10.5': {'1.33': 'ggbet'},
-        '1-st map: gen.g total over 11.5': {'1.45': 'ggbet'},
-        '1-st map: gen.g total over 12.5': {'1.59': 'ggbet'},
-        '1-st map: gen.g total over 13.5': {'1.76': 'ggbet'},
-        '1-st map: gen.g total over 14.5': {'1.97': 'ggbet'},
-        '1-st map: gen.g total over 15.5': {'2.51': 'ggbet'},
-        '1-st map: gen.g total over 9.5': {'1.24': 'ggbet'},
-        '1-st map: gen.g total under 10.5': {'3.14': 'ggbet'},
-        '1-st map: gen.g total under 11.5': {'2.63': 'ggbet'},
-        '1-st map: gen.g total under 12.5': {'2.27': 'ggbet'},
-        '1-st map: gen.g total under 13.5': {'1.99': 'ggbet'},
-        '1-st map: gen.g total under 14.5': {'1.78': 'ggbet'},
-        '1-st map: gen.g total under 15.5': {'1.49': 'ggbet'},
-        '1-st map: gen.g total under 9.5': {'3.79': 'ggbet'},
-        '1-st map: gen.g will win': {'2.23': 'ggbet'},
-        '1-st map: gen.g will win round 1': {'1.91': 'ggbet'},
-        '1-st map: handicap 100 thieves +1.5': {'1.49': 'ggbet'},
-        '1-st map: handicap 100 thieves +2.5': {'1.38': 'ggbet'},
-        '1-st map: handicap 100 thieves +3.5': {'1.29': 'ggbet'},
-        '1-st map: handicap 100 thieves +4.5': {'1.22': 'ggbet'},
-        '1-st map: handicap 100 thieves -1.5': {'1.78': 'ggbet'},
-        '1-st map: handicap 100 thieves -2.5': {'1.99': 'ggbet'},
-        '1-st map: handicap 100 thieves -3.5': {'2.27': 'ggbet'},
-        '1-st map: handicap 100 thieves -4.5': {'2.63': 'ggbet'},
-        '1-st map: handicap 100 thieves -5.5': {'3.14': 'ggbet'},
-        '1-st map: handicap 100 thieves -6.5': {'3.79': 'ggbet'},
-        '1-st map: handicap gen.g +1.5': {'1.97': 'ggbet'},
-        '1-st map: handicap gen.g +2.5': {'1.76': 'ggbet'},
-        '1-st map: handicap gen.g +3.5': {'1.59': 'ggbet'},
-        '1-st map: handicap gen.g +4.5': {'1.45': 'ggbet'},
-        '1-st map: handicap gen.g +5.5': {'1.33': 'ggbet'},
-        '1-st map: handicap gen.g +6.5': {'1.24': 'ggbet'},
-        '1-st map: handicap gen.g -1.5': {'2.51': 'ggbet'},
-        '1-st map: handicap gen.g -2.5': {'2.9': 'ggbet'},
-        '1-st map: handicap gen.g -3.5': {'3.39': 'ggbet'},
-        '1-st map: handicap gen.g -4.5': {'3.99': 'ggbet'},
-        '1-st map: race to  rounds 100 thieves 12': {'1.65': 'ggbet'},
-        '1-st map: race to  rounds 100 thieves 3': {'1.76': 'ggbet'},
-        '1-st map: race to  rounds 100 thieves 6': {'1.7': 'ggbet'},
-        '1-st map: race to  rounds 100 thieves 9': {'1.67': 'ggbet'},
-        '1-st map: race to  rounds gen.g 12': {'2.16': 'ggbet'},
-        '1-st map: race to  rounds gen.g 3': {'1.99': 'ggbet'},
-        '1-st map: race to  rounds gen.g 6': {'2.08': 'ggbet'},
-        '1-st map: race to  rounds gen.g 9': {'2.12': 'ggbet'},
-        '1-st map: terrorist total over 10.5': {'1.21': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.43': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.09': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.54': 'ggbet'},
-        '1-st map: terrorist total under 10.5': {'4.11': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.7': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.69': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.27': 'ggbet'},
-        '1-st map: total over 24.5': {'1.3': 'ggbet'},
-        '1-st map: total over 25.5': {'1.47': 'ggbet'},
-        '1-st map: total over 26.5': {'1.71': 'ggbet'},
-        '1-st map: total over 27.5': {'2.09': 'ggbet'},
-        '1-st map: total over 28.5': {'2.7': 'ggbet'},
-        '1-st map: total over 29.5': {'3.89': 'ggbet'},
-        '1-st map: total under 24.5': {'3.32': 'ggbet'},
-        '1-st map: total under 25.5': {'2.57': 'ggbet'},
-        '1-st map: total under 26.5': {'2.06': 'ggbet'},
-        '1-st map: total under 27.5': {'1.69': 'ggbet'},
-        '1-st map: total under 28.5': {'1.43': 'ggbet'},
-        '1-st map: total under 29.5': {'1.23': 'ggbet'},
-        '1-st map: will there be overtime no': {'1.09': 'ggbet'},
-        '1-st map: will there be overtime yes': {'6.55': 'ggbet'},
-        '100 thieves handicap +1.5 maps': {'1.17': 'ggbet'},
-        '100 thieves handicap -1.5 maps': {'2.57': 'ggbet'},
-        '100 thieves total over 32.5': {'1.81': 'ggbet'},
-        '100 thieves total over 37.5': {'2.31': 'ggbet'},
-        '100 thieves total over 41.5': {'3.39': 'ggbet'},
-        '100 thieves total under 32.5': {'1.93': 'ggbet'},
-        '100 thieves total under 37.5': {'1.57': 'ggbet'},
-        '100 thieves total under 41.5': {'1.29': 'ggbet'},
-        '100 thieves will win': {'1.53': 'ggbet'},
-        '1st map first half - 100 thieves total over 6.5': {'1.34': 'ggbet'},
-        '1st map first half - 100 thieves total over 7.5': {'1.68': 'ggbet'},
-        '1st map first half - 100 thieves total over 8.5': {'2.29': 'ggbet'},
-        '1st map first half - 100 thieves total over 9.5': {'3.46': 'ggbet'},
-        '1st map first half - 100 thieves total under 6.5': {'3.09': 'ggbet'},
-        '1st map first half - 100 thieves total under 7.5': {'2.11': 'ggbet'},
-        '1st map first half - 100 thieves total under 8.5': {'1.58': 'ggbet'},
-        '1st map first half - 100 thieves total under 9.5': {'1.28': 'ggbet'},
-        '1st map first half - 100 thieves will win': {'1.68': 'ggbet'},
-        '1st map first half - gen.g total over 5.5': {'1.28': 'ggbet'},
-        '1st map first half - gen.g total over 6.5': {'1.58': 'ggbet'},
-        '1st map first half - gen.g total over 7.5': {'2.11': 'ggbet'},
-        '1st map first half - gen.g total over 8.5': {'3.09': 'ggbet'},
-        '1st map first half - gen.g total under 5.5': {'3.46': 'ggbet'},
-        '1st map first half - gen.g total under 6.5': {'2.29': 'ggbet'},
-        '1st map first half - gen.g total under 7.5': {'1.68': 'ggbet'},
-        '1st map first half - gen.g total under 8.5': {'1.34': 'ggbet'},
-        '1st map first half - gen.g will win': {'2.11': 'ggbet'},
-        '1st map first half - handicap 100 thieves +1.5': {'1.34': 'ggbet'},
-        '1st map first half - handicap 100 thieves -0.5': {'1.68': 'ggbet'},
-        '1st map first half - handicap 100 thieves -2.5': {'2.29': 'ggbet'},
-        '1st map first half - handicap 100 thieves -4.5': {'3.46': 'ggbet'},
-        '1st map first half - handicap gen.g +0.5': {'2.11': 'ggbet'},
-        '1st map first half - handicap gen.g +2.5': {'1.58': 'ggbet'},
-        '1st map first half - handicap gen.g +4.5': {'1.28': 'ggbet'},
-        '1st map first half - handicap gen.g -1.5': {'3.09': 'ggbet'},
-        '1st map second half - 1x2 100 thieves': {'1.78': 'ggbet'},
-        '1st map second half - 1x2 draw': {'9.42': 'ggbet'},
-        '1st map second half - 1x2 gen.g': {'2.24': 'ggbet'},
-        '1st map second half - handicap 100 thieves +1.5': {'1.39': 'ggbet'},
-        '1st map second half - handicap 100 thieves -0.5': {'1.78': 'ggbet'},
-        '1st map second half - handicap 100 thieves -2.5': {'2.6': 'ggbet'},
-        '1st map second half - handicap 100 thieves -3.5': {'3.46': 'ggbet'},
-        '1st map second half - handicap gen.g +0.5': {'1.97': 'ggbet'},
-        '1st map second half - handicap gen.g +2.5': {'1.46': 'ggbet'},
-        '1st map second half - handicap gen.g +3.5': {'1.28': 'ggbet'},
-        '1st map second half - handicap gen.g -1.5': {'2.85': 'ggbet'},
-        '2-nd map: 100 thieves total over 11.5': {'1.22': 'ggbet'},
-        '2-nd map: 100 thieves total over 13.5': {'1.38': 'ggbet'},
-        '2-nd map: 100 thieves total over 14.5': {'1.49': 'ggbet'},
-        '2-nd map: 100 thieves total over 15.5': {'1.78': 'ggbet'},
-        '2-nd map: 100 thieves total under 11.5': {'3.99': 'ggbet'},
-        '2-nd map: 100 thieves total under 13.5': {'2.9': 'ggbet'},
-        '2-nd map: 100 thieves total under 14.5': {'2.51': 'ggbet'},
-        '2-nd map: 100 thieves total under 15.5': {'1.97': 'ggbet'},
-        '2-nd map: 100 thieves will win': {'1.61': 'ggbet'},
-        '2-nd map: 100 thieves will win round 1': {'1.84': 'ggbet'},
-        '2-nd map: correct score 10-16': {'13.21': 'ggbet'},
-        '2-nd map: correct score 11-16': {'12.37': 'ggbet'},
-        '2-nd map: correct score 12-16': {'11.79': 'ggbet'},
-        '2-nd map: correct score 13-16': {'10.46': 'ggbet'},
-        '2-nd map: correct score 14-16': {'10.32': 'ggbet'},
-        '2-nd map: correct score 16-1': {'100': 'ggbet'},
-        '2-nd map: correct score 16-10': {'9.8': 'ggbet'},
-        '2-nd map: correct score 16-11': {'9.56': 'ggbet'},
-        '2-nd map: correct score 16-12': {'9.46': 'ggbet'},
-        '2-nd map: correct score 16-13': {'9.49': 'ggbet'},
-        '2-nd map: correct score 16-14': {'9.63': 'ggbet'},
-        '2-nd map: correct score 16-2': {'68.13': 'ggbet'},
-        '2-nd map: correct score 16-3': {'36.94': 'ggbet'},
-        '2-nd map: correct score 16-4': {'24.48': 'ggbet'},
-        '2-nd map: correct score 16-5': {'18.51': 'ggbet'},
-        '2-nd map: correct score 16-6': {'15.22': 'ggbet'},
-        '2-nd map: correct score 16-7': {'13.2': 'ggbet'},
-        '2-nd map: correct score 16-8': {'11.88': 'ggbet'},
-        '2-nd map: correct score 16-9': {'10.2': 'ggbet'},
-        '2-nd map: correct score 2-16': {'100': 'ggbet'},
-        '2-nd map: correct score 3-16': {'70.63': 'ggbet'},
-        '2-nd map: correct score 4-16': {'42.83': 'ggbet'},
-        '2-nd map: correct score 5-16': {'29.74': 'ggbet'},
-        '2-nd map: correct score 6-16': {'22.77': 'ggbet'},
-        '2-nd map: correct score 7-16': {'18.7': 'ggbet'},
-        '2-nd map: correct score 8-16': {'16.13': 'ggbet'},
-        '2-nd map: correct score 9-16': {'14.41': 'ggbet'},
-        '2-nd map: ct total  over 10.5': {'1.21': 'ggbet'},
-        '2-nd map: ct total  over 11.5': {'1.43': 'ggbet'},
-        '2-nd map: ct total  over 13.5': {'2.09': 'ggbet'},
-        '2-nd map: ct total  over 15.5': {'3.54': 'ggbet'},
-        '2-nd map: ct total  under 10.5': {'4.11': 'ggbet'},
-        '2-nd map: ct total  under 11.5': {'2.7': 'ggbet'},
-        '2-nd map: ct total  under 13.5': {'1.69': 'ggbet'},
-        '2-nd map: ct total  under 15.5': {'1.27': 'ggbet'},
-        '2-nd map: first half correct score 1-14': {'100': 'ggbet'},
-        '2-nd map: first half correct score 10-5': {'6.48': 'ggbet'},
-        '2-nd map: first half correct score 11-4': {'8.49': 'ggbet'},
-        '2-nd map: first half correct score 12-3': {'12.92': 'ggbet'},
-        '2-nd map: first half correct score 13-2': {'22.73': 'ggbet'},
-        '2-nd map: first half correct score 14-1': {'61.97': 'ggbet'},
-        '2-nd map: first half correct score 2-13': {'38.4': 'ggbet'},
-        '2-nd map: first half correct score 3-12': {'18.31': 'ggbet'},
-        '2-nd map: first half correct score 4-11': {'11.57': 'ggbet'},
-        '2-nd map: first half correct score 5-10': {'7.99': 'ggbet'},
-        '2-nd map: first half correct score 6-9': {'6.24': 'ggbet'},
-        '2-nd map: first half correct score 7-8': {'5.31': 'ggbet'},
-        '2-nd map: first half correct score 8-7': {'5.06': 'ggbet'},
-        '2-nd map: first half correct score 9-6': {'5.41': 'ggbet'},
-        '2-nd map: gen.g total over 10.5': {'1.33': 'ggbet'},
-        '2-nd map: gen.g total over 11.5': {'1.45': 'ggbet'},
-        '2-nd map: gen.g total over 12.5': {'1.59': 'ggbet'},
-        '2-nd map: gen.g total over 13.5': {'1.76': 'ggbet'},
-        '2-nd map: gen.g total over 14.5': {'1.97': 'ggbet'},
-        '2-nd map: gen.g total over 15.5': {'2.51': 'ggbet'},
-        '2-nd map: gen.g total over 9.5': {'1.24': 'ggbet'},
-        '2-nd map: gen.g total under 10.5': {'3.14': 'ggbet'},
-        '2-nd map: gen.g total under 11.5': {'2.63': 'ggbet'},
-        '2-nd map: gen.g total under 12.5': {'2.27': 'ggbet'},
-        '2-nd map: gen.g total under 13.5': {'1.99': 'ggbet'},
-        '2-nd map: gen.g total under 14.5': {'1.78': 'ggbet'},
-        '2-nd map: gen.g total under 15.5': {'1.49': 'ggbet'},
-        '2-nd map: gen.g total under 9.5': {'3.79': 'ggbet'},
-        '2-nd map: gen.g will win': {'2.23': 'ggbet'},
-        '2-nd map: gen.g will win round 1': {'1.9': 'ggbet'},
-        '2-nd map: handicap 100 thieves +1.5': {'1.49': 'ggbet'},
-        '2-nd map: handicap 100 thieves +2.5': {'1.38': 'ggbet'},
-        '2-nd map: handicap 100 thieves +3.5': {'1.3': 'ggbet'},
-        '2-nd map: handicap 100 thieves +4.5': {'1.22': 'ggbet'},
-        '2-nd map: handicap 100 thieves -1.5': {'1.78': 'ggbet'},
-        '2-nd map: handicap 100 thieves -2.5': {'1.99': 'ggbet'},
-        '2-nd map: handicap 100 thieves -3.5': {'2.27': 'ggbet'},
-        '2-nd map: handicap 100 thieves -4.5': {'2.63': 'ggbet'},
-        '2-nd map: handicap 100 thieves -5.5': {'3.14': 'ggbet'},
-        '2-nd map: handicap 100 thieves -6.5': {'3.79': 'ggbet'},
-        '2-nd map: handicap gen.g +1.5': {'1.97': 'ggbet'},
-        '2-nd map: handicap gen.g +2.5': {'1.76': 'ggbet'},
-        '2-nd map: handicap gen.g +3.5': {'1.59': 'ggbet'},
-        '2-nd map: handicap gen.g +4.5': {'1.45': 'ggbet'},
-        '2-nd map: handicap gen.g +5.5': {'1.33': 'ggbet'},
-        '2-nd map: handicap gen.g +6.5': {'1.24': 'ggbet'},
-        '2-nd map: handicap gen.g -1.5': {'2.51': 'ggbet'},
-        '2-nd map: handicap gen.g -2.5': {'2.9': 'ggbet'},
-        '2-nd map: handicap gen.g -3.5': {'3.32': 'ggbet'},
-        '2-nd map: handicap gen.g -4.5': {'3.99': 'ggbet'},
-        '2-nd map: race to  rounds 100 thieves 12': {'1.65': 'ggbet'},
-        '2-nd map: race to  rounds 100 thieves 3': {'1.76': 'ggbet'},
-        '2-nd map: race to  rounds 100 thieves 6': {'1.71': 'ggbet'},
-        '2-nd map: race to  rounds 100 thieves 9': {'1.68': 'ggbet'},
-        '2-nd map: race to  rounds gen.g 12': {'2.16': 'ggbet'},
-        '2-nd map: race to  rounds gen.g 3': {'1.99': 'ggbet'},
-        '2-nd map: race to  rounds gen.g 6': {'2.06': 'ggbet'},
-        '2-nd map: race to  rounds gen.g 9': {'2.11': 'ggbet'},
-        '2-nd map: terrorist total over 10.5': {'1.21': 'ggbet'},
-        '2-nd map: terrorist total over 11.5': {'1.43': 'ggbet'},
-        '2-nd map: terrorist total over 13.5': {'2.09': 'ggbet'},
-        '2-nd map: terrorist total over 15.5': {'3.54': 'ggbet'},
-        '2-nd map: terrorist total under 10.5': {'4.11': 'ggbet'},
-        '2-nd map: terrorist total under 11.5': {'2.7': 'ggbet'},
-        '2-nd map: terrorist total under 13.5': {'1.69': 'ggbet'},
-        '2-nd map: terrorist total under 15.5': {'1.27': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.3': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.47': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.71': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.09': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.7': 'ggbet'},
-        '2-nd map: total over 29.5': {'3.89': 'ggbet'},
-        '2-nd map: total under 24.5': {'3.32': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.57': 'ggbet'},
-        '2-nd map: total under 26.5': {'2.06': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.69': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.43': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.23': 'ggbet'},
-        '2-nd map: will there be overtime no': {'1.09': 'ggbet'},
-        '2-nd map: will there be overtime yes': {'6.55': 'ggbet'},
-        '2nd map first half - 100 thieves total over 6.5': {'1.34': 'ggbet'},
-        '2nd map first half - 100 thieves total over 7.5': {'1.68': 'ggbet'},
-        '2nd map first half - 100 thieves total over 8.5': {'2.29': 'ggbet'},
-        '2nd map first half - 100 thieves total over 9.5': {'3.39': 'ggbet'},
-        '2nd map first half - 100 thieves total under 6.5': {'3.09': 'ggbet'},
-        '2nd map first half - 100 thieves total under 7.5': {'2.11': 'ggbet'},
-        '2nd map first half - 100 thieves total under 8.5': {'1.58': 'ggbet'},
-        '2nd map first half - 100 thieves total under 9.5': {'1.29': 'ggbet'},
-        '2nd map first half - 100 thieves will win': {'1.68': 'ggbet'},
-        '2nd map first half - gen.g total over 5.5': {'1.28': 'ggbet'},
-        '2nd map first half - gen.g total over 6.5': {'1.58': 'ggbet'},
-        '2nd map first half - gen.g total over 7.5': {'2.11': 'ggbet'},
-        '2nd map first half - gen.g total over 8.5': {'3.09': 'ggbet'},
-        '2nd map first half - gen.g total under 5.5': {'3.46': 'ggbet'},
-        '2nd map first half - gen.g total under 6.5': {'2.29': 'ggbet'},
-        '2nd map first half - gen.g total under 7.5': {'1.68': 'ggbet'},
-        '2nd map first half - gen.g total under 8.5': {'1.34': 'ggbet'},
-        '2nd map first half - gen.g will win': {'2.11': 'ggbet'},
-        '2nd map first half - handicap 100 thieves +1.5': {'1.34': 'ggbet'},
-        '2nd map first half - handicap 100 thieves -0.5': {'1.68': 'ggbet'},
-        '2nd map first half - handicap 100 thieves -2.5': {'2.29': 'ggbet'},
-        '2nd map first half - handicap 100 thieves -4.5': {'3.46': 'ggbet'},
-        '2nd map first half - handicap gen.g +0.5': {'2.11': 'ggbet'},
-        '2nd map first half - handicap gen.g +2.5': {'1.58': 'ggbet'},
-        '2nd map first half - handicap gen.g +4.5': {'1.28': 'ggbet'},
-        '2nd map first half - handicap gen.g -1.5': {'3.09': 'ggbet'},
-        '2nd map second half - 1x2 100 thieves': {'1.78': 'ggbet'},
-        '2nd map second half - 1x2 draw': {'9.43': 'ggbet'},
-        '2nd map second half - 1x2 gen.g': {'2.25': 'ggbet'},
-        '2nd map second half - handicap 100 thieves +1.5': {'1.4': 'ggbet'},
-        '2nd map second half - handicap 100 thieves -0.5': {'1.78': 'ggbet'},
-        '2nd map second half - handicap 100 thieves -2.5': {'2.6': 'ggbet'},
-        '2nd map second half - handicap 100 thieves -3.5': {'3.46': 'ggbet'},
-        '2nd map second half - handicap gen.g +0.5': {'1.97': 'ggbet'},
-        '2nd map second half - handicap gen.g +2.5': {'1.46': 'ggbet'},
-        '2nd map second half - handicap gen.g +3.5': {'1.28': 'ggbet'},
-        '2nd map second half - handicap gen.g -1.5': {'2.81': 'ggbet'},
-        'correct score 0-2': {'4.64': 'ggbet'},
-        'correct score 1-2': {'4.34': 'ggbet'},
-        'correct score 2-0': {'2.57': 'ggbet'},
-        'correct score 2-1': {'3.27': 'ggbet'},
-        'gen.g handicap +1.5 maps': {'1.47': 'ggbet'},
-        'gen.g handicap -1.5 maps': {'4.64': 'ggbet'},
-        'gen.g total over 22.5': {'1.22': 'ggbet'},
-        'gen.g total over 27.5': {'1.41': 'ggbet'},
-        'gen.g total over 32.5': {'1.98': 'ggbet'},
-        'gen.g total over 36.5': {'2.51': 'ggbet'},
-        'gen.g total over 40.5': {'3.62': 'ggbet'},
-        'gen.g total under 22.5': {'3.99': 'ggbet'},
-        'gen.g total under 27.5': {'2.77': 'ggbet'},
-        'gen.g total under 32.5': {'1.77': 'ggbet'},
-        'gen.g total under 36.5': {'1.49': 'ggbet'},
-        'gen.g total under 40.5': {'1.26': 'ggbet'},
-        'gen.g will win': {'2.43': 'ggbet'},
-        'handicap 100 thieves +2.5': {'1.41': 'ggbet'},
-        'handicap 100 thieves +5.5': {'1.28': 'ggbet'},
-        'handicap 100 thieves -0.5': {'1.54': 'ggbet'},
-        'handicap 100 thieves -11.5': {'3.89': 'ggbet'},
-        'handicap 100 thieves -3.5': {'1.71': 'ggbet'},
-        'handicap 100 thieves -5.5': {'1.93': 'ggbet'},
-        'handicap 100 thieves -7.5': {'2.31': 'ggbet'},
-        'handicap 100 thieves -9.5': {'2.9': 'ggbet'},
-        'handicap gen.g +0.5': {'2.38': 'ggbet'},
-        'handicap gen.g +11.5': {'1.23': 'ggbet'},
-        'handicap gen.g +3.5': {'2.06': 'ggbet'},
-        'handicap gen.g +5.5': {'1.81': 'ggbet'},
-        'handicap gen.g +7.5': {'1.57': 'ggbet'},
-        'handicap gen.g +9.5': {'1.38': 'ggbet'},
-        'handicap gen.g -2.5': {'2.77': 'ggbet'},
-        'handicap gen.g -5.5': {'3.46': 'ggbet'},
-        'odd/even maps even': {'1.77': 'ggbet'},
-        'odd/even maps odd': {'1.98': 'ggbet'},
-        'total maps over 2.5': {'1.98': 'ggbet'},
-        'total maps under 2.5': {'1.77': 'ggbet'},
-        'total over 52.5': {'1.24': 'ggbet'},
-        'total over 54.5': {'1.36': 'ggbet'},
-        'total over 56.5': {'1.5': 'ggbet'},
-        'total over 58.5': {'1.63': 'ggbet'},
-        'total over 62.5': {'1.77': 'ggbet'},
-        'total over 68.5': {'1.96': 'ggbet'},
-        'total over 73.5': {'2.23': 'ggbet'},
-        'total over 76.5': {'2.57': 'ggbet'},
-        'total over 78.5': {'2.94': 'ggbet'},
-        'total over 80.5': {'3.46': 'ggbet'},
-        'total over 82.5': {'4.23': 'ggbet'},
-        'total under 52.5': {'3.79': 'ggbet'},
-        'total under 54.5': {'2.99': 'ggbet'},
-        'total under 56.5': {'2.48': 'ggbet'},
-        'total under 58.5': {'2.19': 'ggbet'},
-        'total under 62.5': {'1.98': 'ggbet'},
-        'total under 68.5': {'1.79': 'ggbet'},
-        'total under 73.5': {'1.61': 'ggbet'},
-        'total under 76.5': {'1.47': 'ggbet'},
-        'total under 78.5': {'1.37': 'ggbet'},
-        'total under 80.5': {'1.28': 'ggbet'},
-        'total under 82.5': {'1.2': 'ggbet'}
-    },
-    '9ine - wizards e-sports': {
-        '1-st map: 9ine will win': {'2.57': 'ggbet'},
-        '1-st map: 9ine will win round 1': {'1.93': 'ggbet'},
-        '1-st map: handicap 9ine +1.5': {'2.25': 'ggbet'},
-        '1-st map: handicap 9ine +2.5': {'1.99': 'ggbet'},
-        '1-st map: handicap 9ine +3.5': {'1.78': 'ggbet'},
-        '1-st map: handicap 9ine +4.5': {'1.6': 'ggbet'},
-        '1-st map: handicap 9ine +5.5': {'1.46': 'ggbet'},
-        '1-st map: handicap wizards e-sports -1.5': {'1.6': 'ggbet'},
-        '1-st map: handicap wizards e-sports -2.5': {'1.76': 'ggbet'},
-        '1-st map: handicap wizards e-sports -3.5': {'1.97': 'ggbet'},
-        '1-st map: handicap wizards e-sports -4.5': {'2.25': 'ggbet'},
-        '1-st map: handicap wizards e-sports -5.5': {'2.6': 'ggbet'},
-        '1-st map: total over 25.5': {'1.57': 'ggbet'},
-        '1-st map: total over 26.5': {'1.85': 'ggbet'},
-        '1-st map: total over 27.5': {'2.27': 'ggbet'},
-        '1-st map: total under 25.5': {'2.31': 'ggbet'},
-        '1-st map: total under 26.5': {'1.89': 'ggbet'},
-        '1-st map: total under 27.5': {'1.59': 'ggbet'},
-        '1-st map: wizards e-sports will win': {'1.47': 'ggbet'},
-        '1-st map: wizards e-sports will win round 1': {'1.81': 'ggbet'},
-        '2-nd map: 9ine will win': {'2.57': 'ggbet'},
-        '2-nd map: 9ine will win round 1': {'1.93': 'ggbet'},
-        '2-nd map: handicap 9ine +1.5': {'2.25': 'ggbet'},
-        '2-nd map: handicap 9ine +2.5': {'1.99': 'ggbet'},
-        '2-nd map: handicap 9ine +3.5': {'1.79': 'ggbet'},
-        '2-nd map: handicap 9ine +4.5': {'1.61': 'ggbet'},
-        '2-nd map: handicap 9ine +5.5': {'1.46': 'ggbet'},
-        '2-nd map: handicap wizards e-sports -1.5': {'1.6': 'ggbet'},
-        '2-nd map: handicap wizards e-sports -2.5': {'1.76': 'ggbet'},
-        '2-nd map: handicap wizards e-sports -3.5': {'1.96': 'ggbet'},
-        '2-nd map: handicap wizards e-sports -4.5': {'2.23': 'ggbet'},
-        '2-nd map: handicap wizards e-sports -5.5': {'2.6': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.58': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.86': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.29': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.29': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.88': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.58': 'ggbet'},
-        '2-nd map: wizards e-sports will win': {'1.47': 'ggbet'},
-        '2-nd map: wizards e-sports will win round 1': {'1.81': 'ggbet'},
-        '9ine handicap +1.5 maps': {'1.69': 'ggbet'},
-        '9ine handicap -1.5 maps': {'5.4': 'ggbet'},
-        '9ine will win': {'2.94': 'ggbet'},
-        'correct score 0-2': {'2.09': 'ggbet'},
-        'correct score 1-2': {'3.5': 'ggbet'},
-        'correct score 2-0': {'5.33': 'ggbet'},
-        'correct score 2-1': {'5.22': 'ggbet'},
-        'odd/even maps even': {'1.6': 'ggbet'},
-        'odd/even maps odd': {'2.25': 'ggbet'},
-        'total maps over 2.5': {'2.25': 'ggbet'},
-        'total maps under 2.5': {'1.6': 'ggbet'},
-        'wizards e-sports handicap +1.5 maps': {'1.13': 'ggbet'},
-        'wizards e-sports handicap -1.5 maps': {'2.09': 'ggbet'},
-        'wizards e-sports will win': {'1.38': 'ggbet'}
-    },
+    'adaptation - blink': {
+        '1-st map: adaptation will win': {
+            '1.64': 'ggbet('
+                    'https://gg.bet/en/betting/match/blink-vs-adaptation-03-07)'
+            },
+        '1-st map: blink will win': {'2.17': 'ggbet(https://gg.bet/en/betting/match/blink-vs-adaptation-03-07)'},
+        'adaptation will win': {'1.65': 'ggbet(https://gg.bet/en/betting/match/blink-vs-adaptation-03-07)'},
+        'blink will win': {'2.18': 'ggbet(https://gg.bet/en/betting/match/blink-vs-adaptation-03-07)'}
+        },
     'ago - nordavind': {
-        '1-st map: ago total over 10.5': {'1.29': 'ggbet'},
-        '1-st map: ago total over 11.5': {'1.39': 'ggbet'},
-        '1-st map: ago total over 12.5': {'1.52': 'ggbet'},
-        '1-st map: ago total over 13.5': {'1.68': 'ggbet'},
-        '1-st map: ago total over 14.5': {'1.87': 'ggbet'},
-        '1-st map: ago total over 15.5': {'2.38': 'ggbet'},
-        '1-st map: ago total over 9.5': {'1.2': 'ggbet'},
-        '1-st map: ago total under 10.5': {'3.39': 'ggbet'},
-        '1-st map: ago total under 11.5': {'2.85': 'ggbet'},
-        '1-st map: ago total under 12.5': {'2.43': 'ggbet'},
-        '1-st map: ago total under 13.5': {'2.11': 'ggbet'},
-        '1-st map: ago total under 14.5': {'1.87': 'ggbet'},
-        '1-st map: ago total under 15.5': {'1.54': 'ggbet'},
-        '1-st map: ago total under 9.5': {'4.23': 'ggbet'},
-        '1-st map: ago will win': {'2.11': 'ggbet'},
-        '1-st map: ago will win round 1': {'1.9': 'ggbet'},
-        '1-st map: correct score 10t-e': {'12.56': 'ggbet'},
-        '1-st map: correct score 11t-e': {'11.77': 'ggbet'},
-        '1-st map: correct score 12t-e': {'10.35': 'ggbet'},
-        '1-st map: correct score 13t-e': {'10.14': 'ggbet'},
-        '1-st map: correct score 14t-e': {'10.03': 'ggbet'},
-        '1-st map: correct score 16t-e': {'9.55': 'ggbet'},
-        '1-st map: correct score 1t-e': {'10.41': 'ggbet'},
-        '1-st map: correct score 2t-e': {'100': 'ggbet'},
-        '1-st map: correct score 3t-e': {'77.41': 'ggbet'},
-        '1-st map: correct score 4t-e': {'44.33': 'ggbet'},
-        '1-st map: correct score 5t-e': {'29.63': 'ggbet'},
-        '1-st map: correct score 6t-e': {'22.18': 'ggbet'},
-        '1-st map: correct score 7t-e': {'17.98': 'ggbet'},
-        '1-st map: correct score 8t-e': {'15.4': 'ggbet'},
-        '1-st map: correct score 9t-e': {'13.71': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.39': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.06': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.62': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.85': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.71': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.26': 'ggbet'},
-        '1-st map: handicap ago +1.5': {'1.87': 'ggbet'},
-        '1-st map: handicap ago +2.5': {'1.68': 'ggbet'},
-        '1-st map: handicap ago +3.5': {'1.52': 'ggbet'},
-        '1-st map: handicap ago +4.5': {'1.39': 'ggbet'},
-        '1-st map: handicap ago +5.5': {'1.29': 'ggbet'},
-        '1-st map: handicap ago +6.5': {'1.2': 'ggbet'},
-        '1-st map: handicap ago -1.5': {'2.38': 'ggbet'},
-        '1-st map: handicap ago -2.5': {'2.73': 'ggbet'},
-        '1-st map: handicap ago -3.5': {'3.2': 'ggbet'},
-        '1-st map: handicap ago -4.5': {'3.79': 'ggbet'},
-        '1-st map: handicap nordavind +1.5': {'1.54': 'ggbet'},
-        '1-st map: handicap nordavind +2.5': {'1.42': 'ggbet'},
-        '1-st map: handicap nordavind +3.5': {'1.32': 'ggbet'},
-        '1-st map: handicap nordavind +4.5': {'1.24': 'ggbet'},
-        '1-st map: handicap nordavind -1.5': {'1.87': 'ggbet'},
-        '1-st map: handicap nordavind -2.5': {'2.11': 'ggbet'},
-        '1-st map: handicap nordavind -3.5': {'2.43': 'ggbet'},
-        '1-st map: handicap nordavind -4.5': {'2.85': 'ggbet'},
-        '1-st map: handicap nordavind -5.5': {'3.39': 'ggbet'},
-        '1-st map: handicap nordavind -6.5': {'4.23': 'ggbet'},
-        '1-st map: nordavind total over 11.5': {'1.24': 'ggbet'},
-        '1-st map: nordavind total over 12.5': {'1.32': 'ggbet'},
-        '1-st map: nordavind total over 13.5': {'1.42': 'ggbet'},
-        '1-st map: nordavind total over 14.5': {'1.54': 'ggbet'},
-        '1-st map: nordavind total over 15.5': {'1.87': 'ggbet'},
-        '1-st map: nordavind total under 11.5': {'3.79': 'ggbet'},
-        '1-st map: nordavind total under 12.5': {'3.2': 'ggbet'},
-        '1-st map: nordavind total under 13.5': {'2.73': 'ggbet'},
-        '1-st map: nordavind total under 14.5': {'2.38': 'ggbet'},
-        '1-st map: nordavind total under 15.5': {'1.87': 'ggbet'},
-        '1-st map: nordavind will win': {'1.68': 'ggbet'},
-        '1-st map: nordavind will win round 1': {'1.84': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.39': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.06': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.62': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.85': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.71': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.26': 'ggbet'},
-        '1-st map: total over 24.5': {'1.23': 'ggbet'},
-        '1-st map: total over 25.5': {'1.37': 'ggbet'},
-        '1-st map: total over 26.5': {'1.58': 'ggbet'},
-        '1-st map: total over 27.5': {'1.89': 'ggbet'},
-        '1-st map: total over 28.5': {'2.4': 'ggbet'},
-        '1-st map: total over 29.5': {'3.32': 'ggbet'},
-        '1-st map: total under 24.5': {'3.89': 'ggbet'},
-        '1-st map: total under 25.5': {'2.94': 'ggbet'},
-        '1-st map: total under 26.5': {'2.29': 'ggbet'},
-        '1-st map: total under 27.5': {'1.85': 'ggbet'},
-        '1-st map: total under 28.5': {'1.53': 'ggbet'},
-        '1-st map: total under 29.5': {'1.3': 'ggbet'},
-        'ago will win': {'2.11': 'ggbet'},
-        'nordavind will win': {'1.69': 'ggbet'}
-    },
-    'ago nest - quantum bellator fire': {
-        '1-st map: ago nest will win': {'1.86': 'ggbet'},
-        '1-st map: quantum bellator fire will win': {'1.88': 'ggbet'},
-        '2-nd map: ago nest will win': {'1.87': 'ggbet'},
-        '2-nd map: quantum bellator fire will win': {'1.87': 'ggbet'},
-        'ago nest will win': {'1.87': 'ggbet'},
-        'quantum bellator fire will win': {'1.89': 'ggbet'}
-    },
+        '1-st map: ago total over 10.5': {'1.3': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total over 11.5': {'1.41': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total over 12.5': {'1.55': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total over 13.5': {'1.71': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total over 14.5': {'1.91': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total over 15.5': {'2.45': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total over 9.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total under 10.5': {'3.32': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total under 11.5': {'2.77': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total under 12.5': {'2.35': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total under 13.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total under 14.5': {'1.83': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total under 15.5': {'1.51': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago total under 9.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago will win': {'2.16': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ago will win round 1': {'1.9': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 10t-e': {'12.81': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 11t-e': {'11.96': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 12t-e': {'10.46': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 13t-e': {'10.22': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 14t-e': {'10.09': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 16t-e': {'9.53': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 1t-e': {'10.29': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 2t-e': {'100': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 3t-e': {'82.02': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 4t-e': {'46.62': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 5t-e': {'30.93': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 6t-e': {'22.99': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 7t-e': {'18.53': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 8t-e': {'15.8': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: correct score 9t-e': {'14.02': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ct total  over 11.5': {'1.39': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ct total  over 13.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ct total  over 15.5': {'3.62': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ct total  under 11.5': {'2.85': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ct total  under 13.5': {'1.71': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: ct total  under 15.5': {'1.26': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap ago +1.5': {'1.91': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap ago +2.5': {'1.71': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap ago +3.5': {'1.55': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap ago +4.5': {'1.41': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap ago +5.5': {'1.3': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap ago +6.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap ago -1.5': {'2.45': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap ago -2.5': {'2.81': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap ago -3.5': {'3.32': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap ago -4.5': {'3.89': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap nordavind +1.5': {'1.51': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap nordavind +2.5': {'1.4': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap nordavind +3.5': {'1.3': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap nordavind +4.5': {'1.23': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap nordavind -1.5': {'1.83': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap nordavind -2.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap nordavind -3.5': {'2.35': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap nordavind -4.5': {'2.77': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap nordavind -5.5': {'3.32': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: handicap nordavind -6.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: nordavind total over 11.5': {
+            '1.23': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: nordavind total over 12.5': {'1.3': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: nordavind total over 13.5': {'1.4': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: nordavind total over 14.5': {
+            '1.51': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: nordavind total over 15.5': {
+            '1.83': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: nordavind total under 11.5': {
+            '3.89': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: nordavind total under 12.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: nordavind total under 13.5': {
+            '2.81': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: nordavind total under 14.5': {
+            '2.45': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: nordavind total under 15.5': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: nordavind will win': {'1.65': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: nordavind will win round 1': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: terrorist total over 11.5': {
+            '1.39': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: terrorist total over 13.5': {
+            '2.06': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: terrorist total over 15.5': {
+            '3.62': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: terrorist total under 11.5': {
+            '2.85': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: terrorist total under 13.5': {
+            '1.71': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: terrorist total under 15.5': {
+            '1.26': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'
+            },
+        '1-st map: total over 24.5': {'1.27': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: total over 25.5': {'1.43': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        '1-st map: total under 24.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        'ago will win': {'2.18': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'},
+        'nordavind will win': {'1.65': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-ago-03-07)'}
+        },
     'ahq - asking questions': {
-        '1-st map: ahq will win': {'1.53': 'ggbet'},
-        '1-st map: asking questions will win': {'2.4': 'ggbet'},
-        '2-nd map: ahq will win': {'1.53': 'ggbet'},
-        '2-nd map: asking questions will win': {'2.4': 'ggbet'},
-        'ahq will win': {'1.44': 'ggbet'},
-        'asking questions will win': {'2.7': 'ggbet'}
-    },
+        '1-st map: ahq will win': {'1.63': 'ggbet(https://gg.bet/en/betting/match/ahq-vs-asking-questions-03-07)'},
+        '1-st map: asking questions will win': {
+            '2.19': 'ggbet(https://gg.bet/en/betting/match/ahq-vs-asking-questions-03-07)'
+            },
+        '2-nd map: ahq will win': {'1.63': 'ggbet(https://gg.bet/en/betting/match/ahq-vs-asking-questions-03-07)'},
+        '2-nd map: asking questions will win': {
+            '2.19': 'ggbet(https://gg.bet/en/betting/match/ahq-vs-asking-questions-03-07)'
+            },
+        'ahq will win': {'1.57': 'ggbet(https://gg.bet/en/betting/match/ahq-vs-asking-questions-03-07)'},
+        'asking questions will win': {'2.34': 'ggbet(https://gg.bet/en/betting/match/ahq-vs-asking-questions-03-07)'}
+        },
     'aim4r - w2c': {
-        '1-st map: aim4r will win': {'2.31': 'ggbet'},
-        '1-st map: w2c will win': {'1.57': 'ggbet'},
-        '2-nd map: aim4r will win': {'2.31': 'ggbet'},
-        '2-nd map: w2c will win': {'1.57': 'ggbet'},
-        'aim4r will win': {'2.51': 'ggbet'},
-        'w2c will win': {'1.5': 'ggbet'}
-    },
-    'alcoholics anonymous - new england whalers': {
-        '1-st map: alcoholics anonymous will win': {'2.51': 'ggbet'},
-        '1-st map: new england whalers will win': {'1.49': 'ggbet'},
-        '2-nd map: alcoholics anonymous will win': {'2.51': 'ggbet'},
-        '2-nd map: new england whalers will win': {'1.49': 'ggbet'},
-        'alcoholics anonymous will win': {'2.81': 'ggbet'},
-        'new england whalers will win': {'1.41': 'ggbet'}
-    },
-    'alternate attax - fate': {
-        '1-st map: alternate attax total over 12.5': {'1.21': 'ggbet'},
-        '1-st map: alternate attax total over 14.5': {'1.35': 'ggbet'},
-        '1-st map: alternate attax total over 15.5': {'1.55': 'ggbet'},
-        '1-st map: alternate attax total under 12.5': {'4.11': 'ggbet'},
-        '1-st map: alternate attax total under 14.5': {'3.04': 'ggbet'},
-        '1-st map: alternate attax total under 15.5': {'2.35': 'ggbet'},
-        '1-st map: alternate attax will win': {'1.42': 'ggbet'},
-        '1-st map: alternate attax will win round 1': {'1.8': 'ggbet'},
-        '1-st map: correct score 10-16': {'15.24': 'ggbet'},
-        '1-st map: correct score 11-16': {'14.18': 'ggbet'},
-        '1-st map: correct score 12-16': {'13.42': 'ggbet'},
-        '1-st map: correct score 13-16': {'12.88': 'ggbet'},
-        '1-st map: correct score 14-16': {'12.52': 'ggbet'},
-        '1-st map: correct score 16-1': {'91.21': 'ggbet'},
-        '1-st map: correct score 16-10': {'9.25': 'ggbet'},
-        '1-st map: correct score 16-11': {'9.24': 'ggbet'},
-        '1-st map: correct score 16-12': {'9.36': 'ggbet'},
-        '1-st map: correct score 16-13': {'9.59': 'ggbet'},
-        '1-st map: correct score 16-14': {'9.9': 'ggbet'},
-        '1-st map: correct score 16-2': {'40.52': 'ggbet'},
-        '1-st map: correct score 16-3': {'24.47': 'ggbet'},
-        '1-st map: correct score 16-4': {'17.79': 'ggbet'},
-        '1-st map: correct score 16-5': {'14.4': 'ggbet'},
-        '1-st map: correct score 16-6': {'12.41': 'ggbet'},
-        '1-st map: correct score 16-7': {'10.31': 'ggbet'},
-        '1-st map: correct score 16-8': {'9.76': 'ggbet'},
-        '1-st map: correct score 16-9': {'9.42': 'ggbet'},
-        '1-st map: correct score 2-16': {'100': 'ggbet'},
-        '1-st map: correct score 3-16': {'86.01': 'ggbet'},
-        '1-st map: correct score 4-16': {'52.16': 'ggbet'},
-        '1-st map: correct score 5-16': {'35.96': 'ggbet'},
-        '1-st map: correct score 6-16': {'27.24': 'ggbet'},
-        '1-st map: correct score 7-16': {'22.11': 'ggbet'},
-        '1-st map: correct score 8-16': {'18.89': 'ggbet'},
-        '1-st map: correct score 9-16': {'16.74': 'ggbet'},
-        '1-st map: ct total  over 10.5': {'1.23': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.47': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.17': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.79': 'ggbet'},
-        '1-st map: ct total  under 10.5': {'3.89': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.57': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.64': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.24': 'ggbet'},
-        '1-st map: fate total over 10.5': {'1.5': 'ggbet'},
-        '1-st map: fate total over 11.5': {'1.66': 'ggbet'},
-        '1-st map: fate total over 12.5': {'1.85': 'ggbet'},
-        '1-st map: fate total over 13.5': {'2.09': 'ggbet'},
-        '1-st map: fate total over 14.5': {'2.35': 'ggbet'},
-        '1-st map: fate total over 15.5': {'3.04': 'ggbet'},
-        '1-st map: fate total over 8.5': {'1.26': 'ggbet'},
-        '1-st map: fate total over 9.5': {'1.37': 'ggbet'},
-        '1-st map: fate total under 10.5': {'2.48': 'ggbet'},
-        '1-st map: fate total under 11.5': {'2.14': 'ggbet'},
-        '1-st map: fate total under 12.5': {'1.89': 'ggbet'},
-        '1-st map: fate total under 13.5': {'1.69': 'ggbet'},
-        '1-st map: fate total under 14.5': {'1.55': 'ggbet'},
-        '1-st map: fate total under 15.5': {'1.35': 'ggbet'},
-        '1-st map: fate total under 8.5': {'3.62': 'ggbet'},
-        '1-st map: fate total under 9.5': {'2.94': 'ggbet'},
-        '1-st map: fate will win': {'2.73': 'ggbet'},
-        '1-st map: fate will win round 1': {'1.94': 'ggbet'},
-        '1-st map: handicap alternate attax +1.5': {'1.35': 'ggbet'},
-        '1-st map: handicap alternate attax +2.5': {'1.27': 'ggbet'},
-        '1-st map: handicap alternate attax +3.5': {'1.21': 'ggbet'},
-        '1-st map: handicap alternate attax -1.5': {'1.55': 'ggbet'},
-        '1-st map: handicap alternate attax -2.5': {'1.69': 'ggbet'},
-        '1-st map: handicap alternate attax -3.5': {'1.89': 'ggbet'},
-        '1-st map: handicap alternate attax -4.5': {'2.14': 'ggbet'},
-        '1-st map: handicap alternate attax -5.5': {'2.48': 'ggbet'},
-        '1-st map: handicap alternate attax -6.5': {'2.94': 'ggbet'},
-        '1-st map: handicap alternate attax -7.5': {'3.62': 'ggbet'},
-        '1-st map: handicap fate +1.5': {'2.35': 'ggbet'},
-        '1-st map: handicap fate +2.5': {'2.09': 'ggbet'},
-        '1-st map: handicap fate +3.5': {'1.85': 'ggbet'},
-        '1-st map: handicap fate +4.5': {'1.66': 'ggbet'},
-        '1-st map: handicap fate +5.5': {'1.5': 'ggbet'},
-        '1-st map: handicap fate +6.5': {'1.37': 'ggbet'},
-        '1-st map: handicap fate +7.5': {'1.26': 'ggbet'},
-        '1-st map: handicap fate -1.5': {'3.04': 'ggbet'},
-        '1-st map: handicap fate -2.5': {'3.54': 'ggbet'},
-        '1-st map: handicap fate -3.5': {'4.11': 'ggbet'},
-        '1-st map: terrorist total over 10.5': {'1.23': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.47': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.17': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.79': 'ggbet'},
-        '1-st map: terrorist total under 10.5': {'3.89': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.57': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.64': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.24': 'ggbet'},
-        '1-st map: total over 23.5': {'1.25': 'ggbet'},
-        '1-st map: total over 24.5': {'1.39': 'ggbet'},
-        '1-st map: total over 25.5': {'1.59': 'ggbet'},
-        '1-st map: total over 26.5': {'1.87': 'ggbet'},
-        '1-st map: total over 27.5': {'2.31': 'ggbet'},
-        '1-st map: total over 28.5': {'2.99': 'ggbet'},
-        '1-st map: total under 23.5': {'3.7': 'ggbet'},
-        '1-st map: total under 24.5': {'2.85': 'ggbet'},
-        '1-st map: total under 25.5': {'2.27': 'ggbet'},
-        '1-st map: total under 26.5': {'1.87': 'ggbet'},
-        '1-st map: total under 27.5': {'1.57': 'ggbet'},
-        '1-st map: total under 28.5': {'1.36': 'ggbet'},
-        'alternate attax will win': {'1.43': 'ggbet'},
-        'fate will win': {'2.73': 'ggbet'}
-    },
-    'ambush - apeks': {
-        '1-st map: ambush will win': {'2.31': 'ggbet'},
-        '1-st map: ambush will win round 1': {'1.91': 'ggbet'},
-        '1-st map: apeks will win': {'1.57': 'ggbet'},
-        '1-st map: apeks will win round 1': {'1.83': 'ggbet'},
-        '1-st map: handicap ambush +1.5': {'2.05': 'ggbet'},
-        '1-st map: handicap ambush +2.5': {'1.83': 'ggbet'},
-        '1-st map: handicap ambush +3.5': {'1.65': 'ggbet'},
-        '1-st map: handicap ambush +4.5': {'1.5': 'ggbet'},
-        '1-st map: handicap ambush +5.5': {'1.38': 'ggbet'},
-        '1-st map: handicap ambush +6.5': {'1.27': 'ggbet'},
-        '1-st map: handicap ambush -1.5': {'2.6': 'ggbet'},
-        '1-st map: handicap ambush -2.5': {'2.99': 'ggbet'},
-        '1-st map: handicap ambush -3.5': {'3.46': 'ggbet'},
-        '1-st map: handicap ambush -4.5': {'4.11': 'ggbet'},
-        '1-st map: handicap apeks +1.5': {'1.46': 'ggbet'},
-        '1-st map: handicap apeks +2.5': {'1.36': 'ggbet'},
-        '1-st map: handicap apeks +3.5': {'1.28': 'ggbet'},
-        '1-st map: handicap apeks +4.5': {'1.21': 'ggbet'},
-        '1-st map: handicap apeks -1.5': {'1.72': 'ggbet'},
-        '1-st map: handicap apeks -2.5': {'1.91': 'ggbet'},
-        '1-st map: handicap apeks -3.5': {'2.16': 'ggbet'},
-        '1-st map: handicap apeks -4.5': {'2.48': 'ggbet'},
-        '1-st map: handicap apeks -5.5': {'2.9': 'ggbet'},
-        '1-st map: handicap apeks -6.5': {'3.54': 'ggbet'},
-        '1-st map: total over 23.5': {'1.22': 'ggbet'},
-        '1-st map: total over 24.5': {'1.34': 'ggbet'},
-        '1-st map: total over 25.5': {'1.52': 'ggbet'},
-        '1-st map: total over 26.5': {'1.78': 'ggbet'},
-        '1-st map: total over 27.5': {'2.17': 'ggbet'},
-        '1-st map: total over 28.5': {'2.81': 'ggbet'},
-        '1-st map: total over 29.5': {'3.99': 'ggbet'},
-        '1-st map: total under 23.5': {'3.99': 'ggbet'},
-        '1-st map: total under 24.5': {'3.09': 'ggbet'},
-        '1-st map: total under 25.5': {'2.43': 'ggbet'},
-        '1-st map: total under 26.5': {'1.97': 'ggbet'},
-        '1-st map: total under 27.5': {'1.64': 'ggbet'},
-        '1-st map: total under 28.5': {'1.4': 'ggbet'},
-        '1-st map: total under 29.5': {'1.22': 'ggbet'},
-        '2-nd map: ambush will win': {'2.31': 'ggbet'},
-        '2-nd map: ambush will win round 1': {'1.91': 'ggbet'},
-        '2-nd map: apeks will win': {'1.57': 'ggbet'},
-        '2-nd map: apeks will win round 1': {'1.83': 'ggbet'},
-        '2-nd map: handicap ambush +1.5': {'2.05': 'ggbet'},
-        '2-nd map: handicap ambush +2.5': {'1.84': 'ggbet'},
-        '2-nd map: handicap ambush +3.5': {'1.65': 'ggbet'},
-        '2-nd map: handicap ambush +4.5': {'1.5': 'ggbet'},
-        '2-nd map: handicap ambush +5.5': {'1.38': 'ggbet'},
-        '2-nd map: handicap ambush +6.5': {'1.28': 'ggbet'},
-        '2-nd map: handicap ambush -1.5': {'2.6': 'ggbet'},
-        '2-nd map: handicap ambush -2.5': {'2.99': 'ggbet'},
-        '2-nd map: handicap ambush -3.5': {'3.46': 'ggbet'},
-        '2-nd map: handicap ambush -4.5': {'3.99': 'ggbet'},
-        '2-nd map: handicap apeks +1.5': {'1.46': 'ggbet'},
-        '2-nd map: handicap apeks +2.5': {'1.36': 'ggbet'},
-        '2-nd map: handicap apeks +3.5': {'1.28': 'ggbet'},
-        '2-nd map: handicap apeks +4.5': {'1.22': 'ggbet'},
-        '2-nd map: handicap apeks -1.5': {'1.72': 'ggbet'},
-        '2-nd map: handicap apeks -2.5': {'1.9': 'ggbet'},
-        '2-nd map: handicap apeks -3.5': {'2.16': 'ggbet'},
-        '2-nd map: handicap apeks -4.5': {'2.48': 'ggbet'},
-        '2-nd map: handicap apeks -5.5': {'2.9': 'ggbet'},
-        '2-nd map: handicap apeks -6.5': {'3.46': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.22': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.35': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.53': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.79': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.19': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.85': 'ggbet'},
-        '2-nd map: total over 29.5': {'3.99': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.99': 'ggbet'},
-        '2-nd map: total under 24.5': {'3.04': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.4': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.96': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.63': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.39': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.22': 'ggbet'},
-        'ambush handicap +1.5 maps': {'1.54': 'ggbet'},
-        'ambush handicap -1.5 maps': {'4.81': 'ggbet'},
-        'ambush will win': {'2.57': 'ggbet'},
-        'apeks handicap +1.5 maps': {'1.16': 'ggbet'},
-        'apeks handicap -1.5 maps': {'2.38': 'ggbet'},
-        'apeks will win': {'1.48': 'ggbet'},
-        'correct score 0-2': {'2.38': 'ggbet'},
-        'correct score 1-2': {'3.4': 'ggbet'},
-        'correct score 2-0': {'4.73': 'ggbet'},
-        'correct score 2-1': {'4.63': 'ggbet'},
-        'odd/even maps even': {'1.69': 'ggbet'},
-        'odd/even maps odd': {'2.09': 'ggbet'},
-        'total maps over 2.5': {'2.09': 'ggbet'},
-        'total maps under 2.5': {'1.69': 'ggbet'}
-    },
+        '1-st map: aim4r will win': {'2.31': 'ggbet(https://gg.bet/en/betting/match/w2c-vs-aim4r-03-07)'},
+        '1-st map: w2c will win': {'1.57': 'ggbet(https://gg.bet/en/betting/match/w2c-vs-aim4r-03-07)'},
+        '2-nd map: aim4r will win': {'2.31': 'ggbet(https://gg.bet/en/betting/match/w2c-vs-aim4r-03-07)'},
+        '2-nd map: w2c will win': {'1.57': 'ggbet(https://gg.bet/en/betting/match/w2c-vs-aim4r-03-07)'},
+        'aim4r will win': {'2.51': 'ggbet(https://gg.bet/en/betting/match/w2c-vs-aim4r-03-07)'},
+        'w2c will win': {'1.5': 'ggbet(https://gg.bet/en/betting/match/w2c-vs-aim4r-03-07)'}
+        },
     'apeks - nemiga': {
-        '1-st map: apeks total over 10.5': {'1.65': 'ggbet'},
-        '1-st map: apeks total over 11.5': {'1.85': 'ggbet'},
-        '1-st map: apeks total over 12.5': {'2.11': 'ggbet'},
-        '1-st map: apeks total over 13.5': {'2.4': 'ggbet'},
-        '1-st map: apeks total over 14.5': {'2.77': 'ggbet'},
-        '1-st map: apeks total over 15.5': {'3.7': 'ggbet'},
-        '1-st map: apeks total over 7.5': {'1.23': 'ggbet'},
-        '1-st map: apeks total over 8.5': {'1.34': 'ggbet'},
-        '1-st map: apeks total over 9.5': {'1.48': 'ggbet'},
-        '1-st map: apeks total under 10.5': {'2.16': 'ggbet'},
-        '1-st map: apeks total under 11.5': {'1.89': 'ggbet'},
-        '1-st map: apeks total under 12.5': {'1.68': 'ggbet'},
-        '1-st map: apeks total under 13.5': {'1.53': 'ggbet'},
-        '1-st map: apeks total under 14.5': {'1.41': 'ggbet'},
-        '1-st map: apeks total under 15.5': {'1.25': 'ggbet'},
-        '1-st map: apeks total under 7.5': {'3.89': 'ggbet'},
-        '1-st map: apeks total under 8.5': {'3.09': 'ggbet'},
-        '1-st map: apeks total under 9.5': {'2.54': 'ggbet'},
-        '1-st map: apeks will win': {'3.26': 'ggbet'},
-        '1-st map: apeks will win round 1': {'1.98': 'ggbet'},
-        '1-st map: correct score 10t-e': {'17.57': 'ggbet'},
-        '1-st map: correct score 11t-e': {'16.06': 'ggbet'},
-        '1-st map: correct score 12t-e': {'14.96': 'ggbet'},
-        '1-st map: correct score 13t-e': {'14.16': 'ggbet'},
-        '1-st map: correct score 14t-e': {'13.58': 'ggbet'},
-        '1-st map: correct score 16t-e': {'10.02': 'ggbet'},
-        '1-st map: correct score 1t-e': {'8.91': 'ggbet'},
-        '1-st map: correct score 2t-e': {'100': 'ggbet'},
-        '1-st map: correct score 3t-e': {'100': 'ggbet'},
-        '1-st map: correct score 4t-e': {'73.53': 'ggbet'},
-        '1-st map: correct score 5t-e': {'48.51': 'ggbet'},
-        '1-st map: correct score 6t-e': {'35.25': 'ggbet'},
-        '1-st map: correct score 7t-e': {'27.58': 'ggbet'},
-        '1-st map: correct score 8t-e': {'22.82': 'ggbet'},
-        '1-st map: correct score 9t-e': {'19.71': 'ggbet'},
-        '1-st map: ct total  over 10.5': {'1.24': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.49': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.23': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.89': 'ggbet'},
-        '1-st map: ct total  under 10.5': {'3.79': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.51': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.61': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.23': 'ggbet'},
-        '1-st map: nemiga total over 14.5': {'1.25': 'ggbet'},
-        '1-st map: nemiga total over 15.5': {'1.41': 'ggbet'},
-        '1-st map: nemiga total under 14.5': {'3.7': 'ggbet'},
-        '1-st map: nemiga total under 15.5': {'2.77': 'ggbet'},
-        '1-st map: nemiga will win': {'1.31': 'ggbet'},
-        '1-st map: nemiga will win round 1': {'1.77': 'ggbet'},
-        '1-st map: terrorist total over 10.5': {'1.24': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.49': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.23': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.89': 'ggbet'},
-        '1-st map: terrorist total under 10.5': {'3.79': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.51': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.61': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.23': 'ggbet'},
-        '1-st map: total over 23.5': {'1.29': 'ggbet'},
-        '1-st map: total over 24.5': {'1.45': 'ggbet'},
-        '1-st map: total over 25.5': {'1.66': 'ggbet'},
-        '1-st map: total over 26.5': {'1.97': 'ggbet'},
-        '1-st map: total over 27.5': {'2.43': 'ggbet'},
-        '1-st map: total over 28.5': {'3.2': 'ggbet'},
-        '1-st map: total under 23.5': {'3.39': 'ggbet'},
-        '1-st map: total under 24.5': {'2.63': 'ggbet'},
-        '1-st map: total under 25.5': {'2.14': 'ggbet'},
-        '1-st map: total under 26.5': {'1.78': 'ggbet'},
-        '1-st map: total under 27.5': {'1.52': 'ggbet'},
-        '1-st map: total under 28.5': {'1.32': 'ggbet'},
-        'apeks will win': {'3.32': 'ggbet'},
-        'nemiga will win': {'1.31': 'ggbet'}
-    },
-    'atk - good gaming': {
-        '1-st map: atk will win': {'1.53': 'ggbet'},
-        '1-st map: good gaming will win': {'2.4': 'ggbet'},
-        '2-nd map: atk will win': {'1.53': 'ggbet'},
-        '2-nd map: good gaming will win': {'2.4': 'ggbet'},
-        'atk will win': {'1.44': 'ggbet'},
-        'good gaming will win': {'2.7': 'ggbet'}
-    },
-    'avant - paradox': {
-        '1-st map: avant will win': {'1.3': 'ggbet'},
-        '1-st map: avant will win round 1': {'1.77': 'ggbet'},
-        '1-st map: handicap avant +1.5': {'1.25': 'ggbet'},
-        '1-st map: handicap avant -1.5': {'1.4': 'ggbet'},
-        '1-st map: handicap avant -2.5': {'1.52': 'ggbet'},
-        '1-st map: handicap avant -3.5': {'1.67': 'ggbet'},
-        '1-st map: handicap avant -4.5': {'1.87': 'ggbet'},
-        '1-st map: handicap avant -5.5': {'2.14': 'ggbet'},
-        '1-st map: handicap avant -6.5': {'2.54': 'ggbet'},
-        '1-st map: handicap avant -7.5': {'3.04': 'ggbet'},
-        '1-st map: handicap avant -8.5': {'3.79': 'ggbet'},
-        '1-st map: handicap paradox +1.5': {'2.81': 'ggbet'},
-        '1-st map: handicap paradox +2.5': {'2.43': 'ggbet'},
-        '1-st map: handicap paradox +3.5': {'2.12': 'ggbet'},
-        '1-st map: handicap paradox +4.5': {'1.87': 'ggbet'},
-        '1-st map: handicap paradox +5.5': {'1.66': 'ggbet'},
-        '1-st map: handicap paradox +6.5': {'1.48': 'ggbet'},
-        '1-st map: handicap paradox +7.5': {'1.35': 'ggbet'},
-        '1-st map: handicap paradox +8.5': {'1.24': 'ggbet'},
-        '1-st map: handicap paradox -1.5': {'3.7': 'ggbet'},
-        '1-st map: paradox will win': {'3.32': 'ggbet'},
-        '1-st map: paradox will win round 1': {'1.98': 'ggbet'},
-        '1-st map: total over 23.5': {'1.3': 'ggbet'},
-        '1-st map: total over 24.5': {'1.45': 'ggbet'},
-        '1-st map: total over 25.5': {'1.67': 'ggbet'},
-        '1-st map: total over 26.5': {'1.98': 'ggbet'},
-        '1-st map: total over 27.5': {'2.45': 'ggbet'},
-        '1-st map: total over 28.5': {'3.2': 'ggbet'},
-        '1-st map: total under 23.5': {'3.32': 'ggbet'},
-        '1-st map: total under 24.5': {'2.63': 'ggbet'},
-        '1-st map: total under 25.5': {'2.12': 'ggbet'},
-        '1-st map: total under 26.5': {'1.77': 'ggbet'},
-        '1-st map: total under 27.5': {'1.51': 'ggbet'},
-        '1-st map: total under 28.5': {'1.32': 'ggbet'},
-        '2-nd map: avant will win': {'1.3': 'ggbet'},
-        '2-nd map: avant will win round 1': {'1.77': 'ggbet'},
-        '2-nd map: handicap avant +1.5': {'1.25': 'ggbet'},
-        '2-nd map: handicap avant -1.5': {'1.4': 'ggbet'},
-        '2-nd map: handicap avant -2.5': {'1.51': 'ggbet'},
-        '2-nd map: handicap avant -3.5': {'1.66': 'ggbet'},
-        '2-nd map: handicap avant -4.5': {'1.86': 'ggbet'},
-        '2-nd map: handicap avant -5.5': {'2.12': 'ggbet'},
-        '2-nd map: handicap avant -6.5': {'2.51': 'ggbet'},
-        '2-nd map: handicap avant -7.5': {'3.04': 'ggbet'},
-        '2-nd map: handicap avant -8.5': {'3.79': 'ggbet'},
-        '2-nd map: handicap paradox +1.5': {'2.81': 'ggbet'},
-        '2-nd map: handicap paradox +2.5': {'2.45': 'ggbet'},
-        '2-nd map: handicap paradox +3.5': {'2.14': 'ggbet'},
-        '2-nd map: handicap paradox +4.5': {'1.88': 'ggbet'},
-        '2-nd map: handicap paradox +5.5': {'1.67': 'ggbet'},
-        '2-nd map: handicap paradox +6.5': {'1.49': 'ggbet'},
-        '2-nd map: handicap paradox +7.5': {'1.35': 'ggbet'},
-        '2-nd map: handicap paradox +8.5': {'1.24': 'ggbet'},
-        '2-nd map: handicap paradox -1.5': {'3.7': 'ggbet'},
-        '2-nd map: paradox will win': {'3.32': 'ggbet'},
-        '2-nd map: paradox will win round 1': {'1.98': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.3': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.46': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.68': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.99': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.48': 'ggbet'},
-        '2-nd map: total over 28.5': {'3.2': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.32': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.6': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.11': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.76': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.5': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.32': 'ggbet'},
-        'avant handicap +1.5 maps': {'1.06': 'ggbet'},
-        'avant handicap -1.5 maps': {'1.68': 'ggbet'},
-        'avant will win': {'1.2': 'ggbet'},
-        'correct score 0-2': {'7.71': 'ggbet'},
-        'correct score 1-2': {'6.9': 'ggbet'},
-        'correct score 2-0': {'1.68': 'ggbet'},
-        'correct score 2-1': {'3.63': 'ggbet'},
-        'odd/even maps even': {'1.46': 'ggbet'},
-        'odd/even maps odd': {'2.6': 'ggbet'},
-        'paradox handicap +1.5 maps': {'2.11': 'ggbet'},
-        'paradox handicap -1.5 maps': {'7.9': 'ggbet'},
-        'paradox will win': {'4.32': 'ggbet'},
-        'total maps over 2.5': {'2.6': 'ggbet'},
-        'total maps under 2.5': {'1.46': 'ggbet'}
-    },
-    'avesta - cplay': {
-        '1-st map: avesta will win': {'2.03': 'ggbet'},
-        '1-st map: cplay will win': {'1.73': 'ggbet'},
-        '1x2 avesta': {'3.69': 'ggbet'},
-        '1x2 cplay': {'2.82': 'ggbet'},
-        '1x2 draw': {'2.13': 'ggbet'},
-        '2-nd map: avesta will win': {'2.03': 'ggbet'},
-        '2-nd map: cplay will win': {'1.73': 'ggbet'}
-    },
-    'baecon gg - big academy': {
-        '1-st map: baecon gg will win': {'2.45': 'ggbet'},
-        '1-st map: big academy will win': {'1.51': 'ggbet'},
-        'baecon gg will win': {'2.48': 'ggbet'},
-        'big academy will win': {'1.51': 'ggbet'}
-    },
-    'baecon gg - gameagents': {
-        '1-st map: baecon gg will win': {'2.25': 'ggbet'},
-        '1-st map: gameagents will win': {'1.6': 'ggbet'},
-        'baecon gg will win': {'2.25': 'ggbet'},
-        'gameagents will win': {'1.61': 'ggbet'}
-    },
-    'bantz - order': {
-        '1-st map: bantz will win': {'6.55': 'ggbet'},
-        '1-st map: order will win': {'1.09': 'ggbet'},
-        '2-nd map: bantz will win': {'6.55': 'ggbet'},
-        '2-nd map: order will win': {'1.09': 'ggbet'},
-        'bantz will win': {'10.97': 'ggbet'},
-        'order will win': {'1.03': 'ggbet'}
-    },
+        '1-st map: apeks total over 10.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: apeks total over 11.5': {'1.64': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: apeks total over 12.5': {'1.82': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: apeks total over 13.5': {'2.05': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: apeks total over 14.5': {'2.31': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: apeks total under 10.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: apeks total under 11.5': {'2.17': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: apeks total under 12.5': {'1.92': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: apeks total under 13.5': {'1.72': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: apeks total under 14.5': {'1.57': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: apeks will win': {'2.66': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: apeks will win round 1': {'1.94': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 1-16': {'89.26': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 10-16': {'9.36': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 11-16': {'9.34': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 12-16': {'9.45': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 13-16': {'9.66': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 14-16': {'9.96': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-10': {'14.88': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-11': {'13.88': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-12': {'13.16': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-13': {'12.66': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-14': {'12.33': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-2': {'100': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-3': {'82.74': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-4': {'50.1': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-5': {'34.59': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-6': {'26.28': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-7': {'21.41': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-8': {'18.34': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 16-9': {'16.3': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 2-16': {'40.16': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 3-16': {'24.5': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 4-16': {'17.91': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 5-16': {'14.54': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 6-16': {'12.56': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 7-16': {'10.41': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 8-16': {'9.87': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: correct score 9-16': {'9.53': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: ct total  over 11.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: ct total  over 13.5': {'2.17': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: ct total  under 11.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: ct total  under 13.5': {'1.64': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: handicap apeks +1.5': {'2.23': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: handicap apeks +2.5': {'1.99': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: handicap apeks +3.5': {'1.78': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: handicap apeks +4.5': {'1.6': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: handicap apeks +5.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: handicap nemiga -1.5': {'1.61': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: handicap nemiga -2.5': {'1.76': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: handicap nemiga -3.5': {'1.97': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: handicap nemiga -4.5': {'2.25': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: handicap nemiga -5.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: nemiga total over 15.5': {'1.57': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: nemiga total under 15.5': {'2.31': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: nemiga will win': {'1.44': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: nemiga will win round 1': {'1.8': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: terrorist total over 11.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: terrorist total over 13.5': {'2.17': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: terrorist total under 11.5': {
+            '2.57': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'
+            },
+        '1-st map: terrorist total under 13.5': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'
+            },
+        '1-st map: total over 25.5': {'1.59': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: total over 26.5': {'1.87': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: total over 27.5': {'2.29': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: total under 25.5': {'2.27': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: total under 26.5': {'1.87': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '1-st map: total under 27.5': {'1.58': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks total over 10.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks total over 11.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks total over 12.5': {'1.83': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks total over 13.5': {'2.05': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks total over 14.5': {'2.31': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks total under 10.5': {'2.51': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks total under 11.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks total under 12.5': {'1.91': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks total under 13.5': {'1.72': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks total under 14.5': {'1.57': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks will win': {'2.66': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: apeks will win round 1': {'1.94': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 1-16': {'86.2': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 10-16': {'9.37': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 11-16': {'9.36': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 12-16': {'9.48': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 13-16': {'9.7': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 14-16': {'10.01': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-10': {'14.95': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-11': {'13.95': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-12': {'13.25': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-13': {'12.75': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-14': {'12.43': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-2': {'100': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-3': {'81.53': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-4': {'49.59': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-5': {'34.37': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-6': {'26.19': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-7': {'21.39': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-8': {'18.36': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 16-9': {'16.35': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 2-16': {'39.05': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 3-16': {'23.99': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 4-16': {'17.63': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 5-16': {'14.37': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 6-16': {'12.45': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 7-16': {'10.36': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 8-16': {'9.85': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: correct score 9-16': {'9.52': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: ct total  over 11.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: ct total  over 13.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: ct total  under 11.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: ct total  under 13.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: handicap apeks +1.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: handicap apeks +2.5': {'1.92': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: handicap apeks +3.5': {'1.73': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: handicap apeks +4.5': {'1.56': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: handicap apeks +5.5': {'1.43': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: handicap nemiga -1.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: handicap nemiga -2.5': {'1.82': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: handicap nemiga -3.5': {'2.03': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: handicap nemiga -4.5': {'2.33': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: handicap nemiga -5.5': {'2.7': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: nemiga total over 15.5': {'1.56': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: nemiga total under 15.5': {'2.33': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: nemiga will win': {'1.44': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: nemiga will win round 1': {'1.8': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: terrorist total over 11.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: terrorist total over 13.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: terrorist total under 11.5': {
+            '2.57': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'
+            },
+        '2-nd map: terrorist total under 13.5': {
+            '1.63': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'
+            },
+        '2-nd map: total over 25.5': {'1.6': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: total over 26.5': {'1.88': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: total over 27.5': {'2.31': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: total under 25.5': {'2.25': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: total under 26.5': {'1.86': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        '2-nd map: total under 27.5': {'1.57': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'apeks handicap +1.5 maps': {'1.74': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'apeks handicap -1.5 maps': {'5.65': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'apeks total over 23.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'apeks total over 28.5': {'1.71': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'apeks total over 32.5': {'2.4': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'apeks total under 23.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'apeks total under 28.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'apeks total under 32.5': {'1.53': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'apeks will win': {'3.08': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'correct score 0-2': {'2.03': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'correct score 1-2': {'3.5': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'correct score 2-0': {'5.61': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'correct score 2-1': {'5.41': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'handicap apeks +4.5': {'2.51': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'handicap nemiga -4.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'nemiga handicap +1.5 maps': {'1.12': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'nemiga handicap -1.5 maps': {'2.02': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'nemiga total over 32.5': {'2.02': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'nemiga total over 37.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'nemiga total under 32.5': {'1.74': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'nemiga total under 37.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'nemiga will win': {'1.35': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'odd/even maps even': {'1.58': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'odd/even maps odd': {'2.29': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total maps over 2.5': {'2.29': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total maps under 2.5': {'1.58': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total over 53.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total over 55.5': {'1.62': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total over 57.5': {'1.79': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total over 60.5': {'1.97': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total over 66.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total over 72.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total under 53.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total under 55.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total under 57.5': {'1.96': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total under 60.5': {'1.78': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total under 66.5': {'1.62': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'},
+        'total under 72.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/apeks-vs-nemiga-03-07)'}
+        },
     'big - vitality': {
-        '1-st map: big total over 10.5': {'1.21': 'ggbet'},
-        '1-st map: big total over 11.5': {'1.29': 'ggbet'},
-        '1-st map: big total over 12.5': {'1.39': 'ggbet'},
-        '1-st map: big total over 13.5': {'1.5': 'ggbet'},
-        '1-st map: big total over 14.5': {'1.64': 'ggbet'},
-        '1-st map: big total over 15.5': {'2.02': 'ggbet'},
-        '1-st map: big total under 10.5': {'4.11': 'ggbet'},
-        '1-st map: big total under 11.5': {'3.39': 'ggbet'},
-        '1-st map: big total under 12.5': {'2.85': 'ggbet'},
-        '1-st map: big total under 13.5': {'2.48': 'ggbet'},
-        '1-st map: big total under 14.5': {'2.17': 'ggbet'},
-        '1-st map: big total under 15.5': {'1.74': 'ggbet'},
-        '1-st map: big will win': {'1.8': 'ggbet'},
-        '1-st map: big will win round 1': {'1.86': 'ggbet'},
-        '1-st map: correct score 10t-e': {'10.43': 'ggbet'},
-        '1-st map: correct score 11t-e': {'10.08': 'ggbet'},
-        '1-st map: correct score 12t-e': {'9.87': 'ggbet'},
-        '1-st map: correct score 13t-e': {'9.77': 'ggbet'},
-        '1-st map: correct score 14t-e': {'9.78': 'ggbet'},
-        '1-st map: correct score 16t-e': {'9.88': 'ggbet'},
-        '1-st map: correct score 1t-e': {'100': 'ggbet'},
-        '1-st map: correct score 2t-e': {'88.56': 'ggbet'},
-        '1-st map: correct score 3t-e': {'46.77': 'ggbet'},
-        '1-st map: correct score 4t-e': {'29.97': 'ggbet'},
-        '1-st map: correct score 5t-e': {'21.95': 'ggbet'},
-        '1-st map: correct score 6t-e': {'17.6': 'ggbet'},
-        '1-st map: correct score 7t-e': {'14.99': 'ggbet'},
-        '1-st map: correct score 8t-e': {'13.29': 'ggbet'},
-        '1-st map: correct score 9t-e': {'12.14': 'ggbet'},
-        '1-st map: ct total  over 10.5': {'1.2': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.42': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.08': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.54': 'ggbet'},
-        '1-st map: ct total  under 10.5': {'4.23': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.73': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.7': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.27': 'ggbet'},
-        '1-st map: first half correct score 1h-t': {'82.29': 'ggbet'},
-        '1-st map: first half correct score 2h-t': {'27.67': 'ggbet'},
-        '1-st map: first half correct score 3h-t': {'14.73': 'ggbet'},
-        '1-st map: first half correct score 4h-t': {'9.3': 'ggbet'},
-        '1-st map: first half correct score 5h-t': {'7.01': 'ggbet'},
-        '1-st map: first half correct score h-t': {'5.84': 'ggbet'},
-        '1-st map: handicap big +1.5': {'1.64': 'ggbet'},
-        '1-st map: handicap big +2.5': {'1.5': 'ggbet'},
-        '1-st map: handicap big +3.5': {'1.39': 'ggbet'},
-        '1-st map: handicap big +4.5': {'1.29': 'ggbet'},
-        '1-st map: handicap big +5.5': {'1.21': 'ggbet'},
-        '1-st map: handicap big -1.5': {'2.02': 'ggbet'},
-        '1-st map: handicap big -2.5': {'2.29': 'ggbet'},
-        '1-st map: handicap big -3.5': {'2.63': 'ggbet'},
-        '1-st map: handicap big -4.5': {'3.09': 'ggbet'},
-        '1-st map: handicap big -5.5': {'3.7': 'ggbet'},
-        '1-st map: handicap vitality +1.5': {'1.74': 'ggbet'},
-        '1-st map: handicap vitality +2.5': {'1.58': 'ggbet'},
-        '1-st map: handicap vitality +3.5': {'1.45': 'ggbet'},
-        '1-st map: handicap vitality +4.5': {'1.34': 'ggbet'},
-        '1-st map: handicap vitality +5.5': {'1.25': 'ggbet'},
-        '1-st map: handicap vitality -1.5': {'2.17': 'ggbet'},
-        '1-st map: handicap vitality -2.5': {'2.48': 'ggbet'},
-        '1-st map: handicap vitality -3.5': {'2.85': 'ggbet'},
-        '1-st map: handicap vitality -4.5': {'3.39': 'ggbet'},
-        '1-st map: handicap vitality -5.5': {'4.11': 'ggbet'},
-        '1-st map: race to  rounds big 12': {'1.82': 'ggbet'},
-        '1-st map: race to  rounds big 3': {'1.85': 'ggbet'},
-        '1-st map: race to  rounds big 6': {'1.83': 'ggbet'},
-        '1-st map: race to  rounds big 9': {'1.83': 'ggbet'},
-        '1-st map: race to  rounds vitality 12': {'1.92': 'ggbet'},
-        '1-st map: race to  rounds vitality 3': {'1.89': 'ggbet'},
-        '1-st map: race to  rounds vitality 6': {'1.91': 'ggbet'},
-        '1-st map: race to  rounds vitality 9': {'1.91': 'ggbet'},
-        '1-st map: terrorist total over 10.5': {'1.2': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.42': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.08': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.54': 'ggbet'},
-        '1-st map: terrorist total under 10.5': {'4.23': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.73': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.7': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.27': 'ggbet'},
-        '1-st map: total over 24.5': {'1.29': 'ggbet'},
-        '1-st map: total over 25.5': {'1.45': 'ggbet'},
-        '1-st map: total over 26.5': {'1.68': 'ggbet'},
-        '1-st map: total over 27.5': {'2.05': 'ggbet'},
-        '1-st map: total over 28.5': {'2.63': 'ggbet'},
-        '1-st map: total over 29.5': {'3.79': 'ggbet'},
-        '1-st map: total under 24.5': {'3.39': 'ggbet'},
-        '1-st map: total under 25.5': {'2.63': 'ggbet'},
-        '1-st map: total under 26.5': {'2.11': 'ggbet'},
-        '1-st map: total under 27.5': {'1.72': 'ggbet'},
-        '1-st map: total under 28.5': {'1.45': 'ggbet'},
-        '1-st map: total under 29.5': {'1.24': 'ggbet'},
-        '1-st map: vitality total over 10.5': {'1.25': 'ggbet'},
-        '1-st map: vitality total over 11.5': {'1.34': 'ggbet'},
-        '1-st map: vitality total over 12.5': {'1.45': 'ggbet'},
-        '1-st map: vitality total over 13.5': {'1.58': 'ggbet'},
-        '1-st map: vitality total over 14.5': {'1.74': 'ggbet'},
-        '1-st map: vitality total over 15.5': {'2.17': 'ggbet'},
-        '1-st map: vitality total under 10.5': {'3.7': 'ggbet'},
-        '1-st map: vitality total under 11.5': {'3.09': 'ggbet'},
-        '1-st map: vitality total under 12.5': {'2.63': 'ggbet'},
-        '1-st map: vitality total under 13.5': {'2.29': 'ggbet'},
-        '1-st map: vitality total under 14.5': {'2.02': 'ggbet'},
-        '1-st map: vitality total under 15.5': {'1.64': 'ggbet'},
-        '1-st map: vitality will win': {'1.94': 'ggbet'},
-        '1-st map: vitality will win round 1': {'1.88': 'ggbet'},
-        '1-st map: will there be overtime no': {'1.09': 'ggbet'},
-        '1-st map: will there be overtime yes': {'6.55': 'ggbet'},
-        '1st map first half - big total over 6.5': {'1.42': 'ggbet'},
-        '1st map first half - big total over 7.5': {'1.83': 'ggbet'},
-        '1st map first half - big total over 8.5': {'2.57': 'ggbet'},
-        '1st map first half - big total over 9.5': {'3.89': 'ggbet'},
-        '1st map first half - big total under 6.5': {'2.73': 'ggbet'},
-        '1st map first half - big total under 7.5': {'1.91': 'ggbet'},
-        '1st map first half - big total under 8.5': {'1.47': 'ggbet'},
-        '1st map first half - big total under 9.5': {'1.23': 'ggbet'},
-        '1st map first half - big will win': {'1.83': 'ggbet'},
-        '1st map first half - handicap big +0.5': {'1.83': 'ggbet'},
-        '1st map first half - handicap big +2.5': {'1.42': 'ggbet'},
-        '1st map first half - handicap big -1.5': {'2.57': 'ggbet'},
-        '1st map first half - handicap big -3.5': {'3.89': 'ggbet'},
-        '1st map first half - handicap vitality +1.5': {'1.47': 'ggbet'},
-        '1st map first half - handicap vitality +3.5': {'1.23': 'ggbet'},
-        '1st map first half - handicap vitality -0.5': {'1.91': 'ggbet'},
-        '1st map first half - handicap vitality -2.5': {'2.73': 'ggbet'},
-        '1st map first half - vitality total over 5.5': {'1.23': 'ggbet'},
-        '1st map first half - vitality total over 6.5': {'1.47': 'ggbet'},
-        '1st map first half - vitality total over 7.5': {'1.91': 'ggbet'},
-        '1st map first half - vitality total over 8.5': {'2.73': 'ggbet'},
-        '1st map first half - vitality total under 5.5': {'3.89': 'ggbet'},
-        '1st map first half - vitality total under 6.5': {'2.57': 'ggbet'},
-        '1st map first half - vitality total under 7.5': {'1.83': 'ggbet'},
-        '1st map first half - vitality total under 8.5': {'1.42': 'ggbet'},
-        '1st map first half - vitality will win': {'1.91': 'ggbet'},
-        '1st map second half - 1x2 big': {'1.93': 'ggbet'},
-        '1st map second half - 1x2 draw': {'9.45': 'ggbet'},
-        '1st map second half - 1x2 vitality': {'2.04': 'ggbet'},
-        '1st map second half - handicap big +1.5': {'1.48': 'ggbet'},
-        '1st map second half - handicap big +3.5': {'1.21': 'ggbet'},
-        '1st map second half - handicap big -0.5': {'1.93': 'ggbet'},
-        '1st map second half - handicap big -2.5': {'2.81': 'ggbet'},
-        '1st map second half - handicap vitality +0.5': {'1.81': 'ggbet'},
-        '1st map second half - handicap vitality +2.5': {'1.4': 'ggbet'},
-        '1st map second half - handicap vitality -1.5': {'2.54': 'ggbet'},
-        '1st map second half - handicap vitality -3.5': {'4.11': 'ggbet'},
-        '2-nd map: big total over 10.5': {'1.21': 'ggbet'},
-        '2-nd map: big total over 11.5': {'1.29': 'ggbet'},
-        '2-nd map: big total over 12.5': {'1.39': 'ggbet'},
-        '2-nd map: big total over 13.5': {'1.5': 'ggbet'},
-        '2-nd map: big total over 14.5': {'1.64': 'ggbet'},
-        '2-nd map: big total over 15.5': {'2.02': 'ggbet'},
-        '2-nd map: big total under 10.5': {'4.11': 'ggbet'},
-        '2-nd map: big total under 11.5': {'3.39': 'ggbet'},
-        '2-nd map: big total under 12.5': {'2.85': 'ggbet'},
-        '2-nd map: big total under 13.5': {'2.48': 'ggbet'},
-        '2-nd map: big total under 14.5': {'2.17': 'ggbet'},
-        '2-nd map: big total under 15.5': {'1.74': 'ggbet'},
-        '2-nd map: big will win': {'1.8': 'ggbet'},
-        '2-nd map: big will win round 1': {'1.86': 'ggbet'},
-        '2-nd map: correct score 10t-e': {'10.43': 'ggbet'},
-        '2-nd map: correct score 11t-e': {'10.09': 'ggbet'},
-        '2-nd map: correct score 12t-e': {'9.87': 'ggbet'},
-        '2-nd map: correct score 13t-e': {'9.78': 'ggbet'},
-        '2-nd map: correct score 14t-e': {'9.79': 'ggbet'},
-        '2-nd map: correct score 16t-e': {'9.89': 'ggbet'},
-        '2-nd map: correct score 1t-e': {'100': 'ggbet'},
-        '2-nd map: correct score 2t-e': {'88.65': 'ggbet'},
-        '2-nd map: correct score 3t-e': {'46.81': 'ggbet'},
-        '2-nd map: correct score 4t-e': {'30': 'ggbet'},
-        '2-nd map: correct score 5t-e': {'21.97': 'ggbet'},
-        '2-nd map: correct score 6t-e': {'17.61': 'ggbet'},
-        '2-nd map: correct score 7t-e': {'14.99': 'ggbet'},
-        '2-nd map: correct score 8t-e': {'13.29': 'ggbet'},
-        '2-nd map: correct score 9t-e': {'12.14': 'ggbet'},
-        '2-nd map: ct total  over 10.5': {'1.2': 'ggbet'},
-        '2-nd map: ct total  over 11.5': {'1.42': 'ggbet'},
-        '2-nd map: ct total  over 13.5': {'2.06': 'ggbet'},
-        '2-nd map: ct total  over 15.5': {'3.54': 'ggbet'},
-        '2-nd map: ct total  under 10.5': {'4.23': 'ggbet'},
-        '2-nd map: ct total  under 11.5': {'2.73': 'ggbet'},
-        '2-nd map: ct total  under 13.5': {'1.71': 'ggbet'},
-        '2-nd map: ct total  under 15.5': {'1.27': 'ggbet'},
-        '2-nd map: first half correct score 1h-t': {'82.4': 'ggbet'},
-        '2-nd map: first half correct score 2h-t': {'27.71': 'ggbet'},
-        '2-nd map: first half correct score 3h-t': {'14.74': 'ggbet'},
-        '2-nd map: first half correct score 4h-t': {'9.31': 'ggbet'},
-        '2-nd map: first half correct score 5h-t': {'7.02': 'ggbet'},
-        '2-nd map: first half correct score h-t': {'5.84': 'ggbet'},
-        '2-nd map: handicap big +1.5': {'1.64': 'ggbet'},
-        '2-nd map: handicap big +2.5': {'1.5': 'ggbet'},
-        '2-nd map: handicap big +3.5': {'1.39': 'ggbet'},
-        '2-nd map: handicap big +4.5': {'1.29': 'ggbet'},
-        '2-nd map: handicap big +5.5': {'1.21': 'ggbet'},
-        '2-nd map: handicap big -1.5': {'2.02': 'ggbet'},
-        '2-nd map: handicap big -2.5': {'2.29': 'ggbet'},
-        '2-nd map: handicap big -3.5': {'2.63': 'ggbet'},
-        '2-nd map: handicap big -4.5': {'3.09': 'ggbet'},
-        '2-nd map: handicap big -5.5': {'3.7': 'ggbet'},
-        '2-nd map: handicap vitality +1.5': {'1.74': 'ggbet'},
-        '2-nd map: handicap vitality +2.5': {'1.58': 'ggbet'},
-        '2-nd map: handicap vitality +3.5': {'1.45': 'ggbet'},
-        '2-nd map: handicap vitality +4.5': {'1.34': 'ggbet'},
-        '2-nd map: handicap vitality +5.5': {'1.25': 'ggbet'},
-        '2-nd map: handicap vitality -1.5': {'2.17': 'ggbet'},
-        '2-nd map: handicap vitality -2.5': {'2.48': 'ggbet'},
-        '2-nd map: handicap vitality -3.5': {'2.85': 'ggbet'},
-        '2-nd map: handicap vitality -4.5': {'3.39': 'ggbet'},
-        '2-nd map: handicap vitality -5.5': {'4.11': 'ggbet'},
-        '2-nd map: race to  rounds big 12': {'1.82': 'ggbet'},
-        '2-nd map: race to  rounds big 3': {'1.84': 'ggbet'},
-        '2-nd map: race to  rounds big 6': {'1.83': 'ggbet'},
-        '2-nd map: race to  rounds big 9': {'1.82': 'ggbet'},
-        '2-nd map: race to  rounds vitality 12': {'1.92': 'ggbet'},
-        '2-nd map: race to  rounds vitality 3': {'1.9': 'ggbet'},
-        '2-nd map: race to  rounds vitality 6': {'1.91': 'ggbet'},
-        '2-nd map: race to  rounds vitality 9': {'1.92': 'ggbet'},
-        '2-nd map: terrorist total over 10.5': {'1.2': 'ggbet'},
-        '2-nd map: terrorist total over 11.5': {'1.42': 'ggbet'},
-        '2-nd map: terrorist total over 13.5': {'2.06': 'ggbet'},
-        '2-nd map: terrorist total over 15.5': {'3.54': 'ggbet'},
-        '2-nd map: terrorist total under 10.5': {'4.23': 'ggbet'},
-        '2-nd map: terrorist total under 11.5': {'2.73': 'ggbet'},
-        '2-nd map: terrorist total under 13.5': {'1.71': 'ggbet'},
-        '2-nd map: terrorist total under 15.5': {'1.27': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.29': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.45': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.68': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.05': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.63': 'ggbet'},
-        '2-nd map: total over 29.5': {'3.79': 'ggbet'},
-        '2-nd map: total under 24.5': {'3.39': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.63': 'ggbet'},
-        '2-nd map: total under 26.5': {'2.11': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.72': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.45': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.24': 'ggbet'},
-        '2-nd map: vitality total over 10.5': {'1.25': 'ggbet'},
-        '2-nd map: vitality total over 11.5': {'1.34': 'ggbet'},
-        '2-nd map: vitality total over 12.5': {'1.45': 'ggbet'},
-        '2-nd map: vitality total over 13.5': {'1.58': 'ggbet'},
-        '2-nd map: vitality total over 14.5': {'1.74': 'ggbet'},
-        '2-nd map: vitality total over 15.5': {'2.17': 'ggbet'},
-        '2-nd map: vitality total under 10.5': {'3.7': 'ggbet'},
-        '2-nd map: vitality total under 11.5': {'3.09': 'ggbet'},
-        '2-nd map: vitality total under 12.5': {'2.63': 'ggbet'},
-        '2-nd map: vitality total under 13.5': {'2.29': 'ggbet'},
-        '2-nd map: vitality total under 14.5': {'2.02': 'ggbet'},
-        '2-nd map: vitality total under 15.5': {'1.64': 'ggbet'},
-        '2-nd map: vitality will win': {'1.94': 'ggbet'},
-        '2-nd map: vitality will win round 1': {'1.88': 'ggbet'},
-        '2-nd map: will there be overtime no': {'1.09': 'ggbet'},
-        '2-nd map: will there be overtime yes': {'6.55': 'ggbet'},
-        '2nd map first half - big total over 6.5': {'1.42': 'ggbet'},
-        '2nd map first half - big total over 7.5': {'1.83': 'ggbet'},
-        '2nd map first half - big total over 8.5': {'2.57': 'ggbet'},
-        '2nd map first half - big total over 9.5': {'3.89': 'ggbet'},
-        '2nd map first half - big total under 6.5': {'2.73': 'ggbet'},
-        '2nd map first half - big total under 7.5': {'1.91': 'ggbet'},
-        '2nd map first half - big total under 8.5': {'1.47': 'ggbet'},
-        '2nd map first half - big total under 9.5': {'1.23': 'ggbet'},
-        '2nd map first half - big will win': {'1.83': 'ggbet'},
-        '2nd map first half - handicap big +0.5': {'1.83': 'ggbet'},
-        '2nd map first half - handicap big +2.5': {'1.42': 'ggbet'},
-        '2nd map first half - handicap big -1.5': {'2.57': 'ggbet'},
-        '2nd map first half - handicap big -3.5': {'3.89': 'ggbet'},
-        '2nd map first half - handicap vitality +1.5': {'1.47': 'ggbet'},
-        '2nd map first half - handicap vitality +3.5': {'1.23': 'ggbet'},
-        '2nd map first half - handicap vitality -0.5': {'1.91': 'ggbet'},
-        '2nd map first half - handicap vitality -2.5': {'2.73': 'ggbet'},
-        '2nd map first half - vitality total over 5.5': {'1.23': 'ggbet'},
-        '2nd map first half - vitality total over 6.5': {'1.47': 'ggbet'},
-        '2nd map first half - vitality total over 7.5': {'1.91': 'ggbet'},
-        '2nd map first half - vitality total over 8.5': {'2.7': 'ggbet'},
-        '2nd map first half - vitality total over 9.5': {'4.23': 'ggbet'},
-        '2nd map first half - vitality total under 5.5': {'3.89': 'ggbet'},
-        '2nd map first half - vitality total under 6.5': {'2.57': 'ggbet'},
-        '2nd map first half - vitality total under 7.5': {'1.83': 'ggbet'},
-        '2nd map first half - vitality total under 8.5': {'1.43': 'ggbet'},
-        '2nd map first half - vitality total under 9.5': {'1.2': 'ggbet'},
-        '2nd map first half - vitality will win': {'1.91': 'ggbet'},
-        '2nd map second half - 1x2 big': {'1.94': 'ggbet'},
-        '2nd map second half - 1x2 draw': {'9.46': 'ggbet'},
-        '2nd map second half - 1x2 vitality': {'2.04': 'ggbet'},
-        '2nd map second half - handicap big +1.5': {'1.48': 'ggbet'},
-        '2nd map second half - handicap big +3.5': {'1.21': 'ggbet'},
-        '2nd map second half - handicap big -0.5': {'1.93': 'ggbet'},
-        '2nd map second half - handicap big -2.5': {'2.81': 'ggbet'},
-        '2nd map second half - handicap vitality +0.5': {'1.81': 'ggbet'},
-        '2nd map second half - handicap vitality +2.5': {'1.4': 'ggbet'},
-        '2nd map second half - handicap vitality -1.5': {'2.54': 'ggbet'},
-        '2nd map second half - handicap vitality -3.5': {'4.11': 'ggbet'},
-        'big handicap +1.5 maps': {'1.25': 'ggbet'},
-        'big handicap -1.5 maps': {'3.26': 'ggbet'},
-        'big total over 27.5': {'1.21': 'ggbet'},
-        'big total over 32.5': {'1.79': 'ggbet'},
-        'big total over 36.5': {'2.19': 'ggbet'},
-        'big total over 40.5': {'3.04': 'ggbet'},
-        'big total under 27.5': {'4.11': 'ggbet'},
-        'big total under 32.5': {'1.96': 'ggbet'},
-        'big total under 36.5': {'1.63': 'ggbet'},
-        'big total under 40.5': {'1.35': 'ggbet'},
-        'big will win': {'1.8': 'ggbet'},
-        'correct score 0-2': {'3.68': 'ggbet'},
-        'correct score 1-2': {'3.69': 'ggbet'},
-        'correct score 2-0': {'3.24': 'ggbet'},
-        'correct score 2-1': {'3.46': 'ggbet'},
-        'handicap big +2.5': {'1.61': 'ggbet'},
-        'handicap big +4.5': {'1.49': 'ggbet'},
-        'handicap big +6.5': {'1.35': 'ggbet'},
-        'handicap big +8.5': {'1.24': 'ggbet'},
-        'handicap big -0.5': {'1.8': 'ggbet'},
-        'handicap big -3.5': {'2.05': 'ggbet'},
-        'handicap big -5.5': {'2.35': 'ggbet'},
-        'handicap big -7.5': {'2.85': 'ggbet'},
-        'handicap big -9.5': {'3.7': 'ggbet'},
-        'handicap vitality +0.5': {'1.94': 'ggbet'},
-        'handicap vitality +3.5': {'1.72': 'ggbet'},
-        'handicap vitality +5.5': {'1.55': 'ggbet'},
-        'handicap vitality +7.5': {'1.39': 'ggbet'},
-        'handicap vitality +9.5': {'1.25': 'ggbet'},
-        'handicap vitality -2.5': {'2.23': 'ggbet'},
-        'handicap vitality -4.5': {'2.51': 'ggbet'},
-        'handicap vitality -6.5': {'3.04': 'ggbet'},
-        'handicap vitality -8.5': {'3.79': 'ggbet'},
-        'odd/even maps even': {'1.84': 'ggbet'},
-        'odd/even maps odd': {'1.9': 'ggbet'},
-        'total maps over 2.5': {'1.9': 'ggbet'},
-        'total maps under 2.5': {'1.84': 'ggbet'},
-        'total over 52.5': {'1.2': 'ggbet'},
-        'total over 54.5': {'1.32': 'ggbet'},
-        'total over 56.5': {'1.44': 'ggbet'},
-        'total over 58.5': {'1.56': 'ggbet'},
-        'total over 62.5': {'1.7': 'ggbet'},
-        'total over 68.5': {'1.86': 'ggbet'},
-        'total over 73.5': {'2.11': 'ggbet'},
-        'total over 76.5': {'2.43': 'ggbet'},
-        'total over 78.5': {'2.77': 'ggbet'},
-        'total over 80.5': {'3.26': 'ggbet'},
-        'total over 82.5': {'3.99': 'ggbet'},
-        'total under 52.5': {'4.23': 'ggbet'},
-        'total under 54.5': {'3.2': 'ggbet'},
-        'total under 56.5': {'2.66': 'ggbet'},
-        'total under 58.5': {'2.33': 'ggbet'},
-        'total under 62.5': {'2.08': 'ggbet'},
-        'total under 68.5': {'1.88': 'ggbet'},
-        'total under 73.5': {'1.68': 'ggbet'},
-        'total under 76.5': {'1.52': 'ggbet'},
-        'total under 78.5': {'1.41': 'ggbet'},
-        'total under 80.5': {'1.31': 'ggbet'},
-        'total under 82.5': {'1.22': 'ggbet'},
-        'vitality handicap +1.5 maps': {'1.31': 'ggbet'},
-        'vitality handicap -1.5 maps': {'3.7': 'ggbet'},
-        'vitality total over 25.5': {'1.22': 'ggbet'},
-        'vitality total over 32.5': {'1.83': 'ggbet'},
-        'vitality total over 36.5': {'2.27': 'ggbet'},
-        'vitality total over 40.5': {'3.2': 'ggbet'},
-        'vitality total under 25.5': {'3.99': 'ggbet'},
-        'vitality total under 32.5': {'1.91': 'ggbet'},
-        'vitality total under 36.5': {'1.59': 'ggbet'},
-        'vitality total under 40.5': {'1.32': 'ggbet'},
-        'vitality will win': {'1.96': 'ggbet'}
-    },
-    'big academy - gameagents': {
-        '1-st map: big academy will win': {'1.57': 'ggbet'},
-        '1-st map: gameagents will win': {'2.31': 'ggbet'},
-        'big academy will win': {'1.58': 'ggbet'},
-        'gameagents will win': {'2.31': 'ggbet'}
-    },
-    'big chillin - third impact': {
-        '1-st map: big chillin will win': {'1.63': 'ggbet'},
-        '1-st map: third impact will win': {'2.19': 'ggbet'},
-        '2-nd map: big chillin will win': {'1.63': 'ggbet'},
-        '2-nd map: third impact will win': {'2.19': 'ggbet'},
-        'big chillin will win': {'1.57': 'ggbet'},
-        'third impact will win': {'2.34': 'ggbet'}
-    },
+        '1-st map: big total over 10.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big total over 11.5': {'1.29': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big total over 12.5': {'1.38': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big total over 13.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big total over 14.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big total over 15.5': {'2.01': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big total under 10.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big total under 11.5': {'3.39': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big total under 12.5': {'2.9': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big total under 13.5': {'2.51': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big total under 14.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big total under 15.5': {'1.75': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big will win': {'1.79': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: big will win round 1': {'1.86': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 10t-e': {'10.39': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 11t-e': {'10.05': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 12t-e': {'9.84': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 13t-e': {'9.75': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 14t-e': {'9.77': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 16t-e': {'9.9': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 1t-e': {'100': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 2t-e': {'86.99': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 3t-e': {'46.03': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 4t-e': {'29.57': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 5t-e': {'21.71': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 6t-e': {'17.43': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 7t-e': {'14.86': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 8t-e': {'13.19': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: correct score 9t-e': {'12.06': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: ct total  over 10.5': {'1.2': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: ct total  over 11.5': {'1.42': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: ct total  over 13.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: ct total  over 15.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: ct total  under 10.5': {'4.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: ct total  under 11.5': {'2.73': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: ct total  under 13.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: ct total  under 15.5': {'1.27': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: first half correct score 1h-t': {
+            '80.96': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: first half correct score 2h-t': {
+            '27.35': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: first half correct score 3h-t': {
+            '14.61': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: first half correct score 4h-t': {
+            '9.25': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: first half correct score 5h-t': {
+            '6.98': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: first half correct score h-t': {
+            '5.86': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: handicap big +1.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap big +2.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap big +3.5': {'1.38': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap big +4.5': {'1.29': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap big +5.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap big -1.5': {'2.01': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap big -2.5': {'2.27': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap big -3.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap big -4.5': {'3.04': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap big -5.5': {'3.7': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap vitality +1.5': {'1.75': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap vitality +2.5': {'1.59': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap vitality +3.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap vitality +4.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap vitality +5.5': {'1.25': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap vitality -1.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap vitality -2.5': {'2.51': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap vitality -3.5': {'2.9': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap vitality -4.5': {'3.39': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: handicap vitality -5.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: race to  rounds big 12': {'1.81': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: race to  rounds big 3': {'1.84': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: race to  rounds big 6': {'1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: race to  rounds big 9': {'1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: race to  rounds vitality 12': {
+            '1.93': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: race to  rounds vitality 3': {'1.9': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: race to  rounds vitality 6': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: race to  rounds vitality 9': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: terrorist total over 10.5': {'1.2': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: terrorist total over 11.5': {'1.42': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: terrorist total over 13.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: terrorist total over 15.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: terrorist total under 10.5': {
+            '4.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: terrorist total under 11.5': {
+            '2.73': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: terrorist total under 13.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: terrorist total under 15.5': {
+            '1.27': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1-st map: total over 24.5': {'1.29': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: total over 25.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: total over 26.5': {'1.68': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: total over 27.5': {'2.05': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: total over 28.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: total over 29.5': {'3.79': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: total under 24.5': {'3.39': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: total under 25.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: total under 26.5': {'2.11': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: total under 27.5': {'1.72': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: total under 28.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: total under 29.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total over 10.5': {'1.25': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total over 11.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total over 12.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total over 13.5': {'1.59': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total over 14.5': {'1.75': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total over 15.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total under 10.5': {'3.7': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total under 11.5': {'3.04': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total under 12.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total under 13.5': {'2.27': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total under 14.5': {'2.01': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality total under 15.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality will win': {'1.96': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: vitality will win round 1': {'1.88': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: will there be overtime no': {'1.09': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1-st map: will there be overtime yes': {
+            '6.55': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - big total over 6.5': {
+            '1.42': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - big total over 7.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - big total over 8.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - big total over 9.5': {
+            '3.89': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - big total under 6.5': {
+            '2.73': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - big total under 7.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - big total under 8.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - big total under 9.5': {
+            '1.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - big will win': {'1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1st map first half - handicap big +0.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - handicap big +2.5': {
+            '1.42': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - handicap big -1.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - handicap big -3.5': {
+            '3.89': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - handicap vitality +1.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - handicap vitality +3.5': {
+            '1.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - handicap vitality -0.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - handicap vitality -2.5': {
+            '2.73': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - vitality total over 5.5': {
+            '1.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - vitality total over 6.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - vitality total over 7.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - vitality total over 8.5': {
+            '2.73': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - vitality total under 5.5': {
+            '3.89': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - vitality total under 6.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - vitality total under 7.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - vitality total under 8.5': {
+            '1.42': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map first half - vitality will win': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map second half - 1x2 big': {'1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1st map second half - 1x2 draw': {'9.45': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1st map second half - 1x2 vitality': {'2.05': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '1st map second half - handicap big +1.5': {
+            '1.47': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map second half - handicap big +3.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map second half - handicap big -0.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map second half - handicap big -2.5': {
+            '2.81': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map second half - handicap vitality +0.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map second half - handicap vitality +2.5': {
+            '1.4': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map second half - handicap vitality -1.5': {
+            '2.57': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '1st map second half - handicap vitality -3.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: big total over 10.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big total over 11.5': {'1.28': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big total over 12.5': {'1.38': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big total over 13.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big total over 14.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big total over 15.5': {'1.99': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big total under 10.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big total under 11.5': {'3.46': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big total under 12.5': {'2.9': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big total under 13.5': {'2.51': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big total under 14.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big total under 15.5': {'1.76': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big will win': {'1.78': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: big will win round 1': {'1.86': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 10t-e': {'10.39': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 11t-e': {'10.05': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 12t-e': {'9.84': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 13t-e': {'9.75': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 14t-e': {'9.77': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 16t-e': {'9.91': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 1t-e': {'100': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 2t-e': {'87.05': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 3t-e': {'46.06': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 4t-e': {'29.59': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 5t-e': {'21.72': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 6t-e': {'17.44': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 7t-e': {'14.87': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 8t-e': {'13.2': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: correct score 9t-e': {'12.06': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: ct total  over 10.5': {'1.2': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: ct total  over 11.5': {'1.42': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: ct total  over 13.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: ct total  over 15.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: ct total  under 10.5': {'4.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: ct total  under 11.5': {'2.73': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: ct total  under 13.5': {'1.71': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: ct total  under 15.5': {'1.27': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: first half correct score 1h-t': {
+            '81.04': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: first half correct score 2h-t': {
+            '27.37': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: first half correct score 3h-t': {
+            '14.62': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: first half correct score 4h-t': {
+            '9.25': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: first half correct score 5h-t': {
+            '6.98': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: first half correct score h-t': {
+            '5.86': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: handicap big +1.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap big +2.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap big +3.5': {'1.38': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap big +4.5': {'1.28': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap big +5.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap big -1.5': {'1.99': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap big -2.5': {'2.27': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap big -3.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap big -4.5': {'3.04': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap big -5.5': {'3.62': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap vitality +1.5': {'1.76': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap vitality +2.5': {'1.59': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap vitality +3.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap vitality +4.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap vitality +5.5': {'1.26': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap vitality -1.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap vitality -2.5': {'2.51': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap vitality -3.5': {'2.9': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap vitality -4.5': {'3.46': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: handicap vitality -5.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: race to  rounds big 12': {'1.8': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: race to  rounds big 3': {'1.84': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: race to  rounds big 6': {'1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: race to  rounds big 9': {'1.81': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: race to  rounds vitality 12': {
+            '1.94': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: race to  rounds vitality 3': {'1.9': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: race to  rounds vitality 6': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: race to  rounds vitality 9': {
+            '1.93': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: terrorist total over 10.5': {'1.2': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: terrorist total over 11.5': {'1.42': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: terrorist total over 13.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: terrorist total over 15.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: terrorist total under 10.5': {
+            '4.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: terrorist total under 11.5': {
+            '2.73': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: terrorist total under 13.5': {
+            '1.71': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: terrorist total under 15.5': {
+            '1.27': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2-nd map: total over 24.5': {'1.29': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: total over 25.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: total over 26.5': {'1.68': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: total over 27.5': {'2.05': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: total over 28.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: total over 29.5': {'3.79': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: total under 24.5': {'3.39': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: total under 25.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: total under 26.5': {'2.11': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: total under 27.5': {'1.72': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: total under 28.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: total under 29.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total over 10.5': {'1.25': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total over 11.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total over 12.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total over 13.5': {'1.59': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total over 14.5': {'1.75': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total over 15.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total under 10.5': {'3.7': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total under 11.5': {'3.04': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total under 12.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total under 13.5': {'2.27': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total under 14.5': {'2.01': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality total under 15.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality will win': {'1.97': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: vitality will win round 1': {'1.88': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: will there be overtime no': {'1.09': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2-nd map: will there be overtime yes': {
+            '6.55': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - big total over 6.5': {
+            '1.42': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - big total over 7.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - big total over 8.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - big total over 9.5': {
+            '3.89': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - big total under 6.5': {
+            '2.73': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - big total under 7.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - big total under 8.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - big total under 9.5': {
+            '1.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - big will win': {'1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2nd map first half - handicap big +0.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - handicap big +2.5': {
+            '1.42': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - handicap big -1.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - handicap big -3.5': {
+            '3.89': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - handicap vitality +1.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - handicap vitality +3.5': {
+            '1.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - handicap vitality -0.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - handicap vitality -2.5': {
+            '2.73': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - vitality total over 5.5': {
+            '1.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - vitality total over 6.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - vitality total over 7.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - vitality total over 8.5': {
+            '2.73': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - vitality total under 5.5': {
+            '3.89': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - vitality total under 6.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - vitality total under 7.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - vitality total under 8.5': {
+            '1.42': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map first half - vitality will win': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map second half - 1x2 big': {'1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2nd map second half - 1x2 draw': {'9.46': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2nd map second half - 1x2 vitality': {'2.05': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        '2nd map second half - handicap big +1.5': {
+            '1.47': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map second half - handicap big +3.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map second half - handicap big -0.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map second half - handicap big -2.5': {
+            '2.81': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map second half - handicap vitality +0.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map second half - handicap vitality +2.5': {
+            '1.4': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map second half - handicap vitality -1.5': {
+            '2.57': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        '2nd map second half - handicap vitality -3.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'
+            },
+        'big total over 27.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'big total over 32.5': {'1.79': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'big total over 36.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'big total over 40.5': {'3.04': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'big total under 27.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'big total under 32.5': {'1.96': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'big total under 36.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'big total under 40.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'big will win': {'1.78': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'correct score 0-2': {'3.74': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'correct score 1-2': {'3.72': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'correct score 2-0': {'3.19': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'correct score 2-1': {'3.44': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap big +2.5': {'1.59': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap big +4.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap big +6.5': {'1.34': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap big +8.5': {'1.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap big -0.5': {'1.78': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap big -3.5': {'2.02': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap big -5.5': {'2.31': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap big -7.5': {'2.81': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap big -9.5': {'3.62': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap vitality +0.5': {'1.97': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap vitality +3.5': {'1.74': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap vitality +5.5': {'1.57': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap vitality +7.5': {'1.4': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap vitality +9.5': {'1.26': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap vitality -2.5': {'2.27': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap vitality -4.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap vitality -6.5': {'3.09': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'handicap vitality -8.5': {'3.89': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'odd/even maps even': {'1.84': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'odd/even maps odd': {'1.9': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total maps over 2.5': {'1.9': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total maps under 2.5': {'1.84': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total over 52.5': {'1.2': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total over 54.5': {'1.32': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total over 56.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total over 58.5': {'1.56': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total over 62.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total over 68.5': {'1.86': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total over 73.5': {'2.11': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total over 76.5': {'2.43': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total over 78.5': {'2.77': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total over 80.5': {'3.26': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total over 82.5': {'3.99': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total under 52.5': {'4.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total under 54.5': {'3.2': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total under 56.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total under 58.5': {'2.33': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total under 62.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total under 68.5': {'1.88': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total under 73.5': {'1.68': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total under 76.5': {'1.52': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total under 78.5': {'1.41': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total under 80.5': {'1.31': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'total under 82.5': {'1.22': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'vitality total over 25.5': {'1.23': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'vitality total over 32.5': {'1.83': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'vitality total over 36.5': {'2.29': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'vitality total over 40.5': {'3.2': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'vitality total under 25.5': {'3.89': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'vitality total under 32.5': {'1.91': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'vitality total under 36.5': {'1.58': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'vitality total under 40.5': {'1.32': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'},
+        'vitality will win': {'1.99': 'ggbet(https://gg.bet/en/betting/match/vitality-vs-big-03-07)'}
+        },
+    'blink - gamers 1337': {
+        '1-st map: blink will win': {'1.68': 'ggbet(https://gg.bet/en/betting/match/gamers-1337-vs-blink-04-07)'},
+        '1-st map: gamers 1337 will win': {'2.11': 'ggbet(https://gg.bet/en/betting/match/gamers-1337-vs-blink-04-07)'},
+        '2-nd map: blink will win': {'1.68': 'ggbet(https://gg.bet/en/betting/match/gamers-1337-vs-blink-04-07)'},
+        '2-nd map: gamers 1337 will win': {'2.11': 'ggbet(https://gg.bet/en/betting/match/gamers-1337-vs-blink-04-07)'},
+        'blink will win': {'1.64': 'ggbet(https://gg.bet/en/betting/match/gamers-1337-vs-blink-04-07)'},
+        'gamers 1337 will win': {'2.2': 'ggbet(https://gg.bet/en/betting/match/gamers-1337-vs-blink-04-07)'}
+        },
     'bravos gaming - sws gaming': {
-        '1-st map: bravos gaming will win': {'1.51': 'ggbet'},
-        '1-st map: sws gaming will win': {'2.45': 'ggbet'},
-        '2-nd map: bravos gaming will win': {'1.51': 'ggbet'},
-        '2-nd map: sws gaming will win': {'2.45': 'ggbet'},
-        'bravos gaming will win': {'1.42': 'ggbet'},
-        'sws gaming will win': {'2.77': 'ggbet'}
-    },
+        '1-st map: bravos gaming will win': {
+            '1.51': 'ggbet(https://gg.bet/en/betting/match/bravos-gaming-vs-sws-gaming-03-07)'
+            },
+        '1-st map: sws gaming will win': {
+            '2.45': 'ggbet(https://gg.bet/en/betting/match/bravos-gaming-vs-sws-gaming-03-07)'
+            },
+        '2-nd map: bravos gaming will win': {
+            '1.51': 'ggbet(https://gg.bet/en/betting/match/bravos-gaming-vs-sws-gaming-03-07)'
+            },
+        '2-nd map: sws gaming will win': {
+            '2.45': 'ggbet(https://gg.bet/en/betting/match/bravos-gaming-vs-sws-gaming-03-07)'
+            },
+        'bravos gaming will win': {'1.42': 'ggbet(https://gg.bet/en/betting/match/bravos-gaming-vs-sws-gaming-03-07)'},
+        'sws gaming will win': {'2.77': 'ggbet(https://gg.bet/en/betting/match/bravos-gaming-vs-sws-gaming-03-07)'}
+        },
     'brute - tikitakan': {
-        '1-st map: brute will win round 1': {'1.88': 'ggbet'},
-        '1-st map: handicap brute +1.5': {'1.79': 'ggbet'},
-        '1-st map: handicap brute +2.5': {'1.63': 'ggbet'},
-        '1-st map: handicap brute +3.5': {'1.5': 'ggbet'},
-        '1-st map: handicap brute +4.5': {'1.38': 'ggbet'},
-        '1-st map: handicap brute +5.5': {'1.29': 'ggbet'},
-        '1-st map: handicap brute +6.5': {'1.21': 'ggbet'},
-        '1-st map: handicap brute -1.5': {'2.19': 'ggbet'},
-        '1-st map: handicap brute -2.5': {'2.45': 'ggbet'},
-        '1-st map: handicap brute -3.5': {'2.81': 'ggbet'},
-        '1-st map: handicap brute -4.5': {'3.26': 'ggbet'},
-        '1-st map: handicap brute -5.5': {'3.89': 'ggbet'},
-        '1-st map: handicap tikitakan +1.5': {'1.63': 'ggbet'},
-        '1-st map: handicap tikitakan +2.5': {'1.51': 'ggbet'},
-        '1-st map: handicap tikitakan +3.5': {'1.4': 'ggbet'},
-        '1-st map: handicap tikitakan +4.5': {'1.31': 'ggbet'},
-        '1-st map: handicap tikitakan +5.5': {'1.23': 'ggbet'},
-        '1-st map: handicap tikitakan -1.5': {'1.96': 'ggbet'},
-        '1-st map: handicap tikitakan -2.5': {'2.19': 'ggbet'},
-        '1-st map: handicap tikitakan -3.5': {'2.48': 'ggbet'},
-        '1-st map: handicap tikitakan -4.5': {'2.9': 'ggbet'},
-        '1-st map: handicap tikitakan -5.5': {'3.39': 'ggbet'},
-        '1-st map: handicap tikitakan -6.5': {'4.11': 'ggbet'},
-        '1-st map: tikitakan will win round 1': {'1.86': 'ggbet'},
-        '1-st map: total over 23.5': {'1.22': 'ggbet'},
-        '1-st map: total over 24.5': {'1.35': 'ggbet'},
-        '1-st map: total over 25.5': {'1.53': 'ggbet'},
-        '1-st map: total over 26.5': {'1.79': 'ggbet'},
-        '1-st map: total over 27.5': {'2.19': 'ggbet'},
-        '1-st map: total over 28.5': {'2.85': 'ggbet'},
-        '1-st map: total over 29.5': {'4.11': 'ggbet'},
-        '1-st map: total under 23.5': {'3.99': 'ggbet'},
-        '1-st map: total under 24.5': {'3.04': 'ggbet'},
-        '1-st map: total under 25.5': {'2.4': 'ggbet'},
-        '1-st map: total under 26.5': {'1.96': 'ggbet'},
-        '1-st map: total under 27.5': {'1.63': 'ggbet'},
-        '1-st map: total under 28.5': {'1.39': 'ggbet'},
-        '1-st map: total under 29.5': {'1.21': 'ggbet'},
-        '2-nd map: brute will win': {'1.97': 'ggbet'},
-        '2-nd map: brute will win round 1': {'1.88': 'ggbet'},
-        '2-nd map: handicap brute +1.5': {'1.79': 'ggbet'},
-        '2-nd map: handicap brute +2.5': {'1.63': 'ggbet'},
-        '2-nd map: handicap brute +3.5': {'1.5': 'ggbet'},
-        '2-nd map: handicap brute +4.5': {'1.38': 'ggbet'},
-        '2-nd map: handicap brute +5.5': {'1.29': 'ggbet'},
-        '2-nd map: handicap brute +6.5': {'1.21': 'ggbet'},
-        '2-nd map: handicap brute -1.5': {'2.19': 'ggbet'},
-        '2-nd map: handicap brute -2.5': {'2.45': 'ggbet'},
-        '2-nd map: handicap brute -3.5': {'2.81': 'ggbet'},
-        '2-nd map: handicap brute -4.5': {'3.26': 'ggbet'},
-        '2-nd map: handicap brute -5.5': {'3.89': 'ggbet'},
-        '2-nd map: handicap tikitakan +1.5': {'1.63': 'ggbet'},
-        '2-nd map: handicap tikitakan +2.5': {'1.51': 'ggbet'},
-        '2-nd map: handicap tikitakan +3.5': {'1.4': 'ggbet'},
-        '2-nd map: handicap tikitakan +4.5': {'1.31': 'ggbet'},
-        '2-nd map: handicap tikitakan +5.5': {'1.23': 'ggbet'},
-        '2-nd map: handicap tikitakan -1.5': {'1.96': 'ggbet'},
-        '2-nd map: handicap tikitakan -2.5': {'2.19': 'ggbet'},
-        '2-nd map: handicap tikitakan -3.5': {'2.48': 'ggbet'},
-        '2-nd map: handicap tikitakan -4.5': {'2.9': 'ggbet'},
-        '2-nd map: handicap tikitakan -5.5': {'3.39': 'ggbet'},
-        '2-nd map: handicap tikitakan -6.5': {'4.11': 'ggbet'},
-        '2-nd map: tikitakan will win': {'1.78': 'ggbet'},
-        '2-nd map: tikitakan will win round 1': {'1.86': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.22': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.35': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.53': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.8': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.19': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.85': 'ggbet'},
-        '2-nd map: total over 29.5': {'4.11': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.99': 'ggbet'},
-        '2-nd map: total under 24.5': {'3.04': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.4': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.94': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.63': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.39': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.21': 'ggbet'},
-        'brute handicap +1.5 maps': {'1.37': 'ggbet'},
-        'brute handicap -1.5 maps': {'3.46': 'ggbet'},
-        'brute will win': {'2.01': 'ggbet'},
-        'correct score 0-2': {'2.92': 'ggbet'},
-        'correct score 1-2': {'3.77': 'ggbet'},
-        'correct score 2-0': {'3.49': 'ggbet'},
-        'correct score 2-1': {'4.06': 'ggbet'},
-        'odd/even maps even': {'1.69': 'ggbet'},
-        'odd/even maps odd': {'2.09': 'ggbet'},
-        'tikitakan handicap +1.5 maps': {'1.28': 'ggbet'},
-        'tikitakan handicap -1.5 maps': {'2.94': 'ggbet'},
-        'tikitakan will win': {'1.76': 'ggbet'},
-        'total maps over 2.5': {'2.09': 'ggbet'},
-        'total maps under 2.5': {'1.69': 'ggbet'}
-    },
-    'chiefs - truckers with attitude': {
-        '1-st map: chiefs will win': {'1.3': 'ggbet'},
-        '1-st map: chiefs will win round 1': {'1.77': 'ggbet'},
-        '1-st map: handicap chiefs +1.5': {'1.25': 'ggbet'},
-        '1-st map: handicap chiefs -1.5': {'1.4': 'ggbet'},
-        '1-st map: handicap chiefs -2.5': {'1.51': 'ggbet'},
-        '1-st map: handicap chiefs -3.5': {'1.66': 'ggbet'},
-        '1-st map: handicap chiefs -4.5': {'1.86': 'ggbet'},
-        '1-st map: handicap chiefs -5.5': {'2.14': 'ggbet'},
-        '1-st map: handicap chiefs -6.5': {'2.51': 'ggbet'},
-        '1-st map: handicap chiefs -7.5': {'3.04': 'ggbet'},
-        '1-st map: handicap chiefs -8.5': {'3.79': 'ggbet'},
-        '1-st map: handicap truckers with attitude +1.5': {'2.81': 'ggbet'},
-        '1-st map: handicap truckers with attitude +2.5': {'2.45': 'ggbet'},
-        '1-st map: handicap truckers with attitude +3.5': {'2.14': 'ggbet'},
-        '1-st map: handicap truckers with attitude +4.5': {'1.88': 'ggbet'},
-        '1-st map: handicap truckers with attitude +5.5': {'1.66': 'ggbet'},
-        '1-st map: handicap truckers with attitude +6.5': {'1.49': 'ggbet'},
-        '1-st map: handicap truckers with attitude +7.5': {'1.35': 'ggbet'},
-        '1-st map: handicap truckers with attitude +8.5': {'1.24': 'ggbet'},
-        '1-st map: handicap truckers with attitude -1.5': {'3.7': 'ggbet'},
-        '1-st map: total over 23.5': {'1.3': 'ggbet'},
-        '1-st map: total over 24.5': {'1.46': 'ggbet'},
-        '1-st map: total over 25.5': {'1.68': 'ggbet'},
-        '1-st map: total over 26.5': {'1.99': 'ggbet'},
-        '1-st map: total over 27.5': {'2.45': 'ggbet'},
-        '1-st map: total over 28.5': {'3.2': 'ggbet'},
-        '1-st map: total under 23.5': {'3.32': 'ggbet'},
-        '1-st map: total under 24.5': {'2.6': 'ggbet'},
-        '1-st map: total under 25.5': {'2.11': 'ggbet'},
-        '1-st map: total under 26.5': {'1.76': 'ggbet'},
-        '1-st map: total under 27.5': {'1.51': 'ggbet'},
-        '1-st map: total under 28.5': {'1.32': 'ggbet'},
-        '1-st map: truckers with attitude will win': {'3.32': 'ggbet'},
-        '1-st map: truckers with attitude will win round 1': {'1.98': 'ggbet'},
-        '2-nd map: chiefs will win': {'1.29': 'ggbet'},
-        '2-nd map: chiefs will win round 1': {'1.76': 'ggbet'},
-        '2-nd map: handicap chiefs +1.5': {'1.24': 'ggbet'},
-        '2-nd map: handicap chiefs -1.5': {'1.39': 'ggbet'},
-        '2-nd map: handicap chiefs -2.5': {'1.5': 'ggbet'},
-        '2-nd map: handicap chiefs -3.5': {'1.65': 'ggbet'},
-        '2-nd map: handicap chiefs -4.5': {'1.84': 'ggbet'},
-        '2-nd map: handicap chiefs -5.5': {'2.11': 'ggbet'},
-        '2-nd map: handicap chiefs -6.5': {'2.45': 'ggbet'},
-        '2-nd map: handicap chiefs -7.5': {'2.99': 'ggbet'},
-        '2-nd map: handicap chiefs -8.5': {'3.7': 'ggbet'},
-        '2-nd map: handicap truckers with attitude +1.5': {'2.85': 'ggbet'},
-        '2-nd map: handicap truckers with attitude +2.5': {'2.48': 'ggbet'},
-        '2-nd map: handicap truckers with attitude +3.5': {'2.16': 'ggbet'},
-        '2-nd map: handicap truckers with attitude +4.5': {'1.9': 'ggbet'},
-        '2-nd map: handicap truckers with attitude +5.5': {'1.68': 'ggbet'},
-        '2-nd map: handicap truckers with attitude +6.5': {'1.51': 'ggbet'},
-        '2-nd map: handicap truckers with attitude +7.5': {'1.36': 'ggbet'},
-        '2-nd map: handicap truckers with attitude +8.5': {'1.25': 'ggbet'},
-        '2-nd map: handicap truckers with attitude -1.5': {'3.79': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.31': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.47': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.69': 'ggbet'},
-        '2-nd map: total over 26.5': {'2.01': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.48': 'ggbet'},
-        '2-nd map: total over 28.5': {'3.26': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.26': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.57': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.09': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.75': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.5': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.31': 'ggbet'},
-        '2-nd map: truckers with attitude will win': {'3.39': 'ggbet'},
-        '2-nd map: truckers with attitude will win round 1': {'1.99': 'ggbet'},
-        'chiefs handicap +1.5 maps': {'1.06': 'ggbet'},
-        'chiefs handicap -1.5 maps': {'1.68': 'ggbet'},
-        'chiefs will win': {'1.2': 'ggbet'},
-        'correct score 0-2': {'7.74': 'ggbet'},
-        'correct score 1-2': {'6.93': 'ggbet'},
-        'correct score 2-0': {'1.68': 'ggbet'},
-        'correct score 2-1': {'3.63': 'ggbet'},
-        'odd/even maps even': {'1.46': 'ggbet'},
-        'odd/even maps odd': {'2.6': 'ggbet'},
-        'total maps over 2.5': {'2.6': 'ggbet'},
-        'total maps under 2.5': {'1.46': 'ggbet'},
-        'truckers with attitude handicap +1.5 maps': {'2.11': 'ggbet'},
-        'truckers with attitude handicap -1.5 maps': {'7.9': 'ggbet'},
-        'truckers with attitude will win': {'4.32': 'ggbet'}
-    },
-    'cloud9 - furia': {
-        '1-st map: cloud9 total over 10.5': {'1.54': 'ggbet'},
-        '1-st map: cloud9 total over 11.5': {'1.71': 'ggbet'},
-        '1-st map: cloud9 total over 12.5': {'1.91': 'ggbet'},
-        '1-st map: cloud9 total over 13.5': {'2.16': 'ggbet'},
-        '1-st map: cloud9 total over 14.5': {'2.45': 'ggbet'},
-        '1-st map: cloud9 total over 15.5': {'3.14': 'ggbet'},
-        '1-st map: cloud9 total over 8.5': {'1.29': 'ggbet'},
-        '1-st map: cloud9 total over 9.5': {'1.4': 'ggbet'},
-        '1-st map: cloud9 total under 10.5': {'2.38': 'ggbet'},
-        '1-st map: cloud9 total under 11.5': {'2.06': 'ggbet'},
-        '1-st map: cloud9 total under 12.5': {'1.83': 'ggbet'},
-        '1-st map: cloud9 total under 13.5': {'1.65': 'ggbet'},
-        '1-st map: cloud9 total under 14.5': {'1.51': 'ggbet'},
-        '1-st map: cloud9 total under 15.5': {'1.33': 'ggbet'},
-        '1-st map: cloud9 total under 8.5': {'3.39': 'ggbet'},
-        '1-st map: cloud9 total under 9.5': {'2.81': 'ggbet'},
-        '1-st map: cloud9 will win': {'2.81': 'ggbet'},
-        '1-st map: cloud9 will win round 1': {'1.94': 'ggbet'},
-        '1-st map: correct score 10t-e': {'15.76': 'ggbet'},
-        '1-st map: correct score 11t-e': {'14.68': 'ggbet'},
-        '1-st map: correct score 12t-e': {'13.9': 'ggbet'},
-        '1-st map: correct score 13t-e': {'13.33': 'ggbet'},
-        '1-st map: correct score 14t-e': {'12.92': 'ggbet'},
-        '1-st map: correct score 16t-e': {'9.99': 'ggbet'},
-        '1-st map: correct score 1t-e': {'9.42': 'ggbet'},
-        '1-st map: correct score 2t-e': {'100': 'ggbet'},
-        '1-st map: correct score 3t-e': {'77.11': 'ggbet'},
-        '1-st map: correct score 4t-e': {'49.17': 'ggbet'},
-        '1-st map: correct score 5t-e': {'35.12': 'ggbet'},
-        '1-st map: correct score 6t-e': {'27.24': 'ggbet'},
-        '1-st map: correct score 7t-e': {'22.45': 'ggbet'},
-        '1-st map: correct score 8t-e': {'19.35': 'ggbet'},
-        '1-st map: correct score 9t-e': {'17.24': 'ggbet'},
-        '1-st map: ct total  over 10.5': {'1.26': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.51': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.21': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.7': 'ggbet'},
-        '1-st map: ct total  under 10.5': {'3.62': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.45': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.62': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.25': 'ggbet'},
-        '1-st map: first half correct score 1h-t': {'100': 'ggbet'},
-        '1-st map: first half correct score 2h-t': {'39.71': 'ggbet'},
-        '1-st map: first half correct score 3h-t': {'19.93': 'ggbet'},
-        '1-st map: first half correct score 4h-t': {'12.88': 'ggbet'},
-        '1-st map: first half correct score 5h-t': {'8.95': 'ggbet'},
-        '1-st map: first half correct score h-t': {'5.41': 'ggbet'},
-        '1-st map: furia total over 12.5': {'1.2': 'ggbet'},
-        '1-st map: furia total over 14.5': {'1.33': 'ggbet'},
-        '1-st map: furia total over 15.5': {'1.51': 'ggbet'},
-        '1-st map: furia total under 12.5': {'4.23': 'ggbet'},
-        '1-st map: furia total under 14.5': {'3.14': 'ggbet'},
-        '1-st map: furia total under 15.5': {'2.45': 'ggbet'},
-        '1-st map: furia will win': {'1.4': 'ggbet'},
-        '1-st map: furia will win round 1': {'1.8': 'ggbet'},
-        '1-st map: handicap cloud9 +1.5': {'2.45': 'ggbet'},
-        '1-st map: handicap cloud9 +2.5': {'2.16': 'ggbet'},
-        '1-st map: handicap cloud9 +3.5': {'1.91': 'ggbet'},
-        '1-st map: handicap cloud9 +4.5': {'1.71': 'ggbet'},
-        '1-st map: handicap cloud9 +5.5': {'1.54': 'ggbet'},
-        '1-st map: handicap cloud9 +6.5': {'1.4': 'ggbet'},
-        '1-st map: handicap cloud9 +7.5': {'1.29': 'ggbet'},
-        '1-st map: handicap cloud9 -1.5': {'3.14': 'ggbet'},
-        '1-st map: handicap cloud9 -2.5': {'3.62': 'ggbet'},
-        '1-st map: handicap cloud9 -3.5': {'4.23': 'ggbet'},
-        '1-st map: handicap furia +1.5': {'1.33': 'ggbet'},
-        '1-st map: handicap furia +2.5': {'1.26': 'ggbet'},
-        '1-st map: handicap furia +3.5': {'1.2': 'ggbet'},
-        '1-st map: handicap furia -1.5': {'1.51': 'ggbet'},
-        '1-st map: handicap furia -2.5': {'1.65': 'ggbet'},
-        '1-st map: handicap furia -3.5': {'1.83': 'ggbet'},
-        '1-st map: handicap furia -4.5': {'2.06': 'ggbet'},
-        '1-st map: handicap furia -5.5': {'2.38': 'ggbet'},
-        '1-st map: handicap furia -6.5': {'2.81': 'ggbet'},
-        '1-st map: handicap furia -7.5': {'3.39': 'ggbet'},
-        '1-st map: race to  rounds cloud9 12': {'2.63': 'ggbet'},
-        '1-st map: race to  rounds cloud9 3': {'2.14': 'ggbet'},
-        '1-st map: race to  rounds cloud9 6': {'2.35': 'ggbet'},
-        '1-st map: race to  rounds cloud9 9': {'2.48': 'ggbet'},
-        '1-st map: race to  rounds furia 12': {'1.45': 'ggbet'},
-        '1-st map: race to  rounds furia 3': {'1.66': 'ggbet'},
-        '1-st map: race to  rounds furia 6': {'1.55': 'ggbet'},
-        '1-st map: race to  rounds furia 9': {'1.5': 'ggbet'},
-        '1-st map: terrorist total over 10.5': {'1.26': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.51': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.21': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.7': 'ggbet'},
-        '1-st map: terrorist total under 10.5': {'3.62': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.45': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.62': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.25': 'ggbet'},
-        '1-st map: total over 23.5': {'1.28': 'ggbet'},
-        '1-st map: total over 24.5': {'1.43': 'ggbet'},
-        '1-st map: total over 25.5': {'1.63': 'ggbet'},
-        '1-st map: total over 26.5': {'1.92': 'ggbet'},
-        '1-st map: total over 27.5': {'2.35': 'ggbet'},
-        '1-st map: total over 28.5': {'3.09': 'ggbet'},
-        '1-st map: total under 23.5': {'3.46': 'ggbet'},
-        '1-st map: total under 24.5': {'2.7': 'ggbet'},
-        '1-st map: total under 25.5': {'2.19': 'ggbet'},
-        '1-st map: total under 26.5': {'1.82': 'ggbet'},
-        '1-st map: total under 27.5': {'1.55': 'ggbet'},
-        '1-st map: total under 28.5': {'1.34': 'ggbet'},
-        '1-st map: will there be overtime no': {'1.07': 'ggbet'},
-        '1-st map: will there be overtime yes': {'7.38': 'ggbet'},
-        '1st map first half - cloud9 total over 4.5': {'1.21': 'ggbet'},
-        '1st map first half - cloud9 total over 5.5': {'1.43': 'ggbet'},
-        '1st map first half - cloud9 total over 6.5': {'1.81': 'ggbet'},
-        '1st map first half - cloud9 total over 7.5': {'2.45': 'ggbet'},
-        '1st map first half - cloud9 total over 8.5': {'3.62': 'ggbet'},
-        '1st map first half - cloud9 total under 4.5': {'4.11': 'ggbet'},
-        '1st map first half - cloud9 total under 5.5': {'2.7': 'ggbet'},
-        '1st map first half - cloud9 total under 6.5': {'1.93': 'ggbet'},
-        '1st map first half - cloud9 total under 7.5': {'1.51': 'ggbet'},
-        '1st map first half - cloud9 total under 8.5': {'1.26': 'ggbet'},
-        '1st map first half - cloud9 will win': {'2.45': 'ggbet'},
-        '1st map first half - furia total over 10.5': {'4.11': 'ggbet'},
-        '1st map first half - furia total over 6.5': {'1.26': 'ggbet'},
-        '1st map first half - furia total over 7.5': {'1.51': 'ggbet'},
-        '1st map first half - furia total over 8.5': {'1.93': 'ggbet'},
-        '1st map first half - furia total over 9.5': {'2.7': 'ggbet'},
-        '1st map first half - furia total under 10.5': {'1.21': 'ggbet'},
-        '1st map first half - furia total under 6.5': {'3.62': 'ggbet'},
-        '1st map first half - furia total under 7.5': {'2.45': 'ggbet'},
-        '1st map first half - furia total under 8.5': {'1.81': 'ggbet'},
-        '1st map first half - furia total under 9.5': {'1.43': 'ggbet'},
-        '1st map first half - furia will win': {'1.51': 'ggbet'},
-        '1st map first half - handicap cloud9 +0.5': {'2.45': 'ggbet'},
-        '1st map first half - handicap cloud9 +2.5': {'1.81': 'ggbet'},
-        '1st map first half - handicap cloud9 +4.5': {'1.43': 'ggbet'},
-        '1st map first half - handicap cloud9 +6.5': {'1.21': 'ggbet'},
-        '1st map first half - handicap cloud9 -1.5': {'3.62': 'ggbet'},
-        '1st map first half - handicap furia +1.5': {'1.26': 'ggbet'},
-        '1st map first half - handicap furia -0.5': {'1.51': 'ggbet'},
-        '1st map first half - handicap furia -2.5': {'1.93': 'ggbet'},
-        '1st map first half - handicap furia -4.5': {'2.7': 'ggbet'},
-        '1st map first half - handicap furia -6.5': {'4.11': 'ggbet'},
-        '1st map second half - 1x2 cloud9': {'2.61': 'ggbet'},
-        '1st map second half - 1x2 draw': {'9.54': 'ggbet'},
-        '1st map second half - 1x2 furia': {'1.6': 'ggbet'},
-        '1st map second half - handicap cloud9 +0.5': {'2.25': 'ggbet'},
-        '1st map second half - handicap cloud9 +2.5': {'1.6': 'ggbet'},
-        '1st map second half - handicap cloud9 +4.5': {'1.23': 'ggbet'},
-        '1st map second half - handicap cloud9 -1.5': {'3.26': 'ggbet'},
-        '1st map second half - handicap furia +1.5': {'1.31': 'ggbet'},
-        '1st map second half - handicap furia -0.5': {'1.6': 'ggbet'},
-        '1st map second half - handicap furia -2.5': {'2.25': 'ggbet'},
-        '1st map second half - handicap furia -4.5': {'3.89': 'ggbet'},
-        '2-nd map: cloud9 total over 10.5': {'1.54': 'ggbet'},
-        '2-nd map: cloud9 total over 11.5': {'1.71': 'ggbet'},
-        '2-nd map: cloud9 total over 12.5': {'1.91': 'ggbet'},
-        '2-nd map: cloud9 total over 13.5': {'2.16': 'ggbet'},
-        '2-nd map: cloud9 total over 14.5': {'2.45': 'ggbet'},
-        '2-nd map: cloud9 total over 15.5': {'3.14': 'ggbet'},
-        '2-nd map: cloud9 total over 7.5': {'1.2': 'ggbet'},
-        '2-nd map: cloud9 total over 8.5': {'1.29': 'ggbet'},
-        '2-nd map: cloud9 total over 9.5': {'1.4': 'ggbet'},
-        '2-nd map: cloud9 total under 10.5': {'2.38': 'ggbet'},
-        '2-nd map: cloud9 total under 11.5': {'2.06': 'ggbet'},
-        '2-nd map: cloud9 total under 12.5': {'1.83': 'ggbet'},
-        '2-nd map: cloud9 total under 13.5': {'1.65': 'ggbet'},
-        '2-nd map: cloud9 total under 14.5': {'1.51': 'ggbet'},
-        '2-nd map: cloud9 total under 15.5': {'1.33': 'ggbet'},
-        '2-nd map: cloud9 total under 7.5': {'4.23': 'ggbet'},
-        '2-nd map: cloud9 total under 8.5': {'3.39': 'ggbet'},
-        '2-nd map: cloud9 total under 9.5': {'2.81': 'ggbet'},
-        '2-nd map: cloud9 will win': {'2.81': 'ggbet'},
-        '2-nd map: cloud9 will win round 1': {'1.94': 'ggbet'},
-        '2-nd map: correct score 10t-e': {'15.83': 'ggbet'},
-        '2-nd map: correct score 11t-e': {'14.74': 'ggbet'},
-        '2-nd map: correct score 12t-e': {'13.95': 'ggbet'},
-        '2-nd map: correct score 13t-e': {'13.38': 'ggbet'},
-        '2-nd map: correct score 14t-e': {'12.97': 'ggbet'},
-        '2-nd map: correct score 16t-e': {'10': 'ggbet'},
-        '2-nd map: correct score 1t-e': {'9.41': 'ggbet'},
-        '2-nd map: correct score 2t-e': {'100': 'ggbet'},
-        '2-nd map: correct score 3t-e': {'77.62': 'ggbet'},
-        '2-nd map: correct score 4t-e': {'49.49': 'ggbet'},
-        '2-nd map: correct score 5t-e': {'35.33': 'ggbet'},
-        '2-nd map: correct score 6t-e': {'27.39': 'ggbet'},
-        '2-nd map: correct score 7t-e': {'22.57': 'ggbet'},
-        '2-nd map: correct score 8t-e': {'19.45': 'ggbet'},
-        '2-nd map: correct score 9t-e': {'17.32': 'ggbet'},
-        '2-nd map: ct total  over 10.5': {'1.26': 'ggbet'},
-        '2-nd map: ct total  over 11.5': {'1.51': 'ggbet'},
-        '2-nd map: ct total  over 13.5': {'2.21': 'ggbet'},
-        '2-nd map: ct total  over 15.5': {'3.7': 'ggbet'},
-        '2-nd map: ct total  under 10.5': {'3.62': 'ggbet'},
-        '2-nd map: ct total  under 11.5': {'2.45': 'ggbet'},
-        '2-nd map: ct total  under 13.5': {'1.62': 'ggbet'},
-        '2-nd map: ct total  under 15.5': {'1.25': 'ggbet'},
-        '2-nd map: first half correct score 1h-t': {'100': 'ggbet'},
-        '2-nd map: first half correct score 2h-t': {'39.96': 'ggbet'},
-        '2-nd map: first half correct score 3h-t': {'20.02': 'ggbet'},
-        '2-nd map: first half correct score 4h-t': {'12.93': 'ggbet'},
-        '2-nd map: first half correct score 5h-t': {'8.98': 'ggbet'},
-        '2-nd map: first half correct score h-t': {'5.42': 'ggbet'},
-        '2-nd map: furia total over 13.5': {'1.26': 'ggbet'},
-        '2-nd map: furia total over 15.5': {'1.51': 'ggbet'},
-        '2-nd map: furia total under 13.5': {'3.62': 'ggbet'},
-        '2-nd map: furia total under 15.5': {'2.45': 'ggbet'},
-        '2-nd map: furia will win': {'1.4': 'ggbet'},
-        '2-nd map: furia will win round 1': {'1.8': 'ggbet'},
-        '2-nd map: handicap cloud9 +1.5': {'2.45': 'ggbet'},
-        '2-nd map: handicap cloud9 +2.5': {'2.16': 'ggbet'},
-        '2-nd map: handicap cloud9 +3.5': {'1.91': 'ggbet'},
-        '2-nd map: handicap cloud9 +4.5': {'1.71': 'ggbet'},
-        '2-nd map: handicap cloud9 +5.5': {'1.54': 'ggbet'},
-        '2-nd map: handicap cloud9 +6.5': {'1.4': 'ggbet'},
-        '2-nd map: handicap cloud9 +7.5': {'1.29': 'ggbet'},
-        '2-nd map: handicap cloud9 +8.5': {'1.2': 'ggbet'},
-        '2-nd map: handicap cloud9 -1.5': {'3.14': 'ggbet'},
-        '2-nd map: handicap cloud9 -2.5': {'3.62': 'ggbet'},
-        '2-nd map: handicap cloud9 -3.5': {'4.23': 'ggbet'},
-        '2-nd map: handicap furia +1.5': {'1.33': 'ggbet'},
-        '2-nd map: handicap furia +2.5': {'1.26': 'ggbet'},
-        '2-nd map: handicap furia +3.5': {'1.2': 'ggbet'},
-        '2-nd map: handicap furia -1.5': {'1.51': 'ggbet'},
-        '2-nd map: handicap furia -2.5': {'1.65': 'ggbet'},
-        '2-nd map: handicap furia -3.5': {'1.83': 'ggbet'},
-        '2-nd map: handicap furia -4.5': {'2.06': 'ggbet'},
-        '2-nd map: handicap furia -5.5': {'2.38': 'ggbet'},
-        '2-nd map: handicap furia -6.5': {'2.81': 'ggbet'},
-        '2-nd map: handicap furia -7.5': {'3.39': 'ggbet'},
-        '2-nd map: handicap furia -8.5': {'4.23': 'ggbet'},
-        '2-nd map: race to  rounds cloud9 12': {'2.63': 'ggbet'},
-        '2-nd map: race to  rounds cloud9 3': {'2.14': 'ggbet'},
-        '2-nd map: race to  rounds cloud9 6': {'2.35': 'ggbet'},
-        '2-nd map: race to  rounds cloud9 9': {'2.48': 'ggbet'},
-        '2-nd map: race to  rounds furia 12': {'1.45': 'ggbet'},
-        '2-nd map: race to  rounds furia 3': {'1.66': 'ggbet'},
-        '2-nd map: race to  rounds furia 6': {'1.55': 'ggbet'},
-        '2-nd map: race to  rounds furia 9': {'1.5': 'ggbet'},
-        '2-nd map: terrorist total over 10.5': {'1.26': 'ggbet'},
-        '2-nd map: terrorist total over 11.5': {'1.51': 'ggbet'},
-        '2-nd map: terrorist total over 13.5': {'2.21': 'ggbet'},
-        '2-nd map: terrorist total over 15.5': {'3.7': 'ggbet'},
-        '2-nd map: terrorist total under 10.5': {'3.62': 'ggbet'},
-        '2-nd map: terrorist total under 11.5': {'2.45': 'ggbet'},
-        '2-nd map: terrorist total under 13.5': {'1.62': 'ggbet'},
-        '2-nd map: terrorist total under 15.5': {'1.25': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.28': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.43': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.63': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.92': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.35': 'ggbet'},
-        '2-nd map: total over 28.5': {'3.09': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.46': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.7': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.19': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.82': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.55': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.34': 'ggbet'},
-        '2-nd map: will there be overtime no': {'1.07': 'ggbet'},
-        '2-nd map: will there be overtime yes': {'7.38': 'ggbet'},
-        '2nd map first half - cloud9 total over 4.5': {'1.21': 'ggbet'},
-        '2nd map first half - cloud9 total over 5.5': {'1.43': 'ggbet'},
-        '2nd map first half - cloud9 total over 6.5': {'1.81': 'ggbet'},
-        '2nd map first half - cloud9 total over 7.5': {'2.45': 'ggbet'},
-        '2nd map first half - cloud9 total over 8.5': {'3.54': 'ggbet'},
-        '2nd map first half - cloud9 total under 4.5': {'4.11': 'ggbet'},
-        '2nd map first half - cloud9 total under 5.5': {'2.7': 'ggbet'},
-        '2nd map first half - cloud9 total under 6.5': {'1.93': 'ggbet'},
-        '2nd map first half - cloud9 total under 7.5': {'1.51': 'ggbet'},
-        '2nd map first half - cloud9 total under 8.5': {'1.27': 'ggbet'},
-        '2nd map first half - cloud9 will win': {'2.45': 'ggbet'},
-        '2nd map first half - furia total over 10.5': {'4.11': 'ggbet'},
-        '2nd map first half - furia total over 6.5': {'1.26': 'ggbet'},
-        '2nd map first half - furia total over 7.5': {'1.5': 'ggbet'},
-        '2nd map first half - furia total over 8.5': {'1.92': 'ggbet'},
-        '2nd map first half - furia total over 9.5': {'2.66': 'ggbet'},
-        '2nd map first half - furia total under 10.5': {'1.21': 'ggbet'},
-        '2nd map first half - furia total under 6.5': {'3.62': 'ggbet'},
-        '2nd map first half - furia total under 7.5': {'2.48': 'ggbet'},
-        '2nd map first half - furia total under 8.5': {'1.82': 'ggbet'},
-        '2nd map first half - furia total under 9.5': {'1.44': 'ggbet'},
-        '2nd map first half - furia will win': {'1.51': 'ggbet'},
-        '2nd map first half - handicap cloud9 +0.5': {'2.45': 'ggbet'},
-        '2nd map first half - handicap cloud9 +2.5': {'1.81': 'ggbet'},
-        '2nd map first half - handicap cloud9 +4.5': {'1.43': 'ggbet'},
-        '2nd map first half - handicap cloud9 +6.5': {'1.21': 'ggbet'},
-        '2nd map first half - handicap cloud9 -1.5': {'3.54': 'ggbet'},
-        '2nd map first half - handicap furia +1.5': {'1.27': 'ggbet'},
-        '2nd map first half - handicap furia -0.5': {'1.51': 'ggbet'},
-        '2nd map first half - handicap furia -2.5': {'1.93': 'ggbet'},
-        '2nd map first half - handicap furia -4.5': {'2.7': 'ggbet'},
-        '2nd map first half - handicap furia -6.5': {'4.11': 'ggbet'},
-        '2nd map second half - 1x2 cloud9': {'2.62': 'ggbet'},
-        '2nd map second half - 1x2 draw': {'9.55': 'ggbet'},
-        '2nd map second half - 1x2 furia': {'1.6': 'ggbet'},
-        '2nd map second half - handicap cloud9 +0.5': {'2.25': 'ggbet'},
-        '2nd map second half - handicap cloud9 +2.5': {'1.6': 'ggbet'},
-        '2nd map second half - handicap cloud9 +4.5': {'1.23': 'ggbet'},
-        '2nd map second half - handicap cloud9 -1.5': {'3.26': 'ggbet'},
-        '2nd map second half - handicap furia +1.5': {'1.31': 'ggbet'},
-        '2nd map second half - handicap furia -0.5': {'1.6': 'ggbet'},
-        '2nd map second half - handicap furia -2.5': {'2.25': 'ggbet'},
-        '2nd map second half - handicap furia -4.5': {'3.89': 'ggbet'},
-        'cloud9 handicap +1.5 maps': {'1.78': 'ggbet'},
-        'cloud9 handicap -1.5 maps': {'6.94': 'ggbet'},
-        'cloud9 total over 18.5': {'1.21': 'ggbet'},
-        'cloud9 total over 21.5': {'1.37': 'ggbet'},
-        'cloud9 total over 25.5': {'1.62': 'ggbet'},
-        'cloud9 total over 31.5': {'1.96': 'ggbet'},
-        'cloud9 total over 32.5': {'2.45': 'ggbet'},
-        'cloud9 total over 36.5': {'3.26': 'ggbet'},
-        'cloud9 total under 18.5': {'4.11': 'ggbet'},
-        'cloud9 total under 21.5': {'2.94': 'ggbet'},
-        'cloud9 total under 25.5': {'2.21': 'ggbet'},
-        'cloud9 total under 31.5': {'1.79': 'ggbet'},
-        'cloud9 total under 32.5': {'1.51': 'ggbet'},
-        'cloud9 total under 36.5': {'1.31': 'ggbet'},
-        'cloud9 will win': {'3.52': 'ggbet'},
-        'correct score 0-2': {'1.96': 'ggbet'},
-        'correct score 1-2': {'3.19': 'ggbet'},
-        'correct score 2-0': {'6.8': 'ggbet'},
-        'correct score 2-1': {'5.75': 'ggbet'},
-        'furia handicap +1.5 maps': {'1.08': 'ggbet'},
-        'furia handicap -1.5 maps': {'1.97': 'ggbet'},
-        'furia total over 32.5': {'1.96': 'ggbet'},
-        'furia total over 37.5': {'2.48': 'ggbet'},
-        'furia total over 41.5': {'3.54': 'ggbet'},
-        'furia total under 32.5': {'1.79': 'ggbet'},
-        'furia total under 37.5': {'1.5': 'ggbet'},
-        'furia total under 41.5': {'1.27': 'ggbet'},
-        'furia will win': {'1.28': 'ggbet'},
-        'handicap cloud9 +0.5': {'3.46': 'ggbet'},
-        'handicap cloud9 +10.5': {'1.6': 'ggbet'},
-        'handicap cloud9 +11.5': {'1.48': 'ggbet'},
-        'handicap cloud9 +12.5': {'1.37': 'ggbet'},
-        'handicap cloud9 +14.5': {'1.22': 'ggbet'},
-        'handicap cloud9 +3.5': {'2.94': 'ggbet'},
-        'handicap cloud9 +5.5': {'2.51': 'ggbet'},
-        'handicap cloud9 +7.5': {'2.09': 'ggbet'},
-        'handicap cloud9 +9.5': {'1.74': 'ggbet'},
-        'handicap furia -0.5': {'1.28': 'ggbet'},
-        'handicap furia -10.5': {'2.25': 'ggbet'},
-        'handicap furia -11.5': {'2.54': 'ggbet'},
-        'handicap furia -12.5': {'2.94': 'ggbet'},
-        'handicap furia -14.5': {'3.99': 'ggbet'},
-        'handicap furia -3.5': {'1.37': 'ggbet'},
-        'handicap furia -5.5': {'1.49': 'ggbet'},
-        'handicap furia -7.5': {'1.69': 'ggbet'},
-        'handicap furia -9.5': {'2.02': 'ggbet'},
-        'odd/even maps even': {'1.62': 'ggbet'},
-        'odd/even maps odd': {'2.21': 'ggbet'},
-        'total maps over 2.5': {'2.21': 'ggbet'},
-        'total maps under 2.5': {'1.62': 'ggbet'},
-        'total over 50.5': {'1.25': 'ggbet'},
-        'total over 52.5': {'1.38': 'ggbet'},
-        'total over 54.5': {'1.53': 'ggbet'},
-        'total over 56.5': {'1.69': 'ggbet'},
-        'total over 59.5': {'1.89': 'ggbet'},
-        'total over 65.5': {'2.12': 'ggbet'},
-        'total over 71.5': {'2.43': 'ggbet'},
-        'total over 74.5': {'2.77': 'ggbet'},
-        'total over 77.5': {'3.39': 'ggbet'},
-        'total under 50.5': {'3.7': 'ggbet'},
-        'total under 52.5': {'2.9': 'ggbet'},
-        'total under 54.5': {'2.4': 'ggbet'},
-        'total under 56.5': {'2.09': 'ggbet'},
-        'total under 59.5': {'1.85': 'ggbet'},
-        'total under 65.5': {'1.67': 'ggbet'},
-        'total under 71.5': {'1.52': 'ggbet'},
-        'total under 74.5': {'1.41': 'ggbet'},
-        'total under 77.5': {'1.29': 'ggbet'}
-    },
-    'control - skyfire': {
-        '2-nd map: control will win': {'3.26': 'ggbet'},
-        '2-nd map: control will win round 16': {'1.78': 'ggbet'},
-        '2-nd map: handicap control +1.5': {'2.73': 'ggbet'},
-        '2-nd map: handicap control +2.5': {'2.38': 'ggbet'},
-        '2-nd map: handicap control +3.5': {'2.08': 'ggbet'},
-        '2-nd map: handicap control +4.5': {'1.83': 'ggbet'},
-        '2-nd map: handicap control +5.5': {'1.62': 'ggbet'},
-        '2-nd map: handicap control +6.5': {'1.46': 'ggbet'},
-        '2-nd map: handicap skyfire -1.5': {'1.42': 'ggbet'},
-        '2-nd map: handicap skyfire -2.5': {'1.54': 'ggbet'},
-        '2-nd map: handicap skyfire -3.5': {'1.7': 'ggbet'},
-        '2-nd map: handicap skyfire -4.5': {'1.91': 'ggbet'},
-        '2-nd map: handicap skyfire -5.5': {'2.21': 'ggbet'},
-        '2-nd map: handicap skyfire -6.5': {'2.6': 'ggbet'},
-        '2-nd map: round control 11  will win': {'2.23': 'ggbet'},
-        '2-nd map: round control 12  will win': {'2.33': 'ggbet'},
-        '2-nd map: round control 13  will win': {'2.35': 'ggbet'},
-        '2-nd map: round skyfire 11  will win': {'1.61': 'ggbet'},
-        '2-nd map: round skyfire 12  will win': {'1.56': 'ggbet'},
-        '2-nd map: round skyfire 13  will win': {'1.55': 'ggbet'},
-        '2-nd map: skyfire will win': {'1.31': 'ggbet'},
-        '2-nd map: skyfire will win round 16': {'1.97': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.52': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.77': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.14': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.77': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.43': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.98': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.66': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.41': 'ggbet'},
-        'control handicap +1.5 maps': {'3.32': 'ggbet'},
-        'control will win': {'7.38': 'ggbet'},
-        'correct score 0-2': {'1.3': 'ggbet'},
-        'correct score 1-2': {'4.73': 'ggbet'},
-        'correct score 2-1': {'7.73': 'ggbet'},
-        'odd/even maps even': {'1.3': 'ggbet'},
-        'odd/even maps odd': {'3.32': 'ggbet'},
-        'skyfire handicap -1.5 maps': {'1.3': 'ggbet'},
-        'skyfire will win': {'1.07': 'ggbet'},
-        'total maps over 2.5': {'3.32': 'ggbet'},
-        'total maps under 2.5': {'1.3': 'ggbet'}
-    },
-    'cr4zy - lilmix': {
-        '1-st map: cr4zy will win': {'1.59': 'ggbet'},
-        '1-st map: cr4zy will win round 1': {'1.83': 'ggbet'},
-        '1-st map: handicap cr4zy +1.5': {'1.48': 'ggbet'},
-        '1-st map: handicap cr4zy +2.5': {'1.38': 'ggbet'},
-        '1-st map: handicap cr4zy +3.5': {'1.3': 'ggbet'},
-        '1-st map: handicap cr4zy +4.5': {'1.22': 'ggbet'},
-        '1-st map: handicap cr4zy -1.5': {'1.75': 'ggbet'},
-        '1-st map: handicap cr4zy -2.5': {'1.94': 'ggbet'},
-        '1-st map: handicap cr4zy -3.5': {'2.19': 'ggbet'},
-        '1-st map: handicap cr4zy -4.5': {'2.54': 'ggbet'},
-        '1-st map: handicap cr4zy -5.5': {'2.99': 'ggbet'},
-        '1-st map: handicap cr4zy -6.5': {'3.54': 'ggbet'},
-        '1-st map: handicap lilmix +1.5': {'2.01': 'ggbet'},
-        '1-st map: handicap lilmix +2.5': {'1.8': 'ggbet'},
-        '1-st map: handicap lilmix +3.5': {'1.63': 'ggbet'},
-        '1-st map: handicap lilmix +4.5': {'1.48': 'ggbet'},
-        '1-st map: handicap lilmix +5.5': {'1.36': 'ggbet'},
-        '1-st map: handicap lilmix +6.5': {'1.27': 'ggbet'},
-        '1-st map: handicap lilmix -1.5': {'2.54': 'ggbet'},
-        '1-st map: handicap lilmix -2.5': {'2.9': 'ggbet'},
-        '1-st map: handicap lilmix -3.5': {'3.32': 'ggbet'},
-        '1-st map: handicap lilmix -4.5': {'3.99': 'ggbet'},
-        '1-st map: lilmix will win': {'2.27': 'ggbet'},
-        '1-st map: lilmix will win round 1': {'1.91': 'ggbet'},
-        '1-st map: total over 23.5': {'1.22': 'ggbet'},
-        '1-st map: total over 24.5': {'1.34': 'ggbet'},
-        '1-st map: total over 25.5': {'1.52': 'ggbet'},
-        '1-st map: total over 26.5': {'1.78': 'ggbet'},
-        '1-st map: total over 27.5': {'2.17': 'ggbet'},
-        '1-st map: total over 28.5': {'2.81': 'ggbet'},
-        '1-st map: total over 29.5': {'3.99': 'ggbet'},
-        '1-st map: total under 23.5': {'3.99': 'ggbet'},
-        '1-st map: total under 24.5': {'3.09': 'ggbet'},
-        '1-st map: total under 25.5': {'2.43': 'ggbet'},
-        '1-st map: total under 26.5': {'1.97': 'ggbet'},
-        '1-st map: total under 27.5': {'1.64': 'ggbet'},
-        '1-st map: total under 28.5': {'1.4': 'ggbet'},
-        '1-st map: total under 29.5': {'1.22': 'ggbet'},
-        '2-nd map: cr4zy will win': {'1.58': 'ggbet'},
-        '2-nd map: cr4zy will win round 1': {'1.83': 'ggbet'},
-        '2-nd map: handicap cr4zy +1.5': {'1.48': 'ggbet'},
-        '2-nd map: handicap cr4zy +2.5': {'1.38': 'ggbet'},
-        '2-nd map: handicap cr4zy +3.5': {'1.29': 'ggbet'},
-        '2-nd map: handicap cr4zy +4.5': {'1.22': 'ggbet'},
-        '2-nd map: handicap cr4zy -1.5': {'1.74': 'ggbet'},
-        '2-nd map: handicap cr4zy -2.5': {'1.93': 'ggbet'},
-        '2-nd map: handicap cr4zy -3.5': {'2.17': 'ggbet'},
-        '2-nd map: handicap cr4zy -4.5': {'2.51': 'ggbet'},
-        '2-nd map: handicap cr4zy -5.5': {'2.94': 'ggbet'},
-        '2-nd map: handicap cr4zy -6.5': {'3.54': 'ggbet'},
-        '2-nd map: handicap lilmix +1.5': {'2.02': 'ggbet'},
-        '2-nd map: handicap lilmix +2.5': {'1.81': 'ggbet'},
-        '2-nd map: handicap lilmix +3.5': {'1.64': 'ggbet'},
-        '2-nd map: handicap lilmix +4.5': {'1.49': 'ggbet'},
-        '2-nd map: handicap lilmix +5.5': {'1.37': 'ggbet'},
-        '2-nd map: handicap lilmix +6.5': {'1.27': 'ggbet'},
-        '2-nd map: handicap lilmix -1.5': {'2.54': 'ggbet'},
-        '2-nd map: handicap lilmix -2.5': {'2.9': 'ggbet'},
-        '2-nd map: handicap lilmix -3.5': {'3.39': 'ggbet'},
-        '2-nd map: handicap lilmix -4.5': {'3.99': 'ggbet'},
-        '2-nd map: lilmix will win': {'2.29': 'ggbet'},
-        '2-nd map: lilmix will win round 1': {'1.91': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.22': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.34': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.52': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.78': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.17': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.81': 'ggbet'},
-        '2-nd map: total over 29.5': {'3.99': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.99': 'ggbet'},
-        '2-nd map: total under 24.5': {'3.09': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.43': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.97': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.64': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.4': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.22': 'ggbet'},
-        'correct score 0-2': {'4.54': 'ggbet'},
-        'correct score 1-2': {'4.51': 'ggbet'},
-        'correct score 2-0': {'2.46': 'ggbet'},
-        'correct score 2-1': {'3.42': 'ggbet'},
-        'cr4zy handicap +1.5 maps': {'1.18': 'ggbet'},
-        'cr4zy handicap -1.5 maps': {'2.45': 'ggbet'},
-        'cr4zy will win': {'1.52': 'ggbet'},
-        'lilmix handicap +1.5 maps': {'1.51': 'ggbet'},
-        'lilmix handicap -1.5 maps': {'4.49': 'ggbet'},
-        'lilmix will win': {'2.46': 'ggbet'},
-        'odd/even maps even': {'1.7': 'ggbet'},
-        'odd/even maps odd': {'2.08': 'ggbet'},
-        'total maps over 2.5': {'2.08': 'ggbet'},
-        'total maps under 2.5': {'1.7': 'ggbet'}
-    },
+        '1-st map: brute will win round 1': {'1.9': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: handicap brute +1.5': {'1.92': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: handicap brute +2.5': {'1.74': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: handicap brute +3.5': {'1.58': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: handicap brute +4.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: handicap brute -1.5': {'2.38': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: handicap brute -2.5': {'2.7': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: handicap tikitakan +1.5': {
+            '1.54': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '1-st map: handicap tikitakan +2.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '1-st map: handicap tikitakan -1.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '1-st map: handicap tikitakan -2.5': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '1-st map: handicap tikitakan -3.5': {
+            '2.29': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '1-st map: handicap tikitakan -4.5': {
+            '2.63': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '1-st map: tikitakan will win': {'1.66': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: tikitakan will win round 1': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '1-st map: total over 25.5': {'1.54': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: total over 26.5': {'1.8': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: total over 27.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: total under 25.5': {'2.38': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: total under 26.5': {'1.94': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '1-st map: total under 27.5': {'1.62': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: brute will win': {'2.14': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: brute will win round 1': {'1.9': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: handicap brute +1.5': {'1.92': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: handicap brute +2.5': {'1.74': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: handicap brute +3.5': {'1.58': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: handicap brute +4.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: handicap brute -1.5': {'2.38': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: handicap brute -2.5': {'2.7': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: handicap tikitakan +1.5': {
+            '1.54': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '2-nd map: handicap tikitakan +2.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '2-nd map: handicap tikitakan -1.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '2-nd map: handicap tikitakan -2.5': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '2-nd map: handicap tikitakan -3.5': {
+            '2.29': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '2-nd map: handicap tikitakan -4.5': {
+            '2.63': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '2-nd map: tikitakan will win': {'1.66': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: tikitakan will win round 1': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'
+            },
+        '2-nd map: total over 25.5': {'1.54': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: total over 26.5': {'1.81': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: total over 27.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: total under 25.5': {'2.38': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: total under 26.5': {'1.93': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        '2-nd map: total under 27.5': {'1.62': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'brute handicap +1.5 maps': {'1.46': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'brute handicap -1.5 maps': {'3.99': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'brute will win': {'2.25': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'correct score 0-2': {'2.58': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'correct score 1-2': {'3.62': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'correct score 2-0': {'4.01': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'correct score 2-1': {'4.37': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'odd/even maps even': {'1.67': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'odd/even maps odd': {'2.12': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'tikitakan handicap +1.5 maps': {'1.22': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'tikitakan handicap -1.5 maps': {'2.6': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'tikitakan will win': {'1.61': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'total maps over 2.5': {'2.12': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'},
+        'total maps under 2.5': {'1.67': 'ggbet(https://gg.bet/en/betting/match/tikitakan-vs-brute-02-07)'}
+        },
+    'chaos - new england whalers': {
+        '1-st map: chaos will win': {
+            '1.35': 'ggbet(https://gg.bet/en/betting/match/new-england-whalers-vs-chaos-03-07)'
+            },
+        '1-st map: new england whalers will win': {
+            '3.04': 'ggbet(https://gg.bet/en/betting/match/new-england-whalers-vs-chaos-03-07)'
+            },
+        '2-nd map: chaos will win': {
+            '1.35': 'ggbet(https://gg.bet/en/betting/match/new-england-whalers-vs-chaos-03-07)'
+            },
+        '2-nd map: new england whalers will win': {
+            '3.04': 'ggbet(https://gg.bet/en/betting/match/new-england-whalers-vs-chaos-03-07)'
+            },
+        'chaos will win': {'1.26': 'ggbet(https://gg.bet/en/betting/match/new-england-whalers-vs-chaos-03-07)'},
+        'new england whalers will win': {
+            '3.69': 'ggbet(https://gg.bet/en/betting/match/new-england-whalers-vs-chaos-03-07)'
+            }
+        },
     'cr4zy - nemiga': {
-        '1-st map: cr4zy will win': {'3.46': 'ggbet'},
-        '1-st map: cr4zy will win round 1': {'1.99': 'ggbet'},
-        '1-st map: handicap cr4zy +1.5': {'2.94': 'ggbet'},
-        '1-st map: handicap cr4zy +2.5': {'2.54': 'ggbet'},
-        '1-st map: handicap cr4zy +3.5': {'2.19': 'ggbet'},
-        '1-st map: handicap cr4zy +4.5': {'1.92': 'ggbet'},
-        '1-st map: handicap cr4zy +5.5': {'1.7': 'ggbet'},
-        '1-st map: handicap cr4zy +6.5': {'1.51': 'ggbet'},
-        '1-st map: handicap cr4zy +7.5': {'1.37': 'ggbet'},
-        '1-st map: handicap nemiga -1.5': {'1.37': 'ggbet'},
-        '1-st map: handicap nemiga -2.5': {'1.48': 'ggbet'},
-        '1-st map: handicap nemiga -3.5': {'1.63': 'ggbet'},
-        '1-st map: handicap nemiga -4.5': {'1.82': 'ggbet'},
-        '1-st map: handicap nemiga -5.5': {'2.08': 'ggbet'},
-        '1-st map: handicap nemiga -6.5': {'2.45': 'ggbet'},
-        '1-st map: handicap nemiga -7.5': {'2.94': 'ggbet'},
-        '1-st map: nemiga will win': {'1.28': 'ggbet'},
-        '1-st map: nemiga will win round 1': {'1.76': 'ggbet'},
-        '1-st map: total over 23.5': {'1.31': 'ggbet'},
-        '1-st map: total over 24.5': {'1.47': 'ggbet'},
-        '1-st map: total over 25.5': {'1.69': 'ggbet'},
-        '1-st map: total over 26.5': {'2.02': 'ggbet'},
-        '1-st map: total over 27.5': {'2.48': 'ggbet'},
-        '1-st map: total over 28.5': {'3.26': 'ggbet'},
-        '1-st map: total under 23.5': {'3.26': 'ggbet'},
-        '1-st map: total under 24.5': {'2.57': 'ggbet'},
-        '1-st map: total under 25.5': {'2.09': 'ggbet'},
-        '1-st map: total under 26.5': {'1.74': 'ggbet'},
-        '1-st map: total under 27.5': {'1.5': 'ggbet'},
-        '1-st map: total under 28.5': {'1.31': 'ggbet'},
-        '2-nd map: cr4zy will win': {'3.46': 'ggbet'},
-        '2-nd map: cr4zy will win round 1': {'1.99': 'ggbet'},
-        '2-nd map: handicap cr4zy +1.5': {'2.94': 'ggbet'},
-        '2-nd map: handicap cr4zy +2.5': {'2.54': 'ggbet'},
-        '2-nd map: handicap cr4zy +3.5': {'2.21': 'ggbet'},
-        '2-nd map: handicap cr4zy +4.5': {'1.93': 'ggbet'},
-        '2-nd map: handicap cr4zy +5.5': {'1.71': 'ggbet'},
-        '2-nd map: handicap cr4zy +6.5': {'1.52': 'ggbet'},
-        '2-nd map: handicap cr4zy +7.5': {'1.38': 'ggbet'},
-        '2-nd map: handicap nemiga -1.5': {'1.37': 'ggbet'},
-        '2-nd map: handicap nemiga -2.5': {'1.48': 'ggbet'},
-        '2-nd map: handicap nemiga -3.5': {'1.62': 'ggbet'},
-        '2-nd map: handicap nemiga -4.5': {'1.81': 'ggbet'},
-        '2-nd map: handicap nemiga -5.5': {'2.06': 'ggbet'},
-        '2-nd map: handicap nemiga -6.5': {'2.43': 'ggbet'},
-        '2-nd map: handicap nemiga -7.5': {'2.9': 'ggbet'},
-        '2-nd map: nemiga will win': {'1.28': 'ggbet'},
-        '2-nd map: nemiga will win round 1': {'1.76': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.31': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.48': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.7': 'ggbet'},
-        '2-nd map: total over 26.5': {'2.03': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.51': 'ggbet'},
-        '2-nd map: total over 28.5': {'3.26': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.26': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.54': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.08': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.73': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.49': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.31': 'ggbet'},
-        'correct score 0-2': {'1.63': 'ggbet'},
-        'correct score 1-2': {'3.68': 'ggbet'},
-        'correct score 2-0': {'8.17': 'ggbet'},
-        'correct score 2-1': {'7.25': 'ggbet'},
-        'cr4zy handicap +1.5 maps': {'2.19': 'ggbet'},
-        'cr4zy handicap -1.5 maps': {'7.9': 'ggbet'},
-        'cr4zy will win': {'4.6': 'ggbet'},
-        'nemiga handicap +1.5 maps': {'1.06': 'ggbet'},
-        'nemiga handicap -1.5 maps': {'1.63': 'ggbet'},
-        'nemiga will win': {'1.18': 'ggbet'},
-        'odd/even maps even': {'1.44': 'ggbet'},
-        'odd/even maps odd': {'2.66': 'ggbet'},
-        'total maps over 2.5': {'2.66': 'ggbet'},
-        'total maps under 2.5': {'1.44': 'ggbet'}
-    },
+        '1-st map: cr4zy will win': {'3.7': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: cr4zy will win round 1': {'2.01': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: handicap cr4zy +3.5': {'2.31': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: handicap cr4zy +4.5': {'2.01': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: handicap cr4zy +5.5': {'1.76': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: handicap cr4zy +6.5': {'1.56': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: handicap nemiga -3.5': {'1.57': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: handicap nemiga -4.5': {'1.75': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: handicap nemiga -5.5': {'1.99': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: handicap nemiga -6.5': {'2.33': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: nemiga will win': {'1.25': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: nemiga will win round 1': {'1.75': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: total over 25.5': {'1.73': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: total over 26.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: total under 25.5': {'2.03': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '1-st map: total under 26.5': {'1.71': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: cr4zy will win': {'3.7': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: cr4zy will win round 1': {'2.01': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: handicap cr4zy +3.5': {'2.33': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: handicap cr4zy +4.5': {'2.02': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: handicap cr4zy +5.5': {'1.77': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: handicap cr4zy +6.5': {'1.57': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: handicap nemiga -3.5': {'1.56': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: handicap nemiga -4.5': {'1.74': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: handicap nemiga -5.5': {'1.98': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: handicap nemiga -6.5': {'2.31': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: nemiga will win': {'1.25': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: nemiga will win round 1': {'1.75': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: total over 24.5': {'1.51': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: total over 25.5': {'1.74': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: total over 26.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: total under 24.5': {'2.45': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: total under 25.5': {'2.02': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        '2-nd map: total under 26.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'correct score 0-2': {'1.55': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'correct score 1-2': {'3.77': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'correct score 2-0': {'8.9': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'correct score 2-1': {'7.82': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'cr4zy handicap +1.5 maps': {'2.35': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'cr4zy handicap -1.5 maps': {'9.22': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'cr4zy will win': {'5.12': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'nemiga handicap +1.5 maps': {'1.04': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'nemiga handicap -1.5 maps': {'1.55': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'nemiga will win': {'1.15': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'odd/even maps even': {'1.4': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'odd/even maps odd': {'2.81': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'total maps over 2.5': {'2.81': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'},
+        'total maps under 2.5': {'1.4': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-cr4zy-03-07)'}
+        },
     'cream real betis - neverest': {
-        '1-st map: cream real betis will win': {'1.57': 'ggbet'},
-        '1-st map: neverest will win': {'2.31': 'ggbet'},
-        '2-nd map: cream real betis will win': {'1.57': 'ggbet'},
-        '2-nd map: neverest will win': {'2.31': 'ggbet'},
-        'cream real betis will win': {'1.5': 'ggbet'},
-        'neverest will win': {'2.51': 'ggbet'}
-    },
+        '1-st map: cream real betis will win': {
+            '1.57': 'ggbet(https://gg.bet/en/betting/match/cream-real-betis-vs-neverest-esports-03-07)'
+            },
+        '1-st map: neverest will win': {
+            '2.31': 'ggbet(https://gg.bet/en/betting/match/cream-real-betis-vs-neverest-esports-03-07)'
+            },
+        '2-nd map: cream real betis will win': {
+            '1.57': 'ggbet(https://gg.bet/en/betting/match/cream-real-betis-vs-neverest-esports-03-07)'
+            },
+        '2-nd map: neverest will win': {
+            '2.31': 'ggbet(https://gg.bet/en/betting/match/cream-real-betis-vs-neverest-esports-03-07)'
+            },
+        'cream real betis will win': {
+            '1.5': 'ggbet(https://gg.bet/en/betting/match/cream-real-betis-vs-neverest-esports-03-07)'
+            },
+        'neverest will win': {
+            '2.51': 'ggbet(https://gg.bet/en/betting/match/cream-real-betis-vs-neverest-esports-03-07)'
+            }
+        },
     'd13 - divine vendetta': {
-        '1-st map: d13 will win': {'1.55': 'ggbet'},
-        '1-st map: divine vendetta will win': {'2.35': 'ggbet'},
-        '2-nd map: d13 will win': {'1.55': 'ggbet'},
-        '2-nd map: divine vendetta will win': {'2.35': 'ggbet'},
-        'd13 will win': {'1.48': 'ggbet'},
-        'divine vendetta will win': {'2.57': 'ggbet'}
-    },
-    'divine vendetta - tiger': {
-        '2-nd map: divine vendetta will win': {'2.9': 'ggbet'},
-        '2-nd map: divine vendetta will win round 16': {'1.96': 'ggbet'},
-        '2-nd map: handicap divine vendetta +1.5': {'2.45': 'ggbet'},
-        '2-nd map: handicap divine vendetta +2.5': {'2.14': 'ggbet'},
-        '2-nd map: handicap divine vendetta +3.5': {'1.89': 'ggbet'},
-        '2-nd map: handicap divine vendetta +4.5': {'1.68': 'ggbet'},
-        '2-nd map: handicap divine vendetta +5.5': {'1.51': 'ggbet'},
-        '2-nd map: handicap tiger -1.5': {'1.51': 'ggbet'},
-        '2-nd map: handicap tiger -2.5': {'1.66': 'ggbet'},
-        '2-nd map: handicap tiger -3.5': {'1.85': 'ggbet'},
-        '2-nd map: handicap tiger -4.5': {'2.11': 'ggbet'},
-        '2-nd map: handicap tiger -5.5': {'2.45': 'ggbet'},
-        '2-nd map: round divine vendetta 4  will win': {'2.05': 'ggbet'},
-        '2-nd map: round divine vendetta 5  will win': {'2.09': 'ggbet'},
-        '2-nd map: round divine vendetta 6  will win': {'2.09': 'ggbet'},
-        '2-nd map: round tiger 4  will win': {'1.72': 'ggbet'},
-        '2-nd map: round tiger 5  will win': {'1.69': 'ggbet'},
-        '2-nd map: round tiger 6  will win': {'1.69': 'ggbet'},
-        '2-nd map: tiger will win': {'1.38': 'ggbet'},
-        '2-nd map: tiger will win round 16': {'1.79': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.56': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.83': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.23': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.33': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.91': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.61': 'ggbet'},
-        'correct score 1-2': {'1.71': 'ggbet'},
-        'correct score 2-0': {'2.9': 'ggbet'},
-        'correct score 2-1': {'5.59': 'ggbet'},
-        'divine vendetta handicap -1.5 maps': {'2.9': 'ggbet'},
-        'divine vendetta will win': {'2.06': 'ggbet'},
-        'odd/even maps even': {'2.9': 'ggbet'},
-        'odd/even maps odd': {'1.38': 'ggbet'},
-        'tiger handicap +1.5 maps': {'1.38': 'ggbet'},
-        'tiger will win': {'1.71': 'ggbet'},
-        'total maps over 2.5': {'1.38': 'ggbet'},
-        'total maps under 2.5': {'2.9': 'ggbet'}
-    },
+        '1-st map: d13 will win': {'1.66': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '1-st map: d13 will win round 1': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        '1-st map: divine vendetta will win': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        '1-st map: divine vendetta will win round 1': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        '1-st map: handicap d13 -1.5': {'1.82': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '1-st map: handicap d13 -2.5': {'2.02': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '1-st map: handicap divine vendetta +1.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        '1-st map: handicap divine vendetta +2.5': {
+            '1.74': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        '1-st map: total over 26.5': {'1.8': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '1-st map: total over 27.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '1-st map: total under 26.5': {'1.94': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '1-st map: total under 27.5': {'1.62': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '2-nd map: d13 will win': {'1.66': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '2-nd map: d13 will win round 1': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        '2-nd map: divine vendetta will win': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        '2-nd map: divine vendetta will win round 1': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        '2-nd map: handicap d13 -1.5': {'1.82': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '2-nd map: handicap d13 -2.5': {'2.02': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '2-nd map: handicap divine vendetta +1.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        '2-nd map: handicap divine vendetta +2.5': {
+            '1.74': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        '2-nd map: total over 26.5': {'1.81': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '2-nd map: total over 27.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '2-nd map: total under 26.5': {'1.93': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        '2-nd map: total under 27.5': {'1.62': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'correct score 0-2': {'4.01': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'correct score 1-2': {'4.37': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'correct score 2-0': {'2.58': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'correct score 2-1': {'3.62': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'd13 handicap +1.5 maps': {'1.22': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'd13 handicap -1.5 maps': {'2.6': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'd13 will win': {'1.61': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'divine vendetta handicap +1.5 maps': {
+            '1.46': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        'divine vendetta handicap -1.5 maps': {
+            '3.99': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'
+            },
+        'divine vendetta will win': {'2.25': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'odd/even maps even': {'1.67': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'odd/even maps odd': {'2.12': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'total maps over 2.5': {'2.12': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'},
+        'total maps under 2.5': {'1.67': 'ggbet(https://gg.bet/en/betting/match/d13-vs-divine-vendetta-03-07)'}
+        },
+    'divine vendetta - vici': {
+        '1-st map: divine vendetta will win': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '1-st map: divine vendetta will win round 1': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '1-st map: handicap divine vendetta +4.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '1-st map: handicap divine vendetta +5.5': {
+            '1.86': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '1-st map: handicap divine vendetta +6.5': {
+            '1.63': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '1-st map: handicap vici -4.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '1-st map: handicap vici -5.5': {
+            '1.88': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '1-st map: handicap vici -6.5': {
+            '2.19': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '1-st map: total over 25.5': {'1.79': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        '1-st map: total over 26.5': {'2.14': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        '1-st map: total under 25.5': {'1.96': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        '1-st map: total under 26.5': {'1.66': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        '1-st map: vici will win': {'1.21': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        '1-st map: vici will win round 1': {
+            '1.74': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '2-nd map: divine vendetta will win': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '2-nd map: divine vendetta will win round 1': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '2-nd map: handicap divine vendetta +4.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '2-nd map: handicap divine vendetta +5.5': {
+            '1.87': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '2-nd map: handicap divine vendetta +6.5': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '2-nd map: handicap vici -4.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '2-nd map: handicap vici -5.5': {
+            '1.87': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '2-nd map: handicap vici -6.5': {
+            '2.17': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        '2-nd map: total over 25.5': {'1.8': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        '2-nd map: total over 26.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        '2-nd map: total under 25.5': {'1.94': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        '2-nd map: total under 26.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        '2-nd map: vici will win': {'1.21': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        '2-nd map: vici will win round 1': {
+            '1.74': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        'correct score 0-2': {'1.47': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        'correct score 1-2': {'3.94': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        'correct score 2-0': {'9.89': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        'correct score 2-1': {'8.65': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        'divine vendetta handicap +1.5 maps': {
+            '2.57': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        'divine vendetta handicap -1.5 maps': {
+            '10.09': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'
+            },
+        'divine vendetta will win': {'5.81': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        'odd/even maps even': {'1.36': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        'odd/even maps odd': {'2.99': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        'total maps over 2.5': {'2.99': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        'total maps under 2.5': {'1.36': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        'vici handicap +1.5 maps': {'1.03': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        'vici handicap -1.5 maps': {'1.47': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'},
+        'vici will win': {'1.12': 'ggbet(https://gg.bet/en/betting/match/vici-vs-divine-vendetta-04-07)'}
+        },
     'divizon - planetkey dynamics': {
-        '1-st map: divizon will win': {'1.46': 'ggbet'},
-        '1-st map: planetkey dynamics will win': {'2.6': 'ggbet'},
-        '1x2 divizon': {'1.99': 'ggbet'},
-        '1x2 draw': {'2.5': 'ggbet'},
-        '1x2 planetkey dynamics': {'5.03': 'ggbet'},
-        '2-nd map: divizon will win': {'1.46': 'ggbet'},
-        '2-nd map: planetkey dynamics will win': {'2.6': 'ggbet'}
-    },
-    'energy - sinister5': {
-        '1-st map: energy will win': {'1.86': 'ggbet'},
-        '1-st map: sinister5 will win': {'1.88': 'ggbet'},
-        '2-nd map: energy will win': {'1.86': 'ggbet'},
-        '2-nd map: sinister5 will win': {'1.88': 'ggbet'},
-        'energy will win': {'1.89': 'ggbet'},
-        'sinister5 will win': {'1.87': 'ggbet'}
-    },
-    'espada - pact': {
-        '1-st map: espada will win': {'1.54': 'ggbet'},
-        '1-st map: espada will win round 1': {'1.82': 'ggbet'},
-        '1-st map: handicap espada +1.5': {'1.44': 'ggbet'},
-        '1-st map: handicap espada -1.5': {'1.69': 'ggbet'},
-        '1-st map: handicap espada -2.5': {'1.88': 'ggbet'},
-        '1-st map: handicap espada -3.5': {'2.12': 'ggbet'},
-        '1-st map: handicap espada -4.5': {'2.45': 'ggbet'},
-        '1-st map: handicap pact +1.5': {'2.09': 'ggbet'},
-        '1-st map: handicap pact +2.5': {'1.86': 'ggbet'},
-        '1-st map: handicap pact +3.5': {'1.67': 'ggbet'},
-        '1-st map: handicap pact +4.5': {'1.51': 'ggbet'},
-        '1-st map: handicap pact -1.5': {'2.66': 'ggbet'},
-        '1-st map: pact will win': {'2.38': 'ggbet'},
-        '1-st map: pact will win round 1': {'1.92': 'ggbet'},
-        '1-st map: total over 25.5': {'1.51': 'ggbet'},
-        '1-st map: total over 26.5': {'1.77': 'ggbet'},
-        '1-st map: total over 27.5': {'2.16': 'ggbet'},
-        '1-st map: total over 28.5': {'2.81': 'ggbet'},
-        '1-st map: total under 25.5': {'2.45': 'ggbet'},
-        '1-st map: total under 26.5': {'1.98': 'ggbet'},
-        '1-st map: total under 27.5': {'1.65': 'ggbet'},
-        '1-st map: total under 28.5': {'1.4': 'ggbet'},
-        '2-nd map: espada will win': {'1.54': 'ggbet'},
-        '2-nd map: espada will win round 1': {'1.83': 'ggbet'},
-        '2-nd map: handicap espada +1.5': {'1.44': 'ggbet'},
-        '2-nd map: handicap espada -1.5': {'1.69': 'ggbet'},
-        '2-nd map: handicap espada -2.5': {'1.88': 'ggbet'},
-        '2-nd map: handicap espada -3.5': {'2.12': 'ggbet'},
-        '2-nd map: handicap espada -4.5': {'2.45': 'ggbet'},
-        '2-nd map: handicap pact +1.5': {'2.09': 'ggbet'},
-        '2-nd map: handicap pact +2.5': {'1.86': 'ggbet'},
-        '2-nd map: handicap pact +3.5': {'1.67': 'ggbet'},
-        '2-nd map: handicap pact +4.5': {'1.51': 'ggbet'},
-        '2-nd map: handicap pact -1.5': {'2.66': 'ggbet'},
-        '2-nd map: pact will win': {'2.38': 'ggbet'},
-        '2-nd map: pact will win round 1': {'1.91': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.51': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.77': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.16': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.81': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.45': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.98': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.65': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.4': 'ggbet'},
-        'correct score 0-2': {'5.06': 'ggbet'},
-        'correct score 1-2': {'4.7': 'ggbet'},
-        'correct score 2-0': {'2.34': 'ggbet'},
-        'correct score 2-1': {'3.29': 'ggbet'},
-        'espada handicap +1.5 maps': {'1.15': 'ggbet'},
-        'espada handicap -1.5 maps': {'2.35': 'ggbet'},
-        'espada will win': {'1.45': 'ggbet'},
-        'odd/even maps even': {'1.71': 'ggbet'},
-        'odd/even maps odd': {'2.06': 'ggbet'},
-        'pact handicap +1.5 maps': {'1.55': 'ggbet'},
-        'pact handicap -1.5 maps': {'4.99': 'ggbet'},
-        'pact will win': {'2.66': 'ggbet'},
-        'total maps over 2.5': {'2.06': 'ggbet'},
-        'total maps under 2.5': {'1.71': 'ggbet'}
-    },
+        '1-st map: divizon will win': {
+            '1.6': 'ggbet(https://gg.bet/en/betting/match/divizon-vs-planetkey-dynamics-03-07)'
+            },
+        '1-st map: planetkey dynamics will win': {
+            '2.25': 'ggbet(https://gg.bet/en/betting/match/divizon-vs-planetkey-dynamics-03-07)'
+            },
+        '1x2 divizon': {'2.36': 'ggbet(https://gg.bet/en/betting/match/divizon-vs-planetkey-dynamics-03-07)'},
+        '1x2 draw': {'2.35': 'ggbet(https://gg.bet/en/betting/match/divizon-vs-planetkey-dynamics-03-07)'},
+        '1x2 planetkey dynamics': {
+            '4.04': 'ggbet(https://gg.bet/en/betting/match/divizon-vs-planetkey-dynamics-03-07)'
+            },
+        '2-nd map: divizon will win': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/divizon-vs-planetkey-dynamics-03-07)'
+            },
+        '2-nd map: planetkey dynamics will win': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/divizon-vs-planetkey-dynamics-03-07)'
+            }
+        },
+    'eternal - imperium': {
+        '1-st map: eternal will win': {'1.82': 'ggbet(https://gg.bet/en/betting/match/imperium-vs-eternal-04-07)'},
+        '1-st map: imperium will win': {'1.92': 'ggbet(https://gg.bet/en/betting/match/imperium-vs-eternal-04-07)'},
+        '2-nd map: eternal will win': {'1.82': 'ggbet(https://gg.bet/en/betting/match/imperium-vs-eternal-04-07)'},
+        '2-nd map: imperium will win': {'1.92': 'ggbet(https://gg.bet/en/betting/match/imperium-vs-eternal-04-07)'},
+        'eternal will win': {'1.83': 'ggbet(https://gg.bet/en/betting/match/imperium-vs-eternal-04-07)'},
+        'imperium will win': {'1.93': 'ggbet(https://gg.bet/en/betting/match/imperium-vs-eternal-04-07)'}
+        },
     'evil geniuses - liquid': {
-        '1-st map: correct score 10t-e': {'11.62': 'ggbet'},
-        '1-st map: correct score 11t-e': {'10.25': 'ggbet'},
-        '1-st map: correct score 12t-e': {'10.03': 'ggbet'},
-        '1-st map: correct score 13t-e': {'9.92': 'ggbet'},
-        '1-st map: correct score 14t-e': {'9.91': 'ggbet'},
-        '1-st map: correct score 16t-e': {'9.87': 'ggbet'},
-        '1-st map: correct score 1t-e': {'100': 'ggbet'},
-        '1-st map: correct score 2t-e': {'91.11': 'ggbet'},
-        '1-st map: correct score 3t-e': {'48.15': 'ggbet'},
-        '1-st map: correct score 4t-e': {'30.84': 'ggbet'},
-        '1-st map: correct score 5t-e': {'22.56': 'ggbet'},
-        '1-st map: correct score 6t-e': {'18.06': 'ggbet'},
-        '1-st map: correct score 7t-e': {'15.37': 'ggbet'},
-        '1-st map: correct score 8t-e': {'13.62': 'ggbet'},
-        '1-st map: correct score 9t-e': {'12.43': 'ggbet'},
-        '1-st map: ct total  over 10.5': {'1.21': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.43': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.08': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.54': 'ggbet'},
-        '1-st map: ct total  under 10.5': {'4.11': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.7': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.7': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.27': 'ggbet'},
-        '1-st map: evil geniuses total over 10.5': {'1.23': 'ggbet'},
-        '1-st map: evil geniuses total over 11.5': {'1.32': 'ggbet'},
-        '1-st map: evil geniuses total over 12.5': {'1.42': 'ggbet'},
-        '1-st map: evil geniuses total over 13.5': {'1.54': 'ggbet'},
-        '1-st map: evil geniuses total over 14.5': {'1.69': 'ggbet'},
-        '1-st map: evil geniuses total over 15.5': {'2.09': 'ggbet'},
-        '1-st map: evil geniuses total under 10.5': {'3.89': 'ggbet'},
-        '1-st map: evil geniuses total under 11.5': {'3.2': 'ggbet'},
-        '1-st map: evil geniuses total under 12.5': {'2.73': 'ggbet'},
-        '1-st map: evil geniuses total under 13.5': {'2.38': 'ggbet'},
-        '1-st map: evil geniuses total under 14.5': {'2.09': 'ggbet'},
-        '1-st map: evil geniuses total under 15.5': {'1.69': 'ggbet'},
-        '1-st map: evil geniuses will win': {'1.87': 'ggbet'},
-        '1-st map: evil geniuses will win round 1': {'1.87': 'ggbet'},
-        '1-st map: first half correct score 1h-t': {'84.67': 'ggbet'},
-        '1-st map: first half correct score 2h-t': {'28.42': 'ggbet'},
-        '1-st map: first half correct score 3h-t': {'15.06': 'ggbet'},
-        '1-st map: first half correct score 4h-t': {'9.47': 'ggbet'},
-        '1-st map: first half correct score 5h-t': {'7.16': 'ggbet'},
-        '1-st map: first half correct score h-t': {'5.77': 'ggbet'},
-        '1-st map: handicap evil geniuses +1.5': {'1.69': 'ggbet'},
-        '1-st map: handicap evil geniuses +2.5': {'1.54': 'ggbet'},
-        '1-st map: handicap evil geniuses +3.5': {'1.42': 'ggbet'},
-        '1-st map: handicap evil geniuses +4.5': {'1.32': 'ggbet'},
-        '1-st map: handicap evil geniuses +5.5': {'1.23': 'ggbet'},
-        '1-st map: handicap evil geniuses -1.5': {'2.09': 'ggbet'},
-        '1-st map: handicap evil geniuses -2.5': {'2.35': 'ggbet'},
-        '1-st map: handicap evil geniuses -3.5': {'2.73': 'ggbet'},
-        '1-st map: handicap evil geniuses -4.5': {'3.2': 'ggbet'},
-        '1-st map: handicap evil geniuses -5.5': {'3.79': 'ggbet'},
-        '1-st map: handicap liquid +1.5': {'1.69': 'ggbet'},
-        '1-st map: handicap liquid +2.5': {'1.55': 'ggbet'},
-        '1-st map: handicap liquid +3.5': {'1.42': 'ggbet'},
-        '1-st map: handicap liquid +4.5': {'1.32': 'ggbet'},
-        '1-st map: handicap liquid +5.5': {'1.24': 'ggbet'},
-        '1-st map: handicap liquid -1.5': {'2.09': 'ggbet'},
-        '1-st map: handicap liquid -2.5': {'2.38': 'ggbet'},
-        '1-st map: handicap liquid -3.5': {'2.73': 'ggbet'},
-        '1-st map: handicap liquid -4.5': {'3.2': 'ggbet'},
-        '1-st map: handicap liquid -5.5': {'3.89': 'ggbet'},
-        '1-st map: liquid total over 10.5': {'1.24': 'ggbet'},
-        '1-st map: liquid total over 11.5': {'1.32': 'ggbet'},
-        '1-st map: liquid total over 12.5': {'1.42': 'ggbet'},
-        '1-st map: liquid total over 13.5': {'1.55': 'ggbet'},
-        '1-st map: liquid total over 14.5': {'1.69': 'ggbet'},
-        '1-st map: liquid total over 15.5': {'2.09': 'ggbet'},
-        '1-st map: liquid total under 10.5': {'3.79': 'ggbet'},
-        '1-st map: liquid total under 11.5': {'3.2': 'ggbet'},
-        '1-st map: liquid total under 12.5': {'2.73': 'ggbet'},
-        '1-st map: liquid total under 13.5': {'2.35': 'ggbet'},
-        '1-st map: liquid total under 14.5': {'2.09': 'ggbet'},
-        '1-st map: liquid total under 15.5': {'1.69': 'ggbet'},
-        '1-st map: liquid will win': {'1.87': 'ggbet'},
-        '1-st map: liquid will win round 1': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds evil geniuses 12': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds evil geniuses 3': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds evil geniuses 6': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds evil geniuses 9': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds liquid 12': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds liquid 3': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds liquid 6': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds liquid 9': {'1.87': 'ggbet'},
-        '1-st map: terrorist total over 10.5': {'1.21': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.43': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.08': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.54': 'ggbet'},
-        '1-st map: terrorist total under 10.5': {'4.11': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.7': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.7': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.27': 'ggbet'},
-        '1-st map: total over 24.5': {'1.3': 'ggbet'},
-        '1-st map: total over 25.5': {'1.46': 'ggbet'},
-        '1-st map: total over 26.5': {'1.7': 'ggbet'},
-        '1-st map: total over 27.5': {'2.06': 'ggbet'},
-        '1-st map: total over 28.5': {'2.66': 'ggbet'},
-        '1-st map: total over 29.5': {'3.79': 'ggbet'},
-        '1-st map: total under 24.5': {'3.32': 'ggbet'},
-        '1-st map: total under 25.5': {'2.6': 'ggbet'},
-        '1-st map: total under 26.5': {'2.08': 'ggbet'},
-        '1-st map: total under 27.5': {'1.71': 'ggbet'},
-        '1-st map: total under 28.5': {'1.44': 'ggbet'},
-        '1-st map: total under 29.5': {'1.24': 'ggbet'},
-        '1-st map: will there be overtime no': {'1.09': 'ggbet'},
-        '1-st map: will there be overtime yes': {'6.55': 'ggbet'},
-        '1st map first half - evil geniuses total over 5.5': {'1.22': 'ggbet'},
-        '1st map first half - evil geniuses total over 6.5': {'1.45': 'ggbet'},
-        '1st map first half - evil geniuses total over 7.5': {'1.87': 'ggbet'},
-        '1st map first half - evil geniuses total over 8.5': {'2.63': 'ggbet'},
-        '1st map first half - evil geniuses total over 9.5': {'3.99': 'ggbet'},
-        '1st map first half - evil geniuses total under 5.5': {'3.99': 'ggbet'},
-        '1st map first half - evil geniuses total under 6.5': {'2.63': 'ggbet'},
-        '1st map first half - evil geniuses total under 7.5': {'1.87': 'ggbet'},
-        '1st map first half - evil geniuses total under 8.5': {'1.45': 'ggbet'},
-        '1st map first half - evil geniuses total under 9.5': {'1.22': 'ggbet'},
-        '1st map first half - evil geniuses will win': {'1.87': 'ggbet'},
-        '1st map first half - handicap evil geniuses +0.5': {'1.87': 'ggbet'},
-        '1st map first half - handicap evil geniuses +2.5': {'1.45': 'ggbet'},
-        '1st map first half - handicap evil geniuses +4.5': {'1.22': 'ggbet'},
-        '1st map first half - handicap evil geniuses -1.5': {'2.63': 'ggbet'},
-        '1st map first half - handicap evil geniuses -3.5': {'3.99': 'ggbet'},
-        '1st map first half - handicap liquid +1.5': {'1.45': 'ggbet'},
-        '1st map first half - handicap liquid +3.5': {'1.22': 'ggbet'},
-        '1st map first half - handicap liquid -0.5': {'1.87': 'ggbet'},
-        '1st map first half - handicap liquid -2.5': {'2.63': 'ggbet'},
-        '1st map first half - handicap liquid -4.5': {'3.99': 'ggbet'},
-        '1st map first half - liquid total over 5.5': {'1.22': 'ggbet'},
-        '1st map first half - liquid total over 6.5': {'1.45': 'ggbet'},
-        '1st map first half - liquid total over 7.5': {'1.87': 'ggbet'},
-        '1st map first half - liquid total over 8.5': {'2.63': 'ggbet'},
-        '1st map first half - liquid total over 9.5': {'3.99': 'ggbet'},
-        '1st map first half - liquid total under 5.5': {'3.99': 'ggbet'},
-        '1st map first half - liquid total under 6.5': {'2.63': 'ggbet'},
-        '1st map first half - liquid total under 7.5': {'1.87': 'ggbet'},
-        '1st map first half - liquid total under 8.5': {'1.45': 'ggbet'},
-        '1st map first half - liquid total under 9.5': {'1.22': 'ggbet'},
-        '1st map first half - liquid will win': {'1.87': 'ggbet'},
-        '1st map second half - 1x2 draw': {'9.45': 'ggbet'},
-        '1st map second half - 1x2 evil geniuses': {'1.98': 'ggbet'},
-        '1st map second half - 1x2 liquid': {'1.99': 'ggbet'},
-        '1st map second half - handicap evil geniuses +1.5': {'1.5': 'ggbet'},
-        '1st map second half - handicap evil geniuses +3.5': {'1.22': 'ggbet'},
-        '1st map second half - handicap evil geniuses -0.5': {'1.98': 'ggbet'},
-        '1st map second half - handicap evil geniuses -2.5': {'2.9': 'ggbet'},
-        '1st map second half - handicap liquid +0.5': {'1.77': 'ggbet'},
-        '1st map second half - handicap liquid +2.5': {'1.38': 'ggbet'},
-        '1st map second half - handicap liquid -1.5': {'2.48': 'ggbet'},
-        '1st map second half - handicap liquid -3.5': {'3.99': 'ggbet'},
-        '2-nd map: correct score 10t-e': {'11.63': 'ggbet'},
-        '2-nd map: correct score 11t-e': {'10.26': 'ggbet'},
-        '2-nd map: correct score 12t-e': {'10.03': 'ggbet'},
-        '2-nd map: correct score 13t-e': {'9.92': 'ggbet'},
-        '2-nd map: correct score 14t-e': {'9.92': 'ggbet'},
-        '2-nd map: correct score 16t-e': {'9.88': 'ggbet'},
-        '2-nd map: correct score 1t-e': {'100': 'ggbet'},
-        '2-nd map: correct score 2t-e': {'91.09': 'ggbet'},
-        '2-nd map: correct score 3t-e': {'48.14': 'ggbet'},
-        '2-nd map: correct score 4t-e': {'30.84': 'ggbet'},
-        '2-nd map: correct score 5t-e': {'22.56': 'ggbet'},
-        '2-nd map: correct score 6t-e': {'18.07': 'ggbet'},
-        '2-nd map: correct score 7t-e': {'15.37': 'ggbet'},
-        '2-nd map: correct score 8t-e': {'13.62': 'ggbet'},
-        '2-nd map: correct score 9t-e': {'12.44': 'ggbet'},
-        '2-nd map: ct total  over 10.5': {'1.21': 'ggbet'},
-        '2-nd map: ct total  over 11.5': {'1.43': 'ggbet'},
-        '2-nd map: ct total  over 13.5': {'2.08': 'ggbet'},
-        '2-nd map: ct total  over 15.5': {'3.54': 'ggbet'},
-        '2-nd map: ct total  under 10.5': {'4.11': 'ggbet'},
-        '2-nd map: ct total  under 11.5': {'2.7': 'ggbet'},
-        '2-nd map: ct total  under 13.5': {'1.7': 'ggbet'},
-        '2-nd map: ct total  under 15.5': {'1.27': 'ggbet'},
-        '2-nd map: evil geniuses total over 10.5': {'1.23': 'ggbet'},
-        '2-nd map: evil geniuses total over 11.5': {'1.32': 'ggbet'},
-        '2-nd map: evil geniuses total over 12.5': {'1.42': 'ggbet'},
-        '2-nd map: evil geniuses total over 13.5': {'1.54': 'ggbet'},
-        '2-nd map: evil geniuses total over 14.5': {'1.69': 'ggbet'},
-        '2-nd map: evil geniuses total over 15.5': {'2.08': 'ggbet'},
-        '2-nd map: evil geniuses total under 10.5': {'3.89': 'ggbet'},
-        '2-nd map: evil geniuses total under 11.5': {'3.2': 'ggbet'},
-        '2-nd map: evil geniuses total under 12.5': {'2.73': 'ggbet'},
-        '2-nd map: evil geniuses total under 13.5': {'2.38': 'ggbet'},
-        '2-nd map: evil geniuses total under 14.5': {'2.09': 'ggbet'},
-        '2-nd map: evil geniuses total under 15.5': {'1.7': 'ggbet'},
-        '2-nd map: evil geniuses will win': {'1.86': 'ggbet'},
-        '2-nd map: evil geniuses will win round 1': {'1.87': 'ggbet'},
-        '2-nd map: first half correct score 1h-t': {'84.74': 'ggbet'},
-        '2-nd map: first half correct score 2h-t': {'28.44': 'ggbet'},
-        '2-nd map: first half correct score 3h-t': {'15.07': 'ggbet'},
-        '2-nd map: first half correct score 4h-t': {'9.47': 'ggbet'},
-        '2-nd map: first half correct score 5h-t': {'7.16': 'ggbet'},
-        '2-nd map: first half correct score h-t': {'5.78': 'ggbet'},
-        '2-nd map: handicap evil geniuses +1.5': {'1.69': 'ggbet'},
-        '2-nd map: handicap evil geniuses +2.5': {'1.54': 'ggbet'},
-        '2-nd map: handicap evil geniuses +3.5': {'1.42': 'ggbet'},
-        '2-nd map: handicap evil geniuses +4.5': {'1.32': 'ggbet'},
-        '2-nd map: handicap evil geniuses +5.5': {'1.23': 'ggbet'},
-        '2-nd map: handicap evil geniuses -1.5': {'2.08': 'ggbet'},
-        '2-nd map: handicap evil geniuses -2.5': {'2.35': 'ggbet'},
-        '2-nd map: handicap evil geniuses -3.5': {'2.7': 'ggbet'},
-        '2-nd map: handicap evil geniuses -4.5': {'3.2': 'ggbet'},
-        '2-nd map: handicap evil geniuses -5.5': {'3.79': 'ggbet'},
-        '2-nd map: handicap liquid +1.5': {'1.7': 'ggbet'},
-        '2-nd map: handicap liquid +2.5': {'1.55': 'ggbet'},
-        '2-nd map: handicap liquid +3.5': {'1.43': 'ggbet'},
-        '2-nd map: handicap liquid +4.5': {'1.32': 'ggbet'},
-        '2-nd map: handicap liquid +5.5': {'1.24': 'ggbet'},
-        '2-nd map: handicap liquid -1.5': {'2.09': 'ggbet'},
-        '2-nd map: handicap liquid -2.5': {'2.38': 'ggbet'},
-        '2-nd map: handicap liquid -3.5': {'2.73': 'ggbet'},
-        '2-nd map: handicap liquid -4.5': {'3.2': 'ggbet'},
-        '2-nd map: handicap liquid -5.5': {'3.89': 'ggbet'},
-        '2-nd map: liquid total over 10.5': {'1.24': 'ggbet'},
-        '2-nd map: liquid total over 11.5': {'1.32': 'ggbet'},
-        '2-nd map: liquid total over 12.5': {'1.42': 'ggbet'},
-        '2-nd map: liquid total over 13.5': {'1.55': 'ggbet'},
-        '2-nd map: liquid total over 14.5': {'1.69': 'ggbet'},
-        '2-nd map: liquid total over 15.5': {'2.09': 'ggbet'},
-        '2-nd map: liquid total under 10.5': {'3.79': 'ggbet'},
-        '2-nd map: liquid total under 11.5': {'3.2': 'ggbet'},
-        '2-nd map: liquid total under 12.5': {'2.73': 'ggbet'},
-        '2-nd map: liquid total under 13.5': {'2.35': 'ggbet'},
-        '2-nd map: liquid total under 14.5': {'2.09': 'ggbet'},
-        '2-nd map: liquid total under 15.5': {'1.69': 'ggbet'},
-        '2-nd map: liquid will win': {'1.88': 'ggbet'},
-        '2-nd map: liquid will win round 1': {'1.87': 'ggbet'},
-        '2-nd map: race to  rounds evil geniuses 12': {'1.87': 'ggbet'},
-        '2-nd map: race to  rounds evil geniuses 3': {'1.87': 'ggbet'},
-        '2-nd map: race to  rounds evil geniuses 6': {'1.87': 'ggbet'},
-        '2-nd map: race to  rounds evil geniuses 9': {'1.87': 'ggbet'},
-        '2-nd map: race to  rounds liquid 12': {'1.87': 'ggbet'},
-        '2-nd map: race to  rounds liquid 3': {'1.87': 'ggbet'},
-        '2-nd map: race to  rounds liquid 6': {'1.87': 'ggbet'},
-        '2-nd map: race to  rounds liquid 9': {'1.87': 'ggbet'},
-        '2-nd map: terrorist total over 10.5': {'1.21': 'ggbet'},
-        '2-nd map: terrorist total over 11.5': {'1.43': 'ggbet'},
-        '2-nd map: terrorist total over 13.5': {'2.08': 'ggbet'},
-        '2-nd map: terrorist total over 15.5': {'3.54': 'ggbet'},
-        '2-nd map: terrorist total under 10.5': {'4.11': 'ggbet'},
-        '2-nd map: terrorist total under 11.5': {'2.7': 'ggbet'},
-        '2-nd map: terrorist total under 13.5': {'1.7': 'ggbet'},
-        '2-nd map: terrorist total under 15.5': {'1.27': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.3': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.46': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.7': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.06': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.66': 'ggbet'},
-        '2-nd map: total over 29.5': {'3.79': 'ggbet'},
-        '2-nd map: total under 24.5': {'3.32': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.6': 'ggbet'},
-        '2-nd map: total under 26.5': {'2.08': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.71': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.44': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.24': 'ggbet'},
-        '2-nd map: will there be overtime no': {'1.09': 'ggbet'},
-        '2-nd map: will there be overtime yes': {'6.55': 'ggbet'},
-        '2nd map first half - evil geniuses total over 5.5': {'1.21': 'ggbet'},
-        '2nd map first half - evil geniuses total over 6.5': {'1.45': 'ggbet'},
-        '2nd map first half - evil geniuses total over 7.5': {'1.87': 'ggbet'},
-        '2nd map first half - evil geniuses total over 8.5': {'2.63': 'ggbet'},
-        '2nd map first half - evil geniuses total over 9.5': {'3.99': 'ggbet'},
-        '2nd map first half - evil geniuses total under 5.5': {'4.11': 'ggbet'},
-        '2nd map first half - evil geniuses total under 6.5': {'2.63': 'ggbet'},
-        '2nd map first half - evil geniuses total under 7.5': {'1.87': 'ggbet'},
-        '2nd map first half - evil geniuses total under 8.5': {'1.45': 'ggbet'},
-        '2nd map first half - evil geniuses total under 9.5': {'1.22': 'ggbet'},
-        '2nd map first half - evil geniuses will win': {'1.87': 'ggbet'},
-        '2nd map first half - handicap evil geniuses +0.5': {'1.87': 'ggbet'},
-        '2nd map first half - handicap evil geniuses +2.5': {'1.45': 'ggbet'},
-        '2nd map first half - handicap evil geniuses +4.5': {'1.21': 'ggbet'},
-        '2nd map first half - handicap evil geniuses -1.5': {'2.63': 'ggbet'},
-        '2nd map first half - handicap evil geniuses -3.5': {'3.99': 'ggbet'},
-        '2nd map first half - handicap liquid +1.5': {'1.45': 'ggbet'},
-        '2nd map first half - handicap liquid +3.5': {'1.22': 'ggbet'},
-        '2nd map first half - handicap liquid -0.5': {'1.87': 'ggbet'},
-        '2nd map first half - handicap liquid -2.5': {'2.63': 'ggbet'},
-        '2nd map first half - handicap liquid -4.5': {'4.11': 'ggbet'},
-        '2nd map first half - liquid total over 5.5': {'1.21': 'ggbet'},
-        '2nd map first half - liquid total over 6.5': {'1.45': 'ggbet'},
-        '2nd map first half - liquid total over 7.5': {'1.87': 'ggbet'},
-        '2nd map first half - liquid total over 8.5': {'2.63': 'ggbet'},
-        '2nd map first half - liquid total over 9.5': {'3.99': 'ggbet'},
-        '2nd map first half - liquid total under 5.5': {'4.11': 'ggbet'},
-        '2nd map first half - liquid total under 6.5': {'2.63': 'ggbet'},
-        '2nd map first half - liquid total under 7.5': {'1.87': 'ggbet'},
-        '2nd map first half - liquid total under 8.5': {'1.45': 'ggbet'},
-        '2nd map first half - liquid total under 9.5': {'1.22': 'ggbet'},
-        '2nd map first half - liquid will win': {'1.87': 'ggbet'},
-        '2nd map second half - 1x2 draw': {'9.45': 'ggbet'},
-        '2nd map second half - 1x2 evil geniuses': {'1.98': 'ggbet'},
-        '2nd map second half - 1x2 liquid': {'1.99': 'ggbet'},
-        '2nd map second half - handicap evil geniuses +1.5': {'1.5': 'ggbet'},
-        '2nd map second half - handicap evil geniuses +3.5': {'1.22': 'ggbet'},
-        '2nd map second half - handicap evil geniuses -0.5': {'1.98': 'ggbet'},
-        '2nd map second half - handicap evil geniuses -2.5': {'2.9': 'ggbet'},
-        '2nd map second half - handicap liquid +0.5': {'1.77': 'ggbet'},
-        '2nd map second half - handicap liquid +2.5': {'1.38': 'ggbet'},
-        '2nd map second half - handicap liquid -1.5': {'2.48': 'ggbet'},
-        '2nd map second half - handicap liquid -3.5': {'3.99': 'ggbet'},
-        'correct score 0-2': {'3.4': 'ggbet'},
-        'correct score 1-2': {'3.64': 'ggbet'},
-        'correct score 2-0': {'3.38': 'ggbet'},
-        'correct score 2-1': {'3.63': 'ggbet'},
-        'evil geniuses handicap +1.5 maps': {'1.29': 'ggbet'},
-        'evil geniuses handicap -1.5 maps': {'3.39': 'ggbet'},
-        'evil geniuses total over 25.5': {'1.2': 'ggbet'},
-        'evil geniuses total over 32.5': {'1.84': 'ggbet'},
-        'evil geniuses total over 36.5': {'2.27': 'ggbet'},
-        'evil geniuses total over 40.5': {'3.2': 'ggbet'},
-        'evil geniuses total under 25.5': {'4.23': 'ggbet'},
-        'evil geniuses total under 32.5': {'1.9': 'ggbet'},
-        'evil geniuses total under 36.5': {'1.59': 'ggbet'},
-        'evil geniuses total under 40.5': {'1.32': 'ggbet'},
-        'evil geniuses will win': {'1.89': 'ggbet'},
-        'handicap evil geniuses +0.5': {'1.82': 'ggbet'},
-        'handicap evil geniuses +3.5': {'1.63': 'ggbet'},
-        'handicap evil geniuses +5.5': {'1.48': 'ggbet'},
-        'handicap evil geniuses +7.5': {'1.34': 'ggbet'},
-        'handicap evil geniuses +9.5': {'1.22': 'ggbet'},
-        'handicap evil geniuses -2.5': {'2.06': 'ggbet'},
-        'handicap evil geniuses -4.5': {'2.29': 'ggbet'},
-        'handicap evil geniuses -6.5': {'2.73': 'ggbet'},
-        'handicap evil geniuses -8.5': {'3.39': 'ggbet'},
-        'handicap liquid +2.5': {'1.71': 'ggbet'},
-        'handicap liquid +4.5': {'1.58': 'ggbet'},
-        'handicap liquid +6.5': {'1.42': 'ggbet'},
-        'handicap liquid +8.5': {'1.29': 'ggbet'},
-        'handicap liquid -0.5': {'1.92': 'ggbet'},
-        'handicap liquid -3.5': {'2.19': 'ggbet'},
-        'handicap liquid -5.5': {'2.54': 'ggbet'},
-        'handicap liquid -7.5': {'3.09': 'ggbet'},
-        'handicap liquid -9.5': {'3.99': 'ggbet'},
-        'liquid handicap +1.5 maps': {'1.29': 'ggbet'},
-        'liquid handicap -1.5 maps': {'3.39': 'ggbet'},
-        'liquid total over 25.5': {'1.21': 'ggbet'},
-        'liquid total over 32.5': {'1.84': 'ggbet'},
-        'liquid total over 36.5': {'2.29': 'ggbet'},
-        'liquid total over 40.5': {'3.2': 'ggbet'},
-        'liquid total under 25.5': {'4.11': 'ggbet'},
-        'liquid total under 32.5': {'1.9': 'ggbet'},
-        'liquid total under 36.5': {'1.58': 'ggbet'},
-        'liquid total under 40.5': {'1.32': 'ggbet'},
-        'liquid will win': {'1.87': 'ggbet'},
-        'odd/even maps even': {'1.81': 'ggbet'},
-        'odd/even maps odd': {'1.93': 'ggbet'},
-        'total maps over 2.5': {'1.93': 'ggbet'},
-        'total maps under 2.5': {'1.81': 'ggbet'},
-        'total over 52.5': {'1.22': 'ggbet'},
-        'total over 54.5': {'1.34': 'ggbet'},
-        'total over 56.5': {'1.47': 'ggbet'},
-        'total over 58.5': {'1.59': 'ggbet'},
-        'total over 62.5': {'1.72': 'ggbet'},
-        'total over 68.5': {'1.9': 'ggbet'},
-        'total over 73.5': {'2.16': 'ggbet'},
-        'total over 76.5': {'2.48': 'ggbet'},
-        'total over 78.5': {'2.85': 'ggbet'},
-        'total over 80.5': {'3.39': 'ggbet'},
-        'total over 82.5': {'4.11': 'ggbet'},
-        'total under 52.5': {'3.99': 'ggbet'},
-        'total under 54.5': {'3.09': 'ggbet'},
-        'total under 56.5': {'2.57': 'ggbet'},
-        'total under 58.5': {'2.27': 'ggbet'},
-        'total under 62.5': {'2.05': 'ggbet'},
-        'total under 68.5': {'1.84': 'ggbet'},
-        'total under 73.5': {'1.65': 'ggbet'},
-        'total under 76.5': {'1.5': 'ggbet'},
-        'total under 78.5': {'1.39': 'ggbet'},
-        'total under 80.5': {'1.29': 'ggbet'},
-        'total under 82.5': {'1.21': 'ggbet'}
-    },
-    'fnatic - heroic': {
-        '1-st map: correct score 10t-e': {'11.62': 'ggbet'},
-        '1-st map: correct score 11t-e': {'10.23': 'ggbet'},
-        '1-st map: correct score 12t-e': {'9.99': 'ggbet'},
-        '1-st map: correct score 13t-e': {'9.86': 'ggbet'},
-        '1-st map: correct score 14t-e': {'9.85': 'ggbet'},
-        '1-st map: correct score 16t-e': {'9.81': 'ggbet'},
-        '1-st map: correct score 1t-e': {'100': 'ggbet'},
-        '1-st map: correct score 2t-e': {'95.28': 'ggbet'},
-        '1-st map: correct score 3t-e': {'49.91': 'ggbet'},
-        '1-st map: correct score 4t-e': {'31.7': 'ggbet'},
-        '1-st map: correct score 5t-e': {'23.01': 'ggbet'},
-        '1-st map: correct score 6t-e': {'18.32': 'ggbet'},
-        '1-st map: correct score 7t-e': {'15.51': 'ggbet'},
-        '1-st map: correct score 8t-e': {'13.69': 'ggbet'},
-        '1-st map: correct score 9t-e': {'12.46': 'ggbet'},
-        '1-st map: ct total  over 10.5': {'1.2': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.42': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.06': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.54': 'ggbet'},
-        '1-st map: ct total  under 10.5': {'4.23': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.73': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.71': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.27': 'ggbet'},
-        '1-st map: first half correct score 1h-t': {'87.87': 'ggbet'},
-        '1-st map: first half correct score 2h-t': {'29.04': 'ggbet'},
-        '1-st map: first half correct score 3h-t': {'15.21': 'ggbet'},
-        '1-st map: first half correct score 4h-t': {'9.5': 'ggbet'},
-        '1-st map: first half correct score 5h-t': {'7.16': 'ggbet'},
-        '1-st map: first half correct score h-t': {'5.76': 'ggbet'},
-        '1-st map: fnatic total over 10.5': {'1.23': 'ggbet'},
-        '1-st map: fnatic total over 11.5': {'1.31': 'ggbet'},
-        '1-st map: fnatic total over 12.5': {'1.42': 'ggbet'},
-        '1-st map: fnatic total over 13.5': {'1.54': 'ggbet'},
-        '1-st map: fnatic total over 14.5': {'1.69': 'ggbet'},
-        '1-st map: fnatic total over 15.5': {'2.09': 'ggbet'},
-        '1-st map: fnatic total under 10.5': {'3.89': 'ggbet'},
-        '1-st map: fnatic total under 11.5': {'3.26': 'ggbet'},
-        '1-st map: fnatic total under 12.5': {'2.73': 'ggbet'},
-        '1-st map: fnatic total under 13.5': {'2.38': 'ggbet'},
-        '1-st map: fnatic total under 14.5': {'2.09': 'ggbet'},
-        '1-st map: fnatic total under 15.5': {'1.69': 'ggbet'},
-        '1-st map: fnatic will win': {'1.86': 'ggbet'},
-        '1-st map: fnatic will win round 1': {'1.87': 'ggbet'},
-        '1-st map: handicap fnatic +1.5': {'1.69': 'ggbet'},
-        '1-st map: handicap fnatic +2.5': {'1.54': 'ggbet'},
-        '1-st map: handicap fnatic +3.5': {'1.42': 'ggbet'},
-        '1-st map: handicap fnatic +4.5': {'1.31': 'ggbet'},
-        '1-st map: handicap fnatic +5.5': {'1.23': 'ggbet'},
-        '1-st map: handicap fnatic -1.5': {'2.09': 'ggbet'},
-        '1-st map: handicap fnatic -2.5': {'2.38': 'ggbet'},
-        '1-st map: handicap fnatic -3.5': {'2.73': 'ggbet'},
-        '1-st map: handicap fnatic -4.5': {'3.2': 'ggbet'},
-        '1-st map: handicap fnatic -5.5': {'3.89': 'ggbet'},
-        '1-st map: handicap heroic +1.5': {'1.69': 'ggbet'},
-        '1-st map: handicap heroic +2.5': {'1.54': 'ggbet'},
-        '1-st map: handicap heroic +3.5': {'1.42': 'ggbet'},
-        '1-st map: handicap heroic +4.5': {'1.32': 'ggbet'},
-        '1-st map: handicap heroic +5.5': {'1.23': 'ggbet'},
-        '1-st map: handicap heroic -1.5': {'2.09': 'ggbet'},
-        '1-st map: handicap heroic -2.5': {'2.38': 'ggbet'},
-        '1-st map: handicap heroic -3.5': {'2.73': 'ggbet'},
-        '1-st map: handicap heroic -4.5': {'3.26': 'ggbet'},
-        '1-st map: handicap heroic -5.5': {'3.89': 'ggbet'},
-        '1-st map: heroic total over 10.5': {'1.23': 'ggbet'},
-        '1-st map: heroic total over 11.5': {'1.32': 'ggbet'},
-        '1-st map: heroic total over 12.5': {'1.42': 'ggbet'},
-        '1-st map: heroic total over 13.5': {'1.54': 'ggbet'},
-        '1-st map: heroic total over 14.5': {'1.69': 'ggbet'},
-        '1-st map: heroic total over 15.5': {'2.09': 'ggbet'},
-        '1-st map: heroic total under 10.5': {'3.89': 'ggbet'},
-        '1-st map: heroic total under 11.5': {'3.2': 'ggbet'},
-        '1-st map: heroic total under 12.5': {'2.73': 'ggbet'},
-        '1-st map: heroic total under 13.5': {'2.38': 'ggbet'},
-        '1-st map: heroic total under 14.5': {'2.09': 'ggbet'},
-        '1-st map: heroic total under 15.5': {'1.69': 'ggbet'},
-        '1-st map: heroic will win': {'1.88': 'ggbet'},
-        '1-st map: heroic will win round 1': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds fnatic 12': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds fnatic 3': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds fnatic 6': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds fnatic 9': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds heroic 12': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds heroic 3': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds heroic 6': {'1.87': 'ggbet'},
-        '1-st map: race to  rounds heroic 9': {'1.87': 'ggbet'},
-        '1-st map: terrorist total over 10.5': {'1.2': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.42': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.06': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.54': 'ggbet'},
-        '1-st map: terrorist total under 10.5': {'4.23': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.73': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.71': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.27': 'ggbet'},
-        '1-st map: total over 24.5': {'1.29': 'ggbet'},
-        '1-st map: total over 25.5': {'1.45': 'ggbet'},
-        '1-st map: total over 26.5': {'1.68': 'ggbet'},
-        '1-st map: total over 27.5': {'2.05': 'ggbet'},
-        '1-st map: total over 28.5': {'2.63': 'ggbet'},
-        '1-st map: total over 29.5': {'3.79': 'ggbet'},
-        '1-st map: total under 24.5': {'3.39': 'ggbet'},
-        '1-st map: total under 25.5': {'2.63': 'ggbet'},
-        '1-st map: total under 26.5': {'2.11': 'ggbet'},
-        '1-st map: total under 27.5': {'1.72': 'ggbet'},
-        '1-st map: total under 28.5': {'1.45': 'ggbet'},
-        '1-st map: total under 29.5': {'1.24': 'ggbet'},
-        '1-st map: will there be overtime no': {'1.09': 'ggbet'},
-        '1-st map: will there be overtime yes': {'6.55': 'ggbet'},
-        '1st map first half - fnatic total over 5.5': {'1.21': 'ggbet'},
-        '1st map first half - fnatic total over 6.5': {'1.45': 'ggbet'},
-        '1st map first half - fnatic total over 7.5': {'1.87': 'ggbet'},
-        '1st map first half - fnatic total over 8.5': {'2.63': 'ggbet'},
-        '1st map first half - fnatic total over 9.5': {'4.11': 'ggbet'},
-        '1st map first half - fnatic total under 5.5': {'4.11': 'ggbet'},
-        '1st map first half - fnatic total under 6.5': {'2.63': 'ggbet'},
-        '1st map first half - fnatic total under 7.5': {'1.87': 'ggbet'},
-        '1st map first half - fnatic total under 8.5': {'1.45': 'ggbet'},
-        '1st map first half - fnatic total under 9.5': {'1.21': 'ggbet'},
-        '1st map first half - fnatic will win': {'1.87': 'ggbet'},
-        '1st map first half - handicap fnatic +0.5': {'1.87': 'ggbet'},
-        '1st map first half - handicap fnatic +2.5': {'1.45': 'ggbet'},
-        '1st map first half - handicap fnatic +4.5': {'1.21': 'ggbet'},
-        '1st map first half - handicap fnatic -1.5': {'2.63': 'ggbet'},
-        '1st map first half - handicap fnatic -3.5': {'4.11': 'ggbet'},
-        '1st map first half - handicap heroic +1.5': {'1.45': 'ggbet'},
-        '1st map first half - handicap heroic +3.5': {'1.21': 'ggbet'},
-        '1st map first half - handicap heroic -0.5': {'1.87': 'ggbet'},
-        '1st map first half - handicap heroic -2.5': {'2.63': 'ggbet'},
-        '1st map first half - handicap heroic -4.5': {'4.11': 'ggbet'},
-        '1st map first half - heroic total over 5.5': {'1.21': 'ggbet'},
-        '1st map first half - heroic total over 6.5': {'1.45': 'ggbet'},
-        '1st map first half - heroic total over 7.5': {'1.87': 'ggbet'},
-        '1st map first half - heroic total over 8.5': {'2.63': 'ggbet'},
-        '1st map first half - heroic total over 9.5': {'4.11': 'ggbet'},
-        '1st map first half - heroic total under 5.5': {'4.11': 'ggbet'},
-        '1st map first half - heroic total under 6.5': {'2.63': 'ggbet'},
-        '1st map first half - heroic total under 7.5': {'1.87': 'ggbet'},
-        '1st map first half - heroic total under 8.5': {'1.45': 'ggbet'},
-        '1st map first half - heroic total under 9.5': {'1.21': 'ggbet'},
-        '1st map first half - heroic will win': {'1.87': 'ggbet'},
-        '1st map second half - 1x2 draw': {'9.46': 'ggbet'},
-        '1st map second half - 1x2 fnatic': {'1.98': 'ggbet'},
-        '1st map second half - 1x2 heroic': {'1.99': 'ggbet'},
-        '1st map second half - handicap fnatic +1.5': {'1.5': 'ggbet'},
-        '1st map second half - handicap fnatic +3.5': {'1.22': 'ggbet'},
-        '1st map second half - handicap fnatic -0.5': {'1.98': 'ggbet'},
-        '1st map second half - handicap fnatic -2.5': {'2.9': 'ggbet'},
-        '1st map second half - handicap heroic +0.5': {'1.77': 'ggbet'},
-        '1st map second half - handicap heroic +2.5': {'1.38': 'ggbet'},
-        '1st map second half - handicap heroic -1.5': {'2.48': 'ggbet'},
-        '1st map second half - handicap heroic -3.5': {'3.99': 'ggbet'},
-        '2-nd map: correct score 10t-e': {'10.11': 'ggbet'},
-        '2-nd map: correct score 11t-e': {'9.8': 'ggbet'},
-        '2-nd map: correct score 12t-e': {'9.64': 'ggbet'},
-        '2-nd map: correct score 13t-e': {'9.59': 'ggbet'},
-        '2-nd map: correct score 14t-e': {'9.66': 'ggbet'},
-        '2-nd map: correct score 16t-e': {'10.04': 'ggbet'},
-        '2-nd map: correct score 1t-e': {'100': 'ggbet'},
-        '2-nd map: correct score 2t-e': {'77.64': 'ggbet'},
-        '2-nd map: correct score 3t-e': {'41.62': 'ggbet'},
-        '2-nd map: correct score 4t-e': {'27.13': 'ggbet'},
-        '2-nd map: correct score 5t-e': {'20.18': 'ggbet'},
-        '2-nd map: correct score 6t-e': {'16.39': 'ggbet'},
-        '2-nd map: correct score 7t-e': {'14.07': 'ggbet'},
-        '2-nd map: correct score 8t-e': {'12.57': 'ggbet'},
-        '2-nd map: correct score 9t-e': {'11.55': 'ggbet'},
-        '2-nd map: ct total  over 10.5': {'1.2': 'ggbet'},
-        '2-nd map: ct total  over 11.5': {'1.42': 'ggbet'},
-        '2-nd map: ct total  over 13.5': {'2.08': 'ggbet'},
-        '2-nd map: ct total  over 15.5': {'3.54': 'ggbet'},
-        '2-nd map: ct total  under 10.5': {'4.23': 'ggbet'},
-        '2-nd map: ct total  under 11.5': {'2.73': 'ggbet'},
-        '2-nd map: ct total  under 13.5': {'1.7': 'ggbet'},
-        '2-nd map: ct total  under 15.5': {'1.27': 'ggbet'},
-        '2-nd map: first half correct score 1h-t': {'73': 'ggbet'},
-        '2-nd map: first half correct score 2h-t': {'25.36': 'ggbet'},
-        '2-nd map: first half correct score 3h-t': {'13.87': 'ggbet'},
-        '2-nd map: first half correct score 4h-t': {'8.92': 'ggbet'},
-        '2-nd map: first half correct score 5h-t': {'6.74': 'ggbet'},
-        '2-nd map: first half correct score h-t': {'6.01': 'ggbet'},
-        '2-nd map: fnatic total over 11.5': {'1.25': 'ggbet'},
-        '2-nd map: fnatic total over 12.5': {'1.33': 'ggbet'},
-        '2-nd map: fnatic total over 13.5': {'1.43': 'ggbet'},
-        '2-nd map: fnatic total over 14.5': {'1.56': 'ggbet'},
-        '2-nd map: fnatic total over 15.5': {'1.89': 'ggbet'},
-        '2-nd map: fnatic total under 11.5': {'3.7': 'ggbet'},
-        '2-nd map: fnatic total under 12.5': {'3.14': 'ggbet'},
-        '2-nd map: fnatic total under 13.5': {'2.7': 'ggbet'},
-        '2-nd map: fnatic total under 14.5': {'2.33': 'ggbet'},
-        '2-nd map: fnatic total under 15.5': {'1.85': 'ggbet'},
-        '2-nd map: fnatic will win': {'1.69': 'ggbet'},
-        '2-nd map: fnatic will win round 1': {'1.85': 'ggbet'},
-        '2-nd map: handicap fnatic +1.5': {'1.59': 'ggbet'},
-        '2-nd map: handicap fnatic +2.5': {'1.46': 'ggbet'},
-        '2-nd map: handicap fnatic +3.5': {'1.36': 'ggbet'},
-        '2-nd map: handicap fnatic +4.5': {'1.27': 'ggbet'},
-        '2-nd map: handicap fnatic -1.5': {'1.94': 'ggbet'},
-        '2-nd map: handicap fnatic -2.5': {'2.19': 'ggbet'},
-        '2-nd map: handicap fnatic -3.5': {'2.51': 'ggbet'},
-        '2-nd map: handicap fnatic -4.5': {'2.94': 'ggbet'},
-        '2-nd map: handicap fnatic -5.5': {'3.54': 'ggbet'},
-        '2-nd map: handicap fnatic -6.5': {'4.35': 'ggbet'},
-        '2-nd map: handicap heroic +1.5': {'1.8': 'ggbet'},
-        '2-nd map: handicap heroic +2.5': {'1.63': 'ggbet'},
-        '2-nd map: handicap heroic +3.5': {'1.49': 'ggbet'},
-        '2-nd map: handicap heroic +4.5': {'1.37': 'ggbet'},
-        '2-nd map: handicap heroic +5.5': {'1.27': 'ggbet'},
-        '2-nd map: handicap heroic +6.5': {'1.19': 'ggbet'},
-        '2-nd map: handicap heroic -1.5': {'2.27': 'ggbet'},
-        '2-nd map: handicap heroic -2.5': {'2.6': 'ggbet'},
-        '2-nd map: handicap heroic -3.5': {'2.99': 'ggbet'},
-        '2-nd map: handicap heroic -4.5': {'3.54': 'ggbet'},
-        '2-nd map: heroic total over 10.5': {'1.29': 'ggbet'},
-        '2-nd map: heroic total over 11.5': {'1.39': 'ggbet'},
-        '2-nd map: heroic total over 12.5': {'1.51': 'ggbet'},
-        '2-nd map: heroic total over 13.5': {'1.67': 'ggbet'},
-        '2-nd map: heroic total over 14.5': {'1.85': 'ggbet'},
-        '2-nd map: heroic total over 15.5': {'2.33': 'ggbet'},
-        '2-nd map: heroic total over 9.5': {'1.2': 'ggbet'},
-        '2-nd map: heroic total under 10.5': {'3.39': 'ggbet'},
-        '2-nd map: heroic total under 11.5': {'2.85': 'ggbet'},
-        '2-nd map: heroic total under 12.5': {'2.45': 'ggbet'},
-        '2-nd map: heroic total under 13.5': {'2.12': 'ggbet'},
-        '2-nd map: heroic total under 14.5': {'1.89': 'ggbet'},
-        '2-nd map: heroic total under 15.5': {'1.56': 'ggbet'},
-        '2-nd map: heroic total under 9.5': {'4.23': 'ggbet'},
-        '2-nd map: heroic will win': {'2.09': 'ggbet'},
-        '2-nd map: heroic will win round 1': {'1.89': 'ggbet'},
-        '2-nd map: race to  rounds fnatic 12': {'1.73': 'ggbet'},
-        '2-nd map: race to  rounds fnatic 3': {'1.8': 'ggbet'},
-        '2-nd map: race to  rounds fnatic 6': {'1.77': 'ggbet'},
-        '2-nd map: race to  rounds fnatic 9': {'1.75': 'ggbet'},
-        '2-nd map: race to  rounds heroic 12': {'2.03': 'ggbet'},
-        '2-nd map: race to  rounds heroic 3': {'1.94': 'ggbet'},
-        '2-nd map: race to  rounds heroic 6': {'1.98': 'ggbet'},
-        '2-nd map: race to  rounds heroic 9': {'2.01': 'ggbet'},
-        '2-nd map: terrorist total over 10.5': {'1.2': 'ggbet'},
-        '2-nd map: terrorist total over 11.5': {'1.42': 'ggbet'},
-        '2-nd map: terrorist total over 13.5': {'2.08': 'ggbet'},
-        '2-nd map: terrorist total over 15.5': {'3.54': 'ggbet'},
-        '2-nd map: terrorist total under 10.5': {'4.23': 'ggbet'},
-        '2-nd map: terrorist total under 11.5': {'2.73': 'ggbet'},
-        '2-nd map: terrorist total under 13.5': {'1.7': 'ggbet'},
-        '2-nd map: terrorist total under 15.5': {'1.27': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.29': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.45': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.69': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.05': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.63': 'ggbet'},
-        '2-nd map: total over 29.5': {'3.79': 'ggbet'},
-        '2-nd map: total under 24.5': {'3.39': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.63': 'ggbet'},
-        '2-nd map: total under 26.5': {'2.09': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.72': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.45': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.24': 'ggbet'},
-        '2-nd map: will there be overtime no': {'1.09': 'ggbet'},
-        '2-nd map: will there be overtime yes': {'6.55': 'ggbet'},
-        '2nd map first half - fnatic total over 6.5': {'1.38': 'ggbet'},
-        '2nd map first half - fnatic total over 7.5': {'1.75': 'ggbet'},
-        '2nd map first half - fnatic total over 8.5': {'2.43': 'ggbet'},
-        '2nd map first half - fnatic total over 9.5': {'3.7': 'ggbet'},
-        '2nd map first half - fnatic total under 6.5': {'2.9': 'ggbet'},
-        '2nd map first half - fnatic total under 7.5': {'2.01': 'ggbet'},
-        '2nd map first half - fnatic total under 8.5': {'1.52': 'ggbet'},
-        '2nd map first half - fnatic total under 9.5': {'1.25': 'ggbet'},
-        '2nd map first half - fnatic will win': {'1.75': 'ggbet'},
-        '2nd map first half - handicap fnatic +0.5': {'1.75': 'ggbet'},
-        '2nd map first half - handicap fnatic +2.5': {'1.38': 'ggbet'},
-        '2nd map first half - handicap fnatic -1.5': {'2.43': 'ggbet'},
-        '2nd map first half - handicap fnatic -3.5': {'3.7': 'ggbet'},
-        '2nd map first half - handicap heroic +1.5': {'1.52': 'ggbet'},
-        '2nd map first half - handicap heroic +3.5': {'1.25': 'ggbet'},
-        '2nd map first half - handicap heroic -0.5': {'2.01': 'ggbet'},
-        '2nd map first half - handicap heroic -2.5': {'2.9': 'ggbet'},
-        '2nd map first half - heroic total over 5.5': {'1.25': 'ggbet'},
-        '2nd map first half - heroic total over 6.5': {'1.52': 'ggbet'},
-        '2nd map first half - heroic total over 7.5': {'2.01': 'ggbet'},
-        '2nd map first half - heroic total over 8.5': {'2.9': 'ggbet'},
-        '2nd map first half - heroic total under 5.5': {'3.7': 'ggbet'},
-        '2nd map first half - heroic total under 6.5': {'2.43': 'ggbet'},
-        '2nd map first half - heroic total under 7.5': {'1.75': 'ggbet'},
-        '2nd map first half - heroic total under 8.5': {'1.38': 'ggbet'},
-        '2nd map first half - heroic will win': {'2.01': 'ggbet'},
-        '2nd map second half - 1x2 draw': {'9.46': 'ggbet'},
-        '2nd map second half - 1x2 fnatic': {'1.85': 'ggbet'},
-        '2nd map second half - 1x2 heroic': {'2.14': 'ggbet'},
-        '2nd map second half - handicap fnatic +0.5': {'1.66': 'ggbet'},
-        '2nd map second half - handicap fnatic +2.5': {'1.32': 'ggbet'},
-        '2nd map second half - handicap fnatic -1.5': {'2.27': 'ggbet'},
-        '2nd map second half - handicap fnatic -3.5': {'3.62': 'ggbet'},
-        '2nd map second half - handicap heroic +1.5': {'1.59': 'ggbet'},
-        '2nd map second half - handicap heroic +3.5': {'1.26': 'ggbet'},
-        '2nd map second half - handicap heroic -0.5': {'2.14': 'ggbet'},
-        '2nd map second half - handicap heroic -2.5': {'3.2': 'ggbet'},
-        'correct score 0-2': {'3.79': 'ggbet'},
-        'correct score 1-2': {'3.73': 'ggbet'},
-        'correct score 2-0': {'3.14': 'ggbet'},
-        'correct score 2-1': {'3.4': 'ggbet'},
-        'fnatic handicap +1.5 maps': {'1.24': 'ggbet'},
-        'fnatic handicap -1.5 maps': {'3.14': 'ggbet'},
-        'fnatic total over 27.5': {'1.2': 'ggbet'},
-        'fnatic total over 32.5': {'1.78': 'ggbet'},
-        'fnatic total over 36.5': {'2.19': 'ggbet'},
-        'fnatic total over 40.5': {'3.04': 'ggbet'},
-        'fnatic total under 27.5': {'4.23': 'ggbet'},
-        'fnatic total under 32.5': {'1.97': 'ggbet'},
-        'fnatic total under 36.5': {'1.63': 'ggbet'},
-        'fnatic total under 40.5': {'1.35': 'ggbet'},
-        'fnatic will win': {'1.75': 'ggbet'},
-        'handicap fnatic +1.5': {'1.64': 'ggbet'},
-        'handicap fnatic +4.5': {'1.47': 'ggbet'},
-        'handicap fnatic +6.5': {'1.34': 'ggbet'},
-        'handicap fnatic +8.5': {'1.22': 'ggbet'},
-        'handicap fnatic -1.5': {'1.83': 'ggbet'},
-        'handicap fnatic -10.5': {'4.23': 'ggbet'},
-        'handicap fnatic -4.5': {'2.12': 'ggbet'},
-        'handicap fnatic -6.5': {'2.54': 'ggbet'},
-        'handicap fnatic -8.5': {'3.14': 'ggbet'},
-        'handicap heroic +1.5': {'1.91': 'ggbet'},
-        'handicap heroic +10.5': {'1.2': 'ggbet'},
-        'handicap heroic +4.5': {'1.67': 'ggbet'},
-        'handicap heroic +6.5': {'1.48': 'ggbet'},
-        'handicap heroic +8.5': {'1.33': 'ggbet'},
-        'handicap heroic -1.5': {'2.17': 'ggbet'},
-        'handicap heroic -4.5': {'2.57': 'ggbet'},
-        'handicap heroic -6.5': {'3.09': 'ggbet'},
-        'handicap heroic -8.5': {'3.99': 'ggbet'},
-        'heroic handicap +1.5 maps': {'1.33': 'ggbet'},
-        'heroic handicap -1.5 maps': {'3.79': 'ggbet'},
-        'heroic total over 24.5': {'1.21': 'ggbet'},
-        'heroic total over 32.5': {'1.84': 'ggbet'},
-        'heroic total over 36.5': {'2.29': 'ggbet'},
-        'heroic total over 40.5': {'3.26': 'ggbet'},
-        'heroic total under 24.5': {'4.11': 'ggbet'},
-        'heroic total under 32.5': {'1.9': 'ggbet'},
-        'heroic total under 36.5': {'1.58': 'ggbet'},
-        'heroic total under 40.5': {'1.31': 'ggbet'},
-        'heroic will win': {'2.03': 'ggbet'},
-        'odd/even maps even': {'1.89': 'ggbet'},
-        'odd/even maps odd': {'1.85': 'ggbet'},
-        'total maps over 2.5': {'1.85': 'ggbet'},
-        'total maps under 2.5': {'1.89': 'ggbet'},
-        'total over 52.5': {'1.21': 'ggbet'},
-        'total over 54.5': {'1.32': 'ggbet'},
-        'total over 56.5': {'1.45': 'ggbet'},
-        'total over 58.5': {'1.56': 'ggbet'},
-        'total over 62.5': {'1.7': 'ggbet'},
-        'total over 68.5': {'1.86': 'ggbet'},
-        'total over 73.5': {'2.11': 'ggbet'},
-        'total over 76.5': {'2.43': 'ggbet'},
-        'total over 78.5': {'2.77': 'ggbet'},
-        'total over 80.5': {'3.26': 'ggbet'},
-        'total under 52.5': {'4.11': 'ggbet'},
-        'total under 54.5': {'3.2': 'ggbet'},
-        'total under 56.5': {'2.63': 'ggbet'},
-        'total under 58.5': {'2.33': 'ggbet'},
-        'total under 62.5': {'2.08': 'ggbet'},
-        'total under 68.5': {'1.88': 'ggbet'},
-        'total under 73.5': {'1.68': 'ggbet'},
-        'total under 76.5': {'1.52': 'ggbet'},
-        'total under 78.5': {'1.41': 'ggbet'},
-        'total under 80.5': {'1.31': 'ggbet'}
-    },
-    'forze - nemiga': {
-        '1-st map: correct score 10-16': {'7.94': 'ggbet'},
-        '1-st map: correct score 11-16': {'7.33': 'ggbet'},
-        '1-st map: correct score 12-16': {'7.17': 'ggbet'},
-        '1-st map: correct score 13-16': {'7.32': 'ggbet'},
-        '1-st map: correct score 14-16': {'7.7': 'ggbet'},
-        '1-st map: correct score 16-10': {'16.91': 'ggbet'},
-        '1-st map: correct score 16-11': {'12.62': 'ggbet'},
-        '1-st map: correct score 16-12': {'9.95': 'ggbet'},
-        '1-st map: correct score 16-13': {'9.12': 'ggbet'},
-        '1-st map: correct score 16-14': {'8.64': 'ggbet'},
-        '1-st map: correct score 16-8': {'100': 'ggbet'},
-        '1-st map: correct score 16-9': {'28.9': 'ggbet'},
-        '1-st map: correct score 8-16': {'14.34': 'ggbet'},
-        '1-st map: correct score 9-16': {'9.37': 'ggbet'},
-        '1-st map: forze total over 11.5': {'1.32': 'ggbet'},
-        '1-st map: forze total over 12.5': {'1.52': 'ggbet'},
-        '1-st map: forze total over 13.5': {'1.78': 'ggbet'},
-        '1-st map: forze total over 14.5': {'2.11': 'ggbet'},
-        '1-st map: forze total over 15.5': {'3.14': 'ggbet'},
-        '1-st map: forze total under 11.5': {'3.2': 'ggbet'},
-        '1-st map: forze total under 12.5': {'2.43': 'ggbet'},
-        '1-st map: forze total under 13.5': {'1.97': 'ggbet'},
-        '1-st map: forze total under 14.5': {'1.68': 'ggbet'},
-        '1-st map: forze total under 15.5': {'1.33': 'ggbet'},
-        '1-st map: forze will win': {'2.54': 'ggbet'},
-        '1-st map: handicap forze +1.5': {'2.11': 'ggbet'},
-        '1-st map: handicap forze +2.5': {'1.78': 'ggbet'},
-        '1-st map: handicap forze +3.5': {'1.52': 'ggbet'},
-        '1-st map: handicap forze +4.5': {'1.32': 'ggbet'},
-        '1-st map: handicap forze -1.5': {'3.14': 'ggbet'},
-        '1-st map: handicap nemiga +1.5': {'1.33': 'ggbet'},
-        '1-st map: handicap nemiga -1.5': {'1.68': 'ggbet'},
-        '1-st map: handicap nemiga -2.5': {'1.97': 'ggbet'},
-        '1-st map: handicap nemiga -3.5': {'2.43': 'ggbet'},
-        '1-st map: handicap nemiga -4.5': {'3.2': 'ggbet'},
-        '1-st map: nemiga total over 14.5': {'1.33': 'ggbet'},
-        '1-st map: nemiga total over 15.5': {'1.68': 'ggbet'},
-        '1-st map: nemiga total under 14.5': {'3.14': 'ggbet'},
-        '1-st map: nemiga total under 15.5': {'2.11': 'ggbet'},
-        '1-st map: nemiga will win': {'1.48': 'ggbet'},
-        '1-st map: round forze 20  will win': {'1.94': 'ggbet'},
-        '1-st map: round forze 21  will win': {'1.96': 'ggbet'},
-        '1-st map: round forze 22  will win': {'1.97': 'ggbet'},
-        '1-st map: round nemiga 20  will win': {'1.8': 'ggbet'},
-        '1-st map: round nemiga 21  will win': {'1.79': 'ggbet'},
-        '1-st map: round nemiga 22  will win': {'1.78': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.52': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.43': 'ggbet'},
-        '1-st map: total over 27.5': {'1.49': 'ggbet'},
-        '1-st map: total over 28.5': {'1.93': 'ggbet'},
-        '1-st map: total over 29.5': {'2.81': 'ggbet'},
-        '1-st map: total under 27.5': {'2.51': 'ggbet'},
-        '1-st map: total under 28.5': {'1.81': 'ggbet'},
-        '1-st map: total under 29.5': {'1.4': 'ggbet'},
-        '2-nd map: correct score 10-16': {'13.22': 'ggbet'},
-        '2-nd map: correct score 11-16': {'12.44': 'ggbet'},
-        '2-nd map: correct score 12-16': {'11.89': 'ggbet'},
-        '2-nd map: correct score 13-16': {'11.54': 'ggbet'},
-        '2-nd map: correct score 14-16': {'10.42': 'ggbet'},
-        '2-nd map: correct score 16-1': {'100': 'ggbet'},
-        '2-nd map: correct score 16-10': {'9.82': 'ggbet'},
-        '2-nd map: correct score 16-11': {'9.62': 'ggbet'},
-        '2-nd map: correct score 16-12': {'9.54': 'ggbet'},
-        '2-nd map: correct score 16-13': {'9.59': 'ggbet'},
-        '2-nd map: correct score 16-14': {'9.74': 'ggbet'},
-        '2-nd map: correct score 16-2': {'62.04': 'ggbet'},
-        '2-nd map: correct score 16-3': {'34.51': 'ggbet'},
-        '2-nd map: correct score 16-4': {'23.34': 'ggbet'},
-        '2-nd map: correct score 16-5': {'17.92': 'ggbet'},
-        '2-nd map: correct score 16-6': {'14.89': 'ggbet'},
-        '2-nd map: correct score 16-7': {'13.01': 'ggbet'},
-        '2-nd map: correct score 16-8': {'11.79': 'ggbet'},
-        '2-nd map: correct score 16-9': {'10.18': 'ggbet'},
-        '2-nd map: correct score 2-16': {'100': 'ggbet'},
-        '2-nd map: correct score 3-16': {'64.52': 'ggbet'},
-        '2-nd map: correct score 4-16': {'40.09': 'ggbet'},
-        '2-nd map: correct score 5-16': {'28.39': 'ggbet'},
-        '2-nd map: correct score 6-16': {'22.07': 'ggbet'},
-        '2-nd map: correct score 7-16': {'18.33': 'ggbet'},
-        '2-nd map: correct score 8-16': {'15.95': 'ggbet'},
-        '2-nd map: correct score 9-16': {'14.34': 'ggbet'},
-        '2-nd map: ct total  over 11.5': {'1.45': 'ggbet'},
-        '2-nd map: ct total  over 13.5': {'2.14': 'ggbet'},
-        '2-nd map: ct total  over 15.5': {'3.62': 'ggbet'},
-        '2-nd map: ct total  under 11.5': {'2.63': 'ggbet'},
-        '2-nd map: ct total  under 13.5': {'1.66': 'ggbet'},
-        '2-nd map: ct total  under 15.5': {'1.26': 'ggbet'},
-        '2-nd map: forze total over 12.5': {'1.3': 'ggbet'},
-        '2-nd map: forze total over 14.5': {'1.49': 'ggbet'},
-        '2-nd map: forze total over 15.5': {'1.77': 'ggbet'},
-        '2-nd map: forze total under 12.5': {'3.32': 'ggbet'},
-        '2-nd map: forze total under 14.5': {'2.51': 'ggbet'},
-        '2-nd map: forze total under 15.5': {'1.98': 'ggbet'},
-        '2-nd map: forze will win': {'1.61': 'ggbet'},
-        '2-nd map: forze will win round 16': {'1.84': 'ggbet'},
-        '2-nd map: handicap forze +1.5': {'1.49': 'ggbet'},
-        '2-nd map: handicap forze +2.5': {'1.39': 'ggbet'},
-        '2-nd map: handicap forze +3.5': {'1.3': 'ggbet'},
-        '2-nd map: handicap forze -1.5': {'1.77': 'ggbet'},
-        '2-nd map: handicap forze -2.5': {'1.98': 'ggbet'},
-        '2-nd map: handicap forze -3.5': {'2.25': 'ggbet'},
-        '2-nd map: handicap forze -4.5': {'2.6': 'ggbet'},
-        '2-nd map: handicap forze -5.5': {'3.09': 'ggbet'},
-        '2-nd map: handicap nemiga +1.5': {'1.98': 'ggbet'},
-        '2-nd map: handicap nemiga +2.5': {'1.77': 'ggbet'},
-        '2-nd map: handicap nemiga +3.5': {'1.6': 'ggbet'},
-        '2-nd map: handicap nemiga +4.5': {'1.46': 'ggbet'},
-        '2-nd map: handicap nemiga +5.5': {'1.34': 'ggbet'},
-        '2-nd map: handicap nemiga -1.5': {'2.51': 'ggbet'},
-        '2-nd map: handicap nemiga -2.5': {'2.85': 'ggbet'},
-        '2-nd map: handicap nemiga -3.5': {'3.32': 'ggbet'},
-        '2-nd map: nemiga total over 10.5': {'1.34': 'ggbet'},
-        '2-nd map: nemiga total over 11.5': {'1.46': 'ggbet'},
-        '2-nd map: nemiga total over 12.5': {'1.6': 'ggbet'},
-        '2-nd map: nemiga total over 13.5': {'1.77': 'ggbet'},
-        '2-nd map: nemiga total over 14.5': {'1.98': 'ggbet'},
-        '2-nd map: nemiga total over 15.5': {'2.51': 'ggbet'},
-        '2-nd map: nemiga total under 10.5': {'3.09': 'ggbet'},
-        '2-nd map: nemiga total under 11.5': {'2.6': 'ggbet'},
-        '2-nd map: nemiga total under 12.5': {'2.25': 'ggbet'},
-        '2-nd map: nemiga total under 13.5': {'1.98': 'ggbet'},
-        '2-nd map: nemiga total under 14.5': {'1.77': 'ggbet'},
-        '2-nd map: nemiga total under 15.5': {'1.49': 'ggbet'},
-        '2-nd map: nemiga will win': {'2.23': 'ggbet'},
-        '2-nd map: nemiga will win round 16': {'1.9': 'ggbet'},
-        '2-nd map: round forze 4  will win': {'1.8': 'ggbet'},
-        '2-nd map: round forze 5  will win': {'1.79': 'ggbet'},
-        '2-nd map: round forze 6  will win': {'1.78': 'ggbet'},
-        '2-nd map: round nemiga 4  will win': {'1.94': 'ggbet'},
-        '2-nd map: round nemiga 5  will win': {'1.96': 'ggbet'},
-        '2-nd map: round nemiga 6  will win': {'1.97': 'ggbet'},
-        '2-nd map: terrorist total over 11.5': {'1.43': 'ggbet'},
-        '2-nd map: terrorist total over 13.5': {'2.08': 'ggbet'},
-        '2-nd map: terrorist total over 15.5': {'3.54': 'ggbet'},
-        '2-nd map: terrorist total under 11.5': {'2.7': 'ggbet'},
-        '2-nd map: terrorist total under 13.5': {'1.7': 'ggbet'},
-        '2-nd map: terrorist total under 15.5': {'1.27': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.32': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.49': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.75': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.12': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.77': 'ggbet'},
-        '2-nd map: total under 24.5': {'3.2': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.51': 'ggbet'},
-        '2-nd map: total under 26.5': {'2.01': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.67': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.41': 'ggbet'},
-        'correct score 0-2': {'3.23': 'ggbet'},
-        'correct score 1-2': {'3.81': 'ggbet'},
-        'correct score 2-0': {'3.87': 'ggbet'},
-        'correct score 2-1': {'3.19': 'ggbet'},
-        'forze handicap +1.5 maps': {'1.31': 'ggbet'},
-        'forze handicap -1.5 maps': {'3.89': 'ggbet'},
-        'forze total over 28.5': {'1.27': 'ggbet'},
-        'forze total over 32.5': {'1.67': 'ggbet'},
-        'forze total over 37.5': {'2.08': 'ggbet'},
-        'forze total over 41.5': {'2.85': 'ggbet'},
-        'forze total under 28.5': {'3.54': 'ggbet'},
-        'forze total under 32.5': {'2.12': 'ggbet'},
-        'forze total under 37.5': {'1.7': 'ggbet'},
-        'forze total under 41.5': {'1.39': 'ggbet'},
-        'forze will win': {'1.86': 'ggbet'},
-        'handicap forze +2.5': {'1.67': 'ggbet'},
-        'handicap forze +4.5': {'1.54': 'ggbet'},
-        'handicap forze +6.5': {'1.37': 'ggbet'},
-        'handicap forze -0.5': {'1.87': 'ggbet'},
-        'handicap forze -3.5': {'2.16': 'ggbet'},
-        'handicap forze -5.5': {'2.6': 'ggbet'},
-        'handicap forze -7.5': {'3.39': 'ggbet'},
-        'handicap nemiga +0.5': {'1.87': 'ggbet'},
-        'handicap nemiga +3.5': {'1.65': 'ggbet'},
-        'handicap nemiga +5.5': {'1.46': 'ggbet'},
-        'handicap nemiga +7.5': {'1.29': 'ggbet'},
-        'handicap nemiga -2.5': {'2.12': 'ggbet'},
-        'handicap nemiga -4.5': {'2.38': 'ggbet'},
-        'handicap nemiga -6.5': {'2.94': 'ggbet'},
-        'nemiga handicap +1.5 maps': {'1.23': 'ggbet'},
-        'nemiga handicap -1.5 maps': {'3.26': 'ggbet'},
-        'nemiga total over 31.5': {'1.26': 'ggbet'},
-        'nemiga total over 32.5': {'1.75': 'ggbet'},
-        'nemiga total over 36.5': {'2.19': 'ggbet'},
-        'nemiga total over 40.5': {'3.04': 'ggbet'},
-        'nemiga total under 31.5': {'3.62': 'ggbet'},
-        'nemiga total under 32.5': {'2.01': 'ggbet'},
-        'nemiga total under 36.5': {'1.63': 'ggbet'},
-        'nemiga total under 40.5': {'1.35': 'ggbet'},
-        'nemiga will win': {'1.88': 'ggbet'},
-        'odd/even maps even': {'1.89': 'ggbet'},
-        'odd/even maps odd': {'1.85': 'ggbet'},
-        'total maps over 2.5': {'1.85': 'ggbet'},
-        'total maps under 2.5': {'1.89': 'ggbet'},
-        'total over 55.5': {'1.27': 'ggbet'},
-        'total over 57.5': {'1.41': 'ggbet'},
-        'total over 59.5': {'1.52': 'ggbet'},
-        'total over 64.5': {'1.68': 'ggbet'},
-        'total over 71.5': {'1.86': 'ggbet'},
-        'total over 75.5': {'2.08': 'ggbet'},
-        'total over 78.5': {'2.45': 'ggbet'},
-        'total over 80.5': {'2.85': 'ggbet'},
-        'total over 82.5': {'3.46': 'ggbet'},
-        'total under 55.5': {'3.54': 'ggbet'},
-        'total under 57.5': {'2.77': 'ggbet'},
-        'total under 59.5': {'2.43': 'ggbet'},
-        'total under 64.5': {'2.11': 'ggbet'},
-        'total under 71.5': {'1.88': 'ggbet'},
-        'total under 75.5': {'1.7': 'ggbet'},
-        'total under 78.5': {'1.51': 'ggbet'},
-        'total under 80.5': {'1.39': 'ggbet'},
-        'total under 82.5': {'1.28': 'ggbet'}
-    },
+        '1-st map: correct score 10t-e': {
+            '11.42': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 11t-e': {
+            '10.14': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 12t-e': {
+            '9.94': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 13t-e': {
+            '9.85': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 14t-e': {
+            '9.86': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 16t-e': {
+            '9.93': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 1t-e': {'100': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: correct score 2t-e': {
+            '86.28': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 3t-e': {
+            '45.88': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 4t-e': {
+            '29.59': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 5t-e': {
+            '21.79': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 6t-e': {
+            '17.54': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 7t-e': {
+            '14.98': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 8t-e': {
+            '13.31': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: correct score 9t-e': {
+            '12.19': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: ct total  over 10.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: ct total  over 11.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: ct total  over 13.5': {
+            '2.08': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: ct total  over 15.5': {
+            '3.54': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: ct total  under 10.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: ct total  under 11.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: ct total  under 13.5': {
+            '1.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: ct total  under 15.5': {
+            '1.27': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total over 10.5': {
+            '1.22': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total over 11.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total over 12.5': {
+            '1.4': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total over 13.5': {
+            '1.52': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total over 14.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total over 15.5': {
+            '2.03': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total under 10.5': {
+            '3.99': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total under 11.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total under 12.5': {
+            '2.81': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total under 13.5': {
+            '2.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total under 14.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses total under 15.5': {
+            '1.73': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses will win': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: evil geniuses will win round 1': {
+            '1.86': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: first half correct score 1h-t': {
+            '80.53': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: first half correct score 2h-t': {
+            '27.4': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: first half correct score 3h-t': {
+            '14.69': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: first half correct score 4h-t': {
+            '9.31': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: first half correct score 5h-t': {
+            '7.05': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: first half correct score h-t': {
+            '5.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap evil geniuses +1.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap evil geniuses +2.5': {
+            '1.52': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap evil geniuses +3.5': {
+            '1.4': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap evil geniuses +4.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap evil geniuses +5.5': {
+            '1.22': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap evil geniuses -1.5': {
+            '2.03': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap evil geniuses -2.5': {
+            '2.29': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap evil geniuses -3.5': {
+            '2.63': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap evil geniuses -4.5': {
+            '3.09': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap evil geniuses -5.5': {
+            '3.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap liquid +1.5': {
+            '1.73': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap liquid +2.5': {
+            '1.58': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap liquid +3.5': {
+            '1.45': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap liquid +4.5': {
+            '1.34': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap liquid +5.5': {
+            '1.25': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap liquid -1.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap liquid -2.5': {
+            '2.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap liquid -3.5': {
+            '2.81': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap liquid -4.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: handicap liquid -5.5': {
+            '3.99': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total over 10.5': {
+            '1.25': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total over 11.5': {
+            '1.34': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total over 12.5': {
+            '1.45': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total over 13.5': {
+            '1.58': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total over 14.5': {
+            '1.73': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total over 15.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total under 10.5': {
+            '3.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total under 11.5': {
+            '3.09': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total under 12.5': {
+            '2.63': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total under 13.5': {
+            '2.29': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total under 14.5': {
+            '2.03': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid total under 15.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: liquid will win': {'1.92': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: liquid will win round 1': {
+            '1.88': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: race to  rounds evil geniuses 12': {
+            '1.83': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: race to  rounds evil geniuses 3': {
+            '1.85': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: race to  rounds evil geniuses 6': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: race to  rounds evil geniuses 9': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: race to  rounds liquid 12': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: race to  rounds liquid 3': {
+            '1.89': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: race to  rounds liquid 6': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: race to  rounds liquid 9': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: terrorist total over 10.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: terrorist total over 11.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: terrorist total over 13.5': {
+            '2.08': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: terrorist total over 15.5': {
+            '3.54': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: terrorist total under 10.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: terrorist total under 11.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: terrorist total under 13.5': {
+            '1.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: terrorist total under 15.5': {
+            '1.27': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: total over 24.5': {'1.3': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: total over 25.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: total over 26.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: total over 27.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: total over 28.5': {'2.66': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: total over 29.5': {'3.79': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: total under 24.5': {'3.32': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: total under 25.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: total under 26.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: total under 27.5': {'1.71': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: total under 28.5': {'1.44': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: total under 29.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '1-st map: will there be overtime no': {
+            '1.09': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1-st map: will there be overtime yes': {
+            '6.55': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - evil geniuses total over 5.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - evil geniuses total over 6.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - evil geniuses total over 7.5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - evil geniuses total over 8.5': {
+            '2.57': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - evil geniuses total over 9.5': {
+            '3.99': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - evil geniuses total under 5.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - evil geniuses total under 6.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - evil geniuses total under 7.5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - evil geniuses total under 8.5': {
+            '1.47': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - evil geniuses total under 9.5': {
+            '1.22': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - evil geniuses will win': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - handicap evil geniuses +0.5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - handicap evil geniuses +2.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - handicap evil geniuses +4.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - handicap evil geniuses -1.5': {
+            '2.57': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - handicap evil geniuses -3.5': {
+            '3.99': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - handicap liquid +1.5': {
+            '1.47': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - handicap liquid +3.5': {
+            '1.22': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - handicap liquid -0.5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - handicap liquid -2.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - handicap liquid -4.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - liquid total over 5.5': {
+            '1.22': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - liquid total over 6.5': {
+            '1.47': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - liquid total over 7.5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - liquid total over 8.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - liquid total over 9.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - liquid total under 5.5': {
+            '3.99': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - liquid total under 6.5': {
+            '2.57': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - liquid total under 7.5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - liquid total under 8.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - liquid total under 9.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map first half - liquid will win': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map second half - 1x2 draw': {
+            '9.45': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map second half - 1x2 evil geniuses': {
+            '1.95': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map second half - 1x2 liquid': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map second half - handicap evil geniuses +1.5': {
+            '1.49': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map second half - handicap evil geniuses +3.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map second half - handicap evil geniuses -0.5': {
+            '1.94': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map second half - handicap evil geniuses -2.5': {
+            '2.85': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map second half - handicap liquid +0.5': {
+            '1.8': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map second half - handicap liquid +2.5': {
+            '1.39': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map second half - handicap liquid -1.5': {
+            '2.51': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '1st map second half - handicap liquid -3.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 10t-e': {
+            '11.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 11t-e': {
+            '10.15': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 12t-e': {
+            '9.94': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 13t-e': {
+            '9.85': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 14t-e': {
+            '9.87': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 16t-e': {
+            '9.93': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 1t-e': {'100': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: correct score 2t-e': {
+            '86.23': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 3t-e': {
+            '45.86': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 4t-e': {
+            '29.59': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 5t-e': {
+            '21.79': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 6t-e': {
+            '17.54': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 7t-e': {
+            '14.98': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 8t-e': {
+            '13.32': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: correct score 9t-e': {
+            '12.2': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: ct total  over 10.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: ct total  over 11.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: ct total  over 13.5': {
+            '2.08': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: ct total  over 15.5': {
+            '3.54': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: ct total  under 10.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: ct total  under 11.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: ct total  under 13.5': {
+            '1.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: ct total  under 15.5': {
+            '1.27': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total over 10.5': {
+            '1.22': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total over 11.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total over 12.5': {
+            '1.4': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total over 13.5': {
+            '1.52': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total over 14.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total over 15.5': {
+            '2.03': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total under 10.5': {
+            '3.99': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total under 11.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total under 12.5': {
+            '2.81': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total under 13.5': {
+            '2.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total under 14.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses total under 15.5': {
+            '1.73': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses will win': {
+            '1.81': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: evil geniuses will win round 1': {
+            '1.86': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: first half correct score 1h-t': {
+            '80.54': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: first half correct score 2h-t': {
+            '27.41': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: first half correct score 3h-t': {
+            '14.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: first half correct score 4h-t': {
+            '9.32': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: first half correct score 5h-t': {
+            '7.05': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: first half correct score h-t': {
+            '5.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap evil geniuses +1.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap evil geniuses +2.5': {
+            '1.52': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap evil geniuses +3.5': {
+            '1.4': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap evil geniuses +4.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap evil geniuses +5.5': {
+            '1.22': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap evil geniuses -1.5': {
+            '2.03': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap evil geniuses -2.5': {
+            '2.29': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap evil geniuses -3.5': {
+            '2.63': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap evil geniuses -4.5': {
+            '3.09': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap evil geniuses -5.5': {
+            '3.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap liquid +1.5': {
+            '1.73': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap liquid +2.5': {
+            '1.58': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap liquid +3.5': {
+            '1.45': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap liquid +4.5': {
+            '1.34': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap liquid +5.5': {
+            '1.25': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap liquid -1.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap liquid -2.5': {
+            '2.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap liquid -3.5': {
+            '2.81': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap liquid -4.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: handicap liquid -5.5': {
+            '3.99': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total over 10.5': {
+            '1.25': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total over 11.5': {
+            '1.34': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total over 12.5': {
+            '1.45': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total over 13.5': {
+            '1.58': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total over 14.5': {
+            '1.73': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total over 15.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total under 10.5': {
+            '3.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total under 11.5': {
+            '3.09': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total under 12.5': {
+            '2.63': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total under 13.5': {
+            '2.29': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total under 14.5': {
+            '2.03': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid total under 15.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: liquid will win': {'1.93': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: liquid will win round 1': {
+            '1.88': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: race to  rounds evil geniuses 12': {
+            '1.83': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: race to  rounds evil geniuses 3': {
+            '1.85': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: race to  rounds evil geniuses 6': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: race to  rounds evil geniuses 9': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: race to  rounds liquid 12': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: race to  rounds liquid 3': {
+            '1.89': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: race to  rounds liquid 6': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: race to  rounds liquid 9': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: terrorist total over 10.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: terrorist total over 11.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: terrorist total over 13.5': {
+            '2.08': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: terrorist total over 15.5': {
+            '3.54': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: terrorist total under 10.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: terrorist total under 11.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: terrorist total under 13.5': {
+            '1.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: terrorist total under 15.5': {
+            '1.27': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: total over 24.5': {'1.3': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: total over 25.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: total over 26.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: total over 27.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: total over 28.5': {'2.66': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: total over 29.5': {'3.79': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: total under 24.5': {'3.32': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: total under 25.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: total under 26.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: total under 27.5': {'1.71': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: total under 28.5': {'1.44': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: total under 29.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        '2-nd map: will there be overtime no': {
+            '1.09': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2-nd map: will there be overtime yes': {
+            '6.55': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - evil geniuses total over 5.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - evil geniuses total over 6.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - evil geniuses total over 7.5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - evil geniuses total over 8.5': {
+            '2.57': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - evil geniuses total over 9.5': {
+            '3.89': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - evil geniuses total under 5.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - evil geniuses total under 6.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - evil geniuses total under 7.5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - evil geniuses total under 8.5': {
+            '1.47': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - evil geniuses total under 9.5': {
+            '1.23': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - evil geniuses will win': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - handicap evil geniuses +0.5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - handicap evil geniuses +2.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - handicap evil geniuses +4.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - handicap evil geniuses -1.5': {
+            '2.57': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - handicap evil geniuses -3.5': {
+            '3.89': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - handicap liquid +1.5': {
+            '1.47': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - handicap liquid +3.5': {
+            '1.23': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - handicap liquid -0.5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - handicap liquid -2.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - handicap liquid -4.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - liquid total over 5.5': {
+            '1.22': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - liquid total over 6.5': {
+            '1.47': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - liquid total over 7.5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - liquid total over 8.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - liquid total over 9.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - liquid total under 5.5': {
+            '3.99': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - liquid total under 6.5': {
+            '2.57': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - liquid total under 7.5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - liquid total under 8.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - liquid total under 9.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map first half - liquid will win': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map second half - 1x2 draw': {
+            '9.46': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map second half - 1x2 evil geniuses': {
+            '1.95': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map second half - 1x2 liquid': {
+            '2.03': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map second half - handicap evil geniuses +1.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map second half - handicap evil geniuses +3.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map second half - handicap evil geniuses -0.5': {
+            '1.94': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map second half - handicap evil geniuses -2.5': {
+            '2.85': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map second half - handicap liquid +0.5': {
+            '1.8': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map second half - handicap liquid +2.5': {
+            '1.39': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map second half - handicap liquid -1.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        '2nd map second half - handicap liquid -3.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        'correct score 0-2': {'3.55': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'correct score 1-2': {'3.72': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'correct score 2-0': {'3.24': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'correct score 2-1': {'3.56': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'evil geniuses handicap +1.5 maps': {
+            '1.27': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        'evil geniuses handicap -1.5 maps': {
+            '3.26': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        'evil geniuses total over 26.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        'evil geniuses total over 32.5': {
+            '1.83': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        'evil geniuses total over 36.5': {
+            '2.25': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        'evil geniuses total over 40.5': {
+            '3.14': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        'evil geniuses total under 26.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        'evil geniuses total under 32.5': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        'evil geniuses total under 36.5': {
+            '1.6': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        'evil geniuses total under 40.5': {
+            '1.33': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'
+            },
+        'evil geniuses will win': {'1.82': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'liquid handicap +1.5 maps': {'1.31': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'liquid handicap -1.5 maps': {'3.54': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'liquid total over 25.5': {'1.22': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'liquid total over 32.5': {'1.86': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'liquid total over 36.5': {'2.31': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'liquid total over 40.5': {'3.26': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'liquid total under 25.5': {'3.99': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'liquid total under 32.5': {'1.88': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'liquid total under 36.5': {'1.57': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'liquid total under 40.5': {'1.31': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'liquid will win': {'1.94': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'odd/even maps even': {'1.81': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'odd/even maps odd': {'1.93': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total maps over 2.5': {'1.93': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total maps under 2.5': {'1.81': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total over 52.5': {'1.22': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total over 54.5': {'1.34': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total over 56.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total over 58.5': {'1.59': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total over 62.5': {'1.73': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total over 68.5': {'1.9': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total over 73.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total over 76.5': {'2.48': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total over 78.5': {'2.85': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total over 80.5': {'3.39': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total over 82.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total under 52.5': {'3.99': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total under 54.5': {'3.09': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total under 56.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total under 58.5': {'2.27': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total under 62.5': {'2.03': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total under 68.5': {'1.84': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total under 73.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total under 76.5': {'1.5': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total under 78.5': {'1.39': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total under 80.5': {'1.29': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'},
+        'total under 82.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/liquid-vs-evil-geniuses-03-07)'}
+        },
+    'ex-polar ace - oceanus gaming': {
+        '1-st map: ex-polar ace will win': {
+            '2.81': 'ggbet(https://gg.bet/en/betting/match/oceanus-gaming-vs-ex-polar-ace-04-07)'
+            },
+        '1-st map: oceanus gaming will win': {
+            '1.4': 'ggbet(https://gg.bet/en/betting/match/oceanus-gaming-vs-ex-polar-ace-04-07)'
+            },
+        '2-nd map: ex-polar ace will win': {
+            '2.81': 'ggbet(https://gg.bet/en/betting/match/oceanus-gaming-vs-ex-polar-ace-04-07)'
+            },
+        '2-nd map: oceanus gaming will win': {
+            '1.4': 'ggbet(https://gg.bet/en/betting/match/oceanus-gaming-vs-ex-polar-ace-04-07)'
+            },
+        'ex-polar ace will win': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/oceanus-gaming-vs-ex-polar-ace-04-07)'
+            },
+        'oceanus gaming will win': {
+            '1.31': 'ggbet(https://gg.bet/en/betting/match/oceanus-gaming-vs-ex-polar-ace-04-07)'
+            }
+        },
+    'fnatic - godsent': {
+        '1-st map: correct score 10-16': {'13.57': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 11-16': {'12.66': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 12-16': {'12.02': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 13-16': {'11.58': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 14-16': {'10.41': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-1': {'100': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-10': {'9.65': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-11': {'9.44': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-12': {'9.37': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-13': {'9.42': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-14': {'9.59': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-2': {'64.04': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-3': {'35.02': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-4': {'23.41': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-5': {'17.83': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-6': {'14.73': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-7': {'12.83': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-8': {'11.58': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 16-9': {'10.03': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 2-16': {'100': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 3-16': {'77.09': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 4-16': {'46.17': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 5-16': {'31.66': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 6-16': {'23.98': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 7-16': {'19.52': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 8-16': {'16.72': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: correct score 9-16': {'14.86': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: ct total  over 10.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: ct total  over 11.5': {'1.43': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: ct total  over 13.5': {'2.09': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: ct total  over 15.5': {'3.62': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: ct total  under 10.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: ct total  under 11.5': {'2.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: ct total  under 13.5': {'1.69': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: ct total  under 15.5': {'1.26': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: first half correct score 1-14': {
+            '100': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 10-5': {
+            '6.36': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 11-4': {
+            '8.31': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 12-3': {
+            '12.56': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 13-2': {
+            '21.86': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 14-1': {
+            '58.6': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 2-13': {
+            '41.15': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 3-12': {
+            '19.12': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 4-11': {
+            '11.92': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 5-10': {
+            '8.16': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 6-9': {
+            '6.33': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 7-8': {
+            '5.34': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 8-7': {
+            '5.04': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: first half correct score 9-6': {
+            '5.34': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: fnatic total over 11.5': {'1.2': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: fnatic total over 13.5': {'1.36': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: fnatic total over 14.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: fnatic total over 15.5': {'1.73': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: fnatic total under 11.5': {'4.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: fnatic total under 13.5': {'2.99': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: fnatic total under 14.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: fnatic total under 15.5': {'2.03': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: fnatic will win': {'1.56': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: fnatic will win round 1': {'1.83': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: godsent total over 10.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: godsent total over 11.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: godsent total over 12.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: godsent total over 13.5': {'1.81': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: godsent total over 14.5': {'2.03': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: godsent total over 15.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: godsent total over 9.5': {'1.25': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: godsent total under 10.5': {
+            '3.04': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: godsent total under 11.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: godsent total under 12.5': {
+            '2.19': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: godsent total under 13.5': {
+            '1.93': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: godsent total under 14.5': {
+            '1.73': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: godsent total under 15.5': {
+            '1.45': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: godsent total under 9.5': {'3.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: godsent will win': {'2.33': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: godsent will win round 1': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: handicap fnatic +1.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap fnatic +2.5': {'1.36': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap fnatic +3.5': {'1.27': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap fnatic +4.5': {'1.2': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap fnatic -1.5': {'1.73': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap fnatic -2.5': {'1.93': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap fnatic -3.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap fnatic -4.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap fnatic -5.5': {'3.04': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap fnatic -6.5': {'3.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap godsent +1.5': {'2.03': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap godsent +2.5': {'1.81': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap godsent +3.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap godsent +4.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap godsent +5.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap godsent +6.5': {'1.25': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap godsent -1.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap godsent -2.5': {'2.99': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap godsent -3.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: handicap godsent -4.5': {'4.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: race to  rounds fnatic 12': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: race to  rounds fnatic 3': {
+            '1.74': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: race to  rounds fnatic 6': {
+            '1.68': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: race to  rounds fnatic 9': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: race to  rounds godsent 12': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: race to  rounds godsent 3': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: race to  rounds godsent 6': {
+            '2.11': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: race to  rounds godsent 9': {
+            '2.17': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: terrorist total over 10.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: terrorist total over 11.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: terrorist total over 13.5': {
+            '2.09': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: terrorist total over 15.5': {
+            '3.62': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: terrorist total under 10.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: terrorist total under 11.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: terrorist total under 13.5': {
+            '1.69': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: terrorist total under 15.5': {
+            '1.26': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: total over 24.5': {'1.31': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: total over 25.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: total over 26.5': {'1.72': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: total over 27.5': {'2.11': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: total over 28.5': {'2.73': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: total over 29.5': {'3.89': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: total under 24.5': {'3.26': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: total under 25.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: total under 26.5': {'2.05': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: total under 27.5': {'1.68': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: total under 28.5': {'1.42': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: total under 29.5': {'1.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1-st map: will there be overtime no': {
+            '1.09': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1-st map: will there be overtime yes': {
+            '6.55': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - fnatic total over 6.5': {
+            '1.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - fnatic total over 7.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - fnatic total over 8.5': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - fnatic total over 9.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - fnatic total under 6.5': {
+            '3.2': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - fnatic total under 7.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - fnatic total under 8.5': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - fnatic total under 9.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - fnatic will win': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - godsent total over 5.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - godsent total over 6.5': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - godsent total over 7.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - godsent total over 8.5': {
+            '3.2': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - godsent total under 5.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - godsent total under 6.5': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - godsent total under 7.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - godsent total under 8.5': {
+            '1.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - godsent will win': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - handicap fnatic +1.5': {
+            '1.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - handicap fnatic -0.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - handicap fnatic -2.5': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - handicap fnatic -4.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - handicap godsent +0.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - handicap godsent +2.5': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - handicap godsent +4.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map first half - handicap godsent -1.5': {
+            '3.2': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map second half - 1x2 draw': {'9.42': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1st map second half - 1x2 fnatic': {'1.74': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1st map second half - 1x2 godsent': {'2.3': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '1st map second half - handicap fnatic +1.5': {
+            '1.37': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map second half - handicap fnatic -0.5': {
+            '1.74': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map second half - handicap fnatic -2.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map second half - handicap fnatic -3.5': {
+            '3.39': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map second half - handicap godsent +0.5': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map second half - handicap godsent +2.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map second half - handicap godsent +3.5': {
+            '1.29': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '1st map second half - handicap godsent -1.5': {
+            '2.94': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: correct score 10-16': {'13.59': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 11-16': {'12.68': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 12-16': {'12.04': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 13-16': {'11.61': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 14-16': {'10.42': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-1': {'100': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-10': {'9.66': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-11': {'9.44': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-12': {'9.37': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-13': {'9.43': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-14': {'9.6': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-2': {'63.81': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-3': {'34.92': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-4': {'23.36': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-5': {'17.8': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-6': {'14.72': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-7': {'12.82': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-8': {'11.57': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 16-9': {'10.03': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 2-16': {'100': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 3-16': {'77.12': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 4-16': {'46.21': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 5-16': {'31.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 6-16': {'24.02': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 7-16': {'19.55': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 8-16': {'16.75': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: correct score 9-16': {'14.89': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: ct total  over 10.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: ct total  over 11.5': {'1.43': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: ct total  over 13.5': {'2.09': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: ct total  over 15.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: ct total  under 10.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: ct total  under 11.5': {'2.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: ct total  under 13.5': {'1.69': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: ct total  under 15.5': {'1.27': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: first half correct score 1-14': {
+            '100': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 10-5': {
+            '6.36': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 11-4': {
+            '8.31': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 12-3': {
+            '12.55': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 13-2': {
+            '21.82': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 14-1': {
+            '58.42': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 2-13': {
+            '41.19': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 3-12': {
+            '19.15': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 4-11': {
+            '11.94': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 5-10': {
+            '8.17': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 6-9': {
+            '6.34': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 7-8': {
+            '5.35': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 8-7': {
+            '5.05': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: first half correct score 9-6': {
+            '5.35': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: fnatic total over 11.5': {'1.2': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: fnatic total over 13.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: fnatic total over 14.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: fnatic total over 15.5': {'1.72': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: fnatic total under 11.5': {'4.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: fnatic total under 13.5': {'3.04': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: fnatic total under 14.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: fnatic total under 15.5': {'2.05': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: fnatic will win': {'1.57': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: fnatic will win round 1': {'1.83': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: godsent total over 10.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: godsent total over 11.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: godsent total over 12.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: godsent total over 13.5': {'1.81': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: godsent total over 14.5': {'2.03': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: godsent total over 15.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: godsent total over 9.5': {'1.25': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: godsent total under 10.5': {
+            '3.04': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: godsent total under 11.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: godsent total under 12.5': {
+            '2.19': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: godsent total under 13.5': {
+            '1.93': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: godsent total under 14.5': {
+            '1.73': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: godsent total under 15.5': {
+            '1.46': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: godsent total under 9.5': {'3.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: godsent will win': {'2.31': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: godsent will win round 1': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: handicap fnatic +1.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap fnatic +2.5': {'1.36': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap fnatic +3.5': {'1.27': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap fnatic +4.5': {'1.2': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap fnatic -1.5': {'1.73': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap fnatic -2.5': {'1.93': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap fnatic -3.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap fnatic -4.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap fnatic -5.5': {'3.04': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap fnatic -6.5': {'3.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap godsent +1.5': {'2.03': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap godsent +2.5': {'1.81': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap godsent +3.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap godsent +4.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap godsent +5.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap godsent +6.5': {'1.25': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap godsent -1.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap godsent -2.5': {'2.99': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap godsent -3.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: handicap godsent -4.5': {'4.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: race to  rounds fnatic 12': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: race to  rounds fnatic 3': {
+            '1.74': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: race to  rounds fnatic 6': {
+            '1.68': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: race to  rounds fnatic 9': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: race to  rounds godsent 12': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: race to  rounds godsent 3': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: race to  rounds godsent 6': {
+            '2.11': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: race to  rounds godsent 9': {
+            '2.17': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: terrorist total over 10.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: terrorist total over 11.5': {
+            '1.43': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: terrorist total over 13.5': {
+            '2.09': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: terrorist total over 15.5': {
+            '3.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: terrorist total under 10.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: terrorist total under 11.5': {
+            '2.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: terrorist total under 13.5': {
+            '1.69': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: terrorist total under 15.5': {
+            '1.27': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: total over 24.5': {'1.31': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: total over 25.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: total over 26.5': {'1.72': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: total over 27.5': {'2.09': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: total over 28.5': {'2.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: total over 29.5': {'3.89': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: total under 24.5': {'3.26': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: total under 25.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: total under 26.5': {'2.05': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: total under 27.5': {'1.69': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: total under 28.5': {'1.43': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: total under 29.5': {'1.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2-nd map: will there be overtime no': {
+            '1.09': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2-nd map: will there be overtime yes': {
+            '6.55': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - fnatic total over 6.5': {
+            '1.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - fnatic total over 7.5': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - fnatic total over 8.5': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - fnatic total over 9.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - fnatic total under 6.5': {
+            '3.2': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - fnatic total under 7.5': {
+            '2.17': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - fnatic total under 8.5': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - fnatic total under 9.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - fnatic will win': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - godsent total over 5.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - godsent total over 6.5': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - godsent total over 7.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - godsent total over 8.5': {
+            '3.14': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - godsent total under 5.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - godsent total under 6.5': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - godsent total under 7.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - godsent total under 8.5': {
+            '1.33': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - godsent will win': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - handicap fnatic +1.5': {
+            '1.33': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - handicap fnatic -0.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - handicap fnatic -2.5': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - handicap fnatic -4.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - handicap godsent +0.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - handicap godsent +2.5': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - handicap godsent +4.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map first half - handicap godsent -1.5': {
+            '3.14': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map second half - 1x2 draw': {'9.42': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2nd map second half - 1x2 fnatic': {'1.74': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2nd map second half - 1x2 godsent': {'2.31': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        '2nd map second half - handicap fnatic +1.5': {
+            '1.37': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map second half - handicap fnatic -0.5': {
+            '1.74': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map second half - handicap fnatic -2.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map second half - handicap fnatic -3.5': {
+            '3.39': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map second half - handicap godsent +0.5': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map second half - handicap godsent +2.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map second half - handicap godsent +3.5': {
+            '1.29': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        '2nd map second half - handicap godsent -1.5': {
+            '2.94': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'
+            },
+        'fnatic handicap +1.5 maps': {'1.15': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'fnatic handicap -1.5 maps': {'2.45': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'fnatic total over 32.5': {'1.81': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'fnatic total over 37.5': {'2.31': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'fnatic total over 41.5': {'3.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'fnatic total under 32.5': {'1.93': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'fnatic total under 37.5': {'1.57': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'fnatic total under 41.5': {'1.3': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'fnatic will win': {'1.47': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent handicap +1.5 maps': {'1.51': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent handicap -1.5 maps': {'4.99': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent total over 21.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent total over 25.5': {'1.37': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent total over 32.5': {'2.03': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent total over 36.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent total over 40.5': {'3.79': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent total under 21.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent total under 25.5': {'2.94': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent total under 32.5': {'1.73': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent total under 36.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent total under 40.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'godsent will win': {'2.6': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap fnatic +2.5': {'1.37': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap fnatic +5.5': {'1.25': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap fnatic -0.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap fnatic -11.5': {'3.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap fnatic -3.5': {'1.64': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap fnatic -5.5': {'1.84': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap fnatic -7.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap fnatic -9.5': {'2.73': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap godsent +0.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap godsent +11.5': {'1.25': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap godsent +3.5': {'2.17': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap godsent +5.5': {'1.9': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap godsent +7.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap godsent +9.5': {'1.42': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap godsent -2.5': {'2.94': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'handicap godsent -5.5': {'3.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'odd/even maps even': {'1.75': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'odd/even maps odd': {'2.01': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total maps over 2.5': {'2.01': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total maps under 2.5': {'1.75': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total over 52.5': {'1.25': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total over 54.5': {'1.37': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total over 56.5': {'1.52': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total over 58.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total over 63.5': {'1.83': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total over 69.5': {'2.02': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total over 73.5': {'2.25': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total over 76.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total over 79.5': {'3.2': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total over 81.5': {'3.89': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total under 52.5': {'3.7': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total under 54.5': {'2.94': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total under 56.5': {'2.43': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total under 58.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total under 63.5': {'1.91': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total under 69.5': {'1.74': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total under 73.5': {'1.6': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total under 76.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total under 79.5': {'1.32': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'},
+        'total under 81.5': {'1.23': 'ggbet(https://gg.bet/en/betting/match/fnatic-vs-godsent-03-07)'}
+        },
+    'forze - nordavind': {
+        '1-st map: correct score 10t-e': {'9.65': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 11t-e': {'9.56': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 12t-e': {'9.59': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 13t-e': {'9.74': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 14t-e': {'9.97': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 16t-e': {'11.88': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 1t-e': {'100': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 2t-e': {'46.1': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 3t-e': {'27.45': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 4t-e': {'19.65': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 5t-e': {'15.73': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 6t-e': {'13.46': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 7t-e': {'12.03': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 8t-e': {'10.27': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: correct score 9t-e': {'9.88': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: ct total  over 11.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: ct total  over 13.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: ct total  under 11.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: ct total  under 13.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: forze total over 15.5': {'1.67': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: forze total under 15.5': {'2.12': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: forze will win': {'1.53': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: forze will win round 1': {'1.82': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: handicap forze -1.5': {'1.67': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: handicap forze -2.5': {'1.85': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: handicap forze -3.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: handicap forze -4.5': {'2.35': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: handicap nordavind +1.5': {
+            '2.12': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: handicap nordavind +2.5': {
+            '1.89': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: handicap nordavind +3.5': {
+            '1.71': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: handicap nordavind +4.5': {
+            '1.55': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: nordavind total over 11.5': {
+            '1.55': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: nordavind total over 12.5': {
+            '1.71': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: nordavind total over 13.5': {
+            '1.89': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: nordavind total over 14.5': {
+            '2.12': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: nordavind total under 11.5': {
+            '2.35': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: nordavind total under 12.5': {
+            '2.06': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: nordavind total under 13.5': {
+            '1.85': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: nordavind total under 14.5': {
+            '1.67': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: nordavind will win': {'2.4': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: nordavind will win round 1': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: terrorist total over 11.5': {
+            '1.46': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: terrorist total over 13.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: terrorist total under 11.5': {
+            '2.6': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: terrorist total under 13.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '1-st map: total over 25.5': {'1.56': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: total over 26.5': {'1.83': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: total over 27.5': {'2.25': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: total under 25.5': {'2.33': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: total under 26.5': {'1.91': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '1-st map: total under 27.5': {'1.6': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 10t-e': {'9.65': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 11t-e': {'9.58': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 12t-e': {'9.63': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 13t-e': {'9.78': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 14t-e': {'10.02': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 16t-e': {'11.97': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 1t-e': {'100': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 2t-e': {'44.85': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 3t-e': {'26.88': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 4t-e': {'19.35': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 5t-e': {'15.55': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 6t-e': {'13.35': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 7t-e': {'11.96': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 8t-e': {'10.25': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: correct score 9t-e': {'9.87': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: ct total  over 11.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: ct total  over 13.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: ct total  under 11.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: ct total  under 13.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: forze total over 15.5': {'1.67': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: forze total under 15.5': {'2.12': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: forze will win': {'1.52': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: forze will win round 1': {'1.82': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: handicap forze -1.5': {'1.67': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: handicap forze -2.5': {'1.83': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: handicap forze -3.5': {'2.05': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: handicap forze -4.5': {'2.33': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: handicap nordavind +1.5': {
+            '2.12': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: handicap nordavind +2.5': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: handicap nordavind +3.5': {
+            '1.72': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: handicap nordavind +4.5': {
+            '1.56': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: nordavind total over 11.5': {
+            '1.55': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: nordavind total over 12.5': {
+            '1.71': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: nordavind total over 13.5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: nordavind total over 14.5': {
+            '2.12': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: nordavind total under 11.5': {
+            '2.35': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: nordavind total under 12.5': {
+            '2.06': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: nordavind total under 13.5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: nordavind total under 14.5': {
+            '1.67': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: nordavind will win': {'2.43': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: nordavind will win round 1': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: terrorist total over 11.5': {
+            '1.46': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: terrorist total over 13.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: terrorist total under 11.5': {
+            '2.6': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: terrorist total under 13.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'
+            },
+        '2-nd map: total over 25.5': {'1.57': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: total over 26.5': {'1.84': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: total over 27.5': {'2.25': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: total under 25.5': {'2.31': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: total under 26.5': {'1.9': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        '2-nd map: total under 27.5': {'1.6': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'correct score 0-2': {'4.81': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'correct score 1-2': {'4.88': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'correct score 2-0': {'2.25': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'correct score 2-1': {'3.52': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'forze handicap +1.5 maps': {'1.16': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'forze handicap -1.5 maps': {'2.25': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'forze total over 32.5': {'1.98': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'forze total over 37.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'forze total under 32.5': {'1.77': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'forze total under 37.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'forze will win': {'1.45': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'handicap forze -1.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'handicap forze -4.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'handicap forze -6.5': {'1.84': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'handicap forze -8.5': {'2.17': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'handicap nordavind +1.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'handicap nordavind +4.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'handicap nordavind +6.5': {'1.9': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'handicap nordavind +8.5': {'1.64': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'nordavind handicap +1.5 maps': {'1.6': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'nordavind handicap -1.5 maps': {'4.81': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'nordavind total over 25.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'nordavind total over 32.5': {'2.25': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'nordavind total under 25.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'nordavind total under 32.5': {'1.6': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'nordavind will win': {'2.66': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'odd/even maps even': {'1.63': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'odd/even maps odd': {'2.19': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total maps over 2.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total maps under 2.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total over 54.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total over 56.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total over 59.5': {'1.85': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total over 64.5': {'2.05': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total over 70.5': {'2.29': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total under 54.5': {'2.51': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total under 56.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total under 59.5': {'1.89': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total under 64.5': {'1.72': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'},
+        'total under 70.5': {'1.58': 'ggbet(https://gg.bet/en/betting/match/nordavind-vs-forze-03-07)'}
+        },
     'global - knockturnal': {
-        '1-st map: global will win': {'1.1': 'ggbet'},
-        '1-st map: knockturnal will win': {'6.21': 'ggbet'},
-        'global will win': {'1.1': 'ggbet'},
-        'knockturnal will win': {'6.41': 'ggbet'}
-    },
-    'godsent - og': {
-        '1-st map: correct score 1-16': {'100': 'ggbet'},
-        '1-st map: correct score 10-16': {'11.83': 'ggbet'},
-        '1-st map: correct score 11-16': {'10.35': 'ggbet'},
-        '1-st map: correct score 12-16': {'10.08': 'ggbet'},
-        '1-st map: correct score 13-16': {'9.94': 'ggbet'},
-        '1-st map: correct score 14-16': {'9.9': 'ggbet'},
-        '1-st map: correct score 16-1': {'100': 'ggbet'},
-        '1-st map: correct score 16-10': {'10.46': 'ggbet'},
-        '1-st map: correct score 16-11': {'10.1': 'ggbet'},
-        '1-st map: correct score 16-12': {'9.87': 'ggbet'},
-        '1-st map: correct score 16-13': {'9.76': 'ggbet'},
-        '1-st map: correct score 16-14': {'9.76': 'ggbet'},
-        '1-st map: correct score 16-2': {'95.55': 'ggbet'},
-        '1-st map: correct score 16-3': {'49.47': 'ggbet'},
-        '1-st map: correct score 16-4': {'31.22': 'ggbet'},
-        '1-st map: correct score 16-5': {'22.6': 'ggbet'},
-        '1-st map: correct score 16-6': {'17.97': 'ggbet'},
-        '1-st map: correct score 16-7': {'15.21': 'ggbet'},
-        '1-st map: correct score 16-8': {'13.43': 'ggbet'},
-        '1-st map: correct score 16-9': {'12.23': 'ggbet'},
-        '1-st map: correct score 2-16': {'100': 'ggbet'},
-        '1-st map: correct score 3-16': {'52.8': 'ggbet'},
-        '1-st map: correct score 4-16': {'33.24': 'ggbet'},
-        '1-st map: correct score 5-16': {'23.94': 'ggbet'},
-        '1-st map: correct score 6-16': {'18.93': 'ggbet'},
-        '1-st map: correct score 7-16': {'15.95': 'ggbet'},
-        '1-st map: correct score 8-16': {'14.03': 'ggbet'},
-        '1-st map: correct score 9-16': {'12.73': 'ggbet'},
-        '1-st map: ct total  over 10.5': {'1.2': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.42': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.06': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.54': 'ggbet'},
-        '1-st map: ct total  under 10.5': {'4.23': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.73': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.71': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.27': 'ggbet'},
-        '1-st map: first half correct score 1-14': {'93.6': 'ggbet'},
-        '1-st map: first half correct score 10-5': {'7.05': 'ggbet'},
-        '1-st map: first half correct score 11-4': {'9.35': 'ggbet'},
-        '1-st map: first half correct score 12-3': {'14.85': 'ggbet'},
-        '1-st map: first half correct score 13-2': {'28.02': 'ggbet'},
-        '1-st map: first half correct score 14-1': {'83.69': 'ggbet'},
-        '1-st map: first half correct score 2-13': {'30.37': 'ggbet'},
-        '1-st map: first half correct score 3-12': {'15.66': 'ggbet'},
-        '1-st map: first half correct score 4-11': {'9.67': 'ggbet'},
-        '1-st map: first half correct score 5-10': {'7.28': 'ggbet'},
-        '1-st map: first half correct score 6-9': {'5.82': 'ggbet'},
-        '1-st map: first half correct score 7-8': {'5.15': 'ggbet'},
-        '1-st map: first half correct score 8-7': {'5.11': 'ggbet'},
-        '1-st map: first half correct score 9-6': {'5.69': 'ggbet'},
-        '1-st map: godsent total over 10.5': {'1.22': 'ggbet'},
-        '1-st map: godsent total over 11.5': {'1.3': 'ggbet'},
-        '1-st map: godsent total over 12.5': {'1.4': 'ggbet'},
-        '1-st map: godsent total over 13.5': {'1.52': 'ggbet'},
-        '1-st map: godsent total over 14.5': {'1.66': 'ggbet'},
-        '1-st map: godsent total over 15.5': {'2.03': 'ggbet'},
-        '1-st map: godsent total under 10.5': {'3.99': 'ggbet'},
-        '1-st map: godsent total under 11.5': {'3.32': 'ggbet'},
-        '1-st map: godsent total under 12.5': {'2.81': 'ggbet'},
-        '1-st map: godsent total under 13.5': {'2.43': 'ggbet'},
-        '1-st map: godsent total under 14.5': {'2.14': 'ggbet'},
-        '1-st map: godsent total under 15.5': {'1.73': 'ggbet'},
-        '1-st map: godsent will win': {'1.83': 'ggbet'},
-        '1-st map: godsent will win round 1': {'1.86': 'ggbet'},
-        '1-st map: handicap godsent +1.5': {'1.66': 'ggbet'},
-        '1-st map: handicap godsent +2.5': {'1.52': 'ggbet'},
-        '1-st map: handicap godsent +3.5': {'1.4': 'ggbet'},
-        '1-st map: handicap godsent +4.5': {'1.3': 'ggbet'},
-        '1-st map: handicap godsent +5.5': {'1.22': 'ggbet'},
-        '1-st map: handicap godsent -1.5': {'2.03': 'ggbet'},
-        '1-st map: handicap godsent -2.5': {'2.31': 'ggbet'},
-        '1-st map: handicap godsent -3.5': {'2.66': 'ggbet'},
-        '1-st map: handicap godsent -4.5': {'3.14': 'ggbet'},
-        '1-st map: handicap godsent -5.5': {'3.79': 'ggbet'},
-        '1-st map: handicap og +1.5': {'1.73': 'ggbet'},
-        '1-st map: handicap og +2.5': {'1.57': 'ggbet'},
-        '1-st map: handicap og +3.5': {'1.44': 'ggbet'},
-        '1-st map: handicap og +4.5': {'1.33': 'ggbet'},
-        '1-st map: handicap og +5.5': {'1.24': 'ggbet'},
-        '1-st map: handicap og -1.5': {'2.14': 'ggbet'},
-        '1-st map: handicap og -2.5': {'2.43': 'ggbet'},
-        '1-st map: handicap og -3.5': {'2.81': 'ggbet'},
-        '1-st map: handicap og -4.5': {'3.32': 'ggbet'},
-        '1-st map: handicap og -5.5': {'3.99': 'ggbet'},
-        '1-st map: og total over 10.5': {'1.24': 'ggbet'},
-        '1-st map: og total over 11.5': {'1.33': 'ggbet'},
-        '1-st map: og total over 12.5': {'1.44': 'ggbet'},
-        '1-st map: og total over 13.5': {'1.57': 'ggbet'},
-        '1-st map: og total over 14.5': {'1.73': 'ggbet'},
-        '1-st map: og total over 15.5': {'2.14': 'ggbet'},
-        '1-st map: og total under 10.5': {'3.79': 'ggbet'},
-        '1-st map: og total under 11.5': {'3.14': 'ggbet'},
-        '1-st map: og total under 12.5': {'2.66': 'ggbet'},
-        '1-st map: og total under 13.5': {'2.31': 'ggbet'},
-        '1-st map: og total under 14.5': {'2.03': 'ggbet'},
-        '1-st map: og total under 15.5': {'1.66': 'ggbet'},
-        '1-st map: og will win': {'1.91': 'ggbet'},
-        '1-st map: og will win round 1': {'1.88': 'ggbet'},
-        '1-st map: race to  rounds godsent 12': {'1.83': 'ggbet'},
-        '1-st map: race to  rounds godsent 3': {'1.85': 'ggbet'},
-        '1-st map: race to  rounds godsent 6': {'1.84': 'ggbet'},
-        '1-st map: race to  rounds godsent 9': {'1.84': 'ggbet'},
-        '1-st map: race to  rounds og 12': {'1.91': 'ggbet'},
-        '1-st map: race to  rounds og 3': {'1.89': 'ggbet'},
-        '1-st map: race to  rounds og 6': {'1.9': 'ggbet'},
-        '1-st map: race to  rounds og 9': {'1.9': 'ggbet'},
-        '1-st map: terrorist total over 10.5': {'1.2': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.42': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.06': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.54': 'ggbet'},
-        '1-st map: terrorist total under 10.5': {'4.23': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.73': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.71': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.27': 'ggbet'},
-        '1-st map: total over 24.5': {'1.29': 'ggbet'},
-        '1-st map: total over 25.5': {'1.45': 'ggbet'},
-        '1-st map: total over 26.5': {'1.68': 'ggbet'},
-        '1-st map: total over 27.5': {'2.05': 'ggbet'},
-        '1-st map: total over 28.5': {'2.63': 'ggbet'},
-        '1-st map: total over 29.5': {'3.79': 'ggbet'},
-        '1-st map: total under 24.5': {'3.39': 'ggbet'},
-        '1-st map: total under 25.5': {'2.63': 'ggbet'},
-        '1-st map: total under 26.5': {'2.11': 'ggbet'},
-        '1-st map: total under 27.5': {'1.72': 'ggbet'},
-        '1-st map: total under 28.5': {'1.45': 'ggbet'},
-        '1-st map: total under 29.5': {'1.24': 'ggbet'},
-        '1-st map: will there be overtime no': {'1.09': 'ggbet'},
-        '1-st map: will there be overtime yes': {'6.55': 'ggbet'},
-        '1st map first half - godsent total over 5.5': {'1.2': 'ggbet'},
-        '1st map first half - godsent total over 6.5': {'1.43': 'ggbet'},
-        '1st map first half - godsent total over 7.5': {'1.84': 'ggbet'},
-        '1st map first half - godsent total over 8.5': {'2.6': 'ggbet'},
-        '1st map first half - godsent total over 9.5': {'3.99': 'ggbet'},
-        '1st map first half - godsent total under 5.5': {'4.23': 'ggbet'},
-        '1st map first half - godsent total under 6.5': {'2.7': 'ggbet'},
-        '1st map first half - godsent total under 7.5': {'1.9': 'ggbet'},
-        '1st map first half - godsent total under 8.5': {'1.46': 'ggbet'},
-        '1st map first half - godsent total under 9.5': {'1.22': 'ggbet'},
-        '1st map first half - godsent will win': {'1.84': 'ggbet'},
-        '1st map first half - handicap godsent +1.5': {'1.43': 'ggbet'},
-        '1st map first half - handicap godsent +3.5': {'1.2': 'ggbet'},
-        '1st map first half - handicap godsent -0.5': {'1.84': 'ggbet'},
-        '1st map first half - handicap godsent -2.5': {'2.6': 'ggbet'},
-        '1st map first half - handicap godsent -4.5': {'3.99': 'ggbet'},
-        '1st map first half - handicap og +0.5': {'1.9': 'ggbet'},
-        '1st map first half - handicap og +2.5': {'1.46': 'ggbet'},
-        '1st map first half - handicap og +4.5': {'1.22': 'ggbet'},
-        '1st map first half - handicap og -1.5': {'2.7': 'ggbet'},
-        '1st map first half - handicap og -3.5': {'4.23': 'ggbet'},
-        '1st map first half - og total over 5.5': {'1.22': 'ggbet'},
-        '1st map first half - og total over 6.5': {'1.46': 'ggbet'},
-        '1st map first half - og total over 7.5': {'1.9': 'ggbet'},
-        '1st map first half - og total over 8.5': {'2.7': 'ggbet'},
-        '1st map first half - og total over 9.5': {'4.23': 'ggbet'},
-        '1st map first half - og total under 5.5': {'3.99': 'ggbet'},
-        '1st map first half - og total under 6.5': {'2.6': 'ggbet'},
-        '1st map first half - og total under 7.5': {'1.84': 'ggbet'},
-        '1st map first half - og total under 8.5': {'1.43': 'ggbet'},
-        '1st map first half - og total under 9.5': {'1.2': 'ggbet'},
-        '1st map first half - og will win': {'1.9': 'ggbet'},
-        '1st map second half - 1x2 draw': {'9.45': 'ggbet'},
-        '1st map second half - 1x2 godsent': {'1.95': 'ggbet'},
-        '1st map second half - 1x2 og': {'2.02': 'ggbet'},
-        '1st map second half - handicap godsent +0.5': {'1.74': 'ggbet'},
-        '1st map second half - handicap godsent +2.5': {'1.36': 'ggbet'},
-        '1st map second half - handicap godsent -1.5': {'2.43': 'ggbet'},
-        '1st map second half - handicap godsent -3.5': {'3.89': 'ggbet'},
-        '1st map second half - handicap og +1.5': {'1.52': 'ggbet'},
-        '1st map second half - handicap og +3.5': {'1.23': 'ggbet'},
-        '1st map second half - handicap og -0.5': {'2.02': 'ggbet'},
-        '1st map second half - handicap og -2.5': {'2.99': 'ggbet'},
-        '2-nd map: correct score 1-16': {'100': 'ggbet'},
-        '2-nd map: correct score 10-16': {'11.84': 'ggbet'},
-        '2-nd map: correct score 11-16': {'10.35': 'ggbet'},
-        '2-nd map: correct score 12-16': {'10.09': 'ggbet'},
-        '2-nd map: correct score 13-16': {'9.94': 'ggbet'},
-        '2-nd map: correct score 14-16': {'9.9': 'ggbet'},
-        '2-nd map: correct score 16-1': {'100': 'ggbet'},
-        '2-nd map: correct score 16-10': {'11.41': 'ggbet'},
-        '2-nd map: correct score 16-11': {'10.11': 'ggbet'},
-        '2-nd map: correct score 16-12': {'9.88': 'ggbet'},
-        '2-nd map: correct score 16-13': {'9.77': 'ggbet'},
-        '2-nd map: correct score 16-14': {'9.77': 'ggbet'},
-        '2-nd map: correct score 16-2': {'95.68': 'ggbet'},
-        '2-nd map: correct score 16-3': {'49.53': 'ggbet'},
-        '2-nd map: correct score 16-4': {'31.25': 'ggbet'},
-        '2-nd map: correct score 16-5': {'22.62': 'ggbet'},
-        '2-nd map: correct score 16-6': {'17.99': 'ggbet'},
-        '2-nd map: correct score 16-7': {'15.22': 'ggbet'},
-        '2-nd map: correct score 16-8': {'13.44': 'ggbet'},
-        '2-nd map: correct score 16-9': {'12.24': 'ggbet'},
-        '2-nd map: correct score 2-16': {'100': 'ggbet'},
-        '2-nd map: correct score 3-16': {'52.81': 'ggbet'},
-        '2-nd map: correct score 4-16': {'33.25': 'ggbet'},
-        '2-nd map: correct score 5-16': {'23.95': 'ggbet'},
-        '2-nd map: correct score 6-16': {'18.94': 'ggbet'},
-        '2-nd map: correct score 7-16': {'15.96': 'ggbet'},
-        '2-nd map: correct score 8-16': {'14.04': 'ggbet'},
-        '2-nd map: correct score 9-16': {'12.74': 'ggbet'},
-        '2-nd map: ct total  over 10.5': {'1.2': 'ggbet'},
-        '2-nd map: ct total  over 11.5': {'1.42': 'ggbet'},
-        '2-nd map: ct total  over 13.5': {'2.06': 'ggbet'},
-        '2-nd map: ct total  over 15.5': {'3.46': 'ggbet'},
-        '2-nd map: ct total  under 10.5': {'4.23': 'ggbet'},
-        '2-nd map: ct total  under 11.5': {'2.73': 'ggbet'},
-        '2-nd map: ct total  under 13.5': {'1.71': 'ggbet'},
-        '2-nd map: ct total  under 15.5': {'1.28': 'ggbet'},
-        '2-nd map: first half correct score 1-14': {'93.61': 'ggbet'},
-        '2-nd map: first half correct score 10-5': {'7.06': 'ggbet'},
-        '2-nd map: first half correct score 11-4': {'9.36': 'ggbet'},
-        '2-nd map: first half correct score 12-3': {'14.86': 'ggbet'},
-        '2-nd map: first half correct score 13-2': {'28.06': 'ggbet'},
-        '2-nd map: first half correct score 14-1': {'83.85': 'ggbet'},
-        '2-nd map: first half correct score 2-13': {'30.38': 'ggbet'},
-        '2-nd map: first half correct score 3-12': {'15.67': 'ggbet'},
-        '2-nd map: first half correct score 4-11': {'9.67': 'ggbet'},
-        '2-nd map: first half correct score 5-10': {'7.28': 'ggbet'},
-        '2-nd map: first half correct score 6-9': {'5.82': 'ggbet'},
-        '2-nd map: first half correct score 7-8': {'5.15': 'ggbet'},
-        '2-nd map: first half correct score 8-7': {'5.11': 'ggbet'},
-        '2-nd map: first half correct score 9-6': {'5.7': 'ggbet'},
-        '2-nd map: godsent total over 10.5': {'1.22': 'ggbet'},
-        '2-nd map: godsent total over 11.5': {'1.3': 'ggbet'},
-        '2-nd map: godsent total over 12.5': {'1.4': 'ggbet'},
-        '2-nd map: godsent total over 13.5': {'1.51': 'ggbet'},
-        '2-nd map: godsent total over 14.5': {'1.66': 'ggbet'},
-        '2-nd map: godsent total over 15.5': {'2.03': 'ggbet'},
-        '2-nd map: godsent total under 10.5': {'3.99': 'ggbet'},
-        '2-nd map: godsent total under 11.5': {'3.32': 'ggbet'},
-        '2-nd map: godsent total under 12.5': {'2.81': 'ggbet'},
-        '2-nd map: godsent total under 13.5': {'2.45': 'ggbet'},
-        '2-nd map: godsent total under 14.5': {'2.14': 'ggbet'},
-        '2-nd map: godsent total under 15.5': {'1.73': 'ggbet'},
-        '2-nd map: godsent will win': {'1.83': 'ggbet'},
-        '2-nd map: godsent will win round 1': {'1.87': 'ggbet'},
-        '2-nd map: handicap godsent +1.5': {'1.66': 'ggbet'},
-        '2-nd map: handicap godsent +2.5': {'1.52': 'ggbet'},
-        '2-nd map: handicap godsent +3.5': {'1.4': 'ggbet'},
-        '2-nd map: handicap godsent +4.5': {'1.3': 'ggbet'},
-        '2-nd map: handicap godsent +5.5': {'1.22': 'ggbet'},
-        '2-nd map: handicap godsent -1.5': {'2.05': 'ggbet'},
-        '2-nd map: handicap godsent -2.5': {'2.31': 'ggbet'},
-        '2-nd map: handicap godsent -3.5': {'2.66': 'ggbet'},
-        '2-nd map: handicap godsent -4.5': {'3.14': 'ggbet'},
-        '2-nd map: handicap godsent -5.5': {'3.79': 'ggbet'},
-        '2-nd map: handicap og +1.5': {'1.72': 'ggbet'},
-        '2-nd map: handicap og +2.5': {'1.57': 'ggbet'},
-        '2-nd map: handicap og +3.5': {'1.44': 'ggbet'},
-        '2-nd map: handicap og +4.5': {'1.33': 'ggbet'},
-        '2-nd map: handicap og +5.5': {'1.24': 'ggbet'},
-        '2-nd map: handicap og -1.5': {'2.14': 'ggbet'},
-        '2-nd map: handicap og -2.5': {'2.43': 'ggbet'},
-        '2-nd map: handicap og -3.5': {'2.81': 'ggbet'},
-        '2-nd map: handicap og -4.5': {'3.32': 'ggbet'},
-        '2-nd map: handicap og -5.5': {'3.99': 'ggbet'},
-        '2-nd map: og total over 10.5': {'1.24': 'ggbet'},
-        '2-nd map: og total over 11.5': {'1.33': 'ggbet'},
-        '2-nd map: og total over 12.5': {'1.44': 'ggbet'},
-        '2-nd map: og total over 13.5': {'1.57': 'ggbet'},
-        '2-nd map: og total over 14.5': {'1.72': 'ggbet'},
-        '2-nd map: og total over 15.5': {'2.14': 'ggbet'},
-        '2-nd map: og total under 10.5': {'3.79': 'ggbet'},
-        '2-nd map: og total under 11.5': {'3.14': 'ggbet'},
-        '2-nd map: og total under 12.5': {'2.66': 'ggbet'},
-        '2-nd map: og total under 13.5': {'2.31': 'ggbet'},
-        '2-nd map: og total under 14.5': {'2.05': 'ggbet'},
-        '2-nd map: og total under 15.5': {'1.66': 'ggbet'},
-        '2-nd map: og will win': {'1.91': 'ggbet'},
-        '2-nd map: og will win round 1': {'1.87': 'ggbet'},
-        '2-nd map: race to  rounds godsent 12': {'1.83': 'ggbet'},
-        '2-nd map: race to  rounds godsent 3': {'1.85': 'ggbet'},
-        '2-nd map: race to  rounds godsent 6': {'1.84': 'ggbet'},
-        '2-nd map: race to  rounds godsent 9': {'1.84': 'ggbet'},
-        '2-nd map: race to  rounds og 12': {'1.91': 'ggbet'},
-        '2-nd map: race to  rounds og 3': {'1.89': 'ggbet'},
-        '2-nd map: race to  rounds og 6': {'1.9': 'ggbet'},
-        '2-nd map: race to  rounds og 9': {'1.9': 'ggbet'},
-        '2-nd map: terrorist total over 10.5': {'1.2': 'ggbet'},
-        '2-nd map: terrorist total over 11.5': {'1.42': 'ggbet'},
-        '2-nd map: terrorist total over 13.5': {'2.06': 'ggbet'},
-        '2-nd map: terrorist total over 15.5': {'3.46': 'ggbet'},
-        '2-nd map: terrorist total under 10.5': {'4.23': 'ggbet'},
-        '2-nd map: terrorist total under 11.5': {'2.73': 'ggbet'},
-        '2-nd map: terrorist total under 13.5': {'1.71': 'ggbet'},
-        '2-nd map: terrorist total under 15.5': {'1.28': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.29': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.45': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.68': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.05': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.63': 'ggbet'},
-        '2-nd map: total over 29.5': {'3.79': 'ggbet'},
-        '2-nd map: total under 24.5': {'3.39': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.63': 'ggbet'},
-        '2-nd map: total under 26.5': {'2.11': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.72': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.45': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.24': 'ggbet'},
-        '2-nd map: will there be overtime no': {'1.09': 'ggbet'},
-        '2-nd map: will there be overtime yes': {'6.55': 'ggbet'},
-        '2nd map first half - godsent total over 5.5': {'1.2': 'ggbet'},
-        '2nd map first half - godsent total over 6.5': {'1.43': 'ggbet'},
-        '2nd map first half - godsent total over 7.5': {'1.84': 'ggbet'},
-        '2nd map first half - godsent total over 8.5': {'2.57': 'ggbet'},
-        '2nd map first half - godsent total over 9.5': {'3.99': 'ggbet'},
-        '2nd map first half - godsent total under 5.5': {'4.23': 'ggbet'},
-        '2nd map first half - godsent total under 6.5': {'2.7': 'ggbet'},
-        '2nd map first half - godsent total under 7.5': {'1.9': 'ggbet'},
-        '2nd map first half - godsent total under 8.5': {'1.47': 'ggbet'},
-        '2nd map first half - godsent total under 9.5': {'1.22': 'ggbet'},
-        '2nd map first half - godsent will win': {'1.84': 'ggbet'},
-        '2nd map first half - handicap godsent +1.5': {'1.43': 'ggbet'},
-        '2nd map first half - handicap godsent +3.5': {'1.2': 'ggbet'},
-        '2nd map first half - handicap godsent -0.5': {'1.84': 'ggbet'},
-        '2nd map first half - handicap godsent -2.5': {'2.6': 'ggbet'},
-        '2nd map first half - handicap godsent -4.5': {'3.99': 'ggbet'},
-        '2nd map first half - handicap og +0.5': {'1.9': 'ggbet'},
-        '2nd map first half - handicap og +2.5': {'1.46': 'ggbet'},
-        '2nd map first half - handicap og +4.5': {'1.22': 'ggbet'},
-        '2nd map first half - handicap og -1.5': {'2.7': 'ggbet'},
-        '2nd map first half - handicap og -3.5': {'4.23': 'ggbet'},
-        '2nd map first half - og total over 5.5': {'1.22': 'ggbet'},
-        '2nd map first half - og total over 6.5': {'1.46': 'ggbet'},
-        '2nd map first half - og total over 7.5': {'1.9': 'ggbet'},
-        '2nd map first half - og total over 8.5': {'2.7': 'ggbet'},
-        '2nd map first half - og total over 9.5': {'4.23': 'ggbet'},
-        '2nd map first half - og total under 5.5': {'3.99': 'ggbet'},
-        '2nd map first half - og total under 6.5': {'2.6': 'ggbet'},
-        '2nd map first half - og total under 7.5': {'1.84': 'ggbet'},
-        '2nd map first half - og total under 8.5': {'1.43': 'ggbet'},
-        '2nd map first half - og total under 9.5': {'1.2': 'ggbet'},
-        '2nd map first half - og will win': {'1.9': 'ggbet'},
-        '2nd map second half - 1x2 draw': {'9.45': 'ggbet'},
-        '2nd map second half - 1x2 godsent': {'1.95': 'ggbet'},
-        '2nd map second half - 1x2 og': {'2.02': 'ggbet'},
-        '2nd map second half - handicap godsent +0.5': {'1.74': 'ggbet'},
-        '2nd map second half - handicap godsent +2.5': {'1.36': 'ggbet'},
-        '2nd map second half - handicap godsent -1.5': {'2.43': 'ggbet'},
-        '2nd map second half - handicap godsent -3.5': {'3.89': 'ggbet'},
-        '2nd map second half - handicap og +1.5': {'1.52': 'ggbet'},
-        '2nd map second half - handicap og +3.5': {'1.23': 'ggbet'},
-        '2nd map second half - handicap og -0.5': {'2.02': 'ggbet'},
-        '2nd map second half - handicap og -2.5': {'2.99': 'ggbet'},
-        'correct score 0-2': {'3.61': 'ggbet'},
-        'correct score 1-2': {'3.65': 'ggbet'},
-        'correct score 2-0': {'3.3': 'ggbet'},
-        'correct score 2-1': {'3.5': 'ggbet'},
-        'godsent handicap +1.5 maps': {'1.26': 'ggbet'},
-        'godsent handicap -1.5 maps': {'3.32': 'ggbet'},
-        'godsent total over 26.5': {'1.2': 'ggbet'},
-        'godsent total over 32.5': {'1.8': 'ggbet'},
-        'godsent total over 36.5': {'2.21': 'ggbet'},
-        'godsent total over 40.5': {'3.09': 'ggbet'},
-        'godsent total under 26.5': {'4.23': 'ggbet'},
-        'godsent total under 32.5': {'1.94': 'ggbet'},
-        'godsent total under 36.5': {'1.62': 'ggbet'},
-        'godsent total under 40.5': {'1.34': 'ggbet'},
-        'godsent will win': {'1.82': 'ggbet'},
-        'handicap godsent +2.5': {'1.65': 'ggbet'},
-        'handicap godsent +4.5': {'1.53': 'ggbet'},
-        'handicap godsent +6.5': {'1.38': 'ggbet'},
-        'handicap godsent +8.5': {'1.26': 'ggbet'},
-        'handicap godsent -0.5': {'1.85': 'ggbet'},
-        'handicap godsent -3.5': {'2.11': 'ggbet'},
-        'handicap godsent -5.5': {'2.45': 'ggbet'},
-        'handicap godsent -7.5': {'2.99': 'ggbet'},
-        'handicap godsent -9.5': {'3.89': 'ggbet'},
-        'handicap og +0.5': {'1.89': 'ggbet'},
-        'handicap og +3.5': {'1.68': 'ggbet'},
-        'handicap og +5.5': {'1.51': 'ggbet'},
-        'handicap og +7.5': {'1.36': 'ggbet'},
-        'handicap og +9.5': {'1.23': 'ggbet'},
-        'handicap og -2.5': {'2.16': 'ggbet'},
-        'handicap og -4.5': {'2.4': 'ggbet'},
-        'handicap og -6.5': {'2.9': 'ggbet'},
-        'handicap og -8.5': {'3.62': 'ggbet'},
-        'odd/even maps even': {'1.97': 'ggbet'},
-        'odd/even maps odd': {'1.78': 'ggbet'},
-        'og handicap +1.5 maps': {'1.3': 'ggbet'},
-        'og handicap -1.5 maps': {'3.62': 'ggbet'},
-        'og total over 25.5': {'1.21': 'ggbet'},
-        'og total over 32.5': {'1.82': 'ggbet'},
-        'og total over 36.5': {'2.25': 'ggbet'},
-        'og total over 40.5': {'3.14': 'ggbet'},
-        'og total under 25.5': {'4.11': 'ggbet'},
-        'og total under 32.5': {'1.92': 'ggbet'},
-        'og total under 36.5': {'1.6': 'ggbet'},
-        'og total under 40.5': {'1.33': 'ggbet'},
-        'og will win': {'1.94': 'ggbet'},
-        'total maps over 2.5': {'1.78': 'ggbet'},
-        'total maps under 2.5': {'1.97': 'ggbet'},
-        'total over 52.5': {'1.2': 'ggbet'},
-        'total over 54.5': {'1.32': 'ggbet'},
-        'total over 56.5': {'1.44': 'ggbet'},
-        'total over 58.5': {'1.56': 'ggbet'},
-        'total over 62.5': {'1.69': 'ggbet'},
-        'total over 68.5': {'1.86': 'ggbet'},
-        'total over 73.5': {'2.11': 'ggbet'},
-        'total over 76.5': {'2.43': 'ggbet'},
-        'total over 78.5': {'2.77': 'ggbet'},
-        'total over 80.5': {'3.26': 'ggbet'},
-        'total over 82.5': {'3.99': 'ggbet'},
-        'total under 52.5': {'4.23': 'ggbet'},
-        'total under 54.5': {'3.2': 'ggbet'},
-        'total under 56.5': {'2.66': 'ggbet'},
-        'total under 58.5': {'2.33': 'ggbet'},
-        'total under 62.5': {'2.09': 'ggbet'},
-        'total under 68.5': {'1.88': 'ggbet'},
-        'total under 73.5': {'1.68': 'ggbet'},
-        'total under 76.5': {'1.52': 'ggbet'},
-        'total under 78.5': {'1.41': 'ggbet'},
-        'total under 80.5': {'1.31': 'ggbet'},
-        'total under 82.5': {'1.22': 'ggbet'}
-    },
-    'ground zero - rooster': {
-        '1-st map: ground zero will win': {'2.38': 'ggbet'},
-        '1-st map: ground zero will win round 1': {'1.92': 'ggbet'},
-        '1-st map: handicap ground zero +1.5': {'2.11': 'ggbet'},
-        '1-st map: handicap ground zero +2.5': {'1.88': 'ggbet'},
-        '1-st map: handicap ground zero +3.5': {'1.69': 'ggbet'},
-        '1-st map: handicap ground zero +4.5': {'1.54': 'ggbet'},
-        '1-st map: handicap ground zero +5.5': {'1.41': 'ggbet'},
-        '1-st map: handicap ground zero +6.5': {'1.3': 'ggbet'},
-        '1-st map: handicap ground zero +7.5': {'1.21': 'ggbet'},
-        '1-st map: handicap ground zero -1.5': {'2.66': 'ggbet'},
-        '1-st map: handicap ground zero -2.5': {'3.04': 'ggbet'},
-        '1-st map: handicap ground zero -3.5': {'3.54': 'ggbet'},
-        '1-st map: handicap ground zero -4.5': {'4.11': 'ggbet'},
-        '1-st map: handicap rooster +1.5': {'1.44': 'ggbet'},
-        '1-st map: handicap rooster +2.5': {'1.35': 'ggbet'},
-        '1-st map: handicap rooster +3.5': {'1.27': 'ggbet'},
-        '1-st map: handicap rooster +4.5': {'1.21': 'ggbet'},
-        '1-st map: handicap rooster -1.5': {'1.68': 'ggbet'},
-        '1-st map: handicap rooster -2.5': {'1.86': 'ggbet'},
-        '1-st map: handicap rooster -3.5': {'2.09': 'ggbet'},
-        '1-st map: handicap rooster -4.5': {'2.38': 'ggbet'},
-        '1-st map: handicap rooster -5.5': {'2.77': 'ggbet'},
-        '1-st map: handicap rooster -6.5': {'3.32': 'ggbet'},
-        '1-st map: handicap rooster -7.5': {'4.11': 'ggbet'},
-        '1-st map: rooster will win': {'1.54': 'ggbet'},
-        '1-st map: rooster will win round 1': {'1.82': 'ggbet'},
-        '1-st map: total over 23.5': {'1.24': 'ggbet'},
-        '1-st map: total over 24.5': {'1.37': 'ggbet'},
-        '1-st map: total over 25.5': {'1.56': 'ggbet'},
-        '1-st map: total over 26.5': {'1.83': 'ggbet'},
-        '1-st map: total over 27.5': {'2.25': 'ggbet'},
-        '1-st map: total over 28.5': {'2.9': 'ggbet'},
-        '1-st map: total over 29.5': {'4.11': 'ggbet'},
-        '1-st map: total under 23.5': {'3.79': 'ggbet'},
-        '1-st map: total under 24.5': {'2.94': 'ggbet'},
-        '1-st map: total under 25.5': {'2.33': 'ggbet'},
-        '1-st map: total under 26.5': {'1.91': 'ggbet'},
-        '1-st map: total under 27.5': {'1.6': 'ggbet'},
-        '1-st map: total under 28.5': {'1.38': 'ggbet'},
-        '1-st map: total under 29.5': {'1.21': 'ggbet'},
-        '2-nd map: ground zero will win': {'2.4': 'ggbet'},
-        '2-nd map: ground zero will win round 1': {'1.92': 'ggbet'},
-        '2-nd map: handicap ground zero +1.5': {'2.11': 'ggbet'},
-        '2-nd map: handicap ground zero +2.5': {'1.89': 'ggbet'},
-        '2-nd map: handicap ground zero +3.5': {'1.71': 'ggbet'},
-        '2-nd map: handicap ground zero +4.5': {'1.55': 'ggbet'},
-        '2-nd map: handicap ground zero +5.5': {'1.42': 'ggbet'},
-        '2-nd map: handicap ground zero +6.5': {'1.31': 'ggbet'},
-        '2-nd map: handicap ground zero +7.5': {'1.22': 'ggbet'},
-        '2-nd map: handicap ground zero -1.5': {'2.66': 'ggbet'},
-        '2-nd map: handicap ground zero -2.5': {'3.04': 'ggbet'},
-        '2-nd map: handicap ground zero -3.5': {'3.54': 'ggbet'},
-        '2-nd map: handicap ground zero -4.5': {'4.11': 'ggbet'},
-        '2-nd map: handicap rooster +1.5': {'1.44': 'ggbet'},
-        '2-nd map: handicap rooster +2.5': {'1.35': 'ggbet'},
-        '2-nd map: handicap rooster +3.5': {'1.27': 'ggbet'},
-        '2-nd map: handicap rooster +4.5': {'1.21': 'ggbet'},
-        '2-nd map: handicap rooster -1.5': {'1.68': 'ggbet'},
-        '2-nd map: handicap rooster -2.5': {'1.85': 'ggbet'},
-        '2-nd map: handicap rooster -3.5': {'2.06': 'ggbet'},
-        '2-nd map: handicap rooster -4.5': {'2.35': 'ggbet'},
-        '2-nd map: handicap rooster -5.5': {'2.73': 'ggbet'},
-        '2-nd map: handicap rooster -6.5': {'3.26': 'ggbet'},
-        '2-nd map: handicap rooster -7.5': {'3.99': 'ggbet'},
-        '2-nd map: rooster will win': {'1.53': 'ggbet'},
-        '2-nd map: rooster will win round 1': {'1.82': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.24': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.38': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.56': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.84': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.25': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.94': 'ggbet'},
-        '2-nd map: total over 29.5': {'4.23': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.79': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.9': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.33': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.9': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.6': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.37': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.2': 'ggbet'},
-        'correct score 0-2': {'2.27': 'ggbet'},
-        'correct score 1-2': {'3.52': 'ggbet'},
-        'correct score 2-0': {'4.74': 'ggbet'},
-        'correct score 2-1': {'4.83': 'ggbet'},
-        'ground zero handicap +1.5 maps': {'1.59': 'ggbet'},
-        'ground zero handicap -1.5 maps': {'4.81': 'ggbet'},
-        'ground zero will win': {'2.63': 'ggbet'},
-        'odd/even maps even': {'1.63': 'ggbet'},
-        'odd/even maps odd': {'2.19': 'ggbet'},
-        'rooster handicap +1.5 maps': {'1.16': 'ggbet'},
-        'rooster handicap -1.5 maps': {'2.27': 'ggbet'},
-        'rooster will win': {'1.46': 'ggbet'},
-        'total maps over 2.5': {'2.19': 'ggbet'},
-        'total maps under 2.5': {'1.63': 'ggbet'}
-    },
-    'hard legion - sprout': {
-        '1-st map: correct score 1-16': {'100': 'ggbet'},
-        '1-st map: correct score 10-16': {'9.49': 'ggbet'},
-        '1-st map: correct score 11-16': {'9.36': 'ggbet'},
-        '1-st map: correct score 12-16': {'9.38': 'ggbet'},
-        '1-st map: correct score 13-16': {'9.51': 'ggbet'},
-        '1-st map: correct score 14-16': {'9.74': 'ggbet'},
-        '1-st map: correct score 16-10': {'14.22': 'ggbet'},
-        '1-st map: correct score 16-11': {'13.23': 'ggbet'},
-        '1-st map: correct score 16-12': {'12.53': 'ggbet'},
-        '1-st map: correct score 16-13': {'12.05': 'ggbet'},
-        '1-st map: correct score 16-14': {'11.73': 'ggbet'},
-        '1-st map: correct score 16-2': {'100': 'ggbet'},
-        '1-st map: correct score 16-3': {'83.23': 'ggbet'},
-        '1-st map: correct score 16-4': {'49.63': 'ggbet'},
-        '1-st map: correct score 16-5': {'33.86': 'ggbet'},
-        '1-st map: correct score 16-6': {'25.51': 'ggbet'},
-        '1-st map: correct score 16-7': {'20.66': 'ggbet'},
-        '1-st map: correct score 16-8': {'17.62': 'ggbet'},
-        '1-st map: correct score 16-9': {'15.61': 'ggbet'},
-        '1-st map: correct score 2-16': {'49.75': 'ggbet'},
-        '1-st map: correct score 3-16': {'28.91': 'ggbet'},
-        '1-st map: correct score 4-16': {'20.31': 'ggbet'},
-        '1-st map: correct score 5-16': {'16.03': 'ggbet'},
-        '1-st map: correct score 6-16': {'13.57': 'ggbet'},
-        '1-st map: correct score 7-16': {'12.03': 'ggbet'},
-        '1-st map: correct score 8-16': {'10.21': 'ggbet'},
-        '1-st map: correct score 9-16': {'9.76': 'ggbet'},
-        '1-st map: ct total  over 10.5': {'1.22': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.45': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.14': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.62': 'ggbet'},
-        '1-st map: ct total  under 10.5': {'3.99': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.63': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.66': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.26': 'ggbet'},
-        '1-st map: handicap hard legion +1.5': {'2.33': 'ggbet'},
-        '1-st map: handicap hard legion +2.5': {'2.06': 'ggbet'},
-        '1-st map: handicap hard legion +3.5': {'1.83': 'ggbet'},
-        '1-st map: handicap hard legion +4.5': {'1.64': 'ggbet'},
-        '1-st map: handicap hard legion +5.5': {'1.49': 'ggbet'},
-        '1-st map: handicap hard legion +6.5': {'1.36': 'ggbet'},
-        '1-st map: handicap hard legion +7.5': {'1.26': 'ggbet'},
-        '1-st map: handicap hard legion -1.5': {'3.09': 'ggbet'},
-        '1-st map: handicap hard legion -2.5': {'3.54': 'ggbet'},
-        '1-st map: handicap hard legion -3.5': {'4.23': 'ggbet'},
-        '1-st map: handicap sprout +1.5': {'1.34': 'ggbet'},
-        '1-st map: handicap sprout +2.5': {'1.27': 'ggbet'},
-        '1-st map: handicap sprout +3.5': {'1.2': 'ggbet'},
-        '1-st map: handicap sprout -1.5': {'1.56': 'ggbet'},
-        '1-st map: handicap sprout -2.5': {'1.71': 'ggbet'},
-        '1-st map: handicap sprout -3.5': {'1.91': 'ggbet'},
-        '1-st map: handicap sprout -4.5': {'2.17': 'ggbet'},
-        '1-st map: handicap sprout -5.5': {'2.51': 'ggbet'},
-        '1-st map: handicap sprout -6.5': {'2.99': 'ggbet'},
-        '1-st map: handicap sprout -7.5': {'3.62': 'ggbet'},
-        '1-st map: hard legion total over 10.5': {'1.41': 'ggbet'},
-        '1-st map: hard legion total over 11.5': {'1.55': 'ggbet'},
-        '1-st map: hard legion total over 12.5': {'1.72': 'ggbet'},
-        '1-st map: hard legion total over 13.5': {'1.92': 'ggbet'},
-        '1-st map: hard legion total over 14.5': {'2.17': 'ggbet'},
-        '1-st map: hard legion total over 15.5': {'2.77': 'ggbet'},
-        '1-st map: hard legion total over 8.5': {'1.21': 'ggbet'},
-        '1-st map: hard legion total over 9.5': {'1.3': 'ggbet'},
-        '1-st map: hard legion total under 10.5': {'2.77': 'ggbet'},
-        '1-st map: hard legion total under 11.5': {'2.35': 'ggbet'},
-        '1-st map: hard legion total under 12.5': {'2.05': 'ggbet'},
-        '1-st map: hard legion total under 13.5': {'1.82': 'ggbet'},
-        '1-st map: hard legion total under 14.5': {'1.64': 'ggbet'},
-        '1-st map: hard legion total under 15.5': {'1.41': 'ggbet'},
-        '1-st map: hard legion total under 8.5': {'4.11': 'ggbet'},
-        '1-st map: hard legion total under 9.5': {'3.32': 'ggbet'},
-        '1-st map: hard legion will win': {'2.48': 'ggbet'},
-        '1-st map: hard legion will win round 1': {'1.92': 'ggbet'},
-        '1-st map: sprout total over 12.5': {'1.24': 'ggbet'},
-        '1-st map: sprout total over 14.5': {'1.41': 'ggbet'},
-        '1-st map: sprout total over 15.5': {'1.64': 'ggbet'},
-        '1-st map: sprout total under 12.5': {'3.79': 'ggbet'},
-        '1-st map: sprout total under 14.5': {'2.77': 'ggbet'},
-        '1-st map: sprout total under 15.5': {'2.17': 'ggbet'},
-        '1-st map: sprout will win': {'1.5': 'ggbet'},
-        '1-st map: sprout will win round 1': {'1.82': 'ggbet'},
-        '1-st map: terrorist total over 10.5': {'1.22': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.45': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.14': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.62': 'ggbet'},
-        '1-st map: terrorist total under 10.5': {'3.99': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.63': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.66': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.26': 'ggbet'},
-        '1-st map: total over 23.5': {'1.22': 'ggbet'},
-        '1-st map: total over 24.5': {'1.34': 'ggbet'},
-        '1-st map: total over 25.5': {'1.52': 'ggbet'},
-        '1-st map: total over 26.5': {'1.78': 'ggbet'},
-        '1-st map: total over 27.5': {'2.17': 'ggbet'},
-        '1-st map: total over 28.5': {'2.81': 'ggbet'},
-        '1-st map: total over 29.5': {'3.99': 'ggbet'},
-        '1-st map: total under 23.5': {'3.99': 'ggbet'},
-        '1-st map: total under 24.5': {'3.09': 'ggbet'},
-        '1-st map: total under 25.5': {'2.43': 'ggbet'},
-        '1-st map: total under 26.5': {'1.97': 'ggbet'},
-        '1-st map: total under 27.5': {'1.64': 'ggbet'},
-        '1-st map: total under 28.5': {'1.4': 'ggbet'},
-        '1-st map: total under 29.5': {'1.22': 'ggbet'},
-        '2-nd map: correct score 1-16': {'100': 'ggbet'},
-        '2-nd map: correct score 10-16': {'9.49': 'ggbet'},
-        '2-nd map: correct score 11-16': {'9.37': 'ggbet'},
-        '2-nd map: correct score 12-16': {'9.39': 'ggbet'},
-        '2-nd map: correct score 13-16': {'9.52': 'ggbet'},
-        '2-nd map: correct score 14-16': {'9.76': 'ggbet'},
-        '2-nd map: correct score 16-10': {'14.26': 'ggbet'},
-        '2-nd map: correct score 16-11': {'13.28': 'ggbet'},
-        '2-nd map: correct score 16-12': {'12.58': 'ggbet'},
-        '2-nd map: correct score 16-13': {'12.09': 'ggbet'},
-        '2-nd map: correct score 16-14': {'11.78': 'ggbet'},
-        '2-nd map: correct score 16-2': {'100': 'ggbet'},
-        '2-nd map: correct score 16-3': {'83.19': 'ggbet'},
-        '2-nd map: correct score 16-4': {'49.66': 'ggbet'},
-        '2-nd map: correct score 16-5': {'33.91': 'ggbet'},
-        '2-nd map: correct score 16-6': {'25.56': 'ggbet'},
-        '2-nd map: correct score 16-7': {'20.71': 'ggbet'},
-        '2-nd map: correct score 16-8': {'17.67': 'ggbet'},
-        '2-nd map: correct score 16-9': {'15.66': 'ggbet'},
-        '2-nd map: correct score 2-16': {'49.28': 'ggbet'},
-        '2-nd map: correct score 3-16': {'28.7': 'ggbet'},
-        '2-nd map: correct score 4-16': {'20.2': 'ggbet'},
-        '2-nd map: correct score 5-16': {'15.96': 'ggbet'},
-        '2-nd map: correct score 6-16': {'13.53': 'ggbet'},
-        '2-nd map: correct score 7-16': {'12': 'ggbet'},
-        '2-nd map: correct score 8-16': {'10.2': 'ggbet'},
-        '2-nd map: correct score 9-16': {'9.76': 'ggbet'},
-        '2-nd map: ct total  over 10.5': {'1.22': 'ggbet'},
-        '2-nd map: ct total  over 11.5': {'1.45': 'ggbet'},
-        '2-nd map: ct total  over 13.5': {'2.12': 'ggbet'},
-        '2-nd map: ct total  over 15.5': {'3.62': 'ggbet'},
-        '2-nd map: ct total  under 10.5': {'3.99': 'ggbet'},
-        '2-nd map: ct total  under 11.5': {'2.63': 'ggbet'},
-        '2-nd map: ct total  under 13.5': {'1.67': 'ggbet'},
-        '2-nd map: ct total  under 15.5': {'1.26': 'ggbet'},
-        '2-nd map: handicap hard legion +1.5': {'2.17': 'ggbet'},
-        '2-nd map: handicap hard legion +2.5': {'1.93': 'ggbet'},
-        '2-nd map: handicap hard legion +3.5': {'1.73': 'ggbet'},
-        '2-nd map: handicap hard legion +4.5': {'1.56': 'ggbet'},
-        '2-nd map: handicap hard legion +5.5': {'1.42': 'ggbet'},
-        '2-nd map: handicap hard legion +6.5': {'1.31': 'ggbet'},
-        '2-nd map: handicap hard legion +7.5': {'1.22': 'ggbet'},
-        '2-nd map: handicap hard legion -1.5': {'2.81': 'ggbet'},
-        '2-nd map: handicap hard legion -2.5': {'3.2': 'ggbet'},
-        '2-nd map: handicap hard legion -3.5': {'3.79': 'ggbet'},
-        '2-nd map: handicap sprout +1.5': {'1.4': 'ggbet'},
-        '2-nd map: handicap sprout +2.5': {'1.32': 'ggbet'},
-        '2-nd map: handicap sprout +3.5': {'1.24': 'ggbet'},
-        '2-nd map: handicap sprout -1.5': {'1.64': 'ggbet'},
-        '2-nd map: handicap sprout -2.5': {'1.81': 'ggbet'},
-        '2-nd map: handicap sprout -3.5': {'2.03': 'ggbet'},
-        '2-nd map: handicap sprout -4.5': {'2.33': 'ggbet'},
-        '2-nd map: handicap sprout -5.5': {'2.73': 'ggbet'},
-        '2-nd map: handicap sprout -6.5': {'3.26': 'ggbet'},
-        '2-nd map: handicap sprout -7.5': {'3.99': 'ggbet'},
-        '2-nd map: hard legion total over 10.5': {'1.42': 'ggbet'},
-        '2-nd map: hard legion total over 11.5': {'1.56': 'ggbet'},
-        '2-nd map: hard legion total over 12.5': {'1.72': 'ggbet'},
-        '2-nd map: hard legion total over 13.5': {'1.92': 'ggbet'},
-        '2-nd map: hard legion total over 14.5': {'2.17': 'ggbet'},
-        '2-nd map: hard legion total over 15.5': {'2.77': 'ggbet'},
-        '2-nd map: hard legion total over 8.5': {'1.21': 'ggbet'},
-        '2-nd map: hard legion total over 9.5': {'1.3': 'ggbet'},
-        '2-nd map: hard legion total under 10.5': {'2.73': 'ggbet'},
-        '2-nd map: hard legion total under 11.5': {'2.33': 'ggbet'},
-        '2-nd map: hard legion total under 12.5': {'2.05': 'ggbet'},
-        '2-nd map: hard legion total under 13.5': {'1.82': 'ggbet'},
-        '2-nd map: hard legion total under 14.5': {'1.64': 'ggbet'},
-        '2-nd map: hard legion total under 15.5': {'1.41': 'ggbet'},
-        '2-nd map: hard legion total under 8.5': {'4.11': 'ggbet'},
-        '2-nd map: hard legion total under 9.5': {'3.32': 'ggbet'},
-        '2-nd map: hard legion will win': {'2.51': 'ggbet'},
-        '2-nd map: hard legion will win round 1': {'1.93': 'ggbet'},
-        '2-nd map: sprout total over 12.5': {'1.24': 'ggbet'},
-        '2-nd map: sprout total over 14.5': {'1.4': 'ggbet'},
-        '2-nd map: sprout total over 15.5': {'1.64': 'ggbet'},
-        '2-nd map: sprout total under 12.5': {'3.79': 'ggbet'},
-        '2-nd map: sprout total under 14.5': {'2.81': 'ggbet'},
-        '2-nd map: sprout total under 15.5': {'2.17': 'ggbet'},
-        '2-nd map: sprout will win': {'1.49': 'ggbet'},
-        '2-nd map: sprout will win round 1': {'1.81': 'ggbet'},
-        '2-nd map: terrorist total over 10.5': {'1.22': 'ggbet'},
-        '2-nd map: terrorist total over 11.5': {'1.45': 'ggbet'},
-        '2-nd map: terrorist total over 13.5': {'2.12': 'ggbet'},
-        '2-nd map: terrorist total over 15.5': {'3.62': 'ggbet'},
-        '2-nd map: terrorist total under 10.5': {'3.99': 'ggbet'},
-        '2-nd map: terrorist total under 11.5': {'2.63': 'ggbet'},
-        '2-nd map: terrorist total under 13.5': {'1.67': 'ggbet'},
-        '2-nd map: terrorist total under 15.5': {'1.26': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.22': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.34': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.52': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.78': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.17': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.81': 'ggbet'},
-        '2-nd map: total over 29.5': {'3.99': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.99': 'ggbet'},
-        '2-nd map: total under 24.5': {'3.09': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.43': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.97': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.64': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.4': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.22': 'ggbet'},
-        'correct score 0-2': {'2.23': 'ggbet'},
-        'correct score 1-2': {'3.26': 'ggbet'},
-        'correct score 2-0': {'5.43': 'ggbet'},
-        'correct score 2-1': {'4.93': 'ggbet'},
-        'handicap hard legion +0.5': {'2.85': 'ggbet'},
-        'handicap hard legion +11.5': {'1.34': 'ggbet'},
-        'handicap hard legion +3.5': {'2.45': 'ggbet'},
-        'handicap hard legion +5.5': {'2.11': 'ggbet'},
-        'handicap hard legion +7.5': {'1.79': 'ggbet'},
-        'handicap hard legion +9.5': {'1.53': 'ggbet'},
-        'handicap hard legion -2.5': {'3.39': 'ggbet'},
-        'handicap hard legion -5.5': {'4.23': 'ggbet'},
-        'handicap sprout +2.5': {'1.29': 'ggbet'},
-        'handicap sprout +5.5': {'1.2': 'ggbet'},
-        'handicap sprout -0.5': {'1.39': 'ggbet'},
-        'handicap sprout -11.5': {'3.09': 'ggbet'},
-        'handicap sprout -3.5': {'1.51': 'ggbet'},
-        'handicap sprout -5.5': {'1.68': 'ggbet'},
-        'handicap sprout -7.5': {'1.96': 'ggbet'},
-        'handicap sprout -9.5': {'2.4': 'ggbet'},
-        'hard legion handicap +1.5 maps': {'1.61': 'ggbet'},
-        'hard legion handicap -1.5 maps': {'5.4': 'ggbet'},
-        'hard legion total over 20.5': {'1.22': 'ggbet'},
-        'hard legion total over 24.5': {'1.41': 'ggbet'},
-        'hard legion total over 30.5': {'1.66': 'ggbet'},
-        'hard legion total over 32.5': {'2.17': 'ggbet'},
-        'hard legion total over 36.5': {'2.81': 'ggbet'},
-        'hard legion total over 40.5': {'4.23': 'ggbet'},
-        'hard legion total under 20.5': {'3.99': 'ggbet'},
-        'hard legion total under 24.5': {'2.77': 'ggbet'},
-        'hard legion total under 30.5': {'2.14': 'ggbet'},
-        'hard legion total under 32.5': {'1.64': 'ggbet'},
-        'hard legion total under 36.5': {'1.4': 'ggbet'},
-        'hard legion total under 40.5': {'1.2': 'ggbet'},
-        'hard legion will win': {'2.85': 'ggbet'},
-        'odd/even maps even': {'1.68': 'ggbet'},
-        'odd/even maps odd': {'2.11': 'ggbet'},
-        'sprout handicap +1.5 maps': {'1.13': 'ggbet'},
-        'sprout handicap -1.5 maps': {'2.23': 'ggbet'},
-        'sprout total over 32.5': {'1.88': 'ggbet'},
-        'sprout total over 37.5': {'2.38': 'ggbet'},
-        'sprout total over 41.5': {'3.39': 'ggbet'},
-        'sprout total under 32.5': {'1.86': 'ggbet'},
-        'sprout total under 37.5': {'1.54': 'ggbet'},
-        'sprout total under 41.5': {'1.29': 'ggbet'},
-        'sprout will win': {'1.4': 'ggbet'},
-        'total maps over 2.5': {'2.11': 'ggbet'},
-        'total maps under 2.5': {'1.68': 'ggbet'},
-        'total over 51.5': {'1.23': 'ggbet'},
-        'total over 53.5': {'1.36': 'ggbet'},
-        'total over 55.5': {'1.51': 'ggbet'},
-        'total over 57.5': {'1.66': 'ggbet'},
-        'total over 60.5': {'1.82': 'ggbet'},
-        'total over 66.5': {'2.02': 'ggbet'},
-        'total over 72.5': {'2.31': 'ggbet'},
-        'total over 75.5': {'2.63': 'ggbet'},
-        'total over 78.5': {'3.2': 'ggbet'},
-        'total over 81.5': {'4.23': 'ggbet'},
-        'total under 51.5': {'3.89': 'ggbet'},
-        'total under 53.5': {'2.99': 'ggbet'},
-        'total under 55.5': {'2.45': 'ggbet'},
-        'total under 57.5': {'2.14': 'ggbet'},
-        'total under 60.5': {'1.92': 'ggbet'},
-        'total under 66.5': {'1.74': 'ggbet'},
-        'total under 72.5': {'1.57': 'ggbet'},
-        'total under 75.5': {'1.45': 'ggbet'},
-        'total under 78.5': {'1.32': 'ggbet'},
-        'total under 81.5': {'1.2': 'ggbet'}
-    },
+        '1-st map: global will win': {
+            '1.1': 'ggbet(https://gg.bet/en/betting/match/global-vs-knockturnal-esports-03-07)'
+            },
+        '1-st map: knockturnal will win': {
+            '6.21': 'ggbet(https://gg.bet/en/betting/match/global-vs-knockturnal-esports-03-07)'
+            },
+        'global will win': {'1.1': 'ggbet(https://gg.bet/en/betting/match/global-vs-knockturnal-esports-03-07)'},
+        'knockturnal will win': {'6.41': 'ggbet(https://gg.bet/en/betting/match/global-vs-knockturnal-esports-03-07)'}
+        },
+    'gobananas - royalty': {
+        '1-st map: gobananas will win': {'1.5': 'ggbet(https://gg.bet/en/betting/match/royalty-vs-gobananas-03-07)'},
+        '1-st map: royalty will win': {'2.48': 'ggbet(https://gg.bet/en/betting/match/royalty-vs-gobananas-03-07)'},
+        'gobananas will win': {'1.51': 'ggbet(https://gg.bet/en/betting/match/royalty-vs-gobananas-03-07)'},
+        'royalty will win': {'2.48': 'ggbet(https://gg.bet/en/betting/match/royalty-vs-gobananas-03-07)'}
+        },
+    'grazur - lethal divide': {
+        '1-st map: grazur will win': {
+            '2.31': 'ggbet(https://gg.bet/en/betting/match/grazur-esports-vs-lethal-divide-04-07)'
+            },
+        '1-st map: lethal divide will win': {
+            '1.57': 'ggbet(https://gg.bet/en/betting/match/grazur-esports-vs-lethal-divide-04-07)'
+            },
+        '2-nd map: grazur will win': {
+            '2.33': 'ggbet(https://gg.bet/en/betting/match/grazur-esports-vs-lethal-divide-04-07)'
+            },
+        '2-nd map: lethal divide will win': {
+            '1.56': 'ggbet(https://gg.bet/en/betting/match/grazur-esports-vs-lethal-divide-04-07)'
+            },
+        'grazur will win': {'2.51': 'ggbet(https://gg.bet/en/betting/match/grazur-esports-vs-lethal-divide-04-07)'},
+        'lethal divide will win': {
+            '1.5': 'ggbet(https://gg.bet/en/betting/match/grazur-esports-vs-lethal-divide-04-07)'
+            }
+        },
+    'hard legion - havu': {
+        '1-st map: correct score 10t-e': {
+            '13.16': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 11t-e': {
+            '12.49': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 12t-e': {
+            '12.05': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 13t-e': {
+            '11.77': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 14t-e': {
+            '11.64': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 16t-e': {
+            '9.97': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 1t-e': {
+            '100': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 2t-e': {
+            '100': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 3t-e': {
+            '55.61': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 4t-e': {
+            '35.71': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 5t-e': {
+            '26.04': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 6t-e': {
+            '20.74': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 7t-e': {
+            '17.56': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 8t-e': {
+            '15.51': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: correct score 9t-e': {
+            '14.12': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: ct total  over 11.5': {
+            '1.46': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: ct total  over 13.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: ct total  under 11.5': {
+            '2.6': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: ct total  under 13.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: handicap hard legion +1.5': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: handicap hard legion +2.5': {
+            '1.78': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: handicap hard legion +3.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: handicap hard legion +4.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: handicap hard legion -1.5': {
+            '2.48': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: handicap havu +1.5': {
+            '1.5': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: handicap havu -1.5': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: handicap havu -2.5': {
+            '1.97': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: handicap havu -3.5': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: handicap havu -4.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion total over 11.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion total over 12.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion total over 13.5': {
+            '1.78': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion total over 14.5': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion total over 15.5': {
+            '2.48': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion total under 11.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion total under 12.5': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion total under 13.5': {
+            '1.97': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion total under 14.5': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion total under 15.5': {
+            '1.5': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion will win': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: hard legion will win round 1': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: havu total over 14.5': {
+            '1.5': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: havu total over 15.5': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: havu total under 14.5': {
+            '2.48': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: havu total under 15.5': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: havu will win': {'1.61': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        '1-st map: havu will win round 1': {
+            '1.83': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: terrorist total over 11.5': {
+            '1.46': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: terrorist total over 13.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: terrorist total under 11.5': {
+            '2.6': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: terrorist total under 13.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: total over 25.5': {
+            '1.54': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: total over 26.5': {
+            '1.81': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: total over 27.5': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: total under 25.5': {
+            '2.38': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: total under 26.5': {
+            '1.93': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '1-st map: total under 27.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 10t-e': {
+            '13.2': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 11t-e': {
+            '12.54': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 12t-e': {
+            '12.11': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 13t-e': {
+            '11.84': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 14t-e': {
+            '11.71': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 16t-e': {
+            '10.02': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 1t-e': {
+            '100': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 2t-e': {
+            '100': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 3t-e': {
+            '54.95': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 4t-e': {
+            '35.4': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 5t-e': {
+            '25.88': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 6t-e': {
+            '20.66': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 7t-e': {
+            '17.53': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 8t-e': {
+            '15.51': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: correct score 9t-e': {
+            '14.14': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: ct total  over 11.5': {
+            '1.46': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: ct total  over 13.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: ct total  under 11.5': {
+            '2.6': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: ct total  under 13.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: handicap hard legion +1.5': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: handicap hard legion +2.5': {
+            '1.79': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: handicap hard legion +3.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: handicap hard legion +4.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: handicap hard legion -1.5': {
+            '2.48': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: handicap havu +1.5': {
+            '1.5': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: handicap havu -1.5': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: handicap havu -2.5': {
+            '1.96': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: handicap havu -3.5': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: handicap havu -4.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion total over 11.5': {
+            '1.48': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion total over 12.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion total over 13.5': {
+            '1.79': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion total over 14.5': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion total over 15.5': {
+            '2.48': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion total under 11.5': {
+            '2.54': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion total under 12.5': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion total under 13.5': {
+            '1.96': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion total under 14.5': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion total under 15.5': {
+            '1.5': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion will win': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: hard legion will win round 1': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: havu total over 14.5': {
+            '1.5': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: havu total over 15.5': {
+            '1.76': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: havu total under 14.5': {
+            '2.48': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: havu total under 15.5': {
+            '1.99': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: havu will win': {'1.62': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        '2-nd map: havu will win round 1': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: terrorist total over 11.5': {
+            '1.46': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: terrorist total over 13.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: terrorist total under 11.5': {
+            '2.6': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: terrorist total under 13.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: total over 25.5': {
+            '1.55': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: total over 26.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: total over 27.5': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: total under 25.5': {
+            '2.35': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: total under 26.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        '2-nd map: total under 27.5': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        'correct score 0-2': {'2.47': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'correct score 1-2': {'3.58': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'correct score 2-0': {'4.25': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'correct score 2-1': {'4.52': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'handicap havu -8.5': {'2.45': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'hard legion handicap +1.5 maps': {
+            '1.51': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        'hard legion handicap -1.5 maps': {
+            '4.23': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        'hard legion total over 27.5': {
+            '1.45': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        'hard legion total over 32.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        'hard legion total under 27.5': {
+            '2.63': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        'hard legion total under 32.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'
+            },
+        'hard legion will win': {'2.38': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'havu handicap +1.5 maps': {'1.2': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'havu handicap -1.5 maps': {'2.45': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'havu total over 32.5': {'1.97': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'havu total over 37.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'havu total under 32.5': {'1.78': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'havu total under 37.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'havu will win': {'1.55': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'odd/even maps even': {'1.66': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'odd/even maps odd': {'2.14': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total maps over 2.5': {'2.14': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total maps under 2.5': {'1.66': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total over 54.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total over 56.5': {'1.61': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total over 58.5': {'1.75': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total over 63.5': {'1.94': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total over 69.5': {'2.17': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total over 73.5': {'2.48': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total under 54.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total under 56.5': {'2.23': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total under 58.5': {'2.01': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total under 63.5': {'1.8': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total under 69.5': {'1.64': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'},
+        'total under 73.5': {'1.5': 'ggbet(https://gg.bet/en/betting/match/havu-vs-hard-legion-esports-03-07)'}
+        },
     'hellraisers - syman': {
-        '1-st map: correct score 10t-e': {'12.25': 'ggbet'},
-        '1-st map: correct score 11t-e': {'11.74': 'ggbet'},
-        '1-st map: correct score 12t-e': {'11.42': 'ggbet'},
-        '1-st map: correct score 13t-e': {'10.38': 'ggbet'},
-        '1-st map: correct score 14t-e': {'10.36': 'ggbet'},
-        '1-st map: correct score 16t-e': {'10.06': 'ggbet'},
-        '1-st map: correct score 1t-e': {'100': 'ggbet'},
-        '1-st map: correct score 2t-e': {'83.7': 'ggbet'},
-        '1-st map: correct score 3t-e': {'45.85': 'ggbet'},
-        '1-st map: correct score 4t-e': {'30.22': 'ggbet'},
-        '1-st map: correct score 5t-e': {'22.59': 'ggbet'},
-        '1-st map: correct score 6t-e': {'18.37': 'ggbet'},
-        '1-st map: correct score 7t-e': {'15.8': 'ggbet'},
-        '1-st map: correct score 8t-e': {'14.14': 'ggbet'},
-        '1-st map: correct score 9t-e': {'13.02': 'ggbet'},
-        '1-st map: ct total  over 10.5': {'1.22': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.45': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.14': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.62': 'ggbet'},
-        '1-st map: ct total  under 10.5': {'3.99': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.63': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.66': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.26': 'ggbet'},
-        '1-st map: handicap hellraisers +1.5': {'1.81': 'ggbet'},
-        '1-st map: handicap hellraisers +2.5': {'1.65': 'ggbet'},
-        '1-st map: handicap hellraisers +3.5': {'1.51': 'ggbet'},
-        '1-st map: handicap hellraisers +4.5': {'1.39': 'ggbet'},
-        '1-st map: handicap hellraisers +5.5': {'1.3': 'ggbet'},
-        '1-st map: handicap hellraisers +6.5': {'1.21': 'ggbet'},
-        '1-st map: handicap hellraisers -1.5': {'2.23': 'ggbet'},
-        '1-st map: handicap hellraisers -2.5': {'2.51': 'ggbet'},
-        '1-st map: handicap hellraisers -3.5': {'2.9': 'ggbet'},
-        '1-st map: handicap hellraisers -4.5': {'3.32': 'ggbet'},
-        '1-st map: handicap hellraisers -5.5': {'3.99': 'ggbet'},
-        '1-st map: handicap syman +1.5': {'1.61': 'ggbet'},
-        '1-st map: handicap syman +2.5': {'1.49': 'ggbet'},
-        '1-st map: handicap syman +3.5': {'1.38': 'ggbet'},
-        '1-st map: handicap syman +4.5': {'1.3': 'ggbet'},
-        '1-st map: handicap syman +5.5': {'1.22': 'ggbet'},
-        '1-st map: handicap syman -1.5': {'1.93': 'ggbet'},
-        '1-st map: handicap syman -2.5': {'2.16': 'ggbet'},
-        '1-st map: handicap syman -3.5': {'2.45': 'ggbet'},
-        '1-st map: handicap syman -4.5': {'2.85': 'ggbet'},
-        '1-st map: handicap syman -5.5': {'3.32': 'ggbet'},
-        '1-st map: handicap syman -6.5': {'4.11': 'ggbet'},
-        '1-st map: hellraisers total over 10.5': {'1.3': 'ggbet'},
-        '1-st map: hellraisers total over 11.5': {'1.39': 'ggbet'},
-        '1-st map: hellraisers total over 12.5': {'1.51': 'ggbet'},
-        '1-st map: hellraisers total over 13.5': {'1.65': 'ggbet'},
-        '1-st map: hellraisers total over 14.5': {'1.81': 'ggbet'},
-        '1-st map: hellraisers total over 15.5': {'2.23': 'ggbet'},
-        '1-st map: hellraisers total over 9.5': {'1.21': 'ggbet'},
-        '1-st map: hellraisers total under 10.5': {'3.32': 'ggbet'},
-        '1-st map: hellraisers total under 11.5': {'2.85': 'ggbet'},
-        '1-st map: hellraisers total under 12.5': {'2.45': 'ggbet'},
-        '1-st map: hellraisers total under 13.5': {'2.16': 'ggbet'},
-        '1-st map: hellraisers total under 14.5': {'1.93': 'ggbet'},
-        '1-st map: hellraisers total under 15.5': {'1.61': 'ggbet'},
-        '1-st map: hellraisers total under 9.5': {'4.11': 'ggbet'},
-        '1-st map: hellraisers will win': {'2.01': 'ggbet'},
-        '1-st map: hellraisers will win round 1': {'1.89': 'ggbet'},
-        '1-st map: syman total over 10.5': {'1.22': 'ggbet'},
-        '1-st map: syman total over 12.5': {'1.38': 'ggbet'},
-        '1-st map: syman total over 13.5': {'1.49': 'ggbet'},
-        '1-st map: syman total over 14.5': {'1.61': 'ggbet'},
-        '1-st map: syman total over 15.5': {'1.93': 'ggbet'},
-        '1-st map: syman total under 10.5': {'3.99': 'ggbet'},
-        '1-st map: syman total under 12.5': {'2.9': 'ggbet'},
-        '1-st map: syman total under 13.5': {'2.51': 'ggbet'},
-        '1-st map: syman total under 14.5': {'2.23': 'ggbet'},
-        '1-st map: syman total under 15.5': {'1.81': 'ggbet'},
-        '1-st map: syman will win': {'1.75': 'ggbet'},
-        '1-st map: syman will win round 1': {'1.85': 'ggbet'},
-        '1-st map: terrorist total over 10.5': {'1.22': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.45': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.14': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.62': 'ggbet'},
-        '1-st map: terrorist total under 10.5': {'3.99': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.63': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.66': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.26': 'ggbet'},
-        '1-st map: total over 23.5': {'1.22': 'ggbet'},
-        '1-st map: total over 24.5': {'1.35': 'ggbet'},
-        '1-st map: total over 25.5': {'1.53': 'ggbet'},
-        '1-st map: total over 26.5': {'1.79': 'ggbet'},
-        '1-st map: total over 27.5': {'2.19': 'ggbet'},
-        '1-st map: total over 28.5': {'2.85': 'ggbet'},
-        '1-st map: total over 29.5': {'4.11': 'ggbet'},
-        '1-st map: total under 23.5': {'3.99': 'ggbet'},
-        '1-st map: total under 24.5': {'3.04': 'ggbet'},
-        '1-st map: total under 25.5': {'2.4': 'ggbet'},
-        '1-st map: total under 26.5': {'1.96': 'ggbet'},
-        '1-st map: total under 27.5': {'1.63': 'ggbet'},
-        '1-st map: total under 28.5': {'1.39': 'ggbet'},
-        '1-st map: total under 29.5': {'1.21': 'ggbet'},
-        'hellraisers will win': {'2.01': 'ggbet'},
-        'syman will win': {'1.76': 'ggbet'}
-    },
-    'hreds - sj': {
-        '1-st map: hreds will win': {'2.6': 'ggbet'},
-        '1-st map: sj will win': {'1.46': 'ggbet'},
-        '2-nd map: hreds will win': {'2.6': 'ggbet'},
-        '2-nd map: sj will win': {'1.46': 'ggbet'},
-        'hreds will win': {'3.03': 'ggbet'},
-        'sj will win': {'1.36': 'ggbet'}
-    },
-    'hyper - rbg': {
-        '1-st map: hyper will win': {'2.06': 'ggbet'},
-        '1-st map: rbg will win': {'1.71': 'ggbet'},
-        '2-nd map: hyper will win': {'2.08': 'ggbet'},
-        '2-nd map: rbg will win': {'1.7': 'ggbet'},
-        'hyper will win': {'2.13': 'ggbet'},
-        'rbg will win': {'1.68': 'ggbet'}
-    },
-    'invictus gaming - mazaalai': {
-        '1-st map: invictus gaming will win': {'1.3': 'ggbet'},
-        '1-st map: mazaalai will win': {'3.32': 'ggbet'},
-        '2-nd map: invictus gaming will win': {'1.29': 'ggbet'},
-        '2-nd map: mazaalai will win': {'3.39': 'ggbet'},
-        'invictus gaming will win': {'1.2': 'ggbet'},
-        'mazaalai will win': {'4.32': 'ggbet'}
-    },
-    'invictus gaming - psg.lgd': {
-        '2-nd map: 20th kill invictus gaming': {'1.92': 'ggbet'},
-        '2-nd map: 20th kill psg.lgd': {'1.82': 'ggbet'},
-        '2-nd map: invictus gaming will win': {'2.14': 'ggbet'},
-        '2-nd map: psg.lgd will win': {'1.66': 'ggbet'},
-        '2-nd map: total kills odd/even even': {'1.87': 'ggbet'},
-        '2-nd map: total kills odd/even odd': {'1.87': 'ggbet'},
-        'correct score 0-2': {'1.66': 'ggbet'},
-        'correct score 1-2': {'3.91': 'ggbet'},
-        'correct score 2-1': {'3.99': 'ggbet'},
-        'invictus gaming handicap +1.5 maps': {'2.14': 'ggbet'},
-        'invictus gaming will win': {'3.99': 'ggbet'},
-        'odd/even maps even': {'1.66': 'ggbet'},
-        'odd/even maps odd': {'2.14': 'ggbet'},
-        'psg.lgd handicap -1.5 maps': {'1.66': 'ggbet'},
-        'psg.lgd will win': {'1.22': 'ggbet'},
-        'total maps over 2.5': {'2.14': 'ggbet'},
-        'total maps under 2.5': {'1.66': 'ggbet'}
-    },
+        '1-st map: correct score 10t-e': {'12.25': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 11t-e': {'11.74': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 12t-e': {'11.42': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 13t-e': {'10.38': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 14t-e': {'10.36': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 16t-e': {'10.06': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 1t-e': {'100': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 2t-e': {'83.7': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 3t-e': {'45.85': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 4t-e': {'30.22': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 5t-e': {'22.59': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 6t-e': {'18.37': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 7t-e': {'15.8': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 8t-e': {'14.14': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: correct score 9t-e': {'13.02': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: ct total  over 10.5': {'1.22': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: ct total  over 11.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: ct total  over 13.5': {'2.14': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: ct total  over 15.5': {'3.62': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: ct total  under 10.5': {'3.99': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: ct total  under 11.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: ct total  under 13.5': {'1.66': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: ct total  under 15.5': {'1.26': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: handicap hellraisers +1.5': {
+            '1.81': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: handicap hellraisers +2.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: handicap hellraisers +3.5': {
+            '1.51': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: handicap hellraisers +4.5': {
+            '1.39': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: handicap hellraisers +5.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: handicap hellraisers +6.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: handicap hellraisers -1.5': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: handicap hellraisers -2.5': {
+            '2.51': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: handicap hellraisers -3.5': {
+            '2.9': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: handicap hellraisers -4.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: handicap syman +1.5': {'1.61': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: handicap syman +2.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: handicap syman +3.5': {'1.38': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: handicap syman +4.5': {'1.3': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: handicap syman -1.5': {'1.93': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: handicap syman -2.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: handicap syman -3.5': {'2.45': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: handicap syman -4.5': {'2.85': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: handicap syman -5.5': {'3.32': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: handicap syman -6.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: hellraisers total over 10.5': {
+            '1.3': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total over 11.5': {
+            '1.39': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total over 12.5': {
+            '1.51': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total over 13.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total over 14.5': {
+            '1.81': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total over 15.5': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total over 9.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total under 10.5': {
+            '3.32': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total under 11.5': {
+            '2.85': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total under 12.5': {
+            '2.45': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total under 13.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total under 14.5': {
+            '1.93': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total under 15.5': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers total under 9.5': {
+            '4.11': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: hellraisers will win': {'2.01': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: hellraisers will win round 1': {
+            '1.89': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: syman total over 10.5': {
+            '1.22': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: syman total over 12.5': {
+            '1.38': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: syman total over 13.5': {
+            '1.49': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: syman total over 14.5': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: syman total over 15.5': {
+            '1.93': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: syman total under 10.5': {
+            '3.99': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: syman total under 12.5': {
+            '2.9': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: syman total under 13.5': {
+            '2.51': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: syman total under 14.5': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: syman total under 15.5': {
+            '1.81': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: syman will win': {'1.75': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: syman will win round 1': {
+            '1.85': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: terrorist total over 10.5': {
+            '1.22': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: terrorist total over 11.5': {
+            '1.45': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: terrorist total over 13.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: terrorist total over 15.5': {
+            '3.62': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: terrorist total under 10.5': {
+            '3.99': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: terrorist total under 11.5': {
+            '2.63': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: terrorist total under 13.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: terrorist total under 15.5': {
+            '1.26': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'
+            },
+        '1-st map: total over 23.5': {'1.22': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total over 24.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total over 25.5': {'1.53': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total over 26.5': {'1.79': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total over 27.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total over 28.5': {'2.85': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total over 29.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total under 23.5': {'3.99': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total under 24.5': {'3.04': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total under 25.5': {'2.4': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total under 26.5': {'1.96': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total under 27.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total under 28.5': {'1.39': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        '1-st map: total under 29.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        'hellraisers will win': {'2.01': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'},
+        'syman will win': {'1.76': 'ggbet(https://gg.bet/en/betting/match/syman-vs-hellraisers-03-07)'}
+        },
+    'heroic - og': {
+        '1-st map: correct score 1-16': {'100': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 10-16': {'12.12': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 11-16': {'11.49': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 12-16': {'10.25': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 13-16': {'10.09': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 14-16': {'10.03': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-1': {'100': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-10': {'10.3': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-11': {'9.98': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-12': {'9.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-13': {'9.73': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-14': {'9.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-2': {'85.09': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-3': {'44.84': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-4': {'28.81': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-5': {'21.2': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-6': {'17.07': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-7': {'14.59': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-8': {'12.98': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 16-9': {'11.89': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 2-16': {'100': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 3-16': {'54.38': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 4-16': {'34.22': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 5-16': {'24.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 6-16': {'19.44': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 7-16': {'16.36': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 8-16': {'14.38': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: correct score 9-16': {'13.04': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: ct total  over 10.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: ct total  over 11.5': {'1.43': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: ct total  over 13.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: ct total  over 15.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: ct total  under 10.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: ct total  under 11.5': {'2.7': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: ct total  under 13.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: ct total  under 15.5': {'1.27': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: first half correct score 1-14': {
+            '96.31': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1-st map: first half correct score 10-5': {
+            '6.91': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1-st map: first half correct score 11-4': {
+            '9.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1-st map: first half correct score 12-3': {
+            '14.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1-st map: first half correct score 13-2': {
+            '26.18': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1-st map: first half correct score 14-1': {
+            '75.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1-st map: first half correct score 2-13': {
+            '31.22': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1-st map: first half correct score 3-12': {
+            '16.02': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1-st map: first half correct score 4-11': {
+            '9.84': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1-st map: first half correct score 5-10': {
+            '7.43': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1-st map: first half correct score 6-9': {'5.92': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: first half correct score 7-8': {'5.2': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: first half correct score 8-7': {'5.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: first half correct score 9-6': {'5.64': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap heroic +1.5': {'1.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap heroic +2.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap heroic +3.5': {'1.37': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap heroic +4.5': {'1.28': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap heroic +5.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap heroic -1.5': {'1.97': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap heroic -2.5': {'2.23': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap heroic -3.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap heroic -4.5': {'2.99': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap heroic -5.5': {'3.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap og +1.5': {'1.78': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap og +2.5': {'1.61': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap og +3.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap og +4.5': {'1.36': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap og +5.5': {'1.26': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap og -1.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap og -2.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap og -3.5': {'2.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap og -4.5': {'3.46': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: handicap og -5.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic total over 10.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic total over 12.5': {'1.37': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic total over 13.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic total over 14.5': {'1.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic total over 15.5': {'1.97': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic total under 10.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic total under 12.5': {'2.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic total under 13.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic total under 14.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic total under 15.5': {'1.78': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic will win': {'1.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: heroic will win round 1': {'1.86': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total over 10.5': {'1.26': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total over 11.5': {'1.36': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total over 12.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total over 13.5': {'1.61': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total over 14.5': {'1.78': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total over 15.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total under 10.5': {'3.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total under 11.5': {'2.99': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total under 12.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total under 13.5': {'2.23': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total under 14.5': {'1.97': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og total under 15.5': {'1.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og will win': {'1.98': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: og will win round 1': {'1.88': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: race to  rounds heroic 12': {'1.78': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: race to  rounds heroic 3': {'1.83': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: race to  rounds heroic 6': {'1.81': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: race to  rounds heroic 9': {'1.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: race to  rounds og 12': {'1.97': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: race to  rounds og 3': {'1.91': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: race to  rounds og 6': {'1.93': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: race to  rounds og 9': {'1.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: terrorist total over 10.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: terrorist total over 11.5': {'1.43': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: terrorist total over 13.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: terrorist total over 15.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: terrorist total under 10.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: terrorist total under 11.5': {'2.7': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: terrorist total under 13.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: terrorist total under 15.5': {'1.27': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total over 24.5': {'1.3': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total over 25.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total over 26.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total over 27.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total over 28.5': {'2.66': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total over 29.5': {'3.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total under 24.5': {'3.32': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total under 25.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total under 26.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total under 27.5': {'1.71': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total under 28.5': {'1.44': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: total under 29.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: will there be overtime no': {'1.09': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1-st map: will there be overtime yes': {'6.55': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map first half - handicap heroic +1.5': {
+            '1.41': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - handicap heroic -0.5': {
+            '1.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - handicap heroic -2.5': {
+            '2.51': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - handicap heroic -4.5': {
+            '3.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - handicap og +0.5': {'1.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map first half - handicap og +2.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map first half - handicap og +4.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map first half - handicap og -1.5': {'2.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map first half - heroic total over 6.5': {
+            '1.41': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - heroic total over 7.5': {
+            '1.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - heroic total over 8.5': {
+            '2.51': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - heroic total over 9.5': {
+            '3.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - heroic total under 6.5': {
+            '2.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - heroic total under 7.5': {
+            '1.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - heroic total under 8.5': {
+            '1.49': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - heroic total under 9.5': {
+            '1.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - heroic will win': {'1.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map first half - og total over 5.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map first half - og total over 6.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map first half - og total over 7.5': {'1.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map first half - og total over 8.5': {'2.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map first half - og total under 5.5': {
+            '3.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - og total under 6.5': {
+            '2.51': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - og total under 7.5': {'1.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map first half - og total under 8.5': {
+            '1.41': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map first half - og will win': {'1.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map second half - 1x2 draw': {'9.44': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map second half - 1x2 heroic': {'1.91': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map second half - 1x2 og': {'2.06': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map second half - handicap heroic +1.5': {
+            '1.47': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map second half - handicap heroic +3.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map second half - handicap heroic -0.5': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map second half - handicap heroic -1.5': {
+            '2.35': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map second half - handicap heroic -3.5': {
+            '3.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '1st map second half - handicap og +0.5': {'1.83': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map second half - handicap og +1.5': {'1.55': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map second half - handicap og +3.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map second half - handicap og -1.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '1st map second half - handicap og -3.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 1-16': {'100': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 10-16': {'12.13': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 11-16': {'11.5': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 12-16': {'10.25': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 13-16': {'10.1': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 14-16': {'10.04': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-1': {'100': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-10': {'10.31': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-11': {'9.99': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-12': {'9.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-13': {'9.73': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-14': {'9.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-2': {'84.92': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-3': {'44.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-4': {'28.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-5': {'21.18': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-6': {'17.06': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-7': {'14.59': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-8': {'12.98': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 16-9': {'11.9': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 2-16': {'100': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 3-16': {'54.35': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 4-16': {'34.22': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 5-16': {'24.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 6-16': {'19.45': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 7-16': {'16.37': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 8-16': {'14.39': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: correct score 9-16': {'13.05': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: ct total  over 10.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: ct total  over 11.5': {'1.43': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: ct total  over 13.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: ct total  over 15.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: ct total  under 10.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: ct total  under 11.5': {'2.7': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: ct total  under 13.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: ct total  under 15.5': {'1.27': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: first half correct score 1-14': {
+            '96.3': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2-nd map: first half correct score 10-5': {
+            '6.91': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2-nd map: first half correct score 11-4': {
+            '9.12': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2-nd map: first half correct score 12-3': {
+            '14.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2-nd map: first half correct score 13-2': {
+            '26.16': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2-nd map: first half correct score 14-1': {
+            '75.52': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2-nd map: first half correct score 2-13': {
+            '31.23': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2-nd map: first half correct score 3-12': {
+            '16.03': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2-nd map: first half correct score 4-11': {
+            '9.84': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2-nd map: first half correct score 5-10': {
+            '7.44': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2-nd map: first half correct score 6-9': {'5.93': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: first half correct score 7-8': {'5.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: first half correct score 8-7': {'5.12': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: first half correct score 9-6': {'5.64': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap heroic +1.5': {'1.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap heroic +2.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap heroic +3.5': {'1.38': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap heroic +4.5': {'1.28': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap heroic +5.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap heroic -1.5': {'1.97': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap heroic -2.5': {'2.23': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap heroic -3.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap heroic -4.5': {'2.99': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap heroic -5.5': {'3.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap og +1.5': {'1.78': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap og +2.5': {'1.61': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap og +3.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap og +4.5': {'1.36': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap og +5.5': {'1.26': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap og -1.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap og -2.5': {'2.51': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap og -3.5': {'2.9': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap og -4.5': {'3.46': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: handicap og -5.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic total over 10.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic total over 12.5': {'1.37': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic total over 13.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic total over 14.5': {'1.61': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic total over 15.5': {'1.97': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic total under 10.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic total under 12.5': {'2.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic total under 13.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic total under 14.5': {'2.23': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic total under 15.5': {'1.78': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic will win': {'1.78': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: heroic will win round 1': {'1.86': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total over 10.5': {'1.26': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total over 11.5': {'1.36': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total over 12.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total over 13.5': {'1.61': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total over 14.5': {'1.78': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total over 15.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total under 10.5': {'3.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total under 11.5': {'2.99': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total under 12.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total under 13.5': {'2.23': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total under 14.5': {'1.97': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og total under 15.5': {'1.62': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og will win': {'1.97': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: og will win round 1': {'1.88': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: race to  rounds heroic 12': {'1.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: race to  rounds heroic 3': {'1.83': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: race to  rounds heroic 6': {'1.81': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: race to  rounds heroic 9': {'1.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: race to  rounds og 12': {'1.96': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: race to  rounds og 3': {'1.91': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: race to  rounds og 6': {'1.93': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: race to  rounds og 9': {'1.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: terrorist total over 10.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: terrorist total over 11.5': {'1.43': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: terrorist total over 13.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: terrorist total over 15.5': {'3.54': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: terrorist total under 10.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: terrorist total under 11.5': {'2.7': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: terrorist total under 13.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: terrorist total under 15.5': {'1.27': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total over 24.5': {'1.3': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total over 25.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total over 26.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total over 27.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total over 28.5': {'2.66': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total over 29.5': {'3.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total under 24.5': {'3.32': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total under 25.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total under 26.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total under 27.5': {'1.71': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total under 28.5': {'1.44': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: total under 29.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: will there be overtime no': {'1.09': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2-nd map: will there be overtime yes': {'6.55': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map first half - handicap heroic +1.5': {
+            '1.41': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - handicap heroic -0.5': {
+            '1.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - handicap heroic -2.5': {
+            '2.51': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - handicap heroic -4.5': {
+            '3.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - handicap og +0.5': {'1.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map first half - handicap og +2.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map first half - handicap og +4.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map first half - handicap og -1.5': {'2.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map first half - heroic total over 6.5': {
+            '1.41': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - heroic total over 7.5': {
+            '1.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - heroic total over 8.5': {
+            '2.51': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - heroic total over 9.5': {
+            '3.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - heroic total under 6.5': {
+            '2.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - heroic total under 7.5': {
+            '1.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - heroic total under 8.5': {
+            '1.49': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - heroic total under 9.5': {
+            '1.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - heroic will win': {'1.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map first half - og total over 5.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map first half - og total over 6.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map first half - og total over 7.5': {'1.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map first half - og total over 8.5': {'2.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map first half - og total under 5.5': {
+            '3.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - og total under 6.5': {
+            '2.51': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - og total under 7.5': {'1.8': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map first half - og total under 8.5': {
+            '1.41': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map first half - og will win': {'1.94': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map second half - 1x2 draw': {'9.45': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map second half - 1x2 heroic': {'1.91': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map second half - 1x2 og': {'2.07': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map second half - handicap heroic +1.5': {
+            '1.47': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map second half - handicap heroic +3.5': {
+            '1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map second half - handicap heroic -0.5': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map second half - handicap heroic -1.5': {
+            '2.35': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map second half - handicap heroic -3.5': {
+            '3.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'
+            },
+        '2nd map second half - handicap og +0.5': {'1.83': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map second half - handicap og +1.5': {'1.55': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map second half - handicap og +3.5': {'1.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map second half - handicap og -1.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        '2nd map second half - handicap og -3.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'correct score 0-2': {'3.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'correct score 1-2': {'3.83': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'correct score 2-0': {'3.07': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'correct score 2-1': {'3.47': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap heroic +0.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap heroic +3.5': {'1.54': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap heroic +5.5': {'1.41': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap heroic +7.5': {'1.29': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap heroic -10.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap heroic -2.5': {'1.91': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap heroic -4.5': {'2.12': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap heroic -6.5': {'2.51': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap heroic -8.5': {'3.14': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap og +10.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap og +2.5': {'1.83': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap og +4.5': {'1.67': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap og +6.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap og +8.5': {'1.33': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap og -0.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap og -3.5': {'2.38': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap og -5.5': {'2.77': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'handicap og -7.5': {'3.39': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'heroic handicap +1.5 maps': {'1.24': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'heroic handicap -1.5 maps': {'3.09': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'heroic total over 27.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'heroic total over 32.5': {'1.82': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'heroic total over 36.5': {'2.25': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'heroic total over 40.5': {'3.09': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'heroic total under 27.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'heroic total under 32.5': {'1.92': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'heroic total under 36.5': {'1.6': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'heroic total under 40.5': {'1.34': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'heroic will win': {'1.74': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'odd/even maps odd': {'1.93': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'og handicap +1.5 maps': {'1.34': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'og handicap -1.5 maps': {'3.79': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'og total over 24.5': {'1.22': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'og total over 32.5': {'1.88': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'og total over 36.5': {'2.33': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'og total over 40.5': {'3.32': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'og total under 24.5': {'3.99': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'og total under 32.5': {'1.86': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'og total under 36.5': {'1.56': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'og total under 40.5': {'1.3': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'og will win': {'2.04': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total maps over 2.5': {'1.93': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total maps under 2.5': {'1.81': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total over 52.5': {'1.22': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total over 54.5': {'1.34': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total over 56.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total over 58.5': {'1.59': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total over 62.5': {'1.73': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total over 68.5': {'1.9': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total over 73.5': {'2.17': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total over 76.5': {'2.51': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total over 78.5': {'2.85': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total over 80.5': {'3.39': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total over 82.5': {'4.11': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total under 52.5': {'3.99': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total under 54.5': {'3.09': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total under 56.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total under 58.5': {'2.27': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total under 62.5': {'2.03': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total under 68.5': {'1.84': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total under 73.5': {'1.64': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total under 76.5': {'1.49': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total under 78.5': {'1.39': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total under 80.5': {'1.29': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'},
+        'total under 82.5': {'1.21': 'ggbet(https://gg.bet/en/betting/match/heroic-vs-og-03-07)'}
+        },
+    'invictus gaming - lucid dream': {
+        '1-st map: handicap invictus gaming -3.5': {
+            '1.71': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: handicap invictus gaming -4.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: handicap invictus gaming -5.5': {
+            '2.19': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: handicap lucid dream +3.5': {
+            '2.06': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: handicap lucid dream +4.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: handicap lucid dream +5.5': {
+            '1.63': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: invictus gaming will win round 1': {
+            '1.78': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: lucid dream will win': {
+            '3.2': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: lucid dream will win round 1': {
+            '1.97': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: total over 25.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: total over 26.5': {
+            '1.96': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: total under 25.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '1-st map: total under 26.5': {
+            '1.79': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: handicap invictus gaming -3.5': {
+            '1.69': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: handicap invictus gaming -4.5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: handicap invictus gaming -5.5': {
+            '2.17': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: handicap lucid dream +3.5': {
+            '2.09': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: handicap lucid dream +4.5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: handicap lucid dream +5.5': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: invictus gaming will win': {
+            '1.32': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: invictus gaming will win round 1': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: lucid dream will win': {
+            '3.2': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: lucid dream will win round 1': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: total over 25.5': {
+            '1.67': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: total over 26.5': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: total under 25.5': {
+            '2.12': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        '2-nd map: total under 26.5': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        'correct score 0-2': {'7.28': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'},
+        'correct score 1-2': {'6.6': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'},
+        'correct score 2-0': {'1.73': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'},
+        'correct score 2-1': {'3.59': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'},
+        'invictus gaming handicap +1.5 maps': {
+            '1.07': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        'invictus gaming handicap -1.5 maps': {
+            '1.73': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        'invictus gaming will win': {
+            '1.23': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        'lucid dream handicap +1.5 maps': {
+            '2.03': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        'lucid dream handicap -1.5 maps': {
+            '7.38': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'
+            },
+        'lucid dream will win': {'3.97': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'},
+        'odd/even maps even': {'1.48': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'},
+        'odd/even maps odd': {'2.54': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'},
+        'total maps over 2.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'},
+        'total maps under 2.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/lucid-dream-vs-invictus-gaming-04-07)'}
+        },
+    'invictus gaming - mazaalai': {},
+    'invictus gaming - royal never give up': {
+        '2-nd map: destroy first tower invictus gaming': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: destroy first tower royal never give up': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: first blood invictus gaming': {
+            '1.88': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: first blood royal never give up': {
+            '1.86': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: invictus gaming will win': {
+            '1.94': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration over 33.5 minutes': {
+            '1.54': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration over 34.5 minutes': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration over 35.5 minutes': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration over 36.5 minutes': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration over 37.5 minutes': {
+            '2.06': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration over 38.5 minutes': {
+            '2.25': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration over 39.5 minutes': {
+            '2.45': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration under 33.5 minutes': {
+            '2.38': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration under 34.5 minutes': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration under 35.5 minutes': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration under 36.5 minutes': {
+            '1.83': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration under 37.5 minutes': {
+            '1.71': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration under 38.5 minutes': {
+            '1.6': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: map duration under 39.5 minutes': {
+            '1.51': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: race to  kills invictus gaming 10': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: race to  kills invictus gaming 15': {
+            '1.93': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: race to  kills invictus gaming 5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: race to  kills royal never give up 10': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: race to  kills royal never give up 15': {
+            '1.81': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: race to  kills royal never give up 5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: royal never give up will win': {
+            '1.8': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: total kills odd/even even': {
+            '1.87': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        '2-nd map: total kills odd/even odd': {
+            '1.87': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'kill first roshan map 2 invictus gaming': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'kill first roshan map 2 royal never give up': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +0.5': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +1.5': {
+            '1.88': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +2.5': {
+            '1.83': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +3.5': {
+            '1.78': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +4.5': {
+            '1.74': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +5.5': {
+            '1.69': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +6.5': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +7.5': {
+            '1.58': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +8.5': {
+            '1.53': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -0.5': {
+            '1.97': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -1.5': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -2.5': {
+            '2.08': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -3.5': {
+            '2.12': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -4.5': {
+            '2.19': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -5.5': {
+            '2.27': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -6.5': {
+            '2.35': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -7.5': {
+            '2.45': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up +0.5': {
+            '1.78': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up +1.5': {
+            '1.74': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up +2.5': {
+            '1.7': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up +3.5': {
+            '1.67': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up +4.5': {
+            '1.63': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up +5.5': {
+            '1.59': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up +6.5': {
+            '1.55': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up +7.5': {
+            '1.51': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up -0.5': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up -1.5': {
+            '1.86': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up -2.5': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up -3.5': {
+            '1.97': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up -4.5': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up -5.5': {
+            '2.09': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up -6.5': {
+            '2.17': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up -7.5': {
+            '2.29': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - kills handicap royal never give up -8.5': {
+            '2.4': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills over 43.5': {
+            '1.51': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills over 44.5': {
+            '1.58': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills over 45.5': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills over 46.5': {
+            '1.75': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills over 47.5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills over 48.5': {
+            '1.94': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills over 49.5': {
+            '2.05': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills over 50.5': {
+            '2.17': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills over 51.5': {
+            '2.29': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills over 52.5': {
+            '2.43': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills under 43.5': {
+            '2.45': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills under 44.5': {
+            '2.29': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills under 45.5': {
+            '2.14': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills under 46.5': {
+            '2.01': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills under 47.5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills under 48.5': {
+            '1.8': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills under 49.5': {
+            '1.72': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills under 50.5': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills under 51.5': {
+            '1.58': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            },
+        'map 2  - total kills under 52.5': {
+            '1.52': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-royal-never-give-up-03-07)'
+            }
+        },
     'invictus gaming - vici gaming': {
-        '1-st map: destroy first tower invictus gaming': {'1.87': 'ggbet'},
-        '1-st map: destroy first tower vici gaming': {'1.87': 'ggbet'},
-        '1-st map: first blood invictus gaming': {'1.87': 'ggbet'},
-        '1-st map: first blood vici gaming': {'1.87': 'ggbet'},
-        '1-st map: invictus gaming will win': {'1.87': 'ggbet'},
-        '1-st map: map duration over 33.5 minutes': {'1.53': 'ggbet'},
-        '1-st map: map duration over 34.5 minutes': {'1.63': 'ggbet'},
-        '1-st map: map duration over 35.5 minutes': {'1.75': 'ggbet'},
-        '1-st map: map duration over 36.5 minutes': {'1.89': 'ggbet'},
-        '1-st map: map duration over 37.5 minutes': {'2.05': 'ggbet'},
-        '1-st map: map duration over 38.5 minutes': {'2.23': 'ggbet'},
-        '1-st map: map duration over 39.5 minutes': {'2.43': 'ggbet'},
-        '1-st map: map duration under 33.5 minutes': {'2.4': 'ggbet'},
-        '1-st map: map duration under 34.5 minutes': {'2.19': 'ggbet'},
-        '1-st map: map duration under 35.5 minutes': {'2.01': 'ggbet'},
-        '1-st map: map duration under 36.5 minutes': {'1.85': 'ggbet'},
-        '1-st map: map duration under 37.5 minutes': {'1.72': 'ggbet'},
-        '1-st map: map duration under 38.5 minutes': {'1.61': 'ggbet'},
-        '1-st map: map duration under 39.5 minutes': {'1.52': 'ggbet'},
-        '1-st map: race to  kills invictus gaming 10': {'1.87': 'ggbet'},
-        '1-st map: race to  kills invictus gaming 15': {'1.87': 'ggbet'},
-        '1-st map: race to  kills invictus gaming 5': {'1.87': 'ggbet'},
-        '1-st map: race to  kills vici gaming 10': {'1.87': 'ggbet'},
-        '1-st map: race to  kills vici gaming 15': {'1.87': 'ggbet'},
-        '1-st map: race to  kills vici gaming 5': {'1.87': 'ggbet'},
-        '1-st map: total kills odd/even even': {'1.87': 'ggbet'},
-        '1-st map: total kills odd/even odd': {'1.87': 'ggbet'},
-        '1-st map: vici gaming will win': {'1.87': 'ggbet'},
-        '2-nd map: destroy first tower invictus gaming': {'1.87': 'ggbet'},
-        '2-nd map: destroy first tower vici gaming': {'1.87': 'ggbet'},
-        '2-nd map: first blood invictus gaming': {'1.87': 'ggbet'},
-        '2-nd map: first blood vici gaming': {'1.87': 'ggbet'},
-        '2-nd map: invictus gaming will win': {'1.87': 'ggbet'},
-        '2-nd map: map duration over 33.5 minutes': {'1.53': 'ggbet'},
-        '2-nd map: map duration over 34.5 minutes': {'1.63': 'ggbet'},
-        '2-nd map: map duration over 35.5 minutes': {'1.75': 'ggbet'},
-        '2-nd map: map duration over 36.5 minutes': {'1.89': 'ggbet'},
-        '2-nd map: map duration over 37.5 minutes': {'2.05': 'ggbet'},
-        '2-nd map: map duration over 38.5 minutes': {'2.23': 'ggbet'},
-        '2-nd map: map duration over 39.5 minutes': {'2.43': 'ggbet'},
-        '2-nd map: map duration under 33.5 minutes': {'2.4': 'ggbet'},
-        '2-nd map: map duration under 34.5 minutes': {'2.19': 'ggbet'},
-        '2-nd map: map duration under 35.5 minutes': {'2.01': 'ggbet'},
-        '2-nd map: map duration under 36.5 minutes': {'1.85': 'ggbet'},
-        '2-nd map: map duration under 37.5 minutes': {'1.72': 'ggbet'},
-        '2-nd map: map duration under 38.5 minutes': {'1.61': 'ggbet'},
-        '2-nd map: map duration under 39.5 minutes': {'1.52': 'ggbet'},
-        '2-nd map: race to  kills invictus gaming 10': {'1.87': 'ggbet'},
-        '2-nd map: race to  kills invictus gaming 15': {'1.87': 'ggbet'},
-        '2-nd map: race to  kills invictus gaming 5': {'1.87': 'ggbet'},
-        '2-nd map: race to  kills vici gaming 10': {'1.87': 'ggbet'},
-        '2-nd map: race to  kills vici gaming 15': {'1.87': 'ggbet'},
-        '2-nd map: race to  kills vici gaming 5': {'1.87': 'ggbet'},
-        '2-nd map: total kills odd/even even': {'1.87': 'ggbet'},
-        '2-nd map: total kills odd/even odd': {'1.87': 'ggbet'},
-        '2-nd map: vici gaming will win': {'1.87': 'ggbet'},
-        'correct score 0-2': {'3.35': 'ggbet'},
-        'correct score 1-2': {'3.64': 'ggbet'},
-        'correct score 2-0': {'3.35': 'ggbet'},
-        'correct score 2-1': {'3.64': 'ggbet'},
-        'invictus gaming handicap +1.5 maps': {'1.3': 'ggbet'},
-        'invictus gaming handicap -1.5 maps': {'3.32': 'ggbet'},
-        'invictus gaming will win': {'1.88': 'ggbet'},
-        'kill first roshan map 1 invictus gaming': {'1.87': 'ggbet'},
-        'kill first roshan map 1 vici gaming': {'1.87': 'ggbet'},
-        'kill first roshan map 2 invictus gaming': {'1.87': 'ggbet'},
-        'kill first roshan map 2 vici gaming': {'1.87': 'ggbet'},
-        'map 1  - kills handicap invictus gaming +0.5': {'1.87': 'ggbet'},
-        'map 1  - kills handicap invictus gaming +1.5': {'1.83': 'ggbet'},
-        'map 1  - kills handicap invictus gaming +2.5': {'1.78': 'ggbet'},
-        'map 1  - kills handicap invictus gaming +3.5': {'1.74': 'ggbet'},
-        'map 1  - kills handicap invictus gaming +4.5': {'1.69': 'ggbet'},
-        'map 1  - kills handicap invictus gaming +5.5': {'1.65': 'ggbet'},
-        'map 1  - kills handicap invictus gaming +6.5': {'1.6': 'ggbet'},
-        'map 1  - kills handicap invictus gaming +7.5': {'1.55': 'ggbet'},
-        'map 1  - kills handicap invictus gaming -0.5': {'1.91': 'ggbet'},
-        'map 1  - kills handicap invictus gaming -1.5': {'1.97': 'ggbet'},
-        'map 1  - kills handicap invictus gaming -2.5': {'2.01': 'ggbet'},
-        'map 1  - kills handicap invictus gaming -3.5': {'2.06': 'ggbet'},
-        'map 1  - kills handicap invictus gaming -4.5': {'2.14': 'ggbet'},
-        'map 1  - kills handicap invictus gaming -5.5': {'2.21': 'ggbet'},
-        'map 1  - kills handicap invictus gaming -6.5': {'2.29': 'ggbet'},
-        'map 1  - kills handicap invictus gaming -7.5': {'2.38': 'ggbet'},
-        'map 1  - kills handicap vici gaming +0.5': {'1.83': 'ggbet'},
-        'map 1  - kills handicap vici gaming +1.5': {'1.78': 'ggbet'},
-        'map 1  - kills handicap vici gaming +2.5': {'1.75': 'ggbet'},
-        'map 1  - kills handicap vici gaming +3.5': {'1.71': 'ggbet'},
-        'map 1  - kills handicap vici gaming +4.5': {'1.66': 'ggbet'},
-        'map 1  - kills handicap vici gaming +5.5': {'1.62': 'ggbet'},
-        'map 1  - kills handicap vici gaming +6.5': {'1.58': 'ggbet'},
-        'map 1  - kills handicap vici gaming +7.5': {'1.54': 'ggbet'},
-        'map 1  - kills handicap vici gaming -0.5': {'1.87': 'ggbet'},
-        'map 1  - kills handicap vici gaming -1.5': {'1.91': 'ggbet'},
-        'map 1  - kills handicap vici gaming -2.5': {'1.97': 'ggbet'},
-        'map 1  - kills handicap vici gaming -3.5': {'2.02': 'ggbet'},
-        'map 1  - kills handicap vici gaming -4.5': {'2.09': 'ggbet'},
-        'map 1  - kills handicap vici gaming -5.5': {'2.16': 'ggbet'},
-        'map 1  - kills handicap vici gaming -6.5': {'2.25': 'ggbet'},
-        'map 1  - kills handicap vici gaming -7.5': {'2.35': 'ggbet'},
-        'map 1  - total kills over 41.5': {'1.53': 'ggbet'},
-        'map 1  - total kills over 42.5': {'1.6': 'ggbet'},
-        'map 1  - total kills over 43.5': {'1.69': 'ggbet'},
-        'map 1  - total kills over 44.5': {'1.78': 'ggbet'},
-        'map 1  - total kills over 45.5': {'1.88': 'ggbet'},
-        'map 1  - total kills over 46.5': {'1.99': 'ggbet'},
-        'map 1  - total kills over 47.5': {'2.11': 'ggbet'},
-        'map 1  - total kills over 48.5': {'2.25': 'ggbet'},
-        'map 1  - total kills over 49.5': {'2.38': 'ggbet'},
-        'map 1  - total kills under 41.5': {'2.4': 'ggbet'},
-        'map 1  - total kills under 42.5': {'2.25': 'ggbet'},
-        'map 1  - total kills under 43.5': {'2.09': 'ggbet'},
-        'map 1  - total kills under 44.5': {'1.97': 'ggbet'},
-        'map 1  - total kills under 45.5': {'1.86': 'ggbet'},
-        'map 1  - total kills under 46.5': {'1.76': 'ggbet'},
-        'map 1  - total kills under 47.5': {'1.68': 'ggbet'},
-        'map 1  - total kills under 48.5': {'1.6': 'ggbet'},
-        'map 1  - total kills under 49.5': {'1.54': 'ggbet'},
-        'map 2  - kills handicap invictus gaming +0.5': {'1.87': 'ggbet'},
-        'map 2  - kills handicap invictus gaming +1.5': {'1.83': 'ggbet'},
-        'map 2  - kills handicap invictus gaming +2.5': {'1.78': 'ggbet'},
-        'map 2  - kills handicap invictus gaming +3.5': {'1.74': 'ggbet'},
-        'map 2  - kills handicap invictus gaming +4.5': {'1.69': 'ggbet'},
-        'map 2  - kills handicap invictus gaming +5.5': {'1.65': 'ggbet'},
-        'map 2  - kills handicap invictus gaming +6.5': {'1.6': 'ggbet'},
-        'map 2  - kills handicap invictus gaming +7.5': {'1.55': 'ggbet'},
-        'map 2  - kills handicap invictus gaming -0.5': {'1.91': 'ggbet'},
-        'map 2  - kills handicap invictus gaming -1.5': {'1.97': 'ggbet'},
-        'map 2  - kills handicap invictus gaming -2.5': {'2.01': 'ggbet'},
-        'map 2  - kills handicap invictus gaming -3.5': {'2.06': 'ggbet'},
-        'map 2  - kills handicap invictus gaming -4.5': {'2.14': 'ggbet'},
-        'map 2  - kills handicap invictus gaming -5.5': {'2.21': 'ggbet'},
-        'map 2  - kills handicap invictus gaming -6.5': {'2.29': 'ggbet'},
-        'map 2  - kills handicap invictus gaming -7.5': {'2.38': 'ggbet'},
-        'map 2  - kills handicap vici gaming +0.5': {'1.83': 'ggbet'},
-        'map 2  - kills handicap vici gaming +1.5': {'1.78': 'ggbet'},
-        'map 2  - kills handicap vici gaming +2.5': {'1.75': 'ggbet'},
-        'map 2  - kills handicap vici gaming +3.5': {'1.71': 'ggbet'},
-        'map 2  - kills handicap vici gaming +4.5': {'1.66': 'ggbet'},
-        'map 2  - kills handicap vici gaming +5.5': {'1.62': 'ggbet'},
-        'map 2  - kills handicap vici gaming +6.5': {'1.58': 'ggbet'},
-        'map 2  - kills handicap vici gaming +7.5': {'1.54': 'ggbet'},
-        'map 2  - kills handicap vici gaming -0.5': {'1.87': 'ggbet'},
-        'map 2  - kills handicap vici gaming -1.5': {'1.91': 'ggbet'},
-        'map 2  - kills handicap vici gaming -2.5': {'1.97': 'ggbet'},
-        'map 2  - kills handicap vici gaming -3.5': {'2.02': 'ggbet'},
-        'map 2  - kills handicap vici gaming -4.5': {'2.09': 'ggbet'},
-        'map 2  - kills handicap vici gaming -5.5': {'2.16': 'ggbet'},
-        'map 2  - kills handicap vici gaming -6.5': {'2.25': 'ggbet'},
-        'map 2  - kills handicap vici gaming -7.5': {'2.35': 'ggbet'},
-        'map 2  - total kills over 41.5': {'1.53': 'ggbet'},
-        'map 2  - total kills over 42.5': {'1.6': 'ggbet'},
-        'map 2  - total kills over 43.5': {'1.69': 'ggbet'},
-        'map 2  - total kills over 44.5': {'1.78': 'ggbet'},
-        'map 2  - total kills over 45.5': {'1.88': 'ggbet'},
-        'map 2  - total kills over 46.5': {'1.99': 'ggbet'},
-        'map 2  - total kills over 47.5': {'2.11': 'ggbet'},
-        'map 2  - total kills over 48.5': {'2.25': 'ggbet'},
-        'map 2  - total kills over 49.5': {'2.38': 'ggbet'},
-        'map 2  - total kills under 41.5': {'2.4': 'ggbet'},
-        'map 2  - total kills under 42.5': {'2.25': 'ggbet'},
-        'map 2  - total kills under 43.5': {'2.09': 'ggbet'},
-        'map 2  - total kills under 44.5': {'1.97': 'ggbet'},
-        'map 2  - total kills under 45.5': {'1.86': 'ggbet'},
-        'map 2  - total kills under 46.5': {'1.76': 'ggbet'},
-        'map 2  - total kills under 47.5': {'1.68': 'ggbet'},
-        'map 2  - total kills under 48.5': {'1.6': 'ggbet'},
-        'map 2  - total kills under 49.5': {'1.54': 'ggbet'},
-        'odd/even maps even': {'1.79': 'ggbet'},
-        'odd/even maps odd': {'1.96': 'ggbet'},
-        'total maps over 2.5': {'1.96': 'ggbet'},
-        'total maps under 2.5': {'1.79': 'ggbet'},
-        'vici gaming handicap +1.5 maps': {'1.3': 'ggbet'},
-        'vici gaming handicap -1.5 maps': {'3.32': 'ggbet'},
-        'vici gaming will win': {'1.88': 'ggbet'}
-    },
-    'kinship - thunder logic': {
-        '1-st map: kinship will win': {'1.68': 'ggbet'},
-        '1-st map: thunder logic will win': {'2.11': 'ggbet'},
-        '2-nd map: kinship will win': {'1.68': 'ggbet'},
-        '2-nd map: thunder logic will win': {'2.11': 'ggbet'},
-        'kinship will win': {'1.64': 'ggbet'},
-        'thunder logic will win': {'2.2': 'ggbet'}
-    },
-    'kolossus - seven-gg': {
-        '1-st map: kolossus will win': {'2.48': 'ggbet'},
-        '1-st map: seven-gg will win': {'1.5': 'ggbet'},
-        '1x2 draw': {'2.43': 'ggbet'},
-        '1x2 kolossus': {'4.64': 'ggbet'},
-        '1x2 seven-gg': {'2.11': 'ggbet'},
-        '2-nd map: kolossus will win': {'2.51': 'ggbet'},
-        '2-nd map: seven-gg will win': {'1.49': 'ggbet'}
-    },
-    'ldlc - secret': {
-        '1-st map: handicap ldlc +1.5': {'1.97': 'ggbet'},
-        '1-st map: handicap ldlc +2.5': {'1.77': 'ggbet'},
-        '1-st map: handicap ldlc +3.5': {'1.61': 'ggbet'},
-        '1-st map: handicap ldlc +4.5': {'1.47': 'ggbet'},
-        '1-st map: handicap ldlc +5.5': {'1.36': 'ggbet'},
-        '1-st map: handicap ldlc +6.5': {'1.26': 'ggbet'},
-        '1-st map: handicap ldlc -1.5': {'2.45': 'ggbet'},
-        '1-st map: handicap ldlc -2.5': {'2.77': 'ggbet'},
-        '1-st map: handicap ldlc -3.5': {'3.2': 'ggbet'},
-        '1-st map: handicap ldlc -4.5': {'3.79': 'ggbet'},
-        '1-st map: handicap secret +1.5': {'1.51': 'ggbet'},
-        '1-st map: handicap secret +2.5': {'1.41': 'ggbet'},
-        '1-st map: handicap secret +3.5': {'1.32': 'ggbet'},
-        '1-st map: handicap secret +4.5': {'1.24': 'ggbet'},
-        '1-st map: handicap secret -1.5': {'1.78': 'ggbet'},
-        '1-st map: handicap secret -2.5': {'1.98': 'ggbet'},
-        '1-st map: handicap secret -3.5': {'2.23': 'ggbet'},
-        '1-st map: handicap secret -4.5': {'2.57': 'ggbet'},
-        '1-st map: handicap secret -5.5': {'2.99': 'ggbet'},
-        '1-st map: handicap secret -6.5': {'3.62': 'ggbet'},
-        '1-st map: ldlc will win': {'2.19': 'ggbet'},
-        '1-st map: ldlc will win round 1': {'1.91': 'ggbet'},
-        '1-st map: secret will win': {'1.63': 'ggbet'},
-        '1-st map: secret will win round 1': {'1.83': 'ggbet'},
-        '1-st map: total over 23.5': {'1.23': 'ggbet'},
-        '1-st map: total over 24.5': {'1.36': 'ggbet'},
-        '1-st map: total over 25.5': {'1.54': 'ggbet'},
-        '1-st map: total over 26.5': {'1.81': 'ggbet'},
-        '1-st map: total over 27.5': {'2.21': 'ggbet'},
-        '1-st map: total over 28.5': {'2.85': 'ggbet'},
-        '1-st map: total over 29.5': {'4.11': 'ggbet'},
-        '1-st map: total under 23.5': {'3.89': 'ggbet'},
-        '1-st map: total under 24.5': {'2.99': 'ggbet'},
-        '1-st map: total under 25.5': {'2.38': 'ggbet'},
-        '1-st map: total under 26.5': {'1.93': 'ggbet'},
-        '1-st map: total under 27.5': {'1.62': 'ggbet'},
-        '1-st map: total under 28.5': {'1.39': 'ggbet'},
-        '1-st map: total under 29.5': {'1.21': 'ggbet'},
-        '2-nd map: handicap ldlc +1.5': {'1.97': 'ggbet'},
-        '2-nd map: handicap ldlc +2.5': {'1.78': 'ggbet'},
-        '2-nd map: handicap ldlc +3.5': {'1.61': 'ggbet'},
-        '2-nd map: handicap ldlc +4.5': {'1.47': 'ggbet'},
-        '2-nd map: handicap ldlc +5.5': {'1.36': 'ggbet'},
-        '2-nd map: handicap ldlc +6.5': {'1.26': 'ggbet'},
-        '2-nd map: handicap ldlc -1.5': {'2.45': 'ggbet'},
-        '2-nd map: handicap ldlc -2.5': {'2.77': 'ggbet'},
-        '2-nd map: handicap ldlc -3.5': {'3.2': 'ggbet'},
-        '2-nd map: handicap ldlc -4.5': {'3.7': 'ggbet'},
-        '2-nd map: handicap secret +1.5': {'1.51': 'ggbet'},
-        '2-nd map: handicap secret +2.5': {'1.41': 'ggbet'},
-        '2-nd map: handicap secret +3.5': {'1.32': 'ggbet'},
-        '2-nd map: handicap secret +4.5': {'1.25': 'ggbet'},
-        '2-nd map: handicap secret -1.5': {'1.78': 'ggbet'},
-        '2-nd map: handicap secret -2.5': {'1.97': 'ggbet'},
-        '2-nd map: handicap secret -3.5': {'2.23': 'ggbet'},
-        '2-nd map: handicap secret -4.5': {'2.57': 'ggbet'},
-        '2-nd map: handicap secret -5.5': {'2.99': 'ggbet'},
-        '2-nd map: handicap secret -6.5': {'3.62': 'ggbet'},
-        '2-nd map: ldlc will win': {'2.19': 'ggbet'},
-        '2-nd map: ldlc will win round 1': {'1.9': 'ggbet'},
-        '2-nd map: secret will win': {'1.63': 'ggbet'},
-        '2-nd map: secret will win round 1': {'1.84': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.23': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.36': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.55': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.82': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.23': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.9': 'ggbet'},
-        '2-nd map: total over 29.5': {'4.11': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.89': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.99': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.35': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.92': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.61': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.38': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.21': 'ggbet'},
-        'correct score 0-2': {'2.49': 'ggbet'},
-        'correct score 1-2': {'3.59': 'ggbet'},
-        'correct score 2-0': {'4.19': 'ggbet'},
-        'correct score 2-1': {'4.48': 'ggbet'},
-        'ldlc handicap +1.5 maps': {'1.49': 'ggbet'},
-        'ldlc handicap -1.5 maps': {'4.23': 'ggbet'},
-        'ldlc will win': {'2.34': 'ggbet'},
-        'odd/even maps even': {'1.66': 'ggbet'},
-        'odd/even maps odd': {'2.14': 'ggbet'},
-        'secret handicap +1.5 maps': {'1.2': 'ggbet'},
-        'secret handicap -1.5 maps': {'2.51': 'ggbet'},
-        'secret will win': {'1.57': 'ggbet'},
-        'total maps over 2.5': {'2.14': 'ggbet'},
-        'total maps under 2.5': {'1.66': 'ggbet'}
-    },
-    'lethal divide - supernova': {
-        '1-st map: lethal divide will win': {'1.82': 'ggbet'},
-        '1-st map: supernova will win': {'1.92': 'ggbet'},
-        '2-nd map: lethal divide will win': {'1.82': 'ggbet'},
-        '2-nd map: supernova will win': {'1.92': 'ggbet'},
-        'lethal divide will win': {'1.83': 'ggbet'},
-        'supernova will win': {'1.93': 'ggbet'}
-    },
+        '1-st map: destroy first tower invictus gaming': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: destroy first tower vici gaming': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: first blood invictus gaming': {
+            '1.88': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: first blood vici gaming': {
+            '1.86': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: invictus gaming will win': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration over 33.5 minutes': {
+            '1.53': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration over 34.5 minutes': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration over 35.5 minutes': {
+            '1.76': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration over 36.5 minutes': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration over 37.5 minutes': {
+            '2.06': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration over 38.5 minutes': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration over 39.5 minutes': {
+            '2.43': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration under 33.5 minutes': {
+            '2.4': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration under 34.5 minutes': {
+            '2.17': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration under 35.5 minutes': {
+            '1.99': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration under 36.5 minutes': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration under 37.5 minutes': {
+            '1.71': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration under 38.5 minutes': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: map duration under 39.5 minutes': {
+            '1.52': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: race to  kills invictus gaming 10': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: race to  kills invictus gaming 15': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: race to  kills invictus gaming 5': {
+            '1.89': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: race to  kills vici gaming 10': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: race to  kills vici gaming 15': {
+            '1.83': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: race to  kills vici gaming 5': {
+            '1.85': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: total kills odd/even even': {
+            '1.87': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: total kills odd/even odd': {
+            '1.87': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '1-st map: vici gaming will win': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: destroy first tower invictus gaming': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: destroy first tower vici gaming': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: first blood invictus gaming': {
+            '1.88': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: first blood vici gaming': {
+            '1.86': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: invictus gaming will win': {
+            '1.92': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration over 33.5 minutes': {
+            '1.53': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration over 34.5 minutes': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration over 35.5 minutes': {
+            '1.76': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration over 36.5 minutes': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration over 37.5 minutes': {
+            '2.06': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration over 38.5 minutes': {
+            '2.23': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration over 39.5 minutes': {
+            '2.43': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration under 33.5 minutes': {
+            '2.4': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration under 34.5 minutes': {
+            '2.17': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration under 35.5 minutes': {
+            '1.99': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration under 36.5 minutes': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration under 37.5 minutes': {
+            '1.71': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration under 38.5 minutes': {
+            '1.61': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: map duration under 39.5 minutes': {
+            '1.52': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: race to  kills invictus gaming 10': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: race to  kills invictus gaming 15': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: race to  kills invictus gaming 5': {
+            '1.89': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: race to  kills vici gaming 10': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: race to  kills vici gaming 15': {
+            '1.83': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: race to  kills vici gaming 5': {
+            '1.85': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: total kills odd/even even': {
+            '1.87': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: total kills odd/even odd': {
+            '1.87': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        '2-nd map: vici gaming will win': {
+            '1.82': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'correct score 0-2': {'3.2': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'},
+        'correct score 1-2': {'3.56': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'},
+        'correct score 2-0': {'3.51': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'},
+        'correct score 2-1': {'3.73': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'},
+        'invictus gaming handicap +1.5 maps': {
+            '1.32': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'invictus gaming handicap -1.5 maps': {
+            '3.54': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'invictus gaming will win': {
+            '1.95': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'kill first roshan map 1 invictus gaming': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'kill first roshan map 1 vici gaming': {
+            '1.83': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'kill first roshan map 2 invictus gaming': {
+            '1.91': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'kill first roshan map 2 vici gaming': {
+            '1.83': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming +0.5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming +1.5': {
+            '1.86': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming +2.5': {
+            '1.81': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming +3.5': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming +4.5': {
+            '1.72': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming +5.5': {
+            '1.67': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming +6.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming +7.5': {
+            '1.57': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming +8.5': {
+            '1.52': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming -0.5': {
+            '1.96': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming -1.5': {
+            '1.99': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming -2.5': {
+            '2.05': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming -3.5': {
+            '2.11': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming -4.5': {
+            '2.17': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming -5.5': {
+            '2.25': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming -6.5': {
+            '2.33': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap invictus gaming -7.5': {
+            '2.43': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming +0.5': {
+            '1.79': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming +1.5': {
+            '1.76': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming +2.5': {
+            '1.72': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming +3.5': {
+            '1.68': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming +4.5': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming +5.5': {
+            '1.6': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming +6.5': {
+            '1.56': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming +7.5': {
+            '1.52': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming -0.5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming -1.5': {
+            '1.88': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming -2.5': {
+            '1.93': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming -3.5': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming -4.5': {
+            '2.05': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming -5.5': {
+            '2.12': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming -6.5': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming -7.5': {
+            '2.31': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - kills handicap vici gaming -8.5': {
+            '2.43': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills over 45.5': {
+            '1.55': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills over 46.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills over 47.5': {
+            '1.7': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills over 48.5': {
+            '1.79': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills over 49.5': {
+            '1.88': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills over 50.5': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills over 51.5': {
+            '2.09': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills over 52.5': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills over 53.5': {
+            '2.33': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills over 54.5': {
+            '2.48': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills under 45.5': {
+            '2.35': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills under 46.5': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills under 47.5': {
+            '2.08': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills under 48.5': {
+            '1.96': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills under 49.5': {
+            '1.86': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills under 50.5': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills under 51.5': {
+            '1.69': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills under 52.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills under 53.5': {
+            '1.56': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 1  - total kills under 54.5': {
+            '1.5': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +0.5': {
+            '1.9': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +1.5': {
+            '1.86': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +2.5': {
+            '1.81': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +3.5': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +4.5': {
+            '1.72': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +5.5': {
+            '1.67': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +6.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +7.5': {
+            '1.57': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming +8.5': {
+            '1.52': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -0.5': {
+            '1.96': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -1.5': {
+            '1.99': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -2.5': {
+            '2.05': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -3.5': {
+            '2.11': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -4.5': {
+            '2.17': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -5.5': {
+            '2.25': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -6.5': {
+            '2.33': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap invictus gaming -7.5': {
+            '2.43': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming +0.5': {
+            '1.79': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming +1.5': {
+            '1.76': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming +2.5': {
+            '1.72': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming +3.5': {
+            '1.68': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming +4.5': {
+            '1.64': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming +5.5': {
+            '1.6': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming +6.5': {
+            '1.56': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming +7.5': {
+            '1.52': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming -0.5': {
+            '1.84': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming -1.5': {
+            '1.88': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming -2.5': {
+            '1.93': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming -3.5': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming -4.5': {
+            '2.05': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming -5.5': {
+            '2.12': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming -6.5': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming -7.5': {
+            '2.31': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - kills handicap vici gaming -8.5': {
+            '2.43': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills over 45.5': {
+            '1.55': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills over 46.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills over 47.5': {
+            '1.7': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills over 48.5': {
+            '1.79': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills over 49.5': {
+            '1.88': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills over 50.5': {
+            '1.98': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills over 51.5': {
+            '2.09': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills over 52.5': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills over 53.5': {
+            '2.33': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills over 54.5': {
+            '2.48': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills under 45.5': {
+            '2.35': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills under 46.5': {
+            '2.21': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills under 47.5': {
+            '2.08': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills under 48.5': {
+            '1.96': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills under 49.5': {
+            '1.86': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills under 50.5': {
+            '1.77': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills under 51.5': {
+            '1.69': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills under 52.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills under 53.5': {
+            '1.56': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'map 2  - total kills under 54.5': {
+            '1.5': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'odd/even maps even': {'1.79': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'},
+        'odd/even maps odd': {'1.96': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'},
+        'total maps over 2.5': {'1.96': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'},
+        'total maps under 2.5': {'1.79': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'},
+        'vici gaming handicap +1.5 maps': {
+            '1.27': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'vici gaming handicap -1.5 maps': {
+            '3.2': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'
+            },
+        'vici gaming will win': {'1.81': 'ggbet(https://gg.bet/en/betting/match/invictus-gaming-vs-vici-gaming-03-07)'}
+        },
+    'kova - veto': {
+        '1-st map: kova will win': {'1.4': 'ggbet(https://gg.bet/en/betting/match/kova-vs-veto-esports-04-07)'},
+        '1-st map: veto will win': {'2.81': 'ggbet(https://gg.bet/en/betting/match/kova-vs-veto-esports-04-07)'},
+        '2-nd map: kova will win': {'1.4': 'ggbet(https://gg.bet/en/betting/match/kova-vs-veto-esports-04-07)'},
+        '2-nd map: veto will win': {'2.81': 'ggbet(https://gg.bet/en/betting/match/kova-vs-veto-esports-04-07)'},
+        'kova will win': {'1.31': 'ggbet(https://gg.bet/en/betting/match/kova-vs-veto-esports-04-07)'},
+        'veto will win': {'3.32': 'ggbet(https://gg.bet/en/betting/match/kova-vs-veto-esports-04-07)'}
+        },
     'lucid dream - tiger': {
-        '1-st map: lucid dream will win': {'2.6': 'ggbet'},
-        '1-st map: tiger will win': {'1.46': 'ggbet'},
-        '2-nd map: lucid dream will win': {'2.6': 'ggbet'},
-        '2-nd map: tiger will win': {'1.46': 'ggbet'},
-        'lucid dream will win': {'3.03': 'ggbet'},
-        'tiger will win': {'1.36': 'ggbet'}
-    },
-    'lvlup - the dice': {
-        '1-st map: handicap lvlup +1.5': {'1.54': 'ggbet'},
-        '1-st map: handicap lvlup +2.5': {'1.43': 'ggbet'},
-        '1-st map: handicap lvlup +3.5': {'1.33': 'ggbet'},
-        '1-st map: handicap lvlup +4.5': {'1.25': 'ggbet'},
-        '1-st map: handicap lvlup -1.5': {'1.85': 'ggbet'},
-        '1-st map: handicap lvlup -2.5': {'2.06': 'ggbet'},
-        '1-st map: handicap lvlup -3.5': {'2.35': 'ggbet'},
-        '1-st map: handicap lvlup -4.5': {'2.73': 'ggbet'},
-        '1-st map: handicap lvlup -5.5': {'3.26': 'ggbet'},
-        '1-st map: handicap lvlup -6.5': {'3.89': 'ggbet'},
-        '1-st map: handicap the dice +1.5': {'1.89': 'ggbet'},
-        '1-st map: handicap the dice +2.5': {'1.71': 'ggbet'},
-        '1-st map: handicap the dice +3.5': {'1.55': 'ggbet'},
-        '1-st map: handicap the dice +4.5': {'1.42': 'ggbet'},
-        '1-st map: handicap the dice +5.5': {'1.31': 'ggbet'},
-        '1-st map: handicap the dice +6.5': {'1.23': 'ggbet'},
-        '1-st map: handicap the dice -1.5': {'2.38': 'ggbet'},
-        '1-st map: handicap the dice -2.5': {'2.7': 'ggbet'},
-        '1-st map: handicap the dice -3.5': {'3.14': 'ggbet'},
-        '1-st map: handicap the dice -4.5': {'3.7': 'ggbet'},
-        '1-st map: lvlup will win': {'1.67': 'ggbet'},
-        '1-st map: lvlup will win round 1': {'1.84': 'ggbet'},
-        '1-st map: the dice will win': {'2.12': 'ggbet'},
-        '1-st map: the dice will win round 1': {'1.9': 'ggbet'},
-        '1-st map: total over 23.5': {'1.2': 'ggbet'},
-        '1-st map: total over 24.5': {'1.32': 'ggbet'},
-        '1-st map: total over 25.5': {'1.49': 'ggbet'},
-        '1-st map: total over 26.5': {'1.74': 'ggbet'},
-        '1-st map: total over 27.5': {'2.12': 'ggbet'},
-        '1-st map: total over 28.5': {'2.77': 'ggbet'},
-        '1-st map: total over 29.5': {'3.89': 'ggbet'},
-        '1-st map: total under 23.5': {'4.23': 'ggbet'},
-        '1-st map: total under 24.5': {'3.2': 'ggbet'},
-        '1-st map: total under 25.5': {'2.51': 'ggbet'},
-        '1-st map: total under 26.5': {'2.02': 'ggbet'},
-        '1-st map: total under 27.5': {'1.67': 'ggbet'},
-        '1-st map: total under 28.5': {'1.41': 'ggbet'},
-        '1-st map: total under 29.5': {'1.23': 'ggbet'},
-        '2-nd map: handicap lvlup +1.5': {'1.54': 'ggbet'},
-        '2-nd map: handicap lvlup +2.5': {'1.43': 'ggbet'},
-        '2-nd map: handicap lvlup +3.5': {'1.33': 'ggbet'},
-        '2-nd map: handicap lvlup +4.5': {'1.25': 'ggbet'},
-        '2-nd map: handicap lvlup -1.5': {'1.85': 'ggbet'},
-        '2-nd map: handicap lvlup -2.5': {'2.06': 'ggbet'},
-        '2-nd map: handicap lvlup -3.5': {'2.35': 'ggbet'},
-        '2-nd map: handicap lvlup -4.5': {'2.73': 'ggbet'},
-        '2-nd map: handicap lvlup -5.5': {'3.2': 'ggbet'},
-        '2-nd map: handicap lvlup -6.5': {'3.89': 'ggbet'},
-        '2-nd map: handicap the dice +1.5': {'1.89': 'ggbet'},
-        '2-nd map: handicap the dice +2.5': {'1.71': 'ggbet'},
-        '2-nd map: handicap the dice +3.5': {'1.55': 'ggbet'},
-        '2-nd map: handicap the dice +4.5': {'1.42': 'ggbet'},
-        '2-nd map: handicap the dice +5.5': {'1.32': 'ggbet'},
-        '2-nd map: handicap the dice +6.5': {'1.23': 'ggbet'},
-        '2-nd map: handicap the dice -1.5': {'2.38': 'ggbet'},
-        '2-nd map: handicap the dice -2.5': {'2.7': 'ggbet'},
-        '2-nd map: handicap the dice -3.5': {'3.14': 'ggbet'},
-        '2-nd map: handicap the dice -4.5': {'3.7': 'ggbet'},
-        '2-nd map: lvlup will win': {'1.67': 'ggbet'},
-        '2-nd map: lvlup will win round 1': {'1.85': 'ggbet'},
-        '2-nd map: the dice will win': {'2.12': 'ggbet'},
-        '2-nd map: the dice will win round 1': {'1.89': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.2': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.32': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.49': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.74': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.12': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.73': 'ggbet'},
-        '2-nd map: total over 29.5': {'3.89': 'ggbet'},
-        '2-nd map: total under 23.5': {'4.23': 'ggbet'},
-        '2-nd map: total under 24.5': {'3.2': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.51': 'ggbet'},
-        '2-nd map: total under 26.5': {'2.02': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.67': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.42': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.23': 'ggbet'},
-        'correct score 0-2': {'4.18': 'ggbet'},
-        'correct score 1-2': {'4.15': 'ggbet'},
-        'correct score 2-0': {'2.72': 'ggbet'},
-        'correct score 2-1': {'3.41': 'ggbet'},
-        'lvlup handicap +1.5 maps': {'1.2': 'ggbet'},
-        'lvlup handicap -1.5 maps': {'2.73': 'ggbet'},
-        'lvlup will win': {'1.61': 'ggbet'},
-        'odd/even maps even': {'1.76': 'ggbet'},
-        'odd/even maps odd': {'1.99': 'ggbet'},
-        'the dice handicap +1.5 maps': {'1.42': 'ggbet'},
-        'the dice handicap -1.5 maps': {'4.23': 'ggbet'},
-        'the dice will win': {'2.25': 'ggbet'},
-        'total maps over 2.5': {'1.99': 'ggbet'},
-        'total maps under 2.5': {'1.76': 'ggbet'}
-    },
-    'new england whalers - recon 5': {
-        '1-st map: handicap new england whalers +1.5': {'1.47': 'ggbet'},
-        '1-st map: handicap new england whalers -1.5': {'1.73': 'ggbet'},
-        '1-st map: handicap new england whalers -2.5': {'1.92': 'ggbet'},
-        '1-st map: handicap new england whalers -3.5': {'2.17': 'ggbet'},
-        '1-st map: handicap new england whalers -4.5': {'2.51': 'ggbet'},
-        '1-st map: handicap recon 5 +1.5': {'2.03': 'ggbet'},
-        '1-st map: handicap recon 5 +2.5': {'1.82': 'ggbet'},
-        '1-st map: handicap recon 5 +3.5': {'1.64': 'ggbet'},
-        '1-st map: handicap recon 5 +4.5': {'1.49': 'ggbet'},
-        '1-st map: handicap recon 5 -1.5': {'2.57': 'ggbet'},
-        '1-st map: new england whalers will win': {'1.58': 'ggbet'},
-        '1-st map: new england whalers will win round 1': {'1.83': 'ggbet'},
-        '1-st map: recon 5 will win': {'2.29': 'ggbet'},
-        '1-st map: recon 5 will win round 1': {'1.91': 'ggbet'},
-        '1-st map: total over 25.5': {'1.52': 'ggbet'},
-        '1-st map: total over 26.5': {'1.78': 'ggbet'},
-        '1-st map: total over 27.5': {'2.17': 'ggbet'},
-        '1-st map: total under 25.5': {'2.43': 'ggbet'},
-        '1-st map: total under 26.5': {'1.97': 'ggbet'},
-        '1-st map: total under 27.5': {'1.64': 'ggbet'},
-        '2-nd map: handicap new england whalers +1.5': {'1.47': 'ggbet'},
-        '2-nd map: handicap new england whalers -1.5': {'1.73': 'ggbet'},
-        '2-nd map: handicap new england whalers -2.5': {'1.92': 'ggbet'},
-        '2-nd map: handicap new england whalers -3.5': {'2.17': 'ggbet'},
-        '2-nd map: handicap new england whalers -4.5': {'2.48': 'ggbet'},
-        '2-nd map: handicap recon 5 +1.5': {'2.03': 'ggbet'},
-        '2-nd map: handicap recon 5 +2.5': {'1.82': 'ggbet'},
-        '2-nd map: handicap recon 5 +3.5': {'1.64': 'ggbet'},
-        '2-nd map: handicap recon 5 +4.5': {'1.5': 'ggbet'},
-        '2-nd map: handicap recon 5 -1.5': {'2.57': 'ggbet'},
-        '2-nd map: new england whalers will win': {'1.58': 'ggbet'},
-        '2-nd map: new england whalers will win round 1': {'1.83': 'ggbet'},
-        '2-nd map: recon 5 will win': {'2.29': 'ggbet'},
-        '2-nd map: recon 5 will win round 1': {'1.91': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.52': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.79': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.17': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.43': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.96': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.64': 'ggbet'},
-        'correct score 0-2': {'4.66': 'ggbet'},
-        'correct score 1-2': {'4.58': 'ggbet'},
-        'correct score 2-0': {'2.41': 'ggbet'},
-        'correct score 2-1': {'3.41': 'ggbet'},
-        'new england whalers handicap +1.5 maps': {'1.17': 'ggbet'},
-        'new england whalers handicap -1.5 maps': {'2.4': 'ggbet'},
-        'new england whalers will win': {'1.5': 'ggbet'},
-        'odd/even maps even': {'1.69': 'ggbet'},
-        'odd/even maps odd': {'2.09': 'ggbet'},
-        'recon 5 handicap +1.5 maps': {'1.53': 'ggbet'},
-        'recon 5 handicap -1.5 maps': {'4.64': 'ggbet'},
-        'recon 5 will win': {'2.51': 'ggbet'},
-        'total maps over 2.5': {'2.09': 'ggbet'},
-        'total maps under 2.5': {'1.69': 'ggbet'}
-    },
-    'nexus - saw': {
-        '1-st map: handicap nexus +1.5': {'2.16': 'ggbet'},
-        '1-st map: handicap nexus +2.5': {'1.92': 'ggbet'},
-        '1-st map: handicap nexus +3.5': {'1.73': 'ggbet'},
-        '1-st map: handicap nexus +4.5': {'1.56': 'ggbet'},
-        '1-st map: handicap nexus +5.5': {'1.43': 'ggbet'},
-        '1-st map: handicap nexus +6.5': {'1.32': 'ggbet'},
-        '1-st map: handicap nexus +7.5': {'1.22': 'ggbet'},
-        '1-st map: handicap nexus -1.5': {'2.73': 'ggbet'},
-        '1-st map: handicap nexus -2.5': {'3.14': 'ggbet'},
-        '1-st map: handicap nexus -3.5': {'3.62': 'ggbet'},
-        '1-st map: handicap saw +1.5': {'1.42': 'ggbet'},
-        '1-st map: handicap saw +2.5': {'1.33': 'ggbet'},
-        '1-st map: handicap saw +3.5': {'1.26': 'ggbet'},
-        '1-st map: handicap saw -1.5': {'1.65': 'ggbet'},
-        '1-st map: handicap saw -2.5': {'1.82': 'ggbet'},
-        '1-st map: handicap saw -3.5': {'2.03': 'ggbet'},
-        '1-st map: handicap saw -4.5': {'2.33': 'ggbet'},
-        '1-st map: handicap saw -5.5': {'2.7': 'ggbet'},
-        '1-st map: handicap saw -6.5': {'3.2': 'ggbet'},
-        '1-st map: handicap saw -7.5': {'3.99': 'ggbet'},
-        '1-st map: nexus will win': {'2.45': 'ggbet'},
-        '1-st map: nexus will win round 1': {'1.92': 'ggbet'},
-        '1-st map: saw will win': {'1.51': 'ggbet'},
-        '1-st map: saw will win round 1': {'1.82': 'ggbet'},
-        '1-st map: total over 23.5': {'1.24': 'ggbet'},
-        '1-st map: total over 24.5': {'1.37': 'ggbet'},
-        '1-st map: total over 25.5': {'1.56': 'ggbet'},
-        '1-st map: total over 26.5': {'1.84': 'ggbet'},
-        '1-st map: total over 27.5': {'2.25': 'ggbet'},
-        '1-st map: total over 28.5': {'2.94': 'ggbet'},
-        '1-st map: total over 29.5': {'4.23': 'ggbet'},
-        '1-st map: total under 23.5': {'3.79': 'ggbet'},
-        '1-st map: total under 24.5': {'2.94': 'ggbet'},
-        '1-st map: total under 25.5': {'2.33': 'ggbet'},
-        '1-st map: total under 26.5': {'1.9': 'ggbet'},
-        '1-st map: total under 27.5': {'1.6': 'ggbet'},
-        '1-st map: total under 28.5': {'1.37': 'ggbet'},
-        '1-st map: total under 29.5': {'1.2': 'ggbet'},
-        '2-nd map: handicap nexus +1.5': {'2.17': 'ggbet'},
-        '2-nd map: handicap nexus +2.5': {'1.93': 'ggbet'},
-        '2-nd map: handicap nexus +3.5': {'1.74': 'ggbet'},
-        '2-nd map: handicap nexus +4.5': {'1.58': 'ggbet'},
-        '2-nd map: handicap nexus +5.5': {'1.44': 'ggbet'},
-        '2-nd map: handicap nexus +6.5': {'1.32': 'ggbet'},
-        '2-nd map: handicap nexus +7.5': {'1.23': 'ggbet'},
-        '2-nd map: handicap nexus -1.5': {'2.73': 'ggbet'},
-        '2-nd map: handicap nexus -2.5': {'3.14': 'ggbet'},
-        '2-nd map: handicap nexus -3.5': {'3.62': 'ggbet'},
-        '2-nd map: handicap saw +1.5': {'1.42': 'ggbet'},
-        '2-nd map: handicap saw +2.5': {'1.33': 'ggbet'},
-        '2-nd map: handicap saw +3.5': {'1.26': 'ggbet'},
-        '2-nd map: handicap saw -1.5': {'1.64': 'ggbet'},
-        '2-nd map: handicap saw -2.5': {'1.81': 'ggbet'},
-        '2-nd map: handicap saw -3.5': {'2.02': 'ggbet'},
-        '2-nd map: handicap saw -4.5': {'2.29': 'ggbet'},
-        '2-nd map: handicap saw -5.5': {'2.66': 'ggbet'},
-        '2-nd map: handicap saw -6.5': {'3.2': 'ggbet'},
-        '2-nd map: handicap saw -7.5': {'3.89': 'ggbet'},
-        '2-nd map: nexus will win': {'2.48': 'ggbet'},
-        '2-nd map: nexus will win round 1': {'1.93': 'ggbet'},
-        '2-nd map: saw will win': {'1.5': 'ggbet'},
-        '2-nd map: saw will win round 1': {'1.81': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.25': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.38': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.57': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.85': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.27': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.94': 'ggbet'},
-        '2-nd map: total over 29.5': {'4.23': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.7': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.9': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.31': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.89': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.59': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.37': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.2': 'ggbet'},
-        'nexus handicap +1.5 maps': {'1.63': 'ggbet'},
-        'nexus handicap -1.5 maps': {'4.99': 'ggbet'},
-        'nexus will win': {'2.73': 'ggbet'},
-        'odd/even maps even': {'1.62': 'ggbet'},
-        'odd/even maps odd': {'2.21': 'ggbet'},
-        'saw handicap +1.5 maps': {'1.15': 'ggbet'},
-        'saw handicap -1.5 maps': {'2.19': 'ggbet'},
-        'saw will win': {'1.43': 'ggbet'},
-        'total maps over 2.5': {'2.21': 'ggbet'},
-        'total maps under 2.5': {'1.62': 'ggbet'}
-    },
-    'nip - north': {
-        '1-st map: correct score 0t-e': {'100': 'ggbet'},
-        '1-st map: correct score 10t-e': {'9.51': 'ggbet'},
-        '1-st map: correct score 11t-e': {'9.52': 'ggbet'},
-        '1-st map: correct score 12t-e': {'9.63': 'ggbet'},
-        '1-st map: correct score 13t-e': {'9.83': 'ggbet'},
-        '1-st map: correct score 14t-e': {'10.12': 'ggbet'},
-        '1-st map: correct score 16t-e': {'12.67': 'ggbet'},
-        '1-st map: correct score 1t-e': {'59.67': 'ggbet'},
-        '1-st map: correct score 2t-e': {'31.37': 'ggbet'},
-        '1-st map: correct score 3t-e': {'21.14': 'ggbet'},
-        '1-st map: correct score 4t-e': {'16.43': 'ggbet'},
-        '1-st map: correct score 5t-e': {'13.84': 'ggbet'},
-        '1-st map: correct score 6t-e': {'12.26': 'ggbet'},
-        '1-st map: correct score 7t-e': {'10.35': 'ggbet'},
-        '1-st map: correct score 8t-e': {'9.91': 'ggbet'},
-        '1-st map: correct score 9t-e': {'9.64': 'ggbet'},
-        '1-st map: ct total  over 11.5': {'1.52': 'ggbet'},
-        '1-st map: ct total  over 13.5': {'2.21': 'ggbet'},
-        '1-st map: ct total  over 15.5': {'3.62': 'ggbet'},
-        '1-st map: ct total  over 9.5': {'1.2': 'ggbet'},
-        '1-st map: ct total  under 11.5': {'2.43': 'ggbet'},
-        '1-st map: ct total  under 13.5': {'1.62': 'ggbet'},
-        '1-st map: ct total  under 15.5': {'1.26': 'ggbet'},
-        '1-st map: ct total  under 9.5': {'4.23': 'ggbet'},
-        '1-st map: first half correct score 0h-t': {'100': 'ggbet'},
-        '1-st map: first half correct score 1h-t': {'28.44': 'ggbet'},
-        '1-st map: first half correct score 2h-t': {'14.97': 'ggbet'},
-        '1-st map: first half correct score 3h-t': {'9.54': 'ggbet'},
-        '1-st map: first half correct score 4h-t': {'7.41': 'ggbet'},
-        '1-st map: first half correct score 5h-t': {'6.13': 'ggbet'},
-        '1-st map: first half correct score h-t': {'6.99': 'ggbet'},
-        '1-st map: handicap nip +1.5': {'1.35': 'ggbet'},
-        '1-st map: handicap nip +2.5': {'1.28': 'ggbet'},
-        '1-st map: handicap nip +3.5': {'1.22': 'ggbet'},
-        '1-st map: handicap nip -1.5': {'1.54': 'ggbet'},
-        '1-st map: handicap nip -2.5': {'1.68': 'ggbet'},
-        '1-st map: handicap nip -3.5': {'1.86': 'ggbet'},
-        '1-st map: handicap nip -4.5': {'2.09': 'ggbet'},
-        '1-st map: handicap nip -5.5': {'2.4': 'ggbet'},
-        '1-st map: handicap nip -6.5': {'2.81': 'ggbet'},
-        '1-st map: handicap nip -7.5': {'3.39': 'ggbet'},
-        '1-st map: handicap north +1.5': {'2.38': 'ggbet'},
-        '1-st map: handicap north +2.5': {'2.11': 'ggbet'},
-        '1-st map: handicap north +3.5': {'1.88': 'ggbet'},
-        '1-st map: handicap north +4.5': {'1.69': 'ggbet'},
-        '1-st map: handicap north +5.5': {'1.53': 'ggbet'},
-        '1-st map: handicap north +6.5': {'1.4': 'ggbet'},
-        '1-st map: handicap north +7.5': {'1.29': 'ggbet'},
-        '1-st map: handicap north -1.5': {'3.04': 'ggbet'},
-        '1-st map: handicap north -2.5': {'3.46': 'ggbet'},
-        '1-st map: handicap north -3.5': {'3.99': 'ggbet'},
-        '1-st map: nip total over 12.5': {'1.23': 'ggbet'},
-        '1-st map: nip total over 14.5': {'1.36': 'ggbet'},
-        '1-st map: nip total over 15.5': {'1.56': 'ggbet'},
-        '1-st map: nip total under 12.5': {'3.89': 'ggbet'},
-        '1-st map: nip total under 14.5': {'2.99': 'ggbet'},
-        '1-st map: nip total under 15.5': {'2.33': 'ggbet'},
-        '1-st map: nip will win': {'1.43': 'ggbet'},
-        '1-st map: nip will win round 1': {'1.81': 'ggbet'},
-        '1-st map: north total over 10.5': {'1.52': 'ggbet'},
-        '1-st map: north total over 11.5': {'1.67': 'ggbet'},
-        '1-st map: north total over 12.5': {'1.85': 'ggbet'},
-        '1-st map: north total over 13.5': {'2.08': 'ggbet'},
-        '1-st map: north total over 14.5': {'2.33': 'ggbet'},
-        '1-st map: north total over 15.5': {'2.99': 'ggbet'},
-        '1-st map: north total over 8.5': {'1.28': 'ggbet'},
-        '1-st map: north total over 9.5': {'1.39': 'ggbet'},
-        '1-st map: north total under 10.5': {'2.43': 'ggbet'},
-        '1-st map: north total under 11.5': {'2.12': 'ggbet'},
-        '1-st map: north total under 12.5': {'1.89': 'ggbet'},
-        '1-st map: north total under 13.5': {'1.7': 'ggbet'},
-        '1-st map: north total under 14.5': {'1.56': 'ggbet'},
-        '1-st map: north total under 15.5': {'1.36': 'ggbet'},
-        '1-st map: north total under 8.5': {'3.46': 'ggbet'},
-        '1-st map: north total under 9.5': {'2.85': 'ggbet'},
-        '1-st map: north will win': {'2.7': 'ggbet'},
-        '1-st map: north will win round 1': {'1.93': 'ggbet'},
-        '1-st map: race to  rounds nip 12': {'1.49': 'ggbet'},
-        '1-st map: race to  rounds nip 3': {'1.68': 'ggbet'},
-        '1-st map: race to  rounds nip 6': {'1.59': 'ggbet'},
-        '1-st map: race to  rounds nip 9': {'1.54': 'ggbet'},
-        '1-st map: race to  rounds north 12': {'2.51': 'ggbet'},
-        '1-st map: race to  rounds north 3': {'2.11': 'ggbet'},
-        '1-st map: race to  rounds north 6': {'2.27': 'ggbet'},
-        '1-st map: race to  rounds north 9': {'2.38': 'ggbet'},
-        '1-st map: terrorist total over 11.5': {'1.52': 'ggbet'},
-        '1-st map: terrorist total over 13.5': {'2.21': 'ggbet'},
-        '1-st map: terrorist total over 15.5': {'3.62': 'ggbet'},
-        '1-st map: terrorist total over 9.5': {'1.2': 'ggbet'},
-        '1-st map: terrorist total under 11.5': {'2.43': 'ggbet'},
-        '1-st map: terrorist total under 13.5': {'1.62': 'ggbet'},
-        '1-st map: terrorist total under 15.5': {'1.26': 'ggbet'},
-        '1-st map: terrorist total under 9.5': {'4.23': 'ggbet'},
-        '1-st map: total over 23.5': {'1.29': 'ggbet'},
-        '1-st map: total over 24.5': {'1.44': 'ggbet'},
-        '1-st map: total over 25.5': {'1.64': 'ggbet'},
-        '1-st map: total over 26.5': {'1.93': 'ggbet'},
-        '1-st map: total over 27.5': {'2.38': 'ggbet'},
-        '1-st map: total over 28.5': {'3.09': 'ggbet'},
-        '1-st map: total under 23.5': {'3.39': 'ggbet'},
-        '1-st map: total under 24.5': {'2.66': 'ggbet'},
-        '1-st map: total under 25.5': {'2.17': 'ggbet'},
-        '1-st map: total under 26.5': {'1.81': 'ggbet'},
-        '1-st map: total under 27.5': {'1.54': 'ggbet'},
-        '1-st map: total under 28.5': {'1.34': 'ggbet'},
-        '1-st map: will there be overtime no': {'1.07': 'ggbet'},
-        '1-st map: will there be overtime yes': {'7.38': 'ggbet'},
-        '1st map first half - handicap nip +0.5': {'1.55': 'ggbet'},
-        '1st map first half - handicap nip +2.5': {'1.29': 'ggbet'},
-        '1st map first half - handicap nip -1.5': {'1.98': 'ggbet'},
-        '1st map first half - handicap nip -3.5': {'2.77': 'ggbet'},
-        '1st map first half - handicap nip -5.5': {'4.11': 'ggbet'},
-        '1st map first half - handicap north +1.5': {'1.77': 'ggbet'},
-        '1st map first half - handicap north +3.5': {'1.41': 'ggbet'},
-        '1st map first half - handicap north +5.5': {'1.21': 'ggbet'},
-        '1st map first half - handicap north -0.5': {'2.35': 'ggbet'},
-        '1st map first half - handicap north -2.5': {'3.39': 'ggbet'},
-        '1st map first half - nip total over 10.5': {'4.11': 'ggbet'},
-        '1st map first half - nip total over 6.5': {'1.29': 'ggbet'},
-        '1st map first half - nip total over 7.5': {'1.55': 'ggbet'},
-        '1st map first half - nip total over 8.5': {'1.98': 'ggbet'},
-        '1st map first half - nip total over 9.5': {'2.77': 'ggbet'},
-        '1st map first half - nip total under 10.5': {'1.21': 'ggbet'},
-        '1st map first half - nip total under 6.5': {'3.39': 'ggbet'},
-        '1st map first half - nip total under 7.5': {'2.35': 'ggbet'},
-        '1st map first half - nip total under 8.5': {'1.77': 'ggbet'},
-        '1st map first half - nip total under 9.5': {'1.41': 'ggbet'},
-        '1st map first half - nip will win': {'1.55': 'ggbet'},
-        '1st map first half - north total over 4.5': {'1.21': 'ggbet'},
-        '1st map first half - north total over 5.5': {'1.41': 'ggbet'},
-        '1st map first half - north total over 6.5': {'1.77': 'ggbet'},
-        '1st map first half - north total over 7.5': {'2.35': 'ggbet'},
-        '1st map first half - north total over 8.5': {'3.39': 'ggbet'},
-        '1st map first half - north total under 4.5': {'4.11': 'ggbet'},
-        '1st map first half - north total under 5.5': {'2.77': 'ggbet'},
-        '1st map first half - north total under 6.5': {'1.98': 'ggbet'},
-        '1st map first half - north total under 7.5': {'1.55': 'ggbet'},
-        '1st map first half - north total under 8.5': {'1.29': 'ggbet'},
-        '1st map first half - north will win': {'2.35': 'ggbet'},
-        '1st map second half - 1x2 draw': {'9.67': 'ggbet'},
-        '1st map second half - 1x2 nip': {'1.63': 'ggbet'},
-        '1st map second half - 1x2 north': {'2.52': 'ggbet'},
-        '1st map second half - handicap nip +0.5': {'1.49': 'ggbet'},
-        '1st map second half - handicap nip +2.5': {'1.25': 'ggbet'},
-        '1st map second half - handicap nip -1.5': {'1.92': 'ggbet'},
-        '1st map second half - handicap nip -3.5': {'2.94': 'ggbet'},
-        '1st map second half - handicap north +1.5': {'1.82': 'ggbet'},
-        '1st map second half - handicap north +3.5': {'1.37': 'ggbet'},
-        '1st map second half - handicap north -0.5': {'2.51': 'ggbet'},
-        '1st map second half - handicap north -2.5': {'3.7': 'ggbet'},
-        '2-nd map: correct score 0t-e': {'100': 'ggbet'},
-        '2-nd map: correct score 10t-e': {'9.23': 'ggbet'},
-        '2-nd map: correct score 11t-e': {'9.31': 'ggbet'},
-        '2-nd map: correct score 12t-e': {'9.51': 'ggbet'},
-        '2-nd map: correct score 13t-e': {'9.8': 'ggbet'},
-        '2-nd map: correct score 14t-e': {'10.16': 'ggbet'},
-        '2-nd map: correct score 16t-e': {'13.39': 'ggbet'},
-        '2-nd map: correct score 1t-e': {'51.03': 'ggbet'},
-        '2-nd map: correct score 2t-e': {'27.45': 'ggbet'},
-        '2-nd map: correct score 3t-e': {'18.94': 'ggbet'},
-        '2-nd map: correct score 4t-e': {'14.96': 'ggbet'},
-        '2-nd map: correct score 5t-e': {'12.74': 'ggbet'},
-        '2-nd map: correct score 6t-e': {'10.44': 'ggbet'},
-        '2-nd map: correct score 7t-e': {'9.86': 'ggbet'},
-        '2-nd map: correct score 8t-e': {'9.48': 'ggbet'},
-        '2-nd map: correct score 9t-e': {'9.27': 'ggbet'},
-        '2-nd map: ct total  over 11.5': {'1.53': 'ggbet'},
-        '2-nd map: ct total  over 13.5': {'2.25': 'ggbet'},
-        '2-nd map: ct total  over 15.5': {'3.7': 'ggbet'},
-        '2-nd map: ct total  over 9.5': {'1.21': 'ggbet'},
-        '2-nd map: ct total  under 11.5': {'2.4': 'ggbet'},
-        '2-nd map: ct total  under 13.5': {'1.6': 'ggbet'},
-        '2-nd map: ct total  under 15.5': {'1.25': 'ggbet'},
-        '2-nd map: ct total  under 9.5': {'4.11': 'ggbet'},
-        '2-nd map: first half correct score 0h-t': {'87.05': 'ggbet'},
-        '2-nd map: first half correct score 1h-t': {'25.3': 'ggbet'},
-        '2-nd map: first half correct score 2h-t': {'13.78': 'ggbet'},
-        '2-nd map: first half correct score 3h-t': {'9': 'ggbet'},
-        '2-nd map: first half correct score 4h-t': {'6.99': 'ggbet'},
-        '2-nd map: first half correct score 5h-t': {'5.87': 'ggbet'},
-        '2-nd map: first half correct score h-t': {'7.35': 'ggbet'},
-        '2-nd map: handicap nip +1.5': {'1.29': 'ggbet'},
-        '2-nd map: handicap nip +2.5': {'1.23': 'ggbet'},
-        '2-nd map: handicap nip -1.5': {'1.45': 'ggbet'},
-        '2-nd map: handicap nip -2.5': {'1.57': 'ggbet'},
-        '2-nd map: handicap nip -3.5': {'1.73': 'ggbet'},
-        '2-nd map: handicap nip -4.5': {'1.93': 'ggbet'},
-        '2-nd map: handicap nip -5.5': {'2.21': 'ggbet'},
-        '2-nd map: handicap nip -6.5': {'2.57': 'ggbet'},
-        '2-nd map: handicap nip -7.5': {'3.09': 'ggbet'},
-        '2-nd map: handicap nip -8.5': {'3.79': 'ggbet'},
-        '2-nd map: handicap north +1.5': {'2.63': 'ggbet'},
-        '2-nd map: handicap north +2.5': {'2.31': 'ggbet'},
-        '2-nd map: handicap north +3.5': {'2.03': 'ggbet'},
-        '2-nd map: handicap north +4.5': {'1.81': 'ggbet'},
-        '2-nd map: handicap north +5.5': {'1.62': 'ggbet'},
-        '2-nd map: handicap north +6.5': {'1.47': 'ggbet'},
-        '2-nd map: handicap north +7.5': {'1.34': 'ggbet'},
-        '2-nd map: handicap north +8.5': {'1.24': 'ggbet'},
-        '2-nd map: handicap north -1.5': {'3.39': 'ggbet'},
-        '2-nd map: handicap north -2.5': {'3.89': 'ggbet'},
-        '2-nd map: nip total over 13.5': {'1.23': 'ggbet'},
-        '2-nd map: nip total over 15.5': {'1.45': 'ggbet'},
-        '2-nd map: nip total under 13.5': {'3.89': 'ggbet'},
-        '2-nd map: nip total under 15.5': {'2.63': 'ggbet'},
-        '2-nd map: nip will win': {'1.34': 'ggbet'},
-        '2-nd map: nip will win round 1': {'1.79': 'ggbet'},
-        '2-nd map: north total over 10.5': {'1.62': 'ggbet'},
-        '2-nd map: north total over 11.5': {'1.8': 'ggbet'},
-        '2-nd map: north total over 12.5': {'2.03': 'ggbet'},
-        '2-nd map: north total over 13.5': {'2.29': 'ggbet'},
-        '2-nd map: north total over 14.5': {'2.6': 'ggbet'},
-        '2-nd map: north total over 15.5': {'3.39': 'ggbet'},
-        '2-nd map: north total over 7.5': {'1.24': 'ggbet'},
-        '2-nd map: north total over 8.5': {'1.34': 'ggbet'},
-        '2-nd map: north total over 9.5': {'1.46': 'ggbet'},
-        '2-nd map: north total under 10.5': {'2.21': 'ggbet'},
-        '2-nd map: north total under 11.5': {'1.94': 'ggbet'},
-        '2-nd map: north total under 12.5': {'1.73': 'ggbet'},
-        '2-nd map: north total under 13.5': {'1.58': 'ggbet'},
-        '2-nd map: north total under 14.5': {'1.46': 'ggbet'},
-        '2-nd map: north total under 15.5': {'1.29': 'ggbet'},
-        '2-nd map: north total under 7.5': {'3.79': 'ggbet'},
-        '2-nd map: north total under 8.5': {'3.09': 'ggbet'},
-        '2-nd map: north total under 9.5': {'2.6': 'ggbet'},
-        '2-nd map: north will win': {'3.09': 'ggbet'},
-        '2-nd map: north will win round 1': {'1.96': 'ggbet'},
-        '2-nd map: race to  rounds nip 12': {'1.41': 'ggbet'},
-        '2-nd map: race to  rounds nip 3': {'1.63': 'ggbet'},
-        '2-nd map: race to  rounds nip 6': {'1.51': 'ggbet'},
-        '2-nd map: race to  rounds nip 9': {'1.46': 'ggbet'},
-        '2-nd map: race to  rounds north 12': {'2.77': 'ggbet'},
-        '2-nd map: race to  rounds north 3': {'2.19': 'ggbet'},
-        '2-nd map: race to  rounds north 6': {'2.45': 'ggbet'},
-        '2-nd map: race to  rounds north 9': {'2.6': 'ggbet'},
-        '2-nd map: terrorist total over 11.5': {'1.53': 'ggbet'},
-        '2-nd map: terrorist total over 13.5': {'2.25': 'ggbet'},
-        '2-nd map: terrorist total over 15.5': {'3.7': 'ggbet'},
-        '2-nd map: terrorist total over 9.5': {'1.21': 'ggbet'},
-        '2-nd map: terrorist total under 11.5': {'2.4': 'ggbet'},
-        '2-nd map: terrorist total under 13.5': {'1.6': 'ggbet'},
-        '2-nd map: terrorist total under 15.5': {'1.25': 'ggbet'},
-        '2-nd map: terrorist total under 9.5': {'4.11': 'ggbet'},
-        '2-nd map: total over 22.5': {'1.2': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.32': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.47': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.69': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.99': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.45': 'ggbet'},
-        '2-nd map: total over 28.5': {'3.2': 'ggbet'},
-        '2-nd map: total under 22.5': {'4.23': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.2': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.57': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.09': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.76': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.51': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.32': 'ggbet'},
-        '2-nd map: will there be overtime no': {'1.06': 'ggbet'},
-        '2-nd map: will there be overtime yes': {'7.9': 'ggbet'},
-        '2nd map first half - handicap nip +0.5': {'1.47': 'ggbet'},
-        '2nd map first half - handicap nip +2.5': {'1.24': 'ggbet'},
-        '2nd map first half - handicap nip -1.5': {'1.86': 'ggbet'},
-        '2nd map first half - handicap nip -3.5': {'2.54': 'ggbet'},
-        '2nd map first half - handicap nip -5.5': {'3.79': 'ggbet'},
-        '2nd map first half - handicap north +1.5': {'1.88': 'ggbet'},
-        '2nd map first half - handicap north +3.5': {'1.48': 'ggbet'},
-        '2nd map first half - handicap north +5.5': {'1.24': 'ggbet'},
-        '2nd map first half - handicap north -0.5': {'2.57': 'ggbet'},
-        '2nd map first half - handicap north -2.5': {'3.79': 'ggbet'},
-        '2nd map first half - nip total over 10.5': {'3.79': 'ggbet'},
-        '2nd map first half - nip total over 6.5': {'1.24': 'ggbet'},
-        '2nd map first half - nip total over 7.5': {'1.47': 'ggbet'},
-        '2nd map first half - nip total over 8.5': {'1.86': 'ggbet'},
-        '2nd map first half - nip total over 9.5': {'2.54': 'ggbet'},
-        '2nd map first half - nip total under 10.5': {'1.24': 'ggbet'},
-        '2nd map first half - nip total under 6.5': {'3.79': 'ggbet'},
-        '2nd map first half - nip total under 7.5': {'2.57': 'ggbet'},
-        '2nd map first half - nip total under 8.5': {'1.88': 'ggbet'},
-        '2nd map first half - nip total under 9.5': {'1.48': 'ggbet'},
-        '2nd map first half - nip will win': {'1.47': 'ggbet'},
-        '2nd map first half - north total over 4.5': {'1.24': 'ggbet'},
-        '2nd map first half - north total over 5.5': {'1.48': 'ggbet'},
-        '2nd map first half - north total over 6.5': {'1.88': 'ggbet'},
-        '2nd map first half - north total over 7.5': {'2.57': 'ggbet'},
-        '2nd map first half - north total over 8.5': {'3.7': 'ggbet'},
-        '2nd map first half - north total under 4.5': {'3.79': 'ggbet'},
-        '2nd map first half - north total under 5.5': {'2.54': 'ggbet'},
-        '2nd map first half - north total under 6.5': {'1.86': 'ggbet'},
-        '2nd map first half - north total under 7.5': {'1.47': 'ggbet'},
-        '2nd map first half - north total under 8.5': {'1.25': 'ggbet'},
-        '2nd map first half - north will win': {'2.57': 'ggbet'},
-        '2nd map second half - 1x2 draw': {'9.65': 'ggbet'},
-        '2nd map second half - 1x2 nip': {'1.55': 'ggbet'},
-        '2nd map second half - 1x2 north': {'2.74': 'ggbet'},
-        '2nd map second half - handicap nip +0.5': {'1.42': 'ggbet'},
-        '2nd map second half - handicap nip +2.5': {'1.21': 'ggbet'},
-        '2nd map second half - handicap nip -1.5': {'1.82': 'ggbet'},
-        '2nd map second half - handicap nip -3.5': {'2.77': 'ggbet'},
-        '2nd map second half - handicap north +1.5': {'1.92': 'ggbet'},
-        '2nd map second half - handicap north +3.5': {'1.41': 'ggbet'},
-        '2nd map second half - handicap north -0.5': {'2.73': 'ggbet'},
-        '2nd map second half - handicap north -2.5': {'4.11': 'ggbet'},
-        'correct score 0-2': {'6.82': 'ggbet'},
-        'correct score 1-2': {'5.78': 'ggbet'},
-        'correct score 2-0': {'1.95': 'ggbet'},
-        'correct score 2-1': {'3.18': 'ggbet'},
-        'handicap nip +1.5': {'1.22': 'ggbet'},
-        'handicap nip -11.5': {'2.43': 'ggbet'},
-        'handicap nip -12.5': {'2.77': 'ggbet'},
-        'handicap nip -14.5': {'3.79': 'ggbet'},
-        'handicap nip -2.5': {'1.32': 'ggbet'},
-        'handicap nip -5.5': {'1.46': 'ggbet'},
-        'handicap nip -7.5': {'1.65': 'ggbet'},
-        'handicap nip -9.5': {'1.94': 'ggbet'},
-        'handicap north +11.5': {'1.52': 'ggbet'},
-        'handicap north +12.5': {'1.41': 'ggbet'},
-        'handicap north +14.5': {'1.24': 'ggbet'},
-        'handicap north +2.5': {'3.2': 'ggbet'},
-        'handicap north +5.5': {'2.6': 'ggbet'},
-        'handicap north +7.5': {'2.16': 'ggbet'},
-        'handicap north +9.5': {'1.8': 'ggbet'},
-        'handicap north -1.5': {'3.99': 'ggbet'},
-        'nip handicap +1.5 maps': {'1.08': 'ggbet'},
-        'nip handicap -1.5 maps': {'1.96': 'ggbet'},
-        'nip total over 32.5': {'1.97': 'ggbet'},
-        'nip total over 37.5': {'2.51': 'ggbet'},
-        'nip total over 41.5': {'3.62': 'ggbet'},
-        'nip total under 32.5': {'1.78': 'ggbet'},
-        'nip total under 37.5': {'1.49': 'ggbet'},
-        'nip total under 41.5': {'1.26': 'ggbet'},
-        'nip will win': {'1.27': 'ggbet'},
-        'north handicap +1.5 maps': {'1.79': 'ggbet'},
-        'north handicap -1.5 maps': {'6.94': 'ggbet'},
-        'north total over 18.5': {'1.23': 'ggbet'},
-        'north total over 22.5': {'1.45': 'ggbet'},
-        'north total over 27.5': {'1.75': 'ggbet'},
-        'north total over 32.5': {'2.51': 'ggbet'},
-        'north total over 36.5': {'3.39': 'ggbet'},
-        'north total under 18.5': {'3.89': 'ggbet'},
-        'north total under 22.5': {'2.63': 'ggbet'},
-        'north total under 27.5': {'2.01': 'ggbet'},
-        'north total under 32.5': {'1.49': 'ggbet'},
-        'north total under 36.5': {'1.29': 'ggbet'},
-        'north will win': {'3.6': 'ggbet'},
-        'odd/even maps even': {'1.62': 'ggbet'},
-        'odd/even maps odd': {'2.21': 'ggbet'},
-        'total maps over 2.5': {'2.21': 'ggbet'},
-        'total maps under 2.5': {'1.62': 'ggbet'},
-        'total over 49.5': {'1.21': 'ggbet'},
-        'total over 51.5': {'1.33': 'ggbet'},
-        'total over 53.5': {'1.48': 'ggbet'},
-        'total over 55.5': {'1.63': 'ggbet'},
-        'total over 57.5': {'1.78': 'ggbet'},
-        'total over 61.5': {'1.98': 'ggbet'},
-        'total over 67.5': {'2.21': 'ggbet'},
-        'total over 72.5': {'2.57': 'ggbet'},
-        'total over 75.5': {'2.99': 'ggbet'},
-        'total over 78.5': {'3.79': 'ggbet'},
-        'total under 49.5': {'4.11': 'ggbet'},
-        'total under 51.5': {'3.14': 'ggbet'},
-        'total under 53.5': {'2.54': 'ggbet'},
-        'total under 55.5': {'2.19': 'ggbet'},
-        'total under 57.5': {'1.97': 'ggbet'},
-        'total under 61.5': {'1.77': 'ggbet'},
-        'total under 67.5': {'1.62': 'ggbet'},
-        'total under 72.5': {'1.47': 'ggbet'},
-        'total under 75.5': {'1.36': 'ggbet'},
-        'total under 78.5': {'1.24': 'ggbet'}
-    },
-    'purple haze - wesq': {
-        '1-st map: handicap purple haze -4.5': {'1.64': 'ggbet'},
-        '1-st map: handicap purple haze -5.5': {'1.85': 'ggbet'},
-        '1-st map: handicap purple haze -6.5': {'2.14': 'ggbet'},
-        '1-st map: handicap wesq +4.5': {'2.17': 'ggbet'},
-        '1-st map: handicap wesq +5.5': {'1.89': 'ggbet'},
-        '1-st map: handicap wesq +6.5': {'1.66': 'ggbet'},
-        '1-st map: purple haze will win': {'1.2': 'ggbet'},
-        '1-st map: purple haze will win round 1': {'1.74': 'ggbet'},
-        '1-st map: total over 24.5': {'1.56': 'ggbet'},
-        '1-st map: total over 25.5': {'1.81': 'ggbet'},
-        '1-st map: total over 26.5': {'2.17': 'ggbet'},
-        '1-st map: total under 24.5': {'2.33': 'ggbet'},
-        '1-st map: total under 25.5': {'1.93': 'ggbet'},
-        '1-st map: total under 26.5': {'1.64': 'ggbet'},
-        '1-st map: wesq will win': {'4.23': 'ggbet'},
-        '1-st map: wesq will win round 1': {'2.02': 'ggbet'},
-        '1x2 draw': {'3.13': 'ggbet'},
-        '1x2 purple haze': {'1.45': 'ggbet'},
-        '1x2 wesq': {'10.56': 'ggbet'},
-        '2-nd map: handicap purple haze -4.5': {'1.62': 'ggbet'},
-        '2-nd map: handicap purple haze -5.5': {'1.82': 'ggbet'},
-        '2-nd map: handicap purple haze -6.5': {'2.11': 'ggbet'},
-        '2-nd map: handicap wesq +4.5': {'2.21': 'ggbet'},
-        '2-nd map: handicap wesq +5.5': {'1.92': 'ggbet'},
-        '2-nd map: handicap wesq +6.5': {'1.68': 'ggbet'},
-        '2-nd map: purple haze will win': {'1.19': 'ggbet'},
-        '2-nd map: purple haze will win round 1': {'1.73': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.57': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.83': 'ggbet'},
-        '2-nd map: total over 26.5': {'2.19': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.31': 'ggbet'},
-        '2-nd map: total under 25.5': {'1.91': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.63': 'ggbet'},
-        '2-nd map: wesq will win': {'4.35': 'ggbet'},
-        '2-nd map: wesq will win round 1': {'2.03': 'ggbet'},
-        'purple haze handicap +0.5 maps': {'1.03': 'ggbet'},
-        'purple haze handicap -0.5 maps': {'1.45': 'ggbet'},
-        'wesq handicap +0.5 maps': {'2.63': 'ggbet'},
-        'wesq handicap -0.5 maps': {'10.09': 'ggbet'}
-    },
-    'purple haze - yung trappers': {
-        '1-st map: handicap purple haze -4.5': {'1.64': 'ggbet'},
-        '1-st map: handicap purple haze -5.5': {'1.85': 'ggbet'},
-        '1-st map: handicap purple haze -6.5': {'2.14': 'ggbet'},
-        '1-st map: handicap yung trappers +4.5': {'2.17': 'ggbet'},
-        '1-st map: handicap yung trappers +5.5': {'1.89': 'ggbet'},
-        '1-st map: handicap yung trappers +6.5': {'1.66': 'ggbet'},
-        '1-st map: purple haze will win': {'1.2': 'ggbet'},
-        '1-st map: purple haze will win round 1': {'1.74': 'ggbet'},
-        '1-st map: total over 24.5': {'1.56': 'ggbet'},
-        '1-st map: total over 25.5': {'1.81': 'ggbet'},
-        '1-st map: total over 26.5': {'2.17': 'ggbet'},
-        '1-st map: total under 24.5': {'2.33': 'ggbet'},
-        '1-st map: total under 25.5': {'1.93': 'ggbet'},
-        '1-st map: total under 26.5': {'1.64': 'ggbet'},
-        '1-st map: yung trappers will win': {'4.23': 'ggbet'},
-        '1-st map: yung trappers will win round 1': {'2.02': 'ggbet'},
-        '1x2 draw': {'3.13': 'ggbet'},
-        '1x2 purple haze': {'1.45': 'ggbet'},
-        '1x2 yung trappers': {'10.56': 'ggbet'},
-        '2-nd map: handicap purple haze -4.5': {'1.62': 'ggbet'},
-        '2-nd map: handicap purple haze -5.5': {'1.82': 'ggbet'},
-        '2-nd map: handicap purple haze -6.5': {'2.11': 'ggbet'},
-        '2-nd map: handicap yung trappers +4.5': {'2.21': 'ggbet'},
-        '2-nd map: handicap yung trappers +5.5': {'1.92': 'ggbet'},
-        '2-nd map: handicap yung trappers +6.5': {'1.68': 'ggbet'},
-        '2-nd map: purple haze will win': {'1.19': 'ggbet'},
-        '2-nd map: purple haze will win round 1': {'1.73': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.57': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.83': 'ggbet'},
-        '2-nd map: total over 26.5': {'2.19': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.31': 'ggbet'},
-        '2-nd map: total under 25.5': {'1.91': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.63': 'ggbet'},
-        '2-nd map: yung trappers will win': {'4.35': 'ggbet'},
-        '2-nd map: yung trappers will win round 1': {'2.03': 'ggbet'},
-        'purple haze handicap +0.5 maps': {'1.03': 'ggbet'},
-        'purple haze handicap -0.5 maps': {'1.45': 'ggbet'},
-        'yung trappers handicap +0.5 maps': {'2.63': 'ggbet'},
-        'yung trappers handicap -0.5 maps': {'10.09': 'ggbet'}
-    },
-    'rembaza - wesq': {
-        '1-st map: handicap rembaza -3.5': {'1.56': 'ggbet'},
-        '1-st map: handicap rembaza -4.5': {'1.73': 'ggbet'},
-        '1-st map: handicap rembaza -5.5': {'1.97': 'ggbet'},
-        '1-st map: handicap rembaza -6.5': {'2.29': 'ggbet'},
-        '1-st map: handicap wesq +3.5': {'2.33': 'ggbet'},
-        '1-st map: handicap wesq +4.5': {'2.03': 'ggbet'},
-        '1-st map: handicap wesq +5.5': {'1.78': 'ggbet'},
-        '1-st map: handicap wesq +6.5': {'1.58': 'ggbet'},
-        '1-st map: rembaza will win': {'1.24': 'ggbet'},
-        '1-st map: rembaza will win round 1': {'1.75': 'ggbet'},
-        '1-st map: total over 24.5': {'1.51': 'ggbet'},
-        '1-st map: total over 25.5': {'1.74': 'ggbet'},
-        '1-st map: total over 26.5': {'2.08': 'ggbet'},
-        '1-st map: total under 24.5': {'2.45': 'ggbet'},
-        '1-st map: total under 25.5': {'2.02': 'ggbet'},
-        '1-st map: total under 26.5': {'1.7': 'ggbet'},
-        '1-st map: wesq will win': {'3.79': 'ggbet'},
-        '1-st map: wesq will win round 1': {'2.01': 'ggbet'},
-        '1x2 draw': {'3.01': 'ggbet'},
-        '1x2 rembaza': {'1.53': 'ggbet'},
-        '1x2 wesq': {'8.6': 'ggbet'},
-        '2-nd map: handicap rembaza -3.5': {'1.54': 'ggbet'},
-        '2-nd map: handicap rembaza -4.5': {'1.71': 'ggbet'},
-        '2-nd map: handicap rembaza -5.5': {'1.94': 'ggbet'},
-        '2-nd map: handicap rembaza -6.5': {'2.25': 'ggbet'},
-        '2-nd map: handicap wesq +3.5': {'2.38': 'ggbet'},
-        '2-nd map: handicap wesq +4.5': {'2.06': 'ggbet'},
-        '2-nd map: handicap wesq +5.5': {'1.8': 'ggbet'},
-        '2-nd map: handicap wesq +6.5': {'1.6': 'ggbet'},
-        '2-nd map: rembaza will win': {'1.23': 'ggbet'},
-        '2-nd map: rembaza will win round 1': {'1.75': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.52': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.76': 'ggbet'},
-        '2-nd map: total over 26.5': {'2.11': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.43': 'ggbet'},
-        '2-nd map: total under 25.5': {'1.99': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.68': 'ggbet'},
-        '2-nd map: wesq will win': {'3.89': 'ggbet'},
-        '2-nd map: wesq will win round 1': {'2.01': 'ggbet'},
-        'rembaza handicap +0.5 maps': {'1.04': 'ggbet'},
-        'rembaza handicap -0.5 maps': {'1.54': 'ggbet'},
-        'wesq handicap +0.5 maps': {'2.38': 'ggbet'},
-        'wesq handicap -0.5 maps': {'9.22': 'ggbet'}
-    },
-    'rembaza - yung trappers': {
-        '1-st map: handicap rembaza -3.5': {'1.56': 'ggbet'},
-        '1-st map: handicap rembaza -4.5': {'1.73': 'ggbet'},
-        '1-st map: handicap rembaza -5.5': {'1.97': 'ggbet'},
-        '1-st map: handicap rembaza -6.5': {'2.29': 'ggbet'},
-        '1-st map: handicap yung trappers +3.5': {'2.33': 'ggbet'},
-        '1-st map: handicap yung trappers +4.5': {'2.03': 'ggbet'},
-        '1-st map: handicap yung trappers +5.5': {'1.78': 'ggbet'},
-        '1-st map: handicap yung trappers +6.5': {'1.58': 'ggbet'},
-        '1-st map: rembaza will win': {'1.24': 'ggbet'},
-        '1-st map: rembaza will win round 1': {'1.75': 'ggbet'},
-        '1-st map: total over 24.5': {'1.51': 'ggbet'},
-        '1-st map: total over 25.5': {'1.74': 'ggbet'},
-        '1-st map: total over 26.5': {'2.08': 'ggbet'},
-        '1-st map: total under 24.5': {'2.45': 'ggbet'},
-        '1-st map: total under 25.5': {'2.02': 'ggbet'},
-        '1-st map: total under 26.5': {'1.7': 'ggbet'},
-        '1-st map: yung trappers will win': {'3.79': 'ggbet'},
-        '1-st map: yung trappers will win round 1': {'2.01': 'ggbet'},
-        '1x2 draw': {'3.2': 'ggbet'},
-        '1x2 rembaza': {'1.51': 'ggbet'},
-        '1x2 yung trappers': {'7.63': 'ggbet'},
-        '2-nd map: handicap rembaza -3.5': {'1.54': 'ggbet'},
-        '2-nd map: handicap rembaza -4.5': {'1.71': 'ggbet'},
-        '2-nd map: handicap rembaza -5.5': {'1.94': 'ggbet'},
-        '2-nd map: handicap rembaza -6.5': {'2.25': 'ggbet'},
-        '2-nd map: handicap yung trappers +3.5': {'2.38': 'ggbet'},
-        '2-nd map: handicap yung trappers +4.5': {'2.06': 'ggbet'},
-        '2-nd map: handicap yung trappers +5.5': {'1.8': 'ggbet'},
-        '2-nd map: handicap yung trappers +6.5': {'1.6': 'ggbet'},
-        '2-nd map: rembaza will win': {'1.23': 'ggbet'},
-        '2-nd map: rembaza will win round 1': {'1.75': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.52': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.76': 'ggbet'},
-        '2-nd map: total over 26.5': {'2.11': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.43': 'ggbet'},
-        '2-nd map: total under 25.5': {'1.99': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.68': 'ggbet'},
-        '2-nd map: yung trappers will win': {'3.89': 'ggbet'},
-        '2-nd map: yung trappers will win round 1': {'2.01': 'ggbet'},
-        'rembaza handicap +0.5 maps': {'1.04': 'ggbet'},
-        'rembaza handicap -0.5 maps': {'1.54': 'ggbet'},
-        'yung trappers handicap +0.5 maps': {'2.38': 'ggbet'},
-        'yung trappers handicap -0.5 maps': {'9.22': 'ggbet'}
-    },
-    'sangal - tricked': {
-        '1-st map: handicap sangal +1.5': {'2.05': 'ggbet'},
-        '1-st map: handicap sangal +2.5': {'1.84': 'ggbet'},
-        '1-st map: handicap sangal +3.5': {'1.66': 'ggbet'},
-        '1-st map: handicap sangal +4.5': {'1.51': 'ggbet'},
-        '1-st map: handicap sangal +5.5': {'1.39': 'ggbet'},
-        '1-st map: handicap sangal +6.5': {'1.29': 'ggbet'},
-        '1-st map: handicap sangal +7.5': {'1.2': 'ggbet'},
-        '1-st map: handicap sangal -1.5': {'2.57': 'ggbet'},
-        '1-st map: handicap sangal -2.5': {'2.94': 'ggbet'},
-        '1-st map: handicap sangal -3.5': {'3.39': 'ggbet'},
-        '1-st map: handicap sangal -4.5': {'3.99': 'ggbet'},
-        '1-st map: handicap tricked +1.5': {'1.47': 'ggbet'},
-        '1-st map: handicap tricked +2.5': {'1.37': 'ggbet'},
-        '1-st map: handicap tricked +3.5': {'1.29': 'ggbet'},
-        '1-st map: handicap tricked +4.5': {'1.22': 'ggbet'},
-        '1-st map: handicap tricked -1.5': {'1.72': 'ggbet'},
-        '1-st map: handicap tricked -2.5': {'1.9': 'ggbet'},
-        '1-st map: handicap tricked -3.5': {'2.14': 'ggbet'},
-        '1-st map: handicap tricked -4.5': {'2.45': 'ggbet'},
-        '1-st map: handicap tricked -5.5': {'2.85': 'ggbet'},
-        '1-st map: handicap tricked -6.5': {'3.39': 'ggbet'},
-        '1-st map: handicap tricked -7.5': {'4.23': 'ggbet'},
-        '1-st map: sangal will win': {'2.31': 'ggbet'},
-        '1-st map: sangal will win round 1': {'1.91': 'ggbet'},
-        '1-st map: total over 23.5': {'1.23': 'ggbet'},
-        '1-st map: total over 24.5': {'1.36': 'ggbet'},
-        '1-st map: total over 25.5': {'1.55': 'ggbet'},
-        '1-st map: total over 26.5': {'1.82': 'ggbet'},
-        '1-st map: total over 27.5': {'2.23': 'ggbet'},
-        '1-st map: total over 28.5': {'2.9': 'ggbet'},
-        '1-st map: total over 29.5': {'4.11': 'ggbet'},
-        '1-st map: total under 23.5': {'3.89': 'ggbet'},
-        '1-st map: total under 24.5': {'2.99': 'ggbet'},
-        '1-st map: total under 25.5': {'2.35': 'ggbet'},
-        '1-st map: total under 26.5': {'1.92': 'ggbet'},
-        '1-st map: total under 27.5': {'1.61': 'ggbet'},
-        '1-st map: total under 28.5': {'1.38': 'ggbet'},
-        '1-st map: total under 29.5': {'1.21': 'ggbet'},
-        '1-st map: tricked will win': {'1.57': 'ggbet'},
-        '1-st map: tricked will win round 1': {'1.83': 'ggbet'},
-        '2-nd map: handicap sangal +1.5': {'2.06': 'ggbet'},
-        '2-nd map: handicap sangal +2.5': {'1.85': 'ggbet'},
-        '2-nd map: handicap sangal +3.5': {'1.67': 'ggbet'},
-        '2-nd map: handicap sangal +4.5': {'1.52': 'ggbet'},
-        '2-nd map: handicap sangal +5.5': {'1.4': 'ggbet'},
-        '2-nd map: handicap sangal +6.5': {'1.29': 'ggbet'},
-        '2-nd map: handicap sangal +7.5': {'1.21': 'ggbet'},
-        '2-nd map: handicap sangal -1.5': {'2.6': 'ggbet'},
-        '2-nd map: handicap sangal -2.5': {'2.94': 'ggbet'},
-        '2-nd map: handicap sangal -3.5': {'3.39': 'ggbet'},
-        '2-nd map: handicap sangal -4.5': {'3.99': 'ggbet'},
-        '2-nd map: handicap tricked +1.5': {'1.46': 'ggbet'},
-        '2-nd map: handicap tricked +2.5': {'1.37': 'ggbet'},
-        '2-nd map: handicap tricked +3.5': {'1.29': 'ggbet'},
-        '2-nd map: handicap tricked +4.5': {'1.22': 'ggbet'},
-        '2-nd map: handicap tricked -1.5': {'1.71': 'ggbet'},
-        '2-nd map: handicap tricked -2.5': {'1.89': 'ggbet'},
-        '2-nd map: handicap tricked -3.5': {'2.12': 'ggbet'},
-        '2-nd map: handicap tricked -4.5': {'2.43': 'ggbet'},
-        '2-nd map: handicap tricked -5.5': {'2.81': 'ggbet'},
-        '2-nd map: handicap tricked -6.5': {'3.39': 'ggbet'},
-        '2-nd map: handicap tricked -7.5': {'4.11': 'ggbet'},
-        '2-nd map: sangal will win': {'2.33': 'ggbet'},
-        '2-nd map: sangal will win round 1': {'1.92': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.24': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.37': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.56': 'ggbet'},
-        '2-nd map: total over 26.5': {'1.83': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.25': 'ggbet'},
-        '2-nd map: total over 28.5': {'2.9': 'ggbet'},
-        '2-nd map: total over 29.5': {'4.11': 'ggbet'},
-        '2-nd map: total under 23.5': {'3.79': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.94': 'ggbet'},
-        '2-nd map: total under 25.5': {'2.33': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.91': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.6': 'ggbet'},
-        '2-nd map: total under 28.5': {'1.38': 'ggbet'},
-        '2-nd map: total under 29.5': {'1.21': 'ggbet'},
-        '2-nd map: tricked will win': {'1.56': 'ggbet'},
-        '2-nd map: tricked will win round 1': {'1.82': 'ggbet'},
-        'correct score 0-2': {'2.35': 'ggbet'},
-        'correct score 1-2': {'3.54': 'ggbet'},
-        'correct score 2-0': {'4.53': 'ggbet'},
-        'correct score 2-1': {'4.7': 'ggbet'},
-        'odd/even maps even': {'1.64': 'ggbet'},
-        'odd/even maps odd': {'2.17': 'ggbet'},
-        'sangal handicap +1.5 maps': {'1.55': 'ggbet'},
-        'sangal handicap -1.5 maps': {'4.49': 'ggbet'},
-        'sangal will win': {'2.51': 'ggbet'},
-        'total maps over 2.5': {'2.17': 'ggbet'},
-        'total maps under 2.5': {'1.64': 'ggbet'},
-        'tricked handicap +1.5 maps': {'1.18': 'ggbet'},
-        'tricked handicap -1.5 maps': {'2.35': 'ggbet'},
-        'tricked will win': {'1.5': 'ggbet'}
-    },
-    'tenerife titans - winstrike': {
-        '1-st map: handicap tenerife titans +2.5': {'2.9': 'ggbet'},
-        '1-st map: handicap tenerife titans +3.5': {'2.48': 'ggbet'},
-        '1-st map: handicap tenerife titans +4.5': {'2.14': 'ggbet'},
-        '1-st map: handicap tenerife titans +5.5': {'1.86': 'ggbet'},
-        '1-st map: handicap tenerife titans +6.5': {'1.63': 'ggbet'},
-        '1-st map: handicap tenerife titans +7.5': {'1.45': 'ggbet'},
-        '1-st map: handicap tenerife titans +8.5': {'1.31': 'ggbet'},
-        '1-st map: handicap winstrike -2.5': {'1.38': 'ggbet'},
-        '1-st map: handicap winstrike -3.5': {'1.5': 'ggbet'},
-        '1-st map: handicap winstrike -4.5': {'1.66': 'ggbet'},
-        '1-st map: handicap winstrike -5.5': {'1.88': 'ggbet'},
-        '1-st map: handicap winstrike -6.5': {'2.19': 'ggbet'},
-        '1-st map: handicap winstrike -7.5': {'2.63': 'ggbet'},
-        '1-st map: handicap winstrike -8.5': {'3.26': 'ggbet'},
-        '1-st map: tenerife titans will win': {'4.11': 'ggbet'},
-        '1-st map: tenerife titans will win round 1': {'2.02': 'ggbet'},
-        '1-st map: total over 23.5': {'1.36': 'ggbet'},
-        '1-st map: total over 24.5': {'1.54': 'ggbet'},
-        '1-st map: total over 25.5': {'1.79': 'ggbet'},
-        '1-st map: total over 26.5': {'2.14': 'ggbet'},
-        '1-st map: total over 27.5': {'2.66': 'ggbet'},
-        '1-st map: total under 23.5': {'2.99': 'ggbet'},
-        '1-st map: total under 24.5': {'2.38': 'ggbet'},
-        '1-st map: total under 25.5': {'1.96': 'ggbet'},
-        '1-st map: total under 26.5': {'1.66': 'ggbet'},
-        '1-st map: total under 27.5': {'1.44': 'ggbet'},
-        '1-st map: winstrike will win': {'1.21': 'ggbet'},
-        '1-st map: winstrike will win round 1': {'1.74': 'ggbet'},
-        '2-nd map: handicap tenerife titans +2.5': {'2.9': 'ggbet'},
-        '2-nd map: handicap tenerife titans +3.5': {'2.48': 'ggbet'},
-        '2-nd map: handicap tenerife titans +4.5': {'2.16': 'ggbet'},
-        '2-nd map: handicap tenerife titans +5.5': {'1.87': 'ggbet'},
-        '2-nd map: handicap tenerife titans +6.5': {'1.64': 'ggbet'},
-        '2-nd map: handicap tenerife titans +7.5': {'1.46': 'ggbet'},
-        '2-nd map: handicap tenerife titans +8.5': {'1.32': 'ggbet'},
-        '2-nd map: handicap winstrike -2.5': {'1.38': 'ggbet'},
-        '2-nd map: handicap winstrike -3.5': {'1.5': 'ggbet'},
-        '2-nd map: handicap winstrike -4.5': {'1.65': 'ggbet'},
-        '2-nd map: handicap winstrike -5.5': {'1.87': 'ggbet'},
-        '2-nd map: handicap winstrike -6.5': {'2.17': 'ggbet'},
-        '2-nd map: handicap winstrike -7.5': {'2.6': 'ggbet'},
-        '2-nd map: handicap winstrike -8.5': {'3.2': 'ggbet'},
-        '2-nd map: tenerife titans will win': {'4.11': 'ggbet'},
-        '2-nd map: tenerife titans will win round 1': {'2.02': 'ggbet'},
-        '2-nd map: total over 23.5': {'1.37': 'ggbet'},
-        '2-nd map: total over 24.5': {'1.55': 'ggbet'},
-        '2-nd map: total over 25.5': {'1.8': 'ggbet'},
-        '2-nd map: total over 26.5': {'2.16': 'ggbet'},
-        '2-nd map: total over 27.5': {'2.7': 'ggbet'},
-        '2-nd map: total under 23.5': {'2.94': 'ggbet'},
-        '2-nd map: total under 24.5': {'2.35': 'ggbet'},
-        '2-nd map: total under 25.5': {'1.94': 'ggbet'},
-        '2-nd map: total under 26.5': {'1.65': 'ggbet'},
-        '2-nd map: total under 27.5': {'1.43': 'ggbet'},
-        '2-nd map: winstrike will win': {'1.21': 'ggbet'},
-        '2-nd map: winstrike will win round 1': {'1.74': 'ggbet'},
-        'correct score 0-2': {'1.47': 'ggbet'},
-        'correct score 1-2': {'3.94': 'ggbet'},
-        'correct score 2-0': {'9.89': 'ggbet'},
-        'correct score 2-1': {'8.65': 'ggbet'},
-        'odd/even maps even': {'1.36': 'ggbet'},
-        'odd/even maps odd': {'2.99': 'ggbet'},
-        'tenerife titans handicap +1.5 maps': {'2.57': 'ggbet'},
-        'tenerife titans handicap -1.5 maps': {'10.09': 'ggbet'},
-        'tenerife titans will win': {'5.81': 'ggbet'},
-        'total maps over 2.5': {'2.99': 'ggbet'},
-        'total maps under 2.5': {'1.36': 'ggbet'},
-        'winstrike handicap +1.5 maps': {'1.03': 'ggbet'},
-        'winstrike handicap -1.5 maps': {'1.47': 'ggbet'},
-        'winstrike will win': {'1.12': 'ggbet'}
-    },
-    'vindictive - white rabbit': {
-        '1-st map: vindictive will win': {'1.47': 'ggbet'},
-        '1-st map: white rabbit will win': {'2.57': 'ggbet'},
-        '2-nd map: vindictive will win': {'1.47': 'ggbet'},
-        '2-nd map: white rabbit will win': {'2.57': 'ggbet'},
-        'vindictive will win': {'1.38': 'ggbet'},
-        'white rabbit will win': {'2.94': 'ggbet'}
+        '1-st map: handicap lucid dream +2.5': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'
+            },
+        '1-st map: handicap lucid dream +3.5': {
+            '1.8': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'
+            },
+        '1-st map: handicap lucid dream +4.5': {
+            '1.62': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'
+            },
+        '1-st map: handicap tiger -2.5': {'1.74': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '1-st map: handicap tiger -3.5': {'1.94': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '1-st map: handicap tiger -4.5': {'2.21': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '1-st map: lucid dream will win': {'2.6': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '1-st map: tiger will win': {'1.46': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '1-st map: total over 26.5': {'1.86': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '1-st map: total under 26.5': {'1.88': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '2-nd map: handicap lucid dream +2.5': {
+            '2.03': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'
+            },
+        '2-nd map: handicap lucid dream +3.5': {
+            '1.81': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'
+            },
+        '2-nd map: handicap lucid dream +4.5': {
+            '1.63': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'
+            },
+        '2-nd map: handicap tiger -2.5': {'1.73': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '2-nd map: handicap tiger -3.5': {'1.93': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '2-nd map: handicap tiger -4.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '2-nd map: lucid dream will win': {'2.6': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '2-nd map: lucid dream will win round 1': {
+            '1.93': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'
+            },
+        '2-nd map: tiger will win': {'1.46': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '2-nd map: tiger will win round 1': {
+            '1.81': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'
+            },
+        '2-nd map: total over 26.5': {'1.87': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        '2-nd map: total under 26.5': {'1.87': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'correct score 0-2': {'2.05': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'correct score 1-2': {'3.5': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'correct score 2-0': {'5.5': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'correct score 2-1': {'5.33': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'lucid dream handicap +1.5 maps': {'1.72': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'lucid dream handicap -1.5 maps': {'5.4': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'lucid dream will win': {'3.03': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'odd/even maps even': {'1.59': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'odd/even maps odd': {'2.27': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'tiger handicap +1.5 maps': {'1.13': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'tiger handicap -1.5 maps': {'2.05': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'tiger will win': {'1.36': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'total maps over 2.5': {'2.27': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'},
+        'total maps under 2.5': {'1.59': 'ggbet(https://gg.bet/en/betting/match/tiger-vs-lucid-dream-03-07)'}
+        },
+    'lvlup - qske': {
+        '1-st map: lvlup will win': {'1.53': 'ggbet(https://gg.bet/en/betting/match/qske-vs-lvlup-04-07)'},
+        '1-st map: qske will win': {'2.4': 'ggbet(https://gg.bet/en/betting/match/qske-vs-lvlup-04-07)'},
+        '2-nd map: lvlup will win': {'1.52': 'ggbet(https://gg.bet/en/betting/match/qske-vs-lvlup-04-07)'},
+        '2-nd map: qske will win': {'2.43': 'ggbet(https://gg.bet/en/betting/match/qske-vs-lvlup-04-07)'},
+        'lvlup will win': {'1.45': 'ggbet(https://gg.bet/en/betting/match/qske-vs-lvlup-04-07)'},
+        'qske will win': {'2.66': 'ggbet(https://gg.bet/en/betting/match/qske-vs-lvlup-04-07)'}
+        },
+    'mazaalai - tyloo': {
+        '1-st map: handicap mazaalai +4.5': {'2.17': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: handicap mazaalai +5.5': {'1.88': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: handicap mazaalai +6.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: handicap tyloo -4.5': {'1.64': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: handicap tyloo -5.5': {'1.86': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: handicap tyloo -6.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: mazaalai will win': {'4.23': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: mazaalai will win round 1': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'
+            },
+        '1-st map: total over 25.5': {'1.8': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: total over 26.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: total under 25.5': {'1.94': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: total under 26.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: tyloo will win': {'1.2': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '1-st map: tyloo will win round 1': {'1.74': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: handicap mazaalai +4.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: handicap mazaalai +5.5': {'1.9': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: handicap mazaalai +6.5': {'1.66': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: handicap tyloo -4.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: handicap tyloo -5.5': {'1.84': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: handicap tyloo -6.5': {'2.14': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: mazaalai will win': {'4.23': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: mazaalai will win round 1': {
+            '2.02': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'
+            },
+        '2-nd map: total over 25.5': {'1.82': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: total over 26.5': {'2.17': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: total under 25.5': {'1.92': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: total under 26.5': {'1.64': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: tyloo will win': {'1.2': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        '2-nd map: tyloo will win round 1': {'1.74': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'correct score 0-2': {'1.45': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'correct score 1-2': {'3.98': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'correct score 2-0': {'10.13': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'correct score 2-1': {'8.86': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'mazaalai handicap +1.5 maps': {'2.63': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'mazaalai handicap -1.5 maps': {'10.09': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'mazaalai will win': {'6.09': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'odd/even maps even': {'1.35': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'odd/even maps odd': {'3.04': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'total maps over 2.5': {'3.04': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'total maps under 2.5': {'1.35': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'tyloo handicap +1.5 maps': {'1.03': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'tyloo handicap -1.5 maps': {'1.45': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'},
+        'tyloo will win': {'1.11': 'ggbet(https://gg.bet/en/betting/match/tyloo-vs-mazaalai-04-07)'}
+        },
+    'nemiga - sprout': {
+        '1-st map: correct score 1-16': {'100': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 10-16': {'9.68': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 11-16': {'9.58': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 12-16': {'9.61': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 13-16': {'9.75': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 14-16': {'9.97': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-10': {'13.77': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-11': {'12.97': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-12': {'12.42': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-13': {'12.05': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-14': {'11.84': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-2': {'100': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-3': {'66.08': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-4': {'41.17': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-5': {'29.23': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-6': {'22.78': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-7': {'18.96': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-8': {'16.53': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 16-9': {'14.9': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 2-16': {'46.76': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 3-16': {'27.78': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 4-16': {'19.85': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 5-16': {'15.86': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 6-16': {'13.55': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 7-16': {'12.11': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 8-16': {'10.32': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: correct score 9-16': {'9.91': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: ct total  over 11.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: ct total  over 13.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: ct total  under 11.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: ct total  under 13.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: handicap nemiga +1.5': {'2.11': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: handicap nemiga +2.5': {'1.88': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: handicap nemiga +3.5': {'1.69': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: handicap nemiga +4.5': {'1.54': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: handicap sprout -1.5': {'1.68': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: handicap sprout -2.5': {'1.86': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: handicap sprout -3.5': {'2.09': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: handicap sprout -4.5': {'2.38': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: nemiga total over 11.5': {'1.54': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: nemiga total over 12.5': {'1.69': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: nemiga total over 13.5': {'1.88': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: nemiga total over 14.5': {'2.11': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: nemiga total under 11.5': {'2.38': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: nemiga total under 12.5': {'2.09': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: nemiga total under 13.5': {'1.86': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: nemiga total under 14.5': {'1.68': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: nemiga will win': {'2.38': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: nemiga will win round 1': {'1.92': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: sprout total over 15.5': {'1.68': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: sprout total under 15.5': {'2.11': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: sprout will win': {'1.54': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: sprout will win round 1': {'1.82': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: terrorist total over 11.5': {
+            '1.46': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'
+            },
+        '1-st map: terrorist total over 13.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'
+            },
+        '1-st map: terrorist total under 11.5': {
+            '2.6': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'
+            },
+        '1-st map: terrorist total under 13.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'
+            },
+        '1-st map: total over 25.5': {'1.56': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: total over 26.5': {'1.83': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: total over 27.5': {'2.25': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: total under 25.5': {'2.33': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: total under 26.5': {'1.91': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '1-st map: total under 27.5': {'1.6': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 1-16': {'100': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 10-16': {'9.68': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 11-16': {'9.6': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 12-16': {'9.64': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 13-16': {'9.79': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 14-16': {'10.02': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-10': {'13.82': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-11': {'13.03': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-12': {'12.49': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-13': {'12.13': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-14': {'11.93': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-2': {'100': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-3': {'65.32': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-4': {'40.83': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-5': {'29.08': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-6': {'22.72': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-7': {'18.95': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-8': {'16.55': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 16-9': {'14.94': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 2-16': {'45.49': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 3-16': {'27.2': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 4-16': {'19.54': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 5-16': {'15.68': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 6-16': {'13.44': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 7-16': {'12.04': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 8-16': {'10.29': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: correct score 9-16': {'9.9': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: ct total  over 11.5': {'1.46': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: ct total  over 13.5': {'2.16': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: ct total  under 11.5': {'2.6': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: ct total  under 13.5': {'1.65': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: handicap nemiga +1.5': {'2.11': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: handicap nemiga +2.5': {'1.89': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: handicap nemiga +3.5': {'1.71': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: handicap nemiga +4.5': {'1.55': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: handicap sprout -1.5': {'1.68': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: handicap sprout -2.5': {'1.85': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: handicap sprout -3.5': {'2.06': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: handicap sprout -4.5': {'2.35': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: nemiga total over 11.5': {'1.55': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: nemiga total over 12.5': {'1.7': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: nemiga total over 13.5': {'1.89': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: nemiga total over 14.5': {'2.11': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: nemiga total under 11.5': {'2.35': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: nemiga total under 12.5': {'2.08': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: nemiga total under 13.5': {'1.85': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: nemiga total under 14.5': {'1.68': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: nemiga will win': {'2.4': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: nemiga will win round 1': {'1.92': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: sprout total over 15.5': {'1.68': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: sprout total under 15.5': {'2.11': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: sprout will win': {'1.53': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: sprout will win round 1': {'1.82': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: terrorist total over 11.5': {
+            '1.46': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'
+            },
+        '2-nd map: terrorist total over 13.5': {
+            '2.16': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'
+            },
+        '2-nd map: terrorist total under 11.5': {
+            '2.6': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'
+            },
+        '2-nd map: terrorist total under 13.5': {
+            '1.65': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'
+            },
+        '2-nd map: total over 25.5': {'1.56': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: total over 26.5': {'1.84': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: total over 27.5': {'2.25': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: total under 25.5': {'2.33': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: total under 26.5': {'1.9': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        '2-nd map: total under 27.5': {'1.6': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'correct score 0-2': {'2.27': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'correct score 1-2': {'3.52': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'correct score 2-0': {'4.74': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'correct score 2-1': {'4.83': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'handicap nemiga +0.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'handicap nemiga +3.5': {'2.29': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'handicap nemiga +5.5': {'2.02': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'handicap nemiga +7.5': {'1.75': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'handicap nemiga +9.5': {'1.52': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'handicap sprout -0.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'handicap sprout -3.5': {'1.58': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'handicap sprout -5.5': {'1.74': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'handicap sprout -7.5': {'2.01': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'handicap sprout -9.5': {'2.43': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'nemiga handicap +1.5 maps': {'1.59': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'nemiga handicap -1.5 maps': {'4.81': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'nemiga total over 25.5': {'1.45': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'nemiga total over 32.5': {'2.25': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'nemiga total under 25.5': {'2.63': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'nemiga total under 32.5': {'1.6': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'nemiga will win': {'2.63': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'odd/even maps even': {'1.63': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'odd/even maps odd': {'2.19': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'sprout handicap +1.5 maps': {'1.16': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'sprout handicap -1.5 maps': {'2.27': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'sprout total over 32.5': {'1.98': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'sprout total over 37.5': {'2.57': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'sprout total under 32.5': {'1.77': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'sprout total under 37.5': {'1.47': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'sprout will win': {'1.46': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total maps over 2.5': {'2.19': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total maps under 2.5': {'1.63': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total over 54.5': {'1.48': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total over 56.5': {'1.64': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total over 59.5': {'1.85': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total over 64.5': {'2.03': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total over 70.5': {'2.29': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total under 54.5': {'2.54': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total under 56.5': {'2.17': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total under 59.5': {'1.89': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total under 64.5': {'1.73': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'},
+        'total under 70.5': {'1.58': 'ggbet(https://gg.bet/en/betting/match/nemiga-vs-sprout-04-07)'}
+        },
+    'northern forces - tnt': {
+        '1-st map: northern forces will win': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/northern-forces-vs-tnt-04-07)'
+            },
+        '1-st map: tnt will win': {'2.14': 'ggbet(https://gg.bet/en/betting/match/northern-forces-vs-tnt-04-07)'},
+        '2-nd map: northern forces will win': {
+            '1.66': 'ggbet(https://gg.bet/en/betting/match/northern-forces-vs-tnt-04-07)'
+            },
+        '2-nd map: tnt will win': {'2.14': 'ggbet(https://gg.bet/en/betting/match/northern-forces-vs-tnt-04-07)'},
+        'northern forces will win': {'1.61': 'ggbet(https://gg.bet/en/betting/match/northern-forces-vs-tnt-04-07)'},
+        'tnt will win': {'2.25': 'ggbet(https://gg.bet/en/betting/match/northern-forces-vs-tnt-04-07)'}
+        },
+    'reckoning - wolf': {
+        '1-st map: reckoning will win': {
+            '1.42': 'ggbet(https://gg.bet/en/betting/match/reckoning-esports-vs-wolf-04-07)'
+            },
+        '1-st map: wolf will win': {'2.73': 'ggbet(https://gg.bet/en/betting/match/reckoning-esports-vs-wolf-04-07)'},
+        'reckoning will win': {'1.43': 'ggbet(https://gg.bet/en/betting/match/reckoning-esports-vs-wolf-04-07)'},
+        'wolf will win': {'2.73': 'ggbet(https://gg.bet/en/betting/match/reckoning-esports-vs-wolf-04-07)'}
+        },
+    'third impact - valkyrie': {
+        '1-st map: third impact will win': {
+            '1.53': 'ggbet(https://gg.bet/en/betting/match/third-impact-vs-valkyrie-04-07)'
+            },
+        '1-st map: valkyrie will win': {'2.4': 'ggbet(https://gg.bet/en/betting/match/third-impact-vs-valkyrie-04-07)'},
+        '2-nd map: third impact will win': {
+            '1.53': 'ggbet(https://gg.bet/en/betting/match/third-impact-vs-valkyrie-04-07)'
+            },
+        '2-nd map: valkyrie will win': {'2.4': 'ggbet(https://gg.bet/en/betting/match/third-impact-vs-valkyrie-04-07)'},
+        'third impact will win': {'1.44': 'ggbet(https://gg.bet/en/betting/match/third-impact-vs-valkyrie-04-07)'},
+        'valkyrie will win': {'2.7': 'ggbet(https://gg.bet/en/betting/match/third-impact-vs-valkyrie-04-07)'}
+        }
     }
-}
