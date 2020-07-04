@@ -1,3 +1,4 @@
+import re
 from abc import ABC, abstractmethod
 
 from abstract_scraper import AbstractScraper
@@ -22,20 +23,34 @@ class AbstractSyntaxFormatter(ABC):
         :type bets: dict
         """
         self.bets = bets.copy()
+
         bets = self._format_before(bets)
+
         bets = self._update(bets, self._format_total)
         bets = self._update(bets, self._format_maps)
         bets = self._update(bets, self._format_handicap)
         bets = self._update(bets, self._format_win_in_round)
         bets = self._update(bets, self._format_team_names)
         bets = self._update(bets, self._format_correct_score)
-        bets = self._update(bets, self._format_first_frag)
         bets = self._update(bets, self._format_win)
         bets = self._update(bets, self._format_uncommon_chars)
+        bets = self._update(bets, self._format_bomb_exploded)
+        bets = self._update(bets, self._format_bomb_planted)
+        bets = self._update(bets, self._format_overtime)
+        bets = self._update(bets, self._format_first_frag)
+        bets = self._update(bets, self._format_win_at_least_number_of_maps)
+        bets = self._update(bets, self._format_win_number_of_maps)
+        bets = self._update(bets, self._format_individual_total_rounds)
+        bets = self._update(bets, self._format_first_to_win_number_of_rounds)
+        bets = self._update(bets, self._format_total_frags)
+
         bets = self._format_after(bets)
+
         bets = self._format_odds(bets)
         bets = self._format_bookmaker_name(bets)
         bets = self._format_titles(bets)
+
+        return bets
 
     def _format_before(self, bets):
         """
@@ -196,34 +211,50 @@ class AbstractSyntaxFormatter(ABC):
             formatted_title = formatted_title.replace(item, '', 1)
         return formatted_title
 
-    @abstractmethod
     def _format_win(self):
-        pass
+        return self.bet_title.lower()
 
-    @abstractmethod
     def _format_total(self):
-        pass
+        return self.bet_title.lower()
 
-    @abstractmethod
     def _format_maps(self):
-        pass
+        return self.bet_title.lower()
 
-    @abstractmethod
     def _format_handicap(self):
-        pass
+        return self.bet_title.lower()
 
-    @abstractmethod
     def _format_uncommon_chars(self):
-        pass
+        return self.bet_title.lower()
 
-    @abstractmethod
     def _format_win_in_round(self):
-        pass
+        return self.bet_title.lower()
 
-    @abstractmethod
     def _format_correct_score(self):
-        pass
+        return self.bet_title.lower()
 
-    @abstractmethod
+    def _format_bomb_exploded(self):
+        return self.bet_title.lower()
+
+    def _format_bomb_planted(self):
+        return self.bet_title.lower()
+
+    def _format_overtime(self):
+        return self.bet_title.lower()
+
     def _format_first_frag(self):
-        pass
+        return self.bet_title.lower()
+
+    def _format_win_at_least_number_of_maps(self):
+        return self.bet_title.lower()
+
+    def _format_win_number_of_maps(self):
+        return self.bet_title.lower()
+
+    def _format_individual_total_rounds(self):
+        return self.bet_title.lower()
+
+    def _format_first_to_win_number_of_rounds(self):
+        return self.bet_title.lower()
+
+    def _format_total_frags(self):
+        return self.bet_title.lower()

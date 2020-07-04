@@ -1,1374 +1,497 @@
-bets = {
-    'adaptation - blinkal': {
-        'adaptation will win': {
-            '1.70': 'parimatch('
-                    'https://www.parimatch.com/en/sport/kibersport/counter-strike-efire-king-of-the-hill)'
-            },
-        'blinkal will win': {
-            '2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-efire-king-of-the-hill)'
-            }
-        },
-    'ahq - asking questions': {
-        'ahq will win': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-apac)'},
-        'asking questions will win': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-apac)'
-            }
-        },
-    'aim4r - w2c': {
-        'aim4r will win': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-apac)'},
-        'w2c will win': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-apac)'}
-        },
-    'apeks - nemiga': {
-        '1-st map: apeks will win': {
-            '2.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: handicap apeks +2.5': {
-            '2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: handicap apeks +3.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: handicap apeks +4.5': {
-            '1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: handicap nemiga -2.5': {
-            '1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: handicap nemiga -3.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: handicap nemiga -4.5': {
-            '2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: nemiga will win': {
-            '1.40': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: total over 25.5': {
-            '1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: total over 26.5': {
-            '1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: total over 27.5': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: total under 25.5': {
-            '2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: total under 26.5': {
-            '1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        '1-st map: total under 27.5': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        'apeks handicap +1.5 maps': {
-            '1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        'apeks will win': {'3.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'},
-        'nemiga handicap -1.5 maps': {
-            '1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'
-            },
-        'nemiga will win': {'1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'},
-        'total over 2.5': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'},
-        'total under 2.5': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-loot)'}
-        },
-    'big - vitality': {
-        '1-st map: big will win': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap big +2.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap big -2.5': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap big -3.5': {
-            '2.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap vitality +2.5': {
-            '1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap vitality +3.5': {
-            '1.58': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap vitality -2.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total over 25.5': {
-            '1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total over 26.5': {
-            '1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total over 27.5': {
-            '2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total under 25.5': {
-            '2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total under 26.5': {
-            '1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total under 27.5': {
-            '1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: vitality will win': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'big handicap -1.5 maps': {
-            '3.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'big will win': {
-            '1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'total over 2.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'total under 2.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'vitality handicap +1.5 maps': {
-            '1.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'vitality will win': {
-            '2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            }
-        },
-    'bmth - royalty': {
-        '1-st map: bmth will win': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap bmth +2.5': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap bmth +3.5': {
-            '1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap bmth +4.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap royalty -2.5': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap royalty -3.5': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap royalty -4.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: royalty will win': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '2.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'bmth handicap +0.5 maps': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'bmth will win': {
-            '5.21': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'royalty handicap -0.5 maps': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'royalty will win': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        },
-    'bmth - spassion': {
-        '1-st map: bmth will win': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap bmth +2.5': {
-            '1.73': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap bmth +3.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap bmth -2.5': {
-            '2.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap spassion +2.5': {
-            '1.58': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap spassion -2.5': {
-            '2.03': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap spassion -3.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: spassion will win': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '2.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'bmth handicap +0.5 maps': {
-            '1.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'bmth will win': {
-            '3.53': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'spassion handicap -0.5 maps': {
-            '3.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'spassion will win': {
-            '3.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        },
-    'bmth - unknown gods': {
-        '1-st map: bmth will win': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap bmth +2.5': {
-            '1.73': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap bmth +3.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap bmth -2.5': {
-            '2.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap unknown gods +2.5': {
-            '1.58': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap unknown gods -2.5': {
-            '2.03': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap unknown gods -3.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.37': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '2.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.54': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: unknown gods will win': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'bmth handicap +0.5 maps': {
-            '1.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'bmth will win': {
-            '3.53': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'unknown gods handicap -0.5 maps': {
-            '3.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'unknown gods will win': {
-            '3.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        },
-    'cr4zy - nemiga': {
-        '1-st map: cr4zy will win': {
-            '3.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: handicap cr4zy +3.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: handicap cr4zy +4.5': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: handicap cr4zy +5.5': {
-            '1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: handicap nemiga -3.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: handicap nemiga -4.5': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: handicap nemiga -5.5': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: nemiga will win': {
-            '1.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: total over 25.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: total over 26.5': {
-            '2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: total over 27.5': {
-            '2.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: total under 25.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: total under 26.5': {
-            '1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        '1-st map: total under 27.5': {
-            '1.44': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        'cr4zy handicap +1.5 maps': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        'cr4zy will win': {
-            '5.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        'nemiga handicap -1.5 maps': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        'nemiga will win': {
-            '1.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        'total over 2.5': {
-            '2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            },
-        'total under 2.5': {
-            '1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'
-            }
-        },
-    'd13 - divine vendetta': {
-        '1-st map: d13 will win': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: divine vendetta will win': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: handicap d13 -2.5': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: handicap divine vendetta +2.5': {
-            '1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total over 26.5': {
-            '1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total under 26.5': {
-            '1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'd13 handicap -1.5 maps': {
-            '3.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'd13 will win': {
-            '1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'divine vendetta handicap +1.5 maps': {
-            '1.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'divine vendetta will win': {
-            '2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total over 2.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total under 2.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            }
-        },
-    'divine vendetta - vici gaming': {
-        '1-st map: divine vendetta will win': {
-            '3.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: handicap divine vendetta +4.5': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: handicap vici gaming -4.5': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total over 25.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total under 25.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: vici gaming will win': {
-            '1.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'divine vendetta handicap +1.5 maps': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'divine vendetta will win': {
-            '5.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total over 2.5': {
-            '2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total under 2.5': {
-            '1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'vici gaming handicap -1.5 maps': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'vici gaming will win': {
-            '1.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            }
-        },
-    'divizon - planetkey dynamics': {
-        'divizon will win': {'2.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-99liga)'},
-        'draw will win': {'2.04': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-99liga)'},
-        'planetkey dynamics will win': {
-            '4.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-99liga)'
-            }
-        },
-    'eternal - imperium': {
-        'eternal will win': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'
-            },
-        'imperium will win': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'
-            }
-        },
-    'evil geniuses - liquid': {
-        '1-st map: evil geniuses will win': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: handicap evil geniuses +2.5': {
-            '1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: handicap evil geniuses +3.5': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: handicap evil geniuses -2.5': {
-            '2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: handicap liquid +2.5': {
-            '1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: handicap liquid -2.5': {
-            '2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: handicap liquid -3.5': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: liquid will win': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: total over 25.5': {
-            '1.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: total over 26.5': {
-            '1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: total over 27.5': {
-            '2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: total under 25.5': {
-            '2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: total under 26.5': {
-            '2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        '1-st map: total under 27.5': {
-            '1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        'evil geniuses handicap +1.5 maps': {
-            '1.27': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        'evil geniuses will win': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        'liquid handicap -1.5 maps': {
-            '3.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        'liquid will win': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        'total over 2.5': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            },
-        'total under 2.5': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'
-            }
-        },
-    'fnatic - godsent': {
-        '1-st map: fnatic will win': {
-            '1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: godsent will win': {
-            '2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap fnatic -2.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap fnatic -3.5': {
-            '2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap fnatic -4.5': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap godsent +2.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap godsent +3.5': {
-            '1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap godsent +4.5': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total over 25.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total over 26.5': {
-            '1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total over 27.5': {
-            '2.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total under 25.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total under 26.5': {
-            '1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total under 27.5': {
-            '1.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'fnatic handicap -1.5 maps': {
-            '2.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'fnatic will win': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'godsent handicap +1.5 maps': {
-            '1.45': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'godsent will win': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'total over 2.5': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'total under 2.5': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            }
-        },
-    'global - knockturnal': {
-        'global will win': {
-            '1.10': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esl-india-premiership)'
-            },
-        'knockturnal will win': {
-            '6.23': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esl-india-premiership)'
-            }
-        },
-    'grazur - lethal divide': {
-        'grazur will win': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'
-            },
-        'lethal divide will win': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'
-            }
-        },
-    'heroic - og': {
-        '1-st map: handicap heroic +2.5': {
-            '1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap heroic -2.5': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap heroic -3.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap og +2.5': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap og +3.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: handicap og -2.5': {
-            '2.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: heroic will win': {
-            '1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: og will win': {
-            '1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total over 25.5': {
-            '1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total over 26.5': {
-            '1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total over 27.5': {
-            '2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total under 25.5': {
-            '2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total under 26.5': {
-            '1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        '1-st map: total under 27.5': {
-            '1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'heroic handicap -1.5 maps': {
-            '3.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'heroic will win': {
-            '1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'og handicap +1.5 maps': {
-            '1.33': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'og will win': {'2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
-        'total over 2.5': {
-            '1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            },
-        'total under 2.5': {
-            '1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'
-            }
-        },
-    'invictus gaming - lucid dream': {
-        '1-st map: handicap invictus gaming -4.5': {
-            '1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: handicap lucid dream +4.5': {
-            '1.85': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: invictus gaming will win': {
-            '1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: lucid dream will win': {
-            '3.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total over 26.5': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total under 26.5': {
-            '1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'invictus gaming handicap -1.5 maps': {
-            '1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'invictus gaming will win': {
-            '1.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'lucid dream handicap +1.5 maps': {
-            '2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'lucid dream will win': {
-            '4.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total over 2.5': {
-            '2.42': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total under 2.5': {
-            '1.52': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            }
-        },
-    'invictus gaming - mazaalai': {
-        '1-st map: handicap invictus gaming -4.5': {
-            '1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: handicap mazaalai +4.5': {
-            '1.85': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: invictus gaming will win': {
-            '1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: mazaalai will win': {
-            '3.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total over 26.5': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total under 26.5': {
-            '1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'invictus gaming handicap -1.5 maps': {
-            '1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'invictus gaming will win': {
-            '1.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'mazaalai handicap +1.5 maps': {
-            '2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'mazaalai will win': {
-            '4.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total over 2.5': {
-            '2.42': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total under 2.5': {
-            '1.52': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            }
-        },
-    'kova - veto': {
-        'kova will win': {
-            '1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-finnish-esports-league)'
-            },
-        'veto will win': {
-            '3.33': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-finnish-esports-league)'
-            }
-        },
-    'lucid dream - tiger': {
-        '1-st map: handicap lucid dream +3.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: handicap tiger -3.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: lucid dream will win': {
-            '2.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: tiger will win': {
-            '1.45': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total over 26.5': {
-            '1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total under 26.5': {
-            '1.85': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'lucid dream handicap +1.5 maps': {
-            '1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'lucid dream will win': {
-            '3.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'tiger handicap -1.5 maps': {
-            '2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'tiger will win': {
-            '1.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total over 2.5': {
-            '2.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total under 2.5': {
-            '1.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            }
-        },
-    'mazaalai - tyloo': {
-        '1-st map: handicap mazaalai +5.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: handicap tyloo -5.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: mazaalai will win': {
-            '4.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total over 25.5': {
-            '1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: total under 25.5': {
-            '1.85': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        '1-st map: tyloo will win': {
-            '1.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'mazaalai handicap +1.5 maps': {
-            '2.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'mazaalai will win': {
-            '6.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total over 2.5': {
-            '2.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'total under 2.5': {
-            '1.37': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'tyloo handicap -1.5 maps': {
-            '1.44': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            },
-        'tyloo will win': {
-            '1.10': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'
-            }
-        },
-    'purple haze - rembaza': {
-        '1-st map: handicap purple haze +2.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap purple haze -2.5': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap purple haze -3.5': {
-            '2.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap rembaza +2.5': {
-            '1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap rembaza +3.5': {
-            '1.58': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap rembaza -2.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: purple haze will win': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: rembaza will win': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'purple haze handicap -0.5 maps': {
-            '3.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'purple haze will win': {
-            '3.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'rembaza handicap +0.5 maps': {
-            '1.36': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'rembaza will win': {
-            '3.88': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        },
-    'purple haze - veterani': {
-        '1-st map: handicap purple haze -2.5': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap purple haze -3.5': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap purple haze -4.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap veterani +2.5': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap veterani +3.5': {
-            '1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap veterani +4.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: purple haze will win': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: veterani will win': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'purple haze handicap -0.5 maps': {
-            '2.40': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'purple haze will win': {
-            '2.40': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'veterani handicap +0.5 maps': {
-            '1.53': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'veterani will win': {
-            '4.98': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        },
-    'purple haze - wesq': {
-        '1-st map: handicap purple haze -3.5': {
-            '1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap purple haze -4.5': {
-            '1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap purple haze -5.5': {
-            '2.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap wesq +3.5': {
-            '2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap wesq +4.5': {
-            '1.85': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap wesq +5.5': {
-            '1.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: purple haze will win': {
-            '1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: wesq will win': {
-            '3.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '2.66': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'purple haze handicap -0.5 maps': {
-            '1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'purple haze will win': {
-            '1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'wesq handicap +0.5 maps': {
-            '2.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'wesq will win': {
-            '9.58': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        },
-    'reckoning - wolf': {
-        'reckoning will win': {
-            '1.42': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esl-india-premiership)'
-            },
-        'wolf will win': {
-            '2.74': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esl-india-premiership)'
-            }
-        },
-    'rembaza - veterani': {
-        '1-st map: handicap rembaza -2.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap rembaza -3.5': {
-            '2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap rembaza -4.5': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap veterani +2.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap veterani +3.5': {
-            '1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap veterani +4.5': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: rembaza will win': {
-            '1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: veterani will win': {
-            '2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'rembaza handicap -0.5 maps': {
-            '2.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'rembaza will win': {
-            '2.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'veterani handicap +0.5 maps': {
-            '1.49': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'veterani will win': {
-            '4.89': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        },
-    'rembaza - wesq': {
-        '1-st map: handicap rembaza -3.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap rembaza -4.5': {
-            '1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap rembaza -5.5': {
-            '2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap wesq +3.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap wesq +4.5': {
-            '2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap wesq +5.5': {
-            '1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: rembaza will win': {
-            '1.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.44': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: wesq will win': {
-            '3.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '2.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'rembaza handicap -0.5 maps': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'rembaza will win': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'wesq handicap +0.5 maps': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'wesq will win': {
-            '13.6': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        },
-    'royalty - spassion': {
-        '1-st map: handicap royalty -2.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap royalty -3.5': {
-            '2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap royalty -4.5': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap spassion +2.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap spassion +3.5': {
-            '1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap spassion +4.5': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: royalty will win': {
-            '1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: spassion will win': {
-            '2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.37': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '2.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.54': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'royalty handicap -0.5 maps': {
-            '2.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'royalty will win': {
-            '2.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'spassion handicap +0.5 maps': {
-            '1.49': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'spassion will win': {
-            '4.89': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        },
-    'royalty - unknown gods': {
-        '1-st map: handicap royalty -2.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap royalty -3.5': {
-            '2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap royalty -4.5': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap unknown gods +2.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap unknown gods +3.5': {
-            '1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap unknown gods +4.5': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: royalty will win': {
-            '1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '2.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: unknown gods will win': {
-            '2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'royalty handicap -0.5 maps': {
-            '2.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'royalty will win': {
-            '2.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'unknown gods handicap +0.5 maps': {
-            '1.49': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'unknown gods will win': {
-            '4.89': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        },
-    'spassion - unknown gods': {
-        '1-st map: handicap spassion +2.5': {
-            '1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap spassion -2.5': {
-            '2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap spassion -3.5': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap unknown gods +2.5': {
-            '1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap unknown gods +3.5': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap unknown gods -2.5': {
-            '2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: spassion will win': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '2.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: unknown gods will win': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'spassion handicap +0.5 maps': {
-            '1.28': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'spassion will win': {
-            '3.44': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'unknown gods handicap -0.5 maps': {
-            '3.44': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'unknown gods will win': {
-            '3.43': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        },
-    'third impact - valkyrie': {
-        'third impact will win': {
-            '1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'
-            },
-        'valkyrie will win': {
-            '3.33': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'
-            }
-        },
-    'veterani - wesq': {
-        '1-st map: handicap veterani -3.5': {
-            '1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap veterani -4.5': {
-            '1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap veterani -5.5': {
-            '2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap wesq +3.5': {
-            '2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap wesq +4.5': {
-            '1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: handicap wesq +5.5': {
-            '1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 25.5': {
-            '1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 26.5': {
-            '1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total over 27.5': {
-            '2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 25.5': {
-            '2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 26.5': {
-            '1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: total under 27.5': {
-            '1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: veterani will win': {
-            '1.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        '1-st map: wesq will win': {
-            '3.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'draw will win': {
-            '2.40': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'veterani handicap -0.5 maps': {
-            '1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'veterani will win': {
-            '1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'wesq handicap +0.5 maps': {
-            '2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            },
-        'wesq will win': {
-            '8.39': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'
-            }
-        }
-    }
+bets =  {'adaptation - blinkal': {'adaptation will win': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu-main-division)'},
+                          'blinkal will win': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu-main-division)'}},
+ 'adaptation - syman': {'1-st map: adaptation will win': {'3.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        '1-st map: handicap adaptation +4.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        '1-st map: handicap syman -4.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        '1-st map: syman will win': {'1.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        '1-st map: total over 25.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        '1-st map: total under 25.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'adaptation handicap +1.5 maps': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'adaptation will win': {'5.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'syman handicap -1.5 maps': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'syman will win': {'1.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'total over 2.5': {'2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'total under 2.5': {'1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'}},
+ 'agf - saw': {'1-st map: agf will win': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+               '1-st map: handicap agf +2.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+               '1-st map: handicap saw -2.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+               '1-st map: saw will win': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+               '1-st map: total over 26.5': {'1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+               '1-st map: total under 26.5': {'1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+               'agf handicap +1.5 maps': {'1.45': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+               'agf will win': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+               'saw handicap -1.5 maps': {'2.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+               'saw will win': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+               'total over 2.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+               'total under 2.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'}},
+ 'ahq - asking questions': {'ahq will win': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-apac)'},
+                            'asking questions will win': {'2.16': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-apac)'}},
+ 'apeks - winstrike': {'1-st map: apeks will win': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       '1-st map: handicap apeks +2.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       '1-st map: handicap winstrike -2.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       '1-st map: total over 26.5': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       '1-st map: total under 26.5': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       '1-st map: winstrike will win': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'apeks handicap +1.5 maps': {'1.33': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'apeks will win': {'2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'total over 2.5': {'1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'total under 2.5': {'1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'winstrike handicap -1.5 maps': {'3.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'winstrike will win': {'1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'}},
+ 'avez - nexus': {'1-st map: avez will win': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  '1-st map: handicap avez -2.5': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  '1-st map: handicap nexus +2.5': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  '1-st map: nexus will win': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  '1-st map: total over 26.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  '1-st map: total under 26.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'avez handicap -1.5 maps': {'2.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'avez will win': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'nexus handicap +1.5 maps': {'1.43': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'nexus will win': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'total over 2.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'total under 2.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'}},
+ 'big - vitality': {'1-st map: big will win': {'1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: handicap big +2.5': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: handicap big -2.5': {'2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: handicap big -3.5': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: handicap vitality +2.5': {'1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: handicap vitality +3.5': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: handicap vitality -2.5': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: total over 25.5': {'1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: total over 26.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: total over 27.5': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: total under 25.5': {'2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: total under 26.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: total under 27.5': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    '1-st map: vitality will win': {'1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    'big handicap -1.5 maps': {'3.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    'big will win': {'1.78': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    'total over 2.5': {'1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    'total under 2.5': {'1.85': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    'vitality handicap +1.5 maps': {'1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                    'vitality will win': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'}},
+ 'blinkal - gamers1337': {'blinkal will win': {'1.52': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-a1-adria-league)'},
+                          'gamers1337 will win': {'2.42': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-a1-adria-league)'}},
+ 'bravos - sws': {'bravos will win': {'1.40': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-clutch)'},
+                  'sws will win': {'2.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-clutch)'}},
+ 'brute - tikitakan': {'1-st map: brute will win': {'2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       '1-st map: handicap brute +2.5': {'1.85': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       '1-st map: handicap tikitakan -2.5': {'1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       '1-st map: tikitakan will win': {'1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       '1-st map: total over 26.5': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       '1-st map: total under 26.5': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'brute handicap +1.5 maps': {'1.38': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'brute will win': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'tikitakan handicap -1.5 maps': {'2.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'tikitakan will win': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'total over 2.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                       'total under 2.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'}},
+ 'chaos - new england whalers': {'1-st map: chaos will win': {'1.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'},
+                                 '1-st map: handicap chaos -4.5': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'},
+                                 '1-st map: handicap new england whalers +4.5': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'},
+                                 '1-st map: new england whalers will win': {'3.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'},
+                                 '1-st map: total over 26.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'},
+                                 '1-st map: total under 26.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'},
+                                 'chaos handicap -1.5 maps': {'1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'},
+                                 'chaos will win': {'1.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'},
+                                 'new england whalers handicap +1.5 maps': {'1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'},
+                                 'new england whalers will win': {'3.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'},
+                                 'total over 2.5': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'},
+                                 'total under 2.5': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)'}},
+ 'cr4zy - ldlc': {'1-st map: cr4zy will win': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  '1-st map: handicap cr4zy +2.5': {'1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  '1-st map: handicap ldlc -2.5': {'2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  '1-st map: ldlc will win': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  '1-st map: total over 26.5': {'1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  '1-st map: total under 26.5': {'2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'cr4zy handicap +1.5 maps': {'1.27': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'cr4zy will win': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'ldlc handicap -1.5 maps': {'3.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'ldlc will win': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'total over 2.5': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                  'total under 2.5': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'}},
+ 'cr4zy - nemiga': {'1-st map: cr4zy will win': {'3.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'},
+                    '1-st map: handicap cr4zy +4.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'},
+                    '1-st map: handicap nemiga -4.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'},
+                    '1-st map: nemiga will win': {'1.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'},
+                    '1-st map: total over 25.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'},
+                    '1-st map: total under 25.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'},
+                    'cr4zy handicap +1.5 maps': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'},
+                    'cr4zy will win': {'5.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'},
+                    'nemiga handicap -1.5 maps': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'},
+                    'nemiga will win': {'1.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'},
+                    'total over 2.5': {'2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'},
+                    'total under 2.5': {'1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu)'}},
+ 'cream real betis latam - neverest': {'cream real betis latam will win': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-clutch)'},
+                                       'neverest will win': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-clutch)'}},
+ 'divine vendetta - vici gaming': {'1-st map: divine vendetta will win': {'3.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   '1-st map: handicap divine vendetta +4.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   '1-st map: handicap vici gaming -4.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   '1-st map: total over 25.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   '1-st map: total under 25.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   '1-st map: vici gaming will win': {'1.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'divine vendetta handicap +1.5 maps': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'divine vendetta will win': {'5.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'total over 2.5': {'2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'total under 2.5': {'1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'vici gaming handicap -1.5 maps': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'vici gaming will win': {'1.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'}},
+ 'divizon - planetkey dynamics': {'divizon will win': {'2.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-99liga)'},
+                                  'draw will win': {'2.04': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-99liga)'},
+                                  'planetkey dynamics will win': {'4.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-99liga)'}},
+ 'estral - mineros': {'estral will win': {'3.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-la-liga)'},
+                      'mineros will win': {'1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-la-liga)'}},
+ 'eternal - imperium': {'eternal will win': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'},
+                        'imperium will win': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'}},
+ 'evil geniuses - liquid': {'1-st map: evil geniuses will win': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: handicap evil geniuses +2.5': {'1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: handicap evil geniuses +3.5': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: handicap evil geniuses -2.5': {'2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: handicap liquid +2.5': {'1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: handicap liquid -2.5': {'2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: handicap liquid -3.5': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: liquid will win': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: total over 25.5': {'1.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: total over 26.5': {'1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: total over 27.5': {'2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: total under 25.5': {'2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: total under 26.5': {'2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            '1-st map: total under 27.5': {'1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            'evil geniuses handicap +1.5 maps': {'1.27': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            'evil geniuses will win': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            'liquid handicap -1.5 maps': {'3.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            'liquid will win': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            'total over 2.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'},
+                            'total under 2.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-na)'}},
+ 'ex-polar ace - oceanus': {'ex-polar ace will win': {'3.33': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-efire-king-of-the-hill)'},
+                            'oceanus will win': {'1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-efire-king-of-the-hill)'}},
+ 'ex-smash - sg.pro': {'1-st map: ex-smash will win': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       '1-st map: handicap ex-smash -3.5': {'1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       '1-st map: handicap sg.pro +3.5': {'1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       '1-st map: sg.pro will win': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       '1-st map: total over 26.5': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       '1-st map: total under 26.5': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'ex-smash handicap -1.5 maps': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'ex-smash will win': {'1.40': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'sg.pro handicap +1.5 maps': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'sg.pro will win': {'2.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'total over 2.5': {'2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'total under 2.5': {'1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'}},
+ 'exploit - for the win': {'exploit will win': {'2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-one-tap-league)'},
+                           'for the win will win': {'1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-one-tap-league)'}},
+ 'fate - izako boars': {'1-st map: fate will win': {'1.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        '1-st map: handicap fate -4.5': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        '1-st map: handicap izako boars +4.5': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        '1-st map: izako boars will win': {'3.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        '1-st map: total over 26.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        '1-st map: total under 26.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'fate handicap -1.5 maps': {'1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'fate will win': {'1.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'izako boars handicap +1.5 maps': {'1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'izako boars will win': {'3.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'total over 2.5': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                        'total under 2.5': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'}},
+ 'fnatic - godsent': {'1-st map: fnatic will win': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: godsent will win': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: handicap fnatic -2.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: handicap fnatic -3.5': {'2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: handicap fnatic -4.5': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: handicap godsent +2.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: handicap godsent +3.5': {'1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: handicap godsent +4.5': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: total over 25.5': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: total over 26.5': {'1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: total over 27.5': {'2.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: total under 25.5': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: total under 26.5': {'1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      '1-st map: total under 27.5': {'1.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      'fnatic handicap -1.5 maps': {'2.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      'fnatic will win': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      'godsent handicap +1.5 maps': {'1.45': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      'godsent will win': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      'total over 2.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                      'total under 2.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'}},
+ 'forze - nordavind': {'1-st map: forze will win': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: handicap forze -2.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: handicap forze -3.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: handicap forze -4.5': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: handicap nordavind +2.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: handicap nordavind +3.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: handicap nordavind +4.5': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: nordavind will win': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: total over 25.5': {'1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: total over 26.5': {'1.85': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: total over 27.5': {'2.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: total under 25.5': {'2.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: total under 26.5': {'1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       '1-st map: total under 27.5': {'1.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       'forze handicap -1.5 maps': {'2.42': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       'forze will win': {'1.45': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       'nordavind handicap +1.5 maps': {'1.52': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       'nordavind will win': {'2.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       'total over 2.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                       'total under 2.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'}},
+ 'gobananas - royalty': {'gobananas will win': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu-main-division)'},
+                         'royalty will win': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu-main-division)'}},
+ 'grazur - lethal divide': {'grazur will win': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'},
+                            'lethal divide will win': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'}},
+ 'hard legion - havu': {'1-st map: handicap hard legion +2.5': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: handicap hard legion +3.5': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: handicap hard legion -2.5': {'2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: handicap havu +2.5': {'1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: handicap havu -2.5': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: handicap havu -3.5': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: hard legion will win': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: havu will win': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: total over 25.5': {'1.52': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: total over 26.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: total over 27.5': {'2.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: total under 25.5': {'2.42': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: total under 26.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        '1-st map: total under 27.5': {'1.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        'hard legion handicap +1.5 maps': {'1.43': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        'hard legion will win': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        'havu handicap -1.5 maps': {'2.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        'havu will win': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        'total over 2.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                        'total under 2.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'}},
+ 'havu - sj': {'havu will win': {'1.17': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-finnish-esports-league)'},
+               'sj will win': {'4.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-finnish-esports-league)'}},
+ 'heroic - og': {'1-st map: handicap heroic +2.5': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: handicap heroic -2.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: handicap heroic -3.5': {'2.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: handicap og +2.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: handicap og +3.5': {'1.58': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: handicap og -2.5': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: heroic will win': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: og will win': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: total over 25.5': {'1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: total over 26.5': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: total over 27.5': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: total under 25.5': {'2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: total under 26.5': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 '1-st map: total under 27.5': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 'heroic handicap -1.5 maps': {'3.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 'heroic will win': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 'og handicap +1.5 maps': {'1.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 'og will win': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 'total over 2.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'},
+                 'total under 2.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-cs_summit-eu)'}},
+ 'honoris - wizards': {'1-st map: handicap honoris -3.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       '1-st map: handicap wizards +3.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       '1-st map: honoris will win': {'1.40': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       '1-st map: total over 26.5': {'1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       '1-st map: total under 26.5': {'1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       '1-st map: wizards will win': {'2.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'honoris handicap -1.5 maps': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'honoris will win': {'1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'total over 2.5': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'total under 2.5': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'wizards handicap +1.5 maps': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                       'wizards will win': {'3.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'}},
+ 'illuminar - wisla krakow': {'1-st map: handicap illuminar -2.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                              '1-st map: handicap wisla krakow +2.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                              '1-st map: illuminar will win': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                              '1-st map: total over 26.5': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                              '1-st map: total under 26.5': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                              '1-st map: wisla krakow will win': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                              'illuminar handicap -1.5 maps': {'3.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                              'illuminar will win': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                              'total over 2.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                              'total under 2.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                              'wisla krakow handicap +1.5 maps': {'1.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'},
+                              'wisla krakow will win': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)'}},
+ 'infinity - supremacy': {'infinity will win': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-la-liga)'},
+                          'supremacy will win': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-la-liga)'}},
+ 'invictus gaming - lucid dream': {'1-st map: handicap invictus gaming -4.5': {'1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   '1-st map: handicap lucid dream +4.5': {'1.85': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   '1-st map: invictus gaming will win': {'1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   '1-st map: lucid dream will win': {'3.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   '1-st map: total over 26.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   '1-st map: total under 26.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'invictus gaming handicap -1.5 maps': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'invictus gaming will win': {'1.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'lucid dream handicap +1.5 maps': {'2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'lucid dream will win': {'4.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'total over 2.5': {'2.42': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                                   'total under 2.5': {'1.52': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'}},
+ 'kova - veto': {'kova will win': {'1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-finnish-esports-league)'},
+                 'veto will win': {'3.33': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-finnish-esports-league)'}},
+ 'ldlc - lilmix': {'1-st map: handicap ldlc -3.5': {'1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                   '1-st map: handicap lilmix +3.5': {'1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                   '1-st map: ldlc will win': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                   '1-st map: lilmix will win': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                   '1-st map: total over 26.5': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                   '1-st map: total under 26.5': {'1.87': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                   'ldlc handicap -1.5 maps': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                   'ldlc will win': {'1.40': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                   'lilmix handicap +1.5 maps': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                   'lilmix will win': {'2.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                   'total over 2.5': {'2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                   'total under 2.5': {'1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'}},
+ 'lvlup - qske': {'lvlup will win': {'1.38': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-a1-adria-league)'},
+                  'qske will win': {'2.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-a1-adria-league)'}},
+ 'mazaalai - tyloo': {'1-st map: handicap mazaalai +5.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                      '1-st map: handicap tyloo -5.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                      '1-st map: mazaalai will win': {'4.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                      '1-st map: total over 25.5': {'1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                      '1-st map: total under 25.5': {'1.85': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                      '1-st map: tyloo will win': {'1.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                      'mazaalai handicap +1.5 maps': {'2.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                      'mazaalai will win': {'6.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                      'total over 2.5': {'2.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                      'total under 2.5': {'1.37': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                      'tyloo handicap -1.5 maps': {'1.44': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'},
+                      'tyloo will win': {'1.10': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)'}},
+ 'nemiga - sprout': {'1-st map: handicap nemiga +2.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: handicap nemiga +3.5': {'1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: handicap nemiga +4.5': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: handicap sprout -2.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: handicap sprout -3.5': {'2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: handicap sprout -4.5': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: nemiga will win': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: sprout will win': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: total over 25.5': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: total over 26.5': {'1.82': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: total over 27.5': {'2.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: total under 25.5': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: total under 26.5': {'1.92': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     '1-st map: total under 27.5': {'1.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     'nemiga handicap +1.5 maps': {'1.45': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     'nemiga will win': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     'sprout handicap -1.5 maps': {'2.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     'sprout will win': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     'total over 2.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'},
+                     'total under 2.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-hellcase-cup)'}},
+ 'nexus - the dice': {'1-st map: handicap nexus -2.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                      '1-st map: handicap the dice +2.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                      '1-st map: nexus will win': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                      '1-st map: the dice will win': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                      '1-st map: total over 26.5': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                      '1-st map: total under 26.5': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                      'nexus handicap -1.5 maps': {'3.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                      'nexus will win': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                      'the dice handicap +1.5 maps': {'1.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                      'the dice will win': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                      'total over 2.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'},
+                      'total under 2.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)'}},
+ 'northern forces - tnt': {'northern forces will win': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'},
+                           'tnt will win': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'}},
+ 'purple haze - rembaza': {'1-st map: handicap purple haze +2.5': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: handicap purple haze -2.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: handicap purple haze -3.5': {'2.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: handicap rembaza +2.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: handicap rembaza +3.5': {'1.58': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: handicap rembaza -2.5': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: purple haze will win': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: rembaza will win': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: total over 25.5': {'1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: total over 26.5': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: total over 27.5': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: total under 25.5': {'2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: total under 26.5': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           '1-st map: total under 27.5': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           'draw will win': {'1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           'purple haze handicap -0.5 maps': {'3.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           'purple haze will win': {'3.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           'rembaza handicap +0.5 maps': {'1.36': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                           'rembaza will win': {'3.88': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'}},
+ 'purple haze - veterani': {'1-st map: handicap purple haze -2.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: handicap purple haze -3.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: handicap purple haze -4.5': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: handicap veterani +2.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: handicap veterani +3.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: handicap veterani +4.5': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: purple haze will win': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: total over 25.5': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: total over 26.5': {'1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: total over 27.5': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: total under 25.5': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: total under 26.5': {'2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: total under 27.5': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            '1-st map: veterani will win': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            'draw will win': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            'purple haze handicap -0.5 maps': {'2.40': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            'purple haze will win': {'2.40': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            'veterani handicap +0.5 maps': {'1.53': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                            'veterani will win': {'4.98': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'}},
+ 'purple haze - wesq': {'1-st map: handicap purple haze -3.5': {'1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: handicap purple haze -4.5': {'1.90': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: handicap purple haze -5.5': {'2.20': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: handicap wesq +3.5': {'2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: handicap wesq +4.5': {'1.85': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: handicap wesq +5.5': {'1.62': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: purple haze will win': {'1.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total over 25.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total over 26.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total over 27.5': {'2.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total under 25.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total under 26.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total under 27.5': {'1.47': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: wesq will win': {'3.30': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        'draw will win': {'2.66': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        'purple haze handicap -0.5 maps': {'1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        'purple haze will win': {'1.57': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        'wesq handicap +0.5 maps': {'2.31': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        'wesq will win': {'9.58': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'}},
+ 'reckoning - wolf': {'reckoning will win': {'1.42': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esl-india-premiership)'},
+                      'wolf will win': {'2.74': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esl-india-premiership)'}},
+ 'rembaza - veterani': {'1-st map: handicap rembaza -2.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: handicap rembaza -3.5': {'2.11': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: handicap rembaza -4.5': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: handicap veterani +2.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: handicap veterani +3.5': {'1.68': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: handicap veterani +4.5': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: rembaza will win': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total over 25.5': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total over 26.5': {'1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total over 27.5': {'2.15': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total under 25.5': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total under 26.5': {'2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: total under 27.5': {'1.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        '1-st map: veterani will win': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        'draw will win': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        'rembaza handicap -0.5 maps': {'2.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        'rembaza will win': {'2.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        'veterani handicap +0.5 maps': {'1.49': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                        'veterani will win': {'4.89': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'}},
+ 'rembaza - wesq': {'1-st map: handicap rembaza -3.5': {'1.55': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: handicap rembaza -4.5': {'1.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: handicap rembaza -5.5': {'2.00': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: handicap wesq +3.5': {'2.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: handicap wesq +4.5': {'2.01': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: handicap wesq +5.5': {'1.76': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: rembaza will win': {'1.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: total over 25.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: total over 26.5': {'2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: total over 27.5': {'2.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: total under 25.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: total under 26.5': {'1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: total under 27.5': {'1.44': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    '1-st map: wesq will win': {'3.75': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    'draw will win': {'2.65': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    'rembaza handicap -0.5 maps': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    'rembaza will win': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    'wesq handicap +0.5 maps': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                    'wesq will win': {'13.6': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'}},
+ 'third impact - valkyrie': {'third impact will win': {'1.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'},
+                             'valkyrie will win': {'3.04': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)'}},
+ 'veterani - wesq': {'1-st map: handicap veterani -3.5': {'1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: handicap veterani -4.5': {'1.97': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: handicap veterani -5.5': {'2.25': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: handicap wesq +3.5': {'2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: handicap wesq +4.5': {'1.77': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: handicap wesq +5.5': {'1.60': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: total over 25.5': {'1.70': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: total over 26.5': {'1.95': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: total over 27.5': {'2.48': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: total under 25.5': {'2.08': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: total under 26.5': {'1.80': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: total under 27.5': {'1.50': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: veterani will win': {'1.35': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     '1-st map: wesq will win': {'3.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     'draw will win': {'2.40': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     'veterani handicap -0.5 maps': {'1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     'veterani will win': {'1.72': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     'wesq handicap +0.5 maps': {'2.05': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'},
+                     'wesq will win': {'8.39': 'parimatch(https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)'}}}

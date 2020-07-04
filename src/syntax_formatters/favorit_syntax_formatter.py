@@ -4,6 +4,7 @@ from abstract_syntax_formatter import AbstractSyntaxFormatter
 from scrapers.sample_data import favorit
 import os.path
 
+
 class FavoritSyntaxFormatter(AbstractSyntaxFormatter):
     _NAME = 'favorit'
 
@@ -31,7 +32,6 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter):
         return formatted_title
 
     def _format_win_in_round(self):
-
         formatted_title = self.bet_title.lower()
         return formatted_title
 
@@ -46,15 +46,12 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter):
         return formatted_title
 
     def _format_maps(self):
-        CORRECT_NUMBERS = ['1-st', '2-nd', '3-rd', '4-th', '5-th']
+        correct_numbers = ['1-st', '2-nd', '3-rd', '4-th', '5-th']
         formatted_title = self.bet_title.lower()
-        for i in range(0, len(CORRECT_NUMBERS)):
+        for i in range(0, len(correct_numbers)):
             if 'game ' + str(i + 1) in formatted_title:
                 formatted_title = formatted_title.replace('game ' + str(i + 1) +' ', '')
-                formatted_title = CORRECT_NUMBERS[i] + ' map: ' + formatted_title
-        return formatted_title
-
-
+                formatted_title = correct_numbers[i] + ' map: ' + formatted_title
         return formatted_title
 
     def _format_handicap(self):
@@ -72,8 +69,6 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter):
                 formatted_title += words[i] + ' '
             formatted_title += 'handicap ' + words[-1] + ' maps'
 
-
-
         return formatted_title
 
     def _format_uncommon_chars(self):
@@ -81,7 +76,6 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter):
         return formatted_title
 
     def _format_correct_score(self):
-        # done
         formatted_title = self.bet_title.lower()
         if 'correct map score' in formatted_title:
             formatted_title = formatted_title.replace('correct map score', 'correct score')
@@ -89,10 +83,6 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter):
             formatted_title = formatted_title[::-1]
             formatted_title = formatted_title.replace(':', '-', 1)
             formatted_title = formatted_title[::-1]
-        return formatted_title
-
-    def _format_first_frag(self):
-        formatted_title = self.bet_title.lower()
         return formatted_title
 
     def _format_overtime(self):

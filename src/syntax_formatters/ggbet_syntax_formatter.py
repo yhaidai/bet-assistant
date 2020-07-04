@@ -51,14 +51,14 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter):
         return formatted_title
 
     def _format_maps(self):
-        CORRECT_NUMBERS = ['1-st', '2-nd', '3-rd', '4-th', '5-th']
-        INVALID_NUMBERS = ['1st', '2nd', '3rd', '4th', '5th']
+        correct_numbers = ['1-st', '2-nd', '3-rd', '4-th', '5-th']
+        invalid_numbers = ['1st', '2nd', '3rd', '4th', '5th']
         formatted_title = self.bet_title.lower()
-        for i in range(0, len(CORRECT_NUMBERS)):
-            if INVALID_NUMBERS[i] + ' map -' in formatted_title:
-                formatted_title = formatted_title.replace(INVALID_NUMBERS[i] + ' map -', CORRECT_NUMBERS[i] + ' map:')
+        for i in range(0, len(correct_numbers)):
+            if invalid_numbers[i] + ' map -' in formatted_title:
+                formatted_title = formatted_title.replace(invalid_numbers[i] + ' map -', correct_numbers[i] + ' map:')
             if 'map ' + str(i + 1) + ' -' in formatted_title:
-                formatted_title = formatted_title.replace('map ' + str(i + 1) + ' -', CORRECT_NUMBERS[i] + ' map:')
+                formatted_title = formatted_title.replace('map ' + str(i + 1) + ' -', correct_numbers[i] + ' map:')
         return formatted_title
 
     def _format_handicap(self):
@@ -88,10 +88,6 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter):
             formatted_title = formatted_title[::-1]
             formatted_title = formatted_title.replace(':', '-', 1)
             formatted_title = formatted_title[::-1]
-        return formatted_title
-
-    def _format_first_frag(self):
-        formatted_title = self.bet_title.lower()
         return formatted_title
 
     def _format_overtime(self):

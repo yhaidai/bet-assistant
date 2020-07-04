@@ -1,6 +1,9 @@
 from pprint import pprint, pformat
 import os.path
+import re
+
 from abstract_syntax_formatter import AbstractSyntaxFormatter
+from match_title_compiler import MatchTitleCompiler
 from scrapers.sample_data import one_x_bet
 
 
@@ -18,14 +21,15 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
     def _get_invalid_bet_titles(self):
         return self._INVALID_BET_TITLES
 
-    def _format_after(self, bets):
+    def _format_before(self, bets):
         """
         Apply unified syntax formatting to the given bets dict
 
         :param bets: bets dictionary to format
         :type bets: dict
         """
-        bets = self._update(bets, self._format_1_2)
+        bets = self._update(bets, self._remove_prefixes)
+        bets = self._update(bets, self._format_frags)
         return bets
 
     def _format_maps(self):
@@ -71,19 +75,8 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
     def _format_win_in_round(self):
         return self.bet_title.lower().replace('win in round. ', '', 1)
 
-    def _format_team_names(self):
-        return self.bet_title.lower().replace('team ', '', 1)
-
     def _format_correct_score(self):
         return self.bet_title.lower().replace('correct score. ', '', 1).replace(' - yes', '', 1)
-
-    def _format_first_frag(self):
-        formatted_title = self.bet_title.lower()
-        if 'first frag' in formatted_title:
-            formatted_title = formatted_title.replace('-', '—')
-            formatted_title = formatted_title.replace('—', '-', 2)
-
-        return formatted_title
 
     def _format_win(self):
         formatted_title = self.bet_title.lower()
@@ -112,14 +105,106 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter):
 
         return formatted_title
 
-    def _format_1_2(self):
+    def _remove_prefixes(self):
         formatted_title = self.bet_title.lower()
-        try:
-            if formatted_title[0] == '1' or '2':
-                formatted_title = formatted_title.split('. ')[1]
-                formatted_title = formatted_title.replace('team ', '', 1)
-        except IndexError:
-            pass
+        splitter = '. '
+        split_title = formatted_title.split(splitter)
+        if len(split_title) > 1 and split_title[0] != '1x2':
+            formatted_title = formatted_title[len(split_title[0]) + len(splitter):]
+
+        return formatted_title
+
+    def _format_frags(self):
+        return self.bet_title.lower().replace('frag', 'kill')
+
+    def _format_bomb_exploded(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('^(\d+-(st|nd|rd|th) map: bomb exploded in )(\d+)( )(round)$', formatted_title)
+        if match:
+            formatted_title = match.group(1) + match.group(5) + match.group(4) + match.group(3)
+        match = re.search('^(\d+-(st|nd|rd|th) map: bomb defused in round \d+)$', formatted_title)
+        if match:
+            formatted_title = match.group(1)
+
+        return formatted_title
+
+    def _format_bomb_planted(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('^(\d+-(st|nd|rd|th) map: bomb )(planted in round \d+) - no$', formatted_title)
+        if match:
+            formatted_title = match.group(1) + 'not ' + match.group(3)
+
+        return formatted_title
+
+    def _format_overtime(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('^(\d+-(st|nd|rd|th) map: )will there be (overtime)\?( - no)?$', formatted_title)
+        if match:
+            if match.group(4):
+                formatted_title = match.group(1) + match.group(3) + match.group(4)
+                formatted_title = formatted_title.replace(' -', ' —', 1)
+            else:
+                formatted_title = match.group(1) + match.group(3) + ' — yes'
+
+        return formatted_title
+
+    def _format_first_frag(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('^(\d+-(st|nd|rd|th) map: )first kill in (\d+) round - (.+?)$', formatted_title)
+        if match:
+            formatted_title = match.group(1) + match.group(4) + ' will kill first in round ' + match.group(3)
+
+        return formatted_title
+
+    def _format_win_at_least_number_of_maps(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('^(.+? )to( win at least (.+? )map(s)?)$', formatted_title)
+        if match:
+            formatted_title = match.group(1) + 'will' + match.group(2)
+        match = re.search('^(.+? )to( win at least (.+? )map(s)?) - no$',
+                          formatted_title)
+        if match:
+            formatted_title = match.group(1) + 'will not' + match.group(2)
+
+        return formatted_title
+
+    def _format_win_number_of_maps(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('^total won by (.+? )exactly( \d+)$', formatted_title)
+        if match:
+            formatted_title = match.group(1) + 'will win' + match.group(2) + ' maps'
+
+        return formatted_title
+
+    def _format_individual_total_rounds(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('^(\d+-(st|nd|rd|th) map: )individual total (\d+)(( over| under)( \d+(\.\d+)?))$',
+                          formatted_title)
+        if match:
+            teams = MatchTitleCompiler.decompile_match_title(self.match_title)
+            if match.group(3) == '1':
+                team = teams[0]
+            else:
+                team = teams[1]
+            formatted_title = match.group(1) + team + ' total' + match.group(4)
+
+        return formatted_title
+
+    def _format_first_to_win_number_of_rounds(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('^(\d+-(st|nd|rd|th) map: )(first to win (\d+) rounds) - (.+?)$',
+                          formatted_title)
+        if match:
+            formatted_title = match.group(1) + match.group(5) + ' will be ' + match.group(3)
+
+        return formatted_title
+
+    def _format_total_frags(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('(\d+-(st|nd|rd|th) map: )(total kills in )(\d+) round( (over|under) \d+(\.\d+)?)',
+                          formatted_title)
+        if match:
+            formatted_title = match.group(1) + match.group(3) + 'round ' + match.group(4) + match.group(5)
 
         return formatted_title
 

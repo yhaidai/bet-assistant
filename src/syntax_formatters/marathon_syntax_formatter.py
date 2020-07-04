@@ -4,6 +4,7 @@ from abstract_syntax_formatter import AbstractSyntaxFormatter
 from scrapers.sample_data import marathon
 import os.path
 
+
 class MarathonSyntaxFormatter(AbstractSyntaxFormatter):
     _NAME = 'marathon'
 
@@ -54,14 +55,14 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter):
         return formatted_title
 
     def _format_maps(self):
-        CORRECT_NUMBERS = ['1-st', '2-nd', '3-rd', '4-th', '5-th']
-        INVALID_NUMBERS = ['1st', '2nd', '3rd', '4th', '5th']
+        correct_numbers = ['1-st', '2-nd', '3-rd', '4-th', '5-th']
+        invalid_numbers = ['1st', '2nd', '3rd', '4th', '5th']
         formatted_title = self.bet_title.lower()
-        for i in range(0, len(CORRECT_NUMBERS)):
-            if INVALID_NUMBERS[i] + ' map' in formatted_title:
-                formatted_title = formatted_title.replace(INVALID_NUMBERS[i] + ' map ', '')
+        for i in range(0, len(correct_numbers)):
+            if invalid_numbers[i] + ' map' in formatted_title:
+                formatted_title = formatted_title.replace(invalid_numbers[i] + ' map ', '')
                 words = re.split(' ', formatted_title)
-                formatted_title = CORRECT_NUMBERS[i] + ' map: '
+                formatted_title = correct_numbers[i] + ' map: '
                 for i in range(len(words)):
                     formatted_title += words[i] + ' '
                 formatted_title = formatted_title[:-1]
@@ -93,10 +94,6 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter):
             formatted_title = formatted_title.replace(' - ', '-')
             words = re.split(' ', formatted_title)
             formatted_title = 'correct score ' + words[-1]
-        return formatted_title
-
-    def _format_first_frag(self):
-        formatted_title = self.bet_title.lower()
         return formatted_title
 
     def _format_overtime(self):
