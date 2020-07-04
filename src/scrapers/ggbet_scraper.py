@@ -11,7 +11,7 @@ class GGBetScraper(AbstractScraper):
 
     _MENU = {
         'csgo': '//*[@id="betting__container"]/div/div/div[1]/div/div/div[5]/div[1]/div[2]'
-    }
+        }
 
     def get_bets(self, sport_type):
         """
@@ -129,7 +129,6 @@ if __name__ == '__main__':
     my_path = os.path.abspath(os.path.dirname(__file__))
     print(my_path)
     path = my_path + '\\sample_data\\ggbet.py'
-    with open(path, 'w', encoding = 'utf-8') as f:
-        print('bets = ', pformat(b), file = f)
+    with open(path, 'w', encoding='utf-8') as f:
+        print('bets = ', pformat(b), file=f)
     print(time.time() - t)
-

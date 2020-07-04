@@ -8,6 +8,8 @@ class ForkBetsAnalyzer(Analyzer):
     """
     Class for analyzing betting info and finding possible fork bets
     """
+    _PROFIT_THRESHOLD = 0.15
+
     def __init__(self, sport_type):
         super().__init__(sport_type)
 
@@ -25,6 +27,10 @@ class ForkBetsAnalyzer(Analyzer):
         for match_title in grouped_bets:
             for group_title in grouped_bets[match_title]:
                 best_odds_bets = {}
+
+                if len(grouped_bets[match_title][group_title].keys()) < 2:
+                    continue
+
                 for bet_title, odds in grouped_bets[match_title][group_title].items():
                     max_odds_value = max(odds.keys())
                     best_odds_bets[bet_title] = {max_odds_value: odds[max_odds_value]}
@@ -36,7 +42,7 @@ class ForkBetsAnalyzer(Analyzer):
                 bet_amounts = self._get_fork_bet_amounts(max_odds_values)
 
                 # add fork bet
-                if profit > 0:
+                if 0 < profit < self._PROFIT_THRESHOLD:
                     fork_bets.setdefault(match_title, {})
                     fork_bet_title = self._compile_fork_bet_title(list(best_odds_bets.keys()))
                     text = self._compile_fork_text_dict(list(best_odds_bets.values()), bet_amounts, profit)
