@@ -1,7 +1,6 @@
 from pprint import pprint
 
-from syntax_formatters.sample_data import one_x_bet, parimatch, marathon, ggbet, favorit
-from registry import registry
+from csgo.sample_data import favorit, parimatch, one_x_bet, ggbet, marathon
 
 
 class Analyzer:

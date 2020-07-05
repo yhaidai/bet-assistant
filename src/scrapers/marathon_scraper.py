@@ -2,6 +2,8 @@ from pprint import pprint, pformat
 import os.path
 from abstract_scraper import AbstractScraper
 import time
+
+from constants import sport_type
 from src.renderer.page import Page
 from selenium.webdriver.common.keys import Keys
 
@@ -11,7 +13,8 @@ class MarathonScraper(AbstractScraper):
     _BASE_URL = 'https://www.marathonbet.com/en/'
 
     _MENU = {
-        'csgo': 'CS:GO.'
+        'csgo': 'CS:GO.',
+        'dota': 'Dota 2.'
     }
 
     def get_bets(self, sport_type):
@@ -41,15 +44,13 @@ class MarathonScraper(AbstractScraper):
 
         matches = []
 
-        if sport_type == 'csgo':
-            icon = page.driver.find_element_by_class_name('icon-sport-e-sports')
-            page.driver.execute_script("arguments[0].click();", icon)
-            time.sleep(0.2)
-            tournaments = page.driver.find_elements_by_class_name('category-container')
-            for tournament in tournaments:
-                sport_type = tournament.find_element_by_class_name('nowrap')
-                if sport_type.get_attribute('innerHTML') != 'CS:GO.':
-                    break
+        icon = page.driver.find_element_by_class_name('icon-sport-e-sports')
+        page.driver.execute_script("arguments[0].click();", icon)
+        time.sleep(0.2)
+        tournaments = page.driver.find_elements_by_class_name('category-container')
+        for tournament in tournaments:
+            _sport_type = tournament.find_element_by_class_name('nowrap')
+            if _sport_type.get_attribute('innerHTML') == MarathonScraper._MENU[sport_type]:
                 matches += tournament.find_elements_by_class_name('bg')
 
         return matches
@@ -96,7 +97,7 @@ class MarathonScraper(AbstractScraper):
             block_title = mb.find_element_by_class_name('name-field').get_attribute('innerHTML')
             table = mb.find_element_by_class_name('td-border')
             results_left = mb.find_elements_by_class_name('result-left')
-
+            another_results_left = table.find_elements_by_class_name('text-align-left')
             if results_left:
                 odds = table.find_elements_by_class_name('result-right')
                 for i in range(len(results_left)):
@@ -104,6 +105,24 @@ class MarathonScraper(AbstractScraper):
                     odd = odds[i].find_element_by_tag_name('span').get_attribute('innerHTML')
                     bet_title = block_title + ' ' + result_left
                     bets[match_title][bet_title] = odd
+
+
+            elif another_results_left:
+                teams = table.find_elements_by_class_name('width40')
+                team1 = teams[0].find_element_by_tag_name('div').get_attribute('innerHTML')
+                team2 = teams[1].find_element_by_tag_name('div').get_attribute('innerHTML')
+                team = [team1, team2]
+                # print(team)
+                rows = table.find_elements_by_tag_name('tr')
+                rows = rows[1:]
+                for row in rows:
+                    odds = row.find_elements_by_class_name('selection-link')
+                    for i in range(len(odds)):
+                        bet_type = row.find_element_by_class_name('text-align-left').get_attribute('innerHTML')
+                        odd = odds[i].get_attribute('innerHTML')
+                        bet_title = block_title + ' ' + team[i] + ' ' + bet_type
+                        bets[match_title][bet_title] = odd
+
             else:
                 rows = table.find_elements_by_tag_name('tr')
                 for row in rows:
@@ -150,13 +169,12 @@ class MarathonScraper(AbstractScraper):
 
 if __name__ == '__main__':
     t = time.time()
-
     scraper = MarathonScraper()
-    b = scraper.get_bets('csgo')
+    b = scraper.get_bets(sport_type)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\marathon.py'
+    path = my_path + '\\sample_data\\' + sport_type + '\\marathon.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets = ', pformat(b), file=f)
+        print('bets =', pformat(b), file=f)
     print(time.time() - t)
