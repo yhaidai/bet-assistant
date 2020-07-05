@@ -1,9 +1,6 @@
 import re
-from pprint import pprint, pformat
 from esports.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
-from sample_data.csgo import favorit
-import os.path
 
 
 class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):

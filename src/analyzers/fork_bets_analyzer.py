@@ -4,6 +4,7 @@ from analyzers.analyzer import Analyzer
 from grouper import Grouper
 import os
 
+
 class ForkBetsAnalyzer(Analyzer):
     """
     Class for analyzing betting info and finding possible fork bets

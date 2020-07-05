@@ -10,21 +10,20 @@ from selenium.webdriver.common.keys import Keys
 
 class GGBetScraper(AbstractScraper):
     _BASE_URL = 'https://gg.bet/en/betting/'
-
     _MENU = {
         'csgo': '//*[@id="betting__container"]/div/div/div[1]/div/div/div[5]/div[1]/div[2]',
         'dota': '//*[@id="betting__container"]/div/div/div[1]/div/div/div[6]/div[1]'
         }
 
-    def get_bets(self, sport_type):
+    def get_sport_bets(self, sport_name):
         """
         Scrapes betting data for a given sport type
 
-        :param sport_type: sport type to scrape betting data for
-        :type sport_type: str
+        :param sport_name: sport type to scrape betting data for
+        :type sport_name: str
         """
         bets = {}
-        match_urls = self.get_match_urls(sport_type)
+        match_urls = self.get_match_urls(sport_name)
         for url in match_urls:
             match_bets = GGBetScraper._get_bets(url)
             for match_title in match_bets:
@@ -34,13 +33,13 @@ class GGBetScraper(AbstractScraper):
         return bets
 
     @staticmethod
-    def get_match_urls(sport_type):
+    def get_match_urls(sport_name):
         """
         Scrape match urls for a given sport type
         """
         page = Page(GGBetScraper._BASE_URL)
         time.sleep(1)
-        sport_type_icon = page.driver.find_element_by_xpath(GGBetScraper._MENU[sport_type])
+        sport_type_icon = page.driver.find_element_by_xpath(GGBetScraper._MENU[sport_name])
         page.click(sport_type_icon)
         time.sleep(1)
         GGBetScraper.scroll_down()
@@ -129,7 +128,7 @@ class GGBetScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = GGBetScraper()
-    b = scraper.get_bets(sport_type)
+    b = scraper.get_sport_bets(sport_type)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))

@@ -1,1 +1,1 @@
-sport_type = 'dota'
+sport_type = 'csgo'

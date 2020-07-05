@@ -15,15 +15,15 @@ class FavoritScraper(AbstractScraper):
         'dota': '0'
     }
 
-    def get_bets(self, sport_type):
+    def get_sport_bets(self, sport_name):
         """
         Scrapes betting data for a given sport type
 
-        :param sport_type: sport type to scrape betting data for
-        :type sport_type: str
+        :param sport_name: sport type to scrape betting data for
+        :type sport_name: str
         """
         bets = {}
-        match_buttons = self.get_match_buttons(sport_type)
+        match_buttons = self.get_match_buttons(sport_name)
 
         for match_button in match_buttons:
             match_bets = FavoritScraper._get_bets(match_button)
@@ -33,7 +33,7 @@ class FavoritScraper(AbstractScraper):
         return bets
 
     @staticmethod
-    def get_match_buttons(sport_type):
+    def get_match_buttons(sport_name):
         """
         Scrape match buttons for a given sport type
         """
@@ -49,7 +49,7 @@ class FavoritScraper(AbstractScraper):
         drop_down_menu = cybersports.parent.find_element_by_class_name('slideInDown')
         checkboxes = drop_down_menu.find_elements_by_tag_name('b')
         # print(checkboxes)
-        page.driver.execute_script("arguments[0].click();", checkboxes[int(FavoritScraper._MENU[sport_type])])
+        page.driver.execute_script("arguments[0].click();", checkboxes[int(FavoritScraper._MENU[sport_name])])
         time.sleep(0.25)
 
         main_table = page.driver.find_element_by_class_name('column--container')
@@ -116,7 +116,7 @@ class FavoritScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = FavoritScraper()
-    b = scraper.get_bets(sport_type)
+    b = scraper.get_sport_bets(sport_type)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))

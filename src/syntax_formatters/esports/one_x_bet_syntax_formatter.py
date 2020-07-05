@@ -1,10 +1,7 @@
-from pprint import pprint, pformat
-import os.path
 import re
 
 from esports.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
-from sample_data.csgo import one_x_bet
 
 
 class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):

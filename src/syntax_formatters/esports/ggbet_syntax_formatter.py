@@ -1,9 +1,6 @@
 import re
-from pprint import pprint, pformat
 from esports.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
-from sample_data.csgo import ggbet
-import os.path
 
 
 class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
