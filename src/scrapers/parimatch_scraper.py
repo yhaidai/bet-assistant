@@ -5,6 +5,7 @@ import os.path
 from bs4 import BeautifulSoup
 
 # from parimatch_syntax_formatter import ParimatchSyntaxFormatter
+from constants import sport_type
 from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
 from syntax_formatters.match_title_compiler import MatchTitleCompiler
@@ -20,10 +21,11 @@ class ParimatchScraper(AbstractScraper):
     _BASE_URL = 'https://www.parimatch.com/en'
     _SPORT_NAMES = {
         'csgo': 'counter-strike',
-        'dota 2': 'dota-2',
+        'dota': 'dota-2',
         }
     _MENU = {
-        'csgo': 'https://parimatch.com/sport/kibersport'
+        'csgo': 'https://parimatch.com/sport/kibersport',
+        'dota': 'https://parimatch.com/sport/kibersport'
         }
 
     # last titles for each of the groups
@@ -289,12 +291,11 @@ class ParimatchScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = ParimatchScraper()
-
-    b = scraper.get_bets('csgo')
+    b = scraper.get_bets(sport_type)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\parimatch.py'
+    path = my_path + '\\sample_data\\' + sport_type + '\\parimatch.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets = ', pformat(b), file=f)
+        print('bets =', pformat(b), file=f)
     print(time.time() - t)

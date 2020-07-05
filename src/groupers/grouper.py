@@ -1,11 +1,7 @@
 import re
 from pprint import pprint
 
-from syntax_formatters.sample_data.parimatch import bets as parimatch_bets
-from syntax_formatters.sample_data.one_x_bet import bets as one_x_bet_bets
-from syntax_formatters.sample_data.ggbet import bets as ggbet_bets
-from syntax_formatters.sample_data.favorit import bets as favorit_bets
-from syntax_formatters.sample_data.marathon import bets as marathon_bets
+from csgo.sample_data.ggbet import bets as ggbet_bets
 
 
 class Grouper:

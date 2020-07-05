@@ -27,22 +27,10 @@ class AbstractSyntaxFormatter(ABC):
         bets = self._format_before(bets)
 
         bets = self._update(bets, self._format_total)
-        bets = self._update(bets, self._format_maps)
         bets = self._update(bets, self._format_handicap)
-        bets = self._update(bets, self._format_win_in_round)
-        bets = self._update(bets, self._format_team_names)
         bets = self._update(bets, self._format_correct_score)
         bets = self._update(bets, self._format_win)
         bets = self._update(bets, self._format_uncommon_chars)
-        bets = self._update(bets, self._format_bomb_exploded)
-        bets = self._update(bets, self._format_bomb_planted)
-        bets = self._update(bets, self._format_overtime)
-        bets = self._update(bets, self._format_first_frag)
-        bets = self._update(bets, self._format_win_at_least_number_of_maps)
-        bets = self._update(bets, self._format_win_number_of_maps)
-        bets = self._update(bets, self._format_individual_total_rounds)
-        bets = self._update(bets, self._format_first_to_win_number_of_rounds)
-        bets = self._update(bets, self._format_total_frags)
 
         bets = self._format_after(bets)
 
@@ -179,10 +167,10 @@ class AbstractSyntaxFormatter(ABC):
 
             if swapped:
                 for bet_title in list(self.bets[match_title]):
-                    if 'correct score ' in bet_title:
-                        score1 = bet_title[len('correct score ')]
-                        score2 = bet_title[len('correct score ') + 2]
-                        formatted_bet_title = bet_title[:-3] + score2 + '-' + score1 + self._REMOVE_FROM_TITLES[0]
+                    match = re.search(r'^((\d+-(st|nd|rd|th) map: )?correct score )(\d+)-(\d+)$', bet_title)
+                    if match:
+                        formatted_bet_title = match.group(1) + match.group(5) + '-' + match.group(4) + \
+                                              self._REMOVE_FROM_TITLES[0]
                         self.bets[match_title][formatted_bet_title] = self.bets[match_title].pop(bet_title)
 
             self.bets[formatted_match_title] = self.bets.pop(match_title)
@@ -205,56 +193,17 @@ class AbstractSyntaxFormatter(ABC):
 
         return self.bets.copy()
 
-    def _format_team_names(self):
-        formatted_title = self.bet_title.lower()
-        for item in self._REMOVE_FROM_TITLES:
-            formatted_title = formatted_title.replace(item, '', 1)
-        return formatted_title
-
     def _format_win(self):
         return self.bet_title.lower()
 
     def _format_total(self):
         return self.bet_title.lower()
 
-    def _format_maps(self):
-        return self.bet_title.lower()
-
     def _format_handicap(self):
-        return self.bet_title.lower()
-
-    def _format_uncommon_chars(self):
-        return self.bet_title.lower()
-
-    def _format_win_in_round(self):
         return self.bet_title.lower()
 
     def _format_correct_score(self):
         return self.bet_title.lower()
 
-    def _format_bomb_exploded(self):
-        return self.bet_title.lower()
-
-    def _format_bomb_planted(self):
-        return self.bet_title.lower()
-
-    def _format_overtime(self):
-        return self.bet_title.lower()
-
-    def _format_first_frag(self):
-        return self.bet_title.lower()
-
-    def _format_win_at_least_number_of_maps(self):
-        return self.bet_title.lower()
-
-    def _format_win_number_of_maps(self):
-        return self.bet_title.lower()
-
-    def _format_individual_total_rounds(self):
-        return self.bet_title.lower()
-
-    def _format_first_to_win_number_of_rounds(self):
-        return self.bet_title.lower()
-
-    def _format_total_frags(self):
+    def _format_uncommon_chars(self):
         return self.bet_title.lower()

@@ -3,6 +3,7 @@ from pprint import pprint, pformat
 import os.path
 from selenium.common.exceptions import NoSuchElementException
 
+from constants import sport_type
 from match_title_compiler import MatchTitleCompiler
 from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
@@ -12,10 +13,11 @@ class OneXBetScraper(AbstractScraper):
     _BASE_URL = 'https://1x-bet.com/en/'
     _SPORT_NAMES = {
         'csgo': 'CSGO',
-        'dota 2': 'Dota-2',
+        'dota': 'Dota-2',
         }
     _MENU = {
-        'csgo': 'line/Esports/'
+        'csgo': 'line/Esports/',
+        'dota': 'line/Esports/'
         }
 
     def get_bets(self, sport_type):
@@ -145,13 +147,12 @@ class OneXBetScraper(AbstractScraper):
 
 if __name__ == '__main__':
     t = time.time()
-
     scraper = OneXBetScraper()
-    b = scraper.get_bets('csgo')
+    b = scraper.get_bets(sport_type)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\one_x_bet.py'
+    path = my_path + '\\sample_data\\' + sport_type + '\\one_x_bet.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets = ', pformat(b), file=f)
+        print('bets =', pformat(b), file=f)
     print(time.time() - t)

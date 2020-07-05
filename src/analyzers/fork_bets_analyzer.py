@@ -2,7 +2,7 @@ from pprint import pprint, pformat
 
 from analyzers.analyzer import Analyzer
 from grouper import Grouper
-
+import os
 
 class ForkBetsAnalyzer(Analyzer):
     """
@@ -115,5 +115,7 @@ if __name__ == '__main__':
     analyzer = ForkBetsAnalyzer('csgo')
     b = analyzer.get_fork_bets()
     pprint(b)
-    with open('analyzers/sample_data/forks.py', 'w') as f:
-        print('forks = ', pformat(b), file = f)
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = my_path + '\\sample_data\\forks.py'
+    with open(path, 'w', encoding='utf-8') as f:
+        print('bets = ', pformat(b), file=f)

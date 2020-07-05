@@ -9,6 +9,12 @@
       <sourceFolder url="file://$MODULE_DIR$/src/bot" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/analyzers" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/groupers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters/esports/csgo/test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/analyzers/sample_data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters/esports/csgo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters/esports/dota" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters/esports" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters/constants" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/renderer/chromedriver_linux64" />
       <excludeFolder url="file://$MODULE_DIR$/src/renderer/chromedriver_win32" />
       <excludeFolder url="file://$MODULE_DIR$/uml" />

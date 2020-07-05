@@ -2,15 +2,17 @@ from pprint import pprint, pformat
 import os.path
 from abstract_scraper import AbstractScraper
 import time
+
+from constants import sport_type
 from src.renderer.page import Page
 
 
-#  NAMING: match_title, bet_title, odds
 class FavoritScraper(AbstractScraper):
     _BASE_URL = 'https://www.favorit.com.ua/en/bets/#'
 
     _MENU = {
-        'csgo': ''
+        'csgo': '1',
+        'dota': '0'
     }
 
     def get_bets(self, sport_type):
@@ -37,19 +39,18 @@ class FavoritScraper(AbstractScraper):
         """
         page = Page(FavoritScraper._BASE_URL)
 
-        if sport_type == 'csgo':
-            headers = page.driver.find_elements_by_class_name('sport--name--head')
-            for header in headers:
-                if header.get_attribute('class') == 'sport--name--head sp_85':
-                    cybersports = header
-            time.sleep(0.25)
-            page.driver.execute_script("arguments[0].click();", cybersports)
-            time.sleep(0.25)
-            drop_down_menu = cybersports.parent.find_element_by_class_name('slideInDown')
-            checkboxes = drop_down_menu.find_elements_by_tag_name('b')
-            # print(checkboxes)
-            page.driver.execute_script("arguments[0].click();", checkboxes[1])
-            time.sleep(0.25)
+        headers = page.driver.find_elements_by_class_name('sport--name--head')
+        for header in headers:
+            if header.get_attribute('class') == 'sport--name--head sp_85':
+                cybersports = header
+        time.sleep(0.25)
+        page.driver.execute_script("arguments[0].click();", cybersports)
+        time.sleep(0.25)
+        drop_down_menu = cybersports.parent.find_element_by_class_name('slideInDown')
+        checkboxes = drop_down_menu.find_elements_by_tag_name('b')
+        # print(checkboxes)
+        page.driver.execute_script("arguments[0].click();", checkboxes[int(FavoritScraper._MENU[sport_type])])
+        time.sleep(0.25)
 
         main_table = page.driver.find_element_by_class_name('column--container')
         time.sleep(1)
@@ -77,7 +78,6 @@ class FavoritScraper(AbstractScraper):
             return bets
         bets[match_title] = {}
         time.sleep(1)
-        url = Page.driver.current_url
         # selectors = []
         marketBlocks = Page.driver.find_elements_by_class_name('markets--block')
         for mb in marketBlocks:
@@ -115,13 +115,12 @@ class FavoritScraper(AbstractScraper):
 
 if __name__ == '__main__':
     t = time.time()
-
     scraper = FavoritScraper()
-    b = scraper.get_bets('csgo')
+    b = scraper.get_bets(sport_type)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\favorit.py'
+    path = my_path + '\\sample_data\\' + sport_type + '\\favorit.py'
     with open(path, 'w', encoding='utf-8') as f:
         print('bets =', pformat(b), file=f)
 
