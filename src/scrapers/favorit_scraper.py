@@ -1,19 +1,24 @@
 from pprint import pprint, pformat
 import os.path
+
+from Bet import Bet
+from Match import Match
+from Sport import Sport
 from abstract_scraper import AbstractScraper
 import time
 
-from constants import sport_type
+from constants import sport_name
+from match_title_compiler import MatchTitleCompiler
 from src.renderer.page import Page
 
 
 class FavoritScraper(AbstractScraper):
+    _NAME = 'favorit'
     _BASE_URL = 'https://www.favorit.com.ua/en/bets/#'
-
     _MENU = {
-        'csgo': '1',
-        'dota': '0'
-    }
+        'csgo': 'Counter-Strike: Global Offensive',
+        'dota': 'Dota 2'
+        }
 
     def get_sport_bets(self, sport_name):
         """
@@ -22,15 +27,16 @@ class FavoritScraper(AbstractScraper):
         :param sport_name: sport type to scrape betting data for
         :type sport_name: str
         """
-        bets = {}
+        sport_bets = []
         match_buttons = self.get_match_buttons(sport_name)
 
         for match_button in match_buttons:
             match_bets = FavoritScraper._get_bets(match_button)
-            for match_title in match_bets:
-                match_bets[match_title][self.match_url_key] = Page.driver.current_url
-            bets.update(match_bets)
-        return bets
+            if match_bets:
+                sport_bets.append(match_bets)
+
+        sport = Sport(sport_name, sport_bets)
+        return sport
 
     @staticmethod
     def get_match_buttons(sport_name):
@@ -44,12 +50,16 @@ class FavoritScraper(AbstractScraper):
             if header.get_attribute('class') == 'sport--name--head sp_85':
                 cybersports = header
         time.sleep(0.25)
-        page.driver.execute_script("arguments[0].click();", cybersports)
+        page.click(cybersports)
         time.sleep(0.25)
         drop_down_menu = cybersports.parent.find_element_by_class_name('slideInDown')
         checkboxes = drop_down_menu.find_elements_by_tag_name('b')
+        titles = drop_down_menu.find_elements_by_class_name('ttt')
         # print(checkboxes)
-        page.driver.execute_script("arguments[0].click();", checkboxes[int(FavoritScraper._MENU[sport_name])])
+
+        for i in range(len(checkboxes)):
+            if titles[i].get_attribute('innerHTML') == FavoritScraper._MENU[sport_name]:
+                page.click(checkboxes[i])
         time.sleep(0.25)
 
         main_table = page.driver.find_element_by_class_name('column--container')
@@ -61,26 +71,17 @@ class FavoritScraper(AbstractScraper):
 
     @staticmethod
     def _get_bets(match_button):
-        """
-        Scraps data such as match titles, bet titles and odds from the given match url
-
-        :param match_button: any match button on the website
-        :type match_button: button AHAHAHAHAHAHAHAH
-        :return: bets dictionary in the following form:
-        bets[match_title][bet_title] = odds
-        :rtype: dict
-        """
-        Page.driver.execute_script("arguments[0].click();", match_button)
+        Page.click(match_button)
         time.sleep(0.1)
-        bets = {}
+        bets = []
         match_title = FavoritScraper._get_match_title()
         if not match_title:
             return bets
-        bets[match_title] = {}
+
         time.sleep(1)
         # selectors = []
-        marketBlocks = Page.driver.find_elements_by_class_name('markets--block')
-        for mb in marketBlocks:
+        market_blocks = Page.driver.find_elements_by_class_name('markets--block')
+        for mb in market_blocks:
             block_title = mb.find_element_by_class_name('markets--head').get_attribute('innerHTML')
             block_title_tail = mb.find_element_by_class_name('result--type--head')
             block_title += ' ' + block_title_tail.find_element_by_tag_name('span').get_attribute('innerHTML')
@@ -90,8 +91,12 @@ class FavoritScraper(AbstractScraper):
                 bet_title = block_title + ' ' + bet_type
                 button = label.find_element_by_tag_name('button')
                 odds = button.get_attribute('innerHTML')
-                bets[match_title][bet_title] = odds
-        return bets
+                bet = Bet(bet_title, odds)
+                bets.append(bet)
+
+        url = Page.driver.current_url
+        match = Match(match_title, url, FavoritScraper._NAME, bets)
+        return match
 
     @staticmethod
     def _get_match_title():
@@ -103,25 +108,24 @@ class FavoritScraper(AbstractScraper):
         """
         try:
             init = Page.driver.find_element_by_class_name('two--name')
-            init = init.find_elements_by_tag_name('span')
-            team1 = init[0].get_attribute('innerHTML').lower()
-            team2 = init[1].get_attribute('innerHTML').lower()
-            match_title = team1 + ' - ' + team2
+            teams = [el.get_attribute('innerHTML') for el in init.find_elements_by_tag_name('span')]
+            match_title = MatchTitleCompiler.compile_match_title(*teams)
         except Exception as e:
             print(e)
             return None
+
         return match_title
 
 
 if __name__ == '__main__':
     t = time.time()
     scraper = FavoritScraper()
-    b = scraper.get_sport_bets(sport_type)
+    b = scraper.get_sport_bets(sport_name)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_type + '\\favorit.py'
+    path = my_path + '\\sample_data\\' + sport_name + '\\favorit.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets =', pformat(b), file=f)
+        print('sport =', pformat(b), file=f)
 
     print(time.time() - t)

@@ -1,14 +1,20 @@
 from pprint import pprint, pformat
 import os.path
+
+from Bet import Bet
+from Match import Match
+from Sport import Sport
 from abstract_scraper import AbstractScraper
 import time
 
-from constants import sport_type
+from constants import sport_name
+from match_title_compiler import MatchTitleCompiler
 from src.renderer.page import Page
 from selenium.webdriver.common.keys import Keys
 
 
 class GGBetScraper(AbstractScraper):
+    _NAME = 'ggbet'
     _BASE_URL = 'https://gg.bet/en/betting/'
     _MENU = {
         'csgo': '//*[@id="betting__container"]/div/div/div[1]/div/div/div[5]/div[1]/div[2]',
@@ -22,15 +28,14 @@ class GGBetScraper(AbstractScraper):
         :param sport_name: sport type to scrape betting data for
         :type sport_name: str
         """
-        bets = {}
+        sport_bets = []
         match_urls = self.get_match_urls(sport_name)
         for url in match_urls:
             match_bets = GGBetScraper._get_bets(url)
-            for match_title in match_bets:
-                match_bets[match_title][self.match_url_key] = url
-            bets.update(match_bets)
-
-        return bets
+            if match_bets:
+                sport_bets.append(match_bets)
+        sport = Sport(sport_name, sport_bets)
+        return sport
 
     @staticmethod
     def get_match_urls(sport_name):
@@ -82,11 +87,15 @@ class GGBetScraper(AbstractScraper):
         """
         page = Page(match_url)
         time.sleep(2)
-        bets = {}
+        bets = []
         match_title = GGBetScraper._get_match_title()
         if not match_title:
             return bets
-        bets[match_title] = {}
+
+        live_buttons = page.driver.find_elements_by_class_name('__app-LiveIcon-container')
+        if len(live_buttons) > 1:
+            # is live
+            return bets
 
         market_tables = page.driver.find_elements_by_class_name('marketTable__table___dvHTz')
         for mt in market_tables:
@@ -98,13 +107,15 @@ class GGBetScraper(AbstractScraper):
                     if bet != 'Deactivated':
                         pos = bet.find(': ')
                         bet_type = bet[:pos]
-                        odds = bet[pos + 2:]
+                        odd = bet[pos + 2:]
                         bet_title = table_title + ' ' + bet_type
-                        bets[match_title][bet_title] = odds
+                        bet = Bet(bet_title, odd)
+                        bets.append(bet)
                 except Exception as e:
                     print('ggbet error in buttons')
 
-        return bets
+        match = Match(match_title, match_url, GGBetScraper._NAME, bets)
+        return match
 
     @staticmethod
     def _get_match_title():
@@ -115,25 +126,25 @@ class GGBetScraper(AbstractScraper):
         :rtype: str or None
         """
         try:
-            init = Page.driver.find_elements_by_class_name('__app-PromoMatchBody-competitor-name')
-            team1 = init[0].get_attribute('innerHTML').lower()
-            team2 = init[1].get_attribute('innerHTML').lower()
-            match_title = team1 + ' - ' + team2
+            teams = [el.get_attribute('innerHTML') for el in Page.driver.find_elements_by_class_name(
+                '__app-PromoMatchBody-competitor-name')]
+            match_title = MatchTitleCompiler.compile_match_title(*teams[:2])
         except Exception as e:
             print(e)
             return None
+
         return match_title
 
 
 if __name__ == '__main__':
     t = time.time()
     scraper = GGBetScraper()
-    b = scraper.get_sport_bets(sport_type)
+    b = scraper.get_sport_bets(sport_name)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
     print(my_path)
-    path = my_path + '\\sample_data\\' + sport_type + '\\ggbet.py'
+    path = my_path + '\\sample_data\\' + sport_name + '\\ggbet.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets =', pformat(b), file=f)
+        print('sport =', pformat(b), file=f)
     print(time.time() - t)

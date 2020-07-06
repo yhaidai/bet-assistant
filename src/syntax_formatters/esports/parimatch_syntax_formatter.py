@@ -1,3 +1,5 @@
+import re
+
 from esports.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
 from match_title_compiler import MatchTitleCompiler
@@ -83,9 +85,3 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
         formatted_title = formatted_title.replace('–', '-')
 
         return formatted_title
-
-    def _format_maps(self):
-        return self.bet_title.lower()
-
-    def _format_correct_score(self):
-        return self.bet_title.lower()

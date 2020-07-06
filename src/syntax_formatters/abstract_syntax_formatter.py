@@ -12,55 +12,49 @@ class AbstractSyntaxFormatter(ABC):
     """
     _REMOVE_FROM_TITLES = ['team ', ' team', ' esports', ' club']
 
-    def __init__(self):
-        self.bets = {}
-
-    def apply_unified_syntax_formatting(self, bets):
+    def apply_unified_syntax_formatting(self, sport):
         """
-        Apply unified syntax formatting to the given bets dict
+        Apply unified syntax formatting to the given sport
 
-        :param bets: bets dictionary to format
-        :type bets: dict
+        :param sport: sport to format
+        :type sport: Sport
         """
-        self.bets = bets.copy()
+        sport = self._format_before(sport)
 
-        bets = self._format_before(bets)
+        sport = self._update(sport, self._format_total)
+        sport = self._update(sport, self._format_handicap)
+        sport = self._update(sport, self._format_correct_score)
+        sport = self._update(sport, self._format_win)
+        sport = self._update(sport, self._format_uncommon_chars)
 
-        bets = self._update(bets, self._format_total)
-        bets = self._update(bets, self._format_handicap)
-        bets = self._update(bets, self._format_correct_score)
-        bets = self._update(bets, self._format_win)
-        bets = self._update(bets, self._format_uncommon_chars)
+        sport = self._format_after(sport)
 
-        bets = self._format_after(bets)
+        sport = self._format_odds(sport)
+        sport = self._format_titles(sport)
 
-        bets = self._format_odds(bets)
-        bets = self._format_bookmaker_name(bets)
-        bets = self._format_titles(bets)
+        return sport
 
-        return bets
-
-    def _format_before(self, bets):
+    def _format_before(self, sport):
         """
         Apply unified syntax formatting to the given bets dict before obligatory updates are run. Subclass specific
 
-        :param bets: bets dictionary to format
-        :type bets: dict
-        :return: formatted bets dictionary
-        :rtype: dict
+        :param sport: sport to format
+        :type sport: Sport
+        :return: formatted sport
+        :rtype: Sport
         """
-        return bets
+        return sport
 
-    def _format_after(self, bets):
+    def _format_after(self, sport):
         """
         Apply unified syntax formatting to the given bets dict after obligatory updates are run. Subclass specific
 
-        :param bets: bets dictionary to format
-        :type bets: dict
-        :return: formatted bets dictionary
-        :rtype: dict
+        :param sport: sport to format
+        :type sport: Sport
+        :return: formatted sport
+        :rtype: Sport
         """
-        return bets
+        return sport
 
     @abstractmethod
     def _get_name(self):
@@ -69,129 +63,104 @@ class AbstractSyntaxFormatter(ABC):
     def _get_invalid_bet_titles(self):
         return ()
 
-    def _update(self, bets, _callable):
+    def _update(self, sport, _callable):
         """
         Update self.bets and given bets dictionaries according to _callable method
 
-        :param bets: bets dictionary to format
-        :type bets: dict
+        :param sport: bets dictionary to format
+        :type sport: Sport
         :param _callable: method to be called to get formatted bet title
         :type _callable: method
-        :return: updated bets dictionary
-        :rtype: dict
+        :return: updated sport
+        :rtype: Sport
         """
         invalid_bet_titles = self._get_invalid_bet_titles()
 
-        for self.match_title in bets:
-            for self.bet_title, odds in list(bets[self.match_title].items()):
+        for match in sport:
+            self.match_title = match.title
+            for bet in match:
+                self.bet_title = bet.title
                 formatted_title = _callable()
-                self.bets[self.match_title].pop(self.bet_title)
+                bet.title = formatted_title
 
-                if self.bet_title not in invalid_bet_titles:
-                    self.bets[self.match_title][formatted_title] = odds
+                if self.bet_title in invalid_bet_titles:
+                    match.bets.remove(bet)
 
-        return self.bets.copy()
+        return sport
 
-    def _format_bookmaker_name(self, bets):
-        """
-        Add bookmakers name to the bets dict
-        bets[match_title][bet_title] = odds -> bets[match_title][bet_title] = {odds: bookmaker}
-
-        :param bets: bets dictionary to format
-        :type bets: dict
-        :return: updated bets dictionary
-        :rtype: dict
-        """
-        name = self._get_name()
-
-        for match_title in bets:
-            url = self.bets[match_title][AbstractScraper.match_url_key]
-            for bet_title, odds in bets[match_title].items():
-                try:
-                    self.bets[match_title][bet_title] = {odds: name + '(' + url + ')'}
-                except KeyError:
-                    self.bets[match_title][bet_title] = {odds: name}
-            bets[match_title].pop(AbstractScraper.match_url_key)
-
-        return self.bets.copy()
-
-    def _format_titles(self, bets):
+    def _format_titles(self, sport):
         """
         Remove specific words from titles
 
-        :param bets: bets dictionary to format
-        :type bets: dict
-        :return: updated bets dictionary
-        :rtype: dict
+        :param sport: sport to format
+        :type sport: Sport
+        :return: updated sport
+        :rtype: Sport
         """
-        bets = self._format_match_titles(bets)
-        bets = self._format_bet_titles(bets)
+        sport = self._format_match_titles(sport)
+        sport = self._format_bet_titles(sport)
 
-        return bets
+        return sport
 
-    def _format_bet_titles(self, bets):
+    def _format_bet_titles(self, sport):
         """
         Remove specific words from bet titles
 
-        :param bets: bets dictionary to format
-        :type bets: dict
-        :return: updated bets dictionary
-        :rtype: dict
+        :param sport: sport to format
+        :type sport: Sport
+        :return: updated sport
+        :rtype: Sport
         """
-        for match_title in bets:
-            for bet_title in list(bets[match_title]):
-                formatted_bet_title = bet_title
+        for match in sport:
+            for bet in match:
                 for word in self._REMOVE_FROM_TITLES:
-                    formatted_bet_title = formatted_bet_title.replace(word, '')
+                    bet.title = bet.title.replace(word, '')
 
-                self.bets[match_title][formatted_bet_title] = self.bets[match_title].pop(bet_title)
+        return sport
 
-        return self.bets.copy()
-
-    def _format_match_titles(self, bets):
+    def _format_match_titles(self, sport):
         """
         Remove specific words from match titles
 
-        :param bets: bets dictionary to format
-        :type bets: dict
-        :return: updated bets dictionary
-        :rtype: dict
+        :param sport: sport to format
+        :type sport: Sport
+        :return: updated sport
+        :rtype: Sport
         """
-        for match_title in bets:
-            teams = MatchTitleCompiler.decompile_match_title(match_title)
+        for match in sport:
+            teams = MatchTitleCompiler.decompile_match_title(match.title)
             formatted_match_title = MatchTitleCompiler.compile_match_title(*teams, sort=True)
-            swapped = formatted_match_title != match_title
+            swapped = formatted_match_title != match.title
 
             for word in self._REMOVE_FROM_TITLES:
                 formatted_match_title = formatted_match_title.replace(word, '')
 
             if swapped:
-                for bet_title in list(self.bets[match_title]):
-                    match = re.search(r'^((\d+-(st|nd|rd|th) map: )?correct score )(\d+)-(\d+)$', bet_title)
-                    if match:
-                        formatted_bet_title = match.group(1) + match.group(5) + '-' + match.group(4) + \
-                                              self._REMOVE_FROM_TITLES[0]
-                        self.bets[match_title][formatted_bet_title] = self.bets[match_title].pop(bet_title)
+                for bet in match:
+                    found = re.search(r'^((\d+-(st|nd|rd|th) map: )?correct score )(\d+)-(\d+)$', bet.title)
+                    if found:
+                        formatted_bet_title = found.group(1) + found.group(5) + '-' + found.group(4)
+                        bet.title = formatted_bet_title
 
-            self.bets[formatted_match_title] = self.bets.pop(match_title)
+            match.title = formatted_match_title
 
-        return self.bets.copy()
+        return sport
 
-    def _format_odds(self, bets):
+    def _format_odds(self, sport):
         """
         Remove empty odds bet titles
 
-        :param bets: bets dictionary to format
-        :type bets: dict
-        :return: updated bets dictionary
-        :rtype: dict
+        :param sport: sport to format
+        :type sport: Sport
+        :return: updated sport
+        :rtype: Sport
         """
-        for match_title in bets:
-            for bet_title, odds in list(bets[match_title].items()):
-                if not odds:
-                    self.bets[match_title].pop(bet_title)
+        for match in sport:
+            for bet in match:
+                if not bet.odds:
+                    match.bets.remove(bet)
 
-        return self.bets.copy()
+        return sport
 
     def _format_win(self):
         return self.bet_title.lower()

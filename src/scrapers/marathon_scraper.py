@@ -7,7 +7,7 @@ from Sport import Sport
 from abstract_scraper import AbstractScraper
 import time
 
-from constants import sport_type
+from constants import sport_name
 from match_title_compiler import MatchTitleCompiler
 from src.renderer.page import Page
 
@@ -146,11 +146,11 @@ class MarathonScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = MarathonScraper()
-    b = scraper.get_sport_bets(sport_type)
+    b = scraper.get_sport_bets(sport_name)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_type + '\\marathon.py'
+    path = my_path + '\\sample_data\\' + sport_name + '\\marathon.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets =', pformat(b), file=f)
+        print('sport =', pformat(b), file=f)
     print(time.time() - t)

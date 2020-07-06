@@ -6,7 +6,7 @@ from selenium.common.exceptions import NoSuchElementException
 from Bet import Bet
 from Match import Match
 from Sport import Sport
-from constants import sport_type
+from constants import sport_name
 from match_title_compiler import MatchTitleCompiler
 from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
@@ -26,20 +26,21 @@ class OneXBetScraper(AbstractScraper):
 
     def get_sport_bets(self, sport_name: str):
         sport_bets = []
-        championships = OneXBetScraper._get_championships(sport_type)
+        championships = OneXBetScraper._get_championships(sport_name)
         championship_urls = OneXBetScraper.get_championship_urls(championships)
 
         match_elements = OneXBetScraper._get_match_elements(championships)
         match_urls = OneXBetScraper.get_match_urls(match_elements, championship_urls)
 
+        max_matches_count = 100
         c = 0
         for url in match_urls:
             full_url = OneXBetScraper._BASE_URL + url
+            match_bets = OneXBetScraper._get_match_bets(full_url)
             if match_bets:
-                match_bets = OneXBetScraper._get_match_bets(full_url)
-            sport_bets.append(match_bets)
+                sport_bets.append(match_bets)
             c += 1
-            if c == 2:
+            if c == max_matches_count:
                 break
 
         sport = Sport(sport_name, sport_bets)
@@ -101,6 +102,7 @@ class OneXBetScraper(AbstractScraper):
         :rtype: Match
         """
         match = None
+        bets = []
         page = Page(match_url)
         OneXBetScraper._open_bets()
 
@@ -118,12 +120,11 @@ class OneXBetScraper(AbstractScraper):
             bet_types = [el.text for el in bet_group.find_elements_by_class_name('bet_type')]
             odds = [el.text for el in bet_group.find_elements_by_class_name('koeff')]
 
-            bets = []
             for i in range(len(bet_types)):
                 bet = Bet(bet_title + '. ' + bet_types[i], odds[i])
                 bets.append(bet)
-            match = Match(match_title, match_url, OneXBetScraper._NAME, bets)
 
+        match = Match(match_title, match_url, OneXBetScraper._NAME, bets)
         return match
 
     @staticmethod
@@ -154,11 +155,11 @@ class OneXBetScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = OneXBetScraper()
-    b = scraper.get_sport_bets(sport_type)
+    b = scraper.get_sport_bets(sport_name)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_type + '\\one_x_bet.py'
+    path = my_path + '\\sample_data\\' + sport_name + '\\one_x_bet.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets =', pformat(b), file=f)
+        print('sport =', pformat(b), file=f)
     print(time.time() - t)

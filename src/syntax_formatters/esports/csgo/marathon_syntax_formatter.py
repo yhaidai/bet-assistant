@@ -1,4 +1,6 @@
 from pprint import pprint, pformat
+
+from Sport import Sport
 from csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
 from esports.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
 from sample_data.csgo import marathon
@@ -17,9 +19,10 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
 
 if __name__ == '__main__':
     formatter = MarathonSyntaxFormatter()
-    formatter.apply_unified_syntax_formatting(marathon.bets)
-    pprint(formatter.bets)
+    sport = Sport.from_dict(marathon.sport)
+    formatted_sport = formatter.apply_unified_syntax_formatting(sport)
+    print(formatted_sport)
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\marathon.py'
+    path = my_path + '\\sample_data\\parimatch.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets =', pformat(formatter.bets), file=f)
+        print('sport =', formatted_sport, file=f)

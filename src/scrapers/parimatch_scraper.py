@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from Bet import Bet
 from Match import Match
 from Sport import Sport
-from constants import sport_type
+from constants import sport_name
 from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
 from syntax_formatters.match_title_compiler import MatchTitleCompiler
@@ -65,7 +65,7 @@ class ParimatchScraper(AbstractScraper):
         """
         page = Page(ParimatchScraper._MENU[sport_name])
         soup = BeautifulSoup(page.html, 'html.parser')
-        pattern = ParimatchScraper._SPORT_NAMES[sport_type]
+        pattern = ParimatchScraper._SPORT_NAMES[sport_name]
         championship_urls = [url.get('href') for url in soup.find_all('a', href=re.compile(pattern))]
 
         return championship_urls
@@ -298,11 +298,11 @@ class ParimatchScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = ParimatchScraper()
-    b = scraper.get_sport_bets(sport_type)
+    b = scraper.get_sport_bets(sport_name)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_type + '\\parimatch.py'
+    path = my_path + '\\sample_data\\' + sport_name + '\\parimatch.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets =', pformat(b), file=f)
+        print('sport =', pformat(b), file=f)
     print(time.time() - t)

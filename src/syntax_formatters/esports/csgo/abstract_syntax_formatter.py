@@ -8,41 +8,38 @@ class AbstractSyntaxFormatter(ASF, ABC):
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the websites
     """
-    def apply_unified_syntax_formatting(self, bets):
+    def apply_unified_syntax_formatting(self, sport):
         """
-        Apply unified syntax formatting to the given bets dict
+        Apply unified syntax formatting to the given sport
 
-        :param bets: bets dictionary to format
-        :type bets: dict
+        :param sport: sport to format
+        :type sport: Sport
         """
-        self.bets = bets.copy()
+        sport = self._format_before(sport)
 
-        bets = self._format_before(bets)
+        sport = self._update(sport, self._format_total)
+        sport = self._update(sport, self._format_maps)
+        sport = self._update(sport, self._format_handicap)
+        sport = self._update(sport, self._format_win_in_round)
+        sport = self._update(sport, self._format_correct_score)
+        sport = self._update(sport, self._format_win)
+        sport = self._update(sport, self._format_uncommon_chars)
+        sport = self._update(sport, self._format_bomb_exploded)
+        sport = self._update(sport, self._format_bomb_planted)
+        sport = self._update(sport, self._format_overtime)
+        sport = self._update(sport, self._format_first_kill)
+        sport = self._update(sport, self._format_win_at_least_number_of_maps)
+        sport = self._update(sport, self._format_win_number_of_maps)
+        sport = self._update(sport, self._format_individual_total_rounds)
+        sport = self._update(sport, self._format_first_to_win_number_of_rounds)
+        sport = self._update(sport, self._format_total_kills)
 
-        bets = self._update(bets, self._format_total)
-        bets = self._update(bets, self._format_maps)
-        bets = self._update(bets, self._format_handicap)
-        bets = self._update(bets, self._format_win_in_round)
-        bets = self._update(bets, self._format_correct_score)
-        bets = self._update(bets, self._format_win)
-        bets = self._update(bets, self._format_uncommon_chars)
-        bets = self._update(bets, self._format_bomb_exploded)
-        bets = self._update(bets, self._format_bomb_planted)
-        bets = self._update(bets, self._format_overtime)
-        bets = self._update(bets, self._format_first_kill)
-        bets = self._update(bets, self._format_win_at_least_number_of_maps)
-        bets = self._update(bets, self._format_win_number_of_maps)
-        bets = self._update(bets, self._format_individual_total_rounds)
-        bets = self._update(bets, self._format_first_to_win_number_of_rounds)
-        bets = self._update(bets, self._format_total_kills)
+        sport = self._format_after(sport)
 
-        bets = self._format_after(bets)
+        sport = self._format_odds(sport)
+        sport = self._format_titles(sport)
 
-        bets = self._format_odds(bets)
-        bets = self._format_bookmaker_name(bets)
-        bets = self._format_titles(bets)
-
-        return bets
+        return sport
 
     def _format_win_in_round(self):
         return self.bet_title.lower()
