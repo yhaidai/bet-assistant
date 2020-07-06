@@ -49,7 +49,7 @@
         - #####terrorists/counter-terrorists 
             t/ct 
         - #####Draw
-            draw `<yes/no>
+            draw will win
 * ##dota 2
     * ###match title:
         <first_team_name> - <second_team_name>  

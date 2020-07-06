@@ -38,6 +38,6 @@ if __name__ == '__main__':
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\parimatch.py'
+    path = my_path + '\\sample_data\\marathon.py'
     with open(path, 'w', encoding='utf-8') as f:
         print('sport =', formatted_sport, file=f)

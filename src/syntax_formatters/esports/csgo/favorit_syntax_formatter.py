@@ -27,6 +27,10 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title = formatted_title.replace('total rounds', 'total')
             formatted_title = formatted_title.replace('(', '')
             formatted_title = formatted_title.replace(')', '')
+        match = re.search('^total maps (over|under)', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace('maps ', '')
+            formatted_title += ' maps'
         return formatted_title
 
     def _format_first_to_win_number_of_rounds(self):
@@ -48,6 +52,6 @@ if __name__ == '__main__':
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\parimatch.py'
+    path = my_path + '\\sample_data\\favorit.py'
     with open(path, 'w', encoding='utf-8') as f:
         print('sport =', formatted_sport, file=f)
