@@ -15,22 +15,30 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
                 if word != 'winner':
                     formatted_title += word + ' '
             formatted_title += 'will win'
+        if '1 x 2' in formatted_title:
+            formatted_title = formatted_title.replace('1 x 2 ', '')
+            formatted_title += ' will win'
+
         return formatted_title
 
     def _format_total(self):
+        formatted_title = self._format_total_over_under()
+        return formatted_title
+
+    def _format_total_over_under(self):
         formatted_title = self.bet_title.lower()
-        if 'odd / even' in formatted_title:
-            formatted_title = formatted_title.replace('odd / even', 'total —')
-        if 'total rounds' in formatted_title:
-            formatted_title = formatted_title.replace('total rounds', 'total')
-            formatted_title = formatted_title.replace('(', '')
-            formatted_title = formatted_title.replace(')', '')
         if 'over/under games' in formatted_title:
             formatted_title = formatted_title.replace('over/under games', 'total maps')
-        match = re.search(r'total maps full time (over|under)', formatted_title)
+        match = re.search('total maps full time (over|under)', formatted_title)
         if match:
             formatted_title = formatted_title.replace('maps ', '')
             formatted_title += ' maps'
+        return formatted_title
+
+    def _format_frags(self):
+        formatted_title = self.bet_title.lower()
+        if 'frag' in formatted_title:
+            formatted_title = formatted_title.replace('frag', 'kill')
         return formatted_title
 
     def _format_maps(self):
@@ -71,3 +79,14 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title = formatted_title.replace(':', '-', 1)
             formatted_title = formatted_title[::-1]
         return formatted_title
+
+    def _remove_full_time(self):
+        formatted_title = self.bet_title.lower()
+        if 'full time' in formatted_title:
+            formatted_title = formatted_title.replace('full time ', '')
+        return formatted_title
+
+    def _format_before(self, bets):
+        bets = self._update(bets, self._remove_full_time)
+        bets = self._update(bets, self._format_frags)
+        return bets

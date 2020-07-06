@@ -55,17 +55,17 @@ class TestSyntaxFormatters(unittest.TestCase):
         bets = self.one_x_bet_syntax_formatter.apply_unified_syntax_formatting(self.one_x_bet_bets)
         self._test_unified_syntax_formatting(bets)
 
-    # @unittest.skip
+    @unittest.skip
     def test_ggbet_unified_syntax_formatting(self):
         bets = self.ggbet_syntax_formatter.apply_unified_syntax_formatting(self.ggbet_bets)
         self._test_unified_syntax_formatting(bets)
 
-    # @unittest.skip
+    @unittest.skip
     def test_favorit_unified_syntax_formatting(self):
         bets = self.favorit_syntax_formatter.apply_unified_syntax_formatting(self.favorit_bets)
         self._test_unified_syntax_formatting(bets)
 
-    # @unittest.skip
+    @unittest.skip
     def test_marathon_unified_syntax_formatting(self):
         bets = self.marathon_syntax_formatter.apply_unified_syntax_formatting(self.marathon_bets)
         self._test_unified_syntax_formatting(bets)

@@ -25,6 +25,8 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
             formatted_title += ' maps'
         if 'odd/even maps' in formatted_title:
             formatted_title = formatted_title.replace('odd/even maps', 'total maps —')
+        if 'odd/even' in formatted_title:
+            formatted_title = formatted_title.replace('odd/even ', '')
         return formatted_title
 
     def _format_maps(self):
@@ -32,10 +34,10 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
         invalid_numbers = ['1st', '2nd', '3rd', '4th', '5th']
         formatted_title = self.bet_title.lower()
         for i in range(0, len(correct_numbers)):
-            if invalid_numbers[i] + ' map -' in formatted_title:
-                formatted_title = formatted_title.replace(invalid_numbers[i] + ' map -', correct_numbers[i] + ' map:')
-            if 'map ' + str(i + 1) + ' -' in formatted_title:
-                formatted_title = formatted_title.replace('map ' + str(i + 1) + ' -', correct_numbers[i] + ' map:')
+            if invalid_numbers[i] + ' map' in formatted_title:
+                formatted_title = formatted_title.replace(invalid_numbers[i] + ' map', correct_numbers[i] + ' map:')
+            if 'map ' + str(i + 1) in formatted_title:
+                formatted_title = formatted_title.replace('map ' + str(i + 1) , correct_numbers[i] + ' map:')
         return formatted_title
 
     def _format_handicap(self):
@@ -66,3 +68,25 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
             formatted_title = formatted_title.replace(':', '-', 1)
             formatted_title = formatted_title[::-1]
         return formatted_title
+
+    def _format_whitespaces(self):
+        formatted_title = self.bet_title.lower()
+        formatted_title = ' '.join(formatted_title.split())
+        formatted_title = formatted_title.strip()
+        return formatted_title
+
+    def __format_before(self):
+        formatted_title = self.bet_title.lower()
+        if ' - ' in formatted_title:
+            formatted_title = formatted_title.replace(' - ', ' ')
+        if 'terrorist' in formatted_title:
+            formatted_title = formatted_title.replace('terrorist', 't')
+        return formatted_title
+
+    def _format_before(self, bets):
+        bets = self._update(bets, self._format_whitespaces)
+        bets = self._update(bets, self.__format_before)
+        return bets
+
+    def _format_after(self, bets):
+        return bets

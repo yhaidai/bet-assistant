@@ -44,6 +44,12 @@
             Bomb `<exploded/defused>` in round `value`
         - #####Overtime
             Overtime — `<yes/no>`
+        - #####first/second half
+            first/second half 
+        - #####terrorists/counter-terrorists 
+            t/ct 
+        - #####Draw
+            draw `<yes/no>
 * ##dota 2
     * ###match title:
         <first_team_name> - <second_team_name>  
@@ -90,3 +96,6 @@
             `<team_name>` will first destroy tower
         - #####First to kill roshan
             `<team_name>` will first kill roshan
+        - #####Team to make N-th kill
+            `<team_name>` will make kill N
+        

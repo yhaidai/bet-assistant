@@ -15,10 +15,16 @@ from src.renderer.page import Page
 class MarathonScraper(AbstractScraper):
     _NAME = 'marathon'
     _BASE_URL = 'https://www.marathonbet.com/en/'
+    _ICONS = {
+        'football': 'icon-sport-football',
+        'csgo': 'icon-sport-e-sports',
+        'dota': 'icon-sport-e-sports'
+    }
     _MENU = {
+        'football': '',
         'csgo': 'CS:GO.',
         'dota': 'Dota 2.'
-        }
+    }
 
     def get_sport_bets(self, sport_name):
         """
@@ -46,15 +52,30 @@ class MarathonScraper(AbstractScraper):
 
         matches = []
 
-        icon = page.driver.find_element_by_class_name('icon-sport-e-sports')
+        icon = page.driver.find_element_by_class_name(MarathonScraper._ICONS[sport_name])
         page.click(icon)
         time.sleep(0.2)
-        tournaments = page.driver.find_elements_by_class_name('category-container')
-        for tournament in tournaments:
-            _sport_name = tournament.find_element_by_class_name('nowrap')
-            if _sport_name.get_attribute('innerHTML') == MarathonScraper._MENU[sport_name]:
-                matches += tournament.find_elements_by_class_name('bg')
+        categories_icon = Page.driver.find_element_by_class_name('collapse-all-categories-checkbox')
+        categories_icon = categories_icon.find_element_by_tag_name('input')
+        page.click(categories_icon)
+        time.sleep(0.5)
+        all_tournaments = Page.driver.find_elements_by_class_name('category-container')
 
+        tournaments = []
+        if MarathonScraper._MENU[sport_name] != '':
+            print(MarathonScraper._MENU[sport_name])
+            for tournament in all_tournaments:
+                _sport_name = tournament.find_element_by_class_name('nowrap')
+                if _sport_name.get_attribute('innerHTML') == MarathonScraper._MENU[sport_name]:
+                    tournaments.append(tournament)
+        else:
+            tournaments = all_tournaments
+
+        for tournament in tournaments:
+            collapse_button = tournament.find_element_by_class_name('collapse-button')
+            page.click(collapse_button)
+            time.sleep(0.2)
+        matches += Page.driver.find_elements_by_class_name('bg')
         return matches
 
     @staticmethod

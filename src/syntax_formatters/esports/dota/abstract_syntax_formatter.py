@@ -35,6 +35,7 @@ class AbstractSyntaxFormatter(ASF, ABC):
         sport = self._update(sport, self._format_first_to_kill_roshan)
         sport = self._update(sport, self._format_total_kills)
         sport = self._update(sport, self._format_most_kills)
+        sport = self._update(sport, self._format_specific_kill)
 
         sport = self._format_after(sport)
 
@@ -62,4 +63,10 @@ class AbstractSyntaxFormatter(ASF, ABC):
         return self.bet_title.lower()
 
     def _format_map_duration(self):
+        return self.bet_title.lower()
+
+    def _format_first_blood(self):
+        return self.bet_title.lower()
+
+    def _format_specific_kill(self):
         return self.bet_title.lower()

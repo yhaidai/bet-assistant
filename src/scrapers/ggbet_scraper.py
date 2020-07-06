@@ -15,11 +15,17 @@ from selenium.webdriver.common.keys import Keys
 
 class GGBetScraper(AbstractScraper):
     _NAME = 'ggbet'
-    _BASE_URL = 'https://gg.bet/en/betting/'
+    _BASE_URL = 'https://gg.bet/en/'
+    _TAIL_URL = {
+        'csgo': 'betting',
+        'dota': 'betting',
+        'football': 'betting-sports'
+    }
     _MENU = {
         'csgo': '//*[@id="betting__container"]/div/div/div[1]/div/div/div[5]/div[1]/div[2]',
-        'dota': '//*[@id="betting__container"]/div/div/div[1]/div/div/div[6]/div[1]'
-        }
+        'dota': '//*[@id="betting__container"]/div/div/div[1]/div/div/div[6]/div[1]',
+        'football': '//*[@id="betting__container"]/div/div/div[1]/div/div/div[3]/div'
+    }
 
     def get_sport_bets(self, sport_name):
         """
@@ -42,16 +48,27 @@ class GGBetScraper(AbstractScraper):
         """
         Scrape match urls for a given sport type
         """
-        page = Page(GGBetScraper._BASE_URL)
+        urls = []
+        page = Page(GGBetScraper._BASE_URL + GGBetScraper._TAIL_URL[sport_name])
         time.sleep(1)
         sport_type_icon = page.driver.find_element_by_xpath(GGBetScraper._MENU[sport_name])
         page.click(sport_type_icon)
         time.sleep(1)
-        GGBetScraper.scroll_down()
-        time.sleep(1)
+        tournament_block = Page.driver.find_element_by_class_name('categorizerRow__submenu___tyhYn')
+        tournaments = tournament_block.find_elements_by_class_name('categorizerCheckRow__row___EW7wX')
 
-        links = page.driver.find_elements_by_class_name('marketsCount__markets-count___v4kPh')
-        urls = [link.get_attribute('href') for link in links]
+        for tournament in tournaments:
+            number_of_matches = tournament.find_element_by_class_name('categorizerCheckRow__counter___3rFMF')
+            number_of_matches = int(number_of_matches.get_attribute('innerHTML'))
+            page.click(tournament)
+            time.sleep(1)
+            if number_of_matches > 20:
+                GGBetScraper.scroll_down()
+            middle_table = page.driver.find_element_by_class_name('ScrollToTop__container___37xDi')
+            links = middle_table.find_elements_by_class_name('marketsCount__markets-count___v4kPh')
+            urls += [link.get_attribute('href') for link in links]
+            page.click(tournament)
+            time.sleep(1)
         return urls
 
     @staticmethod
@@ -97,6 +114,7 @@ class GGBetScraper(AbstractScraper):
             # is live
             return bets
 
+
         market_tables = page.driver.find_elements_by_class_name('marketTable__table___dvHTz')
         for mt in market_tables:
             table_title = mt.find_element_by_class_name('marketTable__header___mSHxT').get_attribute('title')
@@ -113,7 +131,6 @@ class GGBetScraper(AbstractScraper):
                         bets.append(bet)
                 except Exception as e:
                     print('ggbet error in buttons')
-
         match = Match(match_title, match_url, GGBetScraper._NAME, bets)
         return match
 

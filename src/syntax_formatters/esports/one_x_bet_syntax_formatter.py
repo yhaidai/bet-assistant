@@ -58,20 +58,6 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
 
         return formatted_title
 
-    def _format_total(self):
-        formatted_title = self.bet_title.lower()
-        if 'total' in formatted_title:
-            formatted_title = formatted_title.replace('total maps. ', '', 1)
-            formatted_title = formatted_title.replace('total maps handicap. ', '', 1)
-            formatted_title = formatted_title.replace('total maps even/odd. ', '', 1)
-            if ' - even' in formatted_title or ' - odd' in formatted_title:
-                formatted_title = formatted_title.replace('-', '—', 1)
-
-            # formatted_title = formatted_title.replace('Total Maps Even/Odd. ', '', 1)
-            formatted_title = formatted_title.replace('maps ', '', 1)
-
-        return formatted_title
-
     def _format_correct_score(self):
         return self.bet_title.lower().replace('correct score. ', '', 1).replace(' - yes', '', 1)
 

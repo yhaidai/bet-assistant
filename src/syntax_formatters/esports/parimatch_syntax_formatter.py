@@ -27,13 +27,6 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
 
         return result
 
-    def _format_total(self):
-        formatted_title = self.bet_title.lower()
-        if 'total' in formatted_title:
-            formatted_title = self._swap_substrings(formatted_title, '. ', 1, 2, ' ')
-
-        return formatted_title
-
     def _format_win(self):
         formatted_title = self.bet_title.lower()
         team_names = MatchTitleCompiler.decompile_match_title(self.match_title)
@@ -55,28 +48,6 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
             formatted_title = formatted_title.replace('away', team_names[1] + ' will')
         elif 'draw' in formatted_title:
             formatted_title += ' will win'
-
-        return formatted_title
-
-    def _format_handicap(self):
-        formatted_title = self.bet_title.lower()
-
-        if 'handicap' in formatted_title:
-            formatted_title = self._swap_substrings(formatted_title, '. ', 1, 2, '')
-            formatted_title = formatted_title.replace('handicap value', '', 1).replace('coefficient', '', 1)
-
-            if 'map:' in formatted_title:
-                # cut 'handicap ' out
-                formatted_title = formatted_title.replace('handicap ', '', 1)
-
-                # remove prefix
-                prefix = formatted_title[:formatted_title.find(':') + 2]
-                formatted_title = formatted_title.replace(prefix, '', 1)
-
-                # insert 'handicap '
-                formatted_title = prefix + 'handicap ' + formatted_title
-            else:
-                formatted_title += ' maps'
 
         return formatted_title
 

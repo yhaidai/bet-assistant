@@ -1,3 +1,4 @@
+import re
 from pprint import pprint, pformat
 
 from Sport import Sport
@@ -8,12 +9,100 @@ import os.path
 
 
 class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
-    def _format_win_in_round(self):
+
+    def _format_individual_total_kills(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('total kills .+? (even|odd)', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace('total kills ', '')
+            formatted_title = formatted_title.replace(' ' + match.group(1), '')
+            formatted_title += ' total kills ' + match.group(1)
+        match = re.search('total kills .+? (over|under)', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace('total kills ', '')
+            formatted_title = formatted_title.replace(' ' + match.group(1), '')
+            words = re.split(' ', formatted_title)
+            formatted_title = formatted_title.replace(' ' + words[-1], '')
+            formatted_title += ' total kills ' + match.group(1) + ' ' + words[-1]
+        return formatted_title
+
+    def _format_first_to_make_number_of_kills(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('1st team to .+? (\d+ kills)', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace('1st team to ', '')
+            formatted_title = formatted_title.replace(match.group(1), '')
+            formatted_title += 'will first make ' + match.group(1)
+        return formatted_title
+
+    def _format_first_to_destroy_tower(self):
+        formatted_title = self.bet_title.lower()
+        if 'destroy first tower' in formatted_title:
+            formatted_title = formatted_title.replace('destroy first tower ', '')
+            formatted_title += ' will first destroy tower'
+        return formatted_title
+
+    def _format_first_to_kill_roshan(self):
+        formatted_title = self.bet_title.lower()
+        if 'roshan kill' in formatted_title:
+            formatted_title = formatted_title.replace('roshan kill', '')
+            formatted_title = formatted_title.replace('1st team to ', '')
+            formatted_title += 'will first kill roshan'
+        return formatted_title
+
+    def _format_total(self):
+        formatted_title = self.bet_title.lower()
+        # if 'total kills' in formatted_title:
+        #     formatted_title = formatted_title.replace('total kills ', '')
+
+        match = re.search('total maps (over|under)', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace('maps ', '')
+            formatted_title += ' maps'
+        # match = re.search('(even|odd)', formatted_title)
+        # if match:
+        #     formatted_title = formatted_title.replace(' ' + match.group(1), ' — ' + match.group(1))
+
+        return formatted_title
+
+    def _format_most_kills(self):
+        formatted_title = self.bet_title.lower()
+        if 'most kills' in formatted_title:
+            if 'equal number' in formatted_title:
+                formatted_title = formatted_title.replace('equal number', 'equal')
+            else:
+                if 'most kills with handicap' in formatted_title:
+                    formatted_title = formatted_title.replace('most kills with handicap ', '')
+                    words = re.split(' ', formatted_title)
+                    formatted_title = ''
+                    for i in range(len(words) - 1):
+                        formatted_title += words[i] + ' '
+                    formatted_title += 'most kills with handicap ' + words[-1]
+                else:
+                    formatted_title = formatted_title.replace('most kills ', '')
+                    words = re.split(' ', formatted_title)
+                    formatted_title = ''
+                    for i in range(len(words) ):
+                        formatted_title += words[i] + ' '
+                    formatted_title += 'most kills'
+        return formatted_title
+
+    def _format_draw(self):
         formatted_title = self.bet_title.lower()
         return formatted_title
 
-    def _format_overtime(self):
+    def _format_first_blood(self):
         formatted_title = self.bet_title.lower()
+        if 'first blood' in formatted_title:
+            # print(formatted_title)
+            formatted_title = formatted_title.replace('1st team to ', '')
+        return formatted_title
+
+    def _format_map_duration(self):
+        formatted_title = self.bet_title.lower()
+        if 'map duration' in formatted_title:
+            formatted_title = formatted_title.replace('map duration', 'duration')
+            formatted_title = formatted_title.replace(' minutes', '')
         return formatted_title
 
 

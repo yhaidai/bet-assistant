@@ -37,8 +37,8 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
 
     def _format_first_to_win_number_of_rounds(self):
         formatted_title = self.bet_title.lower()
-        if 'race to  rounds' in formatted_title:
-            formatted_title = formatted_title.replace('race to  rounds ', '')
+        if 'race to rounds' in formatted_title:
+            formatted_title = formatted_title.replace('race to rounds ', '')
             words = re.split(' ', formatted_title)
             formatted_title = ''
             for i in range(0, len(words) - 1):

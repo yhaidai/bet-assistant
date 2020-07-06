@@ -15,7 +15,13 @@ from src.renderer.page import Page
 class FavoritScraper(AbstractScraper):
     _NAME = 'favorit'
     _BASE_URL = 'https://www.favorit.com.ua/en/bets/#'
-    _MENU = {
+    _ICONS = {
+        'football': 'Soccer',
+        'csgo': 'Cybersports',
+        'dota': 'Cybersports'
+        }
+    _SUBMENU = {
+        'football': None,
         'csgo': 'Counter-Strike: Global Offensive',
         'dota': 'Dota 2'
         }
@@ -28,46 +34,57 @@ class FavoritScraper(AbstractScraper):
         :type sport_name: str
         """
         sport_bets = []
-        match_buttons = self.get_match_buttons(sport_name)
-
-        for match_button in match_buttons:
-            match_bets = FavoritScraper._get_bets(match_button)
-            if match_bets:
-                sport_bets.append(match_bets)
-
+        subsections = self.get_subsections(sport_name)
+        for subsection in subsections:
+            match_buttons = self.get_match_buttons(subsection)
+            for match_button in match_buttons:
+                match_bets = FavoritScraper._get_bets(match_button)
+                if match_bets:
+                    sport_bets.append(match_bets)
+            Page.click(subsection)
+            time.sleep(1)
         sport = Sport(sport_name, sport_bets)
         return sport
 
     @staticmethod
-    def get_match_buttons(sport_name):
+    def get_match_buttons(subsection):
+        Page.click(subsection)
+        time.sleep(1)
+        main_table = Page.driver.find_element_by_class_name('column--container')
+        time.sleep(1)
+        buttons = main_table.find_elements_by_class_name('event--more')
+        return buttons
+
+    @staticmethod
+    def get_subsections(sport_name):
         """
         Scrape match buttons for a given sport type
         """
         page = Page(FavoritScraper._BASE_URL)
+        sports_list = Page.driver.find_elements_by_class_name('sprt')
+        icon = sports_list[0].find_element_by_class_name('sport--name--head')
 
-        headers = page.driver.find_elements_by_class_name('sport--name--head')
-        for header in headers:
-            if header.get_attribute('class') == 'sport--name--head sp_85':
-                cybersports = header
+        for sport in sports_list:
+            if sport.find_element_by_class_name('ttt').get_attribute('innerHTML') == FavoritScraper._ICONS[sport_name]:
+                print(FavoritScraper._ICONS[sport_name])
+                icon = sport.find_element_by_class_name('sport--name--head')
+                break
+
         time.sleep(0.25)
-        page.click(cybersports)
+        page.click(icon)
         time.sleep(0.25)
-        drop_down_menu = cybersports.parent.find_element_by_class_name('slideInDown')
+        drop_down_menu = icon.parent.find_element_by_class_name('slideInDown')
         checkboxes = drop_down_menu.find_elements_by_tag_name('b')
         titles = drop_down_menu.find_elements_by_class_name('ttt')
-        # print(checkboxes)
 
-        for i in range(len(checkboxes)):
-            if titles[i].get_attribute('innerHTML') == FavoritScraper._MENU[sport_name]:
-                page.click(checkboxes[i])
+        if FavoritScraper._SUBMENU[sport_name]:
+            for i in range(len(checkboxes)):
+                if titles[i].get_attribute('innerHTML') == FavoritScraper._SUBMENU[sport_name]:
+                    return [checkboxes[i]]
+                    # page.click(checkboxes[i])
         time.sleep(0.25)
 
-        main_table = page.driver.find_element_by_class_name('column--container')
-        time.sleep(1)
-        buttons = main_table.find_elements_by_class_name('event--more')
-        # print(len(buttons))
-
-        return buttons
+        return checkboxes
 
     @staticmethod
     def _get_bets(match_button):
@@ -78,7 +95,7 @@ class FavoritScraper(AbstractScraper):
         if not match_title:
             return bets
 
-        time.sleep(1)
+        time.sleep(0.25)
         # selectors = []
         market_blocks = Page.driver.find_elements_by_class_name('markets--block')
         for mb in market_blocks:
@@ -86,8 +103,14 @@ class FavoritScraper(AbstractScraper):
             block_title_tail = mb.find_element_by_class_name('result--type--head')
             block_title += ' ' + block_title_tail.find_element_by_tag_name('span').get_attribute('innerHTML')
             labels = mb.find_elements_by_tag_name('label')
+            if mb.find_elements_by_class_name('mtype--7'):
+                continue
+            # print(block_title)
             for label in labels:
+                if label.get_attribute('class') == 'outcome--empty':
+                    continue
                 bet_type = label.find_element_by_tag_name('span').get_attribute('title')
+                # print(bet_type)
                 bet_title = block_title + ' ' + bet_type
                 button = label.find_element_by_tag_name('button')
                 odds = button.get_attribute('innerHTML')

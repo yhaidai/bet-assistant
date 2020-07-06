@@ -9,41 +9,56 @@ import os.path
 
 
 class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
-    def _format_win_in_round(self):
+
+    def _format_individual_total_kills(self):
         formatted_title = self.bet_title.lower()
-        if '2nd pistol round winner' in formatted_title:
-            formatted_title = formatted_title.replace('2nd pistol round winner', 'will win round in 16')
-            index = formatted_title.find('will win in round 16')
-            head = formatted_title[:index - 1]
-            tail = formatted_title[index + len('will win in round 16'):]
-            formatted_title = head + tail + ' will win in round 16'
-        if '1st pistol round winner ' in formatted_title:
-            formatted_title = formatted_title.replace('1st pistol round winner ', 'will win in round 1')
-            index = formatted_title.find('will win in round 1')
-            head = formatted_title[:index - 1]
-            tail = formatted_title[index + len('will win in round 1'):]
-            formatted_title = head + ' ' + tail + ' will win in round 1'
         return formatted_title
 
-    def _format_overtime(self):
+    def _format_first_to_make_number_of_kills(self):
         formatted_title = self.bet_title.lower()
-        overtime_substrings = ('(incl. overtime) ', '(incl. overtimes) ', 'incl. overtime ', 'incl. overtimes ')
-        for overtime_substring in overtime_substrings:
-            if overtime_substring in formatted_title:
-                formatted_title = formatted_title.replace(overtime_substring, '')
-        if 'will there be overtime' in formatted_title:
-            formatted_title = formatted_title.replace('will there be overtime', 'overtime')
-        return formatted_title
-
-    def _format_first_to_win_number_of_rounds(self):
-        formatted_title = self.bet_title.lower()
-        if 'race to  rounds' in formatted_title:
-            formatted_title = formatted_title.replace('race to  rounds ', '')
+        if 'race to kills' in formatted_title:
+            formatted_title = formatted_title.replace('race to kills ', '')
             words = re.split(' ', formatted_title)
             formatted_title = ''
-            for i in range(0, len(words) - 1):
+            for i in range(len(words)-1):
                 formatted_title += words[i] + ' '
-            formatted_title += 'will be first to win ' + words[-1] + ' rounds'
+            formatted_title += 'will first make ' + words[-1]  + ' kills'
+        return formatted_title
+
+    def _format_first_to_destroy_tower(self):
+        formatted_title = self.bet_title.lower()
+        if 'destroy first tower' in formatted_title:
+            formatted_title = formatted_title.replace('destroy first tower ', '')
+            formatted_title += ' will first destroy tower'
+        return formatted_title
+
+    def _format_first_to_kill_roshan(self):
+        formatted_title = self.bet_title.lower()
+        if 'kill first roshan' in formatted_title:
+            formatted_title = formatted_title.replace('kill first roshan ', '')
+            formatted_title += ' will first kill roshan'
+        return formatted_title
+
+    def _format_most_kills(self):
+        formatted_title = self.bet_title.lower()
+        return formatted_title
+
+    def _format_draw(self):
+        formatted_title = self.bet_title.lower()
+        return formatted_title
+
+    def _format_first_blood(self):
+        formatted_title = self.bet_title.lower()
+        if 'first blood' in formatted_title:
+            formatted_title = formatted_title.replace('first blood ', '')
+            formatted_title += ' first blood'
+        return formatted_title
+
+    def _format_map_duration(self):
+        formatted_title = self.bet_title.lower()
+        if 'map duration' in formatted_title:
+            formatted_title = formatted_title.replace('map duration', 'duration')
+            formatted_title = formatted_title.replace(' minutes', '')
         return formatted_title
 
 

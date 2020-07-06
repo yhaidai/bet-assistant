@@ -19,6 +19,16 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title = formatted_title.replace('full time ', '')
         return formatted_title
 
+    def _format_total(self):
+        formatted_title = self._format_total_over_under()
+        if 'odd / even' in formatted_title:
+            formatted_title = formatted_title.replace('odd / even', 'total —')
+        if 'total rounds' in formatted_title:
+            formatted_title = formatted_title.replace('total rounds', 'total')
+            formatted_title = formatted_title.replace('(', '')
+            formatted_title = formatted_title.replace(')', '')
+        return formatted_title
+
     def _format_first_to_win_number_of_rounds(self):
         formatted_title = self.bet_title.lower()
         match = re.search('which will be the first to win (\d+)', formatted_title)
