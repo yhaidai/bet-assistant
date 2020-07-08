@@ -4,6 +4,7 @@ from pprint import pprint, pformat
 from Sport import Sport
 from dota.abstract_syntax_formatter import AbstractSyntaxFormatter
 from esports.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
+from esports.abstract_syntax_formatter import AbstractSyntaxFormatter as EASF
 from sample_data.dota import favorit
 import os.path
 
@@ -31,18 +32,10 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title += 'will first make ' + words[-1] + ' kills'
         return formatted_title
 
-    def _format_first_to_destroy_tower(self):
-        formatted_title = self.bet_title.lower()
-        if 'destroy first tower' in formatted_title:
-            formatted_title = formatted_title.replace('destroy first tower ', '')
-            formatted_title += ' will first destroy tower'
-        return formatted_title
-
     def _format_first_to_kill_roshan(self):
         formatted_title = self.bet_title.lower()
         if 'kill first roshan' in formatted_title:
-            formatted_title = formatted_title.replace('kill first roshan ', '')
-            formatted_title += ' will first kill roshan'
+            formatted_title = formatted_title.replace('kill first roshan', 'will first kill roshan')
         return formatted_title
 
     def _format_total(self):
@@ -59,11 +52,11 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         formatted_title = self.bet_title.lower()
         return formatted_title
 
-    def _format_first_blood(self):
+    def _format_first_kill(self):
         formatted_title = self.bet_title.lower()
-        if 'which team will be the first to make a frag?' in formatted_title:
-            formatted_title = formatted_title.replace('which team will be the first to make a frag? ', '')
-            formatted_title += ' first blood'
+        # print(formatted_title)
+        if 'which team will be the first to make a kill?' in formatted_title:
+            formatted_title = formatted_title.replace('which team will be the first to make a kill?', 'first blood')
         return formatted_title
 
     def _format_map_duration(self):
@@ -72,6 +65,20 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title = formatted_title.replace('map duration', 'duration')
             formatted_title = formatted_title.replace(' minutes', '')
         return formatted_title
+
+    def _format_first_to_destroy_tower(self):
+        formatted_title = self.bet_title.lower()
+        if 'which team will be the first to lose a tower?' in formatted_title:
+            formatted_title = formatted_title.replace('which team will be the first to lose a tower?',
+                                                      'will first destroy tower')
+            formatted_title = self.swap_teams(formatted_title)
+        return formatted_title
+
+    def _format_teams(self):
+        return self._move_teams_left()
+
+
+
 
 
 if __name__ == '__main__':

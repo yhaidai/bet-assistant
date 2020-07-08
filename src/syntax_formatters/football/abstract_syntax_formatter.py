@@ -18,17 +18,16 @@ class AbstractSyntaxFormatter(ASF, ABC):
         """
         sport = self._format_before(sport)
 
-        sport = self._update(sport, self._format_maps)
+        sport = self._update(sport, self._format_halves)
         sport = self._update(sport, self._format_teams)
+        sport = self._update(sport, self._format_time)
         sport = self._update(sport, self._format_total)
         sport = self._update(sport, self._format_handicap)
         sport = self._update(sport, self._format_correct_score)
         sport = self._update(sport, self._format_win)
+        sport = self._update(sport, self._format_double_chance)
         sport = self._update(sport, self._format_uncommon_chars)
-        sport = self._update(sport, self._format_first_kill)
-        sport = self._update(sport, self._format_win_at_least_number_of_maps)
-        sport = self._update(sport, self._format_win_number_of_maps)
-        sport = self._update(sport, self._format_total_kills)
+
 
         sport = self._format_after(sport)
 
@@ -37,23 +36,19 @@ class AbstractSyntaxFormatter(ASF, ABC):
 
         return sport
 
-    def _format_maps(self):
+    def _format_halves(self):
         return self.bet_title.lower()
 
     def _format_teams(self):
         return self.bet_title.lower()
 
-    def _format_first_kill(self):
+    def _format_double_chance(self):
         return self.bet_title.lower()
 
-    def _format_win_at_least_number_of_maps(self):
+    def _format_time(self):
         return self.bet_title.lower()
 
-    def _format_win_number_of_maps(self):
-        return self.bet_title.lower()
 
-    def _format_total_kills(self):
-        return self.bet_title.lower()
 
 
 

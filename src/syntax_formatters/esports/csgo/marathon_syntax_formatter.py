@@ -4,6 +4,7 @@ from pprint import pprint, pformat
 from Sport import Sport
 from csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
 from esports.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
+from esports.abstract_syntax_formatter import AbstractSyntaxFormatter as EASF
 from sample_data.csgo import marathon
 import os.path
 
@@ -17,19 +18,8 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
         formatted_title = self.bet_title.lower()
         return formatted_title
 
-    def _format_total(self):
-        formatted_title = self.bet_title.lower()
-        if 'total rounds' in formatted_title:
-            formatted_title = formatted_title.replace('total rounds ', 'total ')
-        match = re.search('total maps (over|under)', formatted_title)
-        if match:
-            formatted_title = formatted_title.replace('maps ', '')
-            formatted_title += ' maps'
-        match = re.search('(even|odd)', formatted_title)
-        if match:
-            formatted_title = formatted_title.replace(' ' + match.group(1), ' — ' + match.group(1))
-
-        return formatted_title
+    def _format_teams(self):
+        return self._move_teams_left()
 
 
 if __name__ == '__main__':

@@ -17,20 +17,17 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         formatted_title = self.bet_title.lower()
         if 'full time ' in formatted_title:
             formatted_title = formatted_title.replace('full time ', '')
+        if 'map extra rounds' in formatted_title:
+            formatted_title = formatted_title.replace('map extra rounds', 'overtime')
         return formatted_title
 
     def _format_total(self):
         formatted_title = self._format_total_over_under()
         if 'odd / even' in formatted_title:
-            formatted_title = formatted_title.replace('odd / even', 'total —')
+            formatted_title = formatted_title.replace('odd / even', 'total rounds')
         if 'total rounds' in formatted_title:
-            formatted_title = formatted_title.replace('total rounds', 'total')
             formatted_title = formatted_title.replace('(', '')
             formatted_title = formatted_title.replace(')', '')
-        match = re.search('^total maps (over|under)', formatted_title)
-        if match:
-            formatted_title = formatted_title.replace('maps ', '')
-            formatted_title += ' maps'
         return formatted_title
 
     def _format_first_to_win_number_of_rounds(self):
@@ -44,6 +41,9 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
                 formatted_title += words[i] + ' '
             formatted_title += 'will be first to win ' + match.group(1) + ' rounds'
         return formatted_title
+
+    def _format_teams(self):
+        return self._move_teams_left()
 
 
 if __name__ == '__main__':

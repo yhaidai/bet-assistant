@@ -176,3 +176,32 @@ class AbstractSyntaxFormatter(ABC):
 
     def _format_uncommon_chars(self):
         return self.bet_title.lower()
+
+    def get_teams(self):
+        teams = MatchTitleCompiler.decompile_match_title(self.match_title)
+        return teams
+
+    def swap_teams(self, title):
+        teams = AbstractSyntaxFormatter.get_teams(self)
+        if teams[0] in title:
+            title = title.replace(teams[0], teams[1])
+        else:
+            title = title.replace(teams[1], teams[0])
+        return title
+
+    def _move_teams_left(self):
+        formatted_title = self.bet_title.lower()
+        teams = AbstractSyntaxFormatter.get_teams(self)
+        for team in teams:
+            if team in formatted_title:
+                match = re.search(r'^' + team, formatted_title)
+                if match:
+                    break
+                formatted_title = formatted_title.replace(' ' + team, '')
+                match = re.search(r'(\d+-(st|nd|rd|th) (map:|half))', formatted_title)
+                if match:
+                    formatted_title = formatted_title.replace(match.group(1), match.group(1) + ' ' + team)
+                else:
+                    formatted_title = team + ' ' + formatted_title
+                break
+        return formatted_title

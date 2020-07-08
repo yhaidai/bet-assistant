@@ -17,52 +17,38 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
             formatted_title = formatted_title.replace('total kills ', '')
             formatted_title = formatted_title.replace(' ' + match.group(1), '')
             formatted_title += ' total kills ' + match.group(1)
-        match = re.search('total kills .+? (over|under)', formatted_title)
+        match = re.search('(\d+\.\d) (over|under)', formatted_title)
         if match:
-            formatted_title = formatted_title.replace('total kills ', '')
-            formatted_title = formatted_title.replace(' ' + match.group(1), '')
-            words = re.split(' ', formatted_title)
-            formatted_title = formatted_title.replace(' ' + words[-1], '')
-            formatted_title += ' total kills ' + match.group(1) + ' ' + words[-1]
+            formatted_title = formatted_title.replace(match.group(1) + ' ', '')
+            formatted_title += ' ' + match.group(1)
+        match = re.search('(total kills (.+?))(over|under)', formatted_title)
+        if match:
+            if match.group(2):
+                formatted_title = formatted_title.replace(match.group(1), match.group(2) + 'total kills ')
         return formatted_title
 
     def _format_first_to_make_number_of_kills(self):
         formatted_title = self.bet_title.lower()
         match = re.search('1st team to .+? (\d+ kills)', formatted_title)
         if match:
-            formatted_title = formatted_title.replace('1st team to ', '')
-            formatted_title = formatted_title.replace(match.group(1), '')
-            formatted_title += 'will first make ' + match.group(1)
+            formatted_title = formatted_title.replace(' 1st team to', '')
+            formatted_title = formatted_title.replace(' ' + match.group(1), '')
+            formatted_title += ' will first make ' + match.group(1)
         return formatted_title
 
     def _format_first_to_destroy_tower(self):
         formatted_title = self.bet_title.lower()
         if 'destroy first tower' in formatted_title:
-            formatted_title = formatted_title.replace('destroy first tower ', '')
+            formatted_title = formatted_title.replace(' destroy first tower', '')
             formatted_title += ' will first destroy tower'
         return formatted_title
 
     def _format_first_to_kill_roshan(self):
         formatted_title = self.bet_title.lower()
         if 'roshan kill' in formatted_title:
-            formatted_title = formatted_title.replace('roshan kill', '')
-            formatted_title = formatted_title.replace('1st team to ', '')
-            formatted_title += 'will first kill roshan'
-        return formatted_title
-
-    def _format_total(self):
-        formatted_title = self.bet_title.lower()
-        # if 'total kills' in formatted_title:
-        #     formatted_title = formatted_title.replace('total kills ', '')
-
-        match = re.search('total maps (over|under)', formatted_title)
-        if match:
-            formatted_title = formatted_title.replace('maps ', '')
-            formatted_title += ' maps'
-        # match = re.search('(even|odd)', formatted_title)
-        # if match:
-        #     formatted_title = formatted_title.replace(' ' + match.group(1), ' — ' + match.group(1))
-
+            formatted_title = formatted_title.replace(' roshan kill', '')
+            formatted_title = formatted_title.replace(' 1st team to', '')
+            formatted_title += ' will first kill roshan'
         return formatted_title
 
     def _format_most_kills(self):
@@ -71,13 +57,12 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
             if 'equal number' in formatted_title:
                 formatted_title = formatted_title.replace('equal number', 'equal')
             else:
-                if 'most kills with handicap' in formatted_title:
-                    formatted_title = formatted_title.replace('most kills with handicap ', '')
-                    words = re.split(' ', formatted_title)
+                match = re.search(r'(.*)(most kills with handicap(.*)((\+|-)\d*\.\d)) (.*)', formatted_title)
+                if match:
                     formatted_title = ''
-                    for i in range(len(words) - 1):
-                        formatted_title += words[i] + ' '
-                    formatted_title += 'most kills with handicap ' + words[-1]
+                    if match.group(1):
+                        formatted_title += match.group(1)
+                    formatted_title += match.group(6) + ' ' + match.group(2)
                 else:
                     formatted_title = formatted_title.replace('most kills ', '')
                     words = re.split(' ', formatted_title)
@@ -91,11 +76,12 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
         formatted_title = self.bet_title.lower()
         return formatted_title
 
-    def _format_first_blood(self):
+    def _format_first_kill(self):
         formatted_title = self.bet_title.lower()
         if 'first blood' in formatted_title:
-            # print(formatted_title)
             formatted_title = formatted_title.replace('1st team to ', '')
+            formatted_title = formatted_title.replace(' first blood', '')
+            formatted_title += ' first blood'
         return formatted_title
 
     def _format_map_duration(self):

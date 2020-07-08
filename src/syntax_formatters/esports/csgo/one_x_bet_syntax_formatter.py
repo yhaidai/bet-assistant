@@ -39,10 +39,11 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
         if match:
             if match.group(4):
                 formatted_title = match.group(1) + match.group(3) + match.group(4)
-                formatted_title = formatted_title.replace(' -', ' —', 1)
+                # formatted_title = formatted_title.replace(' -', ' —', 1)
+                formatted_title = formatted_title.replace(' -', '', 1)
             else:
-                formatted_title = match.group(1) + match.group(3) + ' — yes'
-
+                # formatted_title = match.group(1) + match.group(3) + ' — yes'
+                formatted_title = match.group(1) + match.group(3) + ' yes'
         return formatted_title
 
     def _format_individual_total_rounds(self):
@@ -66,28 +67,30 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
             formatted_title = formatted_title.replace('total maps handicap. ', '', 1)
             formatted_title = formatted_title.replace('total maps even/odd. ', '', 1)
             if ' - even' in formatted_title or ' - odd' in formatted_title:
-                formatted_title = formatted_title.replace('-', '—', 1)
-
-            # formatted_title = formatted_title.replace('Total Maps Even/Odd. ', '', 1)
-            formatted_title = formatted_title.replace('maps ', '', 1)
-
+                formatted_title = formatted_title.replace('- ', '', 1)
         return formatted_title
 
     def _format_after(self, bets):
         bets = self._update(bets, self._fix_total_maps)
+        bets = self._update(bets, self._fix_t_ct_and_total_rounds)
         return bets
 
     def _fix_total_maps(self):
-        # Если захочешь, перепишешь по-другому, мне было проще так, вдруг мы потом решим опять менять вид total maps
         formatted_title = self.bet_title.lower()
-        match = re.search('^total — (even|odd)', formatted_title)
-        if match:
-            formatted_title = formatted_title.replace('total', 'total maps')
+        return formatted_title
 
-        match = re.search('^total (over|under)', formatted_title)
+    def _fix_t_ct_and_total_rounds(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search(r'(counter )?(terrorists)( -)', formatted_title)
         if match:
-            formatted_title += ' maps'
-
+            formatted_title = formatted_title.replace('counter ', 'c')
+            formatted_title = formatted_title.replace('terrorists', 't')
+            formatted_title = formatted_title.replace(' -', '')
+        match1 = re.search(r'map: .+? total', formatted_title)
+        match2 = re.search(r'map: total', formatted_title)
+        # не знаю как это в одно запихнуть ))))00))
+        if match1 or match2:
+            formatted_title = formatted_title.replace('total', 'total rounds')
         return formatted_title
 
 

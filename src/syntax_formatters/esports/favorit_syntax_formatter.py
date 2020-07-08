@@ -8,17 +8,11 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         formatted_title = self.bet_title.lower()
         if 'match winner' in formatted_title:
             formatted_title = formatted_title.replace('match winner', 'winner')
-        if 'winner ' in formatted_title:
-            words = re.split(' ', formatted_title)
-            formatted_title = ''
-            for word in words:
-                if word != 'winner':
-                    formatted_title += word + ' '
-            formatted_title += 'will win'
+        if 'winner' in formatted_title:
+            formatted_title = formatted_title.replace('winner', 'will win')
         if '1 x 2' in formatted_title:
-            formatted_title = formatted_title.replace('1 x 2 ', '')
-            formatted_title += ' will win'
-
+            formatted_title = formatted_title.replace('1 x 2', 'will win')
+            formatted_title = formatted_title.replace('will win draw', 'draw will win')
         return formatted_title
 
     def _format_total(self):
@@ -29,10 +23,6 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         formatted_title = self.bet_title.lower()
         if 'over/under games' in formatted_title:
             formatted_title = formatted_title.replace('over/under games', 'total maps')
-        match = re.search('total maps full time (over|under)', formatted_title)
-        if match:
-            formatted_title = formatted_title.replace('maps ', '')
-            formatted_title += ' maps'
         return formatted_title
 
     def _format_frags(self):
@@ -64,6 +54,9 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             for i in range(len(words) - 1):
                 formatted_title += words[i] + ' '
             formatted_title += 'handicap ' + words[-1] + ' maps'
+        match = re.search(r'(kills ((\+|-)(\d+\.\d)))', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace(match.group(1), match.group(2) + ' kills')
         return formatted_title
 
     def _format_uncommon_chars(self):

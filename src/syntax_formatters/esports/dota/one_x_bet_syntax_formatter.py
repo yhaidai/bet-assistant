@@ -20,7 +20,7 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
             formatted_title += ' will first kill roshan'
         return formatted_title
 
-    def _format_first_blood(self):
+    def _format_first_kill(self):
         formatted_title = self.bet_title.lower()
         if 'first blood - ' in formatted_title:
             formatted_title = formatted_title.replace('first blood - ', '')
@@ -47,8 +47,6 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
             if match:
                 formatted_title = formatted_title.replace('even - no', 'odd')
                 formatted_title = formatted_title.replace('total', 'total kills')
-            # formatted_title = formatted_title.replace('Total Maps Even/Odd. ', '', 1)
-            # formatted_title = formatted_title.replace('maps ', '', 1)
         return formatted_title
 
     def _format_first_to_destroy_tower(self):

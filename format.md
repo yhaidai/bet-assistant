@@ -18,17 +18,17 @@
         - #####First kill in round
             `<team_name>` will kill first in round `<value>`
         - #####Total maps
-            total `<over/under>` `<value>` maps
+            total maps `<over/under>` `<value>`
         - #####Total rounds
-            total `<over/under>` `<value>`
+            total rounds `<over/under>` `<value>`
         - #####Total kills in round over/under
             total kills in round `value` `<over/under>` `<value>`
         - #####Individual total rounds/maps
             `<team_name>` total `<over/under>` `<value>`
         - #####Total rounds even/odd
-            total — `even/odd`
+            total rounds `even/odd`
         - #####Total maps even/odd
-            total maps — `even/odd
+            total maps `even/odd`
         - #####Handicap rounds
             handicap `<team_name>` `<+/-value>`
         - #####Handicap maps
@@ -43,7 +43,7 @@
         - #####Bomb exploded/defused
             Bomb `<exploded/defused>` in round `value`
         - #####Overtime
-            Overtime — `<yes/no>`
+            Overtime `<yes/no>`
         - #####first/second half
             first/second half 
         - #####terrorists/counter-terrorists 
@@ -89,7 +89,7 @@
         - #####Correct score
             correct score `<value1>`-`<value2>`
         - #####Draw
-            draw `<yes/no>`
+            draw will win
         - #####First to make number of kills
             `<team_name>` will first make `<value>` kills
         - #####First to destroy tower
@@ -98,4 +98,23 @@
             `<team_name>` will first kill roshan
         - #####Team to make N-th kill
             `<team_name>` will make kill N
+* ##football
+    * ###match title:
+        <first_team_name> - <second_team_name>  
+        *names of the teams must be sorted in alphabetical order*
+    * ###bet titles
+        - #####Win:
+            `<team_name>` will win
+        - #####Draw
+            draw will win
+        - #####first/second half
+            ^1st/2nd half
+        - #####total/handicap
+            (1st/2nd half)? team_name? total/handicap 
+        - ##### Double chance
+            `<team_name>` will lose 
+        - ##### Both teams to score
+            both to score `<yes/no>`
+        - #####Team to score
+            `<team_name>` to score `<yes/no>`
         

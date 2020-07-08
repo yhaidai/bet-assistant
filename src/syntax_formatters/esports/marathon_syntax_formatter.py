@@ -35,6 +35,7 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
     def _format_win(self):
         formatted_title = self.bet_title.lower()
         formatted_title = formatted_title.replace('to win', 'will win')
+        formatted_title = formatted_title.replace('draw', 'draw will win')
         return formatted_title
 
     def _format_maps(self):
@@ -59,12 +60,22 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
             formatted_title = formatted_title.replace('to win match with handicap by rounds', 'handicap')
         if 'to win with handicap by rounds' in formatted_title:
             formatted_title = formatted_title.replace('to win with handicap by rounds', 'handicap')
-        if 'handicap maps' in formatted_title:
-            words = re.split(' ', formatted_title)
-            formatted_title = ''
-            for i in range(2, len(words)-1):
-                formatted_title += words[i] + ' '
-            formatted_title += 'handicap ' + words[-1] + ' maps'
+        match = re.search(r'(handicap maps ((\+|-)\d\.\d))', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace(match.group(1), 'handicap ' + match.group(2) + ' maps')
+        return formatted_title
+
+    def _format_total(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search('total maps .+? (over|under)', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace(' ' + match.group(1), '')
+            formatted_title = formatted_title.replace('total maps ', 'total maps ' + match.group(1) + ' ')
+        match = re.search('((\d\d\.\d) (over|under))', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace(match.group(1), '')
+            formatted_title += match.group(3) + ' ' + match.group(2)
+
         return formatted_title
 
     def _format_correct_score(self):

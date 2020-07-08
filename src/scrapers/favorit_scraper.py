@@ -19,12 +19,12 @@ class FavoritScraper(AbstractScraper):
         'football': 'Soccer',
         'csgo': 'Cybersports',
         'dota': 'Cybersports'
-        }
+    }
     _SUBMENU = {
         'football': None,
         'csgo': 'Counter-Strike: Global Offensive',
         'dota': 'Dota 2'
-        }
+    }
 
     def get_sport_bets(self, sport_name):
         """
@@ -35,12 +35,14 @@ class FavoritScraper(AbstractScraper):
         """
         sport_bets = []
         subsections = self.get_subsections(sport_name)
+        # subsections = [subsections[6]]
         for subsection in subsections:
             match_buttons = self.get_match_buttons(subsection)
             for match_button in match_buttons:
                 match_bets = FavoritScraper._get_bets(match_button)
                 if match_bets:
                     sport_bets.append(match_bets)
+                # break
             Page.click(subsection)
             time.sleep(1)
         sport = Sport(sport_name, sport_bets)
@@ -65,8 +67,7 @@ class FavoritScraper(AbstractScraper):
         icon = sports_list[0].find_element_by_class_name('sport--name--head')
 
         for sport in sports_list:
-            if sport.find_element_by_class_name('ttt').get_attribute('innerHTML') == FavoritScraper._ICONS[sport_name]:
-                print(FavoritScraper._ICONS[sport_name])
+            if sport.find_element_by_class_name('ttt').text == FavoritScraper._ICONS[sport_name]:
                 icon = sport.find_element_by_class_name('sport--name--head')
                 break
 
@@ -79,43 +80,80 @@ class FavoritScraper(AbstractScraper):
 
         if FavoritScraper._SUBMENU[sport_name]:
             for i in range(len(checkboxes)):
-                if titles[i].get_attribute('innerHTML') == FavoritScraper._SUBMENU[sport_name]:
+                if titles[i].text == FavoritScraper._SUBMENU[sport_name]:
                     return [checkboxes[i]]
-                    # page.click(checkboxes[i])
         time.sleep(0.25)
 
         return checkboxes
 
     @staticmethod
     def _get_bets(match_button):
+        skip = ['1X2 and Total Goals', '1X2 and Both teams to Score',
+                'Both Teams To Score and Total Goals', 'Correct Score',
+                'Goal method of first goal', '(3way)', 'Winning Margin',
+                'not to lose and Total', 'Goal Range', 'Goal method of first goal']
+
         Page.click(match_button)
         time.sleep(0.1)
         bets = []
         match_title = FavoritScraper._get_match_title()
         if not match_title:
             return bets
-
-        time.sleep(0.25)
-        # selectors = []
+        # one--event--content
+        # slick-track
+        time.sleep(0.5)
+        try:
+            all_button = Page.driver.find_element_by_class_name('slick-block')
+            Page.click(all_button)
+        except Exception:
+            pass
+        time.sleep(0.5)
         market_blocks = Page.driver.find_elements_by_class_name('markets--block')
         for mb in market_blocks:
-            block_title = mb.find_element_by_class_name('markets--head').get_attribute('innerHTML')
-            block_title_tail = mb.find_element_by_class_name('result--type--head')
-            block_title += ' ' + block_title_tail.find_element_by_tag_name('span').get_attribute('innerHTML')
-            labels = mb.find_elements_by_tag_name('label')
-            if mb.find_elements_by_class_name('mtype--7'):
+            block_title_head = mb.find_element_by_class_name('markets--head').get_attribute('innerHTML')
+
+            b = True
+            for s in skip:
+                if s in block_title_head:
+                    b = False
+                    break
+            if not b:
+                print(block_title_head)
                 continue
-            # print(block_title)
-            for label in labels:
-                if label.get_attribute('class') == 'outcome--empty':
-                    continue
-                bet_type = label.find_element_by_tag_name('span').get_attribute('title')
-                # print(bet_type)
-                bet_title = block_title + ' ' + bet_type
-                button = label.find_element_by_tag_name('button')
-                odds = button.get_attribute('innerHTML')
-                bet = Bet(bet_title, odds)
-                bets.append(bet)
+
+            sub_blocks = mb.find_elements_by_class_name('result--type--head')
+            for sub_block in sub_blocks:
+                block_title_tail = ' ' + sub_block.find_element_by_tag_name('span').get_attribute('innerHTML')
+                block_title = block_title_head + block_title_tail
+                block = sub_block.find_element_by_xpath('..')
+
+                if block.find_elements_by_class_name('mtype--7'):
+                    # print(111)
+                    outcome_names = block.find_element_by_class_name('row--body').find_elements_by_class_name(
+                        'outcome--name')
+                    names = []
+                    for outcome_name in outcome_names:
+                        names.append(outcome_name.find_element_by_tag_name('span').get_attribute('innerHTML'))
+                    table = block.find_element_by_class_name('mtype--7')
+                    outcome_rows = table.find_elements_by_class_name('combo--outcome')
+                    for outcome_row in outcome_rows:
+                        outcome_row_name = outcome_row.find_element_by_class_name('row--head').get_attribute('innerHTML')
+                        odds = outcome_row.find_elements_by_tag_name('button')
+                        for i in range(len(odds)):
+                            bet_title = block_title + ' ' + outcome_row_name + ' ' + names[i]
+                            bet = Bet(bet_title, odds[i].text)
+                            bets.append(bet)
+                else:
+                    labels = block.find_elements_by_tag_name('label')
+                    for label in labels:
+                        if label.get_attribute('class') == 'outcome--empty':
+                            continue
+                        bet_type = label.find_element_by_tag_name('span').get_attribute('title')
+                        bet_title = block_title + ' ' + bet_type
+                        button = label.find_element_by_tag_name('button')
+                        odds = button.text
+                        bet = Bet(bet_title, odds)
+                        bets.append(bet)
 
         url = Page.driver.current_url
         match = Match(match_title, url, FavoritScraper._NAME, bets)
@@ -131,10 +169,10 @@ class FavoritScraper(AbstractScraper):
         """
         try:
             init = Page.driver.find_element_by_class_name('two--name')
-            teams = [el.get_attribute('innerHTML') for el in init.find_elements_by_tag_name('span')]
+            teams = [el.text for el in init.find_elements_by_tag_name('span')]
             match_title = MatchTitleCompiler.compile_match_title(*teams)
         except Exception as e:
-            print(e)
+            print('mp not 1v1 match')
             return None
 
         return match_title

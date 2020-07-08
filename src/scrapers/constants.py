@@ -1,1 +1,1 @@
-sport_name = 'dota'
+sport_name = 'football'

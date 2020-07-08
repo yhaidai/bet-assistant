@@ -1,236 +1,197 @@
-sport = {
-    'csgo': {
-        'alternate attax - sg.pro(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)': {
-            '1-st map: Total. 27.5. Over': '2.65',
-            '1-st map: Total. 27.5. Under': '1.44',
-            '1-st map: alternate attax Handicap value. –3.5. Handicap coefficient': '1.55',
-            '1-st map: sg.pro Handicap value. +3.5. Handicap coefficient': '2.35'
-            },
-        'ambush - tricked(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)': {
-            '1-st map: Total. 26.5. Over': '1.72',
-            '1-st map: Total. 26.5. Under': '2.05',
-            '1-st map: Win of the 1st team': '1.90',
-            '1-st map: Win of the 2nd team': '1.85',
-            '1-st map: ambush Handicap value. +2.5. Handicap coefficient': '1.70',
-            '1-st map: tricked Handicap value. –2.5. Handicap coefficient': '2.08'
-            },
-        'apeks - winstrike(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)': {
-            '1-st map: Total. 26.5. Over': '1.77',
-            '1-st map: Total. 26.5. Under': '1.97',
-            '1-st map: Win of the 1st team': '2.01',
-            '1-st map: Win of the 2nd team': '1.75',
-            '1-st map: apeks Handicap value. +2.5. Handicap coefficient': '1.76',
-            '1-st map: winstrike Handicap value. –2.5. Handicap coefficient': '2.00'
-            },
-        'atrapa2 - lbs(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-lvp-unity-ar)': {
-            'Win of the 1st team': '4.20',
-            'Win of the 2nd team': '1.20'
-            },
-        'avez - nexus(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)': {
-            '1-st map: Total. 25.5. Over': '1.57',
-            '1-st map: Total. 25.5. Under': '2.31',
-            '1-st map: avez Handicap value. –4.5. Handicap coefficient': '2.35',
-            '1-st map: nexus Handicap value. +4.5. Handicap coefficient': '1.55'
-            },
-        'big academy - down2earth(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-main-division)': {
-            'Win of the 1st team': '1.60',
-            'Win of the 2nd team': '2.25'
-            },
-        'cool - exploit(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-betano-masters-eu)': {
-            'Win of the 1st team': '3.54',
-            'Win of the 2nd team': '1.27'
-            },
-        'cool - unicorns of love(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-betano-masters-eu)': {
-            'Win of the 1st team': '5.00',
-            'Win of the 2nd team': '1.15'
-            },
-        'coscu army - nocturns(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-lvp-unity-ar)': {
-            'Win of the 1st team': '1.55',
-            'Win of the 2nd team': '2.35'
-            },
-        'global - knockturnal(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esl-india-premiership)': {
-            'Win of the 1st team': '1.12',
-            'Win of the 2nd team': '5.66'
-            },
-        'hawks - coliseo dragons(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-lvp-unity-ar)': {
-            'Win of the 1st team': '1.20',
-            'Win of the 2nd team': '4.20'
-            },
-        'hltv cs:go world ranking(parimatch - https://www.parimatch.com/en/sport/kibersport/specialnye-stavki-counter-strike)': {},
-        'honoris - wizards(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)': {
-            '1-st map: Total. 25.5. Over': '1.55',
-            '1-st map: Total. 25.5. Under': '2.35',
-            '1-st map: honoris Handicap value. –4.5. Handicap coefficient': '2.48',
-            '1-st map: wizards Handicap value. +4.5. Handicap coefficient': '1.50'
-            },
-        'illuminar - wisla krakow(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)': {
-            '1-st map: Total. 25.5. Over': '1.57',
-            '1-st map: Total. 25.5. Under': '2.31',
-            '1-st map: illuminar Handicap value. –4.5. Handicap coefficient': '2.35',
-            '1-st map: wisla krakow Handicap value. +4.5. Handicap coefficient': '1.55'
-            },
-        'imperium - eternal(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)': {
-            'Win of the 1st team': '1.95',
-            'Win of the 2nd team': '1.80'
-            },
-        'ldlc - cr4zy(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)': {
-            '1-st map: Total. 25.5. Over': '1.47',
-            '1-st map: Total. 25.5. Under': '2.55',
-            '1-st map: cr4zy Handicap value. +2.5. Handicap coefficient': '1.60',
-            '1-st map: ldlc Handicap value. –2.5. Handicap coefficient': '2.25'
-            },
-        'ldlc - lilmix(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)': {
-            '1-st map: Total. 26.5. Over': '1.87',
-            '1-st map: Total. 26.5. Under': '1.87',
-            '1-st map: Win of the 1st team': '1.50',
-            '1-st map: Win of the 2nd team': '2.48',
-            '1-st map: ldlc Handicap value. –3.5. Handicap coefficient': '1.92',
-            '1-st map: lilmix Handicap value. +3.5. Handicap coefficient': '1.82'
-            },
-        'levadia - zawisza bydgoszcz(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-eu-main-division)': {
-            'Win of the 1st team': '2.00',
-            'Win of the 2nd team': '1.76'
-            },
-        'lucid dream - bren(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)': {
-            '1-st map: Total. 26.5. Over': '1.72',
-            '1-st map: Total. 26.5. Under': '2.05',
-            '1-st map: Win of the 1st team': '1.85',
-            '1-st map: Win of the 2nd team': '1.90',
-            '1-st map: bren Handicap value. +2.5. Handicap coefficient': '1.70',
-            '1-st map: lucid dream Handicap value. –2.5. Handicap coefficient': '2.08'
-            },
-        'malvinas - furious(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-lvp-unity-ar)': {
-            'Win of the 1st team': '1.25',
-            'Win of the 2nd team': '3.75'
-            },
-        'mustang crew - nosurrendergg(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-main-division)': {
-            'Win of the 1st team': '1.40',
-            'Win of the 2nd team': '2.82'
-            },
-        'mythic - ex-polar ace(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-mythic-invite-league)': {
-            '1-st map: Total. 26.5. Over': '2.00',
-            '1-st map: Total. 26.5. Under': '1.76',
-            '1-st map: Win of the 1st team': '1.30',
-            '1-st map: Win of the 2nd team': '3.30',
-            '1-st map: ex-polar ace Handicap value. +4.5. Handicap coefficient': '1.90',
-            '1-st map: mythic Handicap value. –4.5. Handicap coefficient': '1.85'
-            },
-        'nexus - the dice(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)': {
-            '1-st map: Total. 26.5. Over': '1.90',
-            '1-st map: Total. 26.5. Under': '1.85',
-            '1-st map: Win of the 1st team': '1.45',
-            '1-st map: Win of the 2nd team': '2.62',
-            '1-st map: nexus Handicap value. –3.5. Handicap coefficient': '1.87',
-            '1-st map: the dice Handicap value. +3.5. Handicap coefficient': '1.87'
-            },
-        'oceanus - new england whalers(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-mythic-invite-league)': {
-            '1-st map: Total. 26.5. Over': '1.92',
-            '1-st map: Total. 26.5. Under': '1.82',
-            '1-st map: Win of the 1st team': '2.80',
-            '1-st map: Win of the 2nd team': '1.40',
-            '1-st map: new england whalers Handicap value. –3.5. Handicap coefficient': '1.80',
-            '1-st map: oceanus Handicap value. +3.5. Handicap coefficient': '1.95'
-            },
-        'purple haze - nightraid(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {
-            '1-st map: Total. 27.5. Over': '2.37',
-            '1-st map: Total. 27.5. Under': '1.54',
-            '1-st map: nightraid Handicap value. +3.5. Handicap coefficient': '2.35',
-            '1-st map: purple haze Handicap value. –3.5. Handicap coefficient': '1.55'
-            },
-        'purple haze - yung trappers(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {
-            '1-st map: Total. 27.5. Over': '2.37',
-            '1-st map: Total. 27.5. Under': '1.54',
-            '1-st map: purple haze Handicap value. –3.5. Handicap coefficient': '1.55',
-            '1-st map: yung trappers Handicap value. +3.5. Handicap coefficient': '2.35'
-            },
-        'reckoning - wolf(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esl-india-premiership)': {
-            'Win of the 1st team': '1.18',
-            'Win of the 2nd team': '4.50'
-            },
-        'rhein-neckar - planetkey dynamics(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-99liga)': {
-            'Away win': '4.20',
-            'Draw': '2.10',
-            'Home win': '2.48'
-            },
-        'sangal - tikitakan(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)': {
-            '1-st map: Total. 26.5. Over': '1.87',
-            '1-st map: Total. 26.5. Under': '1.87',
-            '1-st map: Win of the 1st team': '1.50',
-            '1-st map: Win of the 2nd team': '2.48',
-            '1-st map: sangal Handicap value. –3.5. Handicap coefficient': '1.92',
-            '1-st map: tikitakan Handicap value. +3.5. Handicap coefficient': '1.82'
-            },
-        'secret - saw(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)': {
-            '1-st map: Total. 26.5. Over': '1.87',
-            '1-st map: Total. 26.5. Under': '1.87',
-            '1-st map: Win of the 1st team': '2.48',
-            '1-st map: Win of the 2nd team': '1.50',
-            '1-st map: saw Handicap value. –3.5. Handicap coefficient': '1.92',
-            '1-st map: secret Handicap value. +3.5. Handicap coefficient': '1.82'
-            },
-        'sinners - penta(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-main-division)': {
-            'Win of the 1st team': '1.35',
-            'Win of the 2nd team': '3.04'
-            },
-        'syman - levelup(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)': {
-            '1-st map: Total. 25.5. Over': '1.70',
-            '1-st map: Total. 25.5. Under': '2.08',
-            '1-st map: levelup Handicap value. +5.5. Handicap coefficient': '1.60',
-            '1-st map: syman Handicap value. –5.5. Handicap coefficient': '2.25'
-            },
-        'tiger - d13(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)': {
-            '1-st map: Total. 26.5. Over': '1.92',
-            '1-st map: Total. 26.5. Under': '1.82',
-            '1-st map: Win of the 1st team': '1.40',
-            '1-st map: Win of the 2nd team': '2.80',
-            '1-st map: d13 Handicap value. +3.5. Handicap coefficient': '1.95',
-            '1-st map: tiger Handicap value. –3.5. Handicap coefficient': '1.80'
-            },
-        'triumph - chaos(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na)': {
-            '1-st map: Total. 25.5. Over': '1.55',
-            '1-st map: Total. 25.5. Under': '2.35',
-            '1-st map: chaos Handicap value. +4.5. Handicap coefficient': '1.50',
-            '1-st map: triumph Handicap value. –4.5. Handicap coefficient': '2.48'
-            },
-        'tyloo - divine vendetta(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)': {
-            '1-st map: Total. 25.5. Over': '1.80',
-            '1-st map: Total. 25.5. Under': '1.95',
-            '1-st map: Win of the 1st team': '1.25',
-            '1-st map: Win of the 2nd team': '3.75',
-            '1-st map: divine vendetta Handicap value. +4.5. Handicap coefficient': '2.01',
-            '1-st map: tyloo Handicap value. –4.5. Handicap coefficient': '1.75'
-            },
-        'unicorns of love - exploit(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-betano-masters-eu)': {
-            'Win of the 1st team': '1.22',
-            'Win of the 2nd team': '4.00'
-            },
-        'veterani - nightraid(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {
-            '1-st map: Total. 25.5. Over': '1.57',
-            '1-st map: Total. 25.5. Under': '2.31',
-            '1-st map: nightraid Handicap value. +5.5. Handicap coefficient': '1.60',
-            '1-st map: veterani Handicap value. –5.5. Handicap coefficient': '2.25'
-            },
-        'veterani - purple haze(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {
-            '1-st map: Total. 25.5. Over': '1.47',
-            '1-st map: Total. 25.5. Under': '2.57',
-            '1-st map: purple haze Handicap value. –4.5. Handicap coefficient': '2.25',
-            '1-st map: veterani Handicap value. +4.5. Handicap coefficient': '1.60'
-            },
-        'veterani - yung trappers(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {
-            '1-st map: Total. 25.5. Over': '1.57',
-            '1-st map: Total. 25.5. Under': '2.31',
-            '1-st map: veterani Handicap value. –5.5. Handicap coefficient': '2.11',
-            '1-st map: yung trappers Handicap value. +5.5. Handicap coefficient': '1.68'
-            },
-        'wygers - aion(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-lvp-unity-ar)': {
-            'Win of the 1st team': '1.90',
-            'Win of the 2nd team': '1.85'
-            },
-        'yung trappers - nightraid(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {
-            '1-st map: Total. 25.5. Over': '1.47',
-            '1-st map: Total. 25.5. Under': '2.57',
-            '1-st map: nightraid Handicap value. +2.5. Handicap coefficient': '1.47',
-            '1-st map: yung trappers Handicap value. –2.5. Handicap coefficient': '2.55'
-            }
-        }
-    }
+sport = {'csgo': {'9ine - skilled enough(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esn-league)': {'Win of the 1st team': '1.25',
+                                                                                                                         'Win of the 2nd team': '3.71'},
+          '9z - wygers argentina(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-msi-cono-sur-league)': {'Win of the 1st team': '1.15',
+                                                                                                                                  'Win of the 2nd team': '5.00'},
+          'alternate attax - singularity(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-eden-arena-malta-vibes)': {'1-st map: Total. 25.5. Over': '1.70',
+                                                                                                                                             '1-st map: Total. 25.5. Under': '2.08',
+                                                                                                                                             '1-st map: alternate attax Handicap value. –5.5. Handicap coefficient': '2.25',
+                                                                                                                                             '1-st map: singularity Handicap value. +5.5. Handicap coefficient': '1.60'},
+          'ambush - tricked(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)': {'1-st map: Total. 26.5. Over': '1.72',
+                                                                                                                          '1-st map: Total. 26.5. Under': '2.05',
+                                                                                                                          '1-st map: Win of the 1st team': '1.85',
+                                                                                                                          '1-st map: Win of the 2nd team': '1.90',
+                                                                                                                          '1-st map: ambush Handicap value. –2.5. Handicap coefficient': '2.08',
+                                                                                                                          '1-st map: tricked Handicap value. +2.5. Handicap coefficient': '1.70'},
+          'atk - energy(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-za)': {'Win of the 1st team': '1.30',
+                                                                                                             'Win of the 2nd team': '3.33'},
+          'bmth - royalty(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {'1-st map: Total. 25.5. Over': '1.57',
+                                                                                                                      '1-st map: Total. 25.5. Under': '2.31',
+                                                                                                                      '1-st map: bmth Handicap value. –2.5. Handicap coefficient': '2.55',
+                                                                                                                      '1-st map: royalty Handicap value. +2.5. Handicap coefficient': '1.47'},
+          'chaos - yeah(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-mythic-invite-league)': {'1-st map: Total. 25.5. Over': '1.80',
+                                                                                                                          '1-st map: Total. 25.5. Under': '1.95',
+                                                                                                                          '1-st map: Win of the 1st team': '1.25',
+                                                                                                                          '1-st map: Win of the 2nd team': '3.75',
+                                                                                                                          '1-st map: chaos Handicap value. –4.5. Handicap coefficient': '1.75',
+                                                                                                                          '1-st map: yeah Handicap value. +4.5. Handicap coefficient': '2.01'},
+          'coscu army - undead(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-msi-cono-sur-league)': {'Win of the 1st team': '1.20',
+                                                                                                                                'Win of the 2nd team': '4.23'},
+          'cr4zy - avez(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)': {'1-st map: Total. 25.5. Over': '1.52',
+                                                                                                                  '1-st map: Total. 25.5. Under': '2.42',
+                                                                                                                  '1-st map: avez Handicap value. +2.5. Handicap coefficient': '1.47',
+                                                                                                                  '1-st map: cr4zy Handicap value. –2.5. Handicap coefficient': '2.55'},
+          'divine vendetta - beyond(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)': {'1-st map: Total. 26.5. Over': '1.87',
+                                                                                                                                           '1-st map: Total. 26.5. Under': '1.87',
+                                                                                                                                           '1-st map: Win of the 1st team': '2.48',
+                                                                                                                                           '1-st map: Win of the 2nd team': '1.50',
+                                                                                                                                           '1-st map: beyond Handicap value. –3.5. Handicap coefficient': '1.92',
+                                                                                                                                           '1-st map: divine vendetta Handicap value. +3.5. Handicap coefficient': '1.82'},
+          'endpoint - honoris(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-eden-arena-malta-vibes)': {'1-st map: Total. 25.5. Over': '1.75',
+                                                                                                                                  '1-st map: Total. 25.5. Under': '2.01',
+                                                                                                                                  '1-st map: endpoint Handicap value. –5.5. Handicap coefficient': '2.11',
+                                                                                                                                  '1-st map: honoris Handicap value. +5.5. Handicap coefficient': '1.68'},
+          'ex-london - blinkal(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esn-league)': {'Win of the 1st team': '1.35',
+                                                                                                                       'Win of the 2nd team': '3.05'},
+          'fate - avez(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-eden-arena-malta-vibes)': {'1-st map: Total. 25.5. Over': '1.58',
+                                                                                                                           '1-st map: Total. 25.5. Under': '2.30',
+                                                                                                                           '1-st map: avez Handicap value. +4.5. Handicap coefficient': '1.60',
+                                                                                                                           '1-st map: fate Handicap value. –4.5. Handicap coefficient': '2.25'},
+          'fate - wizards(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)': {'1-st map: Total. 25.5. Over': '1.57',
+                                                                                                                    '1-st map: Total. 25.5. Under': '2.31',
+                                                                                                                    '1-st map: fate Handicap value. –4.5. Handicap coefficient': '2.35',
+                                                                                                                    '1-st map: wizards Handicap value. +4.5. Handicap coefficient': '1.55'},
+          'for the win - big academy(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esn-league)': {'Win of the 1st team': '2.25',
+                                                                                                                             'Win of the 2nd team': '1.60'},
+          'for the win - rhein-neckar(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-betano-masters-eu)': {'Win of the 1st team': '1.65',
+                                                                                                                                     'Win of the 2nd team': '2.15'},
+          'forze - sg.pro(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-eden-arena-malta-vibes)': {'1-st map: Total. 27.5. Over': '2.65',
+                                                                                                                              '1-st map: Total. 27.5. Under': '1.44',
+                                                                                                                              '1-st map: forze Handicap value. –3.5. Handicap coefficient': '1.55',
+                                                                                                                              '1-st map: sg.pro Handicap value. +3.5. Handicap coefficient': '2.35'},
+          'granit - dr. pepper(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esn-league)': {'Win of the 1st team': '1.30',
+                                                                                                                       'Win of the 2nd team': '3.30'},
+          'hard legion - cr4zy(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-eden-arena-malta-vibes)': {'1-st map: Total. 27.5. Over': '2.65',
+                                                                                                                                   '1-st map: Total. 27.5. Under': '1.44',
+                                                                                                                                   '1-st map: cr4zy Handicap value. +3.5. Handicap coefficient': '2.35',
+                                                                                                                                   '1-st map: hard legion Handicap value. –3.5. Handicap coefficient': '1.55'},
+          'hellraisers - agf(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-eden-arena-malta-vibes)': {'1-st map: Total. 25.5. Over': '1.52',
+                                                                                                                                 '1-st map: Total. 25.5. Under': '2.42',
+                                                                                                                                 '1-st map: agf Handicap value. –2.5. Handicap coefficient': '2.55',
+                                                                                                                                 '1-st map: hellraisers Handicap value. +2.5. Handicap coefficient': '1.47'},
+          'hltv cs:go world ranking(parimatch - https://www.parimatch.com/en/sport/kibersport/specialnye-stavki-counter-strike)': {},
+          'hyper - addice inc(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-na-advanced)': {'Win of the 1st team': '1.42',
+                                                                                                                            'Win of the 2nd team': '2.74'},
+          'imperium - kinship(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-na-advanced)': {'Win of the 1st team': '3.20',
+                                                                                                                            'Win of the 2nd team': '1.32'},
+          'invictus gaming - bren(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)': {'1-st map: Total. 26.5. Over': '1.85',
+                                                                                                                                         '1-st map: Total. 26.5. Under': '1.90',
+                                                                                                                                         '1-st map: Win of the 1st team': '1.55',
+                                                                                                                                         '1-st map: Win of the 2nd team': '2.35',
+                                                                                                                                         '1-st map: bren Handicap value. +2.5. Handicap coefficient': '2.01',
+                                                                                                                                         '1-st map: invictus gaming Handicap value. –2.5. Handicap coefficient': '1.75'},
+          'jmt - lynn vision(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-tf-asia-championships)': {'Win of the 1st team': '1.50',
+                                                                                                                                'Win of the 2nd team': '2.48'},
+          'ldlc - illuminar(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-eden-arena-malta-vibes)': {'1-st map: Total. 25.5. Over': '1.65',
+                                                                                                                                '1-st map: Total. 25.5. Under': '2.15',
+                                                                                                                                '1-st map: illuminar Handicap value. –4.5. Handicap coefficient': '2.08',
+                                                                                                                                '1-st map: ldlc Handicap value. +4.5. Handicap coefficient': '1.70'},
+          'lethal divide - rbg(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-na-advanced)': {'Win of the 1st team': '3.55',
+                                                                                                                             'Win of the 2nd team': '1.27'},
+          'lowlandlions - ubiteam(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esn-league)': {'Win of the 1st team': '1.25',
+                                                                                                                          'Win of the 2nd team': '3.71'},
+          'make your destiny - quartz(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esl-championnat-national)': {'Win of the 1st team': '1.20',
+                                                                                                                                            'Win of the 2nd team': '4.20'},
+          'mako - bantz(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-lpl-pro)': {'1-st map: Total. 26.5. Over': '1.85',
+                                                                                                             '1-st map: Total. 26.5. Under': '1.90',
+                                                                                                             '1-st map: Win of the 1st team': '2.35',
+                                                                                                             '1-st map: Win of the 2nd team': '1.55',
+                                                                                                             '1-st map: bantz Handicap value. –2.5. Handicap coefficient': '1.75',
+                                                                                                             '1-st map: mako Handicap value. +2.5. Handicap coefficient': '2.01'},
+          'nexus - for the win(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-betano-masters-eu)': {'Win of the 1st team': '1.20',
+                                                                                                                              'Win of the 2nd team': '4.23'},
+          'nexus - ldlc(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)': {'1-st map: Total. 26.5. Over': '1.77',
+                                                                                                                      '1-st map: Total. 26.5. Under': '1.97',
+                                                                                                                      '1-st map: Win of the 1st team': '1.97',
+                                                                                                                      '1-st map: Win of the 2nd team': '1.77',
+                                                                                                                      '1-st map: ldlc Handicap value. –2.5. Handicap coefficient': '2.01',
+                                                                                                                      '1-st map: nexus Handicap value. +2.5. Handicap coefficient': '1.75'},
+          'nexus - rhein-neckar(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-betano-masters-eu)': {'Win of the 1st team': '1.15',
+                                                                                                                               'Win of the 2nd team': '5.00'},
+          'nlg - rasierklingen(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-99liga)': {'Away win': '2.66',
+                                                                                                                   'Draw': '2.04',
+                                                                                                                   'Home win': '4.00'},
+          'onethree - zero.tsg(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-tf-asia-championships)': {'Win of the 1st team': '1.52',
+                                                                                                                                  'Win of the 2nd team': '2.43'},
+          'penta - unicorns of love(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-99liga)': {'Away win': '2.24',
+                                                                                                                        'Draw': '2.12',
+                                                                                                                        'Home win': '5.00'},
+          'reckoning - wolf(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esl-india-premiership)': {'Win of the 1st team': '1.18',
+                                                                                                                               'Win of the 2nd team': '4.50'},
+          'rembaza - nightraid(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {'1-st map: Total. 25.5. Over': '1.57',
+                                                                                                                           '1-st map: Total. 25.5. Under': '2.31',
+                                                                                                                           '1-st map: nightraid Handicap value. +5.5. Handicap coefficient': '1.60',
+                                                                                                                           '1-st map: rembaza Handicap value. –5.5. Handicap coefficient': '2.25'},
+          'rembaza - wesq(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {'1-st map: Total. 25.5. Over': '1.75',
+                                                                                                                      '1-st map: Total. 25.5. Under': '2.01',
+                                                                                                                      '1-st map: rembaza Handicap value. –5.5. Handicap coefficient': '2.11',
+                                                                                                                      '1-st map: wesq Handicap value. +5.5. Handicap coefficient': '1.68'},
+          'rhein-neckar - divizon(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-german-league)': {'Win of the 1st team': '1.48',
+                                                                                                                             'Win of the 2nd team': '2.54'},
+          'royalty - spassion(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {'1-st map: Total. 25.5. Over': '1.57',
+                                                                                                                          '1-st map: Total. 25.5. Under': '2.31',
+                                                                                                                          '1-st map: royalty Handicap value. +2.5. Handicap coefficient': '1.58',
+                                                                                                                          '1-st map: spassion Handicap value. –2.5. Handicap coefficient': '2.30'},
+          'royalty - unknown gods(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {'1-st map: Total. 25.5. Over': '1.57',
+                                                                                                                              '1-st map: Total. 25.5. Under': '2.31',
+                                                                                                                              '1-st map: royalty Handicap value. +2.5. Handicap coefficient': '1.58',
+                                                                                                                              '1-st map: unknown gods Handicap value. –2.5. Handicap coefficient': '2.30'},
+          'secret - saw(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)': {'1-st map: Total. 26.5. Over': '1.85',
+                                                                                                                      '1-st map: Total. 26.5. Under': '1.90',
+                                                                                                                      '1-st map: Win of the 1st team': '2.35',
+                                                                                                                      '1-st map: Win of the 2nd team': '1.55',
+                                                                                                                      '1-st map: saw Handicap value. –2.5. Handicap coefficient': '1.75',
+                                                                                                                      '1-st map: secret Handicap value. +2.5. Handicap coefficient': '2.01'},
+          'spassion - bmth(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {'1-st map: Total. 25.5. Over': '1.57',
+                                                                                                                       '1-st map: Total. 25.5. Under': '2.31',
+                                                                                                                       '1-st map: bmth Handicap value. –2.5. Handicap coefficient': '2.48',
+                                                                                                                       '1-st map: spassion Handicap value. +2.5. Handicap coefficient': '1.50'},
+          'spassion - unknown gods(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {'1-st map: Total. 25.5. Over': '1.57',
+                                                                                                                               '1-st map: Total. 25.5. Under': '2.31',
+                                                                                                                               '1-st map: spassion Handicap value. +2.5. Handicap coefficient': '1.68',
+                                                                                                                               '1-st map: unknown gods Handicap value. –2.5. Handicap coefficient': '2.11'},
+          'supernova - lethal divide(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-winners-league-na-main-division)': {'Win of the 1st team': '2.16',
+                                                                                                                                                  'Win of the 2nd team': '1.65'},
+          'syman - budapest five(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-eden-arena-malta-vibes)': {'1-st map: Total. 25.5. Over': '1.62',
+                                                                                                                                     '1-st map: Total. 25.5. Under': '2.20',
+                                                                                                                                     '1-st map: budapest five Handicap value. +4.5. Handicap coefficient': '1.62',
+                                                                                                                                     '1-st map: syman Handicap value. –4.5. Handicap coefficient': '2.20'},
+          'syman - sg.pro(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-nine-to-five)': {'Win of the 1st team': '1.40',
+                                                                                                                    'Win of the 2nd team': '2.80'},
+          'thunder logic - third impact(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-na-advanced)': {'Win of the 1st team': '1.20',
+                                                                                                                                      'Win of the 2nd team': '4.20'},
+          'tiger - mazaalai(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-perfect-world-asia-league)': {'1-st map: Total. 26.5. Over': '1.82',
+                                                                                                                                   '1-st map: Total. 26.5. Under': '1.92',
+                                                                                                                                   '1-st map: Win of the 1st team': '1.60',
+                                                                                                                                   '1-st map: Win of the 2nd team': '2.25',
+                                                                                                                                   '1-st map: mazaalai Handicap value. +2.5. Handicap coefficient': '1.95',
+                                                                                                                                   '1-st map: tiger Handicap value. –2.5. Handicap coefficient': '1.80'},
+          'tikitakan - winstrike(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-eu-advanced)': {'1-st map: Total. 26.5. Over': '1.82',
+                                                                                                                               '1-st map: Total. 26.5. Under': '1.92',
+                                                                                                                               '1-st map: Win of the 1st team': '2.25',
+                                                                                                                               '1-st map: Win of the 2nd team': '1.60',
+                                                                                                                               '1-st map: tikitakan Handicap value. +2.5. Handicap coefficient': '1.95',
+                                                                                                                               '1-st map: winstrike Handicap value. –2.5. Handicap coefficient': '1.80'},
+          'triumph - teamone(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-mythic-invite-league)': {'1-st map: Total. 26.5. Over': '1.92',
+                                                                                                                               '1-st map: Total. 26.5. Under': '1.82',
+                                                                                                                               '1-st map: Win of the 1st team': '1.40',
+                                                                                                                               '1-st map: Win of the 2nd team': '2.80',
+                                                                                                                               '1-st map: teamone Handicap value. +3.5. Handicap coefficient': '1.95',
+                                                                                                                               '1-st map: triumph Handicap value. –3.5. Handicap coefficient': '1.80'},
+          'truckers with attitude - skyfire(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-lpl-pro)': {'1-st map: Total. 26.5. Over': '1.82',
+                                                                                                                                 '1-st map: Total. 26.5. Under': '1.92',
+                                                                                                                                 '1-st map: Win of the 1st team': '1.60',
+                                                                                                                                 '1-st map: Win of the 2nd team': '2.25',
+                                                                                                                                 '1-st map: skyfire Handicap value. +2.5. Handicap coefficient': '1.95',
+                                                                                                                                 '1-st map: truckers with attitude Handicap value. –2.5. Handicap coefficient': '1.80'},
+          'unknown gods - bmth(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {'1-st map: Total. 25.5. Over': '1.57',
+                                                                                                                           '1-st map: Total. 25.5. Under': '2.31',
+                                                                                                                           '1-st map: bmth Handicap value. –2.5. Handicap coefficient': '2.48',
+                                                                                                                           '1-st map: unknown gods Handicap value. +2.5. Handicap coefficient': '1.50'},
+          'veterani - nightraid(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {'1-st map: Total. 25.5. Over': '1.47',
+                                                                                                                            '1-st map: Total. 25.5. Under': '2.57',
+                                                                                                                            '1-st map: nightraid Handicap value. +4.5. Handicap coefficient': '1.62',
+                                                                                                                            '1-st map: veterani Handicap value. –4.5. Handicap coefficient': '2.20'},
+          'veterani - wesq(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esports-battle)': {'1-st map: Total. 25.5. Over': '1.57',
+                                                                                                                       '1-st map: Total. 25.5. Under': '2.31',
+                                                                                                                       '1-st map: veterani Handicap value. –5.5. Handicap coefficient': '2.11',
+                                                                                                                       '1-st map: wesq Handicap value. +5.5. Handicap coefficient': '1.68'}}}

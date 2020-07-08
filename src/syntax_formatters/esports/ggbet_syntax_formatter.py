@@ -13,18 +13,15 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
                 if word != 'winner':
                     formatted_title += word + ' '
             formatted_title += 'will win'
+        if '1x2' in formatted_title:
+            formatted_title = formatted_title.replace('1x2 ', '')
+            formatted_title += ' will win'
         return formatted_title
 
     def _format_total(self):
         formatted_title = self.bet_title.lower()
-        if 'total rounds' in formatted_title:
-            formatted_title = formatted_title.replace('total rounds', 'total')
-        match = re.search('total maps (over|under)', formatted_title)
-        if match:
-            formatted_title = formatted_title.replace('maps ', '')
-            formatted_title += ' maps'
         if 'odd/even maps' in formatted_title:
-            formatted_title = formatted_title.replace('odd/even maps', 'total maps —')
+            formatted_title = formatted_title.replace('odd/even maps', 'total maps')
         if 'odd/even' in formatted_title:
             formatted_title = formatted_title.replace('odd/even ', '')
         return formatted_title
@@ -33,11 +30,12 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
         correct_numbers = ['1-st', '2-nd', '3-rd', '4-th', '5-th']
         invalid_numbers = ['1st', '2nd', '3rd', '4th', '5th']
         formatted_title = self.bet_title.lower()
-        for i in range(0, len(correct_numbers)):
+        for i in range(len(correct_numbers)):
             if invalid_numbers[i] + ' map' in formatted_title:
                 formatted_title = formatted_title.replace(invalid_numbers[i] + ' map', correct_numbers[i] + ' map:')
+        for i in range(len(correct_numbers)):
             if 'map ' + str(i + 1) in formatted_title:
-                formatted_title = formatted_title.replace('map ' + str(i + 1) , correct_numbers[i] + ' map:')
+                formatted_title = formatted_title.replace('map ' + str(i + 1), correct_numbers[i] + ' map:')
         return formatted_title
 
     def _format_handicap(self):

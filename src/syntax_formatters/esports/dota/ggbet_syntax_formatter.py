@@ -9,6 +9,13 @@ import os.path
 
 
 class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
+    def _format_specific_kill(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search(r'((\d+)th kill )', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace(match.group(1), '')
+            formatted_title += ' will make kill ' + match.group(2)
+        return formatted_title
 
     def _format_individual_total_kills(self):
         formatted_title = self.bet_title.lower()
@@ -47,7 +54,7 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
         formatted_title = self.bet_title.lower()
         return formatted_title
 
-    def _format_first_blood(self):
+    def _format_first_kill(self):
         formatted_title = self.bet_title.lower()
         if 'first blood' in formatted_title:
             formatted_title = formatted_title.replace('first blood ', '')

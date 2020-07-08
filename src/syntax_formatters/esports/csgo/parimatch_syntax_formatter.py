@@ -42,19 +42,24 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
         return formatted_title
 
     def _format_after(self, bets):
-        bets = self._update(bets, self._fix_total_maps)
+        bets = self._update(bets, self._fix_total_rounds_and_maps)
         return bets
 
-    def _fix_total_maps(self):
+    def _fix_total_rounds_and_maps(self):
         # Если захочешь, перепишешь по-другому, мне было проще так, вдруг мы потом решим опять менять вид total maps
         formatted_title = self.bet_title.lower()
         match = re.search('^total — (even|odd)', formatted_title)
         if match:
-            formatted_title = formatted_title.replace('total', 'total maps')
+            formatted_title = formatted_title.replace('total —', 'total maps')
 
         match = re.search('^total (over|under)', formatted_title)
         if match:
-            formatted_title += ' maps'
+            formatted_title = formatted_title('total', 'total maps')
+        match1 = re.search(r'map: .+? total', formatted_title)
+        match2 = re.search(r'map: total', formatted_title)
+        # не знаю как это в одно запихнуть ))))00))
+        if match1 or match2:
+            formatted_title = formatted_title.replace('total', 'total rounds')
         return formatted_title
 
 
