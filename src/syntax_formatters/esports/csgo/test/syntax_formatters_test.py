@@ -1,25 +1,26 @@
 import unittest
 import re
 
-from sample_data.csgo.parimatch import bets as parimatch_bets
-from sample_data.csgo.one_x_bet import bets as one_x_bet_bets
-from sample_data.csgo.ggbet import bets as ggbet_bets
-from sample_data.csgo.favorit import bets as favorit_bets
-from sample_data.csgo.marathon import bets as marathon_bets
-from csgo.parimatch_syntax_formatter import ParimatchSyntaxFormatter
-from csgo.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter
-from csgo.ggbet_syntax_formatter import GGBetSyntaxFormatter
-from csgo.favorit_syntax_formatter import FavoritSyntaxFormatter
-from csgo.marathon_syntax_formatter import MarathonSyntaxFormatter
+from Sport import Sport
+from sample_data.csgo.parimatch import sport as parimatch_csgo_dict
+from sample_data.csgo.one_x_bet import sport as one_x_bet_csgo_dict
+from sample_data.csgo.ggbet import sport as ggbet_csgo_dict
+from sample_data.csgo.favorit import sport as favorit_csgo_dict
+from sample_data.csgo.marathon import sport as marathon_csgo_dict
+from esports.csgo import ParimatchSyntaxFormatter
+from esports.csgo import OneXBetSyntaxFormatter
+from esports.csgo import GGBetSyntaxFormatter
+from esports.csgo import FavoritSyntaxFormatter
+from esports.csgo import MarathonSyntaxFormatter
 
 
 class TestSyntaxFormatters(unittest.TestCase):
     def setUp(self) -> None:
-        self.parimatch_bets = parimatch_bets
-        self.one_x_bet_bets = one_x_bet_bets
-        self.ggbet_bets = ggbet_bets
-        self.favorit_bets = favorit_bets
-        self.marathon_bets = marathon_bets
+        self.parimatch_csgo_dict = parimatch_csgo_dict
+        self.one_x_bet_csgo_dict = one_x_bet_csgo_dict
+        self.ggbet_csgo_dict = ggbet_csgo_dict
+        self.favorit_csgo_dict = favorit_csgo_dict
+        self.marathon_csgo_dict = marathon_csgo_dict
 
         self.parimatch_syntax_formatter = ParimatchSyntaxFormatter()
         self.one_x_bet_syntax_formatter = OneXBetSyntaxFormatter()
@@ -42,60 +43,51 @@ class TestSyntaxFormatters(unittest.TestCase):
             r'^(\d+-(st|nd|rd|th) map: )bomb (exploded|defused) in round \d+$',  # bomb exploded/defused
             r'^(\d+-(st|nd|rd|th) map: )bomb (planted|not planted) in round \d+$',  # bomb planted/not planted
             ]
-        self.odds_value_pattern = r'^\d+(\.\d+)?$'
-        self.bookmaker_info_pattern = r'^[a-z0-9]+?\(https://.+?\)$'
+        self.odds_pattern = r'^\d+(\.\d+)?$'
 
     # @unittest.skip
     def test_parimatch_unified_syntax_formatting(self):
-        bets = self.parimatch_syntax_formatter.apply_unified_syntax_formatting(self.parimatch_bets)
-        self._test_unified_syntax_formatting(bets)
+        sport = Sport.from_dict(self.parimatch_csgo_dict)
+        sport = self.parimatch_syntax_formatter.apply_unified_syntax_formatting(sport)
+        self._test_unified_syntax_formatting(sport)
 
     # @unittest.skip
     def test_one_x_bet_unified_syntax_formatting(self):
-        bets = self.one_x_bet_syntax_formatter.apply_unified_syntax_formatting(self.one_x_bet_bets)
-        self._test_unified_syntax_formatting(bets)
+        sport = Sport.from_dict(self.one_x_bet_csgo_dict)
+        sport = self.one_x_bet_syntax_formatter.apply_unified_syntax_formatting(sport)
+        self._test_unified_syntax_formatting(sport)
 
     @unittest.skip
     def test_ggbet_unified_syntax_formatting(self):
-        bets = self.ggbet_syntax_formatter.apply_unified_syntax_formatting(self.ggbet_bets)
-        self._test_unified_syntax_formatting(bets)
+        sport = Sport.from_dict(self.ggbet_csgo_dict)
+        sport = self.ggbet_syntax_formatter.apply_unified_syntax_formatting(sport)
+        self._test_unified_syntax_formatting(sport)
 
-    @unittest.skip
+    # @unittest.skip
     def test_favorit_unified_syntax_formatting(self):
-        bets = self.favorit_syntax_formatter.apply_unified_syntax_formatting(self.favorit_bets)
-        self._test_unified_syntax_formatting(bets)
+        sport = Sport.from_dict(self.favorit_csgo_dict)
+        sport = self.favorit_syntax_formatter.apply_unified_syntax_formatting(sport)
+        self._test_unified_syntax_formatting(sport)
 
-    @unittest.skip
+    # @unittest.skip
     def test_marathon_unified_syntax_formatting(self):
-        bets = self.marathon_syntax_formatter.apply_unified_syntax_formatting(self.marathon_bets)
-        self._test_unified_syntax_formatting(bets)
+        sport = Sport.from_dict(self.marathon_csgo_dict)
+        sport = self.marathon_syntax_formatter.apply_unified_syntax_formatting(sport)
+        self._test_unified_syntax_formatting(sport)
 
-    def _test_unified_syntax_formatting(self, bets):
-        self.assertIs(type(bets), dict, 'apply_unified_syntax_formatting() must return dict')
+    def _test_unified_syntax_formatting(self, sport):
+        for match in sport:
+            with self.subTest(match_title=match.title):
+                # print(match.title)
+                self.assertRegex(match.title, self.match_title_pattern, 'match title must match its pattern')
 
-        for match_title in bets:
-            self.assertIs(type(bets[match_title]), dict, 'bets[match_title] must be dict')
-
-            with self.subTest(match_title=match_title):
-                self.assertRegex(match_title, self.match_title_pattern, 'match title must match its pattern')
-
-                for bet_title, odds in bets[match_title].items():
-                    self.assertIs(type(odds), dict, 'bets[match_title][bet_title] must be dict')
-
-                    with self.subTest(bet_title=bet_title, odds=odds):
-                        if not re.match('|'.join(self.bet_title_patterns), bet_title):
-                            print(bet_title)
-                        # self.assertRegex(bet_title, '|'.join(self.bet_title_patterns),
-                        #                  'bet title must match its pattern')
-
-                        self.assertEqual(len(odds.keys()), 1, 'bet can\'t have multiple odds')
-                        self.assertEqual(len(odds.values()), 1, 'bet can\'t have multiple bookmakers/urls')
-                        for odds_value, bookmaker_info in odds.items():
-                            self.assertIs(type(odds_value), str, 'bets[match_title][bet_title] keys must be str')
-                            self.assertIs(type(bookmaker_info), str, 'bets[match_title][bet_title] values must be str')
-                            self.assertRegex(odds_value, self.odds_value_pattern, 'odds must match their pattern')
-                            self.assertRegex(bookmaker_info, self.bookmaker_info_pattern,
-                                             'bookmaker info must match its pattern')
+                for bet in match:
+                    with self.subTest(bet_title=bet.title, odds=bet.odds):
+                        if not re.match('|'.join(self.bet_title_patterns), bet.title):
+                            print(bet.title)
+                        self.assertRegex(bet.title, '|'.join(self.bet_title_patterns),
+                                         'bet title must match its pattern')
+                        self.assertRegex(bet.odds, self.odds_pattern, 'odds must match their pattern')
 
 
 if __name__ == '__main__':

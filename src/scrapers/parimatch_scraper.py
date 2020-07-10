@@ -189,7 +189,7 @@ class ParimatchScraper(AbstractScraper):
                         # append team name to the subtitle in case of handicap bet
                         if 'Handicap coefficient' in title:
                             prefix = subtitle + team_names[i] + ' '
-                        bet = Bet(prefix + bet_titles_copy[i], odds[i])
+                        bet = Bet(prefix + bet_titles_copy[i], odds[i], ParimatchScraper._NAME, url)
                         bets.append(bet)
                     except IndexError:
                         pass
@@ -201,7 +201,7 @@ class ParimatchScraper(AbstractScraper):
                 if title in ParimatchScraper._TITLE_BREAKERS:
                     bet_titles = []
 
-        match = Match(match_title, url, ParimatchScraper._NAME, bets)
+        match = Match(match_title, bets)
         matches.append(match)
 
     @staticmethod

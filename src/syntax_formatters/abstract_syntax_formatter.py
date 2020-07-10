@@ -1,7 +1,6 @@
 import re
 from abc import ABC, abstractmethod
 
-from abstract_scraper import AbstractScraper
 from match_title_compiler import MatchTitleCompiler
 
 
@@ -10,7 +9,7 @@ class AbstractSyntaxFormatter(ABC):
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the websites
     """
-    _REMOVE_FROM_TITLES = ['team ', ' team', ' esports', ' club']
+    _REMOVE_FROM_TITLES = ['team ', ' team', ' esports', ' club', ' gaming']
 
     def apply_unified_syntax_formatting(self, sport):
         """
@@ -63,6 +62,9 @@ class AbstractSyntaxFormatter(ABC):
     def _get_invalid_bet_titles(self):
         return ()
 
+    def _get_invalid_match_titles(self):
+        return ()
+
     def _update(self, sport, _callable):
         """
         Update self.bets and given bets dictionaries according to _callable method
@@ -75,16 +77,20 @@ class AbstractSyntaxFormatter(ABC):
         :rtype: Sport
         """
         invalid_bet_titles = self._get_invalid_bet_titles()
+        invalid_match_titles = self._get_invalid_match_titles()
 
-        for match in sport:
+        for match in list(sport):
             self.match_title = match.title
-            for bet in match:
+            for bet in list(match):
                 self.bet_title = bet.title
                 formatted_title = _callable()
                 bet.title = formatted_title
 
                 if self.bet_title in invalid_bet_titles:
                     match.bets.remove(bet)
+
+            if self.match_title in invalid_match_titles:
+                sport.matches.remove(match)
 
         return sport
 
@@ -146,7 +152,8 @@ class AbstractSyntaxFormatter(ABC):
 
         return sport
 
-    def _format_odds(self, sport):
+    @staticmethod
+    def _format_odds(sport):
         """
         Remove empty odds bet titles
 
@@ -156,7 +163,7 @@ class AbstractSyntaxFormatter(ABC):
         :rtype: Sport
         """
         for match in sport:
-            for bet in match:
+            for bet in list(match):
                 if not bet.odds:
                     match.bets.remove(bet)
 

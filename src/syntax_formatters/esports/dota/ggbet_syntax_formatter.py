@@ -1,9 +1,8 @@
 import re
-from pprint import pprint, pformat
 
 from Sport import Sport
-from dota.abstract_syntax_formatter import AbstractSyntaxFormatter
-from esports.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
+from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
 from sample_data.dota import ggbet
 import os.path
 

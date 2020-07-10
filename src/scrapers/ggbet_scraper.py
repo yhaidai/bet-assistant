@@ -22,9 +22,9 @@ class GGBetScraper(AbstractScraper):
         'football': 'betting-sports'
     }
     _MENU = {
-        'csgo': '//*[@id="betting__container"]/div/div/div[1]/div/div/div[5]/div[1]/div[2]',
-        'dota': '//*[@id="betting__container"]/div/div/div[1]/div/div/div[6]/div[1]',
-        'football': '//*[@id="betting__container"]/div/div/div[1]/div/div/div[3]/div'
+        'csgo': 'Counter-Strike',
+        'dota': 'Dota 2',
+        'football': 'Soccer'
     }
 
     def get_sport_bets(self, sport_name):
@@ -36,6 +36,7 @@ class GGBetScraper(AbstractScraper):
         """
         sport_bets = []
         match_urls = self.get_match_urls(sport_name)
+        match_urls = match_urls[:20]
         for url in match_urls:
             match_bets = GGBetScraper._get_bets(url)
             if match_bets:
@@ -51,15 +52,18 @@ class GGBetScraper(AbstractScraper):
         urls = []
         page = Page(GGBetScraper._BASE_URL + GGBetScraper._TAIL_URL[sport_name])
         time.sleep(1)
-        sport_type_icon = page.driver.find_element_by_xpath(GGBetScraper._MENU[sport_name])
+        sport_types = Page.driver.find_elements_by_class_name('__app-CategorizerRowHeader-container')
+        sport_type_icon = sport_types[0]
+        for sport_type in sport_types:
+            if sport_type.find_element_by_class_name('CategorizerRowHeader__label___LQD65').get_attribute('title') == GGBetScraper._MENU[sport_name]:
+                sport_type_icon = sport_type
         page.click(sport_type_icon)
         time.sleep(1)
         tournament_block = Page.driver.find_element_by_class_name('categorizerRow__submenu___tyhYn')
         tournaments = tournament_block.find_elements_by_class_name('categorizerCheckRow__row___EW7wX')
-
         for tournament in tournaments:
             number_of_matches = tournament.find_element_by_class_name('categorizerCheckRow__counter___3rFMF')
-            number_of_matches = int(number_of_matches.get_attribute('innerHTML'))
+            number_of_matches = int(number_of_matches.text)
             page.click(tournament)
             time.sleep(1)
             if number_of_matches > 20:
@@ -76,7 +80,10 @@ class GGBetScraper(AbstractScraper):
         last_height = Page.driver.execute_script("return document.body.scrollHeight")
         while True:
             html = Page.driver.find_element_by_tag_name('html')
-            for _ in (1, 5):
+            for _ in (1, 3):
+                html.send_keys(Keys.PAGE_DOWN)
+                time.sleep(0.25)
+            for _ in (1, 3):
                 html.send_keys(Keys.PAGE_DOWN)
                 time.sleep(0.25)
             for _ in (1, 3):
@@ -109,11 +116,10 @@ class GGBetScraper(AbstractScraper):
         if not match_title:
             return bets
 
-        live_buttons = page.driver.find_elements_by_class_name('__app-LiveIcon-container')
-        if len(live_buttons) > 1:
-            # is live
-            return bets
-
+        # live_buttons = page.driver.find_elements_by_class_name('__app-LiveIcon-container')
+        # if len(live_buttons) > 1:
+        #     # is live
+        #     return bets
 
         market_tables = page.driver.find_elements_by_class_name('marketTable__table___dvHTz')
         for mt in market_tables:
@@ -125,13 +131,13 @@ class GGBetScraper(AbstractScraper):
                     if bet != 'Deactivated':
                         pos = bet.find(': ')
                         bet_type = bet[:pos]
-                        odd = bet[pos + 2:]
+                        odds = bet[pos + 2:]
                         bet_title = table_title + ' ' + bet_type
-                        bet = Bet(bet_title, odd)
+                        bet = Bet(bet_title, odds, GGBetScraper._NAME, match_url)
                         bets.append(bet)
                 except Exception as e:
                     print('ggbet error in buttons')
-        match = Match(match_title, match_url, GGBetScraper._NAME, bets)
+        match = Match(match_title, bets)
         return match
 
     @staticmethod

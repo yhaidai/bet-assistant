@@ -1,9 +1,8 @@
 import re
-from pprint import pprint, pformat
 
 from Sport import Sport
-from dota.abstract_syntax_formatter import AbstractSyntaxFormatter
-from esports.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
+from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
 from sample_data.dota import favorit
 import os.path
 

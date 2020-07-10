@@ -1,9 +1,8 @@
 import re
-from pprint import pprint, pformat
 
 from Sport import Sport
-from dota.abstract_syntax_formatter import AbstractSyntaxFormatter
-from esports.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
+from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
 from sample_data.dota import marathon
 import os.path
 

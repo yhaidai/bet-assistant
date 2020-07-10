@@ -1,5 +1,5 @@
 import re
-from esports.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
 
 

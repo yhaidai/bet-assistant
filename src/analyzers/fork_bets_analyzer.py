@@ -1,20 +1,19 @@
-from pprint import pprint, pformat
-
-from analyzers.analyzer import Analyzer
-from grouper import Grouper
+from analyzers.best_odds_analyzer import BestOddsAnalyzer
+from groupers.esports.csgo.fork_grouper import ForkGrouper
 import os
 
 
-class ForkBetsAnalyzer(Analyzer):
+class ForkBetsAnalyzer(BestOddsAnalyzer):
     """
     Class for analyzing betting info and finding possible fork bets
     """
+    _fork_grouper = ForkGrouper()
     _PROFIT_THRESHOLD = 0.15
 
     def __init__(self, sport_type):
         super().__init__(sport_type)
 
-    def get_fork_bets(self):
+    def get_fork_bets_sport(self):
         """
         Get all profitable fork bets
 
@@ -22,34 +21,27 @@ class ForkBetsAnalyzer(Analyzer):
         bets[match_title][bet_title_1 | bet_title_2 | ... | bet_title_n][profit_str] = {odds: bookmaker}
         :rtype: dict
         """
-        fork_bets = {}
-        grouped_bets = Grouper.group(self.all_bets)
+        best_odds_bets_sport = self.get_best_odds_bets_sport()
+        fork_bets_sport = self._fork_grouper.group_bets(best_odds_bets_sport)
 
-        for match_title in grouped_bets:
-            for group_title in grouped_bets[match_title]:
-                best_odds_bets = {}
-
-                if len(grouped_bets[match_title][group_title].keys()) < 2:
-                    continue
-
-                for bet_title, odds in grouped_bets[match_title][group_title].items():
-                    max_odds_value = max(odds.keys())
-                    best_odds_bets[bet_title] = {max_odds_value: odds[max_odds_value]}
-
-                max_odds_values = []
-                for max_odds in best_odds_bets.values():
-                    max_odds_values += max_odds.keys()
-                profit = self._get_fork_profit(max_odds_values)
-                bet_amounts = self._get_fork_bet_amounts(max_odds_values)
+        for match in list(fork_bets_sport):
+            for bet_group in list(match):
+                odds = bet_group.get_odds()
+                profit = self._get_fork_profit(odds)
 
                 # add fork bet
-                if 0 < profit < self._PROFIT_THRESHOLD:
-                    fork_bets.setdefault(match_title, {})
-                    fork_bet_title = self._compile_fork_bet_title(list(best_odds_bets.keys()))
-                    text = self._compile_fork_text_dict(list(best_odds_bets.values()), bet_amounts, profit)
-                    fork_bets[match_title][fork_bet_title] = text
+                if not 0 < profit < self._PROFIT_THRESHOLD:
+                    match.bets.remove(bet_group)
+                else:
+                    bet_group.title += '(*Profit - ' + str('{:.2f}'.format(profit * 100)) + '%*)'
+                    bet_amounts = self._get_fork_bet_amounts(odds)
+                    for bet in bet_group:
+                        bet.odds += bet_amounts[bet.odds]
 
-        return fork_bets
+            if not match.bets:
+                fork_bets_sport.matches.remove(match)
+
+        return fork_bets_sport
 
     @staticmethod
     def _compile_fork_bet_title(bet_titles):
@@ -108,15 +100,16 @@ class ForkBetsAnalyzer(Analyzer):
     def _get_fork_bet_amounts(odds):
         reciprocals = [1 / float(o) for o in odds]
         reciprocals_sum = sum(reciprocals)
-        bet_amounts = {o: 'Bet amount: ' + str('{:.4f}'.format(1 / float(o) / reciprocals_sum)) for o in odds}
+        bet_amounts = {o: '. Bet amount: ' + str('{:.4f}'.format(1 / float(o) / reciprocals_sum)) for o in odds}
         return bet_amounts
 
 
 if __name__ == '__main__':
     analyzer = ForkBetsAnalyzer('csgo')
-    b = analyzer.get_fork_bets()
-    pprint(b)
+    csgo_forks = analyzer.get_fork_bets_sport()
+    print(csgo_forks)
+
     my_path = os.path.abspath(os.path.dirname(__file__))
     path = my_path + '\\sample_data\\forks.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets = ', pformat(b), file=f)
+        print(csgo_forks, file=f)

@@ -1,296 +1,320 @@
-sport = {
-    'csgo': {
-        'avez - nexus gaming(favorit - https://www.favorit.com.ua/en/bets/#event=27098920&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '5.80',
-            'Correct Score Full Time 1:2': '4.80',
-            'Correct Score Full Time 2:0': '2.36',
-            'Correct Score Full Time 2:1': '3.00',
-            'Handicap rounds Game 1 AVEZ (-2.5)': '1.73',
-            'Handicap rounds Game 1 Nexus Gaming (+2.5)': '2.03',
-            'Handicap winner Full Time AVEZ (-1.5)': '2.50',
-            'Handicap winner Full Time Nexus Gaming (+1.5)': '1.50',
-            'Match winner Full Time AVEZ': '1.40',
-            'Match winner Full Time Nexus Gaming': '2.80',
-            'Odd / Even Game 1 Even': '1.71',
-            'Odd / Even Game 1 Odd': '2.06',
-            'Over/Under Games Full Time Over (2.5)': '1.98',
-            'Over/Under Games Full Time Under (2.5)': '1.77',
-            'Total rounds Game 1 Over (26.5)': '1.86',
-            'Total rounds Game 1 Under (26.5)': '1.88',
-            'Winner Game 1 AVEZ': '1.51',
-            'Winner Game 1 Nexus Gaming': '2.46'
-            },
-        'ex-smash esports - sg.pro(favorit - https://www.favorit.com.ua/en/bets/#event=27098973&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '6.80',
-            'Correct Score Full Time 1:2': '5.00',
-            'Correct Score Full Time 2:0': '2.11',
-            'Correct Score Full Time 2:1': '3.20',
-            'Handicap rounds Game 1 SG.pro (+3.5)': '1.85',
-            'Handicap rounds Game 1 ex-SMASH Esports (-3.5)': '1.89',
-            'Handicap winner Full Time SG.pro (+1.5)': '1.68',
-            'Handicap winner Full Time ex-SMASH Esports (-1.5)': '2.11',
-            'Match winner Full Time SG.pro': '3.15',
-            'Match winner Full Time ex-SMASH Esports': '1.32',
-            'Odd / Even Game 1 Even': '1.71',
-            'Odd / Even Game 1 Odd': '2.06',
-            'Over/Under Games Full Time Over (2.5)': '2.16',
-            'Over/Under Games Full Time Under (2.5)': '1.65',
-            'Total rounds Game 1 Over (26.5)': '1.90',
-            'Total rounds Game 1 Under (26.5)': '1.84',
-            'Winner Game 1 SG.pro': '2.74',
-            'Winner Game 1 ex-SMASH Esports': '1.42'
-            },
-        'exploit esports - cool gaming(favorit - https://www.favorit.com.ua/en/bets/#event=27119829&tours=1727483,2408290,2458146,2472408)': {
-            'Handicap rounds Game 1 cooL Gaming (+5.5)': '1.79',
-            'Handicap rounds Game 1 eXploit Esports (-5.5)': '1.96',
-            'Match winner Full Time cooL Gaming': '3.70',
-            'Match winner Full Time eXploit Esports': '1.25',
-            'Odd / Even Game 1 Even': '1.82',
-            'Odd / Even Game 1 Odd': '1.93',
-            'Total rounds Game 1 Over (25.5)': '1.83',
-            'Total rounds Game 1 Under (25.5)': '1.91'
-            },
-        'honoris - wizards esports club(favorit - https://www.favorit.com.ua/en/bets/#event=27098999&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '5.10',
-            'Correct Score Full Time 1:2': '4.20',
-            'Correct Score Full Time 2:0': '2.50',
-            'Correct Score Full Time 2:1': '3.10',
-            'Handicap rounds Game 1 HONORIS (-2.5)': '1.82',
-            'Handicap rounds Game 1 Wizards Esports Club (+2.5)': '1.93',
-            'Handicap winner Full Time HONORIS (-1.5)': '2.50',
-            'Handicap winner Full Time Wizards Esports Club (+1.5)': '1.49',
-            'Match winner Full Time HONORIS': '1.49',
-            'Match winner Full Time Wizards Esports Club': '2.52',
-            'Odd / Even Game 1 Even': '1.71',
-            'Odd / Even Game 1 Odd': '2.06',
-            'Over/Under Games Full Time Over (2.5)': '2.16',
-            'Over/Under Games Full Time Under (2.5)': '1.65',
-            'Total rounds Game 1 Over (26.5)': '1.88',
-            'Total rounds Game 1 Under (26.5)': '1.86',
-            'Winner Game 1 HONORIS': '1.57',
-            'Winner Game 1 Wizards Esports Club': '2.31'
-            },
-        'illuminar gaming - wisla krakow(favorit - https://www.favorit.com.ua/en/bets/#event=27098986&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '5.50',
-            'Correct Score Full Time 1:2': '4.40',
-            'Correct Score Full Time 2:0': '2.33',
-            'Correct Score Full Time 2:1': '3.15',
-            'Handicap rounds Game 1 Illuminar Gaming (-2.5)': '1.76',
-            'Handicap rounds Game 1 Wisla Krakow (+2.5)': '2.00',
-            'Handicap winner Full Time Illuminar Gaming (-1.5)': '2.33',
-            'Handicap winner Full Time Wisla Krakow (+1.5)': '1.56',
-            'Match winner Full Time Illuminar Gaming': '1.44',
-            'Match winner Full Time Wisla Krakow': '2.65',
-            'Odd / Even Game 1 Even': '1.71',
-            'Odd / Even Game 1 Odd': '2.06',
-            'Over/Under Games Full Time Over (2.5)': '2.16',
-            'Over/Under Games Full Time Under (2.5)': '1.65',
-            'Total rounds Game 1 Over (26.5)': '1.87',
-            'Total rounds Game 1 Under (26.5)': '1.87',
-            'Winner Game 1 Illuminar Gaming': '1.53',
-            'Winner Game 1 Wisla Krakow': '2.41'
-            },
-        'ldlc - cr4zy(favorit - https://www.favorit.com.ua/en/bets/#event=27098976&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '3.55',
-            'Correct Score Full Time 1:2': '3.50',
-            'Correct Score Full Time 2:0': '3.30',
-            'Correct Score Full Time 2:1': '3.50',
-            'Handicap rounds Game 1 CR4ZY (+2.5)': '1.61',
-            'Handicap rounds Game 1 LDLC (-2.5)': '2.22',
-            'Handicap winner Full Time CR4ZY (+1.5)': '1.30',
-            'Handicap winner Full Time LDLC (-1.5)': '3.30',
-            'Match winner Full Time CR4ZY': '1.88',
-            'Match winner Full Time LDLC': '1.86',
-            'Odd / Even Game 1 Even': '1.79',
-            'Odd / Even Game 1 Odd': '1.96',
-            'Over/Under Games Full Time Over (2.5)': '2.08',
-            'Over/Under Games Full Time Under (2.5)': '1.70',
-            'Total rounds Game 1 Over (26.5)': '1.79',
-            'Total rounds Game 1 Under (26.5)': '1.96',
-            'Winner Game 1 CR4ZY': '1.88',
-            'Winner Game 1 LDLC': '1.86'
-            },
-        'ldlc - lilmix(favorit - https://www.favorit.com.ua/en/bets/#event=27098567&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '6.70',
-            'Correct Score Full Time 1:2': '5.00',
-            'Correct Score Full Time 2:0': '2.14',
-            'Correct Score Full Time 2:1': '3.20',
-            'Handicap rounds Game 1 LDLC (-3.5)': '1.91',
-            'Handicap rounds Game 1 Lilmix (+3.5)': '1.83',
-            'Handicap winner Full Time LDLC (-1.5)': '2.14',
-            'Handicap winner Full Time Lilmix (+1.5)': '1.66',
-            'Match winner Full Time LDLC': '1.33',
-            'Match winner Full Time Lilmix': '3.10',
-            'Odd / Even Game 1 Even': '1.71',
-            'Odd / Even Game 1 Odd': '2.06',
-            'Over/Under Games Full Time Over (2.5)': '2.25',
-            'Over/Under Games Full Time Under (2.5)': '1.60',
-            'Total rounds Game 1 Over (26.5)': '1.87',
-            'Total rounds Game 1 Under (26.5)': '1.86',
-            'Winner Game 1 LDLC': '1.43',
-            'Winner Game 1 Lilmix': '2.70'
-            },
-        'mythic - ex-polar ace(favorit - https://www.favorit.com.ua/en/bets/#event=27107846&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '8.10',
-            'Correct Score Full Time 1:2': '6.00',
-            'Correct Score Full Time 2:0': '1.85',
-            'Correct Score Full Time 2:1': '3.20',
-            'Handicap rounds Game 1 Mythic (-4.5)': '2.01',
-            'Handicap rounds Game 1 ex-Polar Ace (+4.5)': '1.75',
-            'Handicap winner Full Time Mythic (-1.5)': '1.85',
-            'Handicap winner Full Time ex-Polar Ace (+1.5)': '1.90',
-            'Match winner Full Time Mythic': '1.24',
-            'Match winner Full Time ex-Polar Ace': '3.75',
-            'Odd / Even Game 1 Even': '1.71',
-            'Odd / Even Game 1 Odd': '2.06',
-            'Over/Under Games Full Time Over (2.5)': '2.45',
-            'Over/Under Games Full Time Under (2.5)': '1.52',
-            'Total rounds Game 1 Over (26.5)': '2.01',
-            'Total rounds Game 1 Under (26.5)': '1.74',
-            'Winner Game 1 Mythic': '1.35',
-            'Winner Game 1 ex-Polar Ace': '3.05'
-            },
-        'new england whalers - oceanus gaming(favorit - https://www.favorit.com.ua/en/bets/#event=27107871&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '5.80',
-            'Correct Score Full Time 1:2': '4.70',
-            'Correct Score Full Time 2:0': '2.20',
-            'Correct Score Full Time 2:1': '3.15',
-            'Handicap rounds Game 1 New England Whalers (-3.5)': '2.00',
-            'Handicap rounds Game 1 Oceanus Gaming (+3.5)': '1.75',
-            'Handicap winner Full Time New England Whalers (-1.5)': '2.20',
-            'Handicap winner Full Time Oceanus Gaming (+1.5)': '1.62',
-            'Match winner Full Time New England Whalers': '1.39',
-            'Match winner Full Time Oceanus Gaming': '2.84',
-            'Odd / Even Game 1 Even': '1.71',
-            'Odd / Even Game 1 Odd': '2.06',
-            'Over/Under Games Full Time Over (2.5)': '2.25',
-            'Over/Under Games Full Time Under (2.5)': '1.60',
-            'Total rounds Game 1 Over (26.5)': '1.92',
-            'Total rounds Game 1 Under (26.5)': '1.82',
-            'Winner Game 1 New England Whalers': '1.49',
-            'Winner Game 1 Oceanus Gaming': '2.49'
-            },
-        'nexus gaming - the dice(favorit - https://www.favorit.com.ua/en/bets/#event=27118872&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '5.90',
-            'Correct Score Full Time 1:2': '5.00',
-            'Correct Score Full Time 2:0': '2.10',
-            'Correct Score Full Time 2:1': '3.20',
-            'Handicap rounds Game 1 Nexus Gaming (-2.5)': '1.76',
-            'Handicap rounds Game 1 Nexus Gaming (-3.5)': '1.95',
-            'Handicap rounds Game 1 The Dice (+2.5)': '1.99',
-            'Handicap rounds Game 1 The Dice (+3.5)': '1.79',
-            'Handicap winner Full Time Nexus Gaming (-1.5)': '2.10',
-            'Handicap winner Full Time The Dice (+1.5)': '1.68',
-            'Match winner Full Time Nexus Gaming': '1.37',
-            'Match winner Full Time The Dice': '2.93',
-            'Odd / Even Game 1 Even': '1.71',
-            'Odd / Even Game 1 Odd': '2.06',
-            'Over/Under Games Full Time Over (2.5)': '2.25',
-            'Over/Under Games Full Time Under (2.5)': '1.60',
-            'Total rounds Game 1 Over (26.5)': '1.85',
-            'Total rounds Game 1 Under (26.5)': '1.89',
-            'Winner Game 1 Nexus Gaming': '1.53',
-            'Winner Game 1 The Dice': '2.41'
-            },
-        'sangal esports - tikitakan(favorit - https://www.favorit.com.ua/en/bets/#event=27098568&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '5.50',
-            'Correct Score Full Time 1:2': '4.80',
-            'Correct Score Full Time 2:0': '2.30',
-            'Correct Score Full Time 2:1': '3.00',
-            'Handicap rounds Game 1 Sangal Esports (-2.5)': '1.76',
-            'Handicap rounds Game 1 Tikitakan (+2.5)': '1.99',
-            'Handicap winner Full Time Sangal Esports (-1.5)': '2.30',
-            'Handicap winner Full Time Tikitakan (+1.5)': '1.57',
-            'Match winner Full Time Sangal Esports': '1.41',
-            'Match winner Full Time Tikitakan': '2.78',
-            'Odd / Even Game 1 Even': '1.71',
-            'Odd / Even Game 1 Odd': '2.06',
-            'Over/Under Games Full Time Over (2.5)': '2.21',
-            'Over/Under Games Full Time Under (2.5)': '1.62',
-            'Total rounds Game 1 Over (26.5)': '1.85',
-            'Total rounds Game 1 Under (26.5)': '1.89',
-            'Winner Game 1 Sangal Esports': '1.53',
-            'Winner Game 1 Tikitakan': '2.41'
-            },
-        'saw - team secret(favorit - https://www.favorit.com.ua/en/bets/#event=27124572&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '5.80',
-            'Correct Score Full Time 1:2': '4.40',
-            'Correct Score Full Time 2:0': '2.36',
-            'Correct Score Full Time 2:1': '3.20',
-            'Handicap rounds Game 1 Team Secret (+3.5)': '1.74',
-            'Handicap rounds Game 1 sAw (-3.5)': '2.02',
-            'Handicap winner Full Time Team Secret (+1.5)': '1.55',
-            'Handicap winner Full Time sAw (-1.5)': '2.36',
-            'Match winner Full Time Team Secret': '2.72',
-            'Match winner Full Time sAw': '1.42',
-            'Odd / Even Game 1 Even': '1.71',
-            'Odd / Even Game 1 Odd': '2.06',
-            'Over/Under Games Full Time Over (2.5)': '2.16',
-            'Over/Under Games Full Time Under (2.5)': '1.65',
-            'Total rounds Game 1 Over (26.5)': '1.92',
-            'Total rounds Game 1 Under (26.5)': '1.82',
-            'Winner Game 1 Team Secret': '2.46',
-            'Winner Game 1 sAw': '1.51'
-            },
-        'syman gaming - adaptation(favorit - https://www.favorit.com.ua/en/bets/#event=27098978&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '10.50',
-            'Correct Score Full Time 1:2': '9.00',
-            'Correct Score Full Time 2:0': '1.61',
-            'Correct Score Full Time 2:1': '3.20',
-            'Handicap rounds Game 1 Adaptation (+4.5)': '1.97',
-            'Handicap rounds Game 1 Syman Gaming (-4.5)': '1.78',
-            'Handicap winner Full Time Adaptation (+1.5)': '2.23',
-            'Handicap winner Full Time Syman Gaming (-1.5)': '1.61',
-            'Match winner Full Time Adaptation': '5.50',
-            'Match winner Full Time Syman Gaming': '1.12',
-            'Odd / Even Game 1 Even': '1.80',
-            'Odd / Even Game 1 Odd': '1.94',
-            'Over/Under Games Full Time Over (2.5)': '2.54',
-            'Over/Under Games Full Time Under (2.5)': '1.48',
-            'Total rounds Game 1 Over (25.5)': '1.75',
-            'Total rounds Game 1 Under (25.5)': '2.01',
-            'Winner Game 1 Adaptation': '3.70',
-            'Winner Game 1 Syman Gaming': '1.25'
-            },
-        'tricked - ambush(favorit - https://www.favorit.com.ua/en/bets/#event=27118877&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '3.80',
-            'Correct Score Full Time 1:2': '3.50',
-            'Correct Score Full Time 2:0': '3.15',
-            'Correct Score Full Time 2:1': '3.45',
-            'Handicap rounds Game 1 Ambush (+2.5)': '1.66',
-            'Handicap rounds Game 1 Tricked (-2.5)': '2.15',
-            'Handicap winner Full Time Ambush (+1.5)': '1.33',
-            'Handicap winner Full Time Tricked (-1.5)': '3.15',
-            'Match winner Full Time Ambush': '1.96',
-            'Match winner Full Time Tricked': '1.78',
-            'Odd / Even Game 1 Even': '1.79',
-            'Odd / Even Game 1 Odd': '1.96',
-            'Over/Under Games Full Time Over (2.5)': '2.16',
-            'Over/Under Games Full Time Under (2.5)': '1.65',
-            'Total rounds Game 1 Over (26.5)': '1.77',
-            'Total rounds Game 1 Under (26.5)': '1.98',
-            'Winner Game 1 Ambush': '1.94',
-            'Winner Game 1 Tricked': '1.80'
-            },
-        'winstrike - apeks(favorit - https://www.favorit.com.ua/en/bets/#event=27118870&tours=1727483,2408290,2458146,2472408)': {
-            'Correct Score Full Time 0:2': '4.45',
-            'Correct Score Full Time 1:2': '3.60',
-            'Correct Score Full Time 2:0': '2.89',
-            'Correct Score Full Time 2:1': '3.40',
-            'Handicap rounds Game 1 Apeks (+2.5)': '1.80',
-            'Handicap rounds Game 1 Winstrike (-2.5)': '1.95',
-            'Handicap winner Full Time Apeks (+1.5)': '1.38',
-            'Handicap winner Full Time Winstrike (-1.5)': '2.89',
-            'Match winner Full Time Apeks': '2.15',
-            'Match winner Full Time Winstrike': '1.65',
-            'Odd / Even Game 1 Even': '1.71',
-            'Odd / Even Game 1 Odd': '2.06',
-            'Over/Under Games Full Time Over (2.5)': '2.05',
-            'Over/Under Games Full Time Under (2.5)': '1.72',
-            'Total rounds Game 1 Over (26.5)': '1.82',
-            'Total rounds Game 1 Under (26.5)': '1.92',
-            'Winner Game 1 Apeks': '2.13',
-            'Winner Game 1 Winstrike': '1.67'
-            }
-        }
-    }
+sport = {'csgo': {'avez - cr4zy': {'Correct Score Full Time 0:2': '5.10(favorit - https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Correct Score Full Time 1:2': '4.30(favorit - https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Correct Score Full Time 2:0': '2.59(favorit - https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Correct Score Full Time 2:1': '3.10(favorit - https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Handicap rounds Game 1 AVEZ (-2.5)': '1.77(favorit - '
+                                                                 'https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Handicap rounds Game 1 CR4ZY (+2.5)': '1.99(favorit - '
+                                                                  'https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Handicap winner Full Time AVEZ (-1.5)': '2.65(favorit - '
+                                                                    'https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Handicap winner Full Time CR4ZY (+1.5)': '1.45(favorit - '
+                                                                     'https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Match winner Full Time AVEZ': '1.49(favorit - https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Match winner Full Time CR4ZY': '2.52(favorit - https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Odd / Even Game 1 Even': '1.71(favorit - https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Odd / Even Game 1 Odd': '2.06(favorit - https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Over/Under Games Full Time Over (2.5)': '1.94(favorit - '
+                                                                    'https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Over/Under Games Full Time Under (2.5)': '1.80(favorit - '
+                                                                     'https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Total rounds Game 1 Over (26.5)': '1.91(favorit - '
+                                                              'https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Total rounds Game 1 Under (26.5)': '1.83(favorit - '
+                                                               'https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Winner Game 1 AVEZ': '1.54(favorit - https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Winner Game 1 CR4ZY': '2.38(favorit - https://www.favorit.com.ua/en/bets/#event=27150815&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'bantz - mako': {'Match winner Full Time Bantz': '1.53(favorit - https://www.favorit.com.ua/en/bets/#event=27159240&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                           'Match winner Full Time Mako': '2.40(favorit - https://www.favorit.com.ua/en/bets/#event=27159240&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'chaos esports club - yeah gaming': {'Correct Score Full Time 0:2': '10.50(favorit - '
+                                                                              'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Correct Score Full Time 1:2': '7.50(favorit - '
+                                                                              'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Correct Score Full Time 2:0': '1.65(favorit - '
+                                                                              'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Correct Score Full Time 2:1': '3.50(favorit - '
+                                                                              'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Handicap rounds Game 1 Chaos Esports Club (-4.5)': '1.78(favorit - '
+                                                                                                   'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Handicap rounds Game 1 Yeah Gaming (+4.5)': '1.97(favorit - '
+                                                                                            'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Handicap winner Full Time Chaos Esports Club (-1.5)': '1.65(favorit - '
+                                                                                                      'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Handicap winner Full Time Yeah Gaming (+1.5)': '2.16(favorit - '
+                                                                                               'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Match winner Full Time Chaos Esports Club': '1.15(favorit - '
+                                                                                            'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Match winner Full Time Yeah Gaming': '4.95(favorit - '
+                                                                                     'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Odd / Even Game 1 Even': '1.80(favorit - '
+                                                                         'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Odd / Even Game 1 Odd': '1.94(favorit - '
+                                                                        'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Over/Under Games Full Time Over (2.5)': '2.60(favorit - '
+                                                                                        'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Over/Under Games Full Time Under (2.5)': '1.46(favorit - '
+                                                                                         'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Total rounds Game 1 Over (25.5)': '1.75(favorit - '
+                                                                                  'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Total rounds Game 1 Under (25.5)': '2.01(favorit - '
+                                                                                   'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Winner Game 1 Chaos Esports Club': '1.25(favorit - '
+                                                                                   'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Winner Game 1 Yeah Gaming': '3.70(favorit - '
+                                                                            'https://www.favorit.com.ua/en/bets/#event=27156869&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'for the win esports - esport rhein-neckar': {'Match winner Full Time For The Win eSports': '1.61(favorit - '
+                                                                                                      'https://www.favorit.com.ua/en/bets/#event=27145904&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                                        'Match winner Full Time eSport Rhein-Neckar': '2.23(favorit - '
+                                                                                                      'https://www.favorit.com.ua/en/bets/#event=27145904&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'invictus gaming - bren esports': {'Match winner Full Time Bren Esports': '2.65(favorit - '
+                                                                                    'https://www.favorit.com.ua/en/bets/#event=27150824&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                             'Match winner Full Time Invictus Gaming': '1.44(favorit - '
+                                                                                       'https://www.favorit.com.ua/en/bets/#event=27150824&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'kinship - imperium esports': {'Correct Score Full Time 0:2': '7.40(favorit - '
+                                                                        'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Correct Score Full Time 1:2': '6.00(favorit - '
+                                                                        'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Correct Score Full Time 2:0': '1.98(favorit - '
+                                                                        'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Correct Score Full Time 2:1': '3.00(favorit - '
+                                                                        'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Handicap rounds Game 1 ImPerium Esports (+3.5)': '1.94(favorit - '
+                                                                                           'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Handicap rounds Game 1 Kinship (-3.5)': '1.81(favorit - '
+                                                                                  'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Handicap winner Full Time ImPerium Esports (+1.5)': '1.77(favorit - '
+                                                                                              'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Handicap winner Full Time Kinship (-1.5)': '1.98(favorit - '
+                                                                                     'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Match winner Full Time ImPerium Esports': '3.60(favorit - '
+                                                                                    'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Match winner Full Time Kinship': '1.26(favorit - '
+                                                                           'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Odd / Even Game 1 Even': '1.71(favorit - '
+                                                                   'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Odd / Even Game 1 Odd': '2.06(favorit - '
+                                                                  'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Over/Under Games Full Time Over (2.5)': '2.35(favorit - '
+                                                                                  'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Over/Under Games Full Time Under (2.5)': '1.55(favorit - '
+                                                                                   'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Total rounds Game 1 Over (26.5)': '1.98(favorit - '
+                                                                            'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Total rounds Game 1 Under (26.5)': '1.77(favorit - '
+                                                                             'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Winner Game 1 ImPerium Esports': '2.87(favorit - '
+                                                                           'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                         'Winner Game 1 Kinship': '1.39(favorit - '
+                                                                  'https://www.favorit.com.ua/en/bets/#event=27163327&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'rbg esports - lethal divide': {'Correct Score Full Time 0:2': '8.70(favorit - '
+                                                                         'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Correct Score Full Time 1:2': '6.50(favorit - '
+                                                                         'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Correct Score Full Time 2:0': '1.80(favorit - '
+                                                                         'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Correct Score Full Time 2:1': '3.20(favorit - '
+                                                                         'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Handicap rounds Game 1 Lethal Divide (+4.5)': '1.79(favorit - '
+                                                                                         'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Handicap rounds Game 1 RBG Esports (-4.5)': '1.96(favorit - '
+                                                                                       'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Handicap winner Full Time Lethal Divide (+1.5)': '1.95(favorit - '
+                                                                                            'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Handicap winner Full Time RBG Esports (-1.5)': '1.80(favorit - '
+                                                                                          'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Match winner Full Time Lethal Divide': '4.05(favorit - '
+                                                                                  'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Match winner Full Time RBG Esports': '1.21(favorit - '
+                                                                                'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Odd / Even Game 1 Even': '1.71(favorit - '
+                                                                    'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Odd / Even Game 1 Odd': '2.06(favorit - '
+                                                                   'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Over/Under Games Full Time Over (2.5)': '2.50(favorit - '
+                                                                                   'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Over/Under Games Full Time Under (2.5)': '1.50(favorit - '
+                                                                                    'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Total rounds Game 1 Over (25.5)': '1.75(favorit - '
+                                                                             'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Total rounds Game 1 Under (25.5)': '2.01(favorit - '
+                                                                              'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Winner Game 1 Lethal Divide': '3.15(favorit - '
+                                                                         'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                          'Winner Game 1 RBG Esports': '1.33(favorit - '
+                                                                       'https://www.favorit.com.ua/en/bets/#event=27163320&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'reckoning esports - team wolf': {'Match winner Full Time Reckoning Esports': '1.25(favorit - '
+                                                                                        'https://www.favorit.com.ua/en/bets/#event=27141060&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                            'Match winner Full Time Team WOLF': '3.70(favorit - '
+                                                                                'https://www.favorit.com.ua/en/bets/#event=27141060&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'saw - team secret': {'Correct Score Full Time 0:2': '5.80(favorit - '
+                                                               'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Correct Score Full Time 1:2': '4.40(favorit - '
+                                                               'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Correct Score Full Time 2:0': '2.36(favorit - '
+                                                               'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Correct Score Full Time 2:1': '3.20(favorit - '
+                                                               'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Handicap rounds Game 1 Team Secret (+3.5)': '1.74(favorit - '
+                                                                             'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Handicap rounds Game 1 sAw (-3.5)': '2.02(favorit - '
+                                                                     'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Handicap winner Full Time Team Secret (+1.5)': '1.55(favorit - '
+                                                                                'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Handicap winner Full Time sAw (-1.5)': '2.36(favorit - '
+                                                                        'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Match winner Full Time Team Secret': '2.72(favorit - '
+                                                                      'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Match winner Full Time sAw': '1.42(favorit - '
+                                                              'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Odd / Even Game 1 Even': '1.71(favorit - https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Odd / Even Game 1 Odd': '2.06(favorit - https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Over/Under Games Full Time Over (2.5)': '2.16(favorit - '
+                                                                         'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Over/Under Games Full Time Under (2.5)': '1.65(favorit - '
+                                                                          'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Total rounds Game 1 Over (26.5)': '1.92(favorit - '
+                                                                   'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Total rounds Game 1 Under (26.5)': '1.82(favorit - '
+                                                                    'https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Winner Game 1 Team Secret': '2.46(favorit - https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                'Winner Game 1 sAw': '1.51(favorit - https://www.favorit.com.ua/en/bets/#event=27124572&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'team hyper - addice inc': {'Correct Score Full Time 0:2': '6.00(favorit - '
+                                                                     'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Correct Score Full Time 1:2': '4.90(favorit - '
+                                                                     'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Correct Score Full Time 2:0': '2.30(favorit - '
+                                                                     'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Correct Score Full Time 2:1': '3.00(favorit - '
+                                                                     'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Handicap rounds Game 1 Addice Inc (+3.5)': '1.77(favorit - '
+                                                                                  'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Handicap rounds Game 1 Team Hyper (-3.5)': '1.98(favorit - '
+                                                                                  'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Handicap winner Full Time Addice Inc (+1.5)': '1.57(favorit - '
+                                                                                     'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Handicap winner Full Time Team Hyper (-1.5)': '2.30(favorit - '
+                                                                                     'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Match winner Full Time Addice Inc': '2.93(favorit - '
+                                                                           'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Match winner Full Time Team Hyper': '1.37(favorit - '
+                                                                           'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Odd / Even Game 1 Even': '1.71(favorit - '
+                                                                'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Odd / Even Game 1 Odd': '2.06(favorit - '
+                                                               'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Over/Under Games Full Time Over (2.5)': '2.23(favorit - '
+                                                                               'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Over/Under Games Full Time Under (2.5)': '1.61(favorit - '
+                                                                                'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Total rounds Game 1 Over (26.5)': '1.93(favorit - '
+                                                                         'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Total rounds Game 1 Under (26.5)': '1.82(favorit - '
+                                                                          'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Winner Game 1 Addice Inc': '2.52(favorit - '
+                                                                  'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                      'Winner Game 1 Team Hyper': '1.49(favorit - '
+                                                                  'https://www.favorit.com.ua/en/bets/#event=27163326&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'thunder logic - third impact': {'Correct Score Full Time 0:2': '9.50(favorit - '
+                                                                          'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Correct Score Full Time 1:2': '7.00(favorit - '
+                                                                          'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Correct Score Full Time 2:0': '1.70(favorit - '
+                                                                          'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Correct Score Full Time 2:1': '3.20(favorit - '
+                                                                          'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Handicap rounds Game 1 Third Impact (+4.5)': '1.86(favorit - '
+                                                                                         'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Handicap rounds Game 1 Thunder Logic (-4.5)': '1.88(favorit - '
+                                                                                          'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Handicap winner Full Time Third Impact (+1.5)': '2.08(favorit - '
+                                                                                            'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Handicap winner Full Time Thunder Logic (-1.5)': '1.70(favorit - '
+                                                                                             'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Match winner Full Time Third Impact': '4.50(favorit - '
+                                                                                  'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Match winner Full Time Thunder Logic': '1.18(favorit - '
+                                                                                   'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Odd / Even Game 1 Even': '1.79(favorit - '
+                                                                     'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Odd / Even Game 1 Odd': '1.95(favorit - '
+                                                                    'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Over/Under Games Full Time Over (2.5)': '2.60(favorit - '
+                                                                                    'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Over/Under Games Full Time Under (2.5)': '1.46(favorit - '
+                                                                                     'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Total rounds Game 1 Over (26.5)': '2.06(favorit - '
+                                                                              'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Total rounds Game 1 Under (26.5)': '1.68(favorit - '
+                                                                               'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Winner Game 1 Third Impact': '3.35(favorit - '
+                                                                         'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                           'Winner Game 1 Thunder Logic': '1.29(favorit - '
+                                                                          'https://www.favorit.com.ua/en/bets/#event=27163318&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'tricked - ambush': {'Correct Score Full Time 0:2': '4.30(favorit - '
+                                                              'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Correct Score Full Time 1:2': '3.80(favorit - '
+                                                              'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Correct Score Full Time 2:0': '2.98(favorit - '
+                                                              'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Correct Score Full Time 2:1': '3.30(favorit - '
+                                                              'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Handicap rounds Game 1 Ambush (+2.5)': '1.75(favorit - '
+                                                                       'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Handicap rounds Game 1 Tricked (-2.5)': '2.00(favorit - '
+                                                                        'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Handicap winner Full Time Ambush (+1.5)': '1.36(favorit - '
+                                                                          'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Handicap winner Full Time Tricked (-1.5)': '2.98(favorit - '
+                                                                           'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Match winner Full Time Ambush': '2.17(favorit - '
+                                                                'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Match winner Full Time Tricked': '1.64(favorit - '
+                                                                 'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Odd / Even Game 1 Even': '1.71(favorit - https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Odd / Even Game 1 Odd': '2.06(favorit - https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Over/Under Games Full Time Over (2.5)': '1.99(favorit - '
+                                                                        'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Over/Under Games Full Time Under (2.5)': '1.76(favorit - '
+                                                                         'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Total rounds Game 1 Over (26.5)': '1.78(favorit - '
+                                                                  'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Total rounds Game 1 Under (26.5)': '1.97(favorit - '
+                                                                   'https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Winner Game 1 Ambush': '2.09(favorit - https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                               'Winner Game 1 Tricked': '1.69(favorit - https://www.favorit.com.ua/en/bets/#event=27118877&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'triumph - team one': {'Correct Score Full Time 0:2': '6.70(favorit - '
+                                                                'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Correct Score Full Time 1:2': '4.80(favorit - '
+                                                                'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Correct Score Full Time 2:0': '2.11(favorit - '
+                                                                'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Correct Score Full Time 2:1': '3.20(favorit - '
+                                                                'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Handicap rounds Game 1 Team One (+3.5)': '1.86(favorit - '
+                                                                           'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Handicap rounds Game 1 Triumph (-3.5)': '1.88(favorit - '
+                                                                          'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Handicap winner Full Time Team One (+1.5)': '1.68(favorit - '
+                                                                              'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Handicap winner Full Time Triumph (-1.5)': '2.11(favorit - '
+                                                                             'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Match winner Full Time Team One': '3.30(favorit - '
+                                                                    'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Match winner Full Time Triumph': '1.30(favorit - '
+                                                                   'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Odd / Even Game 1 Even': '1.71(favorit - https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Odd / Even Game 1 Odd': '2.06(favorit - https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Over/Under Games Full Time Over (2.5)': '2.30(favorit - '
+                                                                          'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Over/Under Games Full Time Under (2.5)': '1.57(favorit - '
+                                                                           'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Total rounds Game 1 Over (26.5)': '1.95(favorit - '
+                                                                    'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Total rounds Game 1 Under (26.5)': '1.79(favorit - '
+                                                                     'https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Winner Game 1 Team One': '2.70(favorit - https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                 'Winner Game 1 Triumph': '1.43(favorit - https://www.favorit.com.ua/en/bets/#event=27156920&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'},
+          'truckers with attitude - skyfire': {'Match winner Full Time Skyfire': '2.55(favorit - '
+                                                                                 'https://www.favorit.com.ua/en/bets/#event=27159244&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)',
+                                               'Match winner Full Time TRUCKERS WITH ATTITUDE': '1.47(favorit - '
+                                                                                                'https://www.favorit.com.ua/en/bets/#event=27159244&tours=1284478,1636941,1727483,1728399,2408290,2452749,2458146,2472408)'}}}

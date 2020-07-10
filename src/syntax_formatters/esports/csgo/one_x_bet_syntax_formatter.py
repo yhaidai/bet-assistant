@@ -1,9 +1,8 @@
-from pprint import pprint, pformat
 import os.path
 import re
 
 from Sport import Sport
-from csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
 from esports.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
 from match_title_compiler import MatchTitleCompiler
 from sample_data.csgo import one_x_bet
