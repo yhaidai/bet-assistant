@@ -1,10 +1,7 @@
-from pprint import pprint, pformat
-import os.path
 import re
 
-from esports.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
-from sample_data.csgo import one_x_bet
 
 
 class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
@@ -58,20 +55,6 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
 
             formatted_title = formatted_title[:index] + ending + formatted_title[index:].replace('.', ':', 1)
             formatted_title = formatted_title.replace('total. ', '', 1)
-
-        return formatted_title
-
-    def _format_total(self):
-        formatted_title = self.bet_title.lower()
-        if 'total' in formatted_title:
-            formatted_title = formatted_title.replace('total maps. ', '', 1)
-            formatted_title = formatted_title.replace('total maps handicap. ', '', 1)
-            formatted_title = formatted_title.replace('total maps even/odd. ', '', 1)
-            if ' - even' in formatted_title or ' - odd' in formatted_title:
-                formatted_title = formatted_title.replace('-', '—', 1)
-
-            # formatted_title = formatted_title.replace('Total Maps Even/Odd. ', '', 1)
-            formatted_title = formatted_title.replace('maps ', '', 1)
 
         return formatted_title
 

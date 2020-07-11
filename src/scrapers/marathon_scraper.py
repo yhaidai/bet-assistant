@@ -1,127 +1,160 @@
 from pprint import pprint, pformat
 import os.path
+
+from Bet import Bet
+from Match import Match
+from Sport import Sport
 from abstract_scraper import AbstractScraper
 import time
-
-from constants import sport_type
+import re
+from constants import sport_name, marathon_skip_titles as skip
+from match_title_compiler import MatchTitleCompiler
 from src.renderer.page import Page
-from selenium.webdriver.common.keys import Keys
 
 
-#  NAMING: match_title, bet_title, odds
 class MarathonScraper(AbstractScraper):
+    _NAME = 'marathon'
     _BASE_URL = 'https://www.marathonbet.com/en/'
-
+    _ICONS = {
+        'football': 'icon-sport-football',
+        'csgo': 'icon-sport-e-sports',
+        'dota': 'icon-sport-e-sports'
+        }
     _MENU = {
+        'football': None,
         'csgo': 'CS:GO.',
         'dota': 'Dota 2.'
-    }
+        }
 
-    def get_bets(self, sport_type):
+    def get_sport_bets(self, sport_name):
         """
         Scrapes betting data for a given sport type
 
-        :param sport_type: sport type to scrape betting data for
-        :type sport_type: str
+        :param sport_name: sport type to scrape betting data for
+        :type sport_name: str
         """
-        bets = {}
-        matches = self.get_matches(sport_type)
-        for match in matches:
-            match_bets = MarathonScraper._get_bets(match)
-            for match_title in match_bets:
-                url = match.find_element_by_class_name('member-link').get_attribute('href')
-                match_bets[match_title][self.match_url_key] = url
-            bets.update(match_bets)
-            # time.sleep(0.1)
-        return bets
+        sport_bets = []
+        tournaments = self.get_tournaments(sport_name)
+        # tournaments = [tournaments[0]]
+        for tournament in tournaments:
+            collapse_button = tournament.find_element_by_class_name('collapse-button')
+            Page.click(collapse_button)
+            time.sleep(0.2)
+
+            _tournaments = Page.driver.find_elements_by_class_name('category-container')
+            for tour in _tournaments:
+                if 'collapsed' not in tour.get_attribute('class'):
+                    tournament = tour
+
+            matches = tournament.find_element_by_class_name('category-content').find_elements_by_class_name('bg')
+
+            for match in matches:
+                match_bets = MarathonScraper._get_bets(match, tournament)
+                if match_bets:
+                    sport_bets.append(match_bets)
+                # break
+            collapse_button = tournament.find_element_by_class_name('collapse-button')
+            Page.click(collapse_button)
+            time.sleep(0.2)
+
+        sport = Sport(sport_name, sport_bets)
+        return sport
 
     @staticmethod
-    def get_matches(sport_type):
+    def get_tournaments(sport_name):
         """
         Scrape match elements for a given sport type
         """
         page = Page(MarathonScraper._BASE_URL)
 
-        matches = []
-
-        icon = page.driver.find_element_by_class_name('icon-sport-e-sports')
-        page.driver.execute_script("arguments[0].click();", icon)
+        icon = page.driver.find_element_by_class_name(MarathonScraper._ICONS[sport_name])
+        page.click(icon)
         time.sleep(0.2)
-        tournaments = page.driver.find_elements_by_class_name('category-container')
-        for tournament in tournaments:
-            _sport_type = tournament.find_element_by_class_name('nowrap')
-            if _sport_type.get_attribute('innerHTML') == MarathonScraper._MENU[sport_type]:
-                matches += tournament.find_elements_by_class_name('bg')
+        categories_icon = Page.driver.find_element_by_class_name('collapse-all-categories-checkbox')
+        categories_icon = categories_icon.find_element_by_tag_name('input')
+        page.click(categories_icon)
+        time.sleep(0.5)
+        all_tournaments = Page.driver.find_elements_by_class_name('category-container')
 
-        return matches
+        tournaments = []
+
+        if MarathonScraper._MENU[sport_name]:
+            print(MarathonScraper._MENU[sport_name])
+            for tournament in all_tournaments:
+                _sport_name = tournament.find_element_by_class_name('nowrap')
+                if _sport_name.text == MarathonScraper._MENU[sport_name]:
+                    tournaments.append(tournament)
+        else:
+            tournaments = all_tournaments
+
+        return tournaments
 
     @staticmethod
-    def _get_bets(match):
-        """
-        Scraps data such as match titles, bet titles and odds from the given match url
-
-        :param match: any match on the website
-        :type match: match AHAHAHAHAHAHAHAH
-        :return: bets dictionary in the following form:
-        bets[match_title][bet_title] = odds
-        :rtype: dict
-        """
-
-        bets = {}
-        teams = match.find_elements_by_tag_name('span')
-        team1 = teams[0].get_attribute('innerHTML').lower()
-        team2 = teams[1].get_attribute('innerHTML').lower()
-        match_title = team1 + ' - ' + team2
+    def _get_bets(match, tournament):
+        bets = []
+        url = match.find_element_by_class_name('member-link').get_attribute('href')
+        teams = [el.get_attribute('innerHTML') for el in match.find_elements_by_tag_name('span') if
+                 el.get_attribute('data-member-link')]
+        match_title = MatchTitleCompiler.compile_match_title(*teams)
         if not match_title:
-            return bets
-        bets[match_title] = {}
+            return None
+
         main_odds = match.find_elements_by_class_name('selection-link')
-        bets[match_title][team1 + ' will win'] = main_odds[0].get_attribute('innerHTML')
-        bets[match_title][team2 + ' will win'] = main_odds[1].get_attribute('innerHTML')
-        url = Page.driver.current_url
-        # xpaths = []
+        bets += [Bet(
+            teams[i] + ' will win',
+            main_odds[i].get_attribute('innerHTML'),
+            MarathonScraper._NAME,
+            url
+            ) for i in range(len(teams))]
+
         try:
             match_button = match.find_element_by_class_name('event-more-view')
-            Page.driver.execute_script("arguments[0].click();", match_button)
+            Page.click(match_button)
             time.sleep(0.5)
         except Exception:
             print('no more-view button', match_title)
-            return bets
+            return None
 
         shortcuts = match.find_element_by_class_name('details-description')
         all_markets_button = shortcuts.find_element_by_tag_name('td')
-        Page.driver.execute_script("arguments[0].click();", all_markets_button)
+        Page.click(all_markets_button)
         time.sleep(0.5)
-        marketBlocks = Page.driver.find_elements_by_class_name('market-inline-block-table-wrapper')
-        for mb in marketBlocks:
-            block_title = mb.find_element_by_class_name('name-field').get_attribute('innerHTML')
+        market_blocks = tournament.find_elements_by_class_name('market-inline-block-table-wrapper')
+        for mb in market_blocks:
+            try:
+                block_title = mb.find_element_by_class_name('name-field').text
+            except Exception:
+                continue
+
+            b = True
+            for s in skip:
+                if s in block_title:
+                    b = False
+                    break
+            if not b:
+                # print(block_title)
+                continue
+
             table = mb.find_element_by_class_name('td-border')
             results_left = mb.find_elements_by_class_name('result-left')
             another_results_left = table.find_elements_by_class_name('text-align-left')
             if results_left:
                 odds = table.find_elements_by_class_name('result-right')
                 for i in range(len(results_left)):
-                    result_left = results_left[i].get_attribute('innerHTML')
-                    odd = odds[i].find_element_by_tag_name('span').get_attribute('innerHTML')
+                    result_left = results_left[i].text
+                    o = odds[i].find_element_by_tag_name('span').text
                     bet_title = block_title + ' ' + result_left
-                    bets[match_title][bet_title] = odd
-
 
             elif another_results_left:
-                teams = table.find_elements_by_class_name('width40')
-                team1 = teams[0].find_element_by_tag_name('div').get_attribute('innerHTML')
-                team2 = teams[1].find_element_by_tag_name('div').get_attribute('innerHTML')
-                team = [team1, team2]
-                # print(team)
+                tags = [el.text for el in table.find_elements_by_tag_name('th')[1:]]
                 rows = table.find_elements_by_tag_name('tr')
                 rows = rows[1:]
                 for row in rows:
                     odds = row.find_elements_by_class_name('selection-link')
                     for i in range(len(odds)):
-                        bet_type = row.find_element_by_class_name('text-align-left').get_attribute('innerHTML')
-                        odd = odds[i].get_attribute('innerHTML')
-                        bet_title = block_title + ' ' + team[i] + ' ' + bet_type
-                        bets[match_title][bet_title] = odd
+                        bet_type = row.find_element_by_class_name('text-align-left').text
+                        o = odds[i].text
+                        bet_title = block_title + ' ' + bet_type + ' ' + tags[i]
 
             else:
                 rows = table.find_elements_by_tag_name('tr')
@@ -133,48 +166,41 @@ class MarathonScraper(AbstractScraper):
                                 tags_raw[i] = tags_raw[i].find_element_by_tag_name('div')
                             except Exception as e:
                                 break
-                        tags = [tag_raw.get_attribute('innerHTML') for tag_raw in tags_raw]
+                        tags = [tag_raw.text for tag_raw in tags_raw]
                     else:
+                        cells = row.find_elements_by_class_name('height-column-with-price')
+                        empty_cells = []
+                        for cell in cells:
+                            if 'td-min-width' in cell.get_attribute('class'):
+                                empty_cells.append(cells.index(cell))
                         bet_types = row.find_elements_by_class_name('coeff-value')
                         odds = row.find_elements_by_class_name('selection-link')
                         for i in range(len(odds)):
-                            bet_type = ''
-                            if bet_types:
-                                bet_type = bet_types[i].get_attribute('innerHTML')
-                            odd = odds[i].get_attribute('innerHTML')
-                            bet_title = block_title + ' ' + tags[i] + ' ' + bet_type
-                            bets[match_title][bet_title] = odd
-        Page.driver.execute_script("arguments[0].click();", match_button)
+                            if i not in empty_cells:
+                                bet_type = ''
+                                if bet_types:
+                                    bet_type = bet_types[i].text
+                                o = odds[i].text
+                                bet_title = block_title + ' ' + bet_type + ' ' + tags[i]
+
+        bet = Bet(bet_title, o, MarathonScraper._NAME, url)
+        bets.append(bet)
+        match = Match(match_title, bets)
+
+
+        Page.click(match_button)
         time.sleep(0.2)
-        return bets
-
-    @staticmethod
-    def _get_match_title(match):
-        """
-        Scrapes match title from the current page
-
-        :return: match title found on the page or None if nothing was found
-        :rtype: str or None
-        """
-        try:
-            teams = match.find_elements_by_tag_name('span')
-            team1 = teams[0].get_attribute('innerHTML').lower()
-            team2 = teams[1].get_attribute('innerHTML').lower()
-            match_title = team1 + ' - ' + team2
-        except Exception as e:
-            print(e)
-            return None
-        return match_title
+        return match
 
 
 if __name__ == '__main__':
     t = time.time()
     scraper = MarathonScraper()
-    b = scraper.get_bets(sport_type)
+    b = scraper.get_sport_bets(sport_name)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_type + '\\marathon.py'
+    path = my_path + '\\sample_data\\' + sport_name + '\\marathon.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets =', pformat(b), file=f)
+        print('sport =', pformat(b), file=f)
     print(time.time() - t)

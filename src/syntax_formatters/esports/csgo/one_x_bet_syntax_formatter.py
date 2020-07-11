@@ -1,8 +1,8 @@
-from pprint import pprint, pformat
 import os.path
 import re
 
-from csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
+from Sport import Sport
+from syntax_formatters.esports.csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
 from esports.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
 from match_title_compiler import MatchTitleCompiler
 from sample_data.csgo import one_x_bet
@@ -38,10 +38,11 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
         if match:
             if match.group(4):
                 formatted_title = match.group(1) + match.group(3) + match.group(4)
-                formatted_title = formatted_title.replace(' -', ' —', 1)
+                # formatted_title = formatted_title.replace(' -', ' —', 1)
+                formatted_title = formatted_title.replace(' -', '', 1)
             else:
-                formatted_title = match.group(1) + match.group(3) + ' — yes'
-
+                # formatted_title = match.group(1) + match.group(3) + ' — yes'
+                formatted_title = match.group(1) + match.group(3) + ' yes'
         return formatted_title
 
     def _format_individual_total_rounds(self):
@@ -58,12 +59,46 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
 
         return formatted_title
 
+    def _format_total(self):
+        formatted_title = self.bet_title.lower()
+        if 'total' in formatted_title:
+            formatted_title = formatted_title.replace('total maps. ', '', 1)
+            formatted_title = formatted_title.replace('total maps handicap. ', '', 1)
+            formatted_title = formatted_title.replace('total maps even/odd. ', '', 1)
+            if ' - even' in formatted_title or ' - odd' in formatted_title:
+                formatted_title = formatted_title.replace('- ', '', 1)
+        return formatted_title
+
+    def _format_after(self, bets):
+        bets = self._update(bets, self._fix_total_maps)
+        bets = self._update(bets, self._fix_t_ct_and_total_rounds)
+        return bets
+
+    def _fix_total_maps(self):
+        formatted_title = self.bet_title.lower()
+        return formatted_title
+
+    def _fix_t_ct_and_total_rounds(self):
+        formatted_title = self.bet_title.lower()
+        match = re.search(r'(counter )?(terrorists)( -)', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace('counter ', 'c')
+            formatted_title = formatted_title.replace('terrorists', 't')
+            formatted_title = formatted_title.replace(' -', '')
+        match1 = re.search(r'map: .+? total', formatted_title)
+        match2 = re.search(r'map: total', formatted_title)
+        # не знаю как это в одно запихнуть ))))00))
+        if match1 or match2:
+            formatted_title = formatted_title.replace('total', 'total rounds')
+        return formatted_title
+
 
 if __name__ == '__main__':
     formatter = OneXBetSyntaxFormatter()
-    formatter.apply_unified_syntax_formatting(one_x_bet.bets)
-    pprint(formatter.bets)
+    sport = Sport.from_dict(one_x_bet.sport)
+    formatted_sport = formatter.apply_unified_syntax_formatting(sport)
+    print(formatted_sport)
     my_path = os.path.abspath(os.path.dirname(__file__))
     path = my_path + '\\sample_data\\one_x_bet.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('bets =', pformat(formatter.bets), file=f)
+        print('sport =', formatted_sport, file=f)

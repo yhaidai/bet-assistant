@@ -1,4 +1,4 @@
-from esports.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
 from match_title_compiler import MatchTitleCompiler
 
@@ -25,13 +25,6 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
 
         return result
 
-    def _format_total(self):
-        formatted_title = self.bet_title.lower()
-        if 'total' in formatted_title:
-            formatted_title = self._swap_substrings(formatted_title, '. ', 1, 2, ' ')
-
-        return formatted_title
-
     def _format_win(self):
         formatted_title = self.bet_title.lower()
         team_names = MatchTitleCompiler.decompile_match_title(self.match_title)
@@ -56,36 +49,8 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
 
         return formatted_title
 
-    def _format_handicap(self):
-        formatted_title = self.bet_title.lower()
-
-        if 'handicap' in formatted_title:
-            formatted_title = self._swap_substrings(formatted_title, '. ', 1, 2, '')
-            formatted_title = formatted_title.replace('handicap value', '', 1).replace('coefficient', '', 1)
-
-            if 'map:' in formatted_title:
-                # cut 'handicap ' out
-                formatted_title = formatted_title.replace('handicap ', '', 1)
-
-                # remove prefix
-                prefix = formatted_title[:formatted_title.find(':') + 2]
-                formatted_title = formatted_title.replace(prefix, '', 1)
-
-                # insert 'handicap '
-                formatted_title = prefix + 'handicap ' + formatted_title
-            else:
-                formatted_title += ' maps'
-
-        return formatted_title
-
     def _format_uncommon_chars(self):
         formatted_title = self.bet_title.lower()
         formatted_title = formatted_title.replace('–', '-')
 
         return formatted_title
-
-    def _format_maps(self):
-        return self.bet_title.lower()
-
-    def _format_correct_score(self):
-        return self.bet_title.lower()

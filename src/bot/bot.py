@@ -70,7 +70,7 @@ class BetAssistantBot(TeleBot):
             Handles /prematch_csgo_analytics command
             """
             analyzer = BestOddsAnalyzer('csgo')
-            best_odds_bets = analyzer.get_best_odds_bets()
+            best_odds_bets = analyzer.get_best_odds_bets_sport()
             json_strings = bets_to_json_strings(best_odds_bets)
             self.send_long_messages(message.chat.id, json_strings, message.message_id)
 
@@ -80,7 +80,7 @@ class BetAssistantBot(TeleBot):
             Handles /prematch_csgo_forks command
             """
             analyzer = ForkBetsAnalyzer('csgo')
-            fork_bets = analyzer.get_fork_bets()
+            fork_bets = analyzer.get_fork_bets_sport()
             json_strings = bets_to_json_strings(fork_bets)
             self.send_long_messages(message.chat.id, json_strings, message.message_id)
 

@@ -1,9 +1,6 @@
 import re
-from pprint import pprint, pformat
-from esports.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
-from sample_data.csgo import favorit
-import os.path
 
 
 class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
@@ -11,29 +8,27 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         formatted_title = self.bet_title.lower()
         if 'match winner' in formatted_title:
             formatted_title = formatted_title.replace('match winner', 'winner')
-        if 'winner ' in formatted_title:
-            words = re.split(' ', formatted_title)
-            formatted_title = ''
-            for word in words:
-                if word != 'winner':
-                    formatted_title += word + ' '
-            formatted_title += 'will win'
+        if 'winner' in formatted_title:
+            formatted_title = formatted_title.replace('winner', 'will win')
+        if '1 x 2' in formatted_title:
+            formatted_title = formatted_title.replace('1 x 2', 'will win')
+            formatted_title = formatted_title.replace('will win draw', 'draw will win')
         return formatted_title
 
     def _format_total(self):
+        formatted_title = self._format_total_over_under()
+        return formatted_title
+
+    def _format_total_over_under(self):
         formatted_title = self.bet_title.lower()
-        if 'odd / even' in formatted_title:
-            formatted_title = formatted_title.replace('odd / even', 'total —')
-        if 'total rounds' in formatted_title:
-            formatted_title = formatted_title.replace('total rounds', 'total')
-            formatted_title = formatted_title.replace('(', '')
-            formatted_title = formatted_title.replace(')', '')
         if 'over/under games' in formatted_title:
             formatted_title = formatted_title.replace('over/under games', 'total maps')
-        match = re.search(r'total maps full time (over|under)', formatted_title)
-        if match:
-            formatted_title = formatted_title.replace('maps ', '')
-            formatted_title += ' maps'
+        return formatted_title
+
+    def _format_frags(self):
+        formatted_title = self.bet_title.lower()
+        if 'frag' in formatted_title:
+            formatted_title = formatted_title.replace('frag', 'kill')
         return formatted_title
 
     def _format_maps(self):
@@ -59,6 +54,9 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             for i in range(len(words) - 1):
                 formatted_title += words[i] + ' '
             formatted_title += 'handicap ' + words[-1] + ' maps'
+        match = re.search(r'(kills ((\+|-)(\d+\.\d)))', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace(match.group(1), match.group(2) + ' kills')
         return formatted_title
 
     def _format_uncommon_chars(self):
@@ -74,3 +72,14 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title = formatted_title.replace(':', '-', 1)
             formatted_title = formatted_title[::-1]
         return formatted_title
+
+    def _remove_full_time(self):
+        formatted_title = self.bet_title.lower()
+        if 'full time' in formatted_title:
+            formatted_title = formatted_title.replace('full time ', '')
+        return formatted_title
+
+    def _format_before(self, bets):
+        bets = self._update(bets, self._remove_full_time)
+        bets = self._update(bets, self._format_frags)
+        return bets

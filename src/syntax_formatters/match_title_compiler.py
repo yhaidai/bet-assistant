@@ -17,11 +17,9 @@ class MatchTitleCompiler:
         :return: formatted team name
         :rtype: str
         """
-        if team_name[0] == ' ':
-            team_name = team_name[1:]
-        if team_name[-1] == ' ':
-            team_name = team_name[:-1]
-        return str(team_name).lower()
+        result = str(team_name).lower()
+        result = ' '.join(result.split())
+        return result
 
     @staticmethod
     def compile_match_title(first_team, second_team, sort=False, separator=' - '):
@@ -41,15 +39,16 @@ class MatchTitleCompiler:
         case of second_team being equal to None
         :rtype: str
         """
-        if sort:
-            teams = [first_team, second_team]
-            teams.sort()
-            first_team = teams[0]
-            if second_team:
-                second_team = teams[1]
+        if second_team and second_team != '':
+            if sort:
+                teams = [first_team, second_team]
+                teams.sort()
+                first_team = teams[0]
+                if second_team:
+                    second_team = teams[1]
 
         match_title = MatchTitleCompiler.format_team_name(first_team)
-        if second_team:
+        if second_team and second_team != '':
             match_title += separator + MatchTitleCompiler.format_team_name(second_team)
 
         return match_title
@@ -67,4 +66,7 @@ class MatchTitleCompiler:
         :return: list which consists of first team name and second team name
         :rtype: list<str>
         """
-        return re.split(separator, match_title)
+        teams = re.split(separator, match_title)
+        if len(teams) == 1:
+            teams.append('')
+        return teams
