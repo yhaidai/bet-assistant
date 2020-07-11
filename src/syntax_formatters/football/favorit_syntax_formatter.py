@@ -24,7 +24,7 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         formatted_title = self.bet_title.lower()
         if 'full time' in formatted_title:
             formatted_title = formatted_title.replace('full time ', '')
-        for c in ['(', ')']:
+        for c in ['(', ')', '- ']:
             formatted_title = formatted_title.replace(c, '')
         if '&nbsp;' in formatted_title:
             formatted_title = formatted_title.replace('&nbsp;', ' ')

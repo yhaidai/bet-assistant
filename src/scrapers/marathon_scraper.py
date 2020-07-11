@@ -7,7 +7,7 @@ from Sport import Sport
 from abstract_scraper import AbstractScraper
 import time
 import re
-from constants import sport_name
+from constants import sport_name, marathon_skip_titles as skip
 from match_title_compiler import MatchTitleCompiler
 from src.renderer.page import Page
 
@@ -91,16 +91,6 @@ class MarathonScraper(AbstractScraper):
 
     @staticmethod
     def _get_bets(match, tournament):
-        skip = ['Goalscorers', 'Scorecast', '1st Goal + Full Time Result',
-                '1st Half + 2nd Half', '1st Half + Full Time\n', #'Correct Score',
-                '1st Half Result + 1st Half Total Goals', '1st Team to Score',
-                '2nd Half Result + 2nd Half Total Goals', 'Full Time Result + Total Goals',
-                'Goals + Half Result',  'Number of Goals', 'Penalty', '3 way',
-                'Order of Goals', 'Team To Score + Result', 'Score + Total',
-                '1st Team to Score', 'Goals Any Team To Score', 'Goals At Least One Team',
-                'Goals Both Teams To Score + Total', 'Corners', 'Yellow Cards', 'Fouls',
-                'Offsides', 'Goals Both Teams To Score + Total',
-                'Goals At Least One Team Not To Score + Total']
         bets = []
         url = match.find_element_by_class_name('member-link').get_attribute('href')
         teams = [el.get_attribute('innerHTML') for el in match.find_elements_by_tag_name('span') if
@@ -138,10 +128,9 @@ class MarathonScraper(AbstractScraper):
                     b = False
                     break
             if not b:
-                print(block_title)
+                # print(block_title)
                 continue
 
-            # print(block_title)
             table = mb.find_element_by_class_name('td-border')
             results_left = mb.find_elements_by_class_name('result-left')
             another_results_left = table.find_elements_by_class_name('text-align-left')
@@ -151,14 +140,9 @@ class MarathonScraper(AbstractScraper):
                     result_left = results_left[i].text
                     o = odds[i].find_element_by_tag_name('span').text
                     bet_title = block_title + ' ' + result_left
-                    bet = Bet(bet_title, o)
-                    bets.append(bet)
 
             elif another_results_left:
-                # tags = [el.find_element_by_tag_name('div').get_attribute('innerHTML') for el in
-                # table.find_elements_by_class_name('width40')]
                 tags = [el.text for el in table.find_elements_by_tag_name('th')[1:]]
-                # print(team)
                 rows = table.find_elements_by_tag_name('tr')
                 rows = rows[1:]
                 for row in rows:
@@ -167,8 +151,6 @@ class MarathonScraper(AbstractScraper):
                         bet_type = row.find_element_by_class_name('text-align-left').text
                         o = odds[i].text
                         bet_title = block_title + ' ' + bet_type + ' ' + tags[i]
-                        bet = Bet(bet_title, o)
-                        bets.append(bet)
 
             else:
                 rows = table.find_elements_by_tag_name('tr')
@@ -181,14 +163,12 @@ class MarathonScraper(AbstractScraper):
                             except Exception as e:
                                 break
                         tags = [tag_raw.text for tag_raw in tags_raw]
-                    # height-column-with-price  td-min-width
                     else:
                         cells = row.find_elements_by_class_name('height-column-with-price')
                         empty_cells = []
                         for cell in cells:
                             if 'td-min-width' in cell.get_attribute('class'):
                                 empty_cells.append(cells.index(cell))
-                        # print(empty_cells)
                         bet_types = row.find_elements_by_class_name('coeff-value')
                         odds = row.find_elements_by_class_name('selection-link')
                         for i in range(len(odds)):
@@ -198,10 +178,9 @@ class MarathonScraper(AbstractScraper):
                                     bet_type = bet_types[i].text
                                 o = odds[i].text
                                 bet_title = block_title + ' ' + bet_type + ' ' + tags[i]
-                                # print(bet_title)
-                                bet = Bet(bet_title, o)
-                                bets.append(bet)
 
+        bet = Bet(bet_title, o)
+        bets.append(bet)
         match = Match(match_title, url, MarathonScraper._NAME, bets)
 
         Page.click(match_button)

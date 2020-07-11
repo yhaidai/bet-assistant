@@ -7,9 +7,12 @@ from Sport import Sport
 from abstract_scraper import AbstractScraper
 import time
 
-from constants import sport_name
+from constants import sport_name, favorit_skip_titles as skip
 from match_title_compiler import MatchTitleCompiler
 from src.renderer.page import Page
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
 
 
 class FavoritScraper(AbstractScraper):
@@ -35,7 +38,7 @@ class FavoritScraper(AbstractScraper):
         """
         sport_bets = []
         subsections = self.get_subsections(sport_name)
-        # subsections = [subsections[6]]
+        # subsections = [subsections[5]]
         for subsection in subsections:
             match_buttons = self.get_match_buttons(subsection)
             for match_button in match_buttons:
@@ -88,25 +91,17 @@ class FavoritScraper(AbstractScraper):
 
     @staticmethod
     def _get_bets(match_button):
-        skip = ['1X2 and Total Goals', '1X2 and Both teams to Score',
-                'Both Teams To Score and Total Goals', 'Correct Score',
-                'Goal method of first goal', '(3way)', 'Winning Margin',
-                'not to lose and Total', 'Goal Range', 'Goal method of first goal']
-
         Page.click(match_button)
         time.sleep(0.1)
         bets = []
         match_title = FavoritScraper._get_match_title()
         if not match_title:
             return bets
-        # one--event--content
-        # slick-track
-        time.sleep(0.5)
-        try:
-            all_button = Page.driver.find_element_by_class_name('slick-block')
-            Page.click(all_button)
-        except Exception:
-            pass
+
+        wait = WebDriverWait(Page.driver, 3)
+        element = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, 'slick-block')))
+        Page.click(element)
+
         time.sleep(0.5)
         market_blocks = Page.driver.find_elements_by_class_name('markets--block')
         for mb in market_blocks:
@@ -128,7 +123,6 @@ class FavoritScraper(AbstractScraper):
                 block = sub_block.find_element_by_xpath('..')
 
                 if block.find_elements_by_class_name('mtype--7'):
-                    # print(111)
                     outcome_names = block.find_element_by_class_name('row--body').find_elements_by_class_name(
                         'outcome--name')
                     names = []
@@ -137,7 +131,8 @@ class FavoritScraper(AbstractScraper):
                     table = block.find_element_by_class_name('mtype--7')
                     outcome_rows = table.find_elements_by_class_name('combo--outcome')
                     for outcome_row in outcome_rows:
-                        outcome_row_name = outcome_row.find_element_by_class_name('row--head').get_attribute('innerHTML')
+                        outcome_row_name = outcome_row.find_element_by_class_name('row--head').get_attribute(
+                            'innerHTML')
                         odds = outcome_row.find_elements_by_tag_name('button')
                         for i in range(len(odds)):
                             bet_title = block_title + ' ' + outcome_row_name + ' ' + names[i]

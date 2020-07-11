@@ -116,11 +116,6 @@ class GGBetScraper(AbstractScraper):
         if not match_title:
             return bets
 
-        # live_buttons = page.driver.find_elements_by_class_name('__app-LiveIcon-container')
-        # if len(live_buttons) > 1:
-        #     # is live
-        #     return bets
-
         market_tables = page.driver.find_elements_by_class_name('marketTable__table___dvHTz')
         for mt in market_tables:
             table_title = mt.find_element_by_class_name('marketTable__header___mSHxT').get_attribute('title')
