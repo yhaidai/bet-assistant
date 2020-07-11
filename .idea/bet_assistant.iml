@@ -17,6 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters/constants" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/groupers/esports/csgo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/groupers/esports" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/src/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/src/renderer/chromedriver_linux64" />
       <excludeFolder url="file://$MODULE_DIR$/src/renderer/chromedriver_win32" />
       <excludeFolder url="file://$MODULE_DIR$/uml" />

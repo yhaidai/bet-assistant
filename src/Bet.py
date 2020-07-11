@@ -15,7 +15,7 @@ class Bet:
         odds = None
         bookmaker = None
         url = None
-        value = list(bet_dict.values())[0]
+        value = list(bet_dict.values())[0][0]
         match = re.search(r'^(.+?)\((.+?) - (.+?)\)$', value)
         if match:
             odds = match.group(1)
