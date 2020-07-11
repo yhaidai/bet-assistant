@@ -1,6 +1,4 @@
-import re
-
-from esports.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
 from match_title_compiler import MatchTitleCompiler
 

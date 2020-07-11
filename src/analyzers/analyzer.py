@@ -1,44 +1,49 @@
 from pprint import pprint
 
-from csgo.sample_data import favorit, parimatch, one_x_bet, ggbet, marathon
+from Sport import Sport
+from abstract_grouper import AbstractGrouper
+from syntax_formatters.esports.csgo.sample_data import favorit, parimatch, one_x_bet, ggbet, marathon
 
 
 class Analyzer:
     """
     Class for collecting betting info and analyzing it
     """
-    def __init__(self, sport_type):
-        """
-        Scrape betting info on a given sport type and store it in a dict
 
-        :param sport_type: sport type name e.g. 'csgo', 'dota 2'
-        :type sport_type: str
+    def __init__(self, sport_name: str):
         """
-        # self.bets_list = []
+        Scrape betting info on a given sport type
+
+        :param sport_name: sport name e.g. 'csgo', 'dota'
+        :type sport_name: str
+        """
+        # self.sports = []
         # for scraper, formatter in registry.items():
-        #     bets = scraper.get_bets(sport_type)
+        #     bets = scraper.get_bets(sport_name)
         #     formatter.apply_unified_syntax_formatting(bets)
-        #     self.bets_list.append(bets)
-        self.bets_list = [one_x_bet.bets, parimatch.bets, marathon.bets, ggbet.bets, favorit.bets]
+        #     self.sports.append(bets)
 
-        self.all_bets = self.get_all_bets()
+        self.sports = [
+            Sport.from_dict(one_x_bet.sport),
+            Sport.from_dict(parimatch.sport),
+            Sport.from_dict(marathon.sport),
+            Sport.from_dict(ggbet.sport),
+            Sport.from_dict(favorit.sport),
+            ]
 
-    def get_all_bets(self):
-        """
-        Initializes all_bets dict, with info from all known scrapers
-        all_bets[match_title][bet_title] = {odds: bookmaker}
-        """
-        all_bets = {}
-        for bets in self.bets_list:
-            for match_title in bets.keys():
-                all_bets.setdefault(match_title, {})
-                for bet_title, odds in bets[match_title].items():
-                    all_bets[match_title].setdefault(bet_title, {}).update(odds)
+        self.all_bets_sport = self.get_all_bets_sport()
 
-        return all_bets
+    def get_all_bets_sport(self):
+        all_matches = []
+        for sport in self.sports:
+            all_matches += sport.matches
+        all_bets_sport = Sport(self.sports[0].name, all_matches)
+        AbstractGrouper.group_matches(all_bets_sport)
+
+        return all_bets_sport
 
 
 if __name__ == '__main__':
     analyzer = Analyzer('csgo')
-    b = analyzer.get_all_bets()
-    pprint(b)
+    s = analyzer.get_all_bets_sport()
+    print(s)

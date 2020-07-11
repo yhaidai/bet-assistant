@@ -1,3 +1,4 @@
+from BetGroup import BetGroup
 from analyzers.analyzer import Analyzer
 
 
@@ -6,17 +7,21 @@ class BestOddsAnalyzer(Analyzer):
     Class for calculating best odds amongst all bookmakers odds
     """
 
-    def get_best_odds_bets(self):
-        """
-        Get bets dictionary with specified best odds for each of the bets
-        bets[match_title][bet_title] = odds -> bets[match_title][bet_title] = {best_odds_str: odds}
-        """
-        best_odds_bets = {}
+    def get_best_odds_bets_sport(self):
+        for match in self.all_bets_sport:
+            group = {}
 
-        for match_title in self.all_bets.keys():
-            best_odds_bets[match_title] = {}
-            for bet_title, odds in self.all_bets[match_title].items():
-                best_odds = max(odds.keys())
-                best_odds_bets[match_title][bet_title] = {'*Max - ' + best_odds + '*': odds}
+            for bet in match:
+                group.setdefault(bet.title, BetGroup(bet.title)).append(bet)
 
-        return best_odds_bets
+            for bet in list(match):
+                if bet is not max(group[bet.title].bets):
+                    match.bets.remove(bet)
+
+        return self.all_bets_sport
+
+
+if __name__ == '__main__':
+    analyzer = BestOddsAnalyzer('csgo')
+    s = analyzer.get_best_odds_bets_sport()
+    print(s)

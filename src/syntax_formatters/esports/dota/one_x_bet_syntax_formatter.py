@@ -1,10 +1,9 @@
 import re
-from pprint import pprint, pformat
 import os.path
 
 from Sport import Sport
-from dota.abstract_syntax_formatter import AbstractSyntaxFormatter
-from esports.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
+from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
 from sample_data.dota import one_x_bet
 
 

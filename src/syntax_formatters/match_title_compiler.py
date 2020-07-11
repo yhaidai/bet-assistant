@@ -39,15 +39,16 @@ class MatchTitleCompiler:
         case of second_team being equal to None
         :rtype: str
         """
-        if sort:
-            teams = [first_team, second_team]
-            teams.sort()
-            first_team = teams[0]
-            if second_team:
-                second_team = teams[1]
+        if second_team and second_team != '':
+            if sort:
+                teams = [first_team, second_team]
+                teams.sort()
+                first_team = teams[0]
+                if second_team:
+                    second_team = teams[1]
 
         match_title = MatchTitleCompiler.format_team_name(first_team)
-        if second_team:
+        if second_team and second_team != '':
             match_title += separator + MatchTitleCompiler.format_team_name(second_team)
 
         return match_title

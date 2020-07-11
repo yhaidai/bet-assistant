@@ -1,6 +1,6 @@
 from abc import ABC
 
-from esports.abstract_syntax_formatter import AbstractSyntaxFormatter as ASF
+from syntax_formatters.esports.abstract_syntax_formatter import AbstractSyntaxFormatter as ASF
 
 
 class AbstractSyntaxFormatter(ASF, ABC):

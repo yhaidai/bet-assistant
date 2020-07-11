@@ -1,5 +1,4 @@
 from abc import ABC
-import re
 from syntax_formatters.abstract_syntax_formatter import AbstractSyntaxFormatter as ASF
 
 

@@ -19,12 +19,12 @@ class MarathonScraper(AbstractScraper):
         'football': 'icon-sport-football',
         'csgo': 'icon-sport-e-sports',
         'dota': 'icon-sport-e-sports'
-    }
+        }
     _MENU = {
         'football': None,
         'csgo': 'CS:GO.',
         'dota': 'Dota 2.'
-    }
+        }
 
     def get_sport_bets(self, sport_name):
         """
@@ -100,8 +100,12 @@ class MarathonScraper(AbstractScraper):
             return None
 
         main_odds = match.find_elements_by_class_name('selection-link')
-
-        bets += [Bet(teams[i] + ' will win', main_odds[i].text) for i in range(len(teams))]
+        bets += [Bet(
+            teams[i] + ' will win',
+            main_odds[i].get_attribute('innerHTML'),
+            MarathonScraper._NAME,
+            url
+            ) for i in range(len(teams))]
 
         try:
             match_button = match.find_element_by_class_name('event-more-view')
@@ -179,9 +183,10 @@ class MarathonScraper(AbstractScraper):
                                 o = odds[i].text
                                 bet_title = block_title + ' ' + bet_type + ' ' + tags[i]
 
-        bet = Bet(bet_title, o)
+        bet = Bet(bet_title, o, MarathonScraper._NAME, url)
         bets.append(bet)
-        match = Match(match_title, url, MarathonScraper._NAME, bets)
+        match = Match(match_title, bets)
+
 
         Page.click(match_button)
         time.sleep(0.2)

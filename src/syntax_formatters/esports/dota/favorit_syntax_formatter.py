@@ -1,10 +1,8 @@
 import re
-from pprint import pprint, pformat
 
 from Sport import Sport
-from dota.abstract_syntax_formatter import AbstractSyntaxFormatter
-from esports.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
-from esports.abstract_syntax_formatter import AbstractSyntaxFormatter as EASF
+from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
 from sample_data.dota import favorit
 import os.path
 
@@ -76,9 +74,6 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
 
     def _format_teams(self):
         return self._move_teams_left()
-
-
-
 
 
 if __name__ == '__main__':

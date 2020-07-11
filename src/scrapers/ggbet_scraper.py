@@ -116,6 +116,11 @@ class GGBetScraper(AbstractScraper):
         if not match_title:
             return bets
 
+        # live_buttons = page.driver.find_elements_by_class_name('__app-LiveIcon-container')
+        # if len(live_buttons) > 1:
+        #     # is live
+        #     return bets
+
         market_tables = page.driver.find_elements_by_class_name('marketTable__table___dvHTz')
         for mt in market_tables:
             table_title = mt.find_element_by_class_name('marketTable__header___mSHxT').get_attribute('title')
@@ -126,13 +131,13 @@ class GGBetScraper(AbstractScraper):
                     if bet != 'Deactivated':
                         pos = bet.find(': ')
                         bet_type = bet[:pos]
-                        odd = bet[pos + 2:]
+                        odds = bet[pos + 2:]
                         bet_title = table_title + ' ' + bet_type
-                        bet = Bet(bet_title, odd)
+                        bet = Bet(bet_title, odds, GGBetScraper._NAME, match_url)
                         bets.append(bet)
                 except Exception as e:
                     print('ggbet error in buttons')
-        match = Match(match_title, match_url, GGBetScraper._NAME, bets)
+        match = Match(match_title, bets)
         return match
 
     @staticmethod

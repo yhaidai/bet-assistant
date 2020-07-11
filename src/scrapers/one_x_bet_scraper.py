@@ -121,10 +121,10 @@ class OneXBetScraper(AbstractScraper):
             odds = [el.text for el in bet_group.find_elements_by_class_name('koeff')]
 
             for i in range(len(bet_types)):
-                bet = Bet(bet_title + '. ' + bet_types[i], odds[i])
+                bet = Bet(bet_title + '. ' + bet_types[i], odds[i], OneXBetScraper._NAME, match_url)
                 bets.append(bet)
 
-        match = Match(match_title, match_url, OneXBetScraper._NAME, bets)
+        match = Match(match_title, bets)
         return match
 
     @staticmethod

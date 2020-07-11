@@ -1,10 +1,9 @@
 import re
-from pprint import pprint, pformat
 import os.path
 
 from Sport import Sport
-from dota.abstract_syntax_formatter import AbstractSyntaxFormatter
-from esports.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
+from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
 from sample_data.dota import parimatch
 
 

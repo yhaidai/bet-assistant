@@ -1,7 +1,7 @@
-from pprint import pformat, pprint
+from pprint import pformat
 
 from Match import Match
-from scrapers.sample_data.csgo import parimatch
+from scrapers.sample_data.csgo import one_x_bet
 
 
 class Sport:
@@ -22,7 +22,7 @@ class Sport:
             date_str = ''
             if match.date:
                 date_str = match.date + ': '
-            key = date_str + match.title + '(' + match.bookmaker + ' - ' + match.url + ')'
+            key = date_str + match.title
             result[key] = match.to_dict()
         return result
 
@@ -33,9 +33,9 @@ class Sport:
         return next(self.matches)
 
     def __repr__(self):
-        return pformat({self.name: self.to_dict()})
+        return pformat({self.name: self.to_dict()}, width=300)
 
 
 if __name__ == '__main__':
-    sport = Sport.from_dict(parimatch.bets)
-    pprint(sport)
+    sport = Sport.from_dict(one_x_bet.sport)
+    print(sport)

@@ -2,7 +2,7 @@ import os.path
 import re
 
 from Sport import Sport
-from csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
 from esports.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
 from sample_data.csgo import parimatch
 

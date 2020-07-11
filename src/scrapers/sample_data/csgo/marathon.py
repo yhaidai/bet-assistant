@@ -1,154 +1,235 @@
-sport = {'csgo': {'ambush - tricked(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)': {'Ambush will win': '2.01',
-                                                                                                                                                                              'Correct Score (0 - 2) tRICKED': '3.44',
-                                                                                                                                                                              'Correct Score (1 - 2) tRICKED': '3.42',
-                                                                                                                                                                              'Correct Score (2 - 0) Ambush': '3.98',
-                                                                                                                                                                              'Correct Score (2 - 1) Ambush': '3.70',
-                                                                                                                                                                              'To Win Match With Handicap By Maps (+1.5) Ambush': '1.30',
-                                                                                                                                                                              'To Win Match With Handicap By Maps (-1.5) tRICKED': '3.44',
-                                                                                                                                                                              'Total Maps  Even': '1.88',
-                                                                                                                                                                              'Total Maps  Odd': '1.88',
-                                                                                                                                                                              'Total Maps (2.5) Over': '1.88',
-                                                                                                                                                                              'Total Maps (2.5) Under': '1.88',
-                                                                                                                                                                              'tRICKED will win': '1.80'},
-          'cr4zy - avez(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/CR4ZY+vs+AVEZ+-+9781877)': {'1st Map Result AVEZ To Win': '1.59',
-                                                                                                                                                              '1st Map Result CR4ZY To Win': '2.30',
-                                                                                                                                                              '2nd Map Result AVEZ To Win': '1.59',
-                                                                                                                                                              '2nd Map Result CR4ZY To Win': '2.30',
-                                                                                                                                                              'AVEZ will win': '1.49',
-                                                                                                                                                              'CR4ZY will win': '2.62',
-                                                                                                                                                              'Correct Score (0 - 2) AVEZ': '2.61',
-                                                                                                                                                              'Correct Score (1 - 2) AVEZ': '3.10',
-                                                                                                                                                              'Correct Score (2 - 0) CR4ZY': '5.70',
-                                                                                                                                                              'Correct Score (2 - 1) CR4ZY': '4.50',
-                                                                                                                                                              'To Win 1st Map With Handicap By Rounds (+2.5) CR4ZY': '1.97',
-                                                                                                                                                              'To Win 1st Map With Handicap By Rounds (-2.5) AVEZ': '1.80',
-                                                                                                                                                              'To Win 2nd Map With Handicap By Rounds (+2.5) CR4ZY': '1.97',
-                                                                                                                                                              'To Win 2nd Map With Handicap By Rounds (-2.5) AVEZ': '1.80',
-                                                                                                                                                              'To Win Match With Handicap By Maps (+1.5) CR4ZY': '1.47',
-                                                                                                                                                              'To Win Match With Handicap By Maps (-1.5) AVEZ': '2.61',
-                                                                                                                                                              'To Win Match With Handicap By Rounds (+5.5) CR4ZY': '1.909',
-                                                                                                                                                              'To Win Match With Handicap By Rounds (-5.5) AVEZ': '1.87',
-                                                                                                                                                              'Total Maps  Even': '1.81',
-                                                                                                                                                              'Total Maps  Odd': '1.96',
-                                                                                                                                                              'Total Maps (2.5) Over': '1.96',
-                                                                                                                                                              'Total Maps (2.5) Under': '1.81',
-                                                                                                                                                              'Total Rounds  Even': '1.90',
-                                                                                                                                                              'Total Rounds  Odd': '1.90',
-                                                                                                                                                              'Total Rounds (65.5) Over': '1.89',
-                                                                                                                                                              'Total Rounds (65.5) Under': '1.89',
-                                                                                                                                                              'Total Rounds - 1st Map  Even': '1.77',
-                                                                                                                                                              'Total Rounds - 1st Map  Odd': '2.01',
-                                                                                                                                                              'Total Rounds - 1st Map (26.5) Over': '1.78',
-                                                                                                                                                              'Total Rounds - 1st Map (26.5) Under': '1.99',
-                                                                                                                                                              'Total Rounds - 2nd Map  Even': '1.77',
-                                                                                                                                                              'Total Rounds - 2nd Map  Odd': '2.01',
-                                                                                                                                                              'Total Rounds - 2nd Map (26.5) Over': '1.78',
-                                                                                                                                                              'Total Rounds - 2nd Map (26.5) Under': '1.99'},
-          'd13 - invictus gaming(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/D13+vs+Invictus+Gaming+-+9777618)': {'D13 will win': '2.65',
-                                                                                                                                                                                                    'Invictus Gaming will win': '1.48',
-                                                                                                                                                                                                    'To Win Match With Handicap By Maps (+1.5) D13': '1.48',
-                                                                                                                                                                                                    'To Win Match With Handicap By Maps (-1.5) Invictus Gaming': '2.59',
-                                                                                                                                                                                                    'Total Maps  Even': '1.81',
-                                                                                                                                                                                                    'Total Maps  Odd': '1.96',
-                                                                                                                                                                                                    'Total Maps (2.5) Over': '1.96',
-                                                                                                                                                                                                    'Total Maps (2.5) Under': '1.81'},
-          'divine vendetta - beyond(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Divine+Vendetta+vs+Beyond+-+9777614)': {'Beyond will win': '1.42',
-                                                                                                                                                                                                          'Divine Vendetta will win': '2.875',
-                                                                                                                                                                                                          'To Win Match With Handicap By Maps (+1.5) Divine Vendetta': '1.57',
-                                                                                                                                                                                                          'To Win Match With Handicap By Maps (-1.5) Beyond': '2.35',
-                                                                                                                                                                                                          'Total Maps  Even': '1.68',
-                                                                                                                                                                                                          'Total Maps  Odd': '2.14',
-                                                                                                                                                                                                          'Total Maps (2.5) Over': '2.14',
-                                                                                                                                                                                                          'Total Maps (2.5) Under': '1.68'},
-          'invictus gaming - bren esports(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Invictus+Gaming+vs+Bren+Esports+-+9777610)': {'Bren Esports will win': '2.83',
-                                                                                                                                                                                                                      'Invictus Gaming will win': '1.43',
-                                                                                                                                                                                                                      'To Win Match With Handicap By Maps (+1.5) Bren Esports': '1.51',
-                                                                                                                                                                                                                      'To Win Match With Handicap By Maps (-1.5) Invictus Gaming': '2.51',
-                                                                                                                                                                                                                      'Total Maps  Even': '1.70',
-                                                                                                                                                                                                                      'Total Maps  Odd': '2.11',
-                                                                                                                                                                                                                      'Total Maps (2.5) Over': '2.11',
-                                                                                                                                                                                                                      'Total Maps (2.5) Under': '1.70'},
-          'lethal divide - rbg(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Lethal+Divide+vs+RBG+-+9777602)': {'Lethal Divide will win': '3.85',
-                                                                                                                                                                                    'RBG will win': '1.26',
-                                                                                                                                                                                    'To Win Match With Handicap By Maps (+1.5) Lethal Divide': '1.78',
-                                                                                                                                                                                    'To Win Match With Handicap By Maps (-1.5) RBG': '2.00',
-                                                                                                                                                                                    'Total Maps  Even': '1.65',
-                                                                                                                                                                                    'Total Maps  Odd': '2.19',
-                                                                                                                                                                                    'Total Maps (2.5) Over': '2.19',
-                                                                                                                                                                                    'Total Maps (2.5) Under': '1.65'},
-          'lucid dream - mazaalai(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Lucid+Dream+vs+Mazaalai+-+9777619)': {'Lucid Dream will win': '1.80',
-                                                                                                                                                                                                      'Mazaalai will win': '2.01',
-                                                                                                                                                                                                      'To Win Match With Handicap By Maps (+1.5) Mazaalai': '1.30',
-                                                                                                                                                                                                      'To Win Match With Handicap By Maps (-1.5) Lucid Dream': '3.40',
-                                                                                                                                                                                                      'Total Maps  Even': '1.88',
-                                                                                                                                                                                                      'Total Maps  Odd': '1.88',
-                                                                                                                                                                                                      'Total Maps (2.5) Over': '1.88',
-                                                                                                                                                                                                      'Total Maps (2.5) Under': '1.88'},
-          'secret - saw(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)': {'Correct Score (0 - 2) sAw': '2.54',
-                                                                                                                                                                      'Correct Score (1 - 2) sAw': '3.10',
-                                                                                                                                                                      'Correct Score (2 - 0) Secret': '5.90',
-                                                                                                                                                                      'Correct Score (2 - 1) Secret': '4.60',
-                                                                                                                                                                      'Secret will win': '2.65',
-                                                                                                                                                                      'To Win Match With Handicap By Maps (+1.5) Secret': '1.52',
-                                                                                                                                                                      'To Win Match With Handicap By Maps (-1.5) sAw': '2.48',
-                                                                                                                                                                      'Total Maps  Even': '1.80',
-                                                                                                                                                                      'Total Maps  Odd': '1.97',
-                                                                                                                                                                      'Total Maps (2.5) Over': '1.97',
-                                                                                                                                                                      'Total Maps (2.5) Under': '1.80',
-                                                                                                                                                                      'sAw will win': '1.48'},
-          'syman - sg.pro(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)': {'1st Map Result SG.pro To Win': '2.44',
-                                                                                                                                                                  '1st Map Result Syman To Win': '1.53',
-                                                                                                                                                                  '2nd Map Result SG.pro To Win': '2.44',
-                                                                                                                                                                  '2nd Map Result Syman To Win': '1.53',
-                                                                                                                                                                  'Correct Score (0 - 2) SG.pro': '6.40',
-                                                                                                                                                                  'Correct Score (1 - 2) SG.pro': '4.80',
-                                                                                                                                                                  'Correct Score (2 - 0) Syman': '2.43',
-                                                                                                                                                                  'Correct Score (2 - 1) Syman': '3.05',
-                                                                                                                                                                  'SG.pro will win': '2.875',
-                                                                                                                                                                  'Syman will win': '1.42',
-                                                                                                                                                                  'To Win 1st Map With Handicap By Rounds (+3.5) SG.pro': '1.77',
-                                                                                                                                                                  'To Win 1st Map With Handicap By Rounds (-3.5) Syman': '2.01',
-                                                                                                                                                                  'To Win 2nd Map With Handicap By Rounds (+3.5) SG.pro': '1.77',
-                                                                                                                                                                  'To Win 2nd Map With Handicap By Rounds (-3.5) Syman': '2.01',
-                                                                                                                                                                  'To Win Match With Handicap By Maps (+1.5) SG.pro': '1.533',
-                                                                                                                                                                  'To Win Match With Handicap By Maps (-1.5) Syman': '2.43',
-                                                                                                                                                                  'To Win Match With Handicap By Rounds (+6.5) SG.pro': '1.89',
-                                                                                                                                                                  'To Win Match With Handicap By Rounds (-6.5) Syman': '1.89',
-                                                                                                                                                                  'Total Rounds  Even': '1.90',
-                                                                                                                                                                  'Total Rounds  Odd': '1.90',
-                                                                                                                                                                  'Total Rounds (63.5) Over': '1.88',
-                                                                                                                                                                  'Total Rounds (63.5) Under': '1.90',
-                                                                                                                                                                  'Total Rounds (64.5) Over': '1.89',
-                                                                                                                                                                  'Total Rounds (64.5) Under': '1.87',
-                                                                                                                                                                  'Total Rounds - 1st Map  Even': '1.77',
-                                                                                                                                                                  'Total Rounds - 1st Map  Odd': '2.01',
-                                                                                                                                                                  'Total Rounds - 1st Map (26.5) Over': '1.80',
-                                                                                                                                                                  'Total Rounds - 1st Map (26.5) Under': '1.97',
-                                                                                                                                                                  'Total Rounds - 2nd Map  Even': '1.77',
-                                                                                                                                                                  'Total Rounds - 2nd Map  Odd': '2.01',
-                                                                                                                                                                  'Total Rounds - 2nd Map (26.5) Over': '1.80',
-                                                                                                                                                                  'Total Rounds - 2nd Map (26.5) Under': '1.97'},
-          'thunder logic - third impact(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Thunder+Logic+vs+Third+Impact+-+9777603)': {'Third Impact will win': '4.40',
-                                                                                                                                                                                                      'Thunder Logic will win': '1.21',
-                                                                                                                                                                                                      'To Win Match With Handicap By Maps (+1.5) Third Impact': '1.92',
-                                                                                                                                                                                                      'To Win Match With Handicap By Maps (-1.5) Thunder Logic': '1.85',
-                                                                                                                                                                                                      'Total Maps  Even': '1.59',
-                                                                                                                                                                                                      'Total Maps  Odd': '2.30',
-                                                                                                                                                                                                      'Total Maps (2.5) Over': '2.30',
-                                                                                                                                                                                                      'Total Maps (2.5) Under': '1.59'},
-          'tiger - mazaalai(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/TIGER+vs+Mazaalai+-+9777612)': {'Mazaalai will win': '2.53',
-                                                                                                                                                                                          'TIGER will win': '1.52',
-                                                                                                                                                                                          'To Win Match With Handicap By Maps (+1.5) Mazaalai': '1.48',
-                                                                                                                                                                                          'To Win Match With Handicap By Maps (-1.5) TIGER': '2.60',
-                                                                                                                                                                                          'Total Maps  Even': '1.72',
-                                                                                                                                                                                          'Total Maps  Odd': '2.08',
-                                                                                                                                                                                          'Total Maps (2.5) Over': '2.08',
-                                                                                                                                                                                          'Total Maps (2.5) Under': '1.72'},
-          'vici gaming - beyond(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Vici+Gaming+vs+Beyond+-+9777620)': {'Beyond will win': '3.76',
-                                                                                                                                                                                                  'To Win Match With Handicap By Maps (+1.5) Beyond': '1.76',
-                                                                                                                                                                                                  'To Win Match With Handicap By Maps (-1.5) Vici Gaming': '2.02',
-                                                                                                                                                                                                  'Total Maps  Even': '1.66',
-                                                                                                                                                                                                  'Total Maps  Odd': '2.17',
-                                                                                                                                                                                                  'Total Maps (2.5) Over': '2.17',
-                                                                                                                                                                                                  'Total Maps (2.5) Under': '1.66',
-                                                                                                                                                                                                  'Vici Gaming will win': '1.27'}}}
+sport = {'csgo': {'ambush - tricked': {'    Correct Score          Ambush     (2 - 0)  ': '4.25(marathon - '
+                                                                                  'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)',
+                               '    Correct Score          Ambush     (2 - 1)  ': '3.82(marathon - '
+                                                                                  'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)',
+                               '    Correct Score          tRICKED     (0 - 2)  ': '3.24(marathon - '
+                                                                                   'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)',
+                               '    Correct Score          tRICKED     (1 - 2)  ': '3.35(marathon - '
+                                                                                   'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)',
+                               '    To Win Match With Handicap By Maps          Ambush     (+1.5)  ': '1.33(marathon - '
+                                                                                                      'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)',
+                               '    To Win Match With Handicap By Maps          tRICKED     (-1.5)  ': '3.24(marathon - '
+                                                                                                       'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)',
+                               '    Total Maps          Over     (2.5)  ': '1.88(marathon - '
+                                                                           'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)',
+                               '    Total Maps          Under     (2.5)  ': '1.88(marathon - '
+                                                                            'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)',
+                               '    Total Maps        Even ': '1.88(marathon - '
+                                                              'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)',
+                               '    Total Maps        Odd ': '1.88(marathon - '
+                                                             'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)',
+                               'Ambush will win': '2.11(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)',
+                               'tRICKED will win': '1.73(marathon - '
+                                                   'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Ambush+vs+tRICKED+-+9764197)'},
+          'd13 - invictus gaming': {'    To Win Match With Handicap By Maps          D13     (+1.5)  ': '1.48(marathon - '
+                                                                                                        'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/D13+vs+Invictus+Gaming+-+9777618)',
+                                    '    To Win Match With Handicap By Maps          Invictus Gaming     (-1.5)  ': '2.59(marathon - '
+                                                                                                                    'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/D13+vs+Invictus+Gaming+-+9777618)',
+                                    '    Total Maps          Over     (2.5)  ': '1.96(marathon - '
+                                                                                'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/D13+vs+Invictus+Gaming+-+9777618)',
+                                    '    Total Maps          Under     (2.5)  ': '1.81(marathon - '
+                                                                                 'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/D13+vs+Invictus+Gaming+-+9777618)',
+                                    '    Total Maps        Even ': '1.81(marathon - '
+                                                                   'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/D13+vs+Invictus+Gaming+-+9777618)',
+                                    '    Total Maps        Odd ': '1.96(marathon - '
+                                                                  'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/D13+vs+Invictus+Gaming+-+9777618)',
+                                    'D13 will win': '2.65(marathon - '
+                                                    'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/D13+vs+Invictus+Gaming+-+9777618)',
+                                    'Invictus Gaming will win': '1.48(marathon - '
+                                                                'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/D13+vs+Invictus+Gaming+-+9777618)'},
+          'divine vendetta - beyond': {'    To Win Match With Handicap By Maps          Beyond     (-1.5)  ': '2.35(marathon - '
+                                                                                                              'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Divine+Vendetta+vs+Beyond+-+9777614)',
+                                       '    To Win Match With Handicap By Maps          Divine Vendetta     (+1.5)  ': '1.57(marathon - '
+                                                                                                                       'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Divine+Vendetta+vs+Beyond+-+9777614)',
+                                       '    Total Maps          Over     (2.5)  ': '2.14(marathon - '
+                                                                                   'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Divine+Vendetta+vs+Beyond+-+9777614)',
+                                       '    Total Maps          Under     (2.5)  ': '1.68(marathon - '
+                                                                                    'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Divine+Vendetta+vs+Beyond+-+9777614)',
+                                       '    Total Maps        Even ': '1.68(marathon - '
+                                                                      'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Divine+Vendetta+vs+Beyond+-+9777614)',
+                                       '    Total Maps        Odd ': '2.14(marathon - '
+                                                                     'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Divine+Vendetta+vs+Beyond+-+9777614)',
+                                       'Beyond will win': '1.42(marathon - '
+                                                          'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Divine+Vendetta+vs+Beyond+-+9777614)',
+                                       'Divine Vendetta will win': '2.875(marathon - '
+                                                                   'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Divine+Vendetta+vs+Beyond+-+9777614)'},
+          'invictus gaming - bren esports': {'    To Win Match With Handicap By Maps          Bren Esports     (+1.5)  ': '1.51(marathon - '
+                                                                                                                          'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Invictus+Gaming+vs+Bren+Esports+-+9777610)',
+                                             '    To Win Match With Handicap By Maps          Invictus Gaming     (-1.5)  ': '2.51(marathon - '
+                                                                                                                             'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Invictus+Gaming+vs+Bren+Esports+-+9777610)',
+                                             '    Total Maps          Over     (2.5)  ': '2.11(marathon - '
+                                                                                         'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Invictus+Gaming+vs+Bren+Esports+-+9777610)',
+                                             '    Total Maps          Under     (2.5)  ': '1.70(marathon - '
+                                                                                          'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Invictus+Gaming+vs+Bren+Esports+-+9777610)',
+                                             '    Total Maps        Even ': '1.70(marathon - '
+                                                                            'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Invictus+Gaming+vs+Bren+Esports+-+9777610)',
+                                             '    Total Maps        Odd ': '2.11(marathon - '
+                                                                           'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Invictus+Gaming+vs+Bren+Esports+-+9777610)',
+                                             'Bren Esports will win': '2.83(marathon - '
+                                                                      'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Invictus+Gaming+vs+Bren+Esports+-+9777610)',
+                                             'Invictus Gaming will win': '1.43(marathon - '
+                                                                         'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Invictus+Gaming+vs+Bren+Esports+-+9777610)'},
+          'lethal divide - rbg': {'    To Win Match With Handicap By Maps          Lethal Divide     (+1.5)  ': '1.78(marathon - '
+                                                                                                                'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Lethal+Divide+vs+RBG+-+9777602)',
+                                  '    To Win Match With Handicap By Maps          RBG     (-1.5)  ': '2.00(marathon - '
+                                                                                                      'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Lethal+Divide+vs+RBG+-+9777602)',
+                                  '    Total Maps          Over     (2.5)  ': '2.19(marathon - '
+                                                                              'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Lethal+Divide+vs+RBG+-+9777602)',
+                                  '    Total Maps          Under     (2.5)  ': '1.65(marathon - '
+                                                                               'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Lethal+Divide+vs+RBG+-+9777602)',
+                                  '    Total Maps        Even ': '1.65(marathon - '
+                                                                 'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Lethal+Divide+vs+RBG+-+9777602)',
+                                  '    Total Maps        Odd ': '2.19(marathon - '
+                                                                'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Lethal+Divide+vs+RBG+-+9777602)',
+                                  'Lethal Divide will win': '3.85(marathon - '
+                                                            'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Lethal+Divide+vs+RBG+-+9777602)',
+                                  'RBG will win': '1.26(marathon - '
+                                                  'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Lethal+Divide+vs+RBG+-+9777602)'},
+          'lucid dream - mazaalai': {'    To Win Match With Handicap By Maps          Lucid Dream     (-1.5)  ': '3.40(marathon - '
+                                                                                                                 'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Lucid+Dream+vs+Mazaalai+-+9777619)',
+                                     '    To Win Match With Handicap By Maps          Mazaalai     (+1.5)  ': '1.30(marathon - '
+                                                                                                              'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Lucid+Dream+vs+Mazaalai+-+9777619)',
+                                     '    Total Maps          Over     (2.5)  ': '1.88(marathon - '
+                                                                                 'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Lucid+Dream+vs+Mazaalai+-+9777619)',
+                                     '    Total Maps          Under     (2.5)  ': '1.88(marathon - '
+                                                                                  'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Lucid+Dream+vs+Mazaalai+-+9777619)',
+                                     '    Total Maps        Even ': '1.88(marathon - '
+                                                                    'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Lucid+Dream+vs+Mazaalai+-+9777619)',
+                                     '    Total Maps        Odd ': '1.88(marathon - '
+                                                                   'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Lucid+Dream+vs+Mazaalai+-+9777619)',
+                                     'Lucid Dream will win': '1.80(marathon - '
+                                                             'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Lucid+Dream+vs+Mazaalai+-+9777619)',
+                                     'Mazaalai will win': '2.01(marathon - '
+                                                          'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Lucid+Dream+vs+Mazaalai+-+9777619)'},
+          'secret - saw': {'    Correct Score          Secret     (2 - 0)  ': '5.90(marathon - '
+                                                                              'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)',
+                           '    Correct Score          Secret     (2 - 1)  ': '4.60(marathon - '
+                                                                              'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)',
+                           '    Correct Score          sAw     (0 - 2)  ': '2.54(marathon - '
+                                                                           'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)',
+                           '    Correct Score          sAw     (1 - 2)  ': '3.10(marathon - '
+                                                                           'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)',
+                           '    To Win Match With Handicap By Maps          Secret     (+1.5)  ': '1.52(marathon - '
+                                                                                                  'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)',
+                           '    To Win Match With Handicap By Maps          sAw     (-1.5)  ': '2.48(marathon - '
+                                                                                               'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)',
+                           '    Total Maps          Over     (2.5)  ': '1.97(marathon - '
+                                                                       'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)',
+                           '    Total Maps          Under     (2.5)  ': '1.80(marathon - '
+                                                                        'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)',
+                           '    Total Maps        Even ': '1.80(marathon - '
+                                                          'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)',
+                           '    Total Maps        Odd ': '1.97(marathon - '
+                                                         'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)',
+                           'Secret will win': '2.65(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)',
+                           'sAw will win': '1.48(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Secret+vs+sAw+-+9764196)'},
+          'syman - sg.pro': {'    1st Map Result         SG.pro To Win   ': '2.44(marathon - '
+                                                                            'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    1st Map Result         Syman To Win   ': '1.53(marathon - '
+                                                                           'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    2nd Map Result         SG.pro To Win   ': '2.44(marathon - '
+                                                                            'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    2nd Map Result         Syman To Win   ': '1.53(marathon - '
+                                                                           'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Correct Score          SG.pro     (0 - 2)  ': '6.45(marathon - '
+                                                                                'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Correct Score          SG.pro     (1 - 2)  ': '4.85(marathon - '
+                                                                                'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Correct Score          Syman     (2 - 0)  ': '2.41(marathon - '
+                                                                               'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Correct Score          Syman     (2 - 1)  ': '3.05(marathon - '
+                                                                               'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    To Win 1st Map With Handicap By Rounds          SG.pro     (+3.5)  ': '1.78(marathon - '
+                                                                                                        'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    To Win 1st Map With Handicap By Rounds          Syman     (-3.5)  ': '1.99(marathon - '
+                                                                                                       'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    To Win 2nd Map With Handicap By Rounds          SG.pro     (+3.5)  ': '1.78(marathon - '
+                                                                                                        'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    To Win 2nd Map With Handicap By Rounds          Syman     (-3.5)  ': '1.99(marathon - '
+                                                                                                       'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    To Win Match With Handicap By Maps          SG.pro     (+1.5)  ': '1.55(marathon - '
+                                                                                                    'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    To Win Match With Handicap By Maps          Syman     (-1.5)  ': '2.41(marathon - '
+                                                                                                   'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    To Win Match With Handicap By Rounds          SG.pro     (+6.5)  ': '1.90(marathon - '
+                                                                                                      'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    To Win Match With Handicap By Rounds          Syman     (-6.5)  ': '1.88(marathon - '
+                                                                                                     'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds          Over     (63.5)  ': '1.88(marathon - '
+                                                                            'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds          Over     (64.5)  ': '1.90(marathon - '
+                                                                            'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds          Under     (63.5)  ': '1.90(marathon - '
+                                                                             'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds          Under     (64.5)  ': '1.86(marathon - '
+                                                                             'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds        Even ': '1.90(marathon - '
+                                                              'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds        Odd ': '1.90(marathon - '
+                                                             'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds - 1st Map          Over     (26.5)  ': '1.80(marathon - '
+                                                                                      'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds - 1st Map          Under     (26.5)  ': '1.97(marathon - '
+                                                                                       'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds - 1st Map        Even ': '1.77(marathon - '
+                                                                        'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds - 1st Map        Odd ': '2.01(marathon - '
+                                                                       'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds - 2nd Map          Over     (26.5)  ': '1.80(marathon - '
+                                                                                      'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds - 2nd Map          Under     (26.5)  ': '1.97(marathon - '
+                                                                                       'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds - 2nd Map        Even ': '1.77(marathon - '
+                                                                        'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             '    Total Rounds - 2nd Map        Odd ': '2.01(marathon - '
+                                                                       'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             'SG.pro will win': '2.91(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)',
+                             'Syman will win': '1.41(marathon - https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Nine+to+Five/Main+Event/Best+of+3+maps/Syman+vs+SG.pro+-+9781874)'},
+          'thunder logic - third impact': {'    To Win Match With Handicap By Maps          Third Impact     (+1.5)  ': '1.909(marathon - '
+                                                                                                                        'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Thunder+Logic+vs+Third+Impact+-+9777603)',
+                                           '    To Win Match With Handicap By Maps          Thunder Logic     (-1.5)  ': '1.86(marathon - '
+                                                                                                                         'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Thunder+Logic+vs+Third+Impact+-+9777603)',
+                                           '    Total Maps          Over     (2.5)  ': '2.29(marathon - '
+                                                                                       'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Thunder+Logic+vs+Third+Impact+-+9777603)',
+                                           '    Total Maps          Under     (2.5)  ': '1.60(marathon - '
+                                                                                        'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Thunder+Logic+vs+Third+Impact+-+9777603)',
+                                           '    Total Maps        Even ': '1.60(marathon - '
+                                                                          'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Thunder+Logic+vs+Third+Impact+-+9777603)',
+                                           '    Total Maps        Odd ': '2.29(marathon - '
+                                                                         'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Thunder+Logic+vs+Third+Impact+-+9777603)',
+                                           'Third Impact will win': '4.40(marathon - '
+                                                                    'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Thunder+Logic+vs+Third+Impact+-+9777603)',
+                                           'Thunder Logic will win': '1.21(marathon - '
+                                                                     'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/ESEA+Advanced+Season/Main+Event/Best+of+3+maps/Thunder+Logic+vs+Third+Impact+-+9777603)'},
+          'tiger - mazaalai': {'    To Win Match With Handicap By Maps          Mazaalai     (+1.5)  ': '1.48(marathon - '
+                                                                                                        'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/TIGER+vs+Mazaalai+-+9777612)',
+                               '    To Win Match With Handicap By Maps          TIGER     (-1.5)  ': '2.58(marathon - '
+                                                                                                     'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/TIGER+vs+Mazaalai+-+9777612)',
+                               '    Total Maps          Over     (2.5)  ': '2.09(marathon - '
+                                                                           'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/TIGER+vs+Mazaalai+-+9777612)',
+                               '    Total Maps          Under     (2.5)  ': '1.71(marathon - '
+                                                                            'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/TIGER+vs+Mazaalai+-+9777612)',
+                               '    Total Maps        Even ': '1.71(marathon - '
+                                                              'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/TIGER+vs+Mazaalai+-+9777612)',
+                               '    Total Maps        Odd ': '2.09(marathon - '
+                                                             'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/TIGER+vs+Mazaalai+-+9777612)',
+                               'Mazaalai will win': '2.56(marathon - '
+                                                    'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/TIGER+vs+Mazaalai+-+9777612)',
+                               'TIGER will win': '1.51(marathon - '
+                                                 'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/TIGER+vs+Mazaalai+-+9777612)'},
+          'vici gaming - beyond': {'    To Win Match With Handicap By Maps          Beyond     (+1.5)  ': '1.77(marathon - '
+                                                                                                          'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Vici+Gaming+vs+Beyond+-+9777620)',
+                                   '    To Win Match With Handicap By Maps          Vici Gaming     (-1.5)  ': '2.01(marathon - '
+                                                                                                               'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Vici+Gaming+vs+Beyond+-+9777620)',
+                                   '    Total Maps          Over     (2.5)  ': '2.18(marathon - '
+                                                                               'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Vici+Gaming+vs+Beyond+-+9777620)',
+                                   '    Total Maps          Under     (2.5)  ': '1.66(marathon - '
+                                                                                'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Vici+Gaming+vs+Beyond+-+9777620)',
+                                   '    Total Maps        Even ': '1.66(marathon - '
+                                                                  'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Vici+Gaming+vs+Beyond+-+9777620)',
+                                   '    Total Maps        Odd ': '2.18(marathon - '
+                                                                 'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Vici+Gaming+vs+Beyond+-+9777620)',
+                                   'Beyond will win': '3.76(marathon - '
+                                                      'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Vici+Gaming+vs+Beyond+-+9777620)',
+                                   'Vici Gaming will win': '1.27(marathon - '
+                                                           'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/Perfect+World+Asia+League+Summer/Main+Event/Best+of+3+maps/Vici+Gaming+vs+Beyond+-+9777620)'}}}

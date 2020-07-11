@@ -94,6 +94,7 @@ class FavoritScraper(AbstractScraper):
         Page.click(match_button)
         time.sleep(0.1)
         bets = []
+        url = Page.driver.current_url
         match_title = FavoritScraper._get_match_title()
         if not match_title:
             return bets
@@ -136,7 +137,7 @@ class FavoritScraper(AbstractScraper):
                         odds = outcome_row.find_elements_by_tag_name('button')
                         for i in range(len(odds)):
                             bet_title = block_title + ' ' + outcome_row_name + ' ' + names[i]
-                            bet = Bet(bet_title, odds[i].text)
+                            bet = Bet(bet_title, odds[i].text, FavoritScraper._NAME, url)
                             bets.append(bet)
                 else:
                     labels = block.find_elements_by_tag_name('label')
@@ -147,11 +148,10 @@ class FavoritScraper(AbstractScraper):
                         bet_title = block_title + ' ' + bet_type
                         button = label.find_element_by_tag_name('button')
                         odds = button.text
-                        bet = Bet(bet_title, odds)
+                        bet = Bet(bet_title, odds, FavoritScraper._NAME, url)
                         bets.append(bet)
 
-        url = Page.driver.current_url
-        match = Match(match_title, url, FavoritScraper._NAME, bets)
+        match = Match(match_title, bets)
         return match
 
     @staticmethod
