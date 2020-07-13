@@ -26,12 +26,14 @@ class ParimatchScraper(AbstractScraper):
     _SPORT_NAMES = {
         'csgo': 'counter-strike',
         'dota': 'dota-2',
-        'football': 'futbol'
+        'football': 'futbol',
+        'lol': 'liga-legend',
         }
     _MENU = {
         'csgo': 'https://parimatch.com/sport/kibersport',
         'dota': 'https://parimatch.com/sport/kibersport',
         'football': 'https://parimatch.com/sport/futbol',
+        'lol': 'https://parimatch.com/sport/kibersport',
         }
 
     # last titles for each of the groups

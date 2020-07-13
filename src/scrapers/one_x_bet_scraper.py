@@ -20,11 +20,13 @@ class OneXBetScraper(AbstractScraper):
         'csgo': 'CSGO',
         'dota': 'Dota-2',
         'football': 'Football',
+        'lol': 'League-of-Legends',
     }
     _MENU = {
         'csgo': 'line/Esports/',
         'dota': 'line/Esports/',
         'football': 'line/Football/',
+        'lol': 'line/Esports/',
     }
     _TEAM_NAME_CONTAINERS = ['c-scoreboard-team__name-link', 'team', ]
 

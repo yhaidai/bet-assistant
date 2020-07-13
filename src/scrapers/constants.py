@@ -1,4 +1,4 @@
-sport_name = 'csgo'
+sport_name = 'lol'
 marathon_skip_titles = ['Goalscorers', 'Scorecast', '1st Goal + Full Time Result',
                 '1st Half + 2nd Half', '1st Half + Full Time\n', #'Correct Score',
                 '1st Half Result + 1st Half Total Goals', '1st Team to Score',
