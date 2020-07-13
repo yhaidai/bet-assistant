@@ -45,6 +45,13 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
             formatted_title += 'will be first to win ' + words[-1] + ' rounds'
         return formatted_title
 
+    def _format_handicap(self):
+        formatted_title = GSF._format_handicap(self)
+        if 'handicap' in formatted_title and ' maps' not in formatted_title:
+            formatted_title += ' rounds'
+
+        return formatted_title
+
 
 if __name__ == '__main__':
     formatter = GGBetSyntaxFormatter()

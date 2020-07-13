@@ -7,7 +7,7 @@ from groupers.esports.abstract_grouper import AbstractGrouper
 
 class ForkGrouper(AbstractGrouper):
     _grouped_by = {
-        '(^\d-.{2} map: )?.+? will (win in round \d+)$': (2, ),
+        r'(^\d-.{2} map: )?.+? will (win in round \d+)$': (2, ),
         }
 
     def _get_grouped_by(self):

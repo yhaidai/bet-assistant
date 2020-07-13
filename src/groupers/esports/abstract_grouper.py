@@ -8,10 +8,10 @@ from groupers.abstract_grouper import AbstractGrouper as AG
 
 class AbstractGrouper(AG, ABC):
     _grouped_by = {
-        '(^\d-.{2} map: )?.+? will (win)$': (2, ),
-        '^(correct score) \d+-\d+$': (1, ),
-        '(^\d-.{2} map: )?(total) (over|under) (\d+(\.\d)?)$': (2, 4),
-        '(^\d-.{2} map: )?(total) — (even|odd)$': (2, ),
+        r'(^\d-.{2} map: )?.+? will (win)$': (2, ),
+        r'^(correct score) \d+-\d+$': (1, ),
+        r'(^\d-.{2} map: )?(total) (over|under) (\d+(\.\d)?)$': (2, 4),
+        r'(^\d-.{2} map: )?(total) — (even|odd)$': (2, ),
         }
 
     def group_bets(self, sport: Sport):
@@ -34,8 +34,8 @@ class AbstractGrouper(AG, ABC):
                         groups.setdefault(key, BetGroup(key)).append(bet)
                         continue
 
-                found = re.search('(^\d-.{2} map: )(handicap )(.+? )(\+|-)(\d+(\.\d)?)$|'
-                                  '^(.+? )(handicap )(\+|-)(\d+(\.\d)?) maps$', bet.title)
+                found = re.search(r'(^\d-.{2} map: )(handicap )(.+? )(\+|-)(\d+(\.\d)?)$|'
+                                  r'^(.+? )(handicap )(\+|-)(\d+(\.\d)? maps)$', bet.title)
                 if found:
                     key = None
                     for group in groups:
@@ -44,8 +44,8 @@ class AbstractGrouper(AG, ABC):
                                     and found.group(7) not in group and found.group(9) not in group:
                                 key = group
                         else:
-                            if found.group(5) in group and found.group(2) in group and found.group(3) not in group \
-                                    and found.group(4) not in group[len(found.group(1)):]:
+                            if found.group(5) in group and found.group(2) in group and found.group(1) in group and \
+                                    found.group(3) not in group and found.group(4) not in group[len(found.group(1)):]:
                                 key = group
 
                     if not key:

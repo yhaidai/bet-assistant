@@ -1,6 +1,7 @@
+import os.path
 import time
 from pprint import pprint, pformat
-import os.path
+
 from selenium.common.exceptions import NoSuchElementException
 
 from Bet import Bet
@@ -18,30 +19,31 @@ class OneXBetScraper(AbstractScraper):
     _SPORT_NAMES = {
         'csgo': 'CSGO',
         'dota': 'Dota-2',
-        }
+        'football': 'Football',
+    }
     _MENU = {
         'csgo': 'line/Esports/',
-        'dota': 'line/Esports/'
-        }
+        'dota': 'line/Esports/',
+        'football': 'line/Football/',
+    }
+    _TEAM_NAME_CONTAINERS = ['c-scoreboard-team__name-link', 'team', ]
 
     def get_sport_bets(self, sport_name: str):
         sport_bets = []
         championships = OneXBetScraper._get_championships(sport_name)
         championship_urls = OneXBetScraper.get_championship_urls(championships)
+        print(len(championship_urls))
 
         match_elements = OneXBetScraper._get_match_elements(championships)
+        print('Match urls count: ' + str(len(match_elements)))
         match_urls = OneXBetScraper.get_match_urls(match_elements, championship_urls)
 
-        max_matches_count = 100
-        c = 0
+        match_urls = list(match_urls)[:20]
         for url in match_urls:
             full_url = OneXBetScraper._BASE_URL + url
             match_bets = OneXBetScraper._get_match_bets(full_url)
             if match_bets:
                 sport_bets.append(match_bets)
-            c += 1
-            if c == max_matches_count:
-                break
 
         sport = Sport(sport_name, sport_bets)
         return sport
@@ -63,7 +65,8 @@ class OneXBetScraper(AbstractScraper):
         pattern = OneXBetScraper._SPORT_NAMES[sport_name]
         selector = 'a[href*="' + pattern + '"]'
 
-        championships = {el for el in menu.find_elements_by_css_selector(selector)}
+        championships = {el for el in menu.find_elements_by_css_selector(selector) if el.get_attribute('href').count(
+            '/') == 7}
 
         return championships
 
@@ -78,13 +81,16 @@ class OneXBetScraper(AbstractScraper):
         menu = Page.driver.find_element_by_class_name('liga_menu')
         championship_urls = OneXBetScraper.get_championship_urls(championships)
 
+        print('Opening championships...')
         OneXBetScraper._open_championships(championships)
 
+        print('Retrieving matches...')
         event_menus = menu.find_elements_by_class_name('event_menu')
+        print('Event menus count: ' + str(len(event_menus)))
+        event_menus = event_menus[:1]
         for event_menu in event_menus:
             for championship_url in championship_urls:
                 css_link_prefix_match = 'a[href^="' + championship_url + '"]'
-
                 try:
                     matches.update(el for el in menu.find_elements_by_css_selector(css_link_prefix_match))
                 except NoSuchElementException:
@@ -109,6 +115,7 @@ class OneXBetScraper(AbstractScraper):
         print(match_url)
         match_title = OneXBetScraper._get_match_title()
         if not match_title:
+            print('MATCH TITLE NOT FOUND')
             return match
 
         bet_groups = page.driver.find_elements_by_class_name('bet_group')
@@ -129,13 +136,20 @@ class OneXBetScraper(AbstractScraper):
 
     @staticmethod
     def _get_match_title():
-        team_names = [team.text for team in Page.driver.find_elements_by_class_name('team')]
+        for container in OneXBetScraper._TEAM_NAME_CONTAINERS:
+            team_names = [team.text for team in Page.driver.find_elements_by_class_name(container)]
+            print(container)
+            print(team_names)
+            if team_names:
+                break
+
         if not team_names:
             try:
                 board_div = Page.driver.find_element_by_class_name('board_div')
                 return board_div.find_element_by_class_name('name').text
             except NoSuchElementException:
                 return None
+
         return MatchTitleCompiler.compile_match_title(*team_names)
 
     @staticmethod

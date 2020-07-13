@@ -144,6 +144,8 @@ class MarathonScraper(AbstractScraper):
                     result_left = results_left[i].text
                     o = odds[i].find_element_by_tag_name('span').text
                     bet_title = block_title + ' ' + result_left
+                    bet = Bet(bet_title, o, MarathonScraper._NAME, url)
+                    bets.append(bet)
 
             elif another_results_left:
                 tags = [el.text for el in table.find_elements_by_tag_name('th')[1:]]
@@ -155,6 +157,8 @@ class MarathonScraper(AbstractScraper):
                         bet_type = row.find_element_by_class_name('text-align-left').text
                         o = odds[i].text
                         bet_title = block_title + ' ' + bet_type + ' ' + tags[i]
+                        bet = Bet(bet_title, o, MarathonScraper._NAME, url)
+                        bets.append(bet)
 
             else:
                 rows = table.find_elements_by_tag_name('tr')
@@ -182,11 +186,10 @@ class MarathonScraper(AbstractScraper):
                                     bet_type = bet_types[i].text
                                 o = odds[i].text
                                 bet_title = block_title + ' ' + bet_type + ' ' + tags[i]
+                                bet = Bet(bet_title, o, MarathonScraper._NAME, url)
+                                bets.append(bet)
 
-        bet = Bet(bet_title, o, MarathonScraper._NAME, url)
-        bets.append(bet)
         match = Match(match_title, bets)
-
 
         Page.click(match_button)
         time.sleep(0.2)

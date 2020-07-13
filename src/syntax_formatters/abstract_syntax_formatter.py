@@ -9,7 +9,7 @@ class AbstractSyntaxFormatter(ABC):
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the websites
     """
-    _REMOVE_FROM_TITLES = ['team ', ' team', ' esports', ' club', ' gaming']
+    _REMOVE_FROM_TITLES = ['team ', ' team', ' esports', ' e-sports', 'club', ' gaming']
 
     def apply_unified_syntax_formatting(self, sport):
         """
@@ -20,11 +20,11 @@ class AbstractSyntaxFormatter(ABC):
         """
         sport = self._format_before(sport)
 
+        sport = self._update(sport, self._format_uncommon_chars)
         sport = self._update(sport, self._format_total)
         sport = self._update(sport, self._format_handicap)
         sport = self._update(sport, self._format_correct_score)
         sport = self._update(sport, self._format_win)
-        sport = self._update(sport, self._format_uncommon_chars)
 
         sport = self._format_after(sport)
 
@@ -212,4 +212,5 @@ class AbstractSyntaxFormatter(ABC):
                 else:
                     formatted_title = team + ' ' + formatted_title
                 break
+
         return formatted_title

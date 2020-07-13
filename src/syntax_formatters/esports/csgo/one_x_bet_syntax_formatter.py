@@ -70,13 +70,8 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
         return formatted_title
 
     def _format_after(self, bets):
-        bets = self._update(bets, self._fix_total_maps)
         bets = self._update(bets, self._fix_t_ct_and_total_rounds)
         return bets
-
-    def _fix_total_maps(self):
-        formatted_title = self.bet_title.lower()
-        return formatted_title
 
     def _fix_t_ct_and_total_rounds(self):
         formatted_title = self.bet_title.lower()
@@ -90,6 +85,13 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
         # не знаю как это в одно запихнуть ))))00))
         if match1 or match2:
             formatted_title = formatted_title.replace('total', 'total rounds')
+        return formatted_title
+
+    def _format_handicap(self):
+        formatted_title = OSF._format_handicap(self)
+        if 'handicap' in formatted_title and ' maps' not in formatted_title:
+            formatted_title += ' rounds'
+
         return formatted_title
 
 

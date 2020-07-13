@@ -20,15 +20,7 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
             formatted_title = formatted_title.replace('handicap value', '', 1).replace('coefficient', '', 1)
 
             if 'map:' in formatted_title:
-                # cut 'handicap ' out
-                formatted_title = formatted_title.replace('handicap ', '', 1)
-
-                # remove prefix
-                prefix = formatted_title[:formatted_title.find(':') + 2]
-                formatted_title = formatted_title.replace(prefix, '', 1)
-
-                # insert 'handicap '
-                formatted_title = prefix + 'handicap ' + formatted_title
+                formatted_title += ' rounds'
             else:
                 formatted_title += ' maps'
 
@@ -43,6 +35,7 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
 
     def _format_after(self, bets):
         bets = self._update(bets, self._fix_total_rounds_and_maps)
+        bets = self._update(bets, self._move_teams_left)
         return bets
 
     def _fix_total_rounds_and_maps(self):
@@ -54,7 +47,7 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
 
         match = re.search('^total (over|under)', formatted_title)
         if match:
-            formatted_title = formatted_title('total', 'total maps')
+            formatted_title = formatted_title.replace('total', 'total maps')
         match1 = re.search(r'map: .+? total', formatted_title)
         match2 = re.search(r'map: total', formatted_title)
         # не знаю как это в одно запихнуть ))))00))

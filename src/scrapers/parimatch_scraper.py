@@ -26,14 +26,16 @@ class ParimatchScraper(AbstractScraper):
     _SPORT_NAMES = {
         'csgo': 'counter-strike',
         'dota': 'dota-2',
+        'football': 'futbol'
         }
     _MENU = {
         'csgo': 'https://parimatch.com/sport/kibersport',
-        'dota': 'https://parimatch.com/sport/kibersport'
+        'dota': 'https://parimatch.com/sport/kibersport',
+        'football': 'https://parimatch.com/sport/futbol',
         }
 
     # last titles for each of the groups
-    _TITLE_BREAKERS = ('Handicap coefficient', 'Under', 'Win of the 1st team',)
+    _TITLE_BREAKERS = ('Handicap coefficient', 'Under', 'Win of the 1st team', )
 
     def get_sport_bets(self, sport_name):
         """
@@ -45,6 +47,8 @@ class ParimatchScraper(AbstractScraper):
         sport_bets = []
 
         championship_urls = ParimatchScraper.get_championship_urls(sport_name)
+        championship_urls = championship_urls[:]
+
         for championship_url in championship_urls:
             full_url = self._BASE_URL + championship_url
             championship_bets = self._get_championship_bets(full_url)
@@ -65,7 +69,7 @@ class ParimatchScraper(AbstractScraper):
         """
         page = Page(ParimatchScraper._MENU[sport_name])
         soup = BeautifulSoup(page.html, 'html.parser')
-        pattern = ParimatchScraper._SPORT_NAMES[sport_name]
+        pattern = ParimatchScraper._SPORT_NAMES[sport_name] + '.+'
         championship_urls = [url.get('href') for url in soup.find_all('a', href=re.compile(pattern))]
 
         return championship_urls
@@ -113,22 +117,28 @@ class ParimatchScraper(AbstractScraper):
         :type matches: list
         """
         for bk in bks:
+            bets = []
             match_title = ParimatchScraper._get_match_title(bk)
 
             # get main bets for the match
-            ParimatchScraper._update_bets(bk, bet_title_tags, match_title, '', matches, url)
+            bets += ParimatchScraper._update_bets(bk, bet_title_tags, match_title, '', url)
 
-            # get partial bets for the match if any
+            # get other bets for the match if any
             row1_props = bk.parent.next_sibling
             if row1_props:
                 props_bks = row1_props.find_all(class_='bk')
                 if props_bks:
-                    subtitle = props_bks[0].next_element.next_sibling.text + ' '
+                    subtitle_children_count = len(props_bks[0].contents)
                     for props_bk in props_bks:
-                        ParimatchScraper._update_bets(props_bk, bet_title_tags, match_title, subtitle, matches, url)
+                        if len(props_bk.contents) == subtitle_children_count:
+                            subtitle = props_bk.next_element.next_sibling.text + ' '
+                        bets += ParimatchScraper._update_bets(props_bk, bet_title_tags, match_title, subtitle, url)
+
+            match = Match(match_title, bets)
+            matches.append(match)
 
     @staticmethod
-    def _update_bets(bk, bet_title_tags, match_title, subtitle, matches, url):
+    def _update_bets(bk, bet_title_tags, match_title, subtitle, url):
         """
         Scrapes match title, bet titles and odds for given tag of class 'bk' and updates bets dict with scraped data
 
@@ -201,8 +211,7 @@ class ParimatchScraper(AbstractScraper):
                 if title in ParimatchScraper._TITLE_BREAKERS:
                     bet_titles = []
 
-        match = Match(match_title, bets)
-        matches.append(match)
+        return bets
 
     @staticmethod
     def _find_column(bk, bet_title_tag):

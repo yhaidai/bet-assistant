@@ -17,6 +17,7 @@ class AbstractSyntaxFormatter(ASF, ABC):
         """
         sport = self._format_before(sport)
 
+        sport = self._update(sport, self._format_uncommon_chars)
         sport = self._update(sport, self._format_total)
         sport = self._update(sport, self._format_maps)
         sport = self._update(sport, self._format_teams)
@@ -24,7 +25,6 @@ class AbstractSyntaxFormatter(ASF, ABC):
         sport = self._update(sport, self._format_win_in_round)
         sport = self._update(sport, self._format_correct_score)
         sport = self._update(sport, self._format_win)
-        sport = self._update(sport, self._format_uncommon_chars)
         sport = self._update(sport, self._format_bomb_exploded)
         sport = self._update(sport, self._format_bomb_planted)
         sport = self._update(sport, self._format_overtime)
