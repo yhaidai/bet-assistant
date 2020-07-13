@@ -31,7 +31,7 @@ class Match:
         for bet in self.bets:
             value = None
             if type(bet) == Bet:
-                value = bet
+                value = str(bet.odds) + '(' + str(bet.bookmaker) + ' - ' + str(bet.url) + ')'
             elif type(bet) == BetGroup:
                 value = bet.to_dict()
 
