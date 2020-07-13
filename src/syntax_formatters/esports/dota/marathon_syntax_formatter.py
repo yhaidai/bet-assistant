@@ -71,10 +71,6 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
                     formatted_title += 'most kills'
         return formatted_title
 
-    def _format_draw(self):
-        formatted_title = self.bet_title.lower()
-        return formatted_title
-
     def _format_first_kill(self):
         formatted_title = self.bet_title.lower()
         if 'first blood' in formatted_title:
@@ -88,6 +84,10 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
         if 'map duration' in formatted_title:
             formatted_title = formatted_title.replace('map duration', 'duration')
             formatted_title = formatted_title.replace(' minutes', '')
+        return formatted_title
+
+    def _format_teams(self):
+        formatted_title = self._move_teams_left()
         return formatted_title
 
 

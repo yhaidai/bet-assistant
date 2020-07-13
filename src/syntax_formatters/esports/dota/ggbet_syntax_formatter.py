@@ -3,7 +3,7 @@ import re
 from Sport import Sport
 from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.esports.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
-from sample_data.dota import ggbet
+from scrapers.sample_data.dota import ggbet
 import os.path
 
 
@@ -67,6 +67,24 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
             formatted_title = formatted_title.replace(' minutes', '')
         return formatted_title
 
+    def _remove_full_time(self):
+        formatted_title = self.bet_title.lower()
+        if 'full time' in formatted_title:
+            formatted_title = formatted_title.replace('full time ', '')
+        for c in ['(', ')', '- ']:
+            formatted_title = formatted_title.replace(c, '')
+        return formatted_title
+
+    def _format_before(self, bets):
+        bets = self._update(bets, self._remove_full_time)
+        bets = self._update(bets, self._format_whitespaces)
+        return bets
+
+    def _format_whitespaces(self):
+        formatted_title = self.bet_title.lower()
+        formatted_title = ' '.join(formatted_title.split())
+        formatted_title = formatted_title.strip()
+        return formatted_title
 
 if __name__ == '__main__':
     formatter = GGBetSyntaxFormatter()

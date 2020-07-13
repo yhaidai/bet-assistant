@@ -196,8 +196,9 @@ class AbstractSyntaxFormatter(ABC):
             title = title.replace(teams[1], teams[0])
         return title
 
-    def _move_teams_left(self):
-        formatted_title = self.bet_title.lower()
+    def _move_teams_left(self, formatted_title=None):
+        if not formatted_title:
+            formatted_title = self.bet_title.lower()
         teams = AbstractSyntaxFormatter.get_teams(self)
         for team in teams:
             if team in formatted_title:

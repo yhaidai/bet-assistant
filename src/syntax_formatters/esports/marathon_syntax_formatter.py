@@ -35,7 +35,20 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
     def _format_win(self):
         formatted_title = self.bet_title.lower()
         formatted_title = formatted_title.replace('to win', 'will win')
-        formatted_title = formatted_title.replace('draw', 'draw will win')
+        match = re.search(r'^draw$', formatted_title)
+        if match:
+            formatted_title += ' will win'
+        formatted_title = formatted_title.replace('or draw', 'or draw will win')
+        teams = self.get_teams()
+        match = re.search('will win( or .+? will win)', formatted_title)
+        if match:
+            formatted_title = formatted_title.replace(match.group(1), '')
+            if 'draw' in match.group(1):
+                formatted_title = self.swap_teams(formatted_title)
+            else:
+                for team in teams:
+                    formatted_title = formatted_title.replace(team, 'draw')
+            formatted_title = formatted_title.replace('will win', 'will lose')
         return formatted_title
 
     def _format_maps(self):
