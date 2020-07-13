@@ -35,7 +35,7 @@ class ParimatchScraper(AbstractScraper):
         }
 
     # last titles for each of the groups
-    _TITLE_BREAKERS = ('Handicap coefficient', 'Under', 'Win of the 1st team',)
+    _TITLE_BREAKERS = ('Handicap coefficient', 'Under', 'Win of the 1st team', )
 
     def get_sport_bets(self, sport_name):
         """
@@ -47,7 +47,7 @@ class ParimatchScraper(AbstractScraper):
         sport_bets = []
 
         championship_urls = ParimatchScraper.get_championship_urls(sport_name)
-        championship_urls = championship_urls[:1]
+        championship_urls = championship_urls[:]
 
         for championship_url in championship_urls:
             full_url = self._BASE_URL + championship_url

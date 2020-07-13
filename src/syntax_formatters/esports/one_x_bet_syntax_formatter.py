@@ -11,10 +11,10 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
     """
     def _format_before(self, bets):
         """
-        Apply unified syntax formatting to the given bets dict
+        Apply unified syntax formatting to the given sport
 
-        :param bets: bets dictionary to format
-        :type bets: dict
+        :param bets: sport to format
+        :type bets: Sport
         """
         bets = self._update(bets, self._remove_prefixes)
         bets = self._update(bets, self._format_frags)
@@ -53,8 +53,11 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
             else:
                 ending = ''
 
-            formatted_title = formatted_title[:index] + ending + formatted_title[index:].replace('.', ':', 1)
-            formatted_title = formatted_title.replace('total. ', '', 1)
+            if ending == '':
+                formatted_title = formatted_title[:index] + formatted_title[index:]
+            else:
+                formatted_title = formatted_title[:index] + ending + formatted_title[index:].replace('.', ':', 1)
+            # formatted_title = formatted_title.replace('total. ', '', 1)
 
         return formatted_title
 
@@ -73,9 +76,13 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
         formatted_title = self.bet_title.lower().replace('handicap. ', '', 1)
         formatted_title = formatted_title.replace('(', '').replace(')', '')
         if 'handicap ' in formatted_title:
-            sign_index = formatted_title.find('handicap ') + len('handicap ')
-            if formatted_title[sign_index] != '-':
-                formatted_title = formatted_title.replace('handicap ', 'handicap +', 1)
+            found = re.search(r'^(\d-(st|nd|rd|th) map: )(handicap )(.+? )((\+|-)\d+(\.\d+)?)$', formatted_title)
+            if found:
+                formatted_title = found.group(1) + found.group(4) + found.group(3) + found.group(5)
+            else:
+                sign_index = formatted_title.find('handicap ') + len('handicap ')
+                if formatted_title[sign_index] != '-':
+                    formatted_title = formatted_title.replace('handicap ', 'handicap +', 1)
 
         return formatted_title
 

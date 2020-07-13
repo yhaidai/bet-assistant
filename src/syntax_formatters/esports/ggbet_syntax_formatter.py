@@ -40,17 +40,29 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
 
     def _format_handicap(self):
         formatted_title = self.bet_title.lower()
-        if 'round handicap' or 'rounds handicap' in formatted_title:
-            formatted_title = formatted_title.replace('round handicap', 'handicap')
-            formatted_title = formatted_title.replace('rounds handicap', 'handicap')
+        if 'round handicap' in formatted_title or 'rounds handicap' in formatted_title:
             formatted_title = formatted_title.replace('(', '')
             formatted_title = formatted_title.replace(')', '')
+            formatted_title = formatted_title.replace('round handicap', 'handicap')
+            formatted_title = formatted_title.replace('rounds handicap', 'handicap')
+
+            if ' map: ' in formatted_title:
+                words = formatted_title.split()
+                formatted_title = ' '.join(words[:2] + words[3:-1])
+                formatted_title += ' handicap ' + words[-1]
+            else:
+                words = formatted_title.split()
+                formatted_title = ' '.join(words[1:-1])
+                formatted_title += ' handicap ' + words[-1]
+
         if 'map handicap' in formatted_title:
-            words = re.split(' ', formatted_title)
-            formatted_title = ''
-            for i in range(2, len(words) - 1):
-                formatted_title += words[i] + ' '
-            formatted_title += 'handicap ' + words[-1] + ' maps'
+            formatted_title = formatted_title.replace('(', '')
+            formatted_title = formatted_title.replace(')', '')
+
+            words = formatted_title.split()
+            formatted_title = ' '.join(words[2:-1])
+            formatted_title += ' handicap ' + words[-1] + ' maps'
+
         return formatted_title
 
     def _format_uncommon_chars(self):
@@ -79,6 +91,9 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
             formatted_title = formatted_title.replace(' - ', ' ')
         if 'terrorist' in formatted_title:
             formatted_title = formatted_title.replace('terrorist', 't')
+        if '(incl. overtimes) ' in formatted_title:
+            # print(formatted_title)
+            formatted_title = formatted_title.replace('(incl. overtimes) ', '')
         return formatted_title
 
     def _format_before(self, bets):

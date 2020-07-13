@@ -8,16 +8,15 @@ import os.path
 
 
 class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
-    def _format_win_in_round(self):
-        formatted_title = self.bet_title.lower()
-        return formatted_title
-
-    def _format_overtime(self):
-        formatted_title = self.bet_title.lower()
-        return formatted_title
-
     def _format_teams(self):
         return self._move_teams_left()
+
+    def _format_handicap(self):
+        formatted_title = MSF._format_handicap(self)
+        if 'handicap' in formatted_title and ' maps' not in formatted_title:
+            formatted_title += ' rounds'
+
+        return formatted_title
 
 
 if __name__ == '__main__':
