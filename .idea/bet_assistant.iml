@@ -23,7 +23,7 @@
       <excludeFolder url="file://$MODULE_DIR$/uml" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (no_dict)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (bet-assistant)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">

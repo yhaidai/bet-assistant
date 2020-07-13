@@ -8,7 +8,7 @@ class ForkBetsAnalyzer(BestOddsAnalyzer):
     Class for analyzing betting info and finding possible fork bets
     """
     _fork_grouper = ForkGrouper()
-    _PROFIT_THRESHOLD = 0.15
+    _PROFIT_THRESHOLD = 10.15
 
     def __init__(self, sport_type):
         super().__init__(sport_type)
@@ -42,44 +42,6 @@ class ForkBetsAnalyzer(BestOddsAnalyzer):
                 fork_bets_sport.matches.remove(match)
 
         return fork_bets_sport
-
-    @staticmethod
-    def _compile_fork_bet_title(bet_titles):
-        """
-        Compiles fork bet title from two bet titles
-
-        :param bet_titles: bet titles to compile the fork bet title from
-        :type bet_titles: list
-        :return: compiled fork bet title in the form: bet_title_1 | bet_title_2 | ... | bet_title_n
-        :rtype: str
-        """
-        bet_titles.sort()
-        result = ''
-        for bet_title in bet_titles:
-            result += bet_title + ' | '
-
-        return result[:-3]
-
-    @staticmethod
-    def _compile_fork_text_dict(odds, bet_amounts, profit):
-        """
-        Compiles fork bet result dictionary from given odds, bookmaker names and profit
-
-        :param odds: odds list in the form [{odds_value: bookmaker_name},...]
-        :type odds: list
-        :param profit: average profit from this fork bet
-        :type profit: float
-        :return: fork bet result dict in the form:
-        {profit: max_odds(bookmaker1) - max_opposite_odds(bookmaker2)}
-        :rtype: dict
-        """
-        key = '*Profit - ' + str('{:.2f}'.format(profit * 100)) + '%*'
-        value = {}
-        for odds_dict in odds:
-            for odds_value, bookmaker in odds_dict.items():
-                value.update({'*' + odds_value + '(' + bet_amounts[odds_value] + ')*': bookmaker})
-
-        return {key: value}
 
     @staticmethod
     def _get_fork_profit(odds):
