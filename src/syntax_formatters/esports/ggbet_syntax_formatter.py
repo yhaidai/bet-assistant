@@ -58,10 +58,14 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
         if 'map handicap' in formatted_title:
             formatted_title = formatted_title.replace('(', '')
             formatted_title = formatted_title.replace(')', '')
-
             words = formatted_title.split()
             formatted_title = ' '.join(words[2:-1])
             formatted_title += ' handicap ' + words[-1] + ' maps'
+
+        if 'kills handicap' in formatted_title:
+            formatted_title = formatted_title.replace('kills ', '')
+            formatted_title += ' kills'
+            formatted_title = self._move_teams_left(formatted_title)
 
         return formatted_title
 

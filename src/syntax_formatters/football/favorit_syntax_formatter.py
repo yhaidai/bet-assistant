@@ -60,7 +60,9 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         formatted_title = self.bet_title.lower()
         for c in ['over/under', 'odd / even']:
             if c in formatted_title:
-                formatted_title = formatted_title.replace(c, 'total')
+                formatted_title = formatted_title.replace(c, 'total goals')
+        if 'asian total' in formatted_title:
+            formatted_title = formatted_title.replace('asian total', 'asian total goals')
         return formatted_title
 
     def _format_before(self, bets):
