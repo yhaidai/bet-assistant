@@ -16,7 +16,7 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
             formatted_title = formatted_title.replace('total kills ', '')
             formatted_title = formatted_title.replace(' ' + match.group(1), '')
             formatted_title += ' total kills ' + match.group(1)
-        match = re.search('(\d+\.\d) (over|under)', formatted_title)
+        match = re.search(r'(\d+\.\d) (over|under)', formatted_title)
         if match:
             formatted_title = formatted_title.replace(match.group(1) + ' ', '')
             formatted_title += ' ' + match.group(1)
@@ -28,7 +28,7 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
 
     def _format_first_to_make_number_of_kills(self):
         formatted_title = self.bet_title.lower()
-        match = re.search('1st team to .+? (\d+ kills)', formatted_title)
+        match = re.search(r'1st team to .+? (\d+ kills)', formatted_title)
         if match:
             formatted_title = formatted_title.replace(' 1st team to', '')
             formatted_title = formatted_title.replace(' ' + match.group(1), '')

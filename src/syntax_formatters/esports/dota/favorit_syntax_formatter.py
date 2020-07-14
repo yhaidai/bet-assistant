@@ -72,6 +72,20 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title = self.swap_teams(formatted_title)
         return formatted_title
 
+    def _format_barracks(self):
+        formatted_title = self.bet_title.lower()
+        if 'which team will be the first to lose a barrack?' in formatted_title:
+            formatted_title = formatted_title.replace('which team will be the first to lose a barrack?',
+                                                      'will first lose barracks')
+        return formatted_title
+
+    def _format_megacreeps(self):
+        formatted_title = self.bet_title.lower()
+        if 'will there be megacreeps on the map' in formatted_title:
+            formatted_title = formatted_title.replace('will there be megacreeps on the map',
+                                                      'megacreeps')
+        return formatted_title
+
     def _format_teams(self):
         return self._move_teams_left()
 

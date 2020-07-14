@@ -8,6 +8,12 @@ import os.path
 
 
 class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
+    def _format_total(self):
+        formatted_title = GSF._format_total(self)
+        if 'total roshans slain' in formatted_title:
+            formatted_title = formatted_title.replace('slain ', '')
+        return formatted_title
+
     def _format_specific_kill(self):
         formatted_title = self.bet_title.lower()
         match = re.search(r'((\d+)th kill )', formatted_title)

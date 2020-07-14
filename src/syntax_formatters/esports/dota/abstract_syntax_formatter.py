@@ -34,6 +34,8 @@ class AbstractSyntaxFormatter(ASF, ABC):
         sport = self._update(sport, self._format_first_to_make_number_of_kills)
         sport = self._update(sport, self._format_first_to_destroy_tower)
         sport = self._update(sport, self._format_first_to_kill_roshan)
+        sport = self._update(sport, self._format_megacreeps)
+        sport = self._update(sport, self._format_barracks)
         sport = self._update(sport, self._format_total_kills)
         sport = self._update(sport, self._format_most_kills)
         sport = self._update(sport, self._format_specific_kill)
@@ -70,4 +72,10 @@ class AbstractSyntaxFormatter(ASF, ABC):
         return self.bet_title.lower()
 
     def _format_specific_kill(self):
+        return self.bet_title.lower()
+
+    def _format_megacreeps(self):
+        return self.bet_title.lower()
+
+    def _format_barracks(self):
         return self.bet_title.lower()

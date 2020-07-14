@@ -46,6 +46,10 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
             if match:
                 formatted_title = formatted_title.replace('even - no', 'odd')
                 formatted_title = formatted_title.replace('total', 'total kills')
+
+            if 'beaten roshans' in formatted_title:
+                formatted_title = formatted_title.replace('beaten ', '')
+
         return formatted_title
 
     def _format_first_to_destroy_tower(self):
