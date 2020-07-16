@@ -2,7 +2,7 @@ import re
 from pprint import pprint, pformat
 import os.path
 
-from Sport import Sport
+from sport import Sport
 from football.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
 from sample_data.football import parimatch
@@ -20,6 +20,10 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
         if 'handicap' in formatted_title:
             formatted_title = self._swap_substrings(formatted_title, '. ', 1, 2, '')
             formatted_title = formatted_title.replace('handicap value', '', 1).replace('coefficient', '', 1)
+
+        found = re.search(r'handicap (\+|-|–)\d+\.\d+$', formatted_title)
+        if found:
+            formatted_title += ' goals'
 
         return formatted_title
 

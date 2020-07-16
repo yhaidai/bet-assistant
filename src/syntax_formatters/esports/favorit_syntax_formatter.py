@@ -13,6 +13,12 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         if '1 x 2' in formatted_title:
             formatted_title = formatted_title.replace('1 x 2', 'will win')
             formatted_title = formatted_title.replace('will win draw', 'draw will win')
+        found = re.search(r'draw (yes|no)', formatted_title)
+        if found:
+            if found.group(1) == 'yes':
+                formatted_title = formatted_title.replace('draw yes', 'draw will win')
+            else:
+                formatted_title = formatted_title.replace('draw no', 'draw will lose')
         return formatted_title
 
     def _format_total(self):
@@ -57,10 +63,6 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         match = re.search(r'(kills ((\+|-)(\d+\.\d)))', formatted_title)
         if match:
             formatted_title = formatted_title.replace(match.group(1), match.group(2) + ' kills')
-        return formatted_title
-
-    def _format_uncommon_chars(self):
-        formatted_title = self.bet_title.lower()
         return formatted_title
 
     def _format_correct_score(self):

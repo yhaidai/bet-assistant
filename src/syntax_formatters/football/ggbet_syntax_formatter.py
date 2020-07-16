@@ -1,7 +1,7 @@
 import re
 from pprint import pprint, pformat
 
-from Sport import Sport
+from sport import Sport
 from football.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
 from sample_data.football import ggbet
@@ -14,6 +14,13 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
         if '1x2' in formatted_title:
             formatted_title = formatted_title.replace('1x2', 'will win')
             formatted_title = formatted_title.replace('will win draw', 'draw will win')
+        return formatted_title
+
+    def _format_handicap(self):
+        formatted_title = self.bet_title.lower()
+        found = re.search(r'handicap (\+|-)\d+\.\d+$', formatted_title)
+        if found:
+            formatted_title += ' goals'
         return formatted_title
 
     def _format_halves(self):

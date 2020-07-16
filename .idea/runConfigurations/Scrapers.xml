@@ -3,8 +3,8 @@
     <runConfiguration name="favorit_scraper" type="Python" />
     <runConfiguration name="ggbet_scraper" type="Python" />
     <runConfiguration name="marathon_scraper" type="Python" />
-    <runConfiguration name="one_x_bet_scraper" type="Python" />
     <runConfiguration name="parimatch_scraper" type="Python" />
+    <runConfiguration name="one_x_bet_scraper" type="Python" />
     <method v="2" />
   </configuration>
 </component>

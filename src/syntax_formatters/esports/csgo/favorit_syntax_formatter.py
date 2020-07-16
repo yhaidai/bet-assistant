@@ -1,6 +1,6 @@
 import re
 
-from Sport import Sport
+from sport import Sport
 from syntax_formatters.esports.csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.esports.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
 from sample_data.csgo import favorit

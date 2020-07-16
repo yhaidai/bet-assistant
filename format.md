@@ -30,7 +30,7 @@
         - #####Total maps even/odd
             total maps `even/odd`
         - #####Handicap rounds
-            handicap `<team_name>` `<+/-value>`
+            handicap `<team_name>` `<+/-value>` rounds
         - #####Handicap maps
             `<team_name>` handicap `<+/-value>` maps
         - #####Map
@@ -45,11 +45,11 @@
         - #####Overtime
             Overtime `<yes/no>`
         - #####first/second half
-            first/second half 
+            `<first/second>` half 
         - #####terrorists/counter-terrorists 
-            t/ct 
+            `<t/ct>` 
         - #####Draw
-            draw will win
+            draw will `<win/lose>`
 * ##dota 2
     * ###match title:
         <first_team_name> - <second_team_name>  
@@ -89,7 +89,7 @@
         - #####Correct score
             correct score `<value1>`-`<value2>`
         - #####Draw
-            draw will win
+            draw will `<win/lose>`
         - #####First to make number of kills
             `<team_name>` will first make `<value>` kills
         - #####First to destroy tower
@@ -97,7 +97,9 @@
         - #####First to kill roshan
             `<team_name>` will first kill roshan
         - #####Team to make N-th kill
-            `<team_name>` will make kill N
+            `<team_name>` will make kill `<value>`
+        - #####Multi-kill
+            `<team_name>` `<quadra/penta>` kill
 * ##football
     * ###match title:
         <first_team_name> - <second_team_name>  

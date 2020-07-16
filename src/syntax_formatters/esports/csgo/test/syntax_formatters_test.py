@@ -1,7 +1,7 @@
 import unittest
 import re
 
-from Sport import Sport
+from sport import Sport
 from sample_data.csgo.parimatch import sport as parimatch_csgo_dict
 from sample_data.csgo.one_x_bet import sport as one_x_bet_csgo_dict
 from sample_data.csgo.ggbet import sport as ggbet_csgo_dict
@@ -33,8 +33,8 @@ class TestSyntaxFormatters(unittest.TestCase):
             r'^(\d+-(st|nd|rd|th) map: )?(.+? )?will (not )?win( in round \d+| (at least )?.+? map(s)?)?$',  # win
             r'^(\d+-(st|nd|rd|th) map: )?correct score \d+-\d+$',  # correct score
             # total over/under
-            r'^(\d+-(st|nd|rd|th) map: )?(.+? )?total ((maps|rounds|kills in round \d+) )?(over|under) (\d+(\.\d)?)$',
-            r'^(\d+-(st|nd|rd|th) map: )?total( (maps|rounds))? (even|odd)$',  # total even/odd
+            r'^(\d+-(st|nd|rd|th) map: )?(.+? )?total ((maps|rounds|kills in round \d+) )(over|under) (\d+(\.\d)?)$',
+            r'^(\d+-(st|nd|rd|th) map: )?total( (maps|rounds)) (even|odd)$',  # total even/odd
             r'^(\d+-(st|nd|rd|th) map: )?(.+? )handicap (\+|-)\d+(\.\d)? rounds$',  # rounds handicap
             r'^(.+? )handicap (\+|-)\d+(\.\d)? maps$',  # maps handicap
             r'^(.+?) will kill first in round \d+$',  # first frag in round

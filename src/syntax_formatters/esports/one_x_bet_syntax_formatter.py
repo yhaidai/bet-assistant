@@ -9,16 +9,16 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the 1xbet website
     """
-    def _format_before(self, bets):
+    def _format_before(self, sport):
         """
         Apply unified syntax formatting to the given sport
 
-        :param bets: sport to format
-        :type bets: Sport
+        :param sport: sport to format
+        :type sport: sport
         """
-        bets = self._update(bets, self._remove_prefixes)
-        bets = self._update(bets, self._format_frags)
-        return bets
+        sport = self._update(sport, self._remove_prefixes)
+        sport = self._update(sport, self._format_frags)
+        return sport
 
     def _format_frags(self):
         return self.bet_title.lower().replace('frag', 'kill')
@@ -69,6 +69,8 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
         if '1x2' in formatted_title:
             formatted_title = formatted_title.replace('1x2. ', '', 1)
             formatted_title += ' will win'
+        if re.match(r'^.+? wins', formatted_title):
+            formatted_title = formatted_title.replace('wins', 'will win')
 
         return formatted_title
 
@@ -97,37 +99,37 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
 
     def _format_first_kill(self):
         formatted_title = self.bet_title.lower()
-        match = re.search(r'^(\d+-(st|nd|rd|th) map: )first kill in (\d+) round - (.+?)$', formatted_title)
-        if match:
-            formatted_title = match.group(1) + match.group(4) + ' will kill first in round ' + match.group(3)
+        found = re.search(r'^(\d+-(st|nd|rd|th) map: )first kill in (\d+) round - (.+?)$', formatted_title)
+        if found:
+            formatted_title = found.group(1) + found.group(4) + ' will kill first in round ' + found.group(3)
 
         return formatted_title
 
     def _format_win_at_least_number_of_maps(self):
         formatted_title = self.bet_title.lower()
-        match = re.search(r'^(.+? )to( win at least (.+? )map(s)?)$', formatted_title)
-        if match:
-            formatted_title = match.group(1) + 'will' + match.group(2)
-        match = re.search(r'^(.+? )to( win at least (.+? )map(s)?) - no$',
+        found = re.search(r'^(.+? )to( win at least (.+? )map(s)?)$', formatted_title)
+        if found:
+            formatted_title = found.group(1) + 'will' + found.group(2)
+        found = re.search(r'^(.+? )to( win at least (.+? )map(s)?) - no$',
                           formatted_title)
-        if match:
-            formatted_title = match.group(1) + 'will not' + match.group(2)
+        if found:
+            formatted_title = found.group(1) + 'will not' + found.group(2)
 
         return formatted_title
 
     def _format_win_number_of_maps(self):
         formatted_title = self.bet_title.lower()
-        match = re.search(r'^total won by (.+? )exactly( \d+)$', formatted_title)
-        if match:
-            formatted_title = match.group(1) + 'will win' + match.group(2) + ' maps'
+        found = re.search(r'^total won by (.+? )exactly( \d+)$', formatted_title)
+        if found:
+            formatted_title = found.group(1) + 'will win' + found.group(2) + ' maps'
 
         return formatted_title
 
     def _format_total_kills(self):
         formatted_title = self.bet_title.lower()
-        match = re.search(r'(\d+-(st|nd|rd|th) map: )(total kills in )(\d+) round( (over|under) \d+(\.\d+)?)',
+        found = re.search(r'^(\d+-(st|nd|rd|th) map: )(total kills in )(\d+) round( (over|under) \d+(\.\d+)?)$',
                           formatted_title)
-        if match:
-            formatted_title = match.group(1) + match.group(3) + 'round ' + match.group(4) + match.group(5)
+        if found:
+            formatted_title = found.group(1) + found.group(3) + 'round ' + found.group(4) + found.group(5)
 
         return formatted_title

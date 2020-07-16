@@ -2,7 +2,7 @@ import re
 from pprint import pprint, pformat
 import os.path
 
-from Sport import Sport
+from sport import Sport
 from football.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
 from sample_data.football import one_x_bet
@@ -18,6 +18,15 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
         if '1x2.' in formatted_title:
             formatted_title = formatted_title.replace('1x2.', 'will win')
             formatted_title = formatted_title.replace('will win draw', 'draw will win')
+        return formatted_title
+
+    def _format_handicap(self):
+        formatted_title = self.bet_title.lower()
+        # if 'handicap' in formatted_title:
+            # print(formatted_title)
+        found = re.search(r'handicap (\+|-)\d+(\.\d+)?$', formatted_title)
+        if found:
+            formatted_title += ' goals'
         return formatted_title
 
     def _format_total(self):
@@ -85,6 +94,15 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
 
     def _format_teams(self):
         return self._move_teams_left()
+
+    def _format_uncommon_chars(self):
+        formatted_title = self.bet_title.lower()
+
+        # these are different characters :)
+        formatted_title = formatted_title.replace('с', 'c')
+        formatted_title = formatted_title.replace('–', '-')
+
+        return formatted_title
 
 
 if __name__ == '__main__':

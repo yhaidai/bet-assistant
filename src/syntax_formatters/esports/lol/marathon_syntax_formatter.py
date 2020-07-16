@@ -1,6 +1,6 @@
 import re
 
-from Sport import Sport
+from sport import Sport
 from syntax_formatters.esports.lol.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.esports.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
 from sample_data.lol import marathon
@@ -35,14 +35,14 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
             formatted_title += ' will first make ' + match.group(1)
         return formatted_title
 
-    def _format_first_to_destroy_turret(self):
+    def _format_first_to_destroy(self):
         formatted_title = self.bet_title.lower()
         if 'destroy first turret' in formatted_title:
             formatted_title = formatted_title.replace(' destroy first turret', '')
             formatted_title += ' will first destroy turret'
         return formatted_title
 
-    def _format_first_to_kill_baron(self):
+    def _format_first_to_kill(self):
         formatted_title = self.bet_title.lower()
         if 'baron kill' in formatted_title:
             formatted_title = formatted_title.replace(' baron kill', '')
@@ -93,6 +93,7 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
     def _format_teams(self):
         formatted_title = self._move_teams_left()
         return formatted_title
+
 
 if __name__ == '__main__':
     formatter = MarathonSyntaxFormatter()

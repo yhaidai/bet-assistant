@@ -1,8 +1,8 @@
 from pprint import pformat, pprint
 import re
 
-from Bet import Bet
-from BetGroup import BetGroup
+from bet import Bet
+from bet_group import BetGroup
 
 
 class Match:

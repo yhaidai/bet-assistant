@@ -1,2 +1,1 @@
-{'csgo': {'rbg - thunder logic': {'1-st map: handicap thunder logic -2.5(*Profit - 0.26%*)': [{'1-st map: handicap rbg +2.5': [{'1-st map: handicap rbg +2.5': '1.76. Bet amount: 0.5697(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esea-na-advanced)'}],
-                                                                                               '1-st map: handicap thunder logic -2.5': [{'1-st map: handicap thunder logic -2.5': '2.33. Bet amount: 0.4303(1xbet - https://1x-bet.com/en/line/Esports/2109623-CSGO-ESEA-Advanced-Season-34-North-America/79198467-Thunder-Logic-RBG/)'}]}]}}}
+{'football': {}}

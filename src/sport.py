@@ -1,6 +1,6 @@
 from pprint import pformat
 
-from Match import Match
+from match import Match
 from scrapers.sample_data.csgo import one_x_bet
 
 

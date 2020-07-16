@@ -1,9 +1,9 @@
 from pprint import pprint, pformat
 import os.path
 
-from Bet import Bet
-from Match import Match
-from Sport import Sport
+from bet import Bet
+from match import Match
+from sport import Sport
 from abstract_scraper import AbstractScraper
 import time
 
@@ -11,6 +11,10 @@ from constants import sport_name
 from match_title_compiler import MatchTitleCompiler
 from src.renderer.page import Page
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
+wait = WebDriverWait(Page.driver, 10)
 
 
 class GGBetScraper(AbstractScraper):
@@ -19,12 +23,14 @@ class GGBetScraper(AbstractScraper):
     _TAIL_URL = {
         'csgo': 'betting',
         'dota': 'betting',
+        'lol': 'betting',
         'football': 'betting-sports'
     }
     _MENU = {
         'csgo': 'Counter-Strike',
         'dota': 'Dota 2',
-        'football': 'Soccer'
+        'football': 'Soccer',
+        'lol': 'League of Legends'
     }
 
     def get_sport_bets(self, sport_name):
@@ -35,8 +41,8 @@ class GGBetScraper(AbstractScraper):
         :type sport_name: str
         """
         sport_bets = []
-        match_urls = self.get_match_urls(sport_name)
-        # match_urls = match_urls[:20]
+        match_urls = self.get_match_urls(self, sport_name)
+        match_urls = match_urls[:20]
         for url in match_urls:
             match_bets = GGBetScraper._get_bets(url)
             if match_bets:
@@ -45,36 +51,43 @@ class GGBetScraper(AbstractScraper):
         return sport
 
     @staticmethod
-    def get_match_urls(sport_name):
+    def get_match_urls(self, sport_name):
         """
         Scrape match urls for a given sport type
         """
         urls = []
-        page = Page(GGBetScraper._BASE_URL + GGBetScraper._TAIL_URL[sport_name])
+        tournaments = self.get_tournaments(sport_name)
+        for tournament in tournaments:
+            number_of_matches = tournament.find_element_by_class_name('categorizerCheckRow__counter___3rFMF')
+            number_of_matches = int(number_of_matches.text)
+            Page.click(tournament)
+            time.sleep(1)
+            if number_of_matches > 20:
+                GGBetScraper.scroll_down()
+            middle_table = Page.driver.find_element_by_class_name('ScrollToTop__container___37xDi')
+            links = middle_table.find_elements_by_class_name('marketsCount__markets-count___v4kPh')
+            urls += [link.get_attribute('href') for link in links]
+            Page.click(tournament)
+            time.sleep(1)
+        return urls
+
+    @staticmethod
+    def get_tournaments(sport_name):
+        Page(GGBetScraper._BASE_URL + GGBetScraper._TAIL_URL[sport_name])
         time.sleep(1)
         sport_types = Page.driver.find_elements_by_class_name('__app-CategorizerRowHeader-container')
         sport_type_icon = sport_types[0]
         for sport_type in sport_types:
-            if sport_type.find_element_by_class_name('CategorizerRowHeader__label___LQD65').get_attribute('title') == GGBetScraper._MENU[sport_name]:
+            if sport_type.find_element_by_class_name('CategorizerRowHeader__label___LQD65').get_attribute('title') == \
+                    GGBetScraper._MENU[sport_name]:
                 sport_type_icon = sport_type
-        page.click(sport_type_icon)
+        Page.click(sport_type_icon)
         time.sleep(1)
-        tournament_block = Page.driver.find_element_by_class_name('categorizerRow__submenu___tyhYn')
+        tournament_block = wait.until(EC.presence_of_element_located
+                                      ((By.CLASS_NAME, 'categorizerRow__submenu___tyhYn')))
+        # tournament_block = Page.driver.find_element_by_class_name('categorizerRow__submenu___tyhYn') #wait
         tournaments = tournament_block.find_elements_by_class_name('categorizerCheckRow__row___EW7wX')
-        for tournament in tournaments:
-            number_of_matches = tournament.find_element_by_class_name('categorizerCheckRow__counter___3rFMF')
-            number_of_matches = int(number_of_matches.text)
-            page.click(tournament)
-            time.sleep(1)
-            if number_of_matches > 20:
-                GGBetScraper.scroll_down()
-            middle_table = page.driver.find_element_by_class_name('ScrollToTop__container___37xDi')
-            links = middle_table.find_elements_by_class_name('marketsCount__markets-count___v4kPh')
-            urls += [link.get_attribute('href') for link in links]
-            page.click(tournament)
-            time.sleep(1)
-        return urls
-
+        return tournaments
     @staticmethod
     def scroll_down():
         last_height = Page.driver.execute_script("return document.body.scrollHeight")
@@ -116,10 +129,10 @@ class GGBetScraper(AbstractScraper):
         if not match_title:
             return bets
 
-        # live_buttons = page.driver.find_elements_by_class_name('__app-LiveIcon-container')
-        # if len(live_buttons) > 1:
-        #     # is live
-        #     return bets
+        live_buttons = page.driver.find_elements_by_class_name('__app-LiveIcon-container')
+        if len(live_buttons) > 1:
+            # is live
+            return bets
 
         market_tables = page.driver.find_elements_by_class_name('marketTable__table___dvHTz')
         for mt in market_tables:
@@ -158,11 +171,31 @@ class GGBetScraper(AbstractScraper):
 
         return match_title
 
+    def _get_urls_and_titles(self, sport_name):
+        matches = []
+        subsections = self.get_tournaments(sport_name)
+        for subsection in subsections:
+            Page.click(subsection)
+            time.sleep(2)
+            events = Page.driver.find_elements_by_class_name('sportEventRow__body___3Ywcg')
+            time.sleep(2)
+            for event in events:
+                teams = event.find_elements_by_class_name('__app-LogoTitle-wrapper')
+                names = [el.text for el in teams]
+                name = MatchTitleCompiler.compile_match_title(*names[:2])
+                url = teams[0].find_element_by_tag_name('a').get_attribute('href')
+                matches.append([name, url])
+                break
+            Page.click(subsection)
+            break
+        return matches
+
 
 if __name__ == '__main__':
     t = time.time()
     scraper = GGBetScraper()
     b = scraper.get_sport_bets(sport_name)
+    # b = scraper._get_urls_and_titles(sport_name)
     pprint(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))

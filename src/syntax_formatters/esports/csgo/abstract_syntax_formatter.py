@@ -13,7 +13,7 @@ class AbstractSyntaxFormatter(ASF, ABC):
         Apply unified syntax formatting to the given sport
 
         :param sport: sport to format
-        :type sport: Sport
+        :type sport: sport
         """
         sport = self._format_before(sport)
 

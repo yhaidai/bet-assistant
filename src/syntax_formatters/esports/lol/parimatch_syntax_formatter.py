@@ -1,10 +1,10 @@
 import re
 import os.path
 
-from Sport import Sport
-from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
+from sport import Sport
+from syntax_formatters.esports.lol.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.esports.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
-from sample_data.dota import parimatch
+from sample_data.lol import parimatch
 
 
 class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):

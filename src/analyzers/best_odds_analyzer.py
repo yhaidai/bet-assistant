@@ -1,4 +1,4 @@
-from BetGroup import BetGroup
+from bet_group import BetGroup
 from analyzers.analyzer import Analyzer
 
 

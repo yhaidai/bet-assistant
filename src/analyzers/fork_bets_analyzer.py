@@ -1,17 +1,28 @@
-from analyzers.best_odds_analyzer import BestOddsAnalyzer
-from groupers.esports.csgo.fork_grouper import ForkGrouper
 import os
+
+from analyzers.best_odds_analyzer import BestOddsAnalyzer
+from constants import sport_name
+from groupers.football.football_fork_grouper import FootballForkGrouper
+from groupers.esports.csgo.csgo_fork_grouper import CSGOForkGrouper
+from groupers.esports.dota.dota_fork_grouper import DotaForkGrouper
+from groupers.esports.lol.lol_fork_grouper import LoLForkGrouper
 
 
 class ForkBetsAnalyzer(BestOddsAnalyzer):
     """
     Class for analyzing betting info and finding possible fork bets
     """
-    _fork_grouper = ForkGrouper()
     _PROFIT_THRESHOLD = 10.15
+    _GROUPERS = {
+        'csgo': CSGOForkGrouper(),
+        'dota': DotaForkGrouper(),
+        'lol': LoLForkGrouper(),
+        'football': FootballForkGrouper(),
+    }
 
     def __init__(self, sport_type):
         super().__init__(sport_type)
+        self._fork_grouper = self._GROUPERS[sport_type]
 
     def get_fork_bets_sport(self):
         """
@@ -26,8 +37,16 @@ class ForkBetsAnalyzer(BestOddsAnalyzer):
 
         for match in list(fork_bets_sport):
             for bet_group in list(match):
+                if len(bet_group) == 1:
+                    match.bets.remove(bet_group)
+                    continue
+
                 odds = bet_group.get_odds()
-                profit = self._get_fork_profit(odds)
+                try:
+                    profit = self._get_fork_profit(odds)
+                except ValueError:
+                    match.bets.remove(bet_group)
+                    continue
 
                 # add fork bet
                 if not 0 < profit < self._PROFIT_THRESHOLD:
@@ -67,7 +86,7 @@ class ForkBetsAnalyzer(BestOddsAnalyzer):
 
 
 if __name__ == '__main__':
-    analyzer = ForkBetsAnalyzer('csgo')
+    analyzer = ForkBetsAnalyzer(sport_name)
     csgo_forks = analyzer.get_fork_bets_sport()
     print(csgo_forks)
 

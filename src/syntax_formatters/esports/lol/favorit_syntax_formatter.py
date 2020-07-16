@@ -1,6 +1,6 @@
 import re
 
-from Sport import Sport
+from sport import Sport
 from syntax_formatters.esports.lol.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.esports.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
 from sample_data.lol import favorit
@@ -30,7 +30,7 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title += 'will first make ' + words[-1] + ' kills'
         return formatted_title
 
-    def _format_first_to_kill_baron(self):
+    def _format_first_to_kill(self):
         formatted_title = self.bet_title.lower()
         if 'kill first baron' in formatted_title:
             formatted_title = formatted_title.replace('kill first baron', 'will first kill baron')
@@ -64,7 +64,7 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title = formatted_title.replace(' minutes', '')
         return formatted_title
 
-    def _format_first_to_destroy_turret(self):
+    def _format_first_to_destroy(self):
         formatted_title = self.bet_title.lower()
         if 'which team will be the first to lose a turret?' in formatted_title:
             formatted_title = formatted_title.replace('which team will be the first to lose a turret?',

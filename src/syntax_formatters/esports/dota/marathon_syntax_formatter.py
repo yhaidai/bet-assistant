@@ -1,6 +1,6 @@
 import re
 
-from Sport import Sport
+from sport import Sport
 from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.esports.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
 from sample_data.dota import marathon

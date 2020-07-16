@@ -13,11 +13,12 @@ class AbstractSyntaxFormatter(ASF, ABC):
         Apply unified syntax formatting to the given sport
 
         :param sport: sport to format
-        :type sport: Sport
+        :type sport: sport
         """
 
         sport = self._format_before(sport)
 
+        sport = self._update(sport, self._format_uncommon_chars)
         sport = self._update(sport, self._format_total)
         sport = self._update(sport, self._format_maps)
         sport = self._update(sport, self._format_teams)
@@ -26,17 +27,17 @@ class AbstractSyntaxFormatter(ASF, ABC):
         sport = self._update(sport, self._format_correct_score)
         sport = self._update(sport, self._format_win)
         sport = self._update(sport, self._format_draw)
-        sport = self._update(sport, self._format_uncommon_chars)
         sport = self._update(sport, self._format_first_kill)
         sport = self._update(sport, self._format_win_at_least_number_of_maps)
         sport = self._update(sport, self._format_win_number_of_maps)
         sport = self._update(sport, self._format_individual_total_kills)
         sport = self._update(sport, self._format_first_to_make_number_of_kills)
-        sport = self._update(sport, self._format_first_to_destroy_turret)
-        sport = self._update(sport, self._format_first_to_kill_baron)
+        sport = self._update(sport, self._format_first_to_destroy)
+        sport = self._update(sport, self._format_first_to_kill)
         sport = self._update(sport, self._format_total_kills)
         sport = self._update(sport, self._format_most_kills)
         sport = self._update(sport, self._format_specific_kill)
+        sport = self._update(sport, self._format_multikill)
 
         sport = self._format_after(sport)
 
@@ -49,12 +50,6 @@ class AbstractSyntaxFormatter(ASF, ABC):
         return self.bet_title.lower()
 
     def _format_first_to_make_number_of_kills(self):
-        return self.bet_title.lower()
-
-    def _format_first_to_destroy_turret(self):
-        return self.bet_title.lower()
-
-    def _format_first_to_kill_baron(self):
         return self.bet_title.lower()
 
     def _format_most_kills(self):
@@ -70,4 +65,10 @@ class AbstractSyntaxFormatter(ASF, ABC):
         return self.bet_title.lower()
 
     def _format_specific_kill(self):
+        return self.bet_title.lower()
+
+    def _format_first_to_kill(self):
+        return self.bet_title.lower()
+
+    def _format_first_to_destroy(self):
         return self.bet_title.lower()

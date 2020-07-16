@@ -1,6 +1,6 @@
 import re
 
-from Sport import Sport
+from sport import Sport
 from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.esports.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
 from sample_data.dota import favorit
@@ -40,14 +40,6 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         formatted_title = self._format_total_over_under()
         if 'odd / even' in formatted_title:
             formatted_title = formatted_title.replace('odd / even', 'total kills')
-        return formatted_title
-
-    def _format_most_kills(self):
-        formatted_title = self.bet_title.lower()
-        return formatted_title
-
-    def _format_draw(self):
-        formatted_title = self.bet_title.lower()
         return formatted_title
 
     def _format_first_kill(self):

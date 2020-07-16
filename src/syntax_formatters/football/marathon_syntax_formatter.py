@@ -1,7 +1,7 @@
 import re
 from pprint import pprint, pformat
 
-from Sport import Sport
+from sport import Sport
 from football.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
 from sample_data.football import marathon
@@ -15,12 +15,22 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
         formatted_title = formatted_title.replace('draw', 'draw will win')
         return formatted_title
 
+    def _format_handicap(self):
+        formatted_title = self.bet_title.lower()
+        formatted_title = formatted_title.replace('to win match with ', '')
+        found = re.search(r'handicap (\+|-)?\d+\.\d+$', formatted_title)
+        if found:
+            if not found.group(1):
+                formatted_title = formatted_title.replace('handicap ', 'handicap +')
+            formatted_title += ' goals'
+        return formatted_title
+
     def _format_total(self):
         formatted_title = self.bet_title.lower()
-        match = re.search('(((\+|-)?\d\.\d),((\+|-)?\d\.\d))', formatted_title)
+        match = re.search('(((\+|-)?\d(\.\d)?),((\+|-)?\d\.\d))', formatted_title)
         if match:
             formatted_title = formatted_title.replace(match.group(1),
-                                                      str((float(match.group(2)) + float(match.group(4)))/2))
+                                                      str((float(match.group(2)) + float(match.group(5)))/2))
         match = re.search('((\d\.\d+) (over|under))', formatted_title)
         if match:
             formatted_title = formatted_title.replace(match.group(1), '')

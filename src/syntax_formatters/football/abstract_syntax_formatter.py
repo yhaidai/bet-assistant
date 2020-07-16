@@ -14,10 +14,11 @@ class AbstractSyntaxFormatter(ASF, ABC):
         Apply unified syntax formatting to the given sport
 
         :param sport: sport to format
-        :type sport: Sport
+        :type sport: sport
         """
         sport = self._format_before(sport)
 
+        sport = self._update(sport, self._format_uncommon_chars)
         sport = self._update(sport, self._format_halves)
         sport = self._update(sport, self._format_teams)
         sport = self._update(sport, self._format_time)
@@ -26,7 +27,6 @@ class AbstractSyntaxFormatter(ASF, ABC):
         sport = self._update(sport, self._format_correct_score)
         sport = self._update(sport, self._format_win)
         sport = self._update(sport, self._format_double_chance)
-        sport = self._update(sport, self._format_uncommon_chars)
 
 
         sport = self._format_after(sport)

@@ -4,9 +4,9 @@ from pprint import pprint, pformat
 
 from selenium.common.exceptions import NoSuchElementException
 
-from Bet import Bet
-from Match import Match
-from Sport import Sport
+from bet import Bet
+from match import Match
+from sport import Sport
 from constants import sport_name
 from match_title_compiler import MatchTitleCompiler
 from src.renderer.page import Page
@@ -140,8 +140,6 @@ class OneXBetScraper(AbstractScraper):
     def _get_match_title():
         for container in OneXBetScraper._TEAM_NAME_CONTAINERS:
             team_names = [team.text for team in Page.driver.find_elements_by_class_name(container)]
-            print(container)
-            print(team_names)
             if team_names:
                 break
 

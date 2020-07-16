@@ -1,6 +1,6 @@
 import re
 
-from Sport import Sport
+from sport import Sport
 from syntax_formatters.esports.lol.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.esports.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
 from scrapers.sample_data.lol import ggbet
@@ -28,29 +28,21 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
             formatted_title = ''
             for i in range(len(words)-1):
                 formatted_title += words[i] + ' '
-            formatted_title += 'will first make ' + words[-1]  + ' kills'
+            formatted_title += 'will first make ' + words[-1] + ' kills'
         return formatted_title
 
-    def _format_first_to_destroy_turret(self):
+    def _format_first_to_destroy(self):
         formatted_title = self.bet_title.lower()
         if 'first turret' in formatted_title:
             formatted_title = formatted_title.replace('first turret ', '')
             formatted_title += ' will first destroy turret'
         return formatted_title
 
-    def _format_first_to_kill_baron(self):
+    def _format_first_to_kill(self):
         formatted_title = self.bet_title.lower()
         if '1st baron' in formatted_title:
             formatted_title = formatted_title.replace('1st baron ', '')
             formatted_title += ' will first kill baron'
-        return formatted_title
-
-    def _format_most_kills(self):
-        formatted_title = self.bet_title.lower()
-        return formatted_title
-
-    def _format_draw(self):
-        formatted_title = self.bet_title.lower()
         return formatted_title
 
     def _format_first_kill(self):

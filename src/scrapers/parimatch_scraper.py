@@ -5,9 +5,9 @@ import os.path
 from bs4 import BeautifulSoup
 
 # from parimatch_syntax_formatter import ParimatchSyntaxFormatter
-from Bet import Bet
-from Match import Match
-from Sport import Sport
+from bet import Bet
+from match import Match
+from sport import Sport
 from constants import sport_name
 from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
@@ -133,7 +133,8 @@ class ParimatchScraper(AbstractScraper):
                     subtitle_children_count = len(props_bks[0].contents)
                     for props_bk in props_bks:
                         if len(props_bk.contents) == subtitle_children_count:
-                            subtitle = props_bk.next_element.next_sibling.text + ' '
+                            if props_bk.next_element.next_sibling.text != '\xa0':
+                                subtitle = props_bk.next_element.next_sibling.text + ' '
                         bets += ParimatchScraper._update_bets(props_bk, bet_title_tags, match_title, subtitle, url)
 
             match = Match(match_title, bets)

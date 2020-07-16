@@ -1,7 +1,7 @@
 import re
 import os.path
 
-from Sport import Sport
+from sport import Sport
 from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.esports.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
 from sample_data.dota import parimatch

@@ -13,7 +13,7 @@ class AbstractSyntaxFormatter(ASF, ABC):
         Apply unified syntax formatting to the given sport
 
         :param sport: sport to format
-        :type sport: Sport
+        :type sport: sport
         """
         sport = self._format_before(sport)
 
@@ -54,5 +54,5 @@ class AbstractSyntaxFormatter(ASF, ABC):
     def _format_total_kills(self):
         return self.bet_title.lower()
 
-
-
+    def _format_multikill(self):
+        return self.bet_title.lower()

@@ -1,6 +1,6 @@
 import re
 
-from Sport import Sport
+from sport import Sport
 from syntax_formatters.esports.csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.esports.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
 from sample_data.csgo import ggbet

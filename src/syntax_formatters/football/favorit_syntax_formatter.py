@@ -1,7 +1,7 @@
 import re
 from pprint import pprint, pformat
 
-from Sport import Sport
+from sport import Sport
 from football.abstract_syntax_formatter import AbstractSyntaxFormatter
 from syntax_formatters.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
 from sample_data.football import favorit
@@ -20,11 +20,22 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title = formatted_title.replace('will win draw', 'draw will win')
         return formatted_title
 
+    def _format_handicap(self):
+        formatted_title = self.bet_title.lower()
+        for c in ['yellow cards ', 'corners ']:
+            if c + 'handicap' in formatted_title:
+                formatted_title = formatted_title.replace(c, '')
+                formatted_title += ' ' + c
+        found = re.search(r'handicap (\+|-)\d+\.\d+$', formatted_title)
+        if found:
+            formatted_title += ' goals'
+        return formatted_title
+
     def _remove_full_time(self):
         formatted_title = self.bet_title.lower()
-        if 'full time' in formatted_title:
-            formatted_title = formatted_title.replace('full time ', '')
-        for c in ['(', ')', '- ']:
+        # if '' in formatted_title:
+        #     formatted_title = formatted_title.replace('full time ', '')
+        for c in ['(', ')', '- ', 'full time ']:
             formatted_title = formatted_title.replace(c, '')
         if '&nbsp;' in formatted_title:
             formatted_title = formatted_title.replace('&nbsp;', ' ')
@@ -60,9 +71,13 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         formatted_title = self.bet_title.lower()
         for c in ['over/under', 'odd / even']:
             if c in formatted_title:
-                formatted_title = formatted_title.replace(c, 'total goals')
-        if 'asian total' in formatted_title:
-            formatted_title = formatted_title.replace('asian total', 'asian total goals')
+                formatted_title = formatted_title.replace(c, 'total')
+        found = re.search(r'odd/even (even|odd)', formatted_title)
+        if found:
+            formatted_title = formatted_title.replace('odd/even ', '')
+        found = re.search(r'total ((over|under)|(even|odd))', formatted_title)
+        if found:
+            formatted_title = formatted_title.replace('total', 'total goals')
         return formatted_title
 
     def _format_before(self, bets):

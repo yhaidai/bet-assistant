@@ -1,7 +1,7 @@
 import os.path
 import re
 
-from Sport import Sport
+from sport import Sport
 from syntax_formatters.esports.csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
 from esports.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
 from match_title_compiler import MatchTitleCompiler
@@ -80,10 +80,8 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
             formatted_title = formatted_title.replace('counter ', 'c')
             formatted_title = formatted_title.replace('terrorists', 't')
             formatted_title = formatted_title.replace(' -', '')
-        match1 = re.search(r'map: .+? total', formatted_title)
-        match2 = re.search(r'map: total', formatted_title)
-        # не знаю как это в одно запихнуть ))))00))
-        if match1 or match2:
+        found = re.search(r'^\d-(st|nd|rd|th) map: (.+? )?total (over|under) \d+(\.\d)', formatted_title)
+        if found:
             formatted_title = formatted_title.replace('total', 'total rounds')
         return formatted_title
 

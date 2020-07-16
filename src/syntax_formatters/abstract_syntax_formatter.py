@@ -9,14 +9,14 @@ class AbstractSyntaxFormatter(ABC):
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the websites
     """
-    _REMOVE_FROM_TITLES = ['team ', ' team', ' esports', ' e-sports', 'club', ' gaming']
+    _REMOVE_FROM_TITLES = [r'^team ', ' team', ' esports', ' e-sports', ' club', ' gaming', ]
 
     def apply_unified_syntax_formatting(self, sport):
         """
         Apply unified syntax formatting to the given sport
 
         :param sport: sport to format
-        :type sport: Sport
+        :type sport: sport
         """
         sport = self._format_before(sport)
 
@@ -38,9 +38,9 @@ class AbstractSyntaxFormatter(ABC):
         Apply unified syntax formatting to the given bets dict before obligatory updates are run. Subclass specific
 
         :param sport: sport to format
-        :type sport: Sport
+        :type sport: sport
         :return: formatted sport
-        :rtype: Sport
+        :rtype: sport
         """
         return sport
 
@@ -49,9 +49,9 @@ class AbstractSyntaxFormatter(ABC):
         Apply unified syntax formatting to the given bets dict after obligatory updates are run. Subclass specific
 
         :param sport: sport to format
-        :type sport: Sport
+        :type sport: sport
         :return: formatted sport
-        :rtype: Sport
+        :rtype: sport
         """
         return sport
 
@@ -70,11 +70,11 @@ class AbstractSyntaxFormatter(ABC):
         Update self.bets and given bets dictionaries according to _callable method
 
         :param sport: bets dictionary to format
-        :type sport: Sport
+        :type sport: sport
         :param _callable: method to be called to get formatted bet title
         :type _callable: method
         :return: updated sport
-        :rtype: Sport
+        :rtype: sport
         """
         invalid_bet_titles = self._get_invalid_bet_titles()
         invalid_match_titles = self._get_invalid_match_titles()
@@ -99,9 +99,9 @@ class AbstractSyntaxFormatter(ABC):
         Remove specific words from titles
 
         :param sport: sport to format
-        :type sport: Sport
+        :type sport: sport
         :return: updated sport
-        :rtype: Sport
+        :rtype: sport
         """
         sport = self._format_match_titles(sport)
         sport = self._format_bet_titles(sport)
@@ -113,14 +113,14 @@ class AbstractSyntaxFormatter(ABC):
         Remove specific words from bet titles
 
         :param sport: sport to format
-        :type sport: Sport
+        :type sport: sport
         :return: updated sport
-        :rtype: Sport
+        :rtype: sport
         """
         for match in sport:
             for bet in match:
-                for word in self._REMOVE_FROM_TITLES:
-                    bet.title = bet.title.replace(word, '')
+                for pattern in self._REMOVE_FROM_TITLES:
+                    bet.title = re.sub(pattern, '', bet.title)
 
         return sport
 
@@ -129,9 +129,9 @@ class AbstractSyntaxFormatter(ABC):
         Remove specific words from match titles
 
         :param sport: sport to format
-        :type sport: Sport
+        :type sport: sport
         :return: updated sport
-        :rtype: Sport
+        :rtype: sport
         """
         for match in sport:
             teams = MatchTitleCompiler.decompile_match_title(match.title)
@@ -158,9 +158,9 @@ class AbstractSyntaxFormatter(ABC):
         Remove empty odds bet titles
 
         :param sport: sport to format
-        :type sport: Sport
+        :type sport: sport
         :return: updated sport
-        :rtype: Sport
+        :rtype: sport
         """
         for match in sport:
             for bet in list(match):

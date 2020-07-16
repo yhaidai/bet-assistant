@@ -1,6 +1,6 @@
 from pprint import pformat
 
-from Bet import Bet
+from bet import Bet
 
 
 class BetGroup:
@@ -12,6 +12,9 @@ class BetGroup:
 
     def __repr__(self):
         return pformat({bet.title: bet.odds for bet in self.bets})
+
+    def __len__(self):
+        return len(self.bets)
 
     def __iter__(self):
         return iter(self.bets)
