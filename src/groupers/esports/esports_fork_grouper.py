@@ -20,7 +20,7 @@ class EsportsForkGrouper(ForkGrouper, ABC):
         return ['maps']
 
     def _get_handicap_pattern_prefix(self):
-        return r'^((\d-(st|nd|rd|th) map: )?(.+?) handicap (\+|-)(\d+(\.\d)?) ('
+        return r'^((?P<prefix>\d-(st|nd|rd|th) map: )?(?P<team_name>.+?) handicap (?P<sign>\+|-)(\d+(\.\d)?) ('
 
     def _get_grouped_by(self) -> dict:
         result = dict(EsportsForkGrouper._grouped_by)

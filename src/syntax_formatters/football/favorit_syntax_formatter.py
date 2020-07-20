@@ -43,14 +43,16 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
 
     def _format_double_chance(self):
         formatted_title = self.bet_title.lower()
-        if 'double chance' in formatted_title:
+        found = re.search(r'(double chance (12|1x|x2))', formatted_title)
+        if found:
             teams = self.get_teams()
-            if '12' in formatted_title:
-                formatted_title = 'draw will lose'
-            elif '1x' in formatted_title:
-                formatted_title = teams[1] + ' will lose'
-            else:
-                formatted_title = teams[0] + ' will lose'
+            if found.group(2) == '12':
+                formatted_title = formatted_title.replace(found.group(1), 'draw will lose')
+            if found.group(2) == '1x':
+                formatted_title = formatted_title.replace(found.group(1), teams[1] + ' will lose')
+            if found.group(2) == 'x2':
+                formatted_title = formatted_title.replace(found.group(1), teams[0] + ' will lose')
+            print(formatted_title)
         return formatted_title
 
     def _format_halves(self):

@@ -19,6 +19,7 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
                 formatted_title = formatted_title.replace('draw yes', 'draw will win')
             else:
                 formatted_title = formatted_title.replace('draw no', 'draw will lose')
+        print(formatted_title + '\n')
         return formatted_title
 
     def _format_total(self):

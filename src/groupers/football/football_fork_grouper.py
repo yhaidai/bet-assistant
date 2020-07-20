@@ -2,7 +2,7 @@ from abc import ABC
 
 from groupers.fork_grouper import ForkGrouper
 from sport import Sport
-from syntax_formatters.football.sample_data.favorit import sport as favorit_football_dict
+from syntax_formatters.football.sample_data.ggbet import sport as ggbet_football_dict
 
 
 class FootballForkGrouper(ForkGrouper, ABC):
@@ -30,6 +30,6 @@ class FootballForkGrouper(ForkGrouper, ABC):
 
 if __name__ == '__main__':
     grouper = FootballForkGrouper()
-    football = Sport.from_dict(favorit_football_dict)
+    football = Sport.from_dict(ggbet_football_dict)
     grouped_football = grouper.group_bets(football)
     print(grouped_football)

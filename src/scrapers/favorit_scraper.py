@@ -1,6 +1,5 @@
 import os.path
 import time
-from pprint import pprint, pformat
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -233,7 +232,7 @@ class FavoritScraper(AbstractScraper):
                         odds = outcome_row.find_elements_by_tag_name('button')
                         for i in range(len(odds)):
                             bet_title = block_title + ' ' + outcome_row_name + ' ' + names[i]
-                            bet = Bet(bet_title, odds[i].text, FavoritScraper._NAME, url)
+                            bet = Bet(bet_title, odds[i].text, FavoritScraper._NAME, match_url)
                             bets.append(bet)
                 else:
                     labels = block.find_elements_by_tag_name('label')
@@ -270,11 +269,11 @@ if __name__ == '__main__':
     scraper = FavoritScraper()
     b = scraper.get_sport_bets(sport_name)
     # b = scraper._get_bets_from_url('https://www.favorit.com.ua/en/bets/#event=27110455&tours=17296,18320,17294,17482,17295,17935,17944')
-    pprint(b)
+    print(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
     path = my_path + '\\sample_data\\' + sport_name + '\\favorit.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('sport =', pformat(b), file=f)
+        print('sport =', b, file=f)
 
     print(time.time() - t)

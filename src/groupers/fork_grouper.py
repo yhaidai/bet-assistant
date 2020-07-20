@@ -58,8 +58,8 @@ class ForkGrouper(ABC):
 
                 self._group_handicaps()
 
-                # if self.unhandled:
-                #     print(self.bet.bookmaker + ': ' + self.bet.title)
+                if self.unhandled:
+                    print(self.bet.bookmaker + ': ' + self.bet.title)
 
             self.match.bets = list(self.groups.values())
 

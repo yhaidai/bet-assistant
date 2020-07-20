@@ -1,6 +1,5 @@
 import os.path
 import time
-from pprint import pprint, pformat
 
 from selenium.common.exceptions import NoSuchElementException
 
@@ -40,7 +39,7 @@ class OneXBetScraper(AbstractScraper):
         print('Match urls count: ' + str(len(match_elements)))
         match_urls = OneXBetScraper.get_match_urls(match_elements, championship_urls)
 
-        match_urls = list(match_urls)[:20]
+        match_urls = list(match_urls)[:30]
         for url in match_urls:
             full_url = OneXBetScraper._BASE_URL + url
             match_bets = OneXBetScraper._get_match_bets(full_url)
@@ -170,10 +169,10 @@ if __name__ == '__main__':
     t = time.time()
     scraper = OneXBetScraper()
     b = scraper.get_sport_bets(sport_name)
-    pprint(b)
+    print(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
     path = my_path + '\\sample_data\\' + sport_name + '\\one_x_bet.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('sport =', pformat(b), file=f)
+        print('sport =', b, file=f)
     print(time.time() - t)

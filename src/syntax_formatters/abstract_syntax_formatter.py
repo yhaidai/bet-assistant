@@ -135,7 +135,7 @@ class AbstractSyntaxFormatter(ABC):
         """
         for match in sport:
             teams = MatchTitleCompiler.decompile_match_title(match.title)
-            formatted_match_title = MatchTitleCompiler.compile_match_title(*teams, sort=True)
+            formatted_match_title = MatchTitleCompiler.compile_match_title(*teams[:2], sort=True)
             swapped = formatted_match_title != match.title
 
             for word in self._REMOVE_FROM_TITLES:

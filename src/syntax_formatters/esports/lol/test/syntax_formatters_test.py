@@ -89,7 +89,7 @@ class TestSyntaxFormatters(unittest.TestCase):
                 for bet in match:
                     with self.subTest(bet_title=bet.title, odds=bet.odds):
                         if not re.match('|'.join(self.bet_title_patterns), bet.title):
-                            print(bet.title)
+                            print(bet.bookmaker + ': ' + bet.title)
                         self.assertRegex(bet.title, '|'.join(self.bet_title_patterns),
                                          'bet title must match its pattern')
                         self.assertRegex(bet.odds, self.odds_pattern, 'odds must match their pattern')

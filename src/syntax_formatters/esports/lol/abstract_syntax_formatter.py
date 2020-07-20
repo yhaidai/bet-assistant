@@ -18,10 +18,10 @@ class AbstractSyntaxFormatter(ASF, ABC):
 
         sport = self._format_before(sport)
 
-        sport = self._update(sport, self._format_uncommon_chars)
         sport = self._update(sport, self._format_total)
         sport = self._update(sport, self._format_maps)
         sport = self._update(sport, self._format_teams)
+        sport = self._update(sport, self._format_uncommon_chars)
         sport = self._update(sport, self._format_handicap)
         sport = self._update(sport, self._format_map_duration)
         sport = self._update(sport, self._format_correct_score)

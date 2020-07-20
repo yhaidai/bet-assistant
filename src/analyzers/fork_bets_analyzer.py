@@ -12,7 +12,7 @@ class ForkBetsAnalyzer(BestOddsAnalyzer):
     """
     Class for analyzing betting info and finding possible fork bets
     """
-    _PROFIT_THRESHOLD = 10.15
+    _PROFIT_THRESHOLD = 10
     _GROUPERS = {
         'csgo': CSGOForkGrouper(),
         'dota': DotaForkGrouper(),

@@ -1,10 +1,8 @@
 import re
 import time
-from pprint import pprint, pformat
 import os.path
 from bs4 import BeautifulSoup
 
-# from parimatch_syntax_formatter import ParimatchSyntaxFormatter
 from bet import Bet
 from match import Match
 from sport import Sport
@@ -200,7 +198,7 @@ class ParimatchScraper(AbstractScraper):
                     try:
                         prefix = subtitle
                         # append team name to the subtitle in case of handicap bet
-                        if 'Handicap coefficient' in title:
+                        if 'Handicap coefficient' in title or 'Team totals' in bet_titles_copy[i]:
                             prefix = subtitle + team_names[i] + ' '
                         bet = Bet(prefix + bet_titles_copy[i], odds[i], ParimatchScraper._NAME, url)
                         bets.append(bet)
@@ -311,10 +309,10 @@ if __name__ == '__main__':
     t = time.time()
     scraper = ParimatchScraper()
     b = scraper.get_sport_bets(sport_name)
-    pprint(b)
+    print(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
     path = my_path + '\\sample_data\\' + sport_name + '\\parimatch.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('sport =', pformat(b), file=f)
+        print('sport =', b, file=f)
     print(time.time() - t)

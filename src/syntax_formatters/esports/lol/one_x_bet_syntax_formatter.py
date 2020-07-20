@@ -122,6 +122,13 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
 
         return formatted_title
 
+    def _format_map_duration(self):
+        formatted_title = self.bet_title.lower()
+        found = re.search(r'^\d-(st|nd|rd|th) map: duration of the map (over|under) \d+$', formatted_title)
+        if found:
+            formatted_title = formatted_title.replace(' of the map', '')
+        return formatted_title
+
 
 if __name__ == '__main__':
     formatter = OneXBetSyntaxFormatter()

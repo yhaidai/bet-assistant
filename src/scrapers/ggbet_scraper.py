@@ -1,4 +1,3 @@
-from pprint import pprint, pformat
 import os.path
 
 from bet import Bet
@@ -196,11 +195,11 @@ if __name__ == '__main__':
     scraper = GGBetScraper()
     b = scraper.get_sport_bets(sport_name)
     # b = scraper._get_urls_and_titles(sport_name)
-    pprint(b)
+    print(b)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
     print(my_path)
     path = my_path + '\\sample_data\\' + sport_name + '\\ggbet.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('sport =', pformat(b), file=f)
+        print('sport =', b, file=f)
     print(time.time() - t)
