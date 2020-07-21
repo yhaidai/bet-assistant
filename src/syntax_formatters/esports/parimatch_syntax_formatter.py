@@ -27,9 +27,10 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
 
     def _format_win(self):
         formatted_title = self.bet_title.lower()
-        team_names = MatchTitleCompiler.decompile_match_title(self.match_title)
+        team_names = self.match_title.teams
 
         if 'win of' in formatted_title:
+            formatted_title = formatted_title.replace(' team', '')
             if formatted_title.find('1st') != -1:
                 team_number = '1st'
                 team_name = team_names[0]

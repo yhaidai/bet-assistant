@@ -5,6 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 from bet import Bet
 from match import Match
+from match_title import MatchTitle
 from sport import Sport
 from constants import sport_name
 from match_title_compiler import MatchTitleCompiler
@@ -149,7 +150,7 @@ class OneXBetScraper(AbstractScraper):
             except NoSuchElementException:
                 return None
 
-        return MatchTitleCompiler.compile_match_title(*team_names)
+        return MatchTitle(team_names)
 
     @staticmethod
     def _open_championships(championships):

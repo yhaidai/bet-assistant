@@ -28,13 +28,12 @@ class TestSyntaxFormatters(unittest.TestCase):
         self.favorit_syntax_formatter = FavoritSyntaxFormatter()
         self.marathon_syntax_formatter = MarathonSyntaxFormatter()
 
-        self.match_title_pattern = '^[a-z0-9]+( - [a-z0-9]+)?'
         self.bet_title_patterns = [
             r'^(\d+-(st|nd|rd|th) map: )?(.+? )?will (win|lose)((at least )?.+? map(s)?)?$',  # win
             r'^(\d+-(st|nd|rd|th) map: )?correct score \d+-\d+$',  # correct score
             # total over/under
             r'^(\d+-(st|nd|rd|th) map: )?(.+? )?total ((maps|kills|roshans) )(over|under) (\d+(\.\d)?)$',
-            r'^(\d+-(st|nd|rd|th) map: )?total( (maps|kills)) (even|odd)$',  # total even/odd
+            r'^(\d+-(st|nd|rd|th) map: )?(.+? )?total( (maps|kills)) (even|odd)$',  # total even/odd
             r'^(\d+-(st|nd|rd|th) map: )?(.+? )handicap (\+|-)\d+(\.\d)? kills',  # kills handicap
             r'^(.+? )handicap (\+|-)\d+(\.\d)? maps$',  # maps handicap
             r'^\d+-(st|nd|rd|th) map: duration (over|under) \d+(\.\d)$',  # map duration
@@ -79,9 +78,6 @@ class TestSyntaxFormatters(unittest.TestCase):
     def _test_unified_syntax_formatting(self, sport):
         for match in sport:
             with self.subTest(match_title=match.title):
-                # print(match.title)
-                self.assertRegex(match.title, self.match_title_pattern, 'match title must match its pattern')
-
                 for bet in match:
                     with self.subTest(bet_title=bet.title, odds=bet.odds):
                         if not re.match('|'.join(self.bet_title_patterns), bet.title):

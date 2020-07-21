@@ -1,5 +1,4 @@
 import re
-from pprint import pprint, pformat
 
 from sport import Sport
 from football.abstract_syntax_formatter import AbstractSyntaxFormatter
@@ -40,7 +39,7 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
     def _format_double_chance(self):
         formatted_title = self.bet_title.lower()
         if 'double chance' in formatted_title:
-            teams = self.get_teams()
+            teams = self.match_title.teams
             if teams[0] in formatted_title:
                 if teams[1] in formatted_title:
                     formatted_title = 'draw will lose'

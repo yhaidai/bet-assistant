@@ -50,7 +50,7 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
         match = re.search(r'^(\d+-(st|nd|rd|th) map: )individual total (\d+)(( over| under)( \d+(\.\d+)?))$',
                           formatted_title)
         if match:
-            teams = MatchTitleCompiler.decompile_match_title(self.match_title)
+            teams = self.match_title.teams
             if match.group(3) == '1':
                 team = teams[0]
             else:

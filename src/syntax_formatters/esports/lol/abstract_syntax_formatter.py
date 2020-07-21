@@ -42,7 +42,7 @@ class AbstractSyntaxFormatter(ASF, ABC):
         sport = self._format_after(sport)
 
         sport = self._format_odds(sport)
-        sport = self._format_titles(sport)
+        # sport = self._format_titles(sport)
 
         return sport
 

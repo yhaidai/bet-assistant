@@ -1,5 +1,4 @@
 import re
-from pprint import pprint, pformat
 
 from sport import Sport
 from football.abstract_syntax_formatter import AbstractSyntaxFormatter
@@ -45,14 +44,13 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
         formatted_title = self.bet_title.lower()
         found = re.search(r'(double chance (12|1x|x2))', formatted_title)
         if found:
-            teams = self.get_teams()
+            teams = self.match_title.teams
             if found.group(2) == '12':
                 formatted_title = formatted_title.replace(found.group(1), 'draw will lose')
             if found.group(2) == '1x':
                 formatted_title = formatted_title.replace(found.group(1), teams[1] + ' will lose')
             if found.group(2) == 'x2':
                 formatted_title = formatted_title.replace(found.group(1), teams[0] + ' will lose')
-            print(formatted_title)
         return formatted_title
 
     def _format_halves(self):

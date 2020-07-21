@@ -29,7 +29,7 @@ class AbstractSyntaxFormatter(ABC):
         sport = self._format_after(sport)
 
         sport = self._format_odds(sport)
-        sport = self._format_titles(sport)
+        # sport = self._format_titles(sport)
 
         return sport
 
@@ -94,63 +94,63 @@ class AbstractSyntaxFormatter(ABC):
 
         return sport
 
-    def _format_titles(self, sport):
-        """
-        Remove specific words from titles
-
-        :param sport: sport to format
-        :type sport: sport
-        :return: updated sport
-        :rtype: sport
-        """
-        sport = self._format_match_titles(sport)
-        sport = self._format_bet_titles(sport)
-
-        return sport
-
-    def _format_bet_titles(self, sport):
-        """
-        Remove specific words from bet titles
-
-        :param sport: sport to format
-        :type sport: sport
-        :return: updated sport
-        :rtype: sport
-        """
-        for match in sport:
-            for bet in match:
-                for pattern in self._REMOVE_FROM_TITLES:
-                    bet.title = re.sub(pattern, '', bet.title)
-
-        return sport
-
-    def _format_match_titles(self, sport):
-        """
-        Remove specific words from match titles
-
-        :param sport: sport to format
-        :type sport: sport
-        :return: updated sport
-        :rtype: sport
-        """
-        for match in sport:
-            teams = MatchTitleCompiler.decompile_match_title(match.title)
-            formatted_match_title = MatchTitleCompiler.compile_match_title(*teams[:2], sort=True)
-            swapped = formatted_match_title != match.title
-
-            for word in self._REMOVE_FROM_TITLES:
-                formatted_match_title = formatted_match_title.replace(word, '')
-
-            if swapped:
-                for bet in match:
-                    found = re.search(r'^((\d+-(st|nd|rd|th) map: )?correct score )(\d+)-(\d+)$', bet.title)
-                    if found:
-                        formatted_bet_title = found.group(1) + found.group(5) + '-' + found.group(4)
-                        bet.title = formatted_bet_title
-
-            match.title = formatted_match_title
-
-        return sport
+    # def _format_titles(self, sport):
+    #     """
+    #     Remove specific words from titles
+    #
+    #     :param sport: sport to format
+    #     :type sport: sport
+    #     :return: updated sport
+    #     :rtype: sport
+    #     """
+    #     sport = self._format_match_titles(sport)
+    #     sport = self._format_bet_titles(sport)
+    #
+    #     return sport
+    #
+    # def _format_bet_titles(self, sport):
+    #     """
+    #     Remove specific words from bet titles
+    #
+    #     :param sport: sport to format
+    #     :type sport: sport
+    #     :return: updated sport
+    #     :rtype: sport
+    #     """
+    #     for match in sport:
+    #         for bet in match:
+    #             for pattern in self._REMOVE_FROM_TITLES:
+    #                 bet.title = re.sub(pattern, '', bet.title)
+    #
+    #     return sport
+    #
+    # def _format_match_titles(self, sport):
+    #     """
+    #     Remove specific words from match titles
+    #
+    #     :param sport: sport to format
+    #     :type sport: sport
+    #     :return: updated sport
+    #     :rtype: sport
+    #     """
+    #     for match in sport:
+    #         teams = MatchTitleCompiler.decompile_match_title(match.title)
+    #         formatted_match_title = MatchTitleCompiler.compile_match_title(*teams[:2], sort=True)
+    #         swapped = formatted_match_title != match.title
+    #
+    #         for word in self._REMOVE_FROM_TITLES:
+    #             formatted_match_title = formatted_match_title.replace(word, '')
+    #
+    #         if swapped:
+    #             for bet in match:
+    #                 found = re.search(r'^((\d+-(st|nd|rd|th) map: )?correct score )(\d+)-(\d+)$', bet.title)
+    #                 if found:
+    #                     formatted_bet_title = found.group(1) + found.group(5) + '-' + found.group(4)
+    #                     bet.title = formatted_bet_title
+    #
+    #         match.title = formatted_match_title
+    #
+    #     return sport
 
     @staticmethod
     def _format_odds(sport):
@@ -184,12 +184,8 @@ class AbstractSyntaxFormatter(ABC):
     def _format_uncommon_chars(self):
         return self.bet_title.lower()
 
-    def get_teams(self):
-        teams = MatchTitleCompiler.decompile_match_title(self.match_title)
-        return teams
-
     def swap_teams(self, title):
-        teams = AbstractSyntaxFormatter.get_teams(self)
+        teams = self.match_title.teams
         if teams[0] in title:
             title = title.replace(teams[0], teams[1])
         else:
@@ -199,7 +195,7 @@ class AbstractSyntaxFormatter(ABC):
     def _move_teams_left(self, formatted_title=None):
         if not formatted_title:
             formatted_title = self.bet_title.lower()
-        teams = AbstractSyntaxFormatter.get_teams(self)
+        teams = self.match_title.teams
         for team in teams:
             if team in formatted_title:
                 match = re.search(r'^' + team, formatted_title)

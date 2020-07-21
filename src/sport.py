@@ -22,7 +22,7 @@ class Sport:
             date_str = ''
             if match.date:
                 date_str = match.date + ': '
-            key = date_str + match.title
+            key = date_str + str(match.title)
             result[key] = match.to_dict()
         return result
 

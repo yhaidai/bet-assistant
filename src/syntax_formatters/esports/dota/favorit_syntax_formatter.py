@@ -44,7 +44,6 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
 
     def _format_first_kill(self):
         formatted_title = self.bet_title.lower()
-        # print(formatted_title)
         if 'which team will be the first to make a kill?' in formatted_title:
             formatted_title = formatted_title.replace('which team will be the first to make a kill?', 'first blood')
         return formatted_title

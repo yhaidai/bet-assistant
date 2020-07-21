@@ -16,13 +16,9 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
     def _format_win(self):
         formatted_title = self.bet_title.lower()
         if '1x2.' in formatted_title:
-            print(formatted_title)
-            print(self.get_teams())
-            print(self.match_title)
             formatted_title = formatted_title.replace('1x2.', 'will win')
             formatted_title = formatted_title.replace('will win draw', 'draw will win')
             self._move_teams_left(formatted_title)
-            print(formatted_title)
 
         return formatted_title
 
@@ -43,7 +39,7 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
         formatted_title = formatted_title.replace('team ', '')
         match = re.search(r'((asian|total) (1|2) )', formatted_title)
         if match:
-            teams = self.get_teams()
+            teams = self.match_title.teams
             formatted_title = formatted_title.replace(match.group(1), teams[int(match.group(3)) - 1]
                                                       + ' ' + match.group(2) + ' ')
         match = re.search(r'total (over|under)', formatted_title)
@@ -66,7 +62,7 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
     def _format_double_chance(self):
         formatted_title = self.bet_title.lower()
         if 'double chance' in formatted_title:
-            teams = self.get_teams()
+            teams = self.match_title.teams
             if teams[0] in formatted_title:
                 if teams[1] in formatted_title:
                     formatted_title = 'draw will lose'
@@ -115,7 +111,7 @@ if __name__ == '__main__':
     formatter = OneXBetSyntaxFormatter()
     sport = Sport.from_dict(one_x_bet.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
-    # print(formatted_sport)
+    print(formatted_sport)
     my_path = os.path.abspath(os.path.dirname(__file__))
     path = my_path + '\\sample_data\\one_x_bet.py'
     with open(path, 'w', encoding='utf-8') as f:

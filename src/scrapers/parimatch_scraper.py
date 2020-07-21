@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 
 from bet import Bet
 from match import Match
+from match_title import MatchTitle
 from sport import Sport
 from constants import sport_name
 from src.renderer.page import Page
@@ -148,7 +149,7 @@ class ParimatchScraper(AbstractScraper):
         :param bet_title_tags: bet title tags of sport match belongs to
         :type bet_title_tags: list<BeautifulSoup.Tag>
         :param match_title: title of the match which bk belongs to
-        :type match_title: str
+        :type match_title: MatchTitle
         :param subtitle: subtitle for given bk
         :type subtitle: str
         :param matches: list that stores betting data
@@ -156,7 +157,7 @@ class ParimatchScraper(AbstractScraper):
         """
         bet_titles = []
         bets = []
-        team_names = MatchTitleCompiler.decompile_match_title(match_title)
+        team_names = match_title.teams
         for bet_title_tag in bet_title_tags:
             # find corresponding column with bet type
             column = ParimatchScraper._find_column(bk, bet_title_tag)
@@ -255,18 +256,23 @@ class ParimatchScraper(AbstractScraper):
         :param tag: one of the tags in parsed document created from the championship url's html
         :type tag: BeautifulSoup.Tag
         :return: match title in the form 'first team - second_team'
-        :rtype: str
+        :rtype: MatchTitle
         """
         br = tag.find(class_='l').find('br')
+        teams = []
 
         first_team = br.previous_sibling
         if not isinstance(first_team, str):
             first_team = first_team.text
+        teams.append(first_team)
+
         second_team = br.next_sibling
         if not isinstance(second_team, str) and second_team is not None:
             second_team = second_team.text
+        if second_team:
+            teams.append(second_team)
 
-        match_title = MatchTitleCompiler.compile_match_title(first_team, second_team)
+        match_title = MatchTitle(teams)
 
         return match_title
 

@@ -67,11 +67,9 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
     def _format_win(self):
         formatted_title = self.bet_title.lower()
         if '1x2' in formatted_title:
-            # print(formatted_title)
             formatted_title = formatted_title.replace('1x2. ', '', 1)
             formatted_title += ' will win'
         if re.match(r'^.+? wins', formatted_title):
-            print(formatted_title)
             formatted_title = formatted_title.replace('wins', 'will win')
 
         return formatted_title

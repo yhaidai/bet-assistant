@@ -1,5 +1,4 @@
 import re
-from pprint import pprint, pformat
 
 from sport import Sport
 from football.abstract_syntax_formatter import AbstractSyntaxFormatter
@@ -27,11 +26,11 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
 
     def _format_total(self):
         formatted_title = self.bet_title.lower()
-        match = re.search('(((\+|-)?\d(\.\d)?),((\+|-)?\d\.\d))', formatted_title)
+        match = re.search(r'(((\+|-)?\d(\.\d)?),((\+|-)?\d\.\d))', formatted_title)
         if match:
             formatted_title = formatted_title.replace(match.group(1),
                                                       str((float(match.group(2)) + float(match.group(5)))/2))
-        match = re.search('((\d\.\d+) (over|under))', formatted_title)
+        match = re.search(r'((\d\.\d+) (over|under))', formatted_title)
         if match:
             formatted_title = formatted_title.replace(match.group(1), '')
             formatted_title += match.group(3) + ' ' + match.group(2)
@@ -62,7 +61,7 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
 
     def _format_double_chance(self):
         formatted_title = self.bet_title.lower()
-        teams = self.get_teams()
+        teams = self.match_title.teams
         match = re.search('will win( or .+? will win)', formatted_title)
         if match:
             formatted_title = formatted_title.replace(match.group(1), '')
