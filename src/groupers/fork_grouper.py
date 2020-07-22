@@ -3,14 +3,13 @@ from abc import ABC, abstractmethod
 
 from bet_group import BetGroup
 from match import Match
-from match_title_compiler import MatchTitleCompiler
 from sport import Sport
 
 
 class ForkGrouper(ABC):
     _grouped_by = {
-        r'^(correct score) \d+-\d+$': (1, ),
-    }
+        r'^(correct score) \d+-\d+$': (1,),
+        }
 
     def __init__(self):
         self.groups = {}
@@ -18,21 +17,38 @@ class ForkGrouper(ABC):
         self.bet = None
 
     @staticmethod
-    def group_matches(sport: Sport) -> Sport:
+    def get_match_groups(sport: Sport) -> dict:
         groups = {}
 
-        for match in sport:
-            groups.setdefault(match.title, []).append(match)
+        sport_copy1 = list(sport)
+        sport_copy2 = list(sport)
+        for first_match in sport_copy1:
+            first_match.title.teams.sort()
+            groups.setdefault(first_match.title, set()).add(first_match)
+            for second_match in sport_copy2:
+                if first_match.similar(second_match, 0.8):
+                    groups[first_match.title].add(second_match)
+                    sport_copy1.remove(second_match)
 
-        for title, group in groups.items():
-            all_bets = []
-            for match in group:
-                all_bets += match.bets
-                sport.matches.remove(match)
-            all_bets_match = Match(title, all_bets)
-            sport.matches.append(all_bets_match)
+                    if str(first_match.title) != str(second_match.title):
+                        print(first_match.title)
+                        print(second_match.title)
+                        print()
 
-        return sport
+                    second_match.title = first_match.title
+
+            sport_copy2.remove(first_match)
+
+        # for title, group in groups.items():
+        #     all_bets = []
+        #     for match in group:
+        #         all_bets += match.bets
+        #         print("Removing " + str(match.title))
+        #         sport.matches.remove(match)
+        #     all_bets_match = Match(title, '', '', all_bets)
+        #     sport.matches.append(all_bets_match)
+
+        return groups
 
     def group_bets(self, sport: Sport) -> Sport:
         grouped_by = self._get_grouped_by()
@@ -84,14 +100,14 @@ class ForkGrouper(ABC):
             '+': '-',
             '-': '+',
             '': '',
-        }
+            }
         handicap_pattern = self._compile_handicap_pattern()
 
         found = re.search(handicap_pattern, self.bet.title)
         if found:
             self.unhandled = False
             key = found.group(1)
-            teams = MatchTitleCompiler.decompile_match_title(self.match.title)
+            teams = self.match.title.teams
             if found.group('team_name') == teams[1]:
                 key = key.replace(found.group('team_name'), teams[0])
                 sign = found.group('sign')

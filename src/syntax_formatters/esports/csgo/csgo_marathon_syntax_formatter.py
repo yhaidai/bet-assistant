@@ -1,13 +1,13 @@
 import re
 
 from sport import Sport
-from syntax_formatters.esports.csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
-from syntax_formatters.esports.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
+from syntax_formatters.esports.csgo.csgo_abstract_syntax_formatter import CSGOAbstractSyntaxFormatter
+from syntax_formatters.esports.esports_marathon_syntax_formatter import EsportsMarathonSyntaxFormatter as MSF
 from sample_data.csgo import marathon
 import os.path
 
 
-class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
+class CSGOMarathonSyntaxFormatter(CSGOAbstractSyntaxFormatter, MSF):
     def _format_teams(self):
         return self._move_teams_left()
 
@@ -20,7 +20,7 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
 
 
 if __name__ == '__main__':
-    formatter = MarathonSyntaxFormatter()
+    formatter = CSGOMarathonSyntaxFormatter()
     sport = Sport.from_dict(marathon.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

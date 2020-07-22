@@ -7,11 +7,11 @@ from sample_data.csgo.one_x_bet import sport as one_x_bet_csgo_dict
 from sample_data.csgo.ggbet import sport as ggbet_csgo_dict
 from sample_data.csgo.favorit import sport as favorit_csgo_dict
 from sample_data.csgo.marathon import sport as marathon_csgo_dict
-from syntax_formatters.esports.csgo.parimatch_syntax_formatter import ParimatchSyntaxFormatter
-from syntax_formatters.esports.csgo.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter
-from syntax_formatters.esports.csgo.ggbet_syntax_formatter import GGBetSyntaxFormatter
-from syntax_formatters.esports.csgo.favorit_syntax_formatter import FavoritSyntaxFormatter
-from syntax_formatters.esports.csgo.marathon_syntax_formatter import MarathonSyntaxFormatter
+from syntax_formatters.esports.csgo.csgo_parimatch_syntax_formatter import CSGOParimatchSyntaxFormatter
+from syntax_formatters.esports.csgo.csgo_one_x_bet_syntax_formatter import CSGOOneXBetSyntaxFormatter
+from syntax_formatters.esports.csgo.csgo_ggbet_syntax_formatter import CSGOGGBetSyntaxFormatter
+from syntax_formatters.esports.csgo.csgo_favorit_syntax_formatter import CSGOFavoritSyntaxFormatter
+from syntax_formatters.esports.csgo.csgo_marathon_syntax_formatter import CSGOMarathonSyntaxFormatter
 
 
 class TestSyntaxFormatters(unittest.TestCase):
@@ -22,11 +22,11 @@ class TestSyntaxFormatters(unittest.TestCase):
         self.favorit_csgo_dict = favorit_csgo_dict
         self.marathon_csgo_dict = marathon_csgo_dict
 
-        self.parimatch_syntax_formatter = ParimatchSyntaxFormatter()
-        self.one_x_bet_syntax_formatter = OneXBetSyntaxFormatter()
-        self.ggbet_syntax_formatter = GGBetSyntaxFormatter()
-        self.favorit_syntax_formatter = FavoritSyntaxFormatter()
-        self.marathon_syntax_formatter = MarathonSyntaxFormatter()
+        self.parimatch_syntax_formatter = CSGOParimatchSyntaxFormatter()
+        self.one_x_bet_syntax_formatter = CSGOOneXBetSyntaxFormatter()
+        self.ggbet_syntax_formatter = CSGOGGBetSyntaxFormatter()
+        self.favorit_syntax_formatter = CSGOFavoritSyntaxFormatter()
+        self.marathon_syntax_formatter = CSGOMarathonSyntaxFormatter()
 
         self.bet_title_patterns = [
             r'^(\d+-(st|nd|rd|th) map: )?(.+? )?will (not )?win( in round \d+| (at least )?.+? map(s)?)?$',  # win

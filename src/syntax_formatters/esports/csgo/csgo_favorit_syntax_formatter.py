@@ -1,13 +1,13 @@
 import re
 
 from sport import Sport
-from syntax_formatters.esports.csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
-from syntax_formatters.esports.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
+from syntax_formatters.esports.csgo.csgo_abstract_syntax_formatter import CSGOAbstractSyntaxFormatter
+from syntax_formatters.esports.esports_favorit_syntax_formatter import EsportsFavoritSyntaxFormatter as FSF
 from sample_data.csgo import favorit
 import os.path
 
 
-class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
+class CSGOFavoritSyntaxFormatter(CSGOAbstractSyntaxFormatter, FSF):
     def _format_overtime(self):
         formatted_title = self.bet_title.lower()
         if 'full time ' in formatted_title:
@@ -49,7 +49,7 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
 
 
 if __name__ == '__main__':
-    formatter = FavoritSyntaxFormatter()
+    formatter = CSGOFavoritSyntaxFormatter()
     sport = Sport.from_dict(favorit.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

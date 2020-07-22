@@ -2,12 +2,12 @@ import re
 import os.path
 
 from sport import Sport
-from syntax_formatters.esports.lol.abstract_syntax_formatter import AbstractSyntaxFormatter
-from syntax_formatters.esports.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
+from syntax_formatters.esports.lol.lol_abstract_syntax_formatter import LoLAbstractSyntaxFormatter
+from syntax_formatters.esports.esports_one_x_bet_syntax_formatter import EsportsOneXBetSyntaxFormatter as OSF
 from sample_data.lol import one_x_bet
 
 
-class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
+class LoLOneXBetSyntaxFormatter(LoLAbstractSyntaxFormatter, OSF):
     """
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the 1xbet website
@@ -131,7 +131,7 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
 
 
 if __name__ == '__main__':
-    formatter = OneXBetSyntaxFormatter()
+    formatter = LoLOneXBetSyntaxFormatter()
     sport = Sport.from_dict(one_x_bet.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

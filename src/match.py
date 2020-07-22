@@ -8,10 +8,13 @@ from match_title import MatchTitle
 
 
 class Match:
-    def __init__(self, title: MatchTitle, bets: list, date=None):
+    def __init__(self, title: MatchTitle, url: str, date, bets=None):
+        if bets is None:
+            bets = []
         self.title = title
-        self.bets = bets
+        self.url = url
         self.date = date
+        self.bets = bets
 
     @classmethod
     def from_dict(cls, match_dict):
@@ -26,7 +29,7 @@ class Match:
         bets_dict = list(match_dict.values())[0]
         bets = [Bet.from_dict({bet_title: odds}) for bet_title, odds in bets_dict.items()]
 
-        return cls(title, bets, date)
+        return cls(title, '', date, bets)
 
     def to_dict(self):
         result = {}
@@ -51,7 +54,7 @@ class Match:
         date_str = ''
         if self.date:
             date_str = self.date + ': '
-        return pformat({date_str + self.title: self.to_dict()}, width=300)
+        return pformat({date_str + str(self.title): self.to_dict()}, width=300)
 
     def similar(self, other, certainty):
         similarity = Match._calculate_matches_similarity(self, other)
@@ -62,22 +65,28 @@ class Match:
         teams1 = first_match.title.teams
         teams2 = second_match.title.teams
 
+        if len(teams1) != len(teams2):
+            return 0
+
         total_similarity = 0
         teams2_copy = list(teams2)
         for first_team in teams1:
-            max_similarity = 0
+            max_similarity = -1
             max_similarity_second_team = None
             for second_team in teams2_copy:
                 similarity = Match._calculate_teams_similarity(first_team, second_team)
+                # print(similarity)
                 if similarity > max_similarity:
                     max_similarity = similarity
                     max_similarity_second_team = second_team
 
             total_similarity += max_similarity
 
+            # print(teams1)
+            # print(teams2_copy)
+            # print(max_similarity_second_team)
+            # print()
             teams2_copy.remove(max_similarity_second_team)
-            if len(teams2_copy) == 0:
-                break
 
         relative_total_similarity = total_similarity / len(teams1)
         return relative_total_similarity
@@ -100,8 +109,8 @@ class Match:
 
 
 if __name__ == '__main__':
-    m1 = Match(MatchTitle(['fc zenit ', 'tartutammeka']), [])
-    m2 = Match(MatchTitle(['zenit st. petersburg', 'tammeka tartu']), [])
+    m1 = Match(MatchTitle(['bmth', 'spassion']), [])
+    m2 = Match(MatchTitle(['bring me the horizon', 'spassion']), [])
     similarity = Match._calculate_matches_similarity(m1, m2)
     print(similarity)
     print(m1.similar(m2, 0.6))

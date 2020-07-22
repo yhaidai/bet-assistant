@@ -3,11 +3,5 @@ from abc import ABC, abstractmethod
 
 class AbstractScraper(ABC):
     @abstractmethod
-    def get_sport_bets(self, sport_type):
-        """
-        Scrapes betting data for a given sport type
-
-        :param sport_type: sport type to scrape betting data for
-        :type sport_type: str
-        """
+    def get_matches_info_sport(self, sport_name):
         pass

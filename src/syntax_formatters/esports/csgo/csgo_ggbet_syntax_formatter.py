@@ -1,13 +1,13 @@
 import re
 
 from sport import Sport
-from syntax_formatters.esports.csgo.abstract_syntax_formatter import AbstractSyntaxFormatter
-from syntax_formatters.esports.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
+from syntax_formatters.esports.csgo.csgo_abstract_syntax_formatter import CSGOAbstractSyntaxFormatter
+from syntax_formatters.esports.esports_ggbet_syntax_formatter import EsportsGGBetSyntaxFormatter as GSF
 from sample_data.csgo import ggbet
 import os.path
 
 
-class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
+class CSGOGGBetSyntaxFormatter(CSGOAbstractSyntaxFormatter, GSF):
     def _format_win_in_round(self):
         formatted_title = self.bet_title.lower()
         if '2nd pistol round winner' in formatted_title:
@@ -54,7 +54,7 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
 
 
 if __name__ == '__main__':
-    formatter = GGBetSyntaxFormatter()
+    formatter = CSGOGGBetSyntaxFormatter()
     sport = Sport.from_dict(ggbet.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

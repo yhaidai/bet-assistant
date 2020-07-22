@@ -1,13 +1,13 @@
 import re
 
 from sport import Sport
-from football.abstract_syntax_formatter import AbstractSyntaxFormatter
+from football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
 from syntax_formatters.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
 from sample_data.football import ggbet
 import os.path
 
 
-class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
+class FootballGGBetSyntaxFormatter(FootballAbstractSyntaxFormatter, GSF):
     def _format_win(self):
         formatted_title = self.bet_title.lower()
         if '1x2' in formatted_title:
@@ -76,7 +76,7 @@ class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
 
 
 if __name__ == '__main__':
-    formatter = GGBetSyntaxFormatter()
+    formatter = FootballGGBetSyntaxFormatter()
     sport = Sport.from_dict(ggbet.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

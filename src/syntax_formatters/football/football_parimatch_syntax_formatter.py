@@ -3,13 +3,13 @@ from pprint import pprint, pformat
 import os.path
 
 from sport import Sport
-from football.abstract_syntax_formatter import AbstractSyntaxFormatter
+from football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
 from syntax_formatters.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
 from sample_data.football import parimatch
 from syntax_formatters.match_title_compiler import MatchTitleCompiler
 
 
-class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
+class FootballParimatchSyntaxFormatter(FootballAbstractSyntaxFormatter, PSF):
     """
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the parimatch website
@@ -93,7 +93,7 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
 
 
 if __name__ == '__main__':
-    formatter = ParimatchSyntaxFormatter()
+    formatter = FootballParimatchSyntaxFormatter()
     sport = Sport.from_dict(parimatch.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

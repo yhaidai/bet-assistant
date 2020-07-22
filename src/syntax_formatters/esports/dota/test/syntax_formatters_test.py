@@ -7,11 +7,11 @@ from sample_data.dota.one_x_bet import sport as one_x_bet_dota_dict
 from sample_data.dota.ggbet import sport as ggbet_dota_dict
 from sample_data.dota.favorit import sport as favorit_dota_dict
 from sample_data.dota.marathon import sport as marathon_dota_dict
-from syntax_formatters.esports.dota.parimatch_syntax_formatter import ParimatchSyntaxFormatter
-from syntax_formatters.esports.dota.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter
-from syntax_formatters.esports.dota.ggbet_syntax_formatter import GGBetSyntaxFormatter
-from syntax_formatters.esports.dota.favorit_syntax_formatter import FavoritSyntaxFormatter
-from syntax_formatters.esports.dota.marathon_syntax_formatter import MarathonSyntaxFormatter
+from syntax_formatters.esports.dota.dota_parimatch_syntax_formatter import DotaParimatchSyntaxFormatter
+from syntax_formatters.esports.dota.dota_one_x_bet_syntax_formatter import DotaOneXBetSyntaxFormatter
+from syntax_formatters.esports.dota.dota_ggbet_syntax_formatter import DotaGGBetSyntaxFormatter
+from syntax_formatters.esports.dota.dota_favorit_syntax_formatter import DotaFavoritSyntaxFormatter
+from syntax_formatters.esports.dota.dota_marathon_syntax_formatter import DotaMarathonSyntaxFormatter
 
 
 class TestSyntaxFormatters(unittest.TestCase):
@@ -22,11 +22,11 @@ class TestSyntaxFormatters(unittest.TestCase):
         self.favorit_dota_dict = favorit_dota_dict
         self.marathon_dota_dict = marathon_dota_dict
 
-        self.parimatch_syntax_formatter = ParimatchSyntaxFormatter()
-        self.one_x_bet_syntax_formatter = OneXBetSyntaxFormatter()
-        self.ggbet_syntax_formatter = GGBetSyntaxFormatter()
-        self.favorit_syntax_formatter = FavoritSyntaxFormatter()
-        self.marathon_syntax_formatter = MarathonSyntaxFormatter()
+        self.parimatch_syntax_formatter = DotaParimatchSyntaxFormatter()
+        self.one_x_bet_syntax_formatter = DotaOneXBetSyntaxFormatter()
+        self.ggbet_syntax_formatter = DotaGGBetSyntaxFormatter()
+        self.favorit_syntax_formatter = DotaFavoritSyntaxFormatter()
+        self.marathon_syntax_formatter = DotaMarathonSyntaxFormatter()
 
         self.bet_title_patterns = [
             r'^(\d+-(st|nd|rd|th) map: )?(.+? )?will (win|lose)((at least )?.+? map(s)?)?$',  # win

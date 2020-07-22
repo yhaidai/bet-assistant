@@ -3,12 +3,12 @@ from pprint import pprint, pformat
 import os.path
 
 from sport import Sport
-from football.abstract_syntax_formatter import AbstractSyntaxFormatter
+from football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
 from syntax_formatters.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
 from sample_data.football import one_x_bet
 
 
-class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
+class FootballOneXBetSyntaxFormatter(FootballAbstractSyntaxFormatter, OSF):
     """
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the 1xbet website
@@ -108,7 +108,7 @@ class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
 
 
 if __name__ == '__main__':
-    formatter = OneXBetSyntaxFormatter()
+    formatter = FootballOneXBetSyntaxFormatter()
     sport = Sport.from_dict(one_x_bet.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

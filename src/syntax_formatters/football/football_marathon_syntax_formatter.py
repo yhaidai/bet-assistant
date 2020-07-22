@@ -1,13 +1,13 @@
 import re
 
 from sport import Sport
-from football.abstract_syntax_formatter import AbstractSyntaxFormatter
+from football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
 from syntax_formatters.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
 from sample_data.football import marathon
 import os.path
 
 
-class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
+class FootballMarathonSyntaxFormatter(FootballAbstractSyntaxFormatter, MSF):
     def _format_win(self):
         formatted_title = self.bet_title.lower()
         formatted_title = formatted_title.replace('to win', 'will win')
@@ -100,7 +100,7 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
 
 
 if __name__ == '__main__':
-    formatter = MarathonSyntaxFormatter()
+    formatter = FootballMarathonSyntaxFormatter()
     sport = Sport.from_dict(marathon.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

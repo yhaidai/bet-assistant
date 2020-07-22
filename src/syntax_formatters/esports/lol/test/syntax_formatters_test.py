@@ -7,11 +7,11 @@ from sample_data.lol.one_x_bet import sport as one_x_bet_lol_dict
 from sample_data.lol.ggbet import sport as ggbet_lol_dict
 from sample_data.lol.favorit import sport as favorit_lol_dict
 from sample_data.lol.marathon import sport as marathon_lol_dict
-from syntax_formatters.esports.lol.parimatch_syntax_formatter import ParimatchSyntaxFormatter
-from syntax_formatters.esports.lol.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter
-from syntax_formatters.esports.lol.ggbet_syntax_formatter import GGBetSyntaxFormatter
-from syntax_formatters.esports.lol.favorit_syntax_formatter import FavoritSyntaxFormatter
-from syntax_formatters.esports.lol.marathon_syntax_formatter import MarathonSyntaxFormatter
+from syntax_formatters.esports.lol.lol_parimatch_syntax_formatter import LoLParimatchSyntaxFormatter
+from syntax_formatters.esports.lol.lol_one_x_bet_syntax_formatter import LoLOneXBetSyntaxFormatter
+from syntax_formatters.esports.lol.lol_ggbet_syntax_formatter import LoLGGBetSyntaxFormatter
+from syntax_formatters.esports.lol.lol_favorit_syntax_formatter import LoLFavoritSyntaxFormatter
+from syntax_formatters.esports.lol.lol_marathon_syntax_formatter import LoLMarathonSyntaxFormatter
 
 
 class TestSyntaxFormatters(unittest.TestCase):
@@ -22,11 +22,11 @@ class TestSyntaxFormatters(unittest.TestCase):
         self.favorit_lol_dict = favorit_lol_dict
         self.marathon_lol_dict = marathon_lol_dict
 
-        self.parimatch_syntax_formatter = ParimatchSyntaxFormatter()
-        self.one_x_bet_syntax_formatter = OneXBetSyntaxFormatter()
-        self.ggbet_syntax_formatter = GGBetSyntaxFormatter()
-        self.favorit_syntax_formatter = FavoritSyntaxFormatter()
-        self.marathon_syntax_formatter = MarathonSyntaxFormatter()
+        self.parimatch_syntax_formatter = LoLParimatchSyntaxFormatter()
+        self.one_x_bet_syntax_formatter = LoLOneXBetSyntaxFormatter()
+        self.ggbet_syntax_formatter = LoLGGBetSyntaxFormatter()
+        self.favorit_syntax_formatter = LoLFavoritSyntaxFormatter()
+        self.marathon_syntax_formatter = LoLMarathonSyntaxFormatter()
 
         self.bet_title_patterns = [
             r'^(\d+-(st|nd|rd|th) map: )?(.+?) will (win|lose)$',  # win

@@ -1,13 +1,13 @@
 import re
 
 from sport import Sport
-from syntax_formatters.esports.lol.abstract_syntax_formatter import AbstractSyntaxFormatter
-from syntax_formatters.esports.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
+from syntax_formatters.esports.lol.lol_abstract_syntax_formatter import LoLAbstractSyntaxFormatter
+from syntax_formatters.esports.esports_marathon_syntax_formatter import EsportsMarathonSyntaxFormatter as MSF
 from sample_data.lol import marathon
 import os.path
 
 
-class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
+class LoLMarathonSyntaxFormatter(LoLAbstractSyntaxFormatter, MSF):
 
     def _format_individual_total_kills(self):
         formatted_title = self.bet_title.lower()
@@ -96,7 +96,7 @@ class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
 
 
 if __name__ == '__main__':
-    formatter = MarathonSyntaxFormatter()
+    formatter = LoLMarathonSyntaxFormatter()
     sport = Sport.from_dict(marathon.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

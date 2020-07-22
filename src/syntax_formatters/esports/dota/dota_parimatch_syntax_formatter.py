@@ -2,12 +2,12 @@ import re
 import os.path
 
 from sport import Sport
-from syntax_formatters.esports.dota.abstract_syntax_formatter import AbstractSyntaxFormatter
-from syntax_formatters.esports.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
+from syntax_formatters.esports.dota.dota_abstract_syntax_formatter import DotaAbstractSyntaxFormatter
+from syntax_formatters.esports.esports_parimatch_syntax_formatter import EsportsParimatchSyntaxFormatter as PSF
 from sample_data.dota import parimatch
 
 
-class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
+class DotaParimatchSyntaxFormatter(DotaAbstractSyntaxFormatter, PSF):
     """
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the parimatch website
@@ -47,7 +47,7 @@ class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
 
 
 if __name__ == '__main__':
-    formatter = ParimatchSyntaxFormatter()
+    formatter = DotaParimatchSyntaxFormatter()
     sport = Sport.from_dict(parimatch.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

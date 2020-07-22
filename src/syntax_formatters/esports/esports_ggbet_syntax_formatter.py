@@ -1,9 +1,9 @@
 import re
-from syntax_formatters.esports.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.esports_abstract_syntax_formatter import EsportsAbstractSyntaxFormatter
 from syntax_formatters.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
 
 
-class GGBetSyntaxFormatter(AbstractSyntaxFormatter, GSF):
+class EsportsGGBetSyntaxFormatter(EsportsAbstractSyntaxFormatter, GSF):
     def _format_win(self):
         formatted_title = self.bet_title.lower()
         if 'winner ' in formatted_title:

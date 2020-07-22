@@ -1,9 +1,9 @@
 import re
-from syntax_formatters.esports.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.esports_abstract_syntax_formatter import EsportsAbstractSyntaxFormatter
 from syntax_formatters.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
 
 
-class MarathonSyntaxFormatter(AbstractSyntaxFormatter, MSF):
+class EsportsMarathonSyntaxFormatter(EsportsAbstractSyntaxFormatter, MSF):
     def _format_before(self, bets):
         bets = self._update(bets, self._format_whitespaces)
         bets = self._update(bets, self.__format_before)

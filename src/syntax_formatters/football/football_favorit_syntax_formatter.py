@@ -1,13 +1,13 @@
 import re
 
 from sport import Sport
-from football.abstract_syntax_formatter import AbstractSyntaxFormatter
+from football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
 from syntax_formatters.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
 from sample_data.football import favorit
 import os.path
 
 
-class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
+class FootballFavoritSyntaxFormatter(FootballAbstractSyntaxFormatter, FSF):
     def _format_win(self):
         formatted_title = self.bet_title.lower()
         if 'match winner' in formatted_title:
@@ -93,7 +93,7 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
 
 
 if __name__ == '__main__':
-    formatter = FavoritSyntaxFormatter()
+    formatter = FootballFavoritSyntaxFormatter()
     sport = Sport.from_dict(favorit.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

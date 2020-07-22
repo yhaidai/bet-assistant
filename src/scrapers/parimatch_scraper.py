@@ -10,7 +10,6 @@ from sport import Sport
 from constants import sport_name
 from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
-from syntax_formatters.match_title_compiler import MatchTitleCompiler
 
 
 class ParimatchScraper(AbstractScraper):
@@ -38,24 +37,16 @@ class ParimatchScraper(AbstractScraper):
     # last titles for each of the groups
     _TITLE_BREAKERS = ('Handicap coefficient', 'Under', 'Win of the 1st team', )
 
-    def get_sport_bets(self, sport_name):
-        """
-        Scrapes betting data for a given sport type
-
-        :param sport_name: sport type to scrape betting data for
-        :type sport_name: str
-        """
-        sport_bets = []
+    def get_matches_info_sport(self, sport_name):
+        sport_matches = []
 
         championship_urls = ParimatchScraper.get_championship_urls(sport_name)
-        championship_urls = championship_urls[:]
-
-        for championship_url in championship_urls:
+        for championship_url in championship_urls[:8]:
             full_url = self._BASE_URL + championship_url
-            championship_bets = self._get_championship_bets(full_url)
-            sport_bets += championship_bets
+            championship_matches = self._get_championship_matches_info(full_url)
+            sport_matches += championship_matches
 
-        sport = Sport(sport_name, sport_bets)
+        sport = Sport(sport_name, sport_matches)
         return sport
 
     @staticmethod
@@ -75,69 +66,50 @@ class ParimatchScraper(AbstractScraper):
 
         return championship_urls
 
-    @staticmethod
-    def _get_championship_bets(url):
-        """
-        Scrapes main betting data i.e match title, main bet titles and odds for the given championship url
-
-        :param url: championship url to scrape the bets from
-        :type url: str
-        :return: bets dictionary in the following form: bets[match_title][bet_title] = odds
-        :rtype: dict
-        """
-        print(url)
+    def _get_championship_matches_info(self, url):
         soup = ParimatchScraper._get_soup(url)
         matches = []
 
-        tag = soup.find(class_='processed')
-        event_tag = tag.find(string='Event')
-        if not event_tag:
-            return matches
-        event_tag_parent = event_tag.parent
-        bet_title_tags = event_tag_parent.find_next_siblings()
-
-        # main bets containers
         bks1 = [el.next_element for el in soup.find_all(class_='row1 processed')]
         bks2 = [el.next_element for el in soup.find_all(class_='row2 processed')]
+        bks = bks1 + bks2
 
-        ParimatchScraper._parse_bks(bks1, bet_title_tags, matches, url)
-        ParimatchScraper._parse_bks(bks2, bet_title_tags, matches, url)
+        for bk in bks:
+            match_title = ParimatchScraper._get_match_title(bk)
+            date = ParimatchScraper._get_match_date(bk)
+            match = Match(match_title, url, date)
+            match.scraper = self
+            match.bk = bk
+            matches.append(match)
 
         return matches
 
     @staticmethod
-    def _parse_bks(bks, bet_title_tags, matches, url):
-        """
-        Scrapes match title, bet titles and odds for given tags of class 'bk' and updates bets dict with scraped data
+    def scrape_match_bets(match: Match):
+        bets = []
+        soup = ParimatchScraper._get_soup(match.url)
 
-        :param bks: tags of class 'bk' and previous element of class 'row1 processed' or 'row2 processed'
-        :type bks: list<BeautifulSoup.Tag>
-        :param bet_title_tags: bet title tags of sport match belongs to
-        :type bet_title_tags: list<BeautifulSoup.Tag>
-        :param matches: list storing betting data to be updated
-        :type matches: list
-        """
-        for bk in bks:
-            bets = []
-            match_title = ParimatchScraper._get_match_title(bk)
+        event_tag = soup.find(class_='processed').find(string='Event')
+        if not event_tag:
+            return match
+        bet_title_tags = event_tag.parent.find_next_siblings()
 
-            # get main bets for the match
-            bets += ParimatchScraper._update_bets(bk, bet_title_tags, match_title, '', url)
+        # get main bets for the match
+        bets += ParimatchScraper._update_bets(match.bk, bet_title_tags, match.title, '', match.url)
 
-            # get other bets for the match if any
-            row1_props = bk.parent.next_sibling
-            if row1_props:
-                props_bks = row1_props.find_all(class_='bk')
-                if props_bks:
-                    subtitle_children_count = len(props_bks[0].contents)
-                    for props_bk in props_bks:
-                        if len(props_bk.contents) == subtitle_children_count:
-                            if props_bk.next_element.next_sibling.text != '\xa0':
-                                subtitle = props_bk.next_element.next_sibling.text + ' '
-                        bets += ParimatchScraper._update_bets(props_bk, bet_title_tags, match_title, subtitle, url)
+        # get other bets for the match if any
+        row1_props = match.bk.parent.next_sibling
+        if row1_props:
+            props_bks = row1_props.find_all(class_='bk')
+            if props_bks:
+                subtitle_children_count = len(props_bks[0].contents)
+                for props_bk in props_bks:
+                    if len(props_bk.contents) == subtitle_children_count:
+                        if props_bk.next_element.next_sibling.text != '\xa0':
+                            subtitle = props_bk.next_element.next_sibling.text + ' '
+                    bets += ParimatchScraper._update_bets(props_bk, bet_title_tags, match.title, subtitle, match.url)
 
-            match = Match(match_title, bets)
-            matches.append(match)
+        match.bets = bets
 
     @staticmethod
     def _update_bets(bk, bet_title_tags, match_title, subtitle, url):
@@ -277,6 +249,11 @@ class ParimatchScraper(AbstractScraper):
         return match_title
 
     @staticmethod
+    def _get_match_date(tag):
+        br = tag.find('td').next_sibling.find('br')
+        return br.previous_sibling + br.next_sibling
+
+    @staticmethod
     def _get_soup(url):
         """
         Get soup of rendered page
@@ -314,11 +291,15 @@ class ParimatchScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = ParimatchScraper()
-    b = scraper.get_sport_bets(sport_name)
-    print(b)
+
+    sport = scraper.get_matches_info_sport(sport_name)
+    for match in sport:
+        scraper.scrape_match_bets(match)
+    print(sport)
+
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
     path = my_path + '\\sample_data\\' + sport_name + '\\parimatch.py'
     with open(path, 'w', encoding='utf-8') as f:
-        print('sport =', b, file=f)
+        print('sport =', sport, file=f)
     print(time.time() - t)

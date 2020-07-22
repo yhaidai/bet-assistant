@@ -3,7 +3,7 @@ import re
 from syntax_formatters.abstract_syntax_formatter import AbstractSyntaxFormatter as ASF
 
 
-class AbstractSyntaxFormatter(ASF, ABC):
+class FootballAbstractSyntaxFormatter(ASF, ABC):
     """
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the websites

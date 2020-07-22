@@ -1,10 +1,10 @@
 import re
 
-from syntax_formatters.esports.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.esports_abstract_syntax_formatter import EsportsAbstractSyntaxFormatter
 from syntax_formatters.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
 
 
-class OneXBetSyntaxFormatter(AbstractSyntaxFormatter, OSF):
+class EsportsOneXBetSyntaxFormatter(EsportsAbstractSyntaxFormatter, OSF):
     """
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the 1xbet website

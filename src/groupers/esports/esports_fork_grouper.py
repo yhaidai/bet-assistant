@@ -1,9 +1,6 @@
-import re
 from abc import ABC
 
-from bet_group import BetGroup
 from groupers.fork_grouper import ForkGrouper
-from match_title_compiler import MatchTitleCompiler
 
 
 class EsportsForkGrouper(ForkGrouper, ABC):

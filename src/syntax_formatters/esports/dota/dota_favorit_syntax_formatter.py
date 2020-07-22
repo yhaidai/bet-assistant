@@ -1,13 +1,13 @@
 import re
 
 from sport import Sport
-from syntax_formatters.esports.lol.abstract_syntax_formatter import AbstractSyntaxFormatter
-from syntax_formatters.esports.favorit_syntax_formatter import FavoritSyntaxFormatter as FSF
-from sample_data.lol import favorit
+from syntax_formatters.esports.dota.dota_abstract_syntax_formatter import DotaAbstractSyntaxFormatter
+from syntax_formatters.esports.esports_favorit_syntax_formatter import EsportsFavoritSyntaxFormatter as FSF
+from sample_data.dota import favorit
 import os.path
 
 
-class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
+class DotaFavoritSyntaxFormatter(DotaAbstractSyntaxFormatter, FSF):
     def _format_individual_total_kills(self):
         formatted_title = self.bet_title.lower()
         if 'team total' in formatted_title:
@@ -30,10 +30,10 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title += 'will first make ' + words[-1] + ' kills'
         return formatted_title
 
-    def _format_first_to_kill(self):
+    def _format_first_to_kill_roshan(self):
         formatted_title = self.bet_title.lower()
-        if 'kill first baron' in formatted_title:
-            formatted_title = formatted_title.replace('kill first baron', 'will first kill baron')
+        if 'kill first roshan' in formatted_title:
+            formatted_title = formatted_title.replace('kill first roshan', 'will first kill roshan')
         return formatted_title
 
     def _format_total(self):
@@ -42,17 +42,8 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title = formatted_title.replace('odd / even', 'total kills')
         return formatted_title
 
-    def _format_most_kills(self):
-        formatted_title = self.bet_title.lower()
-        return formatted_title
-
-    def _format_draw(self):
-        formatted_title = self.bet_title.lower()
-        return formatted_title
-
     def _format_first_kill(self):
         formatted_title = self.bet_title.lower()
-        # print(formatted_title)
         if 'which team will be the first to make a kill?' in formatted_title:
             formatted_title = formatted_title.replace('which team will be the first to make a kill?', 'first blood')
         return formatted_title
@@ -64,12 +55,26 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
             formatted_title = formatted_title.replace(' minutes', '')
         return formatted_title
 
-    def _format_first_to_destroy(self):
+    def _format_first_to_destroy_tower(self):
         formatted_title = self.bet_title.lower()
-        if 'which team will be the first to lose a turret?' in formatted_title:
-            formatted_title = formatted_title.replace('which team will be the first to lose a turret?',
-                                                      'will first destroy turret')
+        if 'which team will be the first to lose a tower?' in formatted_title:
+            formatted_title = formatted_title.replace('which team will be the first to lose a tower?',
+                                                      'will first destroy tower')
             formatted_title = self.swap_teams(formatted_title)
+        return formatted_title
+
+    def _format_barracks(self):
+        formatted_title = self.bet_title.lower()
+        if 'which team will be the first to lose a barrack?' in formatted_title:
+            formatted_title = formatted_title.replace('which team will be the first to lose a barrack?',
+                                                      'will first lose barracks')
+        return formatted_title
+
+    def _format_megacreeps(self):
+        formatted_title = self.bet_title.lower()
+        if 'will there be megacreeps on the map' in formatted_title:
+            formatted_title = formatted_title.replace('will there be megacreeps on the map',
+                                                      'megacreeps')
         return formatted_title
 
     def _format_teams(self):
@@ -77,7 +82,7 @@ class FavoritSyntaxFormatter(AbstractSyntaxFormatter, FSF):
 
 
 if __name__ == '__main__':
-    formatter = FavoritSyntaxFormatter()
+    formatter = DotaFavoritSyntaxFormatter()
     sport = Sport.from_dict(favorit.sport)
     formatted_sport = formatter.apply_unified_syntax_formatting(sport)
     print(formatted_sport)

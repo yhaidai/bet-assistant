@@ -1,9 +1,9 @@
-from syntax_formatters.esports.abstract_syntax_formatter import AbstractSyntaxFormatter
+from syntax_formatters.esports.esports_abstract_syntax_formatter import EsportsAbstractSyntaxFormatter
 from syntax_formatters.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
 from match_title_compiler import MatchTitleCompiler
 
 
-class ParimatchSyntaxFormatter(AbstractSyntaxFormatter, PSF):
+class EsportsParimatchSyntaxFormatter(EsportsAbstractSyntaxFormatter, PSF):
     """
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the parimatch website
