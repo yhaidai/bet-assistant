@@ -37,11 +37,16 @@ class ParimatchScraper(AbstractScraper):
     # last titles for each of the groups
     _TITLE_BREAKERS = ('Handicap coefficient', 'Under', 'Win of the 1st team', )
 
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(ParimatchScraper, cls).__new__(cls)
+        return cls.instance
+
     def get_matches_info_sport(self, sport_name):
         sport_matches = []
 
         championship_urls = ParimatchScraper.get_championship_urls(sport_name)
-        for championship_url in championship_urls[:8]:
+        for championship_url in championship_urls[:]:
             full_url = self._BASE_URL + championship_url
             championship_matches = self._get_championship_matches_info(full_url)
             sport_matches += championship_matches

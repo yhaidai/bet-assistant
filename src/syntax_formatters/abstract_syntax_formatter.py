@@ -2,6 +2,7 @@ import re
 from abc import ABC, abstractmethod
 
 from match_title_compiler import MatchTitleCompiler
+from sport import Sport
 
 
 class AbstractSyntaxFormatter(ABC):
@@ -11,7 +12,10 @@ class AbstractSyntaxFormatter(ABC):
     """
     _REMOVE_FROM_TITLES = [r'^team ', ' team', ' esports', ' e-sports', ' club', ' gaming', ]
 
-    def apply_unified_syntax_formatting(self, sport):
+    def format_match(self, match):
+        return self.apply_unified_syntax_formatting(Sport('', [match])).matches[0]
+
+    def apply_unified_syntax_formatting(self, sport: Sport):
         """
         Apply unified syntax formatting to the given sport
 
@@ -38,9 +42,9 @@ class AbstractSyntaxFormatter(ABC):
         Apply unified syntax formatting to the given bets dict before obligatory updates are run. Subclass specific
 
         :param sport: sport to format
-        :type sport: sport
+        :type sport: Sport
         :return: formatted sport
-        :rtype: sport
+        :rtype: Sport
         """
         return sport
 
@@ -49,9 +53,9 @@ class AbstractSyntaxFormatter(ABC):
         Apply unified syntax formatting to the given bets dict after obligatory updates are run. Subclass specific
 
         :param sport: sport to format
-        :type sport: sport
+        :type sport: Sport
         :return: formatted sport
-        :rtype: sport
+        :rtype: Sport
         """
         return sport
 
@@ -70,11 +74,11 @@ class AbstractSyntaxFormatter(ABC):
         Update self.bets and given bets dictionaries according to _callable method
 
         :param sport: bets dictionary to format
-        :type sport: sport
+        :type sport: Sport
         :param _callable: method to be called to get formatted bet title
         :type _callable: method
         :return: updated sport
-        :rtype: sport
+        :rtype: Sport
         """
         invalid_bet_titles = self._get_invalid_bet_titles()
         invalid_match_titles = self._get_invalid_match_titles()
@@ -158,9 +162,9 @@ class AbstractSyntaxFormatter(ABC):
         Remove empty odds bet titles
 
         :param sport: sport to format
-        :type sport: sport
+        :type sport: Sport
         :return: updated sport
-        :rtype: sport
+        :rtype: Sport
         """
         for match in sport:
             for bet in list(match):

@@ -20,14 +20,19 @@ class OneXBetScraper(AbstractScraper):
         'dota': 'Dota-2',
         'football': 'Football',
         'lol': 'League-of-Legends',
-    }
+        }
     _MENU = {
         'csgo': 'line/Esports/',
         'dota': 'line/Esports/',
         'football': 'line/Football/',
         'lol': 'line/Esports/',
-    }
+        }
     _TEAM_NAME_CONTAINERS = ['c-scoreboard-team__name-link', 'team', ]
+
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(OneXBetScraper, cls).__new__(cls)
+        return cls.instance
 
     def get_matches_info_sport(self, sport_name):
         championships = OneXBetScraper._get_championships(sport_name)

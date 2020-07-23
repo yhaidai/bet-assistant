@@ -53,9 +53,13 @@ class Analyzer:
             all_bets = []
             for match in group:
                 match.scraper.scrape_match_bets(match)
+                print('\n' * 5)
+                print(match.bets)
+                print('\n' * 5)
                 all_bets += match.bets
                 all_matches_sport.matches.remove(match)
-                # TODO: format bets at this moment
+                formatter = registry[match.scraper][all_matches_sport.name]
+                formatter.format_match(match)
 
             all_bets_match = Match(title, '', '', all_bets)
             all_matches_sport.matches.append(all_bets_match)
