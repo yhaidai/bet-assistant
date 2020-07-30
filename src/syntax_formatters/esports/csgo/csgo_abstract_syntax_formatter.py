@@ -13,7 +13,7 @@ class CSGOAbstractSyntaxFormatter(ASF, ABC):
         Apply unified syntax formatting to the given sport
 
         :param sport: sport to format
-        :type sport: sport
+        :type sport: Sport
         """
         sport = self._format_before(sport)
 

@@ -39,7 +39,7 @@ class FootballOneXBetSyntaxFormatter(FootballAbstractSyntaxFormatter, OSF):
         formatted_title = formatted_title.replace('team ', '')
         match = re.search(r'((asian|total) (1|2) )', formatted_title)
         if match:
-            teams = self.match_title.teams
+            teams = self.match_title.raw_teams
             formatted_title = formatted_title.replace(match.group(1), teams[int(match.group(3)) - 1]
                                                       + ' ' + match.group(2) + ' ')
         match = re.search(r'total (over|under)', formatted_title)
@@ -62,7 +62,7 @@ class FootballOneXBetSyntaxFormatter(FootballAbstractSyntaxFormatter, OSF):
     def _format_double_chance(self):
         formatted_title = self.bet_title.lower()
         if 'double chance' in formatted_title:
-            teams = self.match_title.teams
+            teams = self.match_title.raw_teams
             if teams[0] in formatted_title:
                 if teams[1] in formatted_title:
                     formatted_title = 'draw will lose'

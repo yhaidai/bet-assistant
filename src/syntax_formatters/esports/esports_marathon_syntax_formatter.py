@@ -39,7 +39,7 @@ class EsportsMarathonSyntaxFormatter(EsportsAbstractSyntaxFormatter, MSF):
         if match:
             formatted_title += ' will win'
         formatted_title = formatted_title.replace('or draw', 'or draw will win')
-        teams = self.match_title.teams
+        teams = self.match_title.raw_teams
         match = re.search('will win( or .+? will win)', formatted_title)
         if match:
             formatted_title = formatted_title.replace(match.group(1), '')

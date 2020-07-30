@@ -61,7 +61,7 @@ class FootballMarathonSyntaxFormatter(FootballAbstractSyntaxFormatter, MSF):
 
     def _format_double_chance(self):
         formatted_title = self.bet_title.lower()
-        teams = self.match_title.teams
+        teams = self.match_title.raw_teams
         match = re.search('will win( or .+? will win)', formatted_title)
         if match:
             formatted_title = formatted_title.replace(match.group(1), '')

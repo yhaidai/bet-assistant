@@ -44,7 +44,7 @@ class FootballFavoritSyntaxFormatter(FootballAbstractSyntaxFormatter, FSF):
         formatted_title = self.bet_title.lower()
         found = re.search(r'(double chance (12|1x|x2))', formatted_title)
         if found:
-            teams = self.match_title.teams
+            teams = self.match_title.raw_teams
             if found.group(2) == '12':
                 formatted_title = formatted_title.replace(found.group(1), 'draw will lose')
             if found.group(2) == '1x':

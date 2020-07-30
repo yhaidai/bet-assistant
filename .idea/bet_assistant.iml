@@ -10,7 +10,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/analyzers" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/groupers" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters/esports/csgo/test" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/analyzers/sample_data" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters/esports/csgo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters/esports/dota" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters/esports" isTestSource="false" />
@@ -24,13 +23,14 @@
       <sourceFolder url="file://$MODULE_DIR$/src/groupers/esports/lol" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/syntax_formatters/football" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/groupers/football" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/arbitrager" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/src/renderer/chromedriver_linux64" />
       <excludeFolder url="file://$MODULE_DIR$/src/renderer/chromedriver_win32" />
       <excludeFolder url="file://$MODULE_DIR$/uml" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (bet-assistant)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (bet-assistant)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">

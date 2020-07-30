@@ -50,7 +50,7 @@ class CSGOOneXBetSyntaxFormatter(CSGOAbstractSyntaxFormatter, OSF):
         match = re.search(r'^(\d+-(st|nd|rd|th) map: )individual total (\d+)(( over| under)( \d+(\.\d+)?))$',
                           formatted_title)
         if match:
-            teams = self.match_title.teams
+            teams = self.match_title.raw_teams
             if match.group(3) == '1':
                 team = teams[0]
             else:

@@ -8,8 +8,8 @@ import __init__
 from secrets import TOKEN
 from util import bets_to_json_strings
 
-from analyzers.best_odds_analyzer import BestOddsAnalyzer
-from analyzers.fork_bets_analyzer import ForkBetsAnalyzer
+from arbitrager.best_odds_analyzer import BestOddsAnalyzer
+from arbitrager.fork_bets_analyzer import ForkBetsAnalyzer
 
 
 class BetAssistantBot(TeleBot):

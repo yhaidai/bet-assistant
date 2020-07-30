@@ -46,7 +46,7 @@ class ParimatchScraper(AbstractScraper):
         sport_matches = []
 
         championship_urls = ParimatchScraper.get_championship_urls(sport_name)
-        for championship_url in championship_urls[:]:
+        for championship_url in championship_urls[:10]:
             full_url = self._BASE_URL + championship_url
             championship_matches = self._get_championship_matches_info(full_url)
             sport_matches += championship_matches
@@ -134,7 +134,11 @@ class ParimatchScraper(AbstractScraper):
         """
         bet_titles = []
         bets = []
-        team_names = match_title.teams
+        try:
+            teams = match_title.raw_teams
+        except AttributeError:
+            teams = match_title.teams
+
         for bet_title_tag in bet_title_tags:
             # find corresponding column with bet type
             column = ParimatchScraper._find_column(bk, bet_title_tag)
@@ -177,7 +181,7 @@ class ParimatchScraper(AbstractScraper):
                         prefix = subtitle
                         # append team name to the subtitle in case of handicap bet
                         if 'Handicap coefficient' in title or 'Team totals' in bet_titles_copy[i]:
-                            prefix = subtitle + team_names[i] + ' '
+                            prefix = subtitle + teams[i] + ' '
                         bet = Bet(prefix + bet_titles_copy[i], odds[i], ParimatchScraper._NAME, url)
                         bets.append(bet)
                     except IndexError:
@@ -299,7 +303,8 @@ if __name__ == '__main__':
 
     sport = scraper.get_matches_info_sport(sport_name)
     for match in sport:
-        scraper.scrape_match_bets(match)
+        if 'avez' in match.title.teams:
+            scraper.scrape_match_bets(match)
     print(sport)
 
     Page.driver.quit()

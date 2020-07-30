@@ -49,7 +49,7 @@ class OneXBetScraper(AbstractScraper):
         matches = []
         base_len = len(OneXBetScraper._BASE_URL)
 
-        for match_element in list(match_elements)[:]:
+        for match_element in list(match_elements)[:30]:
             url = match_element.get_attribute('href')[base_len:]
             if url in championship_urls:
                 continue

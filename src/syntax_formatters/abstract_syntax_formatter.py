@@ -1,7 +1,7 @@
 import re
 from abc import ABC, abstractmethod
 
-from match_title_compiler import MatchTitleCompiler
+from match import Match
 from sport import Sport
 
 
@@ -10,10 +10,21 @@ class AbstractSyntaxFormatter(ABC):
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the websites
     """
-    _REMOVE_FROM_TITLES = [r'^team ', ' team', ' esports', ' e-sports', ' club', ' gaming', ]
-
     def format_match(self, match):
-        return self.apply_unified_syntax_formatting(Sport('', [match])).matches[0]
+        match = self.apply_unified_syntax_formatting(Sport('', [match])).matches[0]
+        self._format_bet_titles_teams(match)
+        return match
+
+    @staticmethod
+    def _format_bet_titles_teams(match: Match) -> None:
+        try:
+            for bet in match:
+                for raw_team, unified_team in match.title.similarities.items():
+                    # if raw_team != unified_team:
+                    # print('Changing ' + raw_team + ' to ' + unified_team)
+                    bet.title = bet.title.replace(raw_team, unified_team)
+        except AttributeError:
+            return
 
     def apply_unified_syntax_formatting(self, sport: Sport):
         """
@@ -168,7 +179,10 @@ class AbstractSyntaxFormatter(ABC):
         """
         for match in sport:
             for bet in list(match):
-                if not bet.odds:
+                if not bet.title:
+                    print('Odds: ', bet.odds, ';')
+                assert type(bet.odds) == str
+                if bet.odds == '':
                     match.bets.remove(bet)
 
         return sport
@@ -189,7 +203,7 @@ class AbstractSyntaxFormatter(ABC):
         return self.bet_title.lower()
 
     def swap_teams(self, title):
-        teams = self.match_title.teams
+        teams = self.match_title.raw_teams
         if teams[0] in title:
             title = title.replace(teams[0], teams[1])
         else:
@@ -199,7 +213,11 @@ class AbstractSyntaxFormatter(ABC):
     def _move_teams_left(self, formatted_title=None):
         if not formatted_title:
             formatted_title = self.bet_title.lower()
-        teams = self.match_title.teams
+        try:
+            teams = self.match_title.raw_teams
+        except AttributeError:
+            teams = self.match_title.teams
+
         for team in teams:
             if team in formatted_title:
                 match = re.search(r'^' + team, formatted_title)

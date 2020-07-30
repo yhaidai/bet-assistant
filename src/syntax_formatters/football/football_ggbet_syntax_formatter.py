@@ -39,7 +39,7 @@ class FootballGGBetSyntaxFormatter(FootballAbstractSyntaxFormatter, GSF):
     def _format_double_chance(self):
         formatted_title = self.bet_title.lower()
         if 'double chance' in formatted_title:
-            teams = self.match_title.teams
+            teams = self.match_title.raw_teams
             if teams[0] in formatted_title:
                 if teams[1] in formatted_title:
                     formatted_title = 'draw will lose'

@@ -24,5 +24,5 @@ class CSGOForkGrouper(EsportsForkGrouper):
 if __name__ == '__main__':
     grouper = CSGOForkGrouper()
     csgo = Sport.from_dict(ggbet_csgo_dict)
-    grouped_csgo = grouper.group_bets(csgo)
-    print(grouped_csgo)
+    grouper.group_bets(csgo)
+    print(csgo)

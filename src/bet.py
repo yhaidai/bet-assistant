@@ -30,4 +30,9 @@ class Bet:
         return pformat({key: value}, width=300)
 
     def __gt__(self, other):
-        return float(self.odds) > float(other.odds)
+        try:
+            return float(self.odds) > float(other.odds)
+        except ValueError:
+            # TODO: remove what's causing ValueError(presumably empty odds/bet titles)
+            pass
+            # print(self)

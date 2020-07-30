@@ -23,7 +23,7 @@ class Sport:
             if match.date:
                 date_str = match.date + ': '
             key = date_str + str(match.title)
-            result[key] = match.to_dict()
+            result.setdefault(key, []).append(match.to_dict())
         return result
 
     def __iter__(self):

@@ -57,7 +57,7 @@ class FootballParimatchSyntaxFormatter(FootballAbstractSyntaxFormatter, PSF):
 
     def _format_win(self):
         formatted_title = self.bet_title.lower()
-        team_names = self.match_title.teams
+        team_names = self.match_title.raw_teams
 
         if 'win of' in formatted_title:
             if formatted_title.find('1st') != -1:
