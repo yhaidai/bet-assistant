@@ -14,28 +14,36 @@ class ForkGrouper(ABC):
     }
 
     def __init__(self):
+        self._certainty = 0.5
         self.groups = {}
         self.match = None
         self.bet = None
 
     @staticmethod
-    def get_match_groups(sport: Sport) -> dict:
+    def _match_in_groups(match: Match, groups: dict) -> bool:
+        try:
+            group = groups[match.title]
+            return match in group
+        except KeyError:
+            return False
+
+    def get_match_groups(self, sport: Sport) -> dict:
         groups = {}
 
         sport_copy1 = list(sport)
         sport_copy2 = list(sport)
         for first_match in sport_copy1:
-            if first_match.title in groups:
+            if ForkGrouper._match_in_groups(first_match, groups):
                 continue
             sport_copy2.remove(first_match)
             first_match.title.raw_teams = list(first_match.title.teams)
             first_match.title.teams.sort()
             groups.setdefault(first_match.title, []).append(first_match)
             for second_match in sport_copy2:
-                if second_match.scraper == first_match.scraper:
+                if ForkGrouper._match_in_groups(second_match, groups):
                     continue
                 comparator = MatchComparator()
-                if comparator.similar(first_match, second_match, 0.8):
+                if comparator.similar(first_match, second_match, self._certainty):
                     groups[first_match.title].append(second_match)
 
                     # if str(first_match.title) != str(second_match.title):
@@ -47,8 +55,6 @@ class ForkGrouper(ABC):
 
                     second_match.title.raw_teams = second_match.title.teams
                     second_match.title.teams = first_match.title.teams
-                    # TODO: replace break with max similarity search
-                    break
 
         return groups
 

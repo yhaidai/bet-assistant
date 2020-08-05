@@ -1,1 +1,1 @@
-sport_name = 'csgo'
+sport_name = 'lol'

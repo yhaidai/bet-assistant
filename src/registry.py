@@ -37,22 +37,22 @@ registry = {
         'lol': LoLOneXBetSyntaxFormatter(),
         'football': FootballOneXBetSyntaxFormatter(),
         },
-    # FavoritScraper(): {
-    #     'csgo': CSGOFavoritSyntaxFormatter(),
-    #     'dota': DotaFavoritSyntaxFormatter(),
-    #     'lol': LoLFavoritSyntaxFormatter(),
-    #     'football': FootballFavoritSyntaxFormatter(),
-    #     },
-    # MarathonScraper(): {
-    #     'csgo': CSGOMarathonSyntaxFormatter(),
-    #     'dota': DotaMarathonSyntaxFormatter(),
-    #     'lol': LoLMarathonSyntaxFormatter(),
-    #     'football': FootballMarathonSyntaxFormatter(),
-    #     },
-    # GGBetScraper(): {
-    #     'csgo': CSGOGGBetSyntaxFormatter(),
-    #     'dota': DotaGGBetSyntaxFormatter(),
-    #     'lol': LoLGGBetSyntaxFormatter(),
-    #     'football': FootballGGBetSyntaxFormatter(),
-    #     },
+    FavoritScraper(): {
+        'csgo': CSGOFavoritSyntaxFormatter(),
+        'dota': DotaFavoritSyntaxFormatter(),
+        'lol': LoLFavoritSyntaxFormatter(),
+        'football': FootballFavoritSyntaxFormatter(),
+        },
+    MarathonScraper(): {
+        'csgo': CSGOMarathonSyntaxFormatter(),
+        'dota': DotaMarathonSyntaxFormatter(),
+        'lol': LoLMarathonSyntaxFormatter(),
+        'football': FootballMarathonSyntaxFormatter(),
+        },
+    GGBetScraper(): {
+        'csgo': CSGOGGBetSyntaxFormatter(),
+        'dota': DotaGGBetSyntaxFormatter(),
+        'lol': LoLGGBetSyntaxFormatter(),
+        'football': FootballGGBetSyntaxFormatter(),
+        },
     }

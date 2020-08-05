@@ -6,7 +6,7 @@ from groupers.esports.esports_fork_grouper import EsportsForkGrouper
 class LoLForkGrouper(EsportsForkGrouper):
     _grouped_by = {
         r'(^\d-(st|nd|rd|th) map: )?(total (kills|dragons|barons|turrets|inhibitors)|duration) (over|under) (\d+('
-        r'\.\d)?)$': (3, 5),
+        r'\.\d)?)$': (3, 6),
         r'(^\d-(st|nd|rd|th) map: )?(total kills) (even|odd)$': (3, ),
         r'(^\d-(st|nd|rd|th) map: ).+? (most kills)$': (3, ),
         r'(^\d-(st|nd|rd|th) map: ).+? (will first (kill (baron|dragon)|destroy (turret|inhibitor)))$': (3, ),

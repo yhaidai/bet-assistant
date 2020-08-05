@@ -19,10 +19,8 @@ class Sport:
     def to_dict(self):
         result = {}
         for match in self.matches:
-            date_str = ''
-            if match.date:
-                date_str = match.date + ': '
-            key = date_str + str(match.title)
+            date_time_str = str(match.date_time) + ': '
+            key = date_time_str + str(match.title)
             result.setdefault(key, []).append(match.to_dict())
         return result
 
@@ -32,7 +30,7 @@ class Sport:
     def __next__(self):
         return next(self.matches)
 
-    def __repr__(self):
+    def __str__(self):
         return pformat({self.name: self.to_dict()}, width=300)
 
 

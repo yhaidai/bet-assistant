@@ -1,3 +1,8 @@
+from pprint import pprint
+
+from date_time import DateTime
+from match import Match
+from match_title import MatchTitle
 from sport import Sport
 from syntax_formatters.esports.csgo.sample_data.ggbet import sport as ggbet_csgo_dict
 from groupers.esports.esports_fork_grouper import EsportsForkGrouper
@@ -23,6 +28,11 @@ class CSGOForkGrouper(EsportsForkGrouper):
 
 if __name__ == '__main__':
     grouper = CSGOForkGrouper()
-    csgo = Sport.from_dict(ggbet_csgo_dict)
-    grouper.group_bets(csgo)
-    print(csgo)
+    csgo = Sport('csgo', [
+        Match(MatchTitle(['forze', 'sg.pro']), 'parimatch', DateTime(2020, 8, 6, 14, 0, 0), 1, []),
+        Match(MatchTitle(['forze', 'sg.pro']), '1xbet', DateTime(2020, 8, 6, 14, 0, 0), 2, []),
+        Match(MatchTitle(['forze', 's-gaming']), 'favorit', DateTime(2020, 8, 6, 14, 0, 0), 3, []),
+        Match(MatchTitle(['forze', 's-gaming']), 'ggbet', DateTime(2020, 8, 6, 14, 0, 0), 4, []),
+    ])
+    groups = grouper.get_match_groups(csgo)
+    pprint(groups)

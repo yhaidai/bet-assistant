@@ -4,6 +4,7 @@ import time
 from selenium.common.exceptions import NoSuchElementException
 
 from bet import Bet
+from date_time import DateTime
 from match import Match
 from match_title import MatchTitle
 from sport import Sport
@@ -49,25 +50,23 @@ class OneXBetScraper(AbstractScraper):
         matches = []
         base_len = len(OneXBetScraper._BASE_URL)
 
-        for match_element in list(match_elements)[:30]:
+        for match_element in list(match_elements)[:]:
             url = match_element.get_attribute('href')[base_len:]
             if url in championship_urls:
                 continue
             match_title_text = match_element.find_element_by_class_name('gname').text
             match_title = MatchTitle.from_str(match_title_text)
-            date_text = match_element.find_element_by_class_name('date').text
-            match = Match(match_title, self._BASE_URL + url, date_text)
-            match.scraper = self
+            date_time_str = match_element.find_element_by_class_name('date').text
+            date_time = DateTime.from_1xbet_str(date_time_str)
+            match = Match(match_title, self._BASE_URL + url, date_time, self)
             matches.append(match)
 
         return matches
 
     @staticmethod
     def scrape_match_bets(match: Match):
-        bets = []
         page = Page(match.url)
         OneXBetScraper._open_bets()
-        print(match.url)
 
         bet_groups = page.driver.find_elements_by_class_name('bet_group')
         for bet_group in bet_groups:
@@ -80,9 +79,7 @@ class OneXBetScraper(AbstractScraper):
 
             for i in range(len(bet_types)):
                 bet = Bet(bet_title + '. ' + bet_types[i], odds[i], OneXBetScraper._NAME, match.url)
-                bets.append(bet)
-
-        match.bets = bets
+                match.bets.append(bet)
 
     @staticmethod
     def get_championship_urls(championships):
@@ -96,7 +93,11 @@ class OneXBetScraper(AbstractScraper):
         page.click(sport)
         time.sleep(2)
 
-        menu = page.driver.find_element_by_class_name('liga_menu')
+        try:
+            menu = page.driver.find_element_by_class_name('liga_menu')
+        except NoSuchElementException:
+            print('Caught NoSuchElementException("liga-menu"), retrying...')
+            return OneXBetScraper._get_championships(sport_name)
 
         pattern = OneXBetScraper._SPORT_NAMES[sport_name]
         selector = 'a[href*="' + pattern + '"]'

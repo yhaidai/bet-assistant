@@ -1,6 +1,7 @@
 from pprint import pprint
 
 from bet_group import BetGroup
+from constants import sport_name
 from csgo_fork_grouper import CSGOForkGrouper
 from dota_fork_grouper import DotaForkGrouper
 from football_fork_grouper import FootballForkGrouper
@@ -60,13 +61,20 @@ class Arbitrager:
         return self.all_matches_sport
 
     def _scrape_bets(self):
-        match_groups = ForkGrouper.get_match_groups(self.all_matches_sport)
+        # print(self.all_matches_sport, '\n' * 6)
+        match_groups = self._fork_grouper.get_match_groups(self.all_matches_sport)
         pprint(match_groups)
         for title, group in match_groups.items():
+            if len(group) < 2:
+                for match in group:
+                    self.all_matches_sport.matches.remove(match)
+                continue
+
             all_bets = []
             for match in group:
+                print(match.url)
                 match.scraper.scrape_match_bets(match)
-                print(match)
+                # print(match)
                 all_bets += match.bets
                 formatter = registry[match.scraper][self.all_matches_sport.name]
                 formatter.format_match(match)
@@ -75,16 +83,12 @@ class Arbitrager:
                 except ValueError:
                     print('Same match occurred in multiple groups!')
 
-            all_bets_match = Match(title, '', '', all_bets)
+            all_bets_match = Match(title, '', group[0].date_time, None, all_bets)
             self.all_matches_sport.matches.append(all_bets_match)
-            # print(all_bets_match)
             Arbitrager.remove_anything_but_best_odds_bets(all_bets_match)
-            # print()
-            # print(all_bets_match)
             self.remove_anything_but_arbitrage_bets(all_bets_match)
-            # print()
-            # print(all_bets_match)
-            # print('\n' * 5)
+            if len(all_bets_match.bets) > 0:
+                print(all_bets_match)
 
     @staticmethod
     def remove_anything_but_best_odds_bets(match) -> None:
@@ -120,8 +124,8 @@ class Arbitrager:
                 for bet in bet_group:
                     bet.odds += bet_amounts[bet.odds]
 
-        if not match.bets:
-            self.all_matches_sport.matches.remove(match)
+        # if len(match.bets) == 0:
+        #     self.all_matches_sport.matches.remove(match)
 
     @staticmethod
     def _get_arbitrage_profit(odds):
@@ -146,6 +150,6 @@ class Arbitrager:
 
 
 if __name__ == '__main__':
-    analyzer = Arbitrager('csgo')
+    analyzer = Arbitrager(sport_name)
     # s = analyzer.get_all_bets_sport()
     # print(s)

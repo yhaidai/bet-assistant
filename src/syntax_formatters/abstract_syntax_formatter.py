@@ -21,7 +21,7 @@ class AbstractSyntaxFormatter(ABC):
             for bet in match:
                 for raw_team, unified_team in match.title.similarities.items():
                     # if raw_team != unified_team:
-                    # print('Changing ' + raw_team + ' to ' + unified_team)
+                    #     print('Changing ' + raw_team + ' to ' + unified_team)
                     bet.title = bet.title.replace(raw_team, unified_team)
         except AttributeError:
             return
@@ -181,8 +181,7 @@ class AbstractSyntaxFormatter(ABC):
             for bet in list(match):
                 if not bet.title:
                     print('Odds: ', bet.odds, ';')
-                assert type(bet.odds) == str
-                if bet.odds == '':
+                if not bet.odds or bet.odds == '':
                     match.bets.remove(bet)
 
         return sport
