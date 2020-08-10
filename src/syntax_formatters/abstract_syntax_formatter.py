@@ -207,7 +207,11 @@ class AbstractSyntaxFormatter(ABC):
         formatted_title = bet_title.lower()
         found = re.search('correct score ((\d+)-(\d+))$', formatted_title)
         if found:
-            raw_teams = self.match_title.raw_teams
+            try:
+                raw_teams = self.match_title.raw_teams
+            except AttributeError:
+                return formatted_title
+
             teams = self.match_title.teams
             # print(self.match_title.similarities)
             # print(raw_teams)

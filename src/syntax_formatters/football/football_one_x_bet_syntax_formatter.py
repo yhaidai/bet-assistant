@@ -39,7 +39,10 @@ class FootballOneXBetSyntaxFormatter(FootballAbstractSyntaxFormatter, OSF):
         formatted_title = formatted_title.replace('team ', '')
         match = re.search(r'((asian|total) (1|2) )', formatted_title)
         if match:
-            teams = self.match_title.raw_teams
+            try:
+                teams = self.match_title.raw_teams
+            except AttributeError:
+                teams = self.match_title.teams
             formatted_title = formatted_title.replace(match.group(1), teams[int(match.group(3)) - 1]
                                                       + ' ' + match.group(2) + ' ')
         match = re.search(r'total (over|under)', formatted_title)
@@ -60,16 +63,28 @@ class FootballOneXBetSyntaxFormatter(FootballAbstractSyntaxFormatter, OSF):
         return formatted_title
 
     def _format_double_chance(self):
-        formatted_title = self.bet_title.lower()
-        if 'double chance' in formatted_title:
-            teams = self.match_title.raw_teams
-            if teams[0] in formatted_title:
-                if teams[1] in formatted_title:
-                    formatted_title = 'draw will lose'
-                else:
-                    formatted_title = teams[1] + ' will lose'
+        title = self.bet_title.lower()
+        formatted_title = title
+        if 'double chance' in title:
+            try:
+                teams = self.match_title.raw_teams
+            except AttributeError:
+                teams = self.match_title.teams
+
+            found = re.search('^(\d-(st|nd) half )', title)
+            if found:
+                formatted_title = found.group(1)
             else:
-                formatted_title = teams[0] + ' will lose'
+                formatted_title = ''
+
+            if teams[0] in title:
+                if teams[1] in title:
+                    formatted_title += 'draw will lose'
+                else:
+                    formatted_title += teams[1] + ' will lose'
+            else:
+                formatted_title += teams[0] + ' will lose'
+
         return formatted_title
 
     def _remove_full_time(self):

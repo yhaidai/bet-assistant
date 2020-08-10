@@ -270,7 +270,7 @@ class MarathonScraper(AbstractScraper):
         tournaments = self.get_tournaments(sport_name)
         print(self._NAME, 'scraping', len(tournaments), 'tournaments')
         # tournaments = [tournaments[0]]
-        for tournament in tournaments[:1]:
+        for tournament in tournaments[:]:
             Page(tournament)
             print(' ', tournaments.index(tournament) + 1)
             events = self.get_matches_from_tournament()
