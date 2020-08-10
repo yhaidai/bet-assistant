@@ -24,7 +24,10 @@ class DateTime(datetime):
         if ' ' not in src:
             src = ' '.join([str(today.day), today.strftime('%b'), src])
         src += str(today.year)
-        return super(DateTime, cls).strptime(src, '%d %b%H:%M%Y')
+        result = super(DateTime, cls).strptime(src, '%d %b%H:%M%Y')
+        if result.hour == 0 and result.minute == 0:
+            result += timedelta(days=1)
+        return result
 
     @classmethod
     def from_marathon_str(cls, src):

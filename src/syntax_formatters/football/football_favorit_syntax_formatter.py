@@ -89,9 +89,6 @@ class FootballFavoritSyntaxFormatter(FootballAbstractSyntaxFormatter, FSF):
         return self._move_teams_left()
 
 
-
-
-
 if __name__ == '__main__':
     formatter = FootballFavoritSyntaxFormatter()
     sport = Sport.from_dict(favorit.sport)

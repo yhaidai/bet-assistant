@@ -16,7 +16,6 @@ from constants import sport_name
 from match_title_compiler import MatchTitleCompiler
 from src.renderer.page import Page
 
-
 tournament_names = None
 country_names = None
 
@@ -30,13 +29,13 @@ class FavoritScraper(AbstractScraper):
         'csgo': 'Cybersports',
         'dota': 'Cybersports',
         'lol': 'Cybersports',
-    }
+        }
     _SUBMENU = {
         'football': None,
         'csgo': 'Counter-Strike: Global Offensive',
         'dota': 'Dota 2',
         'lol': 'League of Legends'
-    }
+        }
     _SKIP_TITLES = ['1X2 and Total Goals', '1X2 and Both teams to Score',
                     'Both Teams To Score and Total Goals', 'Correct Score',
                     'Goal method of first goal', '(3way)', 'Winning Margin',
@@ -44,6 +43,9 @@ class FavoritScraper(AbstractScraper):
                     'HT/FT', 'HT or FT and Total Goals', 'Both Teams To Score and Total Goals']
 
     wait = WebDriverWait(Page.driver, 10)
+
+    def get_name(self) -> str:
+        return self._NAME
 
     def get_sport_bets(self, sport_name):
         """
@@ -162,7 +164,7 @@ class FavoritScraper(AbstractScraper):
                             break
                     if not b:
                         checkboxes.remove(checkbox)
-        print('scraping', len(checkboxes), 'subsections')
+        print('favorit scraping', len(checkboxes), 'subsections')
         return checkboxes
 
     @staticmethod
@@ -190,8 +192,11 @@ class FavoritScraper(AbstractScraper):
 
     @staticmethod
     def _parse_marketblocks(bets, url):
-        market_blocks = FavoritScraper.wait.until(EC.presence_of_all_elements_located
-                                   ((By.CLASS_NAME, 'markets--block')))
+        try:
+            market_blocks = FavoritScraper.wait.until(EC.presence_of_all_elements_located
+                                                      ((By.CLASS_NAME, 'markets--block')))
+        except TimeoutException:
+            FavoritScraper._parse_marketblocks(bets, url)
         for mb in market_blocks:
             block_title_head = mb.find_element_by_class_name('markets--head').get_attribute('innerHTML')
 
@@ -294,9 +299,17 @@ class FavoritScraper(AbstractScraper):
 
     @staticmethod
     def scrape_match_bets(match):
-        Page(match.url)
+        Page('https://www.google.com/')
+        Page.driver.get(match.url)
 
-        wait = WebDriverWait(Page.driver, 10)
+        wait = WebDriverWait(Page.driver, 3)
+
+        try:
+            wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'title_text')))
+            return match
+        except TimeoutException:
+            pass
+
         try:
             element = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, 'slick-block')))
             Page.click(element)

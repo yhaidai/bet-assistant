@@ -34,5 +34,5 @@ class Bet:
             return float(self.odds) > float(other.odds)
         except ValueError:
             # TODO: remove what's causing ValueError(presumably empty odds/bet titles)
+            # print('ValueError:', self)
             pass
-            # print(self)

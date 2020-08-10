@@ -28,13 +28,13 @@ class ParimatchScraper(AbstractScraper):
         'dota': 'dota-2',
         'football': 'futbol',
         'lol': 'liga-legend',
-    }
+        }
     _MENU = {
         'csgo': 'https://parimatch.com/sport/kibersport',
         'dota': 'https://parimatch.com/sport/kibersport',
         'football': 'https://parimatch.com/sport/futbol',
         'lol': 'https://parimatch.com/sport/kibersport',
-    }
+        }
 
     # last titles for each of the groups
     _TITLE_BREAKERS = ('Handicap coefficient', 'Under', 'Win of the 1st team',)
@@ -44,11 +44,16 @@ class ParimatchScraper(AbstractScraper):
             cls.instance = super(ParimatchScraper, cls).__new__(cls)
         return cls.instance
 
+    def get_name(self) -> str:
+        return self._NAME
+
     def get_matches_info_sport(self, sport_name):
         sport_matches = []
 
         championship_urls = ParimatchScraper.get_championship_urls(sport_name)
         for championship_url in championship_urls[:]:
+            if 'statistika' in championship_url:
+                continue
             full_url = self._BASE_URL + championship_url
             championship_matches = self._get_championship_matches_info(full_url)
             sport_matches += championship_matches
@@ -69,11 +74,12 @@ class ParimatchScraper(AbstractScraper):
         page = Page(ParimatchScraper._MENU[sport_name])
         soup = BeautifulSoup(page.html, 'html.parser')
         pattern = ParimatchScraper._SPORT_NAMES[sport_name] + '.+'
-        championship_urls = {url.get('href') for url in soup.find_all('a', href=re.compile(pattern))}
+        championship_urls = {a.get('href') for a in soup.find_all('a', href=re.compile(pattern))}
 
         return list(championship_urls)
 
     def _get_championship_matches_info(self, url):
+
         soup = ParimatchScraper._get_soup(url)
         matches = []
 

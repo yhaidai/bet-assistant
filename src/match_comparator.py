@@ -11,10 +11,10 @@ class MatchComparator:
         self.similarities = {}
 
     def similar(self, first_match: Match, second_match: Match, certainty: float):
-        similarity = self._calculate_matches_similarity(first_match, second_match, certainty)
+        similarity = self.calculate_matches_similarity(first_match, second_match, certainty)
         return similarity >= certainty
 
-    def _calculate_matches_similarity(self, first_match: Match, second_match: Match, certainty: float):
+    def calculate_matches_similarity(self, first_match: Match, second_match: Match, certainty: float):
         similarities = {}
         teams1 = first_match.title.teams
         teams2 = second_match.title.teams
@@ -48,6 +48,7 @@ class MatchComparator:
 
             similarities[key] = value
             total_similarity += max_similarity
+            # print(first_team, max_similarity_second_team, max_similarity)
 
             teams2_copy.remove(max_similarity_second_team)
 
@@ -67,6 +68,7 @@ class MatchComparator:
             if substring.size < 3:
                 break
             substrings_total_length += substring.size
+            # print(first_team[substring.a:substring.b])
             first_team = first_team[:substring.a] + first_team[substring.a + substring.size:]
             second_team = second_team[:substring.b] + second_team[substring.b + substring.size:]
 
@@ -75,11 +77,11 @@ class MatchComparator:
 
 
 if __name__ == '__main__':
-    certainty = 0.4
+    certainty = 0.5
     comparator = MatchComparator()
     m1 = Match(MatchTitle(['invictus gaming', 'lynn vision']), '', DateTime(2000, 1, 1, 5), 1, [])
     m2 = Match(MatchTitle(['invictus gaming', 'tyloo']), '', DateTime(2000, 1, 1, 0), 2, [])
-    similarity = comparator._calculate_matches_similarity(m1, m2, certainty)
+    similarity = comparator.calculate_matches_similarity(m1, m2, certainty)
     print(similarity)
     print(comparator.similar(m1, m2, certainty))
     print(comparator.similarities)

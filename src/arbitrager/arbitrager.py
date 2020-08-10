@@ -1,5 +1,7 @@
 from pprint import pprint
 
+from colorama import Fore, init
+
 from bet_group import BetGroup
 from constants import sport_name
 from csgo_fork_grouper import CSGOForkGrouper
@@ -26,7 +28,7 @@ class Arbitrager:
         'dota': DotaForkGrouper(),
         'lol': LoLForkGrouper(),
         'football': FootballForkGrouper(),
-    }
+        }
 
     def __init__(self, sport_name: str):
         """
@@ -35,6 +37,7 @@ class Arbitrager:
         :param sport_name: sport name e.g. 'csgo', 'dota'
         :type sport_name: str
         """
+        init()
         self.sports = []
         self._fork_grouper = self._GROUPERS[sport_name]
         for scraper, formatter in registry.items():
@@ -61,33 +64,30 @@ class Arbitrager:
         return self.all_matches_sport
 
     def _scrape_bets(self):
-        # print(self.all_matches_sport, '\n' * 6)
         match_groups = self._fork_grouper.get_match_groups(self.all_matches_sport)
+        self.all_matches_sport.matches = []
         pprint(match_groups)
         for title, group in match_groups.items():
             if len(group) < 2:
-                for match in group:
-                    self.all_matches_sport.matches.remove(match)
                 continue
 
             all_bets = []
-            for match in group:
-                print(match.url)
-                match.scraper.scrape_match_bets(match)
-                # print(match)
-                all_bets += match.bets
-                formatter = registry[match.scraper][self.all_matches_sport.name]
-                formatter.format_match(match)
-                try:
-                    self.all_matches_sport.matches.remove(match)
-                except ValueError:
-                    print('Same match occurred in multiple groups!')
+            try:
+                for match in group:
+                    print(match.url)
+                    match.scraper.scrape_match_bets(match)
+                    all_bets += match.bets
+                    formatter = registry[match.scraper][self.all_matches_sport.name]
+                    formatter.format_match(match)
+            except ValueError:
+                print('ValueError while formatting bets')
+                continue
 
             all_bets_match = Match(title, '', group[0].date_time, None, all_bets)
-            self.all_matches_sport.matches.append(all_bets_match)
             Arbitrager.remove_anything_but_best_odds_bets(all_bets_match)
             self.remove_anything_but_arbitrage_bets(all_bets_match)
             if len(all_bets_match.bets) > 0:
+                self.all_matches_sport.matches.append(all_bets_match)
                 print(all_bets_match)
 
     @staticmethod
@@ -119,13 +119,13 @@ class Arbitrager:
             if not 0 < profit < Arbitrager._PROFIT_THRESHOLD:
                 match.bets.remove(bet_group)
             else:
-                bet_group.title += '(*Profit - ' + str('{:.2f}'.format(profit * 100)) + '%*)'
+                highlighter = '*'
+                # highlighter = Fore.GREEN
+                bet_group.title += '(' + highlighter + 'Profit - ' + str('{:.2f}'.format(profit * 100)) + '%' + \
+                                   highlighter + ')'
                 bet_amounts = Arbitrager._get_arbitrage_bet_amounts(odds)
                 for bet in bet_group:
                     bet.odds += bet_amounts[bet.odds]
-
-        # if len(match.bets) == 0:
-        #     self.all_matches_sport.matches.remove(match)
 
     @staticmethod
     def _get_arbitrage_profit(odds):

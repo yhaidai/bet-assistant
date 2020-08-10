@@ -17,7 +17,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 
-
 wait = WebDriverWait(Page.driver, 20)
 LIVE = False
 tournament_names = None
@@ -32,13 +31,16 @@ class GGBetScraper(AbstractScraper):
         'dota': 'betting',
         'lol': 'betting',
         'football': 'betting-sports'
-    }
+        }
     _MENU = {
         'csgo': 'Counter-Strike',
         'dota': 'Dota 2',
         'football': 'Soccer',
         'lol': 'League of Legends'
-    }
+        }
+
+    def get_name(self) -> str:
+        return self._NAME
 
     def get_sport_bets(self, sport_name):
         """
@@ -97,7 +99,8 @@ class GGBetScraper(AbstractScraper):
         sport_type_icon = sport_types[0]
         try:
             for sport_type in sport_types:
-                if sport_type.find_element_by_class_name('CategorizerRowHeader__label___LQD65').get_attribute('title') == \
+                if sport_type.find_element_by_class_name('CategorizerRowHeader__label___LQD65').get_attribute(
+                        'title') == \
                         GGBetScraper._MENU[sport_name]:
                     sport_type_icon = sport_type
             time.sleep(2)
@@ -115,11 +118,16 @@ class GGBetScraper(AbstractScraper):
         time.sleep(2)
         try:
             tournament_block = wait.until(EC.presence_of_element_located
-                                      ((By.CLASS_NAME, 'categorizerRow__submenu___tyhYn')))
+                                          ((By.CLASS_NAME, 'categorizerRow__submenu___tyhYn')))
         except TimeoutException:
             return GGBetScraper.get_tournaments(sport_name)
         # tournament_block = Page.driver.find_element_by_class_name('categorizerRow__submenu___tyhYn') #wait
         tournaments = tournament_block.find_elements_by_class_name('categorizerCheckRow__row___EW7wX')
+
+        for tournament in tournaments[:]:
+            if 'statistics' in tournament.text.lower():
+                tournaments.remove(tournament)
+
         if sport_name == 'football':
             if tournament_names:
                 _tournaments = []
@@ -135,7 +143,7 @@ class GGBetScraper(AbstractScraper):
                             break
                     if not b:
                         tournaments.remove(tournament)
-        print('scraping', len(tournaments), 'tournaments')
+        print('ggbet scraping', len(tournaments), 'tournaments')
         return tournaments
 
     @staticmethod
@@ -194,7 +202,7 @@ class GGBetScraper(AbstractScraper):
     @staticmethod
     def _parse_marketblocks(bets, match_url):
         market_tables = wait.until(EC.presence_of_all_elements_located
-                   ((By.CLASS_NAME, 'marketTable__table___dvHTz')))
+                                   ((By.CLASS_NAME, 'marketTable__table___dvHTz')))
         for mt in market_tables:
             table_title = mt.find_element_by_class_name('marketTable__header___mSHxT').get_attribute('title')
             buttons = mt.find_elements_by_tag_name('button')
@@ -216,8 +224,11 @@ class GGBetScraper(AbstractScraper):
         subsections = self.get_tournaments(sport_name)
         for subsection in subsections:
             # if not LIVE:
-            Page.click(subsection)
-                # print(' ', subsections.index(subsection) + 1)
+            try:
+                Page.click(subsection)
+            except StaleElementReferenceException:
+                continue
+            # print(' ', subsections.index(subsection) + 1)
             time.sleep(2)
             events = Page.driver.find_elements_by_class_name('sportEventRow__body___3Ywcg')
             time.sleep(2)

@@ -1,4 +1,3 @@
-from difflib import SequenceMatcher
 from pprint import pformat
 import re
 
@@ -53,11 +52,15 @@ class Match:
     def __next__(self):
         return next(self.bets)
 
+    def __len__(self):
+        return len(self.bets)
+
     def __eq__(self, other):
-        return self.url == other.url
+        return (self.url == other.url and self.title.teams == other.title.teams and
+                self.date_time == other.date_time and self.scraper == other.scraper)
 
     def __hash__(self):
-        return hash(self.url)
+        return hash(self.url + str(self.date_time) + str(self.title) + self.scraper.get_name())
 
     def __repr__(self):
         date_str = ''

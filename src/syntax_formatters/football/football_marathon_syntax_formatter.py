@@ -61,7 +61,10 @@ class FootballMarathonSyntaxFormatter(FootballAbstractSyntaxFormatter, MSF):
 
     def _format_double_chance(self):
         formatted_title = self.bet_title.lower()
-        teams = self.match_title.raw_teams
+        try:
+            teams = self.match_title.raw_teams
+        except AttributeError:
+            teams = self.match_title.teams
         match = re.search('will win( or .+? will win)', formatted_title)
         if match:
             formatted_title = formatted_title.replace(match.group(1), '')
@@ -97,6 +100,13 @@ class FootballMarathonSyntaxFormatter(FootballAbstractSyntaxFormatter, MSF):
 
     def _format_teams(self):
         return self._move_teams_left()
+
+    def _format_correct_score(self):
+        formatted_title = self.bet_title.lower()
+        found = re.search('^((\d-(st|nd) half )?correct score \d+ \d+)', formatted_title)
+        if found:
+            formatted_title = found.group(1)
+        return formatted_title
 
 
 if __name__ == '__main__':

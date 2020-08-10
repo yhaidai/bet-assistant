@@ -25,17 +25,17 @@ from esports.lol.lol_parimatch_syntax_formatter import LoLParimatchSyntaxFormatt
 from football.football_parimatch_syntax_formatter import FootballParimatchSyntaxFormatter
 
 registry = {
-    ParimatchScraper(): {
-        'csgo': CSGOParimatchSyntaxFormatter(),
-        'dota': DotaParimatchSyntaxFormatter(),
-        'lol': LoLParimatchSyntaxFormatter(),
-        'football': FootballParimatchSyntaxFormatter(),
-        },
     OneXBetScraper(): {
         'csgo': CSGOOneXBetSyntaxFormatter(),
         'dota': DotaOneXBetSyntaxFormatter(),
         'lol': LoLOneXBetSyntaxFormatter(),
         'football': FootballOneXBetSyntaxFormatter(),
+        },
+    ParimatchScraper(): {
+        'csgo': CSGOParimatchSyntaxFormatter(),
+        'dota': DotaParimatchSyntaxFormatter(),
+        'lol': LoLParimatchSyntaxFormatter(),
+        'football': FootballParimatchSyntaxFormatter(),
         },
     FavoritScraper(): {
         'csgo': CSGOFavoritSyntaxFormatter(),

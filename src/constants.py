@@ -1,1 +1,1 @@
-sport_name = 'lol'
+sport_name = 'football'

@@ -11,7 +11,11 @@ class EsportsParimatchSyntaxFormatter(EsportsAbstractSyntaxFormatter, PSF):
     @staticmethod
     def _swap_substrings(text, pattern, id1, id2, separator):
         substrings = text.split(pattern)
-        temp = substrings[id1]
+        try:
+            temp = substrings[id1]
+        except IndexError:
+            print(substrings)
+            raise IndexError
         substrings[id1] = substrings[id2]
         substrings[id2] = temp
 

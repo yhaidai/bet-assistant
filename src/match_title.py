@@ -10,11 +10,10 @@ class MatchTitle:
     def __repr__(self):
         return ' - '.join(self.teams)
 
-    def __eq__(self, other):
-        return self.teams == other.teams
-
-    def __hash__(self):
-        return hash(tuple(self.teams))
+    def replace(self, team, replacement):
+        index = self.teams.index(team)
+        self.teams.remove(team)
+        self.teams.insert(index, replacement)
 
 
 if __name__ == '__main__':

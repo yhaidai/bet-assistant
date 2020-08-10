@@ -31,14 +31,14 @@ class AbstractSyntaxFormatter(ABC):
         Apply unified syntax formatting to the given sport
 
         :param sport: sport to format
-        :type sport: sport
+        :type sport: Sport
         """
         sport = self._format_before(sport)
 
         sport = self._update(sport, self._format_uncommon_chars)
         sport = self._update(sport, self._format_total)
         sport = self._update(sport, self._format_handicap)
-        sport = self._update(sport, self._format_correct_score)
+        sport = self._update(sport, self._format_correct_score_complete)
         sport = self._update(sport, self._format_win)
 
         sport = self._format_after(sport)
@@ -195,14 +195,47 @@ class AbstractSyntaxFormatter(ABC):
     def _format_handicap(self):
         return self.bet_title.lower()
 
+    def _format_correct_score_complete(self):
+        formatted_bet_title = self._format_correct_score()
+        formatted_bet_title = self._fix_teams_order_in_correct_score(formatted_bet_title)
+        return formatted_bet_title
+
     def _format_correct_score(self):
         return self.bet_title.lower()
+
+    def _fix_teams_order_in_correct_score(self, bet_title):
+        formatted_title = bet_title.lower()
+        found = re.search('correct score ((\d+)-(\d+))$', formatted_title)
+        if found:
+            raw_teams = self.match_title.raw_teams
+            teams = self.match_title.teams
+            # print(self.match_title.similarities)
+            # print(raw_teams)
+            # print(teams)
+            for raw_team in raw_teams:
+                # find changed team
+                changed_team = raw_team
+                if raw_team in self.match_title.similarities:
+                    changed_team = self.match_title.similarities[raw_team]
+
+                if raw_teams.index(raw_team) != teams.index(changed_team):
+                    # print(formatted_title)
+                    formatted_title = formatted_title[:-len(found.group(1))]
+                    formatted_title += found.group(3) + '-' + found.group(2)
+                    # print(formatted_title)
+                    break
+
+        return formatted_title
 
     def _format_uncommon_chars(self):
         return self.bet_title.lower()
 
     def swap_teams(self, title):
-        teams = self.match_title.raw_teams
+        try:
+            teams = self.match_title.raw_teams
+        except AttributeError:
+            teams = self.match_title.teams
+
         if teams[0] in title:
             title = title.replace(teams[0], teams[1])
         else:

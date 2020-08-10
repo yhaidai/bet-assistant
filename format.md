@@ -2,7 +2,7 @@
 
 * ##csgo
     * ###match title:
-        <first_team_name> - <second_team_name>  
+        `<first_team_name>` - `<second_team_name>`
         *names of the teams must be sorted in alphabetical order*
     * ###bet titles
         - #####Win:

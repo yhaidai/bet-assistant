@@ -53,6 +53,9 @@ class MarathonScraper(AbstractScraper):
                     'Offsides', 'Goals Both Teams To Score + Total',
                     'Goals At Least One Team Not To Score + Total']
 
+    def get_name(self) -> str:
+        return self._NAME
+
     def get_sport_bets(self, sport_name):
         """
         Scrapes betting data for a given sport type
@@ -267,7 +270,7 @@ class MarathonScraper(AbstractScraper):
         tournaments = self.get_tournaments(sport_name)
         print(self._NAME, 'scraping', len(tournaments), 'tournaments')
         # tournaments = [tournaments[0]]
-        for tournament in tournaments:
+        for tournament in tournaments[:1]:
             Page(tournament)
             print(' ', tournaments.index(tournament) + 1)
             events = self.get_matches_from_tournament()

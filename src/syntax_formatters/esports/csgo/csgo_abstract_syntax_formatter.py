@@ -23,7 +23,7 @@ class CSGOAbstractSyntaxFormatter(ASF, ABC):
         sport = self._update(sport, self._format_uncommon_chars)
         sport = self._update(sport, self._format_handicap)
         sport = self._update(sport, self._format_win_in_round)
-        sport = self._update(sport, self._format_correct_score)
+        sport = self._update(sport, self._format_correct_score_complete)
         sport = self._update(sport, self._format_win)
         sport = self._update(sport, self._format_bomb_exploded)
         sport = self._update(sport, self._format_bomb_planted)

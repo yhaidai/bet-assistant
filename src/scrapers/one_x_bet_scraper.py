@@ -35,6 +35,9 @@ class OneXBetScraper(AbstractScraper):
             cls.instance = super(OneXBetScraper, cls).__new__(cls)
         return cls.instance
 
+    def get_name(self) -> str:
+        return self._NAME
+
     def get_matches_info_sport(self, sport_name):
         championships = OneXBetScraper._get_championships(sport_name)
         championship_urls = OneXBetScraper.get_championship_urls(championships)
@@ -57,7 +60,11 @@ class OneXBetScraper(AbstractScraper):
             match_title_text = match_element.find_element_by_class_name('gname').text
             match_title = MatchTitle.from_str(match_title_text)
             date_time_str = match_element.find_element_by_class_name('date').text
-            date_time = DateTime.from_1xbet_str(date_time_str)
+            try:
+                date_time = DateTime.from_1xbet_str(date_time_str)
+            except ValueError:
+                print(url)
+                continue
             match = Match(match_title, self._BASE_URL + url, date_time, self)
             matches.append(match)
 
@@ -89,7 +96,11 @@ class OneXBetScraper(AbstractScraper):
     @staticmethod
     def _get_championships(sport_name):
         page = Page(OneXBetScraper._BASE_URL)
-        sport = page.driver.find_element_by_css_selector('a[href^="' + OneXBetScraper._MENU[sport_name] + '"]')
+        try:
+            sport = page.driver.find_element_by_css_selector('a[href^="' + OneXBetScraper._MENU[sport_name] + '"]')
+        except NoSuchElementException:
+            print('Caught NoSuchElementException("a[href^="line/Esports/"]), retrying...')
+            return OneXBetScraper._get_championships(sport_name)
         page.click(sport)
         time.sleep(2)
 
