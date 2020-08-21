@@ -10,18 +10,13 @@ import os.path
 class CSGOGGBetSyntaxFormatter(CSGOAbstractSyntaxFormatter, GSF):
     def _format_win_in_round(self):
         formatted_title = self.bet_title.lower()
-        if '2nd pistol round winner' in formatted_title:
-            formatted_title = formatted_title.replace('2nd pistol round winner', 'will win round in 16')
-            index = formatted_title.find('will win in round 16')
-            head = formatted_title[:index - 1]
-            tail = formatted_title[index + len('will win in round 16'):]
-            formatted_title = head + tail + ' will win in round 16'
-        if '1st pistol round winner ' in formatted_title:
-            formatted_title = formatted_title.replace('1st pistol round winner ', 'will win in round 1')
-            index = formatted_title.find('will win in round 1')
-            head = formatted_title[:index - 1]
-            tail = formatted_title[index + len('will win in round 1'):]
-            formatted_title = head + ' ' + tail + ' will win in round 1'
+        found = re.search('(1st pistol round winner (1|2))', formatted_title)
+        if found:
+            formatted_title = formatted_title.replace(' ' + found.group(1), '')
+            if found.group(2) == '1':
+                formatted_title += ' will win in round 1'
+            else:
+                formatted_title += ' will win in round 16'
         return formatted_title
 
     def _format_overtime(self):

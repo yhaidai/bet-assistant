@@ -1,5 +1,7 @@
 import os.path
+import pickle
 import re
+import sys
 import time
 
 from bs4 import BeautifulSoup
@@ -79,27 +81,41 @@ class ParimatchScraper(AbstractScraper):
         return list(championship_urls)
 
     def _get_championship_matches_info(self, url):
-
         soup = ParimatchScraper._get_soup(url)
         matches = []
-
-        bks1 = [el.next_element for el in soup.find_all(class_='row1 processed')]
-        bks2 = [el.next_element for el in soup.find_all(class_='row2 processed')]
-        bks = bks1 + bks2
+        bks = self._get_bks(soup)
 
         for bk in bks:
             match_title = ParimatchScraper._get_match_title(bk)
             date_time_str = ParimatchScraper._get_match_date_time_str(bk)
             date_time = DateTime.from_parimatch_str(date_time_str)
             match = Match(match_title, url, date_time, self)
-            match.bk = bk
+            match.id = bk.find(class_='no').text
             matches.append(match)
 
         return matches
 
     @staticmethod
+    def _get_bks(soup: BeautifulSoup):
+        bks1 = [el.next_element for el in soup.find_all(class_='row1 processed')]
+        bks2 = [el.next_element for el in soup.find_all(class_='row2 processed')]
+        bks = bks1 + bks2
+        return bks
+
+    @staticmethod
+    def _get_match_bk(soup: BeautifulSoup, match: Match):
+        bks = ParimatchScraper._get_bks(soup)
+        for bk in bks:
+            if bk.find(class_='no').text == match.id:
+                return bk
+
+        print('Couldn\'t find bk with id', match.id, Page.driver.current_url)
+        return None
+
+    @staticmethod
     def scrape_match_bets(match: Match):
         soup = ParimatchScraper._get_soup(match.url)
+        bk = ParimatchScraper._get_match_bk(soup, match)
 
         event_tag = soup.find(class_='processed').find(string='Event')
         if not event_tag:
@@ -107,10 +123,10 @@ class ParimatchScraper(AbstractScraper):
         bet_title_tags = event_tag.parent.find_next_siblings()
 
         # get main bets for the match
-        match.bets += ParimatchScraper._update_bets(match.bk, bet_title_tags, match.title, '', match.url)
+        match.bets += ParimatchScraper._update_bets(bk, bet_title_tags, match.title, '', match.url)
 
         # get other bets for the match if any
-        row1_props = match.bk.parent.next_sibling
+        row1_props = bk.parent.next_sibling
         if row1_props:
             props_bks = row1_props.find_all(class_='bk')
             if props_bks:
@@ -214,7 +230,10 @@ class ParimatchScraper(AbstractScraper):
         :return: 'td' tag that is under the given bet title tag
         :rtype: BeautifulSoup.Tag
         """
-        column = bk.next_element
+        try:
+            column = bk.next_element
+        except AttributeError:
+            return None
 
         try:
             skip = int(column['colspan'])
@@ -229,6 +248,10 @@ class ParimatchScraper(AbstractScraper):
                     skip = int(column['colspan'])
                 except KeyError:
                     skip = 0
+                except TypeError:
+                    print('NoneType is not subscriptable, bet title:', bet_title_tag.text)
+                    time.sleep(30)
+                    return ParimatchScraper._find_column(bk, bet_title_tag)
 
         if skip > 0:
             return None
@@ -281,7 +304,9 @@ class ParimatchScraper(AbstractScraper):
         page = Page(url)
         soup = BeautifulSoup(page.html, 'html.parser')
 
-        while not ParimatchScraper._check_soup(soup):
+        while not ParimatchScraper._check_soup(soup) or page.driver.current_url == 'https://www.pm-511.info/':
+            if page.driver.current_url == 'https://www.pm-511.info/':
+                print('page.driver.current_url == https://www.pm-511.info/')
             page = Page(url)
             soup = BeautifulSoup(page.html, 'html.parser')
 
@@ -308,14 +333,16 @@ if __name__ == '__main__':
     scraper = ParimatchScraper()
 
     sport = scraper.get_matches_info_sport(sport_name)
-    for match in sport:
-        #     if 'avez' in match.title.teams:
-        scraper.scrape_match_bets(match)
+    # for match in sport:
+    #     print(match.url)
+    #     scraper.scrape_match_bets(match)
     print(sport)
 
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_name + '\\parimatch.py'
-    with open(path, 'w', encoding='utf-8') as f:
+    path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
+    print(path)
+    sport.serialize(path)
+    with open(path + '.py', 'w', encoding='utf-8') as f:
         print('sport =', sport, file=f)
     print(time.time() - t)

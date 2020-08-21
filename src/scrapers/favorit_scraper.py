@@ -1,7 +1,7 @@
 import os.path
 import time
 
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -43,6 +43,11 @@ class FavoritScraper(AbstractScraper):
                     'HT/FT', 'HT or FT and Total Goals', 'Both Teams To Score and Total Goals']
 
     wait = WebDriverWait(Page.driver, 10)
+
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(FavoritScraper, cls).__new__(cls)
+        return cls.instance
 
     def get_name(self) -> str:
         return self._NAME
@@ -148,6 +153,7 @@ class FavoritScraper(AbstractScraper):
         drop_down_menu = icon.parent.find_element_by_class_name('slideInDown')
         checkboxes = drop_down_menu.find_elements_by_tag_name('b')
         titles = drop_down_menu.find_elements_by_class_name('ttt')
+        print('favorit scraping', len(checkboxes), 'subsections')
 
         if FavoritScraper._SUBMENU[sport_name]:
             for i in range(len(checkboxes)):
@@ -164,7 +170,7 @@ class FavoritScraper(AbstractScraper):
                             break
                     if not b:
                         checkboxes.remove(checkbox)
-        print('favorit scraping', len(checkboxes), 'subsections')
+
         return checkboxes
 
     @staticmethod
@@ -197,39 +203,43 @@ class FavoritScraper(AbstractScraper):
                                                       ((By.CLASS_NAME, 'markets--block')))
         except TimeoutException:
             FavoritScraper._parse_marketblocks(bets, url)
-        for mb in market_blocks:
-            block_title_head = mb.find_element_by_class_name('markets--head').get_attribute('innerHTML')
 
-            b = True
-            for s in FavoritScraper._SKIP_TITLES:
-                if s in block_title_head:
-                    b = False
-                    break
-            if not b:
+        try:
+            for mb in market_blocks:
+                block_title_head = mb.find_element_by_class_name('markets--head').get_attribute('innerHTML')
+
+                b = True
+                for s in FavoritScraper._SKIP_TITLES:
+                    if s in block_title_head:
+                        b = False
+                        break
+                if not b:
+                    # print(block_title_head)
+                    continue
                 # print(block_title_head)
-                continue
-            # print(block_title_head)
-            sub_block_titles = mb.find_elements_by_class_name('result--type--head')
-            sub_blocks = mb.find_elements_by_class_name('outcome--list')
-            for sub_block in sub_blocks:
-                block_title_tail = ' ' + sub_block_titles[sub_blocks.index(sub_block)].find_element_by_tag_name(
-                    'span').get_attribute('innerHTML')
-                block_title = block_title_head + block_title_tail
-                block = sub_block
+                sub_block_titles = mb.find_elements_by_class_name('result--type--head')
+                sub_blocks = mb.find_elements_by_class_name('outcome--list')
+                for sub_block in sub_blocks:
+                    block_title_tail = ' ' + sub_block_titles[sub_blocks.index(sub_block)].find_element_by_tag_name(
+                        'span').get_attribute('innerHTML')
+                    block_title = block_title_head + block_title_tail
+                    block = sub_block
 
-                if mb.find_elements_by_class_name('mtype--7'):
-                    break
-                else:
-                    labels = block.find_elements_by_tag_name('label')
-                    for label in labels:
-                        if label.get_attribute('class') == 'outcome--empty':
-                            continue
-                        bet_type = label.find_element_by_tag_name('span').get_attribute('title')
-                        bet_title = block_title + ' ' + bet_type
-                        button = label.find_element_by_tag_name('button')
-                        odds = button.text
-                        bet = Bet(bet_title, odds, FavoritScraper._NAME, url)
-                        bets.append(bet)
+                    if mb.find_elements_by_class_name('mtype--7'):
+                        break
+                    else:
+                        labels = block.find_elements_by_tag_name('label')
+                        for label in labels:
+                            if label.get_attribute('class') == 'outcome--empty':
+                                continue
+                            bet_type = label.find_element_by_tag_name('span').get_attribute('title')
+                            bet_title = block_title + ' ' + bet_type
+                            button = label.find_element_by_tag_name('button')
+                            odds = button.text
+                            bet = Bet(bet_title, odds, FavoritScraper._NAME, url)
+                            bets.append(bet)
+        except StaleElementReferenceException:
+            FavoritScraper._parse_marketblocks(bets, url)
 
     @staticmethod
     def _parse_live_marketblocks(bets, url):
@@ -420,15 +430,14 @@ if __name__ == '__main__':
     t = time.time()
     scraper = FavoritScraper()
     sport = scraper.get_matches_info_sport(sport_name)
-    print(sport)
-    for match in sport:
-        scraper.scrape_match_bets(match)
-    # sport = scraper._get_bets_from_url('https://www.favorit.com.ua/en/bets/#event=27110455&tours=17296,18320,17294,17482,17295,17935,17944')
+    # for match in sport:
+    #     scraper.scrape_match_bets(match)
     print(sport)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_name + '\\favorit.py'
-    with open(path, 'w', encoding='utf-8') as f:
+    path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
+    sport.serialize(path)
+    with open(path + '.py', 'w', encoding='utf-8') as f:
         print('sport =', sport, file=f)
 
     print(time.time() - t)

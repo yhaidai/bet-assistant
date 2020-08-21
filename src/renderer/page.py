@@ -3,6 +3,9 @@ import time
 from threading import Thread
 
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
+
+from exceptions.RendererTimeoutException import RendererTimeoutException
 
 
 class Page:
@@ -16,6 +19,13 @@ class Page:
     _chrome_options.add_argument("--no-sandbox")
     _chrome_options.add_argument("--incognito")
     _chrome_options.add_argument("--window-size=1920,1080")
+    _chrome_options.add_argument("--disable-extensions")
+    _chrome_options.add_argument("--dns-prefetch-disable")
+    _chrome_options.add_argument("--disable-gpu")
+    _chrome_options.add_argument("--disable-browser-side-navigation")
+    _chrome_options.add_argument("--disable-infobars")
+    _chrome_options.add_argument("enable-automation")
+    _chrome_options.add_argument("start-maximized")
     # _chrome_options.add_argument(
     #     '--user-agent=""Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
     #     'Chrome/74.0.3729.157 Safari/537.36""'
@@ -34,14 +44,10 @@ class Page:
         :type url: str
         """
         self.url = url
-        # self.shutdown = False
-
-        # thread = Thread(target=self._start_timer, args=(10,))
-        # thread.start()
-        Page.driver.get(url)
-        # self.shutdown = True
-        # thread.join()
-
+        try:
+            Page.driver.get(url)
+        except TimeoutException as e:
+            raise RendererTimeoutException(message=e.msg)
         self.html = Page.driver.page_source
 
     @staticmethod
@@ -55,22 +61,6 @@ class Page:
         except Exception:
             Page.driver = webdriver.Chrome(executable_path='../renderer/chromedriver_win32/chromedriver.exe',
                                            chrome_options=Page._chrome_options)
-
-    def _start_timer(self, timeout):
-        """
-        After a given timeout shuts down previous driver and changes it to a new one
-
-        :param timeout: timeout in secs after which driver will be changed
-        :type timeout: int
-        """
-        start_time = time.time()
-        while time.time() - start_time < timeout:
-            if self.shutdown:
-                return
-            time.sleep(1)
-
-        Page.driver.quit()
-        Page.change_driver()
 
     @staticmethod
     def click(element):

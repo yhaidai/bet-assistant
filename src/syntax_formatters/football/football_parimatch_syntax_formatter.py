@@ -40,6 +40,10 @@ class FootballParimatchSyntaxFormatter(FootballAbstractSyntaxFormatter, PSF):
 
     @staticmethod
     def _swap_substrings(text, pattern, id1, id2, separator):
+        if pattern not in text:
+            print(pattern, 'not in', text)
+            return text
+
         substrings = text.split(pattern)
         temp = substrings[id1]
         substrings[id1] = substrings[id2]
@@ -57,7 +61,10 @@ class FootballParimatchSyntaxFormatter(FootballAbstractSyntaxFormatter, PSF):
 
     def _format_win(self):
         formatted_title = self.bet_title.lower()
-        team_names = self.match_title.raw_teams
+        try:
+            team_names = self.match_title.raw_teams
+        except AttributeError:
+            team_names = self.match_title.teams
 
         if 'win of' in formatted_title:
             if formatted_title.find('1st') != -1:

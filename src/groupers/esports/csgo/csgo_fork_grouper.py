@@ -26,40 +26,74 @@ class CSGOForkGrouper(EsportsForkGrouper):
         return EsportsForkGrouper._get_handicap_targets(self) + ['rounds']
 
 
+class OneXBetScraper:
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(OneXBetScraper, cls).__new__(cls)
+        return cls.instance
+
+    def get_name(self):
+        return '1xbet'
+
+
+class ParimatchScraper:
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(ParimatchScraper, cls).__new__(cls)
+        return cls.instance
+
+    def get_name(self):
+        return '1xbet'
+
+
+class FavoritScraper:
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(FavoritScraper, cls).__new__(cls)
+        return cls.instance
+
+    def get_name(self):
+        return '1xbet'
+
+
+class MarathonScraper:
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(MarathonScraper, cls).__new__(cls)
+        return cls.instance
+
+    def get_name(self):
+        return '1xbet'
+
+
+class GGBetScraper:
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(GGBetScraper, cls).__new__(cls)
+        return cls.instance
+
+    def get_name(self):
+        return '1xbet'
+
+
 if __name__ == '__main__':
     grouper = CSGOForkGrouper()
     csgo = Sport('csgo', [
-        Match(MatchTitle(['cloud9', 'team one']),
-              'https://1x-bet.com/en/line/Football/206667-Finland-Ykkonen-Division-1/80859226-SJK-Akatemia-Mikkelin-Palloilijat/',
-              DateTime(2020, 8, 9, 19, 0, 0), 2, []),
-        Match(MatchTitle(['cloud9', 'teamone']),
-              'https://www.parimatch.com/en/sport/futbol/finljandija-ykkonen',
-              DateTime(2020, 8, 9, 19, 0, 0), 1, []),
-        Match(MatchTitle(['cloud9', 'team one']),
-              'https://www.favorit.com.ua/en/bets/#event=27648297&tours=18755,18811,19139',
-              DateTime(2020, 8, 9, 19, 0, 0), 3, []),
-        Match(MatchTitle(['cloud9', 'team one']),
-              'https://www.marathonbet.com/en/betting/Football/Finland/Veikkausliiga/Honka+vs+SJK+-+9926868',
-              DateTime(2020, 8, 9, 19, 0, 0), 0, []),
-
-        Match(MatchTitle(['cloud9', 'team one']),
-              'https://1x-bet.com/en/line/Esports/2109602-Dota-2-Movistar-Liga-Pro-Gaming-Season-5/80852466-Infamous'
-              '-Omega-Gaming/1',
-              DateTime(2020, 8, 8, 21, 0, 0), 2, []),
-        Match(MatchTitle(['cloud9', 'teamone']),
-              'https://www.parimatch.com/en/sport/kibersport/dota-2-movistar-lpg1',
-              DateTime(2020, 8, 8, 21, 0, 0), 1, []),
-        Match(MatchTitle(['cloud9', 'team one']),
-              'https://www.favorit.com.ua/en/bets/#event=27623202&tours=631831,1127880,1193929,1747127,1939467,'
-              '2461097,2515710,2520056,25236781',
-              DateTime(2020, 8, 8, 21, 0, 0), 3, []),
-        Match(MatchTitle(['cloud9', 'team one']),
-              'https://www.marathonbet.com/en/betting/e-Sports/CS%3AGO/DreamHack+Open/Main+Event/Best+of+3+maps'
-              '/Cloud9+vs+Team+One+-+99333191',
-              DateTime(2020, 8, 8, 21, 0, 0), 0, []),
-        Match(MatchTitle(['cloud9', 'team one']),
-              'https://gg.bet/en/betting/match/infamous-vs-omega-gaming-06-081',
-              DateTime(2020, 8, 8, 21, 0, 0), 4, []),
+        Match(MatchTitle(['Top Esports', 'Suning Gaming']),
+              'https://1x-bet.com/en/line/Esports/1309773-League-of-Legends-LPL-Summer-Playoffs/81469989-Top-Esports-Suning-Gaming/',
+              DateTime(2020, 8, 9, 19, 0, 0), OneXBetScraper(), []),
+        Match(MatchTitle(['Top', 'Sunning']),
+              'https://www.parimatch.com/en/sport/kibersport/liga-legend-lpl',
+              DateTime(2020, 8, 9, 19, 0, 0), ParimatchScraper(), []),
+        Match(MatchTitle(['Top Esports', 'SN Gaming']),
+              'https://www.favorit.com.ua/en/bets/#event=27802672&tours=182350,776347,776418,792747,977780,1011803,1037535,1061879,1258082,1265594,1293917,1618224,1713907,2270463',
+              DateTime(2020, 8, 9, 19, 0, 0), FavoritScraper(), []),
+        Match(MatchTitle(['Suning Gaming', 'Top Esports']),
+              'https://www.marathonbet.com/en/betting/e-Sports/LoL/LPL+Summer/Main+Event/Best+of+5+maps/Suning+Gaming+vs+Top+Esports+-+9994779',
+              DateTime(2020, 8, 9, 19, 0, 0), MarathonScraper(), []),
+        Match(MatchTitle(['Top Esports', 'Suning Gaming']),
+              'https://gg.bet/en/betting/match/top-esports-vs-suning-gaming-22-08',
+              DateTime(2020, 8, 9, 19, 0, 0), GGBetScraper(), []),
         ])
     groups = grouper.get_match_groups(csgo)
     pprint(groups)

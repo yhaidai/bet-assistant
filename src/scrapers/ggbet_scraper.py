@@ -38,6 +38,14 @@ class GGBetScraper(AbstractScraper):
         'football': 'Soccer',
         'lol': 'League of Legends'
         }
+    _BAD_TITLES = [
+        'pistol round winner'
+        ]
+
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(GGBetScraper, cls).__new__(cls)
+        return cls.instance
 
     def get_name(self) -> str:
         return self._NAME
@@ -200,11 +208,24 @@ class GGBetScraper(AbstractScraper):
         return match
 
     @staticmethod
+    def handle_flag_is_true_case(buttons, button, bet):
+        pos = bet.find(': ')
+        if buttons.index(button) < 2:
+            bet_type = '1 ' + bet[:pos]
+        else:
+            bet_type = '2 ' + bet[:pos]
+        return bet_type
+
+    @staticmethod
     def _parse_marketblocks(bets, match_url):
         market_tables = wait.until(EC.presence_of_all_elements_located
                                    ((By.CLASS_NAME, 'marketTable__table___dvHTz')))
         for mt in market_tables:
+            flag = False
             table_title = mt.find_element_by_class_name('marketTable__header___mSHxT').get_attribute('title')
+            for title in GGBetScraper._BAD_TITLES:
+                if title in table_title:
+                    flag = True
             buttons = mt.find_elements_by_tag_name('button')
             for button in buttons:
                 try:
@@ -212,6 +233,8 @@ class GGBetScraper(AbstractScraper):
                     if bet != 'Deactivated':
                         pos = bet.find(': ')
                         bet_type = bet[:pos]
+                        if flag:
+                            bet_type = GGBetScraper.handle_flag_is_true_case(buttons, button, bet)
                         odds = bet[pos + 2:]
                         bet_title = table_title + ' ' + bet_type
                         bet = Bet(bet_title, odds, GGBetScraper._NAME, match_url)
@@ -259,7 +282,11 @@ class GGBetScraper(AbstractScraper):
         #         print('this match is probably live')
         #         return None
         time.sleep(2)
-        GGBetScraper._parse_marketblocks(match.bets, match.url)
+        try:
+            GGBetScraper._parse_marketblocks(match.bets, match.url)
+        except TimeoutException:
+            pass
+
         return match
 
     @staticmethod
@@ -291,15 +318,14 @@ if __name__ == '__main__':
     t = time.time()
     scraper = GGBetScraper()
     sport = scraper.get_matches_info_sport(sport_name)
-    print(sport)
-    for match in sport:
-        scraper.scrape_match_bets(match)
-    # sport = scraper._get_urls_and_titles(sport_name)
+    # for match in sport:
+    #     scraper.scrape_match_bets(match)
     print(sport)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
     print(my_path)
-    path = my_path + '\\sample_data\\' + sport_name + '\\ggbet.py'
-    with open(path, 'w', encoding='utf-8') as f:
+    path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
+    sport.serialize(path)
+    with open(path + '.py', 'w', encoding='utf-8') as f:
         print('sport =', sport, file=f)
     print(time.time() - t)

@@ -1,6 +1,10 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Scrapers" type="Multirun" factoryName="Multirun" singleton="false" separateTabs="true" startOneByOne="false" markFailedProcess="true" hideSuccessProcess="false" delayTime="0">
     <runConfiguration name="parimatch_scraper" type="Python" />
+    <runConfiguration name="favorit_scraper" type="Python" />
+    <runConfiguration name="one_x_bet_scraper" type="Python" />
+    <runConfiguration name="marathon_scraper" type="Python" />
+    <runConfiguration name="ggbet_scraper" type="Python" />
     <method v="2" />
   </configuration>
 </component>

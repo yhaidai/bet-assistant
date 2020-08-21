@@ -10,6 +10,9 @@ class MatchTitle:
     def __repr__(self):
         return ' - '.join(self.teams)
 
+    def __contains__(self, item):
+        return item in self.teams
+
     def replace(self, team, replacement):
         index = self.teams.index(team)
         self.teams.remove(team)

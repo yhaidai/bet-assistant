@@ -1,7 +1,7 @@
 import os.path
 import time
 
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
 
 from bet import Bet
 from date_time import DateTime
@@ -14,7 +14,7 @@ from src.scrapers.abstract_scraper import AbstractScraper
 
 
 class OneXBetScraper(AbstractScraper):
-    _NAME = '1xbet'
+    _NAME = 'one_x_bet'
     _BASE_URL = 'https://1x-bet.com/en/'
     _SPORT_NAMES = {
         'csgo': 'CSGO',
@@ -54,7 +54,11 @@ class OneXBetScraper(AbstractScraper):
         base_len = len(OneXBetScraper._BASE_URL)
 
         for match_element in list(match_elements)[:]:
-            url = match_element.get_attribute('href')[base_len:]
+            try:
+                url = match_element.get_attribute('href')[base_len:]
+            except StaleElementReferenceException:
+                print('Caught StaleElementReferenceException')
+                continue
             if url in championship_urls:
                 continue
             match_title_text = match_element.find_element_by_class_name('gname').text
@@ -159,13 +163,14 @@ if __name__ == '__main__':
     scraper = OneXBetScraper()
 
     sport = scraper.get_matches_info_sport(sport_name)
-    for match in sport:
-        scraper.scrape_match_bets(match)
+    # for match in sport:
+    #     scraper.scrape_match_bets(match)
     print(sport)
 
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_name + '\\one_x_bet.py'
-    with open(path, 'w', encoding='utf-8') as f:
+    path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
+    sport.serialize(path)
+    with open(path + '.py', 'w', encoding='utf-8') as f:
         print('sport =', sport, file=f)
     print(time.time() - t)

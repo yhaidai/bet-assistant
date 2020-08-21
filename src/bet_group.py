@@ -22,6 +22,9 @@ class BetGroup:
     def __next__(self):
         return next(self.bets)
 
+    def __getitem__(self, item: int):
+        return self.bets[item]
+
     def to_dict(self):
         result = {}
         for bet in self.bets:

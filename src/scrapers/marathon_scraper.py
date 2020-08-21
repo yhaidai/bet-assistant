@@ -53,6 +53,11 @@ class MarathonScraper(AbstractScraper):
                     'Offsides', 'Goals Both Teams To Score + Total',
                     'Goals At Least One Team Not To Score + Total']
 
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(MarathonScraper, cls).__new__(cls)
+        return cls.instance
+
     def get_name(self) -> str:
         return self._NAME
 
@@ -334,15 +339,19 @@ class MarathonScraper(AbstractScraper):
         except AttributeError:
             teams = match.title.teams
 
-        main_odds = Page.driver.find_elements_by_class_name('selection-link')
+        main_row = Page.driver.find_element_by_class_name('sub-row')
+        main_odds = main_row.find_elements_by_class_name('selection-link')
+
+        main_bet_titles = ['Result ' + team + ' To Win' for team in teams]
         if len(main_odds) == 3:
-            teams.insert(1, 'draw')
+            main_bet_titles.insert(1, 'Result Draw')
+
         match.bets += [Bet(
-            teams[i] + ' will win',
+            main_bet_titles[i],
             main_odds[i].text,
             MarathonScraper._NAME,
             match.url
-        ) for i in range(len(teams))]
+            ) for i in range(len(teams))]
 
         try:
             element = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'details-description')))
@@ -414,14 +423,13 @@ if __name__ == '__main__':
     t = time.time()
     scraper = MarathonScraper()
     sport = scraper.get_matches_info_sport(sport_name)
-    print(sport)
-    for match in sport:
-        scraper.scrape_match_bets(match)
-    # sport = scraper._get_bets_from_url('https://www.marathonbet.com/en/betting/Football/Clubs.+International/UEFA+Champions+League/Round+of+16/2nd+Leg/Juventus+vs+Lyon+-+9676474')
+    # for match in sport:
+    #     scraper.scrape_match_bets(match)
     print(sport)
     Page.driver.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_name + '\\marathon.py'
-    with open(path, 'w', encoding='utf-8') as f:
+    path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
+    sport.serialize(path)
+    with open(path + '.py', 'w', encoding='utf-8') as f:
         print('sport =', sport, file=f)
     print(time.time() - t)

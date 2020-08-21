@@ -40,29 +40,33 @@ class ForkGrouper(ABC):
         comparator = MatchComparator()
         for match_ in group[:]:
             if match_.scraper == match.scraper and match != match_:
-                teams_ = match.title.teams
+                teams_ = match_.title.teams
                 match_.title.teams = match_.title.raw_teams
 
                 similarity = comparator.calculate_matches_similarity(group[0], match, self._certainty)
                 similarity_ = comparator.calculate_matches_similarity(group[0], match_, self._certainty)
-                # print(group[0])
-                # print(similarity, match)
-                # print(similarity_, match_)
+
+                match_.title.teams = teams_
+
                 if similarity > similarity_:
+                    match_.title.teams = match_.title.raw_teams
+                    delattr(match_.title, 'raw_teams')
                     group.remove(match_)
-                    match_.title.teams = teams_
                 else:
                     group.remove(match)
 
     def get_match_groups(self, sport: Sport) -> dict:
+        # TODO: modify algorithm to handle cases with match being absent on one of the
+        #  websites(other similar match may be taken into group in such case)
         groups = {}
 
         sport_copy1 = list(sport)
         sport_copy2 = list(sport)
         for first_match in sport_copy1:
             sport_copy2.remove(first_match)
-            if ForkGrouper._match_in_groups_by_title_teams_and_date_time(first_match, groups):
+            if hasattr(first_match.title, 'raw_teams'):
                 continue
+
             first_match.title.raw_teams = list(first_match.title.teams)
             first_match.title.teams.sort()
             groups.setdefault(first_match.title, []).append(first_match)
@@ -71,40 +75,71 @@ class ForkGrouper(ABC):
             group = groups[first_match.title]
             for second_match in sport_copy2:
                 comparator = MatchComparator()
-                if ForkGrouper._match_in_groups_by_title_teams_and_date_time(second_match, groups):
+                if hasattr(second_match.title, 'raw_teams'):
                     continue
                 if comparator.similar(first_match, second_match, self._certainty):
-
                     group.append(second_match)
                     self._handle_same_scrapers_in_group(second_match, group)
 
                     if ForkGrouper._match_in_groups(second_match, first_match.title, groups):
-                        # print(first_match)
-                        # print(second_match)
-                        # print()
-
                         for key, value in comparator.similarities.items():
-                            if key in similarities:
-                                if len(value) == len(similarities[key]):
-                                    min_team = min(value, similarities[key])
-                                elif len(value) > len(similarities[key]):
-                                    min_team = similarities[key]
-                                else:
-                                    min_team = value
-
-                                similarities[key] = min_team
-                            else:
-                                similarities[key] = value
+                            similarities.setdefault(key, []).append({second_match: value})
 
                         first_match.title.similarities = comparator.similarities
                         second_match.title.similarities = comparator.similarities
                         second_match.title.raw_teams = second_match.title.teams
                         second_match.title.teams = first_match.title.teams
 
+            if len(group) < 2:
+                continue
+
+            similarities_clean = first_match.title.similarities
+            for key, match_value_pairs in similarities.items():
+                # find min team for key
+                min_team = None
+                for match_value_pair in match_value_pairs:
+                    for match, value in match_value_pair.items():
+                        if match in group:
+
+                            if min_team is None:
+                                min_team = value
+                            else:
+                                if key in similarities_clean:
+                                    if len(value) == len(min_team):
+                                        min_team = min(value, min_team)
+                                    elif len(value) < len(min_team):
+                                        min_team = value
+
+                # every other similar team will then need to be changed into min team
+                if min_team:
+                    # if min_team has shorter version - use it
+                    while min_team in similarities_clean and min_team != similarities_clean[min_team]:
+                        min_team = similarities_clean[min_team]
+
+                    for k, v in list(similarities_clean.items()):
+                        # if current key is a value for some other other key - replace it there with min_team
+                        if v == key:
+                            similarities_clean[k] = min_team
+                        # if current key already has some value - replace its value with min_team
+                        if k == key:
+                            similarities_clean[v] = min_team
+
+                    # all teams in the group that belongs to this key will then need to be changed into min team
+                    similarities_clean[key] = min_team
+                    for match_value_pair in match_value_pairs:
+                        for value in match_value_pair.values():
+                            if value != min_team:
+                                similarities_clean[value] = min_team
+
+            similarities = similarities_clean
             for match in group:
                 for team in match.title.teams:
                     if team in similarities:
                         match.title.replace(team, similarities[team])
+
+                match.title.similarities = similarities
+
+            # TODO: run search one more search for similar matches for min title
 
         return groups
 
