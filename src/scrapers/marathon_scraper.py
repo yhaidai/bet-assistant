@@ -132,10 +132,10 @@ class MarathonScraper(AbstractScraper):
             for tournament in all_tournaments:
                 try:
                     _sport_name = tournament.find_element_by_class_name('nowrap')
+                    if _sport_name.text == MarathonScraper._MENU[sport_name]:
+                        tournaments.append(tournament)
                 except StaleElementReferenceException:
                     return MarathonScraper.get_tournaments(sport_name)
-                if _sport_name.text == MarathonScraper._MENU[sport_name]:
-                    tournaments.append(tournament)
         else:
             tournaments = all_tournaments
 
