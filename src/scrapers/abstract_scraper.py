@@ -1,3 +1,4 @@
+import time
 from abc import ABC, abstractmethod
 from threading import Lock
 
@@ -19,6 +20,10 @@ class AbstractScraper(ABC):
             if subclass_instance.__class__.__name__ == cls.__name__:
                 return subclass_instance
         return super(AbstractScraper, cls).__new__(cls)
+
+    # def __del__(self):
+    #     self.renderer.quit()
+    #     time.sleep(1)
 
     def __reduce__(self):
         return self.__class__, ()

@@ -208,7 +208,6 @@ class GGBetScraper(AbstractScraper):
         market_tables = self.renderer.wait.until(EC.presence_of_all_elements_located
                                                  ((By.CLASS_NAME, 'marketTable__table___dvHTz')))
         for mt in market_tables:
-            print(market_tables.index(mt))
             flag = False
             table_title = mt.find_element_by_class_name('marketTable__header___mSHxT').get_attribute('title')
             for title in self._BAD_TITLES:
@@ -270,7 +269,6 @@ class GGBetScraper(AbstractScraper):
         #         return None
         time.sleep(2)
         try:
-            print('parsing marketblocks')
             self._parse_marketblocks(match.bets, match.url)
         except TimeoutException:
             pass
@@ -311,8 +309,8 @@ if __name__ == '__main__':
     print(my_path)
     path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
     sport.serialize(path)
-    for match in sport:
-        scraper.scrape_match_bets(match)
+    # for match in sport:
+    #     scraper.scrape_match_bets(match)
     with open(path + '.py', 'w', encoding='utf-8') as f:
         print('sport =', sport, file=f)
     print(time.time() - t)

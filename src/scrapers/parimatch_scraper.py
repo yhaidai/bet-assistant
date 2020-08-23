@@ -294,9 +294,11 @@ class ParimatchScraper(AbstractScraper):
         self.renderer.get(url)
         soup = BeautifulSoup(self.renderer.page_source, 'html.parser')
 
-        while not ParimatchScraper._check_soup(soup) or self.renderer.current_url == 'https://www.pm-511.info/':
-            if self.renderer.current_url == 'https://www.pm-511.info/':
-                print('page.driver.current_url == https://www.pm-511.info/')
+        while not ParimatchScraper._check_soup(soup) or re.match(r'https://www\.pm-\d+\.info/',
+                                                                 self.renderer.current_url):
+            if re.match(r'https://www\.pm-\d+\.info/', self.renderer.current_url):
+                time.sleep(30)
+                print('page.driver.current_url ==', self.renderer.current_url)
             self.renderer.get(url)
             soup = BeautifulSoup(self.renderer.page_source, 'html.parser')
 

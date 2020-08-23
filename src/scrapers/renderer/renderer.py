@@ -7,6 +7,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class Renderer(webdriver.Chrome):
     _chrome_options = webdriver.ChromeOptions()
+    # _chrome_options.add_argument("--headless")
     _chrome_options.add_argument("--disable-dev-shm-usage")
     _chrome_options.add_argument("--no-sandbox")
     _chrome_options.add_argument("--incognito")

@@ -150,9 +150,6 @@ class OneXBetScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = OneXBetScraper()
-    print(scraper)
-    print(OneXBetScraper())
-
     sport = scraper.get_matches_info_sport(sport_name)
     # for match in sport:
     #     scraper.scrape_match_bets(match)

@@ -81,7 +81,7 @@ class Arbitrager:
         group_count = len(match_groups)
         for title, group in match_groups.items():
             group_id += 1
-            if len(group) < 1 or group[0].date_time <= datetime.now():
+            if len(group) < 2 or group[0].date_time <= datetime.now():
                 continue
             print('Group', group_id, 'of', group_count, ':')
             all_bets = []
@@ -199,6 +199,10 @@ class Arbitrager:
 
 
 if __name__ == '__main__':
-    t = time.time()
-    analyzer = Arbitrager(sport_name)
-    print('Elapsed:', time.time() - t)
+    try:
+        t = time.time()
+        analyzer = Arbitrager(sport_name)
+        print('Elapsed:', time.time() - t)
+    finally:
+        for scraper in registry:
+            scraper.renderer.quit()
