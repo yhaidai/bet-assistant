@@ -12,7 +12,6 @@ from date_time import DateTime
 from match import Match
 from match_title import MatchTitle
 from sport import Sport
-from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
 
 
@@ -41,18 +40,13 @@ class ParimatchScraper(AbstractScraper):
     # last titles for each of the groups
     _TITLE_BREAKERS = ('Handicap coefficient', 'Under', 'Win of the 1st team',)
 
-    def __new__(cls):
-        if not hasattr(cls, 'instance'):
-            cls.instance = super(ParimatchScraper, cls).__new__(cls)
-        return cls.instance
-
     def get_name(self) -> str:
         return self._NAME
 
     def get_matches_info_sport(self, sport_name):
         sport_matches = []
 
-        championship_urls = ParimatchScraper.get_championship_urls(sport_name)
+        championship_urls = self.get_championship_urls(sport_name)
         for championship_url in championship_urls[:]:
             if 'statistika' in championship_url:
                 continue
@@ -63,8 +57,7 @@ class ParimatchScraper(AbstractScraper):
         sport = Sport(sport_name, sport_matches)
         return sport
 
-    @staticmethod
-    def get_championship_urls(sport_name):
+    def get_championship_urls(self, sport_name):
         """
         Scrapes championship urls from the website
 
@@ -73,15 +66,15 @@ class ParimatchScraper(AbstractScraper):
         :return: list of urls of all the championships for the given sport type on the website
         :rtype: str
         """
-        page = Page(ParimatchScraper._MENU[sport_name])
-        soup = BeautifulSoup(page.html, 'html.parser')
+        self.renderer.get(ParimatchScraper._MENU[sport_name])
+        soup = BeautifulSoup(self.renderer.page_source, 'html.parser')
         pattern = ParimatchScraper._SPORT_NAMES[sport_name] + '.+'
         championship_urls = {a.get('href') for a in soup.find_all('a', href=re.compile(pattern))}
 
         return list(championship_urls)
 
     def _get_championship_matches_info(self, url):
-        soup = ParimatchScraper._get_soup(url)
+        soup = self._get_soup(url)
         matches = []
         bks = self._get_bks(soup)
 
@@ -102,20 +95,18 @@ class ParimatchScraper(AbstractScraper):
         bks = bks1 + bks2
         return bks
 
-    @staticmethod
-    def _get_match_bk(soup: BeautifulSoup, match: Match):
+    def _get_match_bk(self, soup: BeautifulSoup, match: Match):
         bks = ParimatchScraper._get_bks(soup)
         for bk in bks:
             if bk.find(class_='no').text == match.id:
                 return bk
 
-        print('Couldn\'t find bk with id', match.id, Page.driver.current_url)
+        print('Couldn\'t find bk with id', match.id, self.renderer.current_url)
         return None
 
-    @staticmethod
-    def scrape_match_bets(match: Match):
-        soup = ParimatchScraper._get_soup(match.url)
-        bk = ParimatchScraper._get_match_bk(soup, match)
+    def scrape_match_bets(self, match: Match):
+        soup = self._get_soup(match.url)
+        bk = self._get_match_bk(soup, match)
 
         event_tag = soup.find(class_='processed').find(string='Event')
         if not event_tag:
@@ -291,8 +282,7 @@ class ParimatchScraper(AbstractScraper):
         br = tag.find('td').next_sibling.find('br')
         return br.previous_sibling + br.next_sibling
 
-    @staticmethod
-    def _get_soup(url):
+    def _get_soup(self, url):
         """
         Get soup of rendered page
 
@@ -301,14 +291,14 @@ class ParimatchScraper(AbstractScraper):
         :return: soup of the page which is located at given url
         :rtype: BeautifulSoup
         """
-        page = Page(url)
-        soup = BeautifulSoup(page.html, 'html.parser')
+        self.renderer.get(url)
+        soup = BeautifulSoup(self.renderer.page_source, 'html.parser')
 
-        while not ParimatchScraper._check_soup(soup) or page.driver.current_url == 'https://www.pm-511.info/':
-            if page.driver.current_url == 'https://www.pm-511.info/':
+        while not ParimatchScraper._check_soup(soup) or self.renderer.current_url == 'https://www.pm-511.info/':
+            if self.renderer.current_url == 'https://www.pm-511.info/':
                 print('page.driver.current_url == https://www.pm-511.info/')
-            page = Page(url)
-            soup = BeautifulSoup(page.html, 'html.parser')
+            self.renderer.get(url)
+            soup = BeautifulSoup(self.renderer.page_source, 'html.parser')
 
         return soup
 
@@ -338,7 +328,7 @@ if __name__ == '__main__':
     #     scraper.scrape_match_bets(match)
     print(sport)
 
-    Page.driver.quit()
+    scraper.renderer.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
     path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
     print(path)

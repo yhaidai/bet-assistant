@@ -1,4 +1,6 @@
 import os
+import time
+from concurrent.futures import ThreadPoolExecutor, wait, ALL_COMPLETED
 from datetime import datetime
 from pprint import pprint
 
@@ -6,18 +8,19 @@ from bet_group import BetGroup
 from constants import sport_name
 from csgo_fork_grouper import CSGOForkGrouper
 from dota_fork_grouper import DotaForkGrouper
-from exceptions.RendererTimeoutException import RendererTimeoutException
+from exceptions import RendererTimeoutException
 from football_fork_grouper import FootballForkGrouper
 from lol_fork_grouper import LoLForkGrouper
 from match import Match
 from registry import registry
 from sport import Sport
-from parimatch_scraper import ParimatchScraper
-from one_x_bet_scraper import OneXBetScraper
-from ggbet_scraper import GGBetScraper
-from favorit_scraper import FavoritScraper
-from marathon_scraper import MarathonScraper
-from fork_grouper import ForkGrouper
+
+# doing explicit import in order to able to unpickle scraped data
+from scrapers.favorit_scraper import FavoritScraper
+from scrapers.ggbet_scraper import GGBetScraper
+from scrapers.marathon_scraper import MarathonScraper
+from scrapers.one_x_bet_scraper import OneXBetScraper
+from scrapers.parimatch_scraper import ParimatchScraper
 
 
 class Arbitrager:
@@ -78,10 +81,41 @@ class Arbitrager:
         group_count = len(match_groups)
         for title, group in match_groups.items():
             group_id += 1
-            if len(group) < 2 or group[0].date_time <= datetime.now():
+            if len(group) < 1 or group[0].date_time <= datetime.now():
                 continue
             print('Group', group_id, 'of', group_count, ':')
             all_bets = []
+
+            # with ThreadPoolExecutor() as executor:
+            #     futures = []
+            #     for match in group:
+            #         print(match.url)
+            #         try:
+            #             # TODO: move multiple occurrences fix to grouper
+            #             if not match.bets:
+            #                 future = executor.submit(match.scraper.scrape_match_bets, match)
+            #                 futures.append(future)
+            #             else:
+            #                 print('Match has occurred in multiple groups')
+            #                 continue
+            #         except RendererTimeoutException:
+            #             print('Caught RendererTimeoutException')
+            #             continue
+            #
+            #     wait(futures, return_when=ALL_COMPLETED)
+            #
+            #     for match in group:
+            #         formatter = registry[match.scraper][self.all_matches_sport.name]
+            #         formatter.format_match(match)
+            #         all_bets += match.bets
+            #
+            #     all_bets_match = Match(title, None, group[0].date_time, None, all_bets)
+            #     Arbitrager.remove_anything_but_best_odds_bets(all_bets_match)
+            #     self.remove_anything_but_arbitrage_bets(all_bets_match)
+            #     if all_bets_match.bets:
+            #         self.all_matches_sport.matches.append(all_bets_match)
+            #         print(all_bets_match)
+            #     print()
 
             for match in group:
                 print(match.url)
@@ -95,9 +129,9 @@ class Arbitrager:
                 except RendererTimeoutException:
                     print('Caught RendererTimeoutException')
                     continue
-                all_bets += match.bets
                 formatter = registry[match.scraper][self.all_matches_sport.name]
                 formatter.format_match(match)
+                all_bets += match.bets
 
             all_bets_match = Match(title, None, group[0].date_time, None, all_bets)
             Arbitrager.remove_anything_but_best_odds_bets(all_bets_match)
@@ -165,6 +199,6 @@ class Arbitrager:
 
 
 if __name__ == '__main__':
+    t = time.time()
     analyzer = Arbitrager(sport_name)
-    # s = analyzer.get_all_bets_sport()
-    # print(s)
+    print('Elapsed:', time.time() - t)

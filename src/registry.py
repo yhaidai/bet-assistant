@@ -25,34 +25,34 @@ from esports.lol.lol_parimatch_syntax_formatter import LoLParimatchSyntaxFormatt
 from football.football_parimatch_syntax_formatter import FootballParimatchSyntaxFormatter
 
 registry = {
-    OneXBetScraper(): {
-        'csgo': CSGOOneXBetSyntaxFormatter(),
-        'dota': DotaOneXBetSyntaxFormatter(),
-        'lol': LoLOneXBetSyntaxFormatter(),
-        'football': FootballOneXBetSyntaxFormatter(),
-        },
-    ParimatchScraper(): {
-        'csgo': CSGOParimatchSyntaxFormatter(),
-        'dota': DotaParimatchSyntaxFormatter(),
-        'lol': LoLParimatchSyntaxFormatter(),
-        'football': FootballParimatchSyntaxFormatter(),
-        },
-    FavoritScraper(): {
-        'csgo': CSGOFavoritSyntaxFormatter(),
-        'dota': DotaFavoritSyntaxFormatter(),
-        'lol': LoLFavoritSyntaxFormatter(),
-        'football': FootballFavoritSyntaxFormatter(),
-        },
-    MarathonScraper(): {
-        'csgo': CSGOMarathonSyntaxFormatter(),
-        'dota': DotaMarathonSyntaxFormatter(),
-        'lol': LoLMarathonSyntaxFormatter(),
-        'football': FootballMarathonSyntaxFormatter(),
-        },
     GGBetScraper(): {
         'csgo': CSGOGGBetSyntaxFormatter(),
         'dota': DotaGGBetSyntaxFormatter(),
         'lol': LoLGGBetSyntaxFormatter(),
         'football': FootballGGBetSyntaxFormatter(),
         },
+    # OneXBetScraper(): {
+    #     'csgo': CSGOOneXBetSyntaxFormatter(),
+    #     'dota': DotaOneXBetSyntaxFormatter(),
+    #     'lol': LoLOneXBetSyntaxFormatter(),
+    #     'football': FootballOneXBetSyntaxFormatter(),
+    #     },
+    # FavoritScraper(): {
+    #     'csgo': CSGOFavoritSyntaxFormatter(),
+    #     'dota': DotaFavoritSyntaxFormatter(),
+    #     'lol': LoLFavoritSyntaxFormatter(),
+    #     'football': FootballFavoritSyntaxFormatter(),
+    #     },
+    # MarathonScraper(): {
+    #     'csgo': CSGOMarathonSyntaxFormatter(),
+    #     'dota': DotaMarathonSyntaxFormatter(),
+    #     'lol': LoLMarathonSyntaxFormatter(),
+    #     'football': FootballMarathonSyntaxFormatter(),
+    #     },
+    # ParimatchScraper(): {
+    #     'csgo': CSGOParimatchSyntaxFormatter(),
+    #     'dota': DotaParimatchSyntaxFormatter(),
+    #     'lol': LoLParimatchSyntaxFormatter(),
+    #     'football': FootballParimatchSyntaxFormatter(),
+    #     },
     }

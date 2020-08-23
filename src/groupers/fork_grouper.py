@@ -57,6 +57,8 @@ class ForkGrouper(ABC):
                         second_match.title.teams = first_match.title.teams
 
             if len(group) < 2:
+                first_match.title.teams = first_match.title.raw_teams
+                delattr(first_match.title, 'raw_teams')
                 continue
 
             similarities_clean = first_match.title.similarities

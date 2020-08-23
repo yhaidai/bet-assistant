@@ -9,7 +9,6 @@ from match import Match
 from match_title import MatchTitle
 from sport import Sport
 from constants import sport_name
-from src.renderer.page import Page
 from src.scrapers.abstract_scraper import AbstractScraper
 
 
@@ -30,20 +29,15 @@ class OneXBetScraper(AbstractScraper):
         }
     _TEAM_NAME_CONTAINERS = ['c-scoreboard-team__name-link', 'team', ]
 
-    def __new__(cls):
-        if not hasattr(cls, 'instance'):
-            cls.instance = super(OneXBetScraper, cls).__new__(cls)
-        return cls.instance
-
     def get_name(self) -> str:
         return self._NAME
 
     def get_matches_info_sport(self, sport_name):
-        championships = OneXBetScraper._get_championships(sport_name)
+        championships = self._get_championships(sport_name)
         championship_urls = OneXBetScraper.get_championship_urls(championships)
         print(len(championship_urls))
 
-        match_elements = OneXBetScraper._get_match_elements(championships)
+        match_elements = self._get_match_elements(championships)
         sport_matches = self._get_matches_info(match_elements, championship_urls)
 
         sport = Sport(sport_name, sport_matches)
@@ -74,12 +68,11 @@ class OneXBetScraper(AbstractScraper):
 
         return matches
 
-    @staticmethod
-    def scrape_match_bets(match: Match):
-        page = Page(match.url)
-        OneXBetScraper._open_bets()
+    def scrape_match_bets(self, match: Match):
+        self.renderer.get(match.url)
+        self._open_bets()
 
-        bet_groups = page.driver.find_elements_by_class_name('bet_group')
+        bet_groups = self.renderer.find_elements_by_class_name('bet_group')
         for bet_group in bet_groups:
             bet_title = bet_group.find_element_by_class_name('bet-title').text
             if '\nSlider' in bet_title:
@@ -97,22 +90,21 @@ class OneXBetScraper(AbstractScraper):
         base_len = len(OneXBetScraper._BASE_URL)
         return [ch.get_attribute('href')[base_len:] for ch in championships]
 
-    @staticmethod
-    def _get_championships(sport_name):
-        page = Page(OneXBetScraper._BASE_URL)
+    def _get_championships(self, sport_name):
+        self.renderer.get(OneXBetScraper._BASE_URL)
         try:
-            sport = page.driver.find_element_by_css_selector('a[href^="' + OneXBetScraper._MENU[sport_name] + '"]')
+            sport = self.renderer.find_element_by_css_selector('a[href^="' + OneXBetScraper._MENU[sport_name] + '"]')
         except NoSuchElementException:
             print('Caught NoSuchElementException("a[href^="line/Esports/"]), retrying...')
-            return OneXBetScraper._get_championships(sport_name)
-        page.click(sport)
+            return self._get_championships(sport_name)
+        self.renderer.click(sport)
         time.sleep(2)
 
         try:
-            menu = page.driver.find_element_by_class_name('liga_menu')
+            menu = self.renderer.find_element_by_class_name('liga_menu')
         except NoSuchElementException:
             print('Caught NoSuchElementException("liga-menu"), retrying...')
-            return OneXBetScraper._get_championships(sport_name)
+            return self._get_championships(sport_name)
 
         pattern = OneXBetScraper._SPORT_NAMES[sport_name]
         selector = 'a[href*="' + pattern + '"]'
@@ -122,14 +114,13 @@ class OneXBetScraper(AbstractScraper):
 
         return championships
 
-    @staticmethod
-    def _get_match_elements(championships):
+    def _get_match_elements(self, championships):
         matches = set()
-        menu = Page.driver.find_element_by_class_name('liga_menu')
+        menu = self.renderer.find_element_by_class_name('liga_menu')
         championship_urls = OneXBetScraper.get_championship_urls(championships)
 
         print('Opening championships...')
-        OneXBetScraper._open_championships(championships)
+        self._open_championships(championships)
 
         print('Retrieving matches...')
         event_menus = menu.find_elements_by_class_name('event_menu')
@@ -144,30 +135,30 @@ class OneXBetScraper(AbstractScraper):
 
         return matches
 
-    @staticmethod
-    def _open_championships(championships):
+    def _open_championships(self, championships):
         for championship in championships:
-            Page.click(championship)
+            self.renderer.click(championship)
 
-    @staticmethod
-    def _open_bets():
-        elements = Page.driver.find_elements_by_class_name('bet-title')
+    def _open_bets(self):
+        elements = self.renderer.find_elements_by_class_name('bet-title')
 
         for element in elements:
             if element.get_attribute('class') == 'bet-title bet-title_justify min':
-                Page.click(element)
+                self.renderer.click(element)
 
 
 if __name__ == '__main__':
     t = time.time()
     scraper = OneXBetScraper()
+    print(scraper)
+    print(OneXBetScraper())
 
     sport = scraper.get_matches_info_sport(sport_name)
     # for match in sport:
     #     scraper.scrape_match_bets(match)
     print(sport)
 
-    Page.driver.quit()
+    scraper.renderer.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
     path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
     sport.serialize(path)
