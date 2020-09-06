@@ -77,7 +77,7 @@ class Arbitrager:
         self.all_matches_sport.matches = []
         pprint(match_groups)
 
-        # TODO: print group counts
+        # print group counts
         group_counts = [0 for scraper in registry]
         for group in match_groups.values():
             group_counts[len(group) - 1] += 1
