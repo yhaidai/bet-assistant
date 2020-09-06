@@ -1,7 +1,8 @@
 import os.path
 import time
 
-from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
+from bs4 import BeautifulSoup
+from selenium.common.exceptions import TimeoutException, StaleElementReferenceException, NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -109,8 +110,11 @@ class FavoritScraper(AbstractScraper):
     def get_subsection_tournaments(self, subsection):
         self.renderer.click(subsection)
         time.sleep(2)
-        tournaments = self.renderer.find_element_by_class_name('sport--list').find_elements_by_class_name(
-            'category--block')
+        try:
+            tournaments = self.renderer.find_element_by_class_name('sport--list').find_elements_by_class_name(
+                'category--block')
+        except NoSuchElementException:
+            return self.get_subsection_tournaments(subsection)
         if self._ICONS[sport_name] != 'Cybersports':
             if tournament_names:
                 for t in list(tournaments):
@@ -183,18 +187,14 @@ class FavoritScraper(AbstractScraper):
         return match
 
     def _parse_marketblocks(self, bets, url):
-        try:
-            market_blocks = self.renderer.wait.until(EC.presence_of_all_elements_located
-                                                      ((By.CLASS_NAME, 'markets--block')))
-        except TimeoutException:
-            self._parse_marketblocks(bets, url)
-
+        soup = self.renderer.soup()
+        market_blocks = soup.find_all(class_='markets--block')
         try:
             for mb in market_blocks:
-                block_title_head = mb.find_element_by_class_name('markets--head').get_attribute('innerHTML')
+                block_title_head = mb.find(class_='markets--head').text
 
                 b = True
-                for s in self._SKIP_TITLES:
+                for s in FavoritScraper._SKIP_TITLES:
                     if s in block_title_head:
                         b = False
                         break
@@ -202,26 +202,25 @@ class FavoritScraper(AbstractScraper):
                     # print(block_title_head)
                     continue
                 # print(block_title_head)
-                sub_block_titles = mb.find_elements_by_class_name('result--type--head')
-                sub_blocks = mb.find_elements_by_class_name('outcome--list')
+                sub_block_titles = mb.find_all(class_='result--type--head')
+                sub_blocks = mb.find_all(class_='outcome--list')
                 for sub_block in sub_blocks:
-                    block_title_tail = ' ' + sub_block_titles[sub_blocks.index(sub_block)].find_element_by_tag_name(
-                        'span').get_attribute('innerHTML')
+                    block_title_tail = ' ' + sub_block_titles[sub_blocks.index(sub_block)].find('span').text
                     block_title = block_title_head + block_title_tail
                     block = sub_block
 
-                    if mb.find_elements_by_class_name('mtype--7'):
+                    if mb.find_all(class_='mtype--7'):
                         break
                     else:
-                        labels = block.find_elements_by_tag_name('label')
+                        labels = block.find_all('label')
                         for label in labels:
-                            if label.get_attribute('class') == 'outcome--empty':
+                            if label.get('class') == 'outcome--empty':
                                 continue
-                            bet_type = label.find_element_by_tag_name('span').get_attribute('title')
+                            bet_type = label.find('span').get('title')
                             bet_title = block_title + ' ' + bet_type
-                            button = label.find_element_by_tag_name('button')
+                            button = label.find('button')
                             odds = button.text
-                            bet = Bet(bet_title, odds, self._NAME, url)
+                            bet = Bet(bet_title, odds, FavoritScraper._NAME, url)
                             bets.append(bet)
         except StaleElementReferenceException:
             self._parse_marketblocks(bets, url)
@@ -291,6 +290,7 @@ class FavoritScraper(AbstractScraper):
         return match
 
     def scrape_match_bets(self, match):
+        t = time.time()
         self.renderer.get('https://www.google.com/')
         self.renderer.get(match.url)
 
@@ -310,7 +310,7 @@ class FavoritScraper(AbstractScraper):
 
         time.sleep(0.5)
         self._parse_marketblocks(match.bets, match.url)
-
+        print(self._NAME, time.time() - t)
         return match
 
     def _get_bets_from_live_match_with_basic_data(self, match):

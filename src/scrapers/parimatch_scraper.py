@@ -105,6 +105,7 @@ class ParimatchScraper(AbstractScraper):
         return None
 
     def scrape_match_bets(self, match: Match):
+        t = time.time()
         soup = self._get_soup(match.url)
         bk = self._get_match_bk(soup, match)
 
@@ -128,6 +129,7 @@ class ParimatchScraper(AbstractScraper):
                             subtitle = props_bk.next_element.next_sibling.text + ' '
                     match.bets += ParimatchScraper._update_bets(props_bk, bet_title_tags, match.title, subtitle,
                                                                 match.url)
+        print(self._NAME, time.time() - t)
 
     @staticmethod
     def _update_bets(bk, bet_title_tags, match_title, subtitle, url):

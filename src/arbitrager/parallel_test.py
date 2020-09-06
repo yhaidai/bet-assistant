@@ -11,7 +11,7 @@ from scrapers.parimatch_scraper import ParimatchScraper
 scrapers = [ParimatchScraper(), OneXBetScraper(), GGBetScraper(), FavoritScraper(), MarathonScraper()]
 
 t = time.time()
-with ThreadPoolExecutor(max_workers=8) as executor:
+with ThreadPoolExecutor() as executor:
     futures = [executor.submit(scraper.get_matches_info_sport, sport_name) for scraper in scrapers]
     for future in as_completed(futures):
         print(future.result())

@@ -69,21 +69,24 @@ class OneXBetScraper(AbstractScraper):
         return matches
 
     def scrape_match_bets(self, match: Match):
+        t = time.time()
         self.renderer.get(match.url)
         self._open_bets()
+        soup = self.renderer.soup()
 
-        bet_groups = self.renderer.find_elements_by_class_name('bet_group')
+        bet_groups = soup.find_all(class_='bet_group')
         for bet_group in bet_groups:
-            bet_title = bet_group.find_element_by_class_name('bet-title').text
+            bet_title = bet_group.find(class_='bet-title').text
             if '\nSlider' in bet_title:
                 bet_title = bet_title[:-len('\nSlider')]
 
-            bet_types = [el.text for el in bet_group.find_elements_by_class_name('bet_type')]
-            odds = [el.text for el in bet_group.find_elements_by_class_name('koeff')]
+            bet_types = [el.text for el in bet_group.find_all(class_='bet_type')]
+            odds = [el.text for el in bet_group.find_all(class_='koeff')]
 
             for i in range(len(bet_types)):
                 bet = Bet(bet_title + '. ' + bet_types[i], odds[i], OneXBetScraper._NAME, match.url)
                 match.bets.append(bet)
+        print(self._NAME, time.time() - t)
 
     @staticmethod
     def get_championship_urls(championships):

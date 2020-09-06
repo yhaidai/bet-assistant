@@ -178,12 +178,14 @@ class MarathonScraper(AbstractScraper):
         return match
 
     def _parse_marketblocks(self, bets, url):
-        market_blocks = self.renderer.find_elements_by_class_name('market-inline-block-table-wrapper')
+        soup = self.renderer.soup()
+        market_blocks = soup.find_all(class_='market-inline-block-table-wrapper')
         for mb in market_blocks:
             try:
-                block_title = mb.find_element_by_class_name('name-field').text
-            except Exception:
-                block_title = ''
+                block_title = mb.find(class_='name-field').text
+            except AttributeError:
+                # TODO: check next line istead of continue
+                # block_title = ''
                 continue
 
             b = True
@@ -192,52 +194,52 @@ class MarathonScraper(AbstractScraper):
                     b = False
                     break
             if not b:
-                # print(block_title)
                 continue
 
-            table = mb.find_element_by_class_name('td-border')
-            results_left = mb.find_elements_by_class_name('result-left')
-            another_results_left = table.find_elements_by_class_name('text-align-left')
+            table = mb.find(class_='td-border')
+            results_left = mb.find_all(class_='result-left')
+            another_results_left = table.find_all(class_='text-align-left')
             if results_left:
-                odds = table.find_elements_by_class_name('result-right')
+                odds = table.find_all(class_='result-right')
                 for i in range(len(results_left)):
                     result_left = results_left[i].text
-                    o = odds[i].find_element_by_tag_name('span').text
+                    o = odds[i].find('span').text
                     bet_title = block_title + ' ' + result_left
                     bet = Bet(bet_title, o, MarathonScraper._NAME, url)
                     bets.append(bet)
             elif another_results_left:
-                tags = [el.text for el in table.find_elements_by_tag_name('th')[1:]]
-                rows = table.find_elements_by_tag_name('tr')
+                tags = [el.text for el in table.find_all('th')[1:]]
+                rows = table.find_all('tr')
                 rows = rows[1:]
                 for row in rows:
-                    odds = row.find_elements_by_class_name('selection-link')
+                    odds = row.find_all(class_='selection-link')
                     for i in range(len(odds)):
-                        bet_type = row.find_element_by_class_name('text-align-left').text
+                        bet_type = row.find(class_='text-align-left').text
                         o = odds[i].text
                         bet_title = block_title + ' ' + bet_type + ' ' + tags[i]
                         bet = Bet(bet_title, o, MarathonScraper._NAME, url)
                         if 'Score + Total' not in bet_type:
                             bets.append(bet)
             else:
-                rows = table.find_elements_by_tag_name('tr')
+                rows = table.find_all('tr')
                 for row in rows:
-                    tags_raw = row.find_elements_by_tag_name('th')
+                    tags_raw = row.find_all('th')
                     if tags_raw:
                         for i in range(len(tags_raw)):
-                            try:
-                                tags_raw[i] = tags_raw[i].find_element_by_tag_name('div')
-                            except Exception as e:
+                            tag_raw_div = tags_raw[i].find('div')
+                            if not tag_raw_div:
                                 break
-                        tags = [tag_raw.text for tag_raw in tags_raw]
+                            else:
+                                tags_raw[i] = tag_raw_div
+                        tags = [tag_raw.text for tag_raw in tags_raw if tag_raw]
                     else:
-                        cells = row.find_elements_by_class_name('height-column-with-price')
+                        cells = row.find_all(class_='height-column-with-price')
                         empty_cells = []
                         for cell in cells:
-                            if 'td-min-width' in cell.get_attribute('class'):
+                            if 'td-min-width' in cell.get('class'):
                                 empty_cells.append(cells.index(cell))
-                        bet_types = row.find_elements_by_class_name('coeff-value')
-                        odds = row.find_elements_by_class_name('selection-link')
+                        bet_types = row.find_all(class_='coeff-value')
+                        odds = row.find_all(class_='selection-link')
                         for i in range(len(odds)):
                             if i not in empty_cells:
                                 bet_type = ''
@@ -317,7 +319,7 @@ class MarathonScraper(AbstractScraper):
         return sport
 
     def scrape_match_bets(self, match):
-        time.sleep(0.2)
+        t = time.time()
         self.renderer.get(match.url)
         try:
             teams = match.title.raw_teams
@@ -337,21 +339,15 @@ class MarathonScraper(AbstractScraper):
             MarathonScraper._NAME,
             match.url
             ) for i in range(len(teams))]
-
         try:
             element = self.renderer.wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'details-description')))
             all_markets_button = element.find_element_by_tag_name('td')
             self.renderer.click(all_markets_button)
         except Exception:
+            print(self._NAME, time.time() - t)
             return match
-
-        time.sleep(0.5)
-
-        try:
-            self._parse_marketblocks(match.bets, match.url)
-        except Exception as e:
-            print('exception raised during parsing market blocks', e)
-            return match
+        self._parse_marketblocks(match.bets, match.url)
+        print(self._NAME, time.time() - t)
         return match
 
     def _get_bets_from_live_match_with_basic_data(self, match):
@@ -406,7 +402,7 @@ if __name__ == '__main__':
     t = time.time()
     scraper = MarathonScraper()
     sport = scraper.get_matches_info_sport(sport_name)
-    # for match in sport:
+    # for match in sport[:2]:
     #     scraper.scrape_match_bets(match)
     print(sport)
     scraper.renderer.quit()

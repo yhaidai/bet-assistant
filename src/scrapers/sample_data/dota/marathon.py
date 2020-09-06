@@ -1,8 +1,5 @@
-sport = {'dota': {'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/ESL+One/Thailand/Main+Event/Best+of+3+maps/BOOM+Esports+vs+Team+Adroit+-+10014584 2020-08-24 09:00:00: boom esports - team adroit': [{}],
-          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/ESL+One/Thailand/Main+Event/Best+of+3+maps/Geek+Fam+vs+Aster.Aries+-+10014587 2020-08-25 12:00:00: geek fam - aster.aries': [{}],
-          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/ESL+One/Thailand/Main+Event/Best+of+3+maps/Sparking+Arrow+Gaming+vs+Neon+-+10014585 2020-08-24 12:00:00: sparking arrow gaming - neon': [{}],
-          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/ESL+One/Thailand/Main+Event/Best+of+3+maps/T1+vs+Questionmark+by+Hashtag+-+10014586 2020-08-25 09:00:00: t1 - questionmark by hashtag': [{}],
-          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/OMEGA+League+Ancient+Division/Main+Event/Best+of+3+maps/Gorillaz-Pride+vs+Incubus+Club+-+10025397 2020-08-24 00:00:00: gorillaz-pride - incubus club': [{}],
-          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/OMEGA+League+Ancient+Division/Main+Event/Best+of+3+maps/xixihaha+vs+WangDaRen+-+10025398 2020-08-24 03:00:00: xixihaha - wangdaren': [{}],
-          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/OMEGA+League+Divine+Division/Main+Event/Best+of+3+maps/Infamous+vs+Thunder+Predator+-+10024827 2020-08-24 00:00:00: infamous - thunder predator': [{}],
-          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/OMEGA+League+Divine+Division/Main+Event/Best+of+3+maps/beastcoast+vs+Omega+Gaming+-+10024828 2020-08-24 03:00:00: beastcoast - omega gaming': [{}]}}
+sport = {'dota': {'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/BTS+Pro+Series/Main+Event/Best+of+2+maps/4+Zoomers+vs+beastcoast+-+10099379 2020-09-08 03:00:00: 4 zoomers - beastcoast': [{}],
+          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/BTS+Pro+Series/Main+Event/Best+of+2+maps/CR4ZY+vs+business+associates+-+10099375 2020-09-07 23:00:00: cr4zy - business associates': [{}],
+          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/BTS+Pro+Series/Main+Event/Best+of+2+maps/Havan+Liberty+vs+Team+Brasil+-+10099378 2020-09-08 01:00:00: havan liberty - team brasil': [{}],
+          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/BTS+Pro+Series/Main+Event/Best+of+2+maps/Thunder+Predator+vs+Infamous+-+10099380 2020-09-08 05:00:00: thunder predator - infamous': [{}],
+          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/Law+Of+Inertia+League/Main+Event/Best+of+3+maps/Neon+vs+Execration+-+10084670 2020-09-07 09:00:00: neon - execration': [{}]}}

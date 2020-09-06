@@ -77,69 +77,77 @@ class Arbitrager:
         self.all_matches_sport.matches = []
         pprint(match_groups)
 
+        # TODO: print group counts
+        group_counts = [0 for scraper in registry]
+        for group in match_groups.values():
+            group_counts[len(group) - 1] += 1
+        for group_count in group_counts:
+            print(group_count, 'groups of length', group_counts.index(group_count) + 1)
+        multiple_matches_groups_count = sum(group_counts[1:])
+        print('2+ length groups count:', multiple_matches_groups_count)
+
         group_id = 0
-        group_count = len(match_groups)
-        for title, group in match_groups.items():
+        for title, group in list(match_groups.items()):
             group_id += 1
             if len(group) < 2 or group[0].date_time <= datetime.now():
                 continue
-            print('Group', group_id, 'of', group_count, ':')
+            print('Group', group_id, 'of', multiple_matches_groups_count, ':')
             all_bets = []
 
-            # with ThreadPoolExecutor() as executor:
-            #     futures = []
-            #     for match in group:
-            #         print(match.url)
-            #         try:
-            #             # TODO: move multiple occurrences fix to grouper
-            #             if not match.bets:
-            #                 future = executor.submit(match.scraper.scrape_match_bets, match)
-            #                 futures.append(future)
-            #             else:
-            #                 print('Match has occurred in multiple groups')
-            #                 continue
-            #         except RendererTimeoutException:
-            #             print('Caught RendererTimeoutException')
-            #             continue
-            #
-            #     wait(futures, return_when=ALL_COMPLETED)
-            #
-            #     for match in group:
-            #         formatter = registry[match.scraper][self.all_matches_sport.name]
-            #         formatter.format_match(match)
-            #         all_bets += match.bets
-            #
-            #     all_bets_match = Match(title, None, group[0].date_time, None, all_bets)
-            #     Arbitrager.remove_anything_but_best_odds_bets(all_bets_match)
-            #     self.remove_anything_but_arbitrage_bets(all_bets_match)
-            #     if all_bets_match.bets:
-            #         self.all_matches_sport.matches.append(all_bets_match)
-            #         print(all_bets_match)
-            #     print()
-
-            for match in group:
-                print(match.url)
-                try:
-                    # TODO: move multiple occurrences fix to grouper
-                    if not match.bets:
-                        match.scraper.scrape_match_bets(match)
-                    else:
-                        print('Match has occurred in multiple groups')
+            with ThreadPoolExecutor() as executor:
+                futures = []
+                for match in group:
+                    print(match.url)
+                    try:
+                        # TODO: move multiple occurrences fix to grouper
+                        if not match.bets:
+                            future = executor.submit(match.scraper.scrape_match_bets, match)
+                            futures.append(future)
+                        else:
+                            print('Match has occurred in multiple groups')
+                            continue
+                    except RendererTimeoutException:
+                        print('Caught RendererTimeoutException')
                         continue
-                except RendererTimeoutException:
-                    print('Caught RendererTimeoutException')
-                    continue
-                formatter = registry[match.scraper][self.all_matches_sport.name]
-                formatter.format_match(match)
-                all_bets += match.bets
 
-            all_bets_match = Match(title, None, group[0].date_time, None, all_bets)
-            Arbitrager.remove_anything_but_best_odds_bets(all_bets_match)
-            self.remove_anything_but_arbitrage_bets(all_bets_match)
-            if all_bets_match.bets:
-                self.all_matches_sport.matches.append(all_bets_match)
-                print(all_bets_match)
-            print()
+                wait(futures, return_when=ALL_COMPLETED)
+
+                for match in group:
+                    formatter = registry[match.scraper][self.all_matches_sport.name]
+                    formatter.format_match(match)
+                    all_bets += match.bets
+
+                all_bets_match = Match(title, None, group[0].date_time, None, all_bets)
+                Arbitrager.remove_anything_but_best_odds_bets(all_bets_match)
+                self.remove_anything_but_arbitrage_bets(all_bets_match)
+                if all_bets_match.bets:
+                    self.all_matches_sport.matches.append(all_bets_match)
+                    print(all_bets_match)
+                print()
+
+            # for match in group:
+            #     print(match.url)
+            #     try:
+            #         # TODO: move multiple occurrences fix to grouper
+            #         if not match.bets:
+            #             match.scraper.scrape_match_bets(match)
+            #         else:
+            #             print('Match has occurred in multiple groups')
+            #             continue
+            #     except RendererTimeoutException:
+            #         print('Caught RendererTimeoutException')
+            #         continue
+            #     formatter = registry[match.scraper][self.all_matches_sport.name]
+            #     formatter.format_match(match)
+            #     all_bets += match.bets
+            #
+            # all_bets_match = Match(title, None, group[0].date_time, None, all_bets)
+            # Arbitrager.remove_anything_but_best_odds_bets(all_bets_match)
+            # self.remove_anything_but_arbitrage_bets(all_bets_match)
+            # if all_bets_match.bets:
+            #     self.all_matches_sport.matches.append(all_bets_match)
+            #     print(all_bets_match)
+            # print()
 
     @staticmethod
     def remove_anything_but_best_odds_bets(match) -> None:
