@@ -3,8 +3,7 @@ import re
 
 from sport import Sport
 from syntax_formatters.esports.csgo.csgo_abstract_syntax_formatter import CSGOAbstractSyntaxFormatter
-from esports.esports_one_x_bet_syntax_formatter import EsportsOneXBetSyntaxFormatter as OSF
-from match_title_compiler import MatchTitleCompiler
+from syntax_formatters.esports.esports_one_x_bet_syntax_formatter import EsportsOneXBetSyntaxFormatter as OSF
 from sample_data.csgo import one_x_bet
 
 

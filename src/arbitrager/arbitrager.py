@@ -13,6 +13,7 @@ from football_fork_grouper import FootballForkGrouper
 from lol_fork_grouper import LoLForkGrouper
 from match import Match
 from registry import registry
+from singleton import SportNameBasedSingleton
 from sport import Sport
 
 # doing explicit import in order to able to unpickle scraped data
@@ -23,7 +24,7 @@ from scrapers.one_x_bet_scraper import OneXBetScraper
 from scrapers.parimatch_scraper import ParimatchScraper
 
 
-class Arbitrager:
+class Arbitrager(metaclass=SportNameBasedSingleton):
     """
     Class for collecting betting info and analyzing it
     """
@@ -42,6 +43,7 @@ class Arbitrager:
         :param sport_name: sport name e.g. 'csgo', 'dota'
         :type sport_name: str
         """
+        self.sport_name = sport_name
         self.sports = []
         self._fork_grouper = self._GROUPERS[sport_name]
         self.all_matches_sport = None
@@ -50,10 +52,10 @@ class Arbitrager:
     def update(self):
         # t = time.time()
 
-        # with ThreadPoolExecutor() as executor:
-        #     futures = [executor.submit(scraper.get_matches_info_sport, sport_name) for scraper in registry]
-        #     for future in as_completed(futures):
-        #         self.sports.append(future.result())
+        with ThreadPoolExecutor() as executor:
+            futures = [executor.submit(scraper.get_matches_info_sport, self.sport_name) for scraper in registry]
+            for future in as_completed(futures):
+                self.sports.append(future.result())
 
         # for scraper, formatter in registry.items():
         #     sport = scraper.get_matches_info_sport(sport_name)
@@ -61,18 +63,17 @@ class Arbitrager:
 
         # print('Retrieved matches info in:', time.time() - t)
 
-        self.sports = Arbitrager._get_sports_from_sample_data()
+        # self.sports = self._get_sports_from_sample_data()
 
         self.all_matches_sport = self.get_all_bets_sport()
         print(self.all_matches_sport)
-        path = f'{os.path.abspath(os.path.dirname(__file__))}\\sample_data\\{SPORT_NAME}'
+        path = f'{os.path.abspath(os.path.dirname(__file__))}\\sample_data\\{self.sport_name}'
         self.all_matches_sport.write_xlsx(f'{path}.xlsx')
 
-    @staticmethod
-    def _get_sports_from_sample_data():
+    def _get_sports_from_sample_data(self):
         sports = []
         path = os.path.abspath(os.path.dirname(__file__)).replace('arbitrager',
-                                                                  'scrapers\\sample_data\\{}\\'.format(SPORT_NAME))
+                                                                  'scrapers\\sample_data\\{}\\'.format(self.sport_name))
         for scraper in registry:
             sports.append(Sport.deserialize(path + scraper.get_name()))
 

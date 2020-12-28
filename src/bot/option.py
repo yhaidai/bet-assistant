@@ -1,4 +1,4 @@
-from util import get_arbitrage_bets_xlsx_filename
+from util import get_arbitrage_bets_xlsx_filename_by_full_sport_name
 
 
 class Option:
@@ -11,7 +11,7 @@ class Option:
         self.children = []
         self.filename = None
         if attach_arbitrage_bets:
-            self.filename = get_arbitrage_bets_xlsx_filename(text)
+            self.filename = get_arbitrage_bets_xlsx_filename_by_full_sport_name(text)
         self.action = action
         self.action_args = args
         self.id = Option.id

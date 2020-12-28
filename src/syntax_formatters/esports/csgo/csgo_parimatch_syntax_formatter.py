@@ -3,7 +3,7 @@ import re
 
 from sport import Sport
 from syntax_formatters.esports.csgo.csgo_abstract_syntax_formatter import CSGOAbstractSyntaxFormatter
-from esports.esports_parimatch_syntax_formatter import EsportsParimatchSyntaxFormatter as PSF
+from syntax_formatters.esports.esports_parimatch_syntax_formatter import EsportsParimatchSyntaxFormatter as PSF
 from sample_data.csgo import parimatch
 
 

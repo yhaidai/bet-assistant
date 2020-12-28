@@ -5,11 +5,11 @@ from pprint import pprint
 from bet_group import BetGroup
 from match import Match
 from match_comparator import MatchComparator
-from match_title import MatchTitle
+from singleton import ABCMetaSingleton
 from sport import Sport
 
 
-class ForkGrouper(ABC):
+class ForkGrouper(ABC, metaclass=ABCMetaSingleton):
     _grouped_by = {
         r'^(correct score) \d+-\d+$': (1,),
         }

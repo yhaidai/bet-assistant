@@ -3,7 +3,7 @@ from pprint import pprint, pformat
 import os.path
 
 from sport import Sport
-from football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
+from syntax_formatters.football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
 from syntax_formatters.one_x_bet_syntax_formatter import OneXBetSyntaxFormatter as OSF
 from sample_data.football import one_x_bet
 

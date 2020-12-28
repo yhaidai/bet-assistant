@@ -26,7 +26,7 @@ class UserHistory:
 
     cursor.execute(f'SELECT * FROM {__TABLE_NAME}')
     users = [User(id, eval(sub), last_menu_option_id) for id, sub, last_menu_option_id in cursor.fetchall()]
-    print(users)
+    print('Saved users:', users)
 
     @staticmethod
     def get_user(user_id):
@@ -55,3 +55,7 @@ class UserHistory:
                 (str(user.subscriptions), user.menu.current_option.id, user.id)
             )
             UserHistory.connection.commit()
+
+    @staticmethod
+    def get_subscribers():
+        return filter(lambda user: bool(user.subscriptions), UserHistory.users)

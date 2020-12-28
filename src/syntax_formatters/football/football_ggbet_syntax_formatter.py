@@ -1,7 +1,7 @@
 import re
 
 from sport import Sport
-from football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
+from syntax_formatters.football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
 from syntax_formatters.ggbet_syntax_formatter import GGBetSyntaxFormatter as GSF
 from sample_data.football import ggbet
 import os.path
