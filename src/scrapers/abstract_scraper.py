@@ -35,3 +35,7 @@ class AbstractScraper(ABC):
     @abstractmethod
     def get_matches_info_sport(self, sport_name):
         pass
+
+    @abstractmethod
+    def scrape_match_bets(self, match):
+        pass

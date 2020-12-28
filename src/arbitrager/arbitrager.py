@@ -1,11 +1,11 @@
 import os
 import time
-from concurrent.futures import ThreadPoolExecutor, wait, ALL_COMPLETED
+from concurrent.futures import ThreadPoolExecutor, wait, ALL_COMPLETED, as_completed
 from datetime import datetime
 from pprint import pprint
 
 from bet_group import BetGroup
-from constants import sport_name
+from constants import SPORT_NAME
 from csgo_fork_grouper import CSGOForkGrouper
 from dota_fork_grouper import DotaForkGrouper
 from exceptions import RendererTimeoutException
@@ -44,20 +44,35 @@ class Arbitrager:
         """
         self.sports = []
         self._fork_grouper = self._GROUPERS[sport_name]
+        self.all_matches_sport = None
+        self.update()
+
+    def update(self):
+        # t = time.time()
+
+        # with ThreadPoolExecutor() as executor:
+        #     futures = [executor.submit(scraper.get_matches_info_sport, sport_name) for scraper in registry]
+        #     for future in as_completed(futures):
+        #         self.sports.append(future.result())
+
         # for scraper, formatter in registry.items():
         #     sport = scraper.get_matches_info_sport(sport_name)
         #     self.sports.append(sport)
+
+        # print('Retrieved matches info in:', time.time() - t)
 
         self.sports = Arbitrager._get_sports_from_sample_data()
 
         self.all_matches_sport = self.get_all_bets_sport()
         print(self.all_matches_sport)
+        path = f'{os.path.abspath(os.path.dirname(__file__))}\\sample_data\\{SPORT_NAME}'
+        self.all_matches_sport.write_xlsx(f'{path}.xlsx')
 
     @staticmethod
     def _get_sports_from_sample_data():
         sports = []
         path = os.path.abspath(os.path.dirname(__file__)).replace('arbitrager',
-                                                                  'scrapers\\sample_data\\{}\\'.format(sport_name))
+                                                                  'scrapers\\sample_data\\{}\\'.format(SPORT_NAME))
         for scraper in registry:
             sports.append(Sport.deserialize(path + scraper.get_name()))
 
@@ -88,9 +103,11 @@ class Arbitrager:
 
         group_id = 0
         for title, group in list(match_groups.items()):
-            group_id += 1
+            if group_id == 100:
+                break
             if len(group) < 2 or group[0].date_time <= datetime.now():
                 continue
+            group_id += 1
             print('Group', group_id, 'of', multiple_matches_groups_count, ':')
             all_bets = []
 
@@ -173,16 +190,13 @@ class Arbitrager:
                 match.bets.remove(bet_group)
                 continue
 
-            # add fork bet
+            # add arbitrage bet
             if not 0 < profit < Arbitrager._PROFIT_THRESHOLD:
                 match.bets.remove(bet_group)
             else:
-                highlighter = '*'
-                bet_group.title += '(' + highlighter + 'Profit - ' + str('{:.2f}'.format(profit * 100)) + '%' + \
-                                   highlighter + ')'
-                bet_amounts = Arbitrager._get_arbitrage_bet_amounts(odds)
+                bet_group.profit = str('{:.2f}'.format(profit * 100)) + '%'
                 for bet in bet_group:
-                    bet.odds += bet_amounts[bet.odds]
+                    bet.amount = Arbitrager._get_arbitrage_bet_amount(odds, bet.odds)
 
     @staticmethod
     def _get_arbitrage_profit(odds):
@@ -199,18 +213,20 @@ class Arbitrager:
         return 1 / reciprocals_sum - 1
 
     @staticmethod
-    def _get_arbitrage_bet_amounts(odds):
+    def _get_arbitrage_bet_amount(odds, bet_odds):
         reciprocals = [1 / float(o) for o in odds]
         reciprocals_sum = sum(reciprocals)
-        bet_amounts = {o: '. Bet amount: ' + str('{:.4f}'.format(1 / float(o) / reciprocals_sum)) for o in odds}
-        return bet_amounts
+        return str('{:.4f}'.format(1 / float(bet_odds) / reciprocals_sum))
 
 
 if __name__ == '__main__':
     try:
         t = time.time()
-        analyzer = Arbitrager(sport_name)
+        arbitrager = Arbitrager(SPORT_NAME)
         print('Elapsed:', time.time() - t)
+        # path = f'{os.path.abspath(os.path.dirname(__file__))}\\sample_data\\{sport_name}'
+        # arbitrager.all_matches_sport.serialize(path)
+        # arbitrager.all_matches_sport.write_xlsx(f'{path}.xlsx')
     finally:
         for scraper in registry:
             scraper.renderer.quit()

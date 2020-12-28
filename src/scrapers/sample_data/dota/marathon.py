@@ -1,5 +1,5 @@
-sport = {'dota': {'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/BTS+Pro+Series/Main+Event/Best+of+2+maps/4+Zoomers+vs+beastcoast+-+10099379 2020-09-08 03:00:00: 4 zoomers - beastcoast': [{}],
-          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/BTS+Pro+Series/Main+Event/Best+of+2+maps/CR4ZY+vs+business+associates+-+10099375 2020-09-07 23:00:00: cr4zy - business associates': [{}],
-          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/BTS+Pro+Series/Main+Event/Best+of+2+maps/Havan+Liberty+vs+Team+Brasil+-+10099378 2020-09-08 01:00:00: havan liberty - team brasil': [{}],
-          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/BTS+Pro+Series/Main+Event/Best+of+2+maps/Thunder+Predator+vs+Infamous+-+10099380 2020-09-08 05:00:00: thunder predator - infamous': [{}],
-          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/Law+Of+Inertia+League/Main+Event/Best+of+3+maps/Neon+vs+Execration+-+10084670 2020-09-07 09:00:00: neon - execration': [{}]}}
+sport = {'dota': {'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/Challenge+Cup/Main+Event/Best+of+3+maps/Calamity+King+vs+Phoenix+Gaming+-+10766218 2020-12-29 11:15:00: calamity king - phoenix gaming': [{}],
+          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/Challenge+Cup/Main+Event/Best+of+3+maps/Calamity+King+vs+Team+Sirius+-+10766219 2020-12-29 08:15:00: calamity king - team sirius': [{}],
+          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/Challenge+Cup/Main+Event/Best+of+3+maps/Forest+vs+Access+-+10766217 2020-12-28 05:15:00: forest - access': [{}],
+          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/Challenge+Cup/Main+Event/Best+of+3+maps/Forest+vs+Phoenix+Gaming+-+10760060 2020-12-29 05:15:00: forest - phoenix gaming': [{}],
+          'https://www.marathonbet.com/en/betting/e-Sports/Dota+2/Challenge+Cup/Main+Event/Best+of+3+maps/Void+vs+iG+Vitality+-+10766220 2020-12-28 08:15:00: void - ig vitality': [{}]}}

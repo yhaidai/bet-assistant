@@ -1,1 +1,5 @@
 TOKEN = '1154712007:AAHVKhq4d9EBnLn3xipSyzn8Bgds3v77uEI'
+DB_HOST = 'localhost'
+DB_USER = 'root'
+DB_PASSWORD = '123321'
+DB_NAME = 'bet_assistant'

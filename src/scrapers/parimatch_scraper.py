@@ -7,7 +7,7 @@ import time
 from bs4 import BeautifulSoup
 
 from bet import Bet
-from constants import sport_name
+from constants import SPORT_NAME
 from date_time import DateTime
 from match import Match
 from match_title import MatchTitle
@@ -149,10 +149,7 @@ class ParimatchScraper(AbstractScraper):
         """
         bet_titles = []
         bets = []
-        try:
-            teams = match_title.raw_teams
-        except AttributeError:
-            teams = match_title.teams
+        teams = match_title.get_teams()
 
         for bet_title_tag in bet_title_tags:
             # find corresponding column with bet type
@@ -296,9 +293,9 @@ class ParimatchScraper(AbstractScraper):
         self.renderer.get(url)
         soup = BeautifulSoup(self.renderer.page_source, 'html.parser')
 
-        while not ParimatchScraper._check_soup(soup) or re.match(r'https://www\.pm-\d+\.info/',
+        while not ParimatchScraper._check_soup(soup) or re.match(r'https://www\.pari-match\.com/',
                                                                  self.renderer.current_url):
-            if re.match(r'https://www\.pm-\d+\.info/', self.renderer.current_url):
+            if re.match(r'https://www\.pari-match\.com/', self.renderer.current_url):
                 time.sleep(30)
                 print('page.driver.current_url ==', self.renderer.current_url)
             self.renderer.get(url)
@@ -326,7 +323,7 @@ if __name__ == '__main__':
     t = time.time()
     scraper = ParimatchScraper()
 
-    sport = scraper.get_matches_info_sport(sport_name)
+    sport = scraper.get_matches_info_sport(SPORT_NAME)
     # for match in sport:
     #     print(match.url)
     #     scraper.scrape_match_bets(match)
@@ -334,7 +331,7 @@ if __name__ == '__main__':
 
     scraper.renderer.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
+    path = my_path + '\\sample_data\\' + SPORT_NAME + '\\' + scraper.get_name()
     print(path)
     sport.serialize(path)
     with open(path + '.py', 'w', encoding='utf-8') as f:

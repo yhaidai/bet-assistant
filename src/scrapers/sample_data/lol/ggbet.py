@@ -1,12 +1,1 @@
-sport = {'lol': {'https://gg.bet/en/betting/match/5-ronin-vs-papara-supermassive-05-09 2020-09-05 14:00:00: 5 ronin - papara supermassive': [{}],
-         'https://gg.bet/en/betting/match/afreeca-freecs-vs-kt-rolster-07-09 2020-09-07 11:00:00: afreeca freecs - kt rolster': [{}],
-         'https://gg.bet/en/betting/match/damwon-gaming-vs-dragonx-05-09 2020-09-05 11:00:00: damwon gaming - dragonx': [{}],
-         'https://gg.bet/en/betting/match/g2-vs-rogue-05-09 2020-09-05 18:00:00: g2 - rogue': [{}],
-         'https://gg.bet/en/betting/match/gam-esports-vs-evos-esports-03-09 2020-09-03 13:00:00: gam esports - evos esports': [{}],
-         'https://gg.bet/en/betting/match/gameward-vs-gamersorigin-02-09 2020-09-02 23:00:00: gameward - gamersorigin': [{}],
-         'https://gg.bet/en/betting/match/ldlc-ol-vs-izi-dream-02-09 2020-09-02 20:00:00: ldlc ol - izi dream': [{}],
-         'https://gg.bet/en/betting/match/misfits-premier-vs-team-mces-02-09 2020-09-02 21:00:00: misfits premier - team mces': [{}],
-         'https://gg.bet/en/betting/match/pain-gaming-vs-intz-05-09 2020-09-05 19:00:00: pain gaming - intz': [{}],
-         'https://gg.bet/en/betting/match/sengoku-gaming-vs-detonation-focusme-05-09 2020-09-05 11:00:00: sengoku gaming - detonation focusme': [{}],
-         'https://gg.bet/en/betting/match/team-liquid-vs-team-solomid-05-09 2020-09-05 23:00:00: team liquid - team solomid': [{}],
-         'https://gg.bet/en/betting/match/vitality-bee-vs-solary-02-09 2020-09-02 22:00:00: vitality.bee - solary': [{}]}}
+sport = {'lol': {'https://gg.bet/en/esports/match/damwon-gaming-vs-nongshim-red-force-02-01 2021-01-02 10:00:00: damwon gaming - nongshim red force': [{}]}}

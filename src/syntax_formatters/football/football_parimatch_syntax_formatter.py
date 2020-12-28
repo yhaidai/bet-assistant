@@ -61,26 +61,23 @@ class FootballParimatchSyntaxFormatter(FootballAbstractSyntaxFormatter, PSF):
 
     def _format_win(self):
         formatted_title = self.bet_title.lower()
-        try:
-            team_names = self.match_title.raw_teams
-        except AttributeError:
-            team_names = self.match_title.teams
+        teams = self.match_title.get_teams()
 
         if 'win of' in formatted_title:
             if formatted_title.find('1st') != -1:
                 team_number = '1st'
-                team_name = team_names[0]
+                team_name = teams[0]
             elif formatted_title.find('2nd') != -1:
                 team_number = '2nd'
-                team_name = team_names[1]
+                team_name = teams[1]
             else:
                 raise NotImplementedError('Not "1st" nor "2nd" was found')
             to_be_replaced = 'win of the ' + team_number
             formatted_title = formatted_title.replace(to_be_replaced, team_name + ' will win', 1)
         elif 'home win' in formatted_title:
-            formatted_title = formatted_title.replace('home', team_names[0] + ' will')
+            formatted_title = formatted_title.replace('home', teams[0] + ' will')
         elif 'away win' in formatted_title:
-            formatted_title = formatted_title.replace('away', team_names[1] + ' will')
+            formatted_title = formatted_title.replace('away', teams[1] + ' will')
         elif 'draw' in formatted_title:
             formatted_title += ' will win'
         if 'win or draw' in formatted_title:

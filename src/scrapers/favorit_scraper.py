@@ -13,7 +13,7 @@ from match import Match
 from match_title import MatchTitle
 from sport import Sport
 from abstract_scraper import AbstractScraper
-from constants import sport_name
+from constants import SPORT_NAME
 
 tournament_names = None
 country_names = None
@@ -21,8 +21,8 @@ country_names = None
 
 class FavoritScraper(AbstractScraper):
     _NAME = 'favorit'
-    _BASE_URL = 'https://www.favorit.com.ua/en/bets/#'
-    _LIVE_URL = 'https://www.favorit.com.ua/en/live/'
+    _BASE_URL = 'https://old.favorit.com.ua/en/bets/#'
+    _LIVE_URL = 'https://old.favorit.com.ua/en/live/'
     _ICONS = {
         'football': 'Soccer',
         'csgo': 'Cybersports',
@@ -115,7 +115,7 @@ class FavoritScraper(AbstractScraper):
                 'category--block')
         except NoSuchElementException:
             return self.get_subsection_tournaments(subsection)
-        if self._ICONS[sport_name] != 'Cybersports':
+        if self._ICONS[SPORT_NAME] != 'Cybersports':
             if tournament_names:
                 for t in list(tournaments):
                     for name in tournament_names:
@@ -129,7 +129,9 @@ class FavoritScraper(AbstractScraper):
         """
         self.renderer.get('https://www.google.com/')
         self.renderer.get(self._BASE_URL)
-        sports_list = self.renderer.find_elements_by_class_name('sprt')
+        time.sleep(0.25)
+
+        sports_list = self.renderer.wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'sprt')))
         icon = sports_list[0].find_element_by_class_name('sport--name--head')
 
         for sport in sports_list:
@@ -329,7 +331,7 @@ class FavoritScraper(AbstractScraper):
         for subsection in subsections:
             tournaments = self.get_subsection_tournaments(subsection)
             time.sleep(1)
-            print(' ', subsections.index(subsection) + 1)
+            print('favorit subsection:', subsections.index(subsection) + 1)
             for tournament in tournaments:
                 events = tournament.find_elements_by_class_name('event--head-block')
                 for event in events:
@@ -409,13 +411,13 @@ class FavoritScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = FavoritScraper()
-    sport = scraper.get_matches_info_sport(sport_name)
+    sport = scraper.get_matches_info_sport(SPORT_NAME)
     # for match in sport:
     #     scraper.scrape_match_bets(match)
     print(sport)
     scraper.renderer.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
+    path = my_path + '\\sample_data\\' + SPORT_NAME + '\\' + scraper.get_name()
     sport.serialize(path)
     with open(path + '.py', 'w', encoding='utf-8') as f:
         print('sport =', sport, file=f)

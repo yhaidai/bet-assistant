@@ -37,16 +37,25 @@ class FootballGGBetSyntaxFormatter(FootballAbstractSyntaxFormatter, GSF):
         return formatted_title
 
     def _format_double_chance(self):
-        formatted_title = self.bet_title.lower()
-        if 'double chance' in formatted_title:
-            teams = self.match_title.raw_teams
-            if teams[0] in formatted_title:
-                if teams[1] in formatted_title:
-                    formatted_title = 'draw will lose'
-                else:
-                    formatted_title = teams[1] + ' will lose'
+        title = self.bet_title.lower()
+        formatted_title = title
+        if 'double chance' in title:
+            teams = self.match_title.get_teams()
+
+            found = re.search(r'(half \d )', title)
+            if found:
+                formatted_title = found.group(1)
             else:
-                formatted_title = teams[0] + ' will lose'
+                formatted_title = ''
+
+            if teams[0] in title:
+                if teams[1] in title:
+                    formatted_title += 'draw will lose'
+                else:
+                    formatted_title += teams[1] + ' will lose'
+            else:
+                formatted_title += teams[0] + ' will lose'
+
         return formatted_title
 
     def _remove_full_time(self):

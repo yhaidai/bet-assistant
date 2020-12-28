@@ -1,2 +1,0 @@
-{'csgo': {'make your destiny - ubiteam': {'win(*Profit - 0.98%*)': [{'make your destiny will win': [{'make your destiny will win': '2.05. Bet amount: 0.4926(1xbet - https://1x-bet.com/en/line/Esports/2111797-CSGO-ESL-Championnat-National-Summer-2020-Division-2/79829321-Make-Your-Destiny-Ubiteam/)'}],
-                                                                     'ubiteam will win': [{'ubiteam will win': '1.99. Bet amount: 0.5074(parimatch - https://www.parimatch.com/en/sport/kibersport/counter-strike-esl-championnat-national)'}]}]}}}

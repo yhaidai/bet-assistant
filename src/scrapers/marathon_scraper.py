@@ -9,7 +9,7 @@ from match_title import MatchTitle
 from sport import Sport
 from abstract_scraper import AbstractScraper
 import time
-from constants import sport_name
+from constants import SPORT_NAME
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
@@ -401,13 +401,13 @@ class MarathonScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = MarathonScraper()
-    sport = scraper.get_matches_info_sport(sport_name)
+    sport = scraper.get_matches_info_sport(SPORT_NAME)
     # for match in sport[:2]:
     #     scraper.scrape_match_bets(match)
     print(sport)
     scraper.renderer.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
+    path = my_path + '\\sample_data\\' + SPORT_NAME + '\\' + scraper.get_name()
     sport.serialize(path)
     with open(path + '.py', 'w', encoding='utf-8') as f:
         print('sport =', sport, file=f)

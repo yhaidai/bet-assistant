@@ -1,8 +1,10 @@
+import xlsxwriter
 import pickle
 from pprint import pformat
 
+from bet_group import BetGroup
+from constants import SPORT_NAME
 from match import Match
-from scrapers.sample_data.dota import one_x_bet
 
 
 class Sport:
@@ -55,11 +57,41 @@ class Sport:
     def deserialize(cls, filename):
         return pickle.load(open(filename, 'rb'))
 
+    def write_xlsx(self, filename):
+        workbook = xlsxwriter.Workbook(filename)
+        worksheet = workbook.add_worksheet()
+        row = 0
+        column = 0
+
+        column_names = ['Match', 'Time', 'Profit', 'Bet', 'Odds', 'Bet amount', 'Bookmaker', 'URL']
+        for column_name in column_names:
+            worksheet.write(row, column, column_name)
+            column += 1
+        row += 1
+
+        for match in self:
+            match_title = match.title
+            match_date_time = match.date_time
+            for bet_group in match:
+                profit = bet_group.profit
+                if isinstance(bet_group, BetGroup):
+                    for bet in bet_group:
+                        values = [str(match_title), str(match_date_time), str(profit), bet.title, bet.odds,
+                                  str(bet.amount), bet.bookmaker, bet.url]
+                        column = 0
+                        for value in values:
+                            worksheet.write(row, column, value)
+                            column += 1
+
+                        row += 1
+                        match_title = ''
+                        match_date_time = ''
+                        profit = ''
+
+        workbook.close()
+
 
 if __name__ == '__main__':
-    sport = Sport.from_dict(one_x_bet.sport)
+    sport = Sport.deserialize(f'arbitrager\\sample_data\\{SPORT_NAME}')
     print(sport)
-    filename = 'one_x_bet'
-    sport.serialize(filename)
-    sport2 = sport.deserialize(filename)
-    print(sport == sport2)
+    sport.write_xlsx(f'{SPORT_NAME}.xlsx')

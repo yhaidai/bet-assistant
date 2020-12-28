@@ -1,12 +1,1 @@
-sport = {'lol': {'https://www.favorit.com.ua/en/bets/#event=27939884&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-05 11:00:00: detonation focusme - sengoku gaming': [{}],
-         'https://www.favorit.com.ua/en/bets/#event=27939888&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-05 14:00:00: supermassive - 5 ronin': [{}],
-         'https://www.favorit.com.ua/en/bets/#event=27958466&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-05 19:00:00: pain gaming - intz': [{}],
-         'https://www.favorit.com.ua/en/bets/#event=28042530&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-07 11:00:00: afreeca freecs - kt rolster': [{}],
-         'https://www.favorit.com.ua/en/bets/#event=28042586&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-02 20:00:00: ldlc ol - izi dream': [{}],
-         'https://www.favorit.com.ua/en/bets/#event=28042589&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-02 21:00:00: misfits premier - team mces': [{}],
-         'https://www.favorit.com.ua/en/bets/#event=28042590&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-02 22:00:00: vitality.bee - solary': [{}],
-         'https://www.favorit.com.ua/en/bets/#event=28042601&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-02 23:00:00: gamersorigin - gameward': [{}],
-         'https://www.favorit.com.ua/en/bets/#event=28087546&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-05 17:00:00: g2 esports - rogue': [{}],
-         'https://www.favorit.com.ua/en/bets/#event=28087549&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-03 13:00:00: gam esports - evos esports': [{}],
-         'https://www.favorit.com.ua/en/bets/#event=28090292&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-05 23:00:00: team liquid - team solomid': [{}],
-         'https://www.favorit.com.ua/en/bets/#event=28108140&tours=770482,776347,1037535,1061879,1258082,1265594,1645048,1713907 2020-09-05 11:00:00: damwon gaming - drx': [{}]}}
+sport = {'lol': {'https://old.favorit.com.ua/en/bets/#event=30013926&tours=244186 2021-01-02 10:00:00: damwon gaming - nongshim redforce': [{}]}}

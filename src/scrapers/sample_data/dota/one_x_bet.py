@@ -1,12 +1,1 @@
-sport = {'dota': {'https://1x-bet.com/en/line/Esports/1534671-Dota-2-Arcana-Vote/82568907-Faceless-Void-Spectre/ 2020-09-07 19:00:00: faceless void - spectre': [{}],
-          'https://1x-bet.com/en/line/Esports/2087033-Dota-2-Oceanic-League/82913133-Bokebi-Shadownet/ 2020-09-09 11:00:00: bokebi - shadownet': [{}],
-          "https://1x-bet.com/en/line/Esports/2087033-Dota-2-Oceanic-League/82913136-Cs-Better-YourSoulsisMine/ 2020-09-09 13:00:00: c's better - yoursoulsismine": [{}],
-          'https://1x-bet.com/en/line/Esports/2129833-Dota-2-LAW-OF-INERTIA-LEAGUE/82906818-Symmetric-Elephant/ 2020-09-07 06:00:00: symmetric - elephant': [{}],
-          'https://1x-bet.com/en/line/Esports/2129833-Dota-2-LAW-OF-INERTIA-LEAGUE/82906861-Neon-Esports-Execration/ 2020-09-07 09:00:00: neon esports - execration': [{}],
-          'https://1x-bet.com/en/line/Esports/2129833-Dota-2-LAW-OF-INERTIA-LEAGUE/82928307-Neon-Esports-Eclipse/ 2020-09-07 12:00:00: neon esports - eclipse': [{}],
-          'https://1x-bet.com/en/line/Esports/2131543-Dota-2-BTS-Pro-Series-Season-3-Americas/82779073-4-Zoomers-BeastCoast/ 2020-09-08 03:00:00: 4 zoomers - beastcoast': [{}],
-          'https://1x-bet.com/en/line/Esports/2131543-Dota-2-BTS-Pro-Series-Season-3-Americas/82779074-Havan-Liberty-Team-Brazil/ 2020-09-08 01:00:00: havan liberty - team brazil': [{}],
-          'https://1x-bet.com/en/line/Esports/2131543-Dota-2-BTS-Pro-Series-Season-3-Americas/82779075-CR4ZY-Business-Associates/ 2020-09-07 23:00:00: cr4zy - business associates': [{}],
-          'https://1x-bet.com/en/line/Esports/2131543-Dota-2-BTS-Pro-Series-Season-3-Americas/82779076-Thunder-Predator-Infamous/ 2020-09-08 05:00:00: thunder predator - infamous': [{}],
-          'https://1x-bet.com/en/line/Esports/2132508-Dota-2-BTS-Pro-Series-Season-3-Americas-Open-Qualifier/82939504-Infinity-eSports-EgoBoys/ 2020-09-06 23:00:00: infinity esports - egoboys': [{}],
-          'https://1x-bet.com/en/line/Esports/2132508-Dota-2-BTS-Pro-Series-Season-3-Americas-Open-Qualifier/82939643-DoZe-Sand-Blood/ 2020-09-06 23:00:00: doze - sand blood': [{}]}}
+sport = {'dota': {}}

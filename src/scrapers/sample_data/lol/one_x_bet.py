@@ -1,14 +1,1 @@
-sport = {'lol': {'https://1x-bet.com/en/line/Esports/1147647-League-of-Legends-VCS/82474529-GAM-Esports-Evos/ 2020-09-03 13:00:00: gam esports - evos': [{}],
-         'https://1x-bet.com/en/line/Esports/1415653-League-of-Legends-TCL/82016162-5-Ronin-SuperMassive/ 2020-09-05 14:00:00: 5 ronin - supermassive': [{}],
-         'https://1x-bet.com/en/line/Esports/1559165-League-of-Legends-LCK-Summer-Playoffs/82496250-Damwon-Gaming-DragonX/ 2020-09-05 11:00:00: damwon gaming - dragonx': [{}],
-         'https://1x-bet.com/en/line/Esports/1721677-League-of-Legends-LDL/82620982-FunPlus-Blaze-SDX-Gaming/ 2020-09-02 12:00:00: funplus blaze - sdx gaming': [{}],
-         'https://1x-bet.com/en/line/Esports/1796455-League-of-Legends-LJL-Summer-Playoffs/82025064-Sengoku-Gaming-DetonatioN-Gaming/ 2020-09-05 11:00:00: sengoku gaming - detonation gaming': [{}],
-         'https://1x-bet.com/en/line/Esports/1931004-League-of-Legends-LFL-Summer/82347308-LDLC-IziDream/ 2020-09-02 20:00:00: ldlc - izidream': [{}],
-         'https://1x-bet.com/en/line/Esports/1931004-League-of-Legends-LFL-Summer/82347312-Misfits-Premier-Team-MCES/ 2020-09-02 21:00:00: misfits premier - team mces': [{}],
-         'https://1x-bet.com/en/line/Esports/1931004-League-of-Legends-LFL-Summer/82347313-GameWard-Gamers-Origin/ 2020-09-02 23:00:00: gameward - gamers origin': [{}],
-         'https://1x-bet.com/en/line/Esports/1931004-League-of-Legends-LFL-Summer/82347317-VitalityBee-Solary/ 2020-09-02 22:00:00: vitality.bee - solary': [{}],
-         'https://1x-bet.com/en/line/Esports/1934499-League-of-Legends-LCS-Summer/82509865-Team-Liquid-Team-SoloMid/ 2020-09-05 23:00:00: team liquid - team solomid': [{}],
-         'https://1x-bet.com/en/line/Esports/1936878-League-of-Legends-LEC-Summer/82484417-G2-Esports-Team-Rogue/ 2020-09-05 18:00:00: g2 esports - team rogue': [{}],
-         'https://1x-bet.com/en/line/Esports/1991882-League-of-Legends-LCK-Regional-Finals/82336367-Afreeca-Freecs-KT-Rolster/ 2020-09-07 11:00:00: afreeca freecs - kt rolster': [{}],
-         'https://1x-bet.com/en/line/Esports/2122749-League-of-Legends-CBLOL-Segunda-Etapa-Playoffs/82091107-paiN-INTZ-eSports/ 2020-09-05 19:00:00: pain - intz esports': [{}],
-         'https://1x-bet.com/en/line/Esports/2130940-League-of-Legends-LVP-SuperLiga-Summer-Playoffs/82624932-Movistar-Riders-G2-Arctic/ 2020-09-04 19:00:00: movistar riders - g2 arctic': [{}]}}
+sport = {'lol': {'https://1x-bet.com/en/line/Esports/2151829-League-of-Legends-World-Championship-2021-Winner/87086513-Winner/ 2021-09-25 13:00:00: winner': [{}]}}

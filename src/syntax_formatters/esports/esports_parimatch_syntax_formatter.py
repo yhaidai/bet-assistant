@@ -31,10 +31,7 @@ class EsportsParimatchSyntaxFormatter(EsportsAbstractSyntaxFormatter, PSF):
 
     def _format_win(self):
         formatted_title = self.bet_title.lower()
-        try:
-            teams = self.match_title.raw_teams
-        except AttributeError:
-            teams = self.match_title.teams
+        teams = self.match_title.get_teams()
 
         if 'win of' in formatted_title:
             formatted_title = formatted_title.replace(' team', '')

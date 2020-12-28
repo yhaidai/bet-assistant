@@ -3,13 +3,11 @@ from json import dumps
 
 from telebot import TeleBot
 from telebot.apihelper import ApiException
+from telebot.types import ReplyKeyboardMarkup
 
-import __init__
 from secrets import TOKEN
-from util import bets_to_json_strings
-
-from arbitrager.best_odds_analyzer import BestOddsAnalyzer
-from arbitrager.fork_bets_analyzer import ForkBetsAnalyzer
+from user import User
+from user_history import UserHistory
 
 
 class BetAssistantBot(TeleBot):
@@ -17,13 +15,12 @@ class BetAssistantBot(TeleBot):
     _COMMANDS = {
         '/start': 'start interacting with bot',
         '/help': 'list commands and their description',
-        '/prematch_csgo_analytics':  'find best odds for csgo prematch events',
-        '/prematch_csgo_forks': 'find all csgo fork betting options'
     }
 
     def __init__(self):
         super().__init__(TOKEN)
         self._init_commands()
+        self.set_update_listener(self.menu_listener)
 
     def send_long_messages(self, chat_id, strings, reply_to, parse_mode='Markdown'):
         """
@@ -64,25 +61,32 @@ class BetAssistantBot(TeleBot):
             """
             self.send_message(message.chat.id, dumps(self._COMMANDS, indent=4))
 
-        @self.message_handler(commands=['prematch_csgo_analytics'])
-        def command_start_handler(message):
-            """
-            Handles /prematch_csgo_analytics command
-            """
-            analyzer = BestOddsAnalyzer('csgo')
-            best_odds_bets = analyzer.get_best_odds_bets_sport()
-            json_strings = bets_to_json_strings(best_odds_bets)
-            self.send_long_messages(message.chat.id, json_strings, message.message_id)
+    def menu_listener(self, messages):
+        for message in messages:
+            user = UserHistory.get_user(message.chat.id)
+            if user is None:
+                user = User(message.chat.id)
+            UserHistory.add_user(user)
 
-        @self.message_handler(commands=['prematch_csgo_forks'])
-        def command_start_handler(message):
-            """
-            Handles /prematch_csgo_forks command
-            """
-            analyzer = ForkBetsAnalyzer('csgo')
-            fork_bets = analyzer.get_fork_bets_sport()
-            json_strings = bets_to_json_strings(fork_bets)
-            self.send_long_messages(message.chat.id, json_strings, message.message_id)
+            action_result = user.menu.choose(message.text)
+            text = user.menu.current_option.prompt
+            if action_result:
+                text += str(action_result)
+
+            keyboard = ReplyKeyboardMarkup()
+            keyboard.add(*user.menu.get_current_options())
+            self.send_message(message.chat.id, text, reply_markup=keyboard, parse_mode='Markdown')
+            if user.menu.current_option.filename is not None:
+                try:
+                    with open(user.menu.current_option.filename, 'rb') as arbitrage_bets_file:
+                        self.send_document(message.chat.id, arbitrage_bets_file, reply_markup=keyboard)
+                except FileNotFoundError:
+                    pass
+
+            if user.menu.current_option.is_leaf():
+                user.menu.current_option = user.menu.current_option.parent
+            print(user.subscriptions)
+            UserHistory.update_user(user)
 
 
 if __name__ == '__main__':

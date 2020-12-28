@@ -8,7 +8,7 @@ from date_time import DateTime
 from match import Match
 from match_title import MatchTitle
 from sport import Sport
-from constants import sport_name
+from constants import SPORT_NAME
 from src.scrapers.abstract_scraper import AbstractScraper
 
 
@@ -28,6 +28,8 @@ class OneXBetScraper(AbstractScraper):
         'lol': 'line/Esports/',
         }
     _TEAM_NAME_CONTAINERS = ['c-scoreboard-team__name-link', 'team', ]
+    _SKIP_TITLES = ['Both Teams To Score Yes/No + Total', 'Result / Teams To Score', 'Draw + Total',
+                    'Team 2, Result + Total', 'Team 1, Result + Total']
 
     def get_name(self) -> str:
         return self._NAME
@@ -53,8 +55,11 @@ class OneXBetScraper(AbstractScraper):
             except StaleElementReferenceException:
                 print('Caught StaleElementReferenceException')
                 continue
-            if url in championship_urls:
+
+            if url in championship_urls or match_element.get_attribute('class') != 'link' or url.endswith(
+                    '-Special-bets/'):
                 continue
+
             match_title_text = match_element.find_element_by_class_name('gname').text
             match_title = MatchTitle.from_str(match_title_text)
             date_time_str = match_element.find_element_by_class_name('date').text
@@ -77,6 +82,8 @@ class OneXBetScraper(AbstractScraper):
         bet_groups = soup.find_all(class_='bet_group')
         for bet_group in bet_groups:
             bet_title = bet_group.find(class_='bet-title').text
+            if ' '.join(bet_title.split()) in OneXBetScraper._SKIP_TITLES:
+                continue
             if '\nSlider' in bet_title:
                 bet_title = bet_title[:-len('\nSlider')]
 
@@ -128,19 +135,19 @@ class OneXBetScraper(AbstractScraper):
         print('Retrieving matches...')
         event_menus = menu.find_elements_by_class_name('event_menu')
         print('Event menus count: ' + str(len(event_menus)))
-        for event_menu in event_menus:
-            for championship_url in championship_urls:
-                css_link_prefix_match = 'a[href^="' + championship_url + '"]'
-                try:
-                    matches.update(el for el in menu.find_elements_by_css_selector(css_link_prefix_match))
-                except NoSuchElementException:
-                    pass
+        for championship_url in championship_urls:
+            css_link_prefix_match = 'a[href^="' + championship_url + '"]'
+            try:
+                matches.update(el for el in menu.find_elements_by_css_selector(css_link_prefix_match))
+            except NoSuchElementException:
+                pass
 
         return matches
 
     def _open_championships(self, championships):
         for championship in championships:
-            self.renderer.click(championship)
+            if championship.find_element_by_xpath('..').get_attribute('class') != 'open':
+                self.renderer.click(championship)
 
     def _open_bets(self):
         elements = self.renderer.find_elements_by_class_name('bet-title')
@@ -153,14 +160,14 @@ class OneXBetScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = OneXBetScraper()
-    sport = scraper.get_matches_info_sport(sport_name)
+    sport = scraper.get_matches_info_sport(SPORT_NAME)
     # for match in sport:
     #     scraper.scrape_match_bets(match)
     print(sport)
 
     scraper.renderer.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
+    path = my_path + '\\sample_data\\' + SPORT_NAME + '\\' + scraper.get_name()
     sport.serialize(path)
     with open(path + '.py', 'w', encoding='utf-8') as f:
         print('sport =', sport, file=f)

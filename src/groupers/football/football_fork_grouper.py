@@ -31,5 +31,6 @@ class FootballForkGrouper(ForkGrouper, ABC):
 if __name__ == '__main__':
     grouper = FootballForkGrouper()
     football = Sport.from_dict(ggbet_football_dict)
-    grouped_football = grouper.group_bets(football)
-    print(grouped_football)
+    for match in football:
+        grouper.group_bets(match)
+    print(football)

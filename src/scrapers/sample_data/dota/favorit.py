@@ -1,5 +1,5 @@
-sport = {'dota': {'https://www.favorit.com.ua/en/bets/#event=28116640&tours=1911498,2333959 2020-09-07 19:00:00: spectre - faceless void': [{}],
-          'https://www.favorit.com.ua/en/bets/#event=28163242&tours=1911498,2333959 2020-09-07 23:00:00: cr4zy - business associates': [{}],
-          'https://www.favorit.com.ua/en/bets/#event=28163252&tours=1911498,2333959 2020-09-08 01:00:00: team brasil - havan liberty gaming': [{}],
-          'https://www.favorit.com.ua/en/bets/#event=28163267&tours=1911498,2333959 2020-09-08 03:00:00: 4 zoomers - beastcoast': [{}],
-          'https://www.favorit.com.ua/en/bets/#event=28163412&tours=1911498,2333959 2020-09-08 05:00:00: thunder predator - infamous': [{}]}}
+sport = {'dota': {'https://old.favorit.com.ua/en/bets/#event=30013911&tours=2709227 2020-12-28 05:15:00: forest - access': [{}],
+          'https://old.favorit.com.ua/en/bets/#event=30013913&tours=2709227 2020-12-28 08:15:00: ig.vitality - void': [{}],
+          'https://old.favorit.com.ua/en/bets/#event=30019921&tours=2709227 2020-12-29 05:15:00: forest - phoenix gaming': [{}],
+          'https://old.favorit.com.ua/en/bets/#event=30019924&tours=2709227 2020-12-29 08:15:00: calamity king - team sirius': [{}],
+          'https://old.favorit.com.ua/en/bets/#event=30019927&tours=2709227 2020-12-29 11:15:00: calamity king - phoenix gaming': [{}]}}

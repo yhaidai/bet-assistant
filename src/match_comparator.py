@@ -20,7 +20,16 @@ class MatchComparator:
         teams2 = second_match.title.teams
 
         time_delta = abs(first_match.date_time - second_match.date_time)
-        date_time_coefficient = 1 - time_delta / timedelta(seconds=45 * 60)
+
+        if time_delta < timedelta(hours=1):
+            time_delta = timedelta()
+        if time_delta == timedelta():
+            date_time_coefficient = 1
+        else:
+            date_time_coefficient = pow(timedelta(hours=1) / time_delta, 4)
+        if date_time_coefficient < certainty:
+            date_time_coefficient = certainty
+
         if len(teams1) != len(teams2) or first_match.scraper == second_match.scraper or date_time_coefficient <= 0:
             return 0
 
@@ -61,26 +70,28 @@ class MatchComparator:
     @staticmethod
     def _calculate_teams_similarity(first_team: str, second_team: str):
         min_initial_length = min(len(first_team), len(second_team))
+        max_initial_length = max(len(first_team), len(second_team))
         substrings_total_length = 0
         while True:
             s = SequenceMatcher(None, first_team, second_team)
             substring = s.find_longest_match(0, len(first_team), 0, len(second_team))
-            if substring.size < 3:
+            if substring.size < min(3, min_initial_length):
                 break
             substrings_total_length += substring.size
             # print(first_team[substring.a:substring.b])
             first_team = first_team[:substring.a] + first_team[substring.a + substring.size:]
             second_team = second_team[:substring.b] + second_team[substring.b + substring.size:]
 
-        similarity = substrings_total_length / min_initial_length
+        similarity = substrings_total_length / min_initial_length + \
+                     (substrings_total_length - max_initial_length) / (10 * max_initial_length)
         return similarity
 
 
 if __name__ == '__main__':
     certainty = 0.5
     comparator = MatchComparator()
-    m1 = Match(MatchTitle(['invictus gaming', 'lynn vision']), '', DateTime(2000, 1, 1, 5), 1, [])
-    m2 = Match(MatchTitle(['invictus gaming', 'tyloo']), '', DateTime(2000, 1, 1, 0), 2, [])
+    m1 = Match(MatchTitle(['jd gaming', 'team we']), '123', DateTime(2020, 12, 26, 12, 30), 1, [])
+    m2 = Match(MatchTitle(['jd', 'we']), '321', DateTime(2020, 12, 26, 13), 2, [])
     similarity = comparator.calculate_matches_similarity(m1, m2, certainty)
     print(similarity)
     print(comparator.similar(m1, m2, certainty))

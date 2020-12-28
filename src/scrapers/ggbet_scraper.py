@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from abstract_scraper import AbstractScraper
 from bet import Bet
-from constants import sport_name
+from constants import SPORT_NAME
 from date_time import DateTime
 from match import Match
 from match_title import MatchTitle
@@ -300,14 +300,14 @@ class GGBetScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = GGBetScraper()
-    sport = scraper.get_matches_info_sport(sport_name)
+    sport = scraper.get_matches_info_sport(SPORT_NAME)
     # for match in sport[:5]:
     #     scraper.scrape_match_bets(match)
     print(sport)
     scraper.renderer.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
     print(my_path)
-    path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
+    path = my_path + '\\sample_data\\' + SPORT_NAME + '\\' + scraper.get_name()
     sport.serialize(path)
     with open(path + '.py', 'w', encoding='utf-8') as f:
         print('sport =', sport, file=f)
