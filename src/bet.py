@@ -3,11 +3,12 @@ from pprint import pformat
 
 
 class Bet:
-    def __init__(self, title: str, odds: str, bookmaker: str, url: str):
+    def __init__(self, title: str, odds: str, bookmaker: str, url: str, amount=None):
         self.title = title
         self.odds = odds
         self.bookmaker = bookmaker
         self.url = url
+        self.amount = amount
 
     @classmethod
     def from_dict(cls, bet_dict):
@@ -26,7 +27,7 @@ class Bet:
 
     def __repr__(self):
         key = str(self.title)
-        value = str(self.odds) + '(' + str(self.bookmaker) + ' - ' + str(self.url) + ')'
+        value = f'{self.odds}: {self.amount}({self.bookmaker} - {self.url})'
         return pformat({key: value}, width=300)
 
     def __gt__(self, other):

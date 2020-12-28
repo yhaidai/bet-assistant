@@ -25,17 +25,23 @@ from esports.lol.lol_parimatch_syntax_formatter import LoLParimatchSyntaxFormatt
 from football.football_parimatch_syntax_formatter import FootballParimatchSyntaxFormatter
 
 registry = {
+    ParimatchScraper(): {
+        'csgo': CSGOParimatchSyntaxFormatter(),
+        'dota': DotaParimatchSyntaxFormatter(),
+        'lol': LoLParimatchSyntaxFormatter(),
+        'football': FootballParimatchSyntaxFormatter(),
+        },
     OneXBetScraper(): {
         'csgo': CSGOOneXBetSyntaxFormatter(),
         'dota': DotaOneXBetSyntaxFormatter(),
         'lol': LoLOneXBetSyntaxFormatter(),
         'football': FootballOneXBetSyntaxFormatter(),
         },
-    ParimatchScraper(): {
-        'csgo': CSGOParimatchSyntaxFormatter(),
-        'dota': DotaParimatchSyntaxFormatter(),
-        'lol': LoLParimatchSyntaxFormatter(),
-        'football': FootballParimatchSyntaxFormatter(),
+    GGBetScraper(): {
+        'csgo': CSGOGGBetSyntaxFormatter(),
+        'dota': DotaGGBetSyntaxFormatter(),
+        'lol': LoLGGBetSyntaxFormatter(),
+        'football': FootballGGBetSyntaxFormatter(),
         },
     FavoritScraper(): {
         'csgo': CSGOFavoritSyntaxFormatter(),
@@ -48,11 +54,5 @@ registry = {
         'dota': DotaMarathonSyntaxFormatter(),
         'lol': LoLMarathonSyntaxFormatter(),
         'football': FootballMarathonSyntaxFormatter(),
-        },
-    GGBetScraper(): {
-        'csgo': CSGOGGBetSyntaxFormatter(),
-        'dota': DotaGGBetSyntaxFormatter(),
-        'lol': LoLGGBetSyntaxFormatter(),
-        'football': FootballGGBetSyntaxFormatter(),
         },
     }

@@ -39,12 +39,15 @@ class Match:
         result = {}
         for bet in self.bets:
             value = None
+            key = None
             if type(bet) == Bet:
-                value = str(bet.odds) + '(' + str(bet.bookmaker) + ' - ' + str(bet.url) + ')'
+                key = bet.title
+                value = f'{bet.odds}: {bet.amount}({bet.bookmaker} - {bet.url})'
             elif type(bet) == BetGroup:
+                key = f'Profit {bet.profit} - {bet.title}'
                 value = bet.to_dict()
 
-            result.setdefault(bet.title, []).append(value)
+            result.setdefault(key, []).append(value)
 
         return result
 

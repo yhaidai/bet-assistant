@@ -15,7 +15,7 @@ class ForkGrouper(ABC):
         }
 
     def __init__(self):
-        self._certainty = 0.5
+        self._certainty = 0.6
         self.groups = {}
         self.match = None
         self.bet = None
@@ -61,14 +61,21 @@ class ForkGrouper(ABC):
 
             similarities_clean = first_match.title.similarities
             for key, match_value_pairs in similarities.items():
-                min_team = self._find_min_team_for_key(key, match_value_pairs, group, similarities_clean)
+                min_team = self._find_min_team(match_value_pairs, group, similarities)
                 # every other similar team will then need to be changed into min team
                 self._update_similarities(key, min_team, similarities_clean, match_value_pairs)
 
             self._minimize_titles(group, similarities_clean)
             # TODO: run one more search for similar matches for min title
+            # self._update_group_datetime(group)
 
         return groups
+
+    @staticmethod
+    def _update_group_datetime(group):
+        max_date_time = max([match.date_time for match in group])
+        for match in group:
+            match.date_time = max_date_time
 
     def _handle_same_scrapers_in_group(self, match: Match, group: list, similarities: dict) -> None:
         comparator = MatchComparator()
@@ -80,36 +87,30 @@ class ForkGrouper(ABC):
                 similarity = comparator.calculate_matches_similarity(group[0], match, self._certainty)
                 similarity_ = comparator.calculate_matches_similarity(group[0], match_, self._certainty)
 
-                match_.title.teams = teams_
-
                 if similarity > similarity_:
-                    match_.title.teams = match_.title.raw_teams
                     delattr(match_.title, 'raw_teams')
                     delattr(match_.title, 'similarities')
                     group.remove(match_)
                 else:
+                    match_.title.teams = teams_
                     group.remove(match)
 
     @staticmethod
-    def _find_min_team_for_key(key: str, match_value_pairs: list, group: dict, similarities_clean: dict) -> str:
-        min_team = None
+    def _find_min_team(match_value_pairs: list, group: dict, similarities: dict, min_team=None) -> str:
+        prev_min_team = min_team
         for match_value_pair in match_value_pairs:
             for match, value in match_value_pair.items():
                 if match in group:
                     if min_team is None:
                         min_team = value
                     else:
-                        if key in similarities_clean:
-                            if len(value) == len(min_team):
-                                min_team = min(value, min_team)
-                            elif len(value) < len(min_team):
-                                min_team = value
+                        if len(value) == len(min_team):
+                            min_team = min(value, min_team)
+                        elif len(value) < len(min_team):
+                            min_team = value
 
-        if min_team:
-            # if min_team already has a shorter version - use it
-            while min_team in similarities_clean and min_team != similarities_clean[min_team]:
-                min_team = similarities_clean[min_team]
-
+        if prev_min_team != min_team and min_team in similarities:
+            return ForkGrouper._find_min_team(similarities[min_team], group, similarities, min_team)
         return min_team
 
     @staticmethod

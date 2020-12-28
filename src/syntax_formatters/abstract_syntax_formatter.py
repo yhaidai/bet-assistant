@@ -173,10 +173,7 @@ class AbstractSyntaxFormatter(ABC):
         return self.bet_title.lower()
 
     def swap_teams(self, title):
-        try:
-            teams = self.match_title.raw_teams
-        except AttributeError:
-            teams = self.match_title.teams
+        teams = self.match_title.get_teams()
 
         if teams[0] in title:
             title = title.replace(teams[0], teams[1])
@@ -187,10 +184,7 @@ class AbstractSyntaxFormatter(ABC):
     def _move_teams_left(self, formatted_title=None):
         if not formatted_title:
             formatted_title = self.bet_title.lower()
-        try:
-            teams = self.match_title.raw_teams
-        except AttributeError:
-            teams = self.match_title.teams
+        teams = self.match_title.get_teams()
 
         for team in teams:
             if team in formatted_title:

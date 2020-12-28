@@ -9,14 +9,11 @@ from match_title import MatchTitle
 from sport import Sport
 from abstract_scraper import AbstractScraper
 import time
-from constants import sport_name
-from src.renderer.page import Page
+from constants import SPORT_NAME
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 
 
-wait = WebDriverWait(Page.driver, 3)
 tournament_names = None
 country_names = None
 
@@ -53,11 +50,6 @@ class MarathonScraper(AbstractScraper):
                     'Offsides', 'Goals Both Teams To Score + Total',
                     'Goals At Least One Team Not To Score + Total']
 
-    def __new__(cls):
-        if not hasattr(cls, 'instance'):
-            cls.instance = super(MarathonScraper, cls).__new__(cls)
-        return cls.instance
-
     def get_name(self) -> str:
         return self._NAME
 
@@ -74,11 +66,11 @@ class MarathonScraper(AbstractScraper):
         # tournaments = [tournaments[0]]
         for tournament in tournaments:
             print('tournament', tournaments.index(tournament) + 1, '/', len(tournaments))
-            Page(tournament)
+            self.renderer.get(tournament)
             matches = self.get_matches_from_tournament()
             for match in matches:
                 print(' ' * 3, 'match', matches.index(match) + 1, '/', len(matches))
-                match_bets = MarathonScraper._get_bets(match)
+                match_bets = self._get_bets(match)
                 if match_bets:
                     sport_bets.append(match_bets)
                 break
@@ -86,16 +78,13 @@ class MarathonScraper(AbstractScraper):
         sport = Sport(sport_name, sport_bets)
         return sport
 
-    @staticmethod
-    def get_matches_from_tournament():
-        return Page.driver.find_element_by_class_name('category-content').find_elements_by_class_name('bg')
+    def get_matches_from_tournament(self):
+        return self.renderer.find_element_by_class_name('category-content').find_elements_by_class_name('bg')
 
-    @staticmethod
-    def get_live_matches_from_tournament():
-        return wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'member-names-view')))
+    def get_live_matches_from_tournament(self):
+        return self.renderer.wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'member-names-view')))
 
-    @staticmethod
-    def _get_live_match_basic_data(event):
+    def _get_live_match_basic_data(self, event):
         teams = [el.text for el in event.find_elements_by_class_name('member')]
         for team in teams:
             if '—' in team:
@@ -103,27 +92,26 @@ class MarathonScraper(AbstractScraper):
                 team = team.replace('—', '')
                 teams.append(team)
 
-        Page.click(event)
-        url = Page.driver.current_url
-        Page.driver.back()
-        return Match(MatchTitle(teams), url, '')
+        self.renderer.click(event)
+        url = self.renderer.current_url
+        self.renderer.back()
+        return Match(MatchTitle(teams), url, None, self)
 
-    @staticmethod
-    def get_tournaments(sport_name):
+    def get_tournaments(self, sport_name):
         """
         Scrape match elements for a given sport type
         """
-        Page(MarathonScraper._BASE_URL)
-        icon = wait.until(EC.presence_of_element_located((By.CLASS_NAME, MarathonScraper._ICONS[sport_name])))
-        # icon = page.driver.find_element_by_class_name(MarathonScraper._ICONS[sport_name])
-        icon = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, MarathonScraper._ICONS[sport_name])))
-        Page.click(icon)
+        self.renderer.get(MarathonScraper._BASE_URL)
+        icon = self.renderer.wait.until(EC.presence_of_element_located((By.CLASS_NAME, MarathonScraper._ICONS[sport_name])))
+        # icon = self.renderer.find_element_by_class_name(MarathonScraper._ICONS[sport_name])
+        icon = self.renderer.wait.until(EC.element_to_be_clickable((By.CLASS_NAME, MarathonScraper._ICONS[sport_name])))
+        self.renderer.click(icon)
         time.sleep(0.5)
-        categories_icon = Page.driver.find_element_by_class_name('collapse-all-categories-checkbox')
+        categories_icon = self.renderer.find_element_by_class_name('collapse-all-categories-checkbox')
         categories_icon = categories_icon.find_element_by_tag_name('input')
-        Page.click(categories_icon)
+        self.renderer.click(categories_icon)
         time.sleep(0.5)
-        all_tournaments = Page.driver.find_elements_by_class_name('category-container')
+        all_tournaments = self.renderer.find_elements_by_class_name('category-container')
 
         tournaments = []
 
@@ -135,7 +123,7 @@ class MarathonScraper(AbstractScraper):
                     if _sport_name.text == MarathonScraper._MENU[sport_name]:
                         tournaments.append(tournament)
                 except StaleElementReferenceException:
-                    return MarathonScraper.get_tournaments(sport_name)
+                    return self.get_tournaments(sport_name)
         else:
             tournaments = all_tournaments
 
@@ -152,10 +140,9 @@ class MarathonScraper(AbstractScraper):
                             for t in tournaments]
         return tournament_links
 
-    @staticmethod
-    def _get_bets(event):
+    def _get_bets(self, event):
         bets = []
-        match = MarathonScraper._get_match_basic_data(event)
+        match = self._get_match_basic_data(event)
         teams = match.title.teams
         main_odds = event.find_elements_by_class_name('selection-link')
         if len(main_odds) == 3:
@@ -169,35 +156,36 @@ class MarathonScraper(AbstractScraper):
 
         try:
             match_button = event.find_element_by_class_name('event-more-view')
-            Page.click(match_button)
+            self.renderer.click(match_button)
             time.sleep(0.5)
         except Exception:
             return match
 
         try:
-            element = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'details-description')))
+            element = self.renderer.wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'details-description')))
             all_markets_button = element.find_element_by_tag_name('td')
-            Page.click(all_markets_button)
+            self.renderer.click(all_markets_button)
         except Exception:
             return match
         time.sleep(0.5)
         try:
-            MarathonScraper._parse_marketblocks(bets, match.url)
+            self._parse_marketblocks(bets, match.url)
         except Exception:
             return match
         match.bets = bets
-        Page.click(match_button)
+        self.renderer.click(match_button)
         time.sleep(0.2)
         return match
 
-    @staticmethod
-    def _parse_marketblocks(bets, url):
-        market_blocks = Page.driver.find_elements_by_class_name('market-inline-block-table-wrapper')
+    def _parse_marketblocks(self, bets, url):
+        soup = self.renderer.soup()
+        market_blocks = soup.find_all(class_='market-inline-block-table-wrapper')
         for mb in market_blocks:
             try:
-                block_title = mb.find_element_by_class_name('name-field').text
-            except Exception:
-                block_title = ''
+                block_title = mb.find(class_='name-field').text
+            except AttributeError:
+                # TODO: check next line istead of continue
+                # block_title = ''
                 continue
 
             b = True
@@ -206,52 +194,52 @@ class MarathonScraper(AbstractScraper):
                     b = False
                     break
             if not b:
-                # print(block_title)
                 continue
 
-            table = mb.find_element_by_class_name('td-border')
-            results_left = mb.find_elements_by_class_name('result-left')
-            another_results_left = table.find_elements_by_class_name('text-align-left')
+            table = mb.find(class_='td-border')
+            results_left = mb.find_all(class_='result-left')
+            another_results_left = table.find_all(class_='text-align-left')
             if results_left:
-                odds = table.find_elements_by_class_name('result-right')
+                odds = table.find_all(class_='result-right')
                 for i in range(len(results_left)):
                     result_left = results_left[i].text
-                    o = odds[i].find_element_by_tag_name('span').text
+                    o = odds[i].find('span').text
                     bet_title = block_title + ' ' + result_left
                     bet = Bet(bet_title, o, MarathonScraper._NAME, url)
                     bets.append(bet)
             elif another_results_left:
-                tags = [el.text for el in table.find_elements_by_tag_name('th')[1:]]
-                rows = table.find_elements_by_tag_name('tr')
+                tags = [el.text for el in table.find_all('th')[1:]]
+                rows = table.find_all('tr')
                 rows = rows[1:]
                 for row in rows:
-                    odds = row.find_elements_by_class_name('selection-link')
+                    odds = row.find_all(class_='selection-link')
                     for i in range(len(odds)):
-                        bet_type = row.find_element_by_class_name('text-align-left').text
+                        bet_type = row.find(class_='text-align-left').text
                         o = odds[i].text
                         bet_title = block_title + ' ' + bet_type + ' ' + tags[i]
                         bet = Bet(bet_title, o, MarathonScraper._NAME, url)
                         if 'Score + Total' not in bet_type:
                             bets.append(bet)
             else:
-                rows = table.find_elements_by_tag_name('tr')
+                rows = table.find_all('tr')
                 for row in rows:
-                    tags_raw = row.find_elements_by_tag_name('th')
+                    tags_raw = row.find_all('th')
                     if tags_raw:
                         for i in range(len(tags_raw)):
-                            try:
-                                tags_raw[i] = tags_raw[i].find_element_by_tag_name('div')
-                            except Exception as e:
+                            tag_raw_div = tags_raw[i].find('div')
+                            if not tag_raw_div:
                                 break
-                        tags = [tag_raw.text for tag_raw in tags_raw]
+                            else:
+                                tags_raw[i] = tag_raw_div
+                        tags = [tag_raw.text for tag_raw in tags_raw if tag_raw]
                     else:
-                        cells = row.find_elements_by_class_name('height-column-with-price')
+                        cells = row.find_all(class_='height-column-with-price')
                         empty_cells = []
                         for cell in cells:
-                            if 'td-min-width' in cell.get_attribute('class'):
+                            if 'td-min-width' in cell.get('class'):
                                 empty_cells.append(cells.index(cell))
-                        bet_types = row.find_elements_by_class_name('coeff-value')
-                        odds = row.find_elements_by_class_name('selection-link')
+                        bet_types = row.find_all(class_='coeff-value')
+                        odds = row.find_all(class_='selection-link')
                         for i in range(len(odds)):
                             if i not in empty_cells:
                                 bet_type = ''
@@ -276,7 +264,7 @@ class MarathonScraper(AbstractScraper):
         print(self._NAME, 'scraping', len(tournaments), 'tournaments')
         # tournaments = [tournaments[0]]
         for tournament in tournaments[:]:
-            Page(tournament)
+            self.renderer.get(tournament)
             print(' ', tournaments.index(tournament) + 1)
             events = self.get_matches_from_tournament()
             for event in events:
@@ -284,12 +272,12 @@ class MarathonScraper(AbstractScraper):
         return Sport(sport_name, matches)
 
     @staticmethod
-    def _get_bets_from_url(match_url):
-        Page(match_url)
-        event = Page.driver.find_element_by_class_name('category-content').find_element_by_class_name('bg')
-        # match = MarathonScraper._get_bets(event)
+    def _get_bets_from_url(self, match_url):
+        self.renderer(match_url)
+        event = self.renderer.find_element_by_class_name('category-content').find_element_by_class_name('bg')
+        # match = self._get_bets(event)
         bets = []
-        match = MarathonScraper._get_match_basic_data(event)
+        match = self._get_match_basic_data(event)
         teams = match.title.teams
         main_odds = event.find_elements_by_class_name('selection-link')
         if len(main_odds) == 3:
@@ -302,14 +290,14 @@ class MarathonScraper(AbstractScraper):
         ) for i in range(len(teams))]
 
         try:
-            element = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'details-description')))
+            element = self.renderer.wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'details-description')))
             all_markets_button = element.find_element_by_tag_name('td')
-            Page.click(all_markets_button)
+            self.renderer.click(all_markets_button)
         except Exception:
             return match
         time.sleep(0.5)
         try:
-            MarathonScraper._parse_marketblocks(bets, match.url)
+            self._parse_marketblocks(bets, match.url)
         except Exception:
             return match
         match.bets = bets
@@ -330,16 +318,15 @@ class MarathonScraper(AbstractScraper):
         sport = Sport(sport_name, sport_bets)
         return sport
 
-    @staticmethod
-    def scrape_match_bets(match):
-        time.sleep(0.2)
-        Page(match.url)
+    def scrape_match_bets(self, match):
+        t = time.time()
+        self.renderer.get(match.url)
         try:
             teams = match.title.raw_teams
         except AttributeError:
             teams = match.title.teams
 
-        main_row = Page.driver.find_element_by_class_name('sub-row')
+        main_row = self.renderer.find_element_by_class_name('sub-row')
         main_odds = main_row.find_elements_by_class_name('selection-link')
 
         main_bet_titles = ['Result ' + team + ' To Win' for team in teams]
@@ -352,30 +339,23 @@ class MarathonScraper(AbstractScraper):
             MarathonScraper._NAME,
             match.url
             ) for i in range(len(teams))]
-
         try:
-            element = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'details-description')))
+            element = self.renderer.wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'details-description')))
             all_markets_button = element.find_element_by_tag_name('td')
-            Page.click(all_markets_button)
+            self.renderer.click(all_markets_button)
         except Exception:
+            print(self._NAME, time.time() - t)
             return match
-
-        time.sleep(0.5)
-
-        try:
-            MarathonScraper._parse_marketblocks(match.bets, match.url)
-        except Exception:
-            print('exception raised during parsing market blocks')
-            return match
+        self._parse_marketblocks(match.bets, match.url)
+        print(self._NAME, time.time() - t)
         return match
 
-    @staticmethod
-    def _get_bets_from_live_match_with_basic_data(match):
-        Page(match.url)
+    def _get_bets_from_live_match_with_basic_data(self, match):
+        self.renderer.get(match.url)
         while True:
             bets = []
             try:
-                MarathonScraper._parse_marketblocks(bets, match.url)
+                self._parse_marketblocks(bets, match.url)
             except Exception:
                 pass
             match.bets = bets
@@ -388,20 +368,19 @@ class MarathonScraper(AbstractScraper):
         print(self._NAME, 'scraping', len(tournaments), 'tournaments')
         # tournaments = [tournaments[0]]
         for tournament in tournaments:
-            Page(tournament)
+            self.renderer.get(tournament)
             print(' ', tournaments.index(tournament) + 1)
             events = self.get_live_matches_from_tournament()
             for event in events:
                 matches.append(self._get_live_match_basic_data(event))
         return Sport(sport_name, matches)
 
-    @staticmethod
-    def get_live_tournaments(sport_name):
-        Page(MarathonScraper._BASE_URL + 'live')
-        categories_icon = Page.driver.find_element_by_class_name('collapse-all-categories-checkbox')
+    def get_live_tournaments(self, sport_name):
+        self.renderer.get(MarathonScraper._BASE_URL + 'live')
+        categories_icon = self.renderer.find_element_by_class_name('collapse-all-categories-checkbox')
         categories_icon = categories_icon.find_element_by_tag_name('input')
-        Page.click(categories_icon)
-        all_sports = Page.driver.find_elements_by_class_name('sport-category-header')
+        self.renderer.click(categories_icon)
+        all_sports = self.renderer.find_elements_by_class_name('sport-category-header')
         my_sport = None
         for sport in all_sports:
             if MarathonScraper._LIVE_MENU[sport_name] in sport.text.lower():
@@ -422,13 +401,13 @@ class MarathonScraper(AbstractScraper):
 if __name__ == '__main__':
     t = time.time()
     scraper = MarathonScraper()
-    sport = scraper.get_matches_info_sport(sport_name)
-    # for match in sport:
+    sport = scraper.get_matches_info_sport(SPORT_NAME)
+    # for match in sport[:2]:
     #     scraper.scrape_match_bets(match)
     print(sport)
-    Page.driver.quit()
+    scraper.renderer.quit()
     my_path = os.path.abspath(os.path.dirname(__file__))
-    path = my_path + '\\sample_data\\' + sport_name + '\\' + scraper.get_name()
+    path = my_path + '\\sample_data\\' + SPORT_NAME + '\\' + scraper.get_name()
     sport.serialize(path)
     with open(path + '.py', 'w', encoding='utf-8') as f:
         print('sport =', sport, file=f)

@@ -1,23 +1,26 @@
 import os
+import time
+from concurrent.futures import ThreadPoolExecutor, wait, ALL_COMPLETED, as_completed
 from datetime import datetime
 from pprint import pprint
 
 from bet_group import BetGroup
-from constants import sport_name
+from constants import SPORT_NAME
 from csgo_fork_grouper import CSGOForkGrouper
 from dota_fork_grouper import DotaForkGrouper
-from exceptions.RendererTimeoutException import RendererTimeoutException
+from exceptions import RendererTimeoutException
 from football_fork_grouper import FootballForkGrouper
 from lol_fork_grouper import LoLForkGrouper
 from match import Match
 from registry import registry
 from sport import Sport
-from parimatch_scraper import ParimatchScraper
-from one_x_bet_scraper import OneXBetScraper
-from ggbet_scraper import GGBetScraper
-from favorit_scraper import FavoritScraper
-from marathon_scraper import MarathonScraper
-from fork_grouper import ForkGrouper
+
+# doing explicit import in order to able to unpickle scraped data
+from scrapers.favorit_scraper import FavoritScraper
+from scrapers.ggbet_scraper import GGBetScraper
+from scrapers.marathon_scraper import MarathonScraper
+from scrapers.one_x_bet_scraper import OneXBetScraper
+from scrapers.parimatch_scraper import ParimatchScraper
 
 
 class Arbitrager:
@@ -41,20 +44,35 @@ class Arbitrager:
         """
         self.sports = []
         self._fork_grouper = self._GROUPERS[sport_name]
+        self.all_matches_sport = None
+        self.update()
+
+    def update(self):
+        # t = time.time()
+
+        # with ThreadPoolExecutor() as executor:
+        #     futures = [executor.submit(scraper.get_matches_info_sport, sport_name) for scraper in registry]
+        #     for future in as_completed(futures):
+        #         self.sports.append(future.result())
+
         # for scraper, formatter in registry.items():
         #     sport = scraper.get_matches_info_sport(sport_name)
         #     self.sports.append(sport)
+
+        # print('Retrieved matches info in:', time.time() - t)
 
         self.sports = Arbitrager._get_sports_from_sample_data()
 
         self.all_matches_sport = self.get_all_bets_sport()
         print(self.all_matches_sport)
+        path = f'{os.path.abspath(os.path.dirname(__file__))}\\sample_data\\{SPORT_NAME}'
+        self.all_matches_sport.write_xlsx(f'{path}.xlsx')
 
     @staticmethod
     def _get_sports_from_sample_data():
         sports = []
         path = os.path.abspath(os.path.dirname(__file__)).replace('arbitrager',
-                                                                  'scrapers\\sample_data\\{}\\'.format(sport_name))
+                                                                  'scrapers\\sample_data\\{}\\'.format(SPORT_NAME))
         for scraper in registry:
             sports.append(Sport.deserialize(path + scraper.get_name()))
 
@@ -74,38 +92,79 @@ class Arbitrager:
         self.all_matches_sport.matches = []
         pprint(match_groups)
 
+        # print group counts
+        group_counts = [0 for scraper in registry]
+        for group in match_groups.values():
+            group_counts[len(group) - 1] += 1
+        for group_count in group_counts:
+            print(group_count, 'groups of length', group_counts.index(group_count) + 1)
+        multiple_matches_groups_count = sum(group_counts[1:])
+        print('2+ length groups count:', multiple_matches_groups_count)
+
         group_id = 0
-        group_count = len(match_groups)
-        for title, group in match_groups.items():
-            group_id += 1
+        for title, group in list(match_groups.items()):
+            if group_id == 100:
+                break
             if len(group) < 2 or group[0].date_time <= datetime.now():
                 continue
-            print('Group', group_id, 'of', group_count, ':')
+            group_id += 1
+            print('Group', group_id, 'of', multiple_matches_groups_count, ':')
             all_bets = []
 
-            for match in group:
-                print(match.url)
-                try:
-                    # TODO: move multiple occurrences fix to grouper
-                    if not match.bets:
-                        match.scraper.scrape_match_bets(match)
-                    else:
-                        print('Match has occurred in multiple groups')
+            with ThreadPoolExecutor() as executor:
+                futures = []
+                for match in group:
+                    print(match.url)
+                    try:
+                        # TODO: move multiple occurrences fix to grouper
+                        if not match.bets:
+                            future = executor.submit(match.scraper.scrape_match_bets, match)
+                            futures.append(future)
+                        else:
+                            print('Match has occurred in multiple groups')
+                            continue
+                    except RendererTimeoutException:
+                        print('Caught RendererTimeoutException')
                         continue
-                except RendererTimeoutException:
-                    print('Caught RendererTimeoutException')
-                    continue
-                all_bets += match.bets
-                formatter = registry[match.scraper][self.all_matches_sport.name]
-                formatter.format_match(match)
 
-            all_bets_match = Match(title, None, group[0].date_time, None, all_bets)
-            Arbitrager.remove_anything_but_best_odds_bets(all_bets_match)
-            self.remove_anything_but_arbitrage_bets(all_bets_match)
-            if all_bets_match.bets:
-                self.all_matches_sport.matches.append(all_bets_match)
-                print(all_bets_match)
-            print()
+                wait(futures, return_when=ALL_COMPLETED)
+
+                for match in group:
+                    formatter = registry[match.scraper][self.all_matches_sport.name]
+                    formatter.format_match(match)
+                    all_bets += match.bets
+
+                all_bets_match = Match(title, None, group[0].date_time, None, all_bets)
+                Arbitrager.remove_anything_but_best_odds_bets(all_bets_match)
+                self.remove_anything_but_arbitrage_bets(all_bets_match)
+                if all_bets_match.bets:
+                    self.all_matches_sport.matches.append(all_bets_match)
+                    print(all_bets_match)
+                print()
+
+            # for match in group:
+            #     print(match.url)
+            #     try:
+            #         # TODO: move multiple occurrences fix to grouper
+            #         if not match.bets:
+            #             match.scraper.scrape_match_bets(match)
+            #         else:
+            #             print('Match has occurred in multiple groups')
+            #             continue
+            #     except RendererTimeoutException:
+            #         print('Caught RendererTimeoutException')
+            #         continue
+            #     formatter = registry[match.scraper][self.all_matches_sport.name]
+            #     formatter.format_match(match)
+            #     all_bets += match.bets
+            #
+            # all_bets_match = Match(title, None, group[0].date_time, None, all_bets)
+            # Arbitrager.remove_anything_but_best_odds_bets(all_bets_match)
+            # self.remove_anything_but_arbitrage_bets(all_bets_match)
+            # if all_bets_match.bets:
+            #     self.all_matches_sport.matches.append(all_bets_match)
+            #     print(all_bets_match)
+            # print()
 
     @staticmethod
     def remove_anything_but_best_odds_bets(match) -> None:
@@ -131,16 +190,13 @@ class Arbitrager:
                 match.bets.remove(bet_group)
                 continue
 
-            # add fork bet
+            # add arbitrage bet
             if not 0 < profit < Arbitrager._PROFIT_THRESHOLD:
                 match.bets.remove(bet_group)
             else:
-                highlighter = '*'
-                bet_group.title += '(' + highlighter + 'Profit - ' + str('{:.2f}'.format(profit * 100)) + '%' + \
-                                   highlighter + ')'
-                bet_amounts = Arbitrager._get_arbitrage_bet_amounts(odds)
+                bet_group.profit = str('{:.2f}'.format(profit * 100)) + '%'
                 for bet in bet_group:
-                    bet.odds += bet_amounts[bet.odds]
+                    bet.amount = Arbitrager._get_arbitrage_bet_amount(odds, bet.odds)
 
     @staticmethod
     def _get_arbitrage_profit(odds):
@@ -157,14 +213,20 @@ class Arbitrager:
         return 1 / reciprocals_sum - 1
 
     @staticmethod
-    def _get_arbitrage_bet_amounts(odds):
+    def _get_arbitrage_bet_amount(odds, bet_odds):
         reciprocals = [1 / float(o) for o in odds]
         reciprocals_sum = sum(reciprocals)
-        bet_amounts = {o: '. Bet amount: ' + str('{:.4f}'.format(1 / float(o) / reciprocals_sum)) for o in odds}
-        return bet_amounts
+        return str('{:.4f}'.format(1 / float(bet_odds) / reciprocals_sum))
 
 
 if __name__ == '__main__':
-    analyzer = Arbitrager(sport_name)
-    # s = analyzer.get_all_bets_sport()
-    # print(s)
+    try:
+        t = time.time()
+        arbitrager = Arbitrager(SPORT_NAME)
+        print('Elapsed:', time.time() - t)
+        # path = f'{os.path.abspath(os.path.dirname(__file__))}\\sample_data\\{sport_name}'
+        # arbitrager.all_matches_sport.serialize(path)
+        # arbitrager.all_matches_sport.write_xlsx(f'{path}.xlsx')
+    finally:
+        for scraper in registry:
+            scraper.renderer.quit()
