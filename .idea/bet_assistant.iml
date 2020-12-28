@@ -26,6 +26,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/arbitrager" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scrapers/renderer/exceptions" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scrapers/renderer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/meta" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scheduler" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/src/renderer/chromedriver_linux64" />
       <excludeFolder url="file://$MODULE_DIR$/src/renderer/chromedriver_win32" />

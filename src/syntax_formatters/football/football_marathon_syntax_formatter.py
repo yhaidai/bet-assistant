@@ -1,7 +1,7 @@
 import re
 
 from sport import Sport
-from football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
+from syntax_formatters.football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
 from syntax_formatters.marathon_syntax_formatter import MarathonSyntaxFormatter as MSF
 from sample_data.football import marathon
 import os.path

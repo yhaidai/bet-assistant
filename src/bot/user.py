@@ -25,3 +25,12 @@ class User:
     def unsubscribe(self, sport_name):
         if sport_name in self.subscriptions:
             self.subscriptions.remove(sport_name)
+
+
+if __name__ == '__main__':
+    m = Menu(User('1'))
+    m.choose('Arbitrage bets')
+    m.choose('Dota 2')
+    m.set_current_option(1)
+    # m.choose('Go Back')
+    print(m.current_option.id)

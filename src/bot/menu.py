@@ -3,7 +3,6 @@ from option import Option
 
 
 class Menu:
-    __SPORT_NAMES = ()
     __ROOT_OPTION_TEXT = 'Root option'
     __ACTION_SELECTION_PROMPT = '*Choose action*'
     __SPORT_SELECTION_PROMPT = '*Choose kind of sport*'
@@ -83,12 +82,3 @@ class Menu:
         else:
             for option in root.children:
                 self.set_current_option(option_id, option)
-
-
-if __name__ == '__main__':
-    m = Menu()
-    m.choose('Arbitrage bets')
-    m.choose('Dota 2')
-    m.set_current_option(1)
-    # m.choose('Go Back')
-    print(m.current_option.id)

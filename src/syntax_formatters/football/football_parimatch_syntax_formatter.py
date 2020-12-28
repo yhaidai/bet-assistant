@@ -3,10 +3,9 @@ from pprint import pprint, pformat
 import os.path
 
 from sport import Sport
-from football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
+from syntax_formatters.football.football_abstract_syntax_formatter import FootballAbstractSyntaxFormatter
 from syntax_formatters.parimatch_syntax_formatter import ParimatchSyntaxFormatter as PSF
 from sample_data.football import parimatch
-from syntax_formatters.match_title_compiler import MatchTitleCompiler
 
 
 class FootballParimatchSyntaxFormatter(FootballAbstractSyntaxFormatter, PSF):

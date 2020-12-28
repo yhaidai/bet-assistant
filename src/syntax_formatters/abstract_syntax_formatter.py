@@ -2,10 +2,11 @@ import re
 from abc import ABC, abstractmethod
 
 from match import Match
+from singleton import ABCMetaSingleton
 from sport import Sport
 
 
-class AbstractSyntaxFormatter(ABC):
+class AbstractSyntaxFormatter(ABC, metaclass=ABCMetaSingleton):
     """
     Class that is used for applying unified syntax formatting to all betting
     related information scraped from the websites

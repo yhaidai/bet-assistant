@@ -6,11 +6,13 @@ from telebot.apihelper import ApiException
 from telebot.types import ReplyKeyboardMarkup
 
 from secrets import TOKEN
+from singleton import Singleton
 from user import User
 from user_history import UserHistory
+from util import get_arbitrage_bets_xlsx_filename_by_short_sport_name
 
 
-class BetAssistantBot(TeleBot):
+class BetAssistantBot(TeleBot, metaclass=Singleton):
     _MESSAGE_MAX_LENGTH = 4096
     _COMMANDS = {
         '/start': 'start interacting with bot',
@@ -85,8 +87,21 @@ class BetAssistantBot(TeleBot):
 
             if user.menu.current_option.is_leaf():
                 user.menu.current_option = user.menu.current_option.parent
-            print(user.subscriptions)
             UserHistory.update_user(user)
+
+    def notify_subscribers(self, sport_name):
+        subscribers = UserHistory.get_subscribers()
+        for subscriber in subscribers:
+            self.notify_subscriber(subscriber, sport_name)
+
+    def notify_subscriber(self, subscriber, sport_name):
+        keyboard = ReplyKeyboardMarkup()
+        keyboard.add(*subscriber.menu.get_current_options())
+        try:
+            with open(get_arbitrage_bets_xlsx_filename_by_short_sport_name(sport_name), 'rb') as arbitrage_bets_file:
+                self.send_document(subscriber.id, arbitrage_bets_file, reply_markup=keyboard)
+        except FileNotFoundError:
+            pass
 
 
 if __name__ == '__main__':
